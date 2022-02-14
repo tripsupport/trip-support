@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Booking from '../components/booking/Booking.svelte';
+	import HomeSection1 from '../components/home/HomeSection1.svelte';
+	import HomeSection2 from '../components/home/HomeSection2.svelte';
+	import AlertCovid from '../components/home/AlertCovid.svelte';
+</script>
+
+<Booking />
+<AlertCovid />
+<HomeSection1 />
+<HomeSection2 />

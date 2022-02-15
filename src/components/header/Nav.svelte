@@ -1,8 +1,6 @@
-<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
-
 <!-- Main Nav navigation -->
 <!-- removed from class bg-opacity-90 backdrop-filter backdrop-blur-xl -->
-<nav aria-label="Top" class="relative z-20 bg-white shadow">
+<nav aria-label="Top" class="navbar relative z-20 bg-white shadow">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
 		<div class="h-16 flex items-center">
 			<!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->

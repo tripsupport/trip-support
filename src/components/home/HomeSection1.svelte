@@ -13,8 +13,11 @@
 			</p> -->
 		</div>
 		<!-- Advantage Cards -->
+		<!-- card -->
+
+		<!-- /end card -->
 		<div
-			class="mx-auto mt-12 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-4 lg:px-4"
+			class="mx-auto mt-12 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-4 lg:px-8"
 		>
 			<div class="flex flex-col overflow-hidden rounded-t-lg shadow-sm">
 				<div class="flex-shrink-0">

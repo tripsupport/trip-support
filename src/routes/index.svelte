@@ -6,6 +6,6 @@
 </script>
 
 <Booking />
-<AlertCovid />
+<!-- <AlertCovid /> -->
 <HomeSection1 />
 <HomeSection2 />

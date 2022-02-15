@@ -6,7 +6,7 @@
 		</p>
 
 		<div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-			<span class="h-6 w-px bg-gray-600" aria-hidden="true" />
+			<!-- <span class="h-6 w-px bg-gray-600" aria-hidden="true" /> -->
 			<a href="#" class="text-sm font-medium text-white hover:text-gray-100"
 				>Check Covid-19 Restrictions</a
 			>

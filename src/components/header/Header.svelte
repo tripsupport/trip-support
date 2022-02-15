@@ -3,13 +3,17 @@
 	import Nav from './Nav.svelte';
 	import HeaderHero from './hero/HeaderHero.svelte';
 	import FlightHero from './hero/FlightHero.svelte';
+	import NewNav from './NewNav.svelte';
+	import AlertCovid from '../home/AlertCovid.svelte';
 </script>
 
 <header class="relative overflow-hidden">
 	<!-- Top covid alert -->
 	<CovidAlert />
 	<!-- Main nav -->
-	<Nav />
+	<!-- <Nav /> -->
+	<NewNav />
+	<!-- <AlertCovid /> -->
 	<HeaderHero />
 	<!-- <FlightHero /> -->
 </header>

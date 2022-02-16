@@ -37,7 +37,7 @@
 					>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="w-5 h-5 text-slate-500"
+						class="w-5 h-5 text-slate-500 mt-[5px]"
 						viewBox="0 0 20 20"
 						fill="currentColor"
 					>
@@ -68,7 +68,7 @@
 					>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="w-5 h-5 text-slate-500"
+						class="w-5 h-5 text-slate-500 mt-[5px]"
 						viewBox="0 0 20 20"
 						fill="currentColor"
 					>
@@ -99,7 +99,7 @@
 					>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="w-5 h-5 text-slate-500"
+						class="w-5 h-5 text-slate-500 mt-[5px]"
 						viewBox="0 0 20 20"
 						fill="currentColor"
 					>
@@ -120,7 +120,7 @@
 						<span class="h-5 mx-4 h-6 w-px bg-gray-400 lg:mx-6" aria-hidden="true" />
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="w-11 h-5 text-slate-500"
+							class="w-11 h-5 text-slate-500 mt-[5px]"
 							viewBox="0 0 20 20"
 							fill="currentColor"
 						>

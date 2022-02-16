@@ -32,7 +32,7 @@
 				>
 					<label
 						for="name"
-						class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"
+						class="absolute -top-2 left-2 -mt-px inline- px-1 bg-white text-xs font-medium text-gray-900"
 						>Leaving from?</label
 					>
 					<svg
@@ -52,7 +52,7 @@
 						type="text"
 						name="name"
 						id="name"
-						class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+						class=" w-full border-0 sm:p-1 py-[12px] text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 						placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
 					/>
 				</div>
@@ -63,7 +63,7 @@
 				>
 					<label
 						for="name"
-						class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"
+						class="absolute -top-2 left-2 -mt-px inline- px-1 bg-white text-xs font-medium text-gray-900"
 						>Going to?</label
 					>
 					<svg
@@ -82,7 +82,7 @@
 						type="text"
 						name="name"
 						id="name"
-						class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+						class="w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 						placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 					/>
 				</div>
@@ -94,7 +94,7 @@
 				>
 					<label
 						for="name"
-						class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"
+						class="absolute -top-2 left-2 -mt-px inline- px-1 bg-white text-xs font-medium text-gray-900"
 						>Departure / Return</label
 					>
 					<svg
@@ -114,7 +114,7 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+							class=" w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 							placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 						/>
 						<span class="my-auto mx-4 h-6 w-px bg-gray-400 lg:mx-6" aria-hidden="true" />
@@ -135,7 +135,7 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+							class=" w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 							placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 						/>
 					</div>
@@ -155,7 +155,7 @@
 										checked
 										class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 									/>
-									<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
+									<label for="email" class="ml-3  text-sm font-medium text-gray-700">
 										Flexible Search (+/- 3days)
 									</label>
 								</div>
@@ -167,7 +167,7 @@
 										type="radio"
 										class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 									/>
-									<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
+									<label for="sms" class="ml-3  text-sm font-medium text-gray-700">
 										Non-stop flights only
 									</label>
 								</div>
@@ -178,7 +178,7 @@
 										type="radio"
 										class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 									/>
-									<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
+									<label for="sms" class="ml-3  text-sm font-medium text-gray-700">
 										Airline Specific
 									</label>
 								</div>

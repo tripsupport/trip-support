@@ -53,7 +53,7 @@
 										href="#"
 										class=" px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-pred-900 hover:text-white sm:px-8"
 									>
-										Get started
+										Book Flight
 									</a>
 								</div>
 							</div>

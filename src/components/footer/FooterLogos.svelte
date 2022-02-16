@@ -1,8 +1,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-white">
 	<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-		<div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-9">
-			<div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+		<div class="grid grid-cols-8 gap-8 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-9">
+			<div class="col-span-1 flex lg:justify-center sm:col-span-2 md:col-span-2 lg:col-span-1">
 				<img
 					class="h-12"
 					src="https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-tico.svg"

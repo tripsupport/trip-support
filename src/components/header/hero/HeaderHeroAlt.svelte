@@ -10,8 +10,8 @@
 						Book Now Pay Later</span
 					>
 				</h1>
-				<div class="grid grid-cols-3 gap-y-0 lg:gap-y-3 my-0">
-					<div class="col-span-2">
+				<div class="grid grid-cols-3 gap-y-3 lg:gap-y-3 my-2 mb-6 sm:mb-2 md:my-0 ">
+					<div class="sm:col-span-2 col-span-full ">
 						<p
 							class="mt-0 text-base text-slate-600 sm:mt-1 sm:text-md sm:max-w-xl sm:mx-auto md:mt-1 md:text-md lg:mx-2"
 						>
@@ -29,7 +29,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="grid grid-cols-1 gap-y-0 lg:gap-y-0 my-6">
+				<div class="hidden sm:block grid grid-cols-1 gap-y-0 lg:gap-y-0 my-6">
 					<a href="vacations">
 						<!-- Marketing Card -->
 						<div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">

@@ -59,7 +59,9 @@
 					</a>
 				</div>
 			</div>
-			<div class="mt-12 grid grid-cols-5 gap-8 xl:col-span-3 xl:mt-0">
+			<div
+				class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 xl:col-span-3 xl:mt-0 "
+			>
 				<div>
 					<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal tracking-wider">
 						Vacation Deals

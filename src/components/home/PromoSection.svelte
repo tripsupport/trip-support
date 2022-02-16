@@ -1,17 +1,23 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-white">
 	<div class="pt-32 overflow-hidden sm:pt-14">
-		<div class="bg-pblue-900">
+		<div class="bg-gradient-to-r from-blue-900 to-rose-500 ">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="relative pt-48 pb-16 sm:pb-24">
-					<div>
+					<div class="sm:mx-auto sm:px-4">
 						<h2
 							id="sale-heading"
-							class="text-4xl font-extrabold tracking-tight text-white md:text-5xl"
+							class="hidden sm:block text-4xl font-extrabold tracking-tight text-white md:text-5xl"
 						>
 							Vacation Deals
 							<br />
 							upto 50% off
+						</h2>
+						<h2
+							id="sale-heading"
+							class="block sm:hidden text-2xl font-extrabold tracking-tight text-white"
+						>
+							Vacation Deals upto 50% off
 						</h2>
 						<div class="mt-6 text-base">
 							<a href="#" class="font-semibold text-white"

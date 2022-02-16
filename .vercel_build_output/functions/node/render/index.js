@@ -5623,7 +5623,7 @@ var layout_svelte_exports = {};
 __export(layout_svelte_exports, {
   default: () => _layout
 });
-var CovidAlert, HeaderHero, ChevronDown, PhoneOutgoing, UserCircle, Icon, NewNav, Header, FooterLogos, Copyright, Footer, _layout;
+var CovidAlert, HeaderHeroAlt, ChevronDown, UserCircle, Icon, NewNav, Header, FooterLogos, Copyright, Footer, _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
     init_index_587706cc();
@@ -5635,15 +5635,24 @@ var init_layout_svelte = __esm({
 		<div class="${"hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"}">
 			<a href="${"#"}" class="${"text-sm font-medium text-white hover:text-gray-100"}">Check Covid-19 Restrictions</a></div></div></div>`;
     });
-    HeaderHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+    HeaderHeroAlt = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"}"><div class="${"pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-12 lg:pb-12"}"><div class="${"relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static"}"><div class="${"sm:max-w-lg mx-4"}"><h1 class="${"text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl"}"><span class="${"inline bg-gradient-to-r from-blue-900 to-rose-600 bg-clip-text pb-2 text-transparent sm:pb-2"}">Book Now Pay Later</span></h1>
-				<p class="${"mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0"}">Secure your ticket with a small deposit. No Credit Check Needed. We&#39;re focused on making
-					travel better for everyone. To make the entire planning and booking experience easy,
-					simple and enjoyable from start to finish.
-				</p>
-				<div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><a href="${"vacations"}"><div class="${"w-full h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100"}"><img src="${"./images/hero/hero-2.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></a></div></div>
-			<div><div class="${"mt-10"}">
+<div class="${"relative bg-gray-50 pt-0 pb-0 px-4 sm:px-0 lg:pt-0 lg:pb-0 lg:px-0"}"><div class="${"pt-16 pb-24 sm:pt-24 sm:pb-12 lg:pt-32 lg:pb-12"}"><div class="${"relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static"}"><div class="${"sm:max-w-xl ml-2 mr-4"}"><h1 class="${"text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl"}"><span class="${"inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text pb-2 text-transparent sm:pb-2"}">Book Now Pay Later</span></h1>
+				<div class="${"grid grid-cols-3 gap-y-0 lg:gap-y-3 my-0"}"><div class="${"col-span-2"}"><p class="${"mt-0 text-base text-slate-600 sm:mt-1 sm:text-md sm:max-w-xl sm:mx-auto md:mt-1 md:text-md lg:mx-2"}">Secure your ticket with a small deposit.
+							<br>
+							No Credit Check Needed.
+						</p></div>
+					<div class="${"col-span-1 my-auto"}"><a href="${"#"}" class="${"flex items-center justify-center px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:px-8"}">Learn more
+						</a></div></div>
+				<div class="${"grid grid-cols-1 gap-y-0 lg:gap-y-0 my-6"}"><a href="${"vacations"}">
+						<div class="${"relative shadow-xl sm:rounded-2xl sm:overflow-hidden"}"><div class="${"absolute inset-0"}"><img class="${"h-full w-full object-cover"}" src="${"images/home/spring-break.jpg"}" alt="${"People working on laptops"}">
+								<div class="${"absolute inset-0 bg-pblue-500 mix-blend-multiply"}"></div></div>
+							<div class="${"relative px-4 py-16 sm:px-6 sm:py-24 lg:py-12 lg:px-8"}"><h1 class="${"text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-3xl"}"><span class="${"block text-white"}">Spring Break Vacations</span></h1>
+								<p class="${"mt-2 max-w-lg mx-auto text-md text-gray-100 sm:max-w-lg"}">Anim aute id magna aliqua ad ad non deserunt sunt.
+								</p>
+								<div class="${"mt-4 max-w-sm mx-auto sm:max-w-none sm:flex "}"><a href="${"#"}" class="${"px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-pred-900 hover:text-white sm:px-8"}">Get started
+									</a></div></div></div></a></div></div>
+			<div><div class="${"mt-0"}">
 					<div aria-hidden="${"true"}" class="${"pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"}"><div class="${"absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0"}"><div class="${"flex items-center space-x-6 lg:space-x-8"}"><div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><div class="${"w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100"}"><img src="${"./images/hero/hero-2.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
 									<div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-3.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></div>
 								<div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-1.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
@@ -5653,7 +5662,6 @@ var init_layout_svelte = __esm({
 									<div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-6.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></div></div></div></div></div></div></div></div></div>`;
     });
     ChevronDown = [[{ "fill-rule": "evenodd", "d": "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M19 9l-7 7-7-7" }]];
-    PhoneOutgoing = [[{ "d": "M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" }, { "d": "M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" }]];
     UserCircle = [[{ "fill-rule": "evenodd", "d": "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" }]];
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $$restProps = compute_rest_props($$props, ["src", "size", "solid", "class"]);
@@ -5710,30 +5718,29 @@ var init_layout_svelte = __esm({
     NewNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<nav aria-label="${"Top"}" class="${"relative z-20 bg-white shadow"}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1"}"><div class="${"h-16 flex items-center"}"><div class="${"navbar"}"><div class="${"flex-none"}"><a href="${"/"}"><span class="${"sr-only"}">Trip Support</span>
 						<img class="${"h-10 w-auto"}" src="${"./logos/logo-main.svg"}" alt="${"Trip Support"}"></a></div>
-				<div class="${"flex-1 sm:ml-8"}"><ul class="${"menu menu-horizontal p-0 flex lg:items-center"}"><li><a href="${"#"}" class="${"flex items-center text-tiny font-semibold text-rose-600 "}">Flight</a></li>
-						<li><a href="${"#"}" class="${"flex items-center text-tiny font-medium text-slate-900 hover:text-rose-600"}">Vacations</a></li>
-						<li><a href="${"#"}" class="${"flex items-center text-tiny font-medium text-slate-900 hover:text-rose-600"}">Hotels</a></li>
-						<li tabindex="${"0"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-rose-600 focus:outline-none"}">More
+				<div class="${"flex-1 sm:ml-8"}"><ul class="${"menu menu-horizontal p-0 flex lg:items-center"}"><li><a href="${"#"}" class="${"flex items-center text-tiny font-semibold text-pred-900 "}">Flight</a></li>
+						<li><a href="${"#"}" class="${"flex items-center text-tiny font-medium text-slate-900 hover:text-pred-900"}">Vacations</a></li>
+						<li><a href="${"#"}" class="${"flex items-center text-tiny font-medium text-slate-900 hover:text-pred-900"}">Hotels</a></li>
+						<li tabindex="${"0"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"}">More
 								${validate_component(Icon, "Icon").$$render($$result, {
         src: ChevronDown,
         class: "h-4 w-4 text-slate-900"
       }, {}, {})}</a>
-							<ul class="${"p-4 bg-white z-50 list-none rounded "}"><li><a href="${"#"}" class="${"text-sm font-medium hover:text-rose-600 text-slate-900 px-4 py-2"}"><span>Flight + Hotel</span></a></li>
-								<li><a href="${"#"}" class="${"text-sm font-medium hover:text-rose-600 text-slate-900 px-4 py-2"}">Explore</a></li>
+							<ul class="${"p-4 bg-white z-50 list-none rounded "}"><li><a href="${"#"}" class="${"text-sm font-medium hover:text-pred-900 text-slate-900 px-4 py-2"}"><span>Flight + Hotel</span></a></li>
+								<li><a href="${"#"}" class="${"text-sm font-medium hover:text-pred-900 text-slate-900 px-4 py-2"}">Explore</a></li>
 								<li><a href="${"#"}" class="${"text-sm font-medium text-slate-400 px-4 py-2"}">Explore</a></li></ul></li></ul></div>
-				<div class="${"flex-none"}"><ul class="${"menu menu-horizontal p-0 flex lg:items-center"}"><li><a href="${"#"}" class="${"text-slate-900 hover:text-rose-600 flex items-center"}"><img src="${"https://tailwindui.com/img/flags/flag-canada.svg"}" alt="${""}" class="${"w-5 h-auto block flex-shrink-0"}">
+				<div class="${"flex-none"}"><ul class="${"menu menu-horizontal p-0 flex lg:items-center"}"><li><a href="${"#"}" class="${"text-slate-900 hover:text-pred-900 flex items-center"}"><img src="${"https://tailwindui.com/img/flags/flag-canada.svg"}" alt="${""}" class="${"w-5 h-auto block flex-shrink-0"}">
 								<span class="${"text-tiny font-medium"}">Francais </span>
 								<span class="${"sr-only"}">, change language</span></a></li>
-						<li><a href="${"#"}" class="${"text-tiny font-medium text-slate-900 hover:text-rose-600"}">Support
+						<li><a href="${"#"}" class="${"text-tiny font-medium text-slate-900 hover:text-pred-900"}">Support
 							</a></li>
-						<li><a href="${"/"}" class="${"font-medium text-tiny"}"><button class="${"btn btn-outline btn-sm bg-white text-slate-900 capitalize hover:bg-rose-600 gap-2 hover:text-white "}">${validate_component(Icon, "Icon").$$render($$result, { src: PhoneOutgoing, class: "h-4 w-4" }, {}, {})}
-
-									Contact Us
-								</button></a></li>
+						<li><a href="${"#"}" class="${"text-slate-900 hover:text-pred-900 flex items-center"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-4"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
+								<span class="${"text-tiny font-medium"}">Contact us </span>
+								<span class="${"sr-only"}">Trip Support phone number</span></a></li>
 						<span class="${"mx-4 h-6 w-px bg-gray-200 lg:mx-6"}" aria-hidden="${"true"}"></span>
 
 						
-						<li tabindex="${"0"}" class="${"hidden"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-rose-600 focus:outline-none"}">${validate_component(Icon, "Icon").$$render($$result, { src: UserCircle, class: "h-7 w-7" }, {}, {})}</a>
+						<li tabindex="${"0"}" class="${"hidden"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"}">${validate_component(Icon, "Icon").$$render($$result, { src: UserCircle, class: "h-7 w-7" }, {}, {})}</a>
 
 							<ul class="${"menu bg-white text-slate-900 w-56 p-2 rounded-box drowndown-left"}"><li><a href="${"/"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"}"></path></svg>
 										Item 2
@@ -5745,7 +5752,7 @@ var init_layout_svelte = __esm({
 										Item 3
 									</a></li></ul></li>
 
-						<div class="${"dropdown dropdown-end"}"><div class="${"flex"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-rose-600 focus:outline-none"}">${validate_component(Icon, "Icon").$$render($$result, { src: UserCircle, class: "h-7 w-7" }, {}, {})}</a></div>
+						<div class="${"dropdown dropdown-end"}"><div class="${"flex"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"}">${validate_component(Icon, "Icon").$$render($$result, { src: UserCircle, class: "h-7 w-7" }, {}, {})}</a></div>
 
 							<ul tabindex="${"0"}" class="${"mt-3 p-2 shadow menu menu-compact dropdown-content bg-white text-slate-900 rounded-box w-96"}"><li><div class="${"flex pt-6"}"><p class="${"text-tiny"}">Members can access discounts, points and special features
 										</p></div></li>
@@ -5767,7 +5774,8 @@ var init_layout_svelte = __esm({
 	
 	${validate_component(NewNav, "NewNav").$$render($$result, {}, {}, {})}
 	
-	${validate_component(HeaderHero, "HeaderHero").$$render($$result, {}, {}, {})}
+	
+	${validate_component(HeaderHeroAlt, "HeaderHeroAlt").$$render($$result, {}, {}, {})}
 	</header>`;
     });
     FooterLogos = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5889,9 +5897,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-c3832bce.js";
-    js = ["pages/__layout.svelte-c3832bce.js", "chunks/vendor-69e2084f.js"];
-    css = ["assets/pages/__layout.svelte-2d5cb1ea.css"];
+    entry = "pages/__layout.svelte-fffa2bc0.js";
+    js = ["pages/__layout.svelte-fffa2bc0.js", "chunks/vendor-b0ebfa30.js"];
+    css = ["assets/pages/__layout.svelte-d59b194c.css"];
   }
 });
 
@@ -5939,8 +5947,8 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-12a8a9f0.js";
-    js2 = ["error.svelte-12a8a9f0.js", "chunks/vendor-69e2084f.js"];
+    entry2 = "error.svelte-37391ff4.js";
+    js2 = ["error.svelte-37391ff4.js", "chunks/vendor-b0ebfa30.js"];
     css2 = [];
   }
 });
@@ -5950,7 +5958,7 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var VacationsTab, FlightsTab, HotelsTab, HotelFlightTab, VacationsTabContent, FlightsTabContent, HotelsTabContent, HotelFlightTabContent, HorizontalTab, Booking, HomeSection1, HomeSection2, HomeSection3, Subscribe, Routes;
+var VacationsTab, FlightsTab, HotelsTab, HotelFlightTab, VacationsTabContent, FlightsTabContent, HotelsTabContent, HotelFlightTabContent, HorizontalTab, Booking, HomeSection1, HomeSection2, HomeSection3, Subscribe, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_587706cc();
@@ -6031,12 +6039,12 @@ var init_index_svelte = __esm({
 		${validate_component(HotelFlightTabContent, "HotelFlightTabContent").$$render($$result, {}, {}, {})}</div></div>`;
     });
     Booking = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<section class="${"relative z-10 mx-auto -mt-24 max-w-7xl px-4 pb-12 sm:px-6 lg:px-8"}" aria-labelledby="${"contact-heading"}"><div class="${"grid grid-cols-1 gap-y-20 lg:grid-cols-1 lg:gap-y-0 lg:gap-x-8"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}"><div class="${"relative flex-1 px-8 py-4 md:px-10"}">
+      return `<section class="${"relative z-10 mx-auto -mt-24 max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"grid grid-cols-1 gap-y-20 lg:grid-cols-1 lg:gap-y-0 lg:gap-x-8"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}"><div class="${"relative flex-1 px-8 py-4 md:px-10"}">
 				${validate_component(HorizontalTab, "HorizontalTab").$$render($$result, {}, {}, {})}
 				<div class="${"my-8"}"></div></div></div></div></section>`;
     });
     HomeSection1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"relative pt-16 pb-12 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-8"}">
+      return `<div class="${"relative py-12 px-4 sm:px-6 lg:pb-4 lg:pt-12 lg:px-8"}">
 
 	<div class="${"relative"}"><div class="${"mx-auto max-w-md px-4 sm:max-w-3xl sm:px-2 lg:max-w-7xl lg:px-8"}">
 			
@@ -6050,34 +6058,30 @@ var init_index_svelte = __esm({
 
 		
 
-		<div class="${"mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-4 lg:px-8"}"><div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-easyBooking.jpg"}" alt="${""}"></div>
+		<div class="${"mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"}"><div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-easyBooking.jpg"}" alt="${""}"></div>
 				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Easy &amp; Fast Booking</p>
 							<p class="${"mt-0 text-gray-500 text-tiny"}">Search, compare and book your tickets at the lowest fares. You pick the place and
 								we&#39;ll make it happen.
 							</p></a></div></div></div>
 
 			<div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-pieceOfMind.jpg"}" alt="${""}"></div>
-				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Easy &amp; Fast Booking</p>
-							<p class="${"mt-0 text-gray-500 text-tiny"}">Search, compare and book your tickets at the lowest fares. You pick the place and
-								we&#39;ll make it happen.
+				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">No stress, just peace of mind</p>
+							<p class="${"mt-0 text-gray-500 text-tiny"}">Every expense is given to you up front or paid later, so you can feel relaxed before
+								and after your trip.
 							</p></a></div></div></div>
 
 			
-			<div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-seamlessTravelExperience.jpg"}" alt="${""}"></div>
-				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Easy &amp; Fast Booking</p>
-							<p class="${"mt-0 text-gray-500 text-tiny"}">Search, compare and book your tickets at the lowest fares. You pick the place and
-								we&#39;ll make it happen.
-							</p></a></div></div></div>
+			
 
 			<div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-customerService.jpg"}" alt="${""}"></div>
-				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Easy &amp; Fast Booking</p>
-							<p class="${"mt-0 text-gray-500 text-tiny"}">Search, compare and book your tickets at the lowest fares. You pick the place and
-								we&#39;ll make it happen.
+				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Seamless travel experience</p>
+							<p class="${"mt-0 text-gray-500 text-tiny"}">Giving customers overall satisfaction by offering high quality personalized and
+								tailor-made packages
 							</p></a></div></div></div></div></div></div>`;
     });
     HomeSection2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg>
+<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg>
 
 			<main class="${"mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"}"><div class="${"sm:text-center lg:text-left"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flights Deals</span>
 						</h1>
@@ -6134,11 +6138,11 @@ var init_index_svelte = __esm({
 									</a></h3>
 								<p>$349</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div></div></div></main></div></div>
-	<div class="${"lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"}"><img class="${"h-56 max-w-7xl object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div>`;
+	<div class="${"lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"}"><img class="${"h-56 max-w-7xl object-cover sm:h-72 md:h-auto lg:w-full lg:h-auto"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div>`;
     });
     HomeSection3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:px-8"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Vacation Destinations</span>
+<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Vacation Destinations</span>
 				</h1>
 
 			<a href="${"#"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-blue-900 sm:block"}">Browse all Vacation Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
@@ -6171,14 +6175,33 @@ var init_index_svelte = __esm({
 		<div class="${"mt-6 sm:hidden"}"><a href="${"#"}" class="${"block text-sm font-semibold text-indigo-600 hover:text-indigo-500"}">Browse all categories<span aria-hidden="${"true"}">\u2192</span></a></div></div></div>`;
     });
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-slate-50"}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:px-8"}"><div class="${"bg-white shadow sm:rounded-lg"}"><div class="${"px-4 py-5 sm:p-6"}"><h3 class="${"text-lg leading-6 font-medium text-gray-900"}">Sign up today, we\u2019ve got deals to share!
-				</h3>
-				<div class="${"flex"}"><div class="${"mt-2 max-w-xl text-sm text-gray-500"}"><p>Members access great rates and savings. Sign up to get email updates when restrictions
-							change. And discover the best deals to get you there.
-						</p></div>
-					<div class="${"flex flex-row-reverse"}"><form class="${"mt-5 sm:flex sm:items-center"}"><div class="${"w-full sm:max-w-xs"}"><label for="${"email"}" class="${"sr-only"}">Email</label>
-								<input type="${"email"}" name="${"email"}" id="${"email"}" class="${"shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"}" placeholder="${"you@example.com"}"></div>
-							<button type="${"submit"}" class="${"mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"}">Subscribe</button></form></div></div></div></div></div></div>`;
+      return `<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto pt-4 pb-12 px-4 sm:pt-8 sm:py-12 sm:px-6 lg:px-2"}"><div class="${"bg-white shadow-lg sm:rounded-lg"}"><div class="${"mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"}"><div class="${"col-span-2 overflow-hidden "}"><div class="${"px-4 py-5 sm:p-6"}"><h3 class="${"text-lg leading-6 font-medium text-gray-900"}">Sign up today, we\u2019ve got deals to share!
+						</h3>
+						<div class="${"flex"}"><div class="${"mt-2 max-w-xl text-sm text-gray-500"}"><p>Members access great rates and savings. Sign up to get email updates when
+									restrictions change. And discover the best deals to get you there.
+								</p></div></div></div></div>
+
+				<div class="${"col-span-1 overflow-hidden "}"><div class="${"px-4 py-5 sm:p-6"}"><form class="${"mt-5 sm:flex sm:items-center"}"><div class="${"w-full sm:max-w-xs"}"><label for="${"email"}" class="${"sr-only"}">Email</label>
+								<input type="${"email"}" name="${"email"}" id="${"email"}" class="${"shadow-sm focus:ring-pblue-700 focus:border-pblue-700 block w-full sm:text-sm border-gray-300 rounded-md"}" placeholder="${"you@example.com"}"></div>
+							<button type="${"submit"}" class="${"mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-pblue-800 hover:bg-pblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"}">Subscribe</button></form></div></div></div></div></div></div>`;
+    });
+    PromoSection = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"bg-white"}"><div class="${"pt-32 overflow-hidden sm:pt-14"}"><div class="${"bg-pblue-900"}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"relative pt-48 pb-16 sm:pb-24"}"><div><h2 id="${"sale-heading"}" class="${"text-4xl font-extrabold tracking-tight text-white md:text-5xl"}">Vacation Deals
+							<br>
+							upto 50% off
+						</h2>
+						<div class="${"mt-6 text-base"}"><a href="${"#"}" class="${"font-semibold text-white"}">View our promotions<span aria-hidden="${"true"}">\u2192</span></a></div></div>
+
+					<div class="${"absolute -top-32 left-1/2 transform -translate-x-1/2 sm:top-6 sm:translate-x-0"}"><div class="${"ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-8"}"><div class="${"flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"}"><div class="${"flex-shrink-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-8.jpg"}" alt="${""}"></div>
+
+								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-2.jpg"}" alt="${""}"></div></div>
+							<div class="${"flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"}"><div class="${"flex-shrink-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-7.jpg"}" alt="${""}"></div>
+
+								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-6.jpg"}" alt="${""}"></div></div>
+							<div class="${"flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"}"><div class="${"flex-shrink-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-3.jpg"}" alt="${""}"></div>
+
+								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-5.jpg"}" alt="${""}"></div></div></div></div></div></div></div></div></div>`;
     });
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Booking, "Booking").$$render($$result, {}, {}, {})}
@@ -6186,7 +6209,9 @@ var init_index_svelte = __esm({
 ${validate_component(HomeSection2, "HomeSection2").$$render($$result, {}, {}, {})}
 ${validate_component(HomeSection3, "HomeSection3").$$render($$result, {}, {}, {})}
 ${validate_component(HomeSection1, "HomeSection1").$$render($$result, {}, {}, {})}
-${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
+${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}
+
+${validate_component(PromoSection, "PromoSection").$$render($$result, {}, {}, {})}`;
     });
   }
 });
@@ -6203,8 +6228,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-f9fd007f.js";
-    js3 = ["pages/index.svelte-f9fd007f.js", "chunks/vendor-69e2084f.js"];
+    entry3 = "pages/index.svelte-bf055567.js";
+    js3 = ["pages/index.svelte-bf055567.js", "chunks/vendor-b0ebfa30.js"];
     css3 = [];
   }
 });
@@ -6236,8 +6261,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-18e6b021.js";
-    js4 = ["pages/book-now-pay-later.svelte-18e6b021.js", "chunks/vendor-69e2084f.js"];
+    entry4 = "pages/book-now-pay-later.svelte-ff499a75.js";
+    js4 = ["pages/book-now-pay-later.svelte-ff499a75.js", "chunks/vendor-b0ebfa30.js"];
     css4 = [];
   }
 });
@@ -6269,8 +6294,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-30b0f240.js";
-    js5 = ["pages/flight-hotel.svelte-30b0f240.js", "chunks/vendor-69e2084f.js"];
+    entry5 = "pages/flight-hotel.svelte-c567c22a.js";
+    js5 = ["pages/flight-hotel.svelte-c567c22a.js", "chunks/vendor-b0ebfa30.js"];
     css5 = [];
   }
 });
@@ -6302,8 +6327,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_vacations_svelte();
-    entry6 = "pages/vacations.svelte-9be97a8c.js";
-    js6 = ["pages/vacations.svelte-9be97a8c.js", "chunks/vendor-69e2084f.js"];
+    entry6 = "pages/vacations.svelte-55cf35ef.js";
+    js6 = ["pages/vacations.svelte-55cf35ef.js", "chunks/vendor-b0ebfa30.js"];
     css6 = [];
   }
 });
@@ -6335,8 +6360,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_explore_svelte();
-    entry7 = "pages/explore.svelte-7dea6932.js";
-    js7 = ["pages/explore.svelte-7dea6932.js", "chunks/vendor-69e2084f.js"];
+    entry7 = "pages/explore.svelte-d5ddaea3.js";
+    js7 = ["pages/explore.svelte-d5ddaea3.js", "chunks/vendor-b0ebfa30.js"];
     css7 = [];
   }
 });
@@ -6368,8 +6393,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_flights_svelte();
-    entry8 = "pages/flights.svelte-7047d5ec.js";
-    js8 = ["pages/flights.svelte-7047d5ec.js", "chunks/vendor-69e2084f.js"];
+    entry8 = "pages/flights.svelte-0f6c0dd0.js";
+    js8 = ["pages/flights.svelte-0f6c0dd0.js", "chunks/vendor-b0ebfa30.js"];
     css8 = [];
   }
 });
@@ -6401,8 +6426,8 @@ var entry9, js9, css9;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_hotels_svelte();
-    entry9 = "pages/hotels.svelte-ea67fdd7.js";
-    js9 = ["pages/hotels.svelte-ea67fdd7.js", "chunks/vendor-69e2084f.js"];
+    entry9 = "pages/hotels.svelte-9028c5d2.js";
+    js9 = ["pages/hotels.svelte-9028c5d2.js", "chunks/vendor-b0ebfa30.js"];
     css9 = [];
   }
 });
@@ -8436,10 +8461,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/home/alberta.jpg", "images/home/california.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/vancouver.jpg", "logos/logo-main.svg"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/home/alberta.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/vancouver.jpg", "logos/logo-main.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-af31a4e3.js", "js": ["start-af31a4e3.js", "chunks/vendor-69e2084f.js"], "css": [] },
+    entry: { "file": "start-14482552.js", "js": ["start-14482552.js", "chunks/vendor-b0ebfa30.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

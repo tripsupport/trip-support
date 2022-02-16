@@ -1,8 +1,8 @@
-<div class="relative py-12 px-4 sm:px-6 lg:pb-4 lg:pt-12 lg:px-8">
+<div class="relative py-0 sm:py-12 px-4 sm:px-0 lg:pb-4 lg:pt-12 lg:px-8">
 	<!-- Trip Support Benefit Cards -->
 
 	<div class="relative">
-		<div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-2 lg:max-w-7xl lg:px-8">
+		<div class="sm:text-left lg:mx-auto max-w-md  sm:max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8">
 			<!-- <h2 class="font-sm uppercase text-rose-900 text-xs tracking-wider">Trip Support</h2> -->
 			<!-- <p class="mt-0 font-extrabold text-gray-900 text-3xl tracking-tight sm:text-4xl">
 				Travel Simplified!
@@ -11,13 +11,13 @@
 				We're focused on making travel better for everyone. To make the entire planning and booking
 				experience easy, simple and enjoyable from start to finish.
 			</p> -->
-			<div class="sm:text-center lg:text-left">
+			<div class="sm:text-left lg:text-left">
 				<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
-					<span class="block xl:inline text-rose-600">Your Trip,</span>
-					<span class="block text-blue-900 xl:inline">Our Support</span>
+					<span class="block xl:inline sm:inline text-rose-600">Your Trip,</span>
+					<span class="block text-blue-900 sm:inline xl:inline">Our Support</span>
 				</h1>
 				<p
-					class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose sm:mx-auto md:mt-3 md:text-md lg:mx-0"
+					class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:mx-auto md:mt-3 md:text-md lg:mx-0"
 				>
 					We're focused on making travel better for everyone. To make the entire planning and
 					booking experience easy, simple and enjoyable from start to finish.
@@ -30,12 +30,12 @@
 		<!-- /end card -->
 
 		<div
-			class="mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
+			class="sm:mx-auto mt-8 grid max-w-full gap-4 sm:max-w-7xl sm:flex sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
 		>
 			<div class="flex flex-col overflow-hidden ">
 				<div class="flex-shrink-0">
 					<img
-						class="h-80 w-full object-cover"
+						class="h-48 sm:h-80 w-full object-cover"
 						src="https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-easyBooking.jpg"
 						alt=""
 					/>
@@ -56,7 +56,7 @@
 			<div class="flex flex-col overflow-hidden ">
 				<div class="flex-shrink-0">
 					<img
-						class="h-80 w-full object-cover"
+						class="h-48 sm:h-80 w-full object-cover"
 						src="https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-pieceOfMind.jpg"
 						alt=""
 					/>
@@ -99,7 +99,7 @@
 			<div class="flex flex-col overflow-hidden ">
 				<div class="flex-shrink-0">
 					<img
-						class="h-80 w-full object-cover"
+						class="h-48 sm:h-80 w-full object-cover"
 						src="https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-customerService.jpg"
 						alt=""
 					/>

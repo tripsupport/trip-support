@@ -30,10 +30,12 @@
 					</p>
 
 					<div
-						class="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3"
+						class="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-3  sm:gap-y-10 lg:grid-cols-3"
 					>
 						<div class="relative group">
-							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
 								<img
 									src="images/home/alberta.jpg"
 									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
@@ -65,7 +67,9 @@
 						</div>
 
 						<div class="relative group">
-							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
 								<img
 									src="images/home/california.jpg"
 									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
@@ -96,7 +100,9 @@
 							<p class="mt-1 text-sm text-gray-500">Round trip</p>
 						</div>
 						<div class="relative group">
-							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
 								<img
 									src="images/home/montreal.jpg"
 									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
@@ -127,7 +133,9 @@
 							<p class="mt-1 text-sm text-gray-500">One-way</p>
 						</div>
 						<div class="relative group">
-							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
 								<img
 									src="images/home/newyork.jpg"
 									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
@@ -158,7 +166,9 @@
 							<p class="mt-1 text-sm text-gray-500">One-way</p>
 						</div>
 						<div class="relative group">
-							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
 								<img
 									src="images/home/singapore.jpg"
 									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
@@ -189,7 +199,9 @@
 							<p class="mt-1 text-sm text-gray-500">Round trip</p>
 						</div>
 						<div class="relative group">
-							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
 								<img
 									src="images/home/vancouver.jpg"
 									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
@@ -226,7 +238,7 @@
 	</div>
 	<div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 		<img
-			class="h-56 max-w-7xl object-cover sm:h-72 md:h-auto lg:w-full lg:h-auto"
+			class="hidden h-56 max-w-7xl object-cover sm:h-72 md:h-auto lg:block lg:w-full lg:h-auto"
 			src="images/home/flights-section.jpg"
 			alt=""
 		/>

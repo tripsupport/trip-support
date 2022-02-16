@@ -2,7 +2,7 @@
 	<div class="max-w-7xl mx-auto pt-4 pb-12 px-4 sm:pt-8 sm:py-12 sm:px-6 lg:px-2">
 		<div class="bg-white shadow-lg sm:rounded-lg">
 			<div
-				class="mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
+				class="lg:mx-auto mt-8 grid max-w-md gap-4 sm:max-w-full sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
 			>
 				<div class="col-span-2 overflow-hidden ">
 					<div class="px-4 py-5 sm:p-6">

@@ -20,16 +20,16 @@
 
 	<div class="mb-2 border-b border-gray-200 dark:border-gray-700">
 		<ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-			<li class="mr-3" role="presentation">
+			<li class="mr-3 sm:mr-6" role="presentation">
 				<VacationsTab />
 			</li>
-			<li class="mr-3" role="presentation">
+			<li class="mr-3 sm:mr-6" role="presentation">
 				<FlightsTab />
 			</li>
-			<li class="mr-3" role="presentation">
+			<li class="mr-3 sm:mr-6" role="presentation">
 				<HotelsTab />
 			</li>
-			<li class="mr-3" role="presentation">
+			<li class="mr-3 sm:mr-6" role="presentation">
 				<HotelFlightTab />
 			</li>
 		</ul>

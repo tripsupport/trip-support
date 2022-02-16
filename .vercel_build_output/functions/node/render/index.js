@@ -5650,7 +5650,7 @@ var init_layout_svelte = __esm({
 							<div class="${"relative px-4 py-16 sm:px-6 sm:py-24 lg:py-12 lg:px-8"}"><h1 class="${"text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-3xl"}"><span class="${"block text-white"}">Spring Break Vacations</span></h1>
 								<p class="${"mt-2 max-w-lg mx-auto text-md text-gray-100 sm:max-w-lg"}">Anim aute id magna aliqua ad ad non deserunt sunt.
 								</p>
-								<div class="${"mt-4 max-w-sm mx-auto sm:max-w-none sm:flex "}"><a href="${"#"}" class="${"px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-pred-900 hover:text-white sm:px-8"}">Get started
+								<div class="${"mt-4 max-w-sm mx-auto sm:max-w-none sm:flex "}"><a href="${"#"}" class="${"px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-pred-900 hover:text-white sm:px-8"}">Book Flight
 									</a></div></div></div></a></div></div>
 			<div><div class="${"mt-0"}">
 					<div aria-hidden="${"true"}" class="${"pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"}"><div class="${"absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0"}"><div class="${"flex items-center space-x-6 lg:space-x-8"}"><div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><div class="${"w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100"}"><img src="${"./images/hero/hero-2.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
@@ -5897,8 +5897,8 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-ad61f74d.js";
-    js = ["pages/__layout.svelte-ad61f74d.js", "chunks/vendor-b0ebfa30.js"];
+    entry = "pages/__layout.svelte-ee778f3d.js";
+    js = ["pages/__layout.svelte-ee778f3d.js", "chunks/vendor-b0ebfa30.js"];
     css = ["assets/pages/__layout.svelte-d7c39369.css"];
   }
 });
@@ -8466,7 +8466,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/home/alberta.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/vancouver.jpg", "logos/logo-main.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-04a5d12a.js", "js": ["start-04a5d12a.js", "chunks/vendor-b0ebfa30.js"], "css": [] },
+    entry: { "file": "start-ff56b558.js", "js": ["start-ff56b558.js", "chunks/vendor-b0ebfa30.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -1,5 +1,5 @@
 <button
-	class="inline-flex py-4 px-0 text-tiny font-medium text-slate-600 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 active"
+	class="inline-flex py-4 my-auto px-0 text-tiny font-medium text-slate-600 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 active"
 	id="flights-tab"
 	data-tabs-target="#flights"
 	type="button"

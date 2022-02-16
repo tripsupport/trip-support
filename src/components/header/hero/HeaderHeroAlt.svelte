@@ -3,7 +3,7 @@
 	<div class="pt-16 pb-24 sm:pt-24 sm:pb-12 lg:pt-32 lg:pb-12">
 		<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
 			<div class="sm:max-w-xl ml-2 mr-4">
-				<h1 class="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+				<h1 class="text-2xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl">
 					<span
 						class="inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text pb-2 text-transparent sm:pb-2"
 					>
@@ -13,14 +13,14 @@
 				<div class="grid grid-cols-3 gap-y-3 lg:gap-y-3 my-2 mb-6 sm:mb-2 md:my-0 ">
 					<div class="sm:col-span-2 col-span-full ">
 						<p
-							class="mt-0 text-base text-slate-600 sm:mt-1 sm:text-md sm:max-w-xl sm:mx-auto md:mt-1 md:text-md lg:mx-2"
+							class="mt-0 text-tiny text-slate-600 sm:mt-1 sm:text-md sm:max-w-xl sm:mx-auto md:mt-1 sm:text-md lg:mx-2"
 						>
 							Secure your ticket with a small deposit.
 							<br />
 							No Credit Check Needed.
 						</p>
 					</div>
-					<div class="col-span-1 my-auto">
+					<div class="col-span-full sm:col-span-1 my-auto">
 						<a
 							href="#"
 							class="flex items-center justify-center px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:px-8"

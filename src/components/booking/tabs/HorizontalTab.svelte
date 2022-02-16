@@ -29,7 +29,7 @@
 			<li class="mr-3 sm:mr-6" role="presentation">
 				<HotelsTab />
 			</li>
-			<li class="mr-3 sm:mr-6" role="presentation">
+			<li class="mr-3 sm:mr-0" role="presentation">
 				<HotelFlightTab />
 			</li>
 		</ul>

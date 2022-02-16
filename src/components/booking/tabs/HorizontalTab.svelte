@@ -16,20 +16,20 @@
 </script>
 
 <div>
-	<MobileTabDropdown />
+	<!-- <MobileTabDropdown /> -->
 
 	<div class="mb-2 border-b border-gray-200 dark:border-gray-700">
 		<ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-			<li class="mr-8" role="presentation">
+			<li class="mr-3" role="presentation">
 				<VacationsTab />
 			</li>
-			<li class="mr-8" role="presentation">
+			<li class="mr-3" role="presentation">
 				<FlightsTab />
 			</li>
-			<li class="mr-8" role="presentation">
+			<li class="mr-3" role="presentation">
 				<HotelsTab />
 			</li>
-			<li class="mr-8" role="presentation">
+			<li class="mr-3" role="presentation">
 				<HotelFlightTab />
 			</li>
 		</ul>

@@ -5,11 +5,15 @@
 	import HomeSection3 from '../components/home/HomeSection3.svelte';
 	import AlertCovid from '../components/home/AlertCovid.svelte';
 	import Subscribe from '../components/home/Subscribe.svelte';
+	import PromoSection from '../components/home/PromoSection.svelte';
+	import VacationsSection from '../components/home/VacationsSection.svelte';
 </script>
 
 <Booking />
 <!-- <AlertCovid /> -->
-<HomeSection1 />
 <HomeSection2 />
 <HomeSection3 />
+<HomeSection1 />
 <Subscribe />
+<!-- <VacationsSection /> -->
+<PromoSection />

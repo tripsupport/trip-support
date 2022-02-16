@@ -16,27 +16,27 @@
 				<div class="flex-1 sm:ml-8">
 					<ul class="menu menu-horizontal p-0 flex lg:items-center">
 						<li>
-							<a href="#" class="flex items-center text-tiny font-semibold text-rose-600 ">Flight</a
+							<a href="#" class="flex items-center text-tiny font-semibold text-pred-900 ">Flight</a
 							>
 						</li>
 						<li>
 							<a
 								href="#"
-								class="flex items-center text-tiny font-medium text-slate-900 hover:text-rose-600"
+								class="flex items-center text-tiny font-medium text-slate-900 hover:text-pred-900"
 								>Vacations</a
 							>
 						</li>
 						<li>
 							<a
 								href="#"
-								class="flex items-center text-tiny font-medium text-slate-900 hover:text-rose-600"
+								class="flex items-center text-tiny font-medium text-slate-900 hover:text-pred-900"
 								>Hotels</a
 							>
 						</li>
 						<li tabindex="0">
 							<a
 								href="/"
-								class="text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-rose-600 focus:outline-none"
+								class="text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"
 							>
 								More
 								<Icon src={ChevronDown} class="h-4 w-4 text-slate-900" />
@@ -45,14 +45,14 @@
 								<li>
 									<a
 										href="#"
-										class="text-sm font-medium hover:text-rose-600 text-slate-900  px-4 py-2"
+										class="text-sm font-medium hover:text-pred-900 text-slate-900  px-4 py-2"
 										><span>Flight + Hotel</span></a
 									>
 								</li>
 								<li>
 									<a
 										href="#"
-										class="text-sm font-medium hover:text-rose-600 text-slate-900  px-4 py-2"
+										class="text-sm font-medium hover:text-pred-900 text-slate-900  px-4 py-2"
 										>Explore</a
 									>
 								</li>
@@ -66,7 +66,7 @@
 				<div class="flex-none">
 					<ul class="menu menu-horizontal p-0 flex lg:items-center">
 						<li>
-							<a href="#" class="text-slate-900 hover:text-rose-600 flex items-center">
+							<a href="#" class="text-slate-900 hover:text-pred-900 flex items-center">
 								<img
 									src="https://tailwindui.com/img/flags/flag-canada.svg"
 									alt=""
@@ -77,19 +77,24 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="text-tiny font-medium text-slate-900 hover:text-rose-600">
+							<a href="#" class="text-tiny font-medium text-slate-900 hover:text-pred-900">
 								Support
 							</a>
 						</li>
 						<li>
-							<a href="/" class="font-medium text-tiny">
-								<button
-									class="btn btn-outline btn-sm bg-white  text-slate-900 capitalize hover:bg-rose-600 gap-2 hover:text-white "
+							<a href="#" class="text-slate-900 hover:text-pred-900 flex items-center">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-4"
+									viewBox="0 0 20 20"
+									fill="currentColor"
 								>
-									<Icon src={PhoneOutgoing} class="h-4 w-4" />
-
-									Contact Us
-								</button>
+									<path
+										d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+									/>
+								</svg>
+								<span class="text-tiny font-medium"> Contact us </span>
+								<span class="sr-only">Trip Support phone number</span>
 							</a>
 						</li>
 						<span class="mx-4 h-6 w-px bg-gray-200 lg:mx-6" aria-hidden="true" />
@@ -98,7 +103,7 @@
 						<li tabindex="0" class="hidden">
 							<a
 								href="/"
-								class="text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-rose-600 focus:outline-none"
+								class="text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"
 							>
 								<Icon src={UserCircle} class="h-7 w-7" />
 							</a>
@@ -168,7 +173,7 @@
 							<div class="flex">
 								<a
 									href="/"
-									class="text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-rose-600 focus:outline-none"
+									class="text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"
 								>
 									<Icon src={UserCircle} class="h-7 w-7" />
 								</a>

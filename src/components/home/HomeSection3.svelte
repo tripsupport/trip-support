@@ -15,7 +15,7 @@
   ```
 -->
 <div class="bg-white">
-	<div class="max-w-7xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8">
 		<div class="sm:flex sm:items-baseline sm:justify-between">
 			<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
 				<span class="block xl:inline">Vacation Destinations</span>

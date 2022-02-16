@@ -1,4 +1,4 @@
-<div class="relative pt-16 pb-12 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-8">
+<div class="relative py-12 px-4 sm:px-6 lg:pb-4 lg:pt-12 lg:px-8">
 	<!-- Trip Support Benefit Cards -->
 
 	<div class="relative">
@@ -30,7 +30,7 @@
 		<!-- /end card -->
 
 		<div
-			class="mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-4 lg:px-8"
+			class="mx-auto mt-8 grid max-w-md gap-4 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
 		>
 			<div class="flex flex-col overflow-hidden ">
 				<div class="flex-shrink-0">
@@ -64,10 +64,10 @@
 				<div class="flex flex-1 flex-col justify-between bg-white py-4">
 					<div class="flex-1">
 						<a href={'#'} class="block">
-							<p class="font-semibold text-slate-900 text-lg">Easy & Fast Booking</p>
+							<p class="font-semibold text-slate-900 text-lg">No stress, just peace of mind</p>
 							<p class="mt-0 text-gray-500 text-tiny">
-								Search, compare and book your tickets at the lowest fares. You pick the place and
-								we'll make it happen.
+								Every expense is given to you up front or paid later, so you can feel relaxed before
+								and after your trip.
 							</p>
 						</a>
 					</div>
@@ -75,7 +75,7 @@
 			</div>
 
 			<!-- <div class="flex flex-col overflow-hidden "> -->
-			<div class="flex flex-col overflow-hidden ">
+			<!-- <div class="flex flex-col overflow-hidden ">
 				<div class="flex-shrink-0">
 					<img
 						class="h-80 w-full object-cover"
@@ -94,7 +94,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="flex flex-col overflow-hidden ">
 				<div class="flex-shrink-0">
@@ -107,10 +107,10 @@
 				<div class="flex flex-1 flex-col justify-between bg-white py-4">
 					<div class="flex-1">
 						<a href={'#'} class="block">
-							<p class="font-semibold text-slate-900 text-lg">Easy & Fast Booking</p>
+							<p class="font-semibold text-slate-900 text-lg">Seamless travel experience</p>
 							<p class="mt-0 text-gray-500 text-tiny">
-								Search, compare and book your tickets at the lowest fares. You pick the place and
-								we'll make it happen.
+								Giving customers overall satisfaction by offering high quality personalized and
+								tailor-made packages
 							</p>
 						</a>
 					</div>

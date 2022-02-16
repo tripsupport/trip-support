@@ -1,0 +1,108 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-91c0442d.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/book-now-pay-later.svelte",
+      "src/routes/flight-hotel.svelte",
+      "src/routes/vacations.svelte",
+      "src/routes/explore.svelte",
+      "src/routes/flights.svelte",
+      "src/routes/hotels.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-8a31c06b.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-035b33f0.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-12a8a9f0.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-2924bfe1.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/book-now-pay-later.svelte": {
+    "file": "pages/book-now-pay-later.svelte-18e6b021.js",
+    "src": "src/routes/book-now-pay-later.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/flight-hotel.svelte": {
+    "file": "pages/flight-hotel.svelte-30b0f240.js",
+    "src": "src/routes/flight-hotel.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/vacations.svelte": {
+    "file": "pages/vacations.svelte-9be97a8c.js",
+    "src": "src/routes/vacations.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/explore.svelte": {
+    "file": "pages/explore.svelte-7dea6932.js",
+    "src": "src/routes/explore.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/flights.svelte": {
+    "file": "pages/flights.svelte-7047d5ec.js",
+    "src": "src/routes/flights.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "src/routes/hotels.svelte": {
+    "file": "pages/hotels.svelte-ea67fdd7.js",
+    "src": "src/routes/hotels.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-69e2084f.js"
+    ]
+  },
+  "_vendor-69e2084f.js": {
+    "file": "chunks/vendor-69e2084f.js"
+  }
+}

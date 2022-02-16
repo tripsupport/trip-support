@@ -5,12 +5,14 @@
 			<div class="sm:max-w-lg mx-4">
 				<h1 class="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
 					<span
-						class="inline bg-gradient-to-r from-slate-900 to-rose-800 bg-clip-text pb-2 text-transparent sm:pb-2"
+						class="inline bg-gradient-to-r from-blue-900 to-rose-600 bg-clip-text pb-2 text-transparent sm:pb-2"
 					>
 						Book Now Pay Later</span
 					>
 				</h1>
-				<p class="mt-4 prose max-w-prose text-lg text-slate-700">
+				<p
+					class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0"
+				>
 					Secure your ticket with a small deposit. No Credit Check Needed. We're focused on making
 					travel better for everyone. To make the entire planning and booking experience easy,
 					simple and enjoyable from start to finish.

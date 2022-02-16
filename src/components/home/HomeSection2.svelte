@@ -1,160 +1,234 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-	<div class="absolute inset-0">
-		<div class="bg-white h-1/3 sm:h-2/3" />
+<div class="relative bg-white overflow-hidden">
+	<div class="max-w-7xl mx-auto">
+		<div
+			class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+		>
+			<svg
+				class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+				fill="currentColor"
+				viewBox="0 0 100 100"
+				preserveAspectRatio="none"
+				aria-hidden="true"
+			>
+				<polygon points="50,0 100,0 50,100 0,100" />
+			</svg>
+
+			<main
+				class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+			>
+				<div class="sm:text-center lg:text-left">
+					<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+						<span class="block xl:inline">Popular Flights Deals</span>
+						<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
+					</h1>
+					<p
+						class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose sm:mx-auto md:mt-3 md:text-md lg:mx-0"
+					>
+						Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
+						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+					</p>
+
+					<div
+						class="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3"
+					>
+						<div class="relative group">
+							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+								<img
+									src="images/home/alberta.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white  backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="#">
+										<span aria-hidden="true" class="absolute inset-0" />
+										Alberta
+									</a>
+								</h3>
+								<p>$249</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+						</div>
+
+						<div class="relative group">
+							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+								<img
+									src="images/home/california.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="#">
+										<span aria-hidden="true" class="absolute inset-0" />
+										California
+									</a>
+								</h3>
+								<p>$540</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+						</div>
+						<div class="relative group">
+							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+								<img
+									src="images/home/montreal.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="#">
+										<span aria-hidden="true" class="absolute inset-0" />
+										Montreal
+									</a>
+								</h3>
+								<p>$199</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">One-way</p>
+						</div>
+						<div class="relative group">
+							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+								<img
+									src="images/home/newyork.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="#">
+										<span aria-hidden="true" class="absolute inset-0" />
+										New York
+									</a>
+								</h3>
+								<p>$129</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">One-way</p>
+						</div>
+						<div class="relative group">
+							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+								<img
+									src="images/home/singapore.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="#">
+										<span aria-hidden="true" class="absolute inset-0" />
+										Singapore
+									</a>
+								</h3>
+								<p>$789</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+						</div>
+						<div class="relative group">
+							<div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+								<img
+									src="images/home/vancouver.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="#">
+										<span aria-hidden="true" class="absolute inset-0" />
+										Vancouver
+									</a>
+								</h3>
+								<p>$349</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
 	</div>
-	<div class="relative max-w-7xl mx-auto">
-		<div class="text-center">
-			<h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-				From the blog
-			</h2>
-			<p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque,
-				ducimus sed.
-			</p>
-		</div>
-		<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Article </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium
-								praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
-							</p>
-						</a>
-					</div>
-					<div class="mt-6 flex items-center">
-						<div class="flex-shrink-0">
-							<a href="#">
-								<span class="sr-only">Roel Aufderehar</span>
-								<img
-									class="h-10 w-10 rounded-full"
-									src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-									alt=""
-								/>
-							</a>
-						</div>
-						<div class="ml-3">
-							<p class="text-sm font-medium text-gray-900">
-								<a href="#" class="hover:underline"> Roel Aufderehar </a>
-							</p>
-							<div class="flex space-x-1 text-sm text-gray-500">
-								<time datetime="2020-03-16"> Mar 16, 2020 </time>
-								<span aria-hidden="true"> &middot; </span>
-								<span> 6 min read </span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Video </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">
-								How to use search engine optimization to drive sales
-							</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores
-								porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio
-								animi., tempore temporibus quo laudantium.
-							</p>
-						</a>
-					</div>
-					<div class="mt-6 flex items-center">
-						<div class="flex-shrink-0">
-							<a href="#">
-								<span class="sr-only">Brenna Goyette</span>
-								<img
-									class="h-10 w-10 rounded-full"
-									src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-									alt=""
-								/>
-							</a>
-						</div>
-						<div class="ml-3">
-							<p class="text-sm font-medium text-gray-900">
-								<a href="#" class="hover:underline"> Brenna Goyette </a>
-							</p>
-							<div class="flex space-x-1 text-sm text-gray-500">
-								<time datetime="2020-03-10"> Mar 10, 2020 </time>
-								<span aria-hidden="true"> &middot; </span>
-								<span> 4 min read </span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Case Study </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">Improve your customer experience</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem
-								quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis
-								perferendis hic.
-							</p>
-						</a>
-					</div>
-					<div class="mt-6 flex items-center">
-						<div class="flex-shrink-0">
-							<a href="#">
-								<span class="sr-only">Daniela Metz</span>
-								<img
-									class="h-10 w-10 rounded-full"
-									src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-									alt=""
-								/>
-							</a>
-						</div>
-						<div class="ml-3">
-							<p class="text-sm font-medium text-gray-900">
-								<a href="#" class="hover:underline"> Daniela Metz </a>
-							</p>
-							<div class="flex space-x-1 text-sm text-gray-500">
-								<time datetime="2020-02-12"> Feb 12, 2020 </time>
-								<span aria-hidden="true"> &middot; </span>
-								<span> 11 min read </span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+		<img
+			class="h-56 max-w-7xl object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+			src="images/home/flights-section.jpg"
+			alt=""
+		/>
 	</div>
 </div>

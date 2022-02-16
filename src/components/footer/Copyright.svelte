@@ -1,6 +1,6 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-	<div class="py-10 md:flex md:items-center md:justify-between">
-		<div class="text-center md:text-left">
+	<div class="py-6 md:flex md:items-center md:justify-between border-t">
+		<div class="text-center md:text-left ">
 			<p class="text-sm text-gray-500">
 				&copy; 2022 Trip Support.
 				<span class="ml-6 border-l border-gray-200 pl-6" /> All Rights Reserved

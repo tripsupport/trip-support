@@ -1,4 +1,5 @@
-<div class="pt-2">
+<!-- Flights CONTENT -->
+<div class="pt-0">
 	<div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
 		<div class="sm:col-span-4">
 			<div
@@ -31,6 +32,28 @@
 				/>
 			</div>
 		</div>
+		<!-- <div
+					aria-hidden="true"
+					class="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full z-20"
+				>
+					<div
+						class="absolute transform -translate-y-1/2 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-[240px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-5 h-5 text-slate-500 mt-[5px] rotate-90"
+							viewBox="0 0 20 20"
+							fill="currentColor"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+					</div>
+				</div> -->
+
 		<div class="sm:col-span-4">
 			<div
 				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
@@ -187,4 +210,42 @@
 			</div>
 		</div>
 	</div>
+	<div
+		id="accordion-flush"
+		data-accordion="collapse"
+		data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+		data-inactive-classes="text-gray-500 dark:text-gray-400"
+	>
+		<h2 id="accordion-flush-heading-3">
+			<button
+				type="button"
+				class="flex items-center justify-between pt-5 font-medium text-left text-gray-500 dark:text-gray-400"
+				data-accordion-target="#more-options"
+				aria-expanded="false"
+				aria-controls="more-options"
+			>
+				<span class="text-sm">More options</span>
+				<svg
+					data-accordion-icon
+					class="w-6 h-6"
+					fill="currentColor"
+					viewBox="0 0 20 20"
+					xmlns="http://www.w3.org/2000/svg"
+					><path
+						fill-rule="evenodd"
+						d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+						clip-rule="evenodd"
+					/></svg
+				>
+			</button>
+		</h2>
+		<div id="more-options" class="hidden" aria-labelledby="more-options-heading-3">
+			<div class="py-3 ">
+				<p class=" text-slate-700 text-sm">
+					This is where we will input advanced options, users can select by flight name etc.
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- End of CONTENT -->

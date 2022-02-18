@@ -13,10 +13,10 @@
 
 				<a href={'#'} class="text-sm text-gray-500 hover:text-gray-600"> Privacy </a>
 
-				<a href={'#'} class="text-sm text-gray-500 hover:text-gray-600"> Terms </a>
+				<a href={'#'} class="text-sm text-gray-500 hover:text-gray-600"> Pay Later Terms </a>
 			</div>
 
-			<div class="ml-6 border-l border-gray-200 pl-6">
+			<!-- <div class="ml-6 border-l border-gray-200 pl-6">
 				<a href={'#'} class="flex items-center text-gray-500 hover:text-gray-600">
 					<img
 						src="https://tailwindui.com/img/flags/flag-canada.svg"
@@ -26,7 +26,7 @@
 					<span class="ml-3 text-sm"> Francais </span>
 					<span class="sr-only">location and currency</span>
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>

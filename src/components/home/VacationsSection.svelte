@@ -24,7 +24,7 @@
 
 					<a
 						href="#"
-						class="hidden text-sm font-semibold text-rose-600 hover:text-blue-900 sm:block"
+						class="hidden text-sm font-semibold text-pred-600 hover:text-blue-900 sm:block"
 						>Browse all Vacation Deals<span aria-hidden="true"> &rarr;</span></a
 					>
 				</div>

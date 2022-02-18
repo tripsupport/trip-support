@@ -1,4 +1,5 @@
-<div class="pt-2">
+<!-- Flights CONTENT -->
+<div class="pt-0">
 	<div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
 		<div class="sm:col-span-4">
 			<div
@@ -31,6 +32,28 @@
 				/>
 			</div>
 		</div>
+		<!-- <div
+					aria-hidden="true"
+					class="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full z-20"
+				>
+					<div
+						class="absolute transform -translate-y-1/2 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-[240px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-5 h-5 text-slate-500 mt-[5px] rotate-90"
+							viewBox="0 0 20 20"
+							fill="currentColor"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+					</div>
+				</div> -->
+
 		<div class="sm:col-span-4">
 			<div
 				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
@@ -130,30 +153,7 @@
 									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
 								/>
 								<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
-									Flexible Search (+/- 3days)
-								</label>
-							</div>
-
-							<div class="flex items-center">
-								<input
-									id="sms"
-									name="notification-method"
-									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-								/>
-								<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
-									Non-stop flights only
-								</label>
-							</div>
-							<div class="flex items-center">
-								<input
-									id="sms"
-									name="notification-method"
-									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-								/>
-								<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
-									Airline Specific
+									All-inclusive only
 								</label>
 							</div>
 						</div>
@@ -188,3 +188,4 @@
 		</div>
 	</div>
 </div>
+<!-- End of CONTENT -->

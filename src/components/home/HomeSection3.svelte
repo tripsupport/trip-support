@@ -22,7 +22,7 @@
 				<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
 			</h1>
 
-			<a href="#" class="hidden text-sm font-semibold text-rose-600 hover:text-blue-900 sm:block"
+			<a href="#" class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
 				>Browse all Vacation Deals<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>

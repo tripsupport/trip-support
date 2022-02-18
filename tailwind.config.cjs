@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite/**/*.js'],
   safelist: [
     'w-64',
     'w-1/2',
@@ -17,6 +17,7 @@ module.exports = {
     'dark:bg-opacity-80'
   ],
   theme: {
+    active: 'currentColor',
     interFontFeatures: {
 			default: ['calt', 'liga', 'kern'],
 			numeric: ['tnum', 'salt', 'ss02']

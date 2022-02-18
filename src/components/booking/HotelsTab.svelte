@@ -1,0 +1,25 @@
+<li class="mr-2" role="presentation">
+	<button
+		class="inline-flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
+		id="hotels-tab"
+		data-tabs-target="#hotels"
+		type="button"
+		role="tab"
+		aria-controls="hotels"
+		aria-selected="false"
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			class="-ml-0.5 mr-2 h-5 w-5"
+			viewBox="0 0 20 20"
+			fill="currentColor"
+		>
+			<path
+				fill-rule="evenodd"
+				d="M21.61 21.41l-.47-1.1a.49.49 0 00-.16-.2.4.4 0 00-.23-.06h-.84V7.4a.4.4 0 00-.12-.28.38.38 0 00-.29-.13h-3.75V2.41a.4.4 0 00-.12-.28.38.38 0 00-.29-.13H4.5a.38.38 0 00-.3.13.4.4 0 00-.11.28v17.64h-.84a.4.4 0 00-.23.07.49.49 0 00-.16.18l-.47 1.11a.44.44 0 00-.03.2c0 .08.03.14.07.2a.38.38 0 00.33.2h18.48a.38.38 0 00.33-.2.36.36 0 00.07-.2c0-.06 0-.13-.03-.2zM9.09 17h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 12.77h-2.5V14.5h2.5v5.27zm0-7.77h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 10h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+		Hotels
+	</button>
+</li>

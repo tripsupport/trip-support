@@ -34,7 +34,7 @@
 						>
 							<div class="w-full h-auto rounded-lg overflow-hidden">
 								<img
-									src="./images/hero/hero-2.jpg"
+									src="images/home/beach-party.jpg"
 									alt=""
 									class="w-full h-full object-center object-cover"
 								/>

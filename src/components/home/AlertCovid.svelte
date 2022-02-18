@@ -3,22 +3,23 @@
 	import { Icon, Exclamation } from 'svelte-hero-icons';
 </script>
 
-<!-- Trip Support Benefit Cards -->
-<div class="bg-gray-900 relative z-10">
-	<div
-		class="sm:mx-auto grid max-w-md gap-4 sm:max-w-lg sm:px-8 lg:max-w-7xl lg:grid-cols-1 lg:px-0 "
-	>
-		<div class="alert bg-gray-900 rounded-none shadow-none ">
+<nav aria-label="Top" class="relative z-10">
+	<!-- Top navigation -->
+	<div class="bg-gray-900">
+		<div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
 			<div class="hidden sm:flex">
-				<Icon src={Exclamation} class="h-6 text-slate-50 w-5" />
-				<span class="text-sm "
+				<Icon src={Exclamation} class="h-6 text-slate-50 w-5 mr-2" />
+				<span class="text-sm my-auto"
 					>All air passengers must comply with COVID-19 travel and vaccination requirements imposed
 					by the Government of Canada.</span
 				>
 			</div>
-			<div class="flex-none">
-				<button class="btn btn-sm btn-ghost text-xz">Check Coivd-19 Restrictions</button>
+
+			<div class=" lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+				<a href="#" class="text-sm font-medium text-white hover:text-gray-100"
+					>Check Covid-19 Restrictions</a
+				>
 			</div>
 		</div>
 	</div>
-</div>
+</nav>

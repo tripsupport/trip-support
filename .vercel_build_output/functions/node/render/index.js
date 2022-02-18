@@ -5939,7 +5939,7 @@ var init__ = __esm({
     init_layout_svelte();
     entry = "pages/__layout.svelte-41ca5833.js";
     js = ["pages/__layout.svelte-41ca5833.js", "chunks/vendor-146651ab.js"];
-    css = ["assets/pages/__layout.svelte-791222b5.css"];
+    css = ["assets/pages/__layout.svelte-ea5da069.css"];
   }
 });
 
@@ -6024,7 +6024,7 @@ var init_index_svelte = __esm({
     });
     FlightsTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"pt-0"}"><div class="${"mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12"}"><div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Leaving from?</label>
+<div class="${"pt-0"}"><div class="${"-mt-2 sm:mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12"}"><div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Leaving from?</label>
 				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
 
 				<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"YYZ-Toronto Lester B. Pearson Intl, Canada"}"></div></div>
@@ -6115,7 +6115,7 @@ var init_index_svelte = __esm({
 	</div>`;
     });
     TopTabFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"grid grid-cols-6 gap-4 mt-5"}"><div class="${"col-start-1 col-end-3 my-auto"}"><ul class="${"flex flex-wrap"}"><li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-white bg-pblue-700 rounded-full active"}" aria-current="${"page"}">Roundtrip</a></li>
+      return `<div class="${"grid sm:grid-cols-6 grid-cols-12 gap-4 mt-5"}"><div class="${"col-start-1 sm:col-end-3 col-end-12 my-auto"}"><ul class="${"flex flex-wrap"}"><li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-white bg-pblue-700 rounded-full active"}" aria-current="${"page"}">Roundtrip</a></li>
 			<li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-gray-500 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"}">One-way</a></li>
 			<li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-gray-500 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"}">Multi-city</a></li></ul></div>
 	<div class="${"col-start-5 col-end-5 col-span-1 my-auto"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownTravellersLink"}" data-dropdown-toggle="${"dropdownTravellers"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Traveller(s) <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
@@ -6380,8 +6380,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-739a466b.js";
-    js3 = ["pages/index.svelte-739a466b.js", "chunks/vendor-146651ab.js"];
+    entry3 = "pages/index.svelte-1d2f8389.js";
+    js3 = ["pages/index.svelte-1d2f8389.js", "chunks/vendor-146651ab.js"];
     css3 = [];
   }
 });
@@ -8616,7 +8616,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/home/alberta.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/vancouver.jpg", "logo.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-137766af.js", "js": ["start-137766af.js", "chunks/vendor-146651ab.js"], "css": [] },
+    entry: { "file": "start-c56b5e03.js", "js": ["start-c56b5e03.js", "chunks/vendor-146651ab.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

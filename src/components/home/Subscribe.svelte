@@ -49,7 +49,7 @@
 <!-- Subscribe -->
 <div class="relative overflow-hidden">
 	<!-- Decorative background image and gradient -->
-	<div aria-hidden="true" class="absolute inset-0">
+	<!-- <div aria-hidden="true" class="absolute inset-0">
 		<div class="absolute inset-0 max-w-7xl mx-auto overflow-hidden xl:px-0 rounded-lg">
 			<img
 				src="images/home/spring-break2.jpg"
@@ -59,17 +59,17 @@
 		</div>
 		<div class="absolute inset-0 bg-white bg-opacity-75" />
 		<div class="absolute inset-0 bg-gradient-to-t from-white via-white" />
-	</div>
+	</div> -->
 
 	<!-- Sale -->
 	<section
 		aria-labelledby="sale-heading"
-		class="relative max-w-7xl mx-auto pt-32 px-4 flex flex-col items-center text-center sm:px-6 lg:px-8"
+		class="relative max-w-7xl mx-auto pt-0 px-4 flex flex-col items-center text-center sm:px-6 lg:px-8"
 	>
-		<div class="max-w-xl mx-auto lg:max-w-3xl">
+		<div class="max-w-7xl mx-auto ">
 			<aside
 				id="revue-embed"
-				class="p-4 my-8 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+				class="p-4 mt-2 mb-12 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
 			>
 				<h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">
 					Sign up today, we’ve got deals to share!

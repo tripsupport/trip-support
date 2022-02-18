@@ -1,5 +1,5 @@
-<div class="grid grid-cols-6 gap-4 mt-5">
-	<div class="col-start-1 col-end-3 my-auto">
+<div class="grid sm:grid-cols-6 grid-cols-12 gap-4 mt-5">
+	<div class="col-start-1 sm:col-end-3 col-end-12 my-auto">
 		<ul class="flex flex-wrap">
 			<li class="mr-2">
 				<a

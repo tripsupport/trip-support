@@ -5623,43 +5623,11 @@ var layout_svelte_exports = {};
 __export(layout_svelte_exports, {
   default: () => _layout
 });
-var CovidAlert, HeaderHeroAlt, ChevronDown, UserCircle, Icon, NewNav, Header, FooterLogos, Copyright, Footer, _layout;
+var Exclamation, Icon, AlertCovid, HeaderHeroAlt, MobMenuBtn, Logo, NavMenuItems, MobileMenuItems, ProfileDropdown, RightNavMenuItems, MainNav, Header, FooterLogos, Copyright, FooterLinks, Footer, _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
     init_index_587706cc();
-    CovidAlert = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `
-<div class="${"bg-gray-900 relative z-20"}"><div class="${"max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8 py-7"}"><p class="${"flex-1 text-xz text-white lg:flex-none px-3"}">COVID-19 Travel Guide: Everything you need to know to travel smart and stay safe.
-		</p></div></div>`;
-    });
-    HeaderHeroAlt = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `
-<div class="${"relative bg-gray-50 pt-0 pb-0 px-4 sm:px-0 lg:pt-0 lg:pb-0 lg:px-0"}"><div class="${"pt-16 pb-24 sm:pt-24 sm:pb-12 lg:pt-32 lg:pb-12"}"><div class="${"relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static"}"><div class="${"sm:max-w-xl ml-2 mr-4"}"><h1 class="${"text-2xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl"}"><span class="${"inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text pb-2 text-transparent sm:pb-2"}">Book Now Pay Later</span></h1>
-				<div class="${"grid grid-cols-3 gap-y-3 lg:gap-y-3 my-2 mb-6 sm:mb-2 md:my-0 "}"><div class="${"sm:col-span-2 col-span-full "}"><p class="${"mt-0 text-tiny text-slate-600 sm:mt-1 sm:text-md sm:max-w-xl sm:mx-auto md:mt-1 sm:text-md lg:mx-2"}">Secure your ticket with a small deposit.
-							<br>
-							No Credit Check Needed.
-						</p></div>
-					<div class="${"col-span-full sm:col-span-1 my-auto"}"><a href="${"#"}" class="${"flex items-center justify-center px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:px-8"}">Learn more
-						</a></div></div>
-				<div class="${"hidden sm:block grid grid-cols-1 gap-y-0 lg:gap-y-0 my-6"}"><a href="${"vacations"}">
-						<div class="${"relative shadow-xl sm:rounded-2xl sm:overflow-hidden"}"><div class="${"absolute inset-0"}"><img class="${"h-full w-full object-cover"}" src="${"images/home/spring-break.jpg"}" alt="${"People working on laptops"}">
-								<div class="${"absolute inset-0 bg-pblue-500 mix-blend-multiply"}"></div></div>
-							<div class="${"relative px-4 py-16 sm:px-6 sm:py-24 lg:py-12 lg:px-8"}"><h1 class="${"text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-3xl"}"><span class="${"block text-white"}">Spring Break Vacations</span></h1>
-								<p class="${"mt-2 max-w-lg mx-auto text-md text-gray-100 sm:max-w-lg"}">Anim aute id magna aliqua ad ad non deserunt sunt.
-								</p>
-								<div class="${"mt-4 max-w-sm mx-auto sm:max-w-none sm:flex "}"><a href="${"#"}" class="${"px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-blue-900 bg-white hover:bg-pred-900 hover:text-white sm:px-8"}">Book Flight
-									</a></div></div></div></a></div></div>
-			<div><div class="${"mt-0"}">
-					<div aria-hidden="${"true"}" class="${"pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"}"><div class="${"absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0"}"><div class="${"flex items-center space-x-6 lg:space-x-8"}"><div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><div class="${"w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100"}"><img src="${"./images/hero/hero-2.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
-									<div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-3.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></div>
-								<div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-1.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
-									<div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-1.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
-									<div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-4.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></div>
-								<div class="${"flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8"}"><div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-5.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
-									<div class="${"w-44 h-64 rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-6.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></div></div></div></div></div></div></div></div></div>`;
-    });
-    ChevronDown = [[{ "fill-rule": "evenodd", "d": "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M19 9l-7 7-7-7" }]];
-    UserCircle = [[{ "fill-rule": "evenodd", "d": "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" }]];
+    Exclamation = [[{ "fill-rule": "evenodd", "d": "M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" }]];
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $$restProps = compute_rest_props($$props, ["src", "size", "solid", "class"]);
       let { src = [] } = $$props;
@@ -5712,80 +5680,151 @@ var init_layout_svelte = __esm({
         <path${spread([escape_object(att)], {})}></path>`;
       })}</svg>`}` : ``}`;
     });
-    NewNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<nav aria-label="${"Top"}" class="${"relative z-20 bg-white shadow"}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1"}"><div class="${"h-16 flex items-center"}"><div class="${"navbar"}"><div class="${"flex-none"}"><a href="${"/"}"><span class="${"sr-only"}">Trip Support</span>
-						<img class="${"h-10 w-auto"}" src="${"./logos/logo-main.svg"}" alt="${"Trip Support"}"></a></div>
-				<div class="${"flex-1 sm:ml-8"}"><ul class="${"menu menu-horizontal p-0 flex lg:items-center"}"><li><a href="${"#"}" class="${"flex items-center text-tiny font-semibold text-pred-900 "}">Flight</a></li>
-						<li><a href="${"#"}" class="${"flex items-center text-tiny font-medium text-slate-900 hover:text-pred-900"}">Vacations</a></li>
-						<li><a href="${"#"}" class="${"flex items-center text-tiny font-medium text-slate-900 hover:text-pred-900"}">Hotels</a></li>
-						<li tabindex="${"0"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"}">More
-								${validate_component(Icon, "Icon").$$render($$result, {
-        src: ChevronDown,
-        class: "h-4 w-4 text-slate-900"
-      }, {}, {})}</a>
-							<ul class="${"p-4 bg-white z-50 list-none rounded "}"><li><a href="${"#"}" class="${"text-sm font-medium hover:text-pred-900 text-slate-900 px-4 py-2"}"><span>Flight + Hotel</span></a></li>
-								<li><a href="${"#"}" class="${"text-sm font-medium hover:text-pred-900 text-slate-900 px-4 py-2"}">Explore</a></li>
-								<li><a href="${"#"}" class="${"text-sm font-medium text-slate-400 px-4 py-2"}">Explore</a></li></ul></li></ul></div>
-				<div class="${"flex-none"}"><ul class="${"menu menu-horizontal p-0 flex lg:items-center"}"><li><a href="${"#"}" class="${"text-slate-900 hover:text-pred-900 flex items-center"}"><img src="${"https://tailwindui.com/img/flags/flag-canada.svg"}" alt="${""}" class="${"w-5 h-auto block flex-shrink-0"}">
-								<span class="${"text-tiny font-medium"}">Francais </span>
-								<span class="${"sr-only"}">, change language</span></a></li>
-						<li><a href="${"#"}" class="${"text-tiny font-medium text-slate-900 hover:text-pred-900"}">Support
-							</a></li>
-						<li><a href="${"#"}" class="${"text-slate-900 hover:text-pred-900 flex items-center"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-4"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-								<span class="${"text-tiny font-medium"}">Contact us </span>
-								<span class="${"sr-only"}">Trip Support phone number</span></a></li>
-						<span class="${"mx-4 h-6 w-px bg-gray-200 lg:mx-6"}" aria-hidden="${"true"}"></span>
+    AlertCovid = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"bg-gray-900 relative z-10"}"><div class="${"sm:mx-auto grid max-w-md gap-4 sm:max-w-lg sm:px-8 lg:max-w-7xl lg:grid-cols-1 lg:px-0 "}"><div class="${"alert bg-gray-900 rounded-none shadow-none "}"><div class="${"hidden sm:flex"}">${validate_component(Icon, "Icon").$$render($$result, {
+        src: Exclamation,
+        class: "h-6 text-slate-50 w-5"
+      }, {}, {})}
+				<span class="${"text-sm "}">All air passengers must comply with COVID-19 travel and vaccination requirements imposed
+					by the Government of Canada.</span></div>
+			<div class="${"flex-none"}"><button class="${"btn btn-sm btn-ghost text-xz"}">Check Coivd-19 Restrictions</button></div></div></div></div>`;
+    });
+    HeaderHeroAlt = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"relative bg-gray-50 sm:py-36 py-8 -mt-16 px-4 sm:px-0 "}"><div class="${"py-16 lg:py-0"}"><div class="${"relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static"}"><div class="${"sm:max-w-xl ml-2 mr-4 pb-0"}"><h1 class="${"text-2xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl"}"><span class="${"inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text pb-2 text-transparent sm:pb-2"}">Book Now Pay Later</span></h1>
 
-						
-						<li tabindex="${"0"}" class="${"hidden"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"}">${validate_component(Icon, "Icon").$$render($$result, { src: UserCircle, class: "h-7 w-7" }, {}, {})}</a>
+				<p class="${"my-4 text-tiny text-slate-600 sm:text-md sm:max-w-xl sm:mx-auto sm:text-md "}">Secure your ticket with a small deposit. No Credit Check Needed.
+				</p>
 
-							<ul class="${"menu bg-white text-slate-900 w-56 p-2 rounded-box drowndown-left"}"><li><a href="${"/"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"}"></path></svg>
-										Item 2
-									</a></li>
-								<li><a href="${"/"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"}"></path></svg>
-										<div class="${"card-body"}"><h3 class="${"card-title"}">Card title!</h3>
-											<p>you can use any element as a dropdown.</p></div></a></li>
-								<li><a href="${"/"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"}"></path></svg>
-										Item 3
-									</a></li></ul></li>
+				<a href="${"#"}" class="${"max-w-smflex items-center justify-center px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:px-8 "}">Learn more
+				</a></div>
+			<div class="${"hidden sm:block"}"><div class="${"mt-0"}">
+					<div aria-hidden="${"true"}" class="${"pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"}"><div class="${"absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0"}"><div class="${"w-full h-auto rounded-lg overflow-hidden"}"><img src="${"./images/hero/hero-2.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div></div></div></div></div></div></div></div>`;
+    });
+    MobMenuBtn = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<button type="${"button"}" class="${"inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"}" aria-controls="${"mobile-menu"}" aria-expanded="${"false"}"><span class="${"sr-only"}">Open main menu</span>
+	
+	<svg class="${"block h-6 w-6"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" aria-hidden="${"true"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M4 6h16M4 12h16M4 18h16"}"></path></svg>
+	
+	<svg class="${"hidden h-6 w-6"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" aria-hidden="${"true"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M6 18L18 6M6 6l12 12"}"></path></svg></button>`;
+    });
+    Logo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"flex-shrink-0 flex items-center"}">
+	
+	<img class="${"h-9 sm:h-11 w-auto"}" src="${"logo.svg"}" alt="${"Trip Support Logo"}"></div>`;
+    });
+    NavMenuItems = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"hidden md:ml-6 md:flex md:space-x-8"}"><a href="${"#"}" class="${"text-tiny font-semibold text-rose-600 inline-flex items-center px-1 pt-1 sm:ml-4"}">Flights
+	</a>
+	<a href="${"#"}" class="${"inline-flex items-center px-1 pt-1 text-tiny font-medium text-slate-900 hover:text-rose-600"}">Vacations
+	</a>
+	<a href="${"#"}" class="${"inline-flex items-center px-1 pt-1 text-tiny font-medium text-slate-900 hover:text-rose-600"}">Hotels
+	</a>
+	<a href="${"#"}" class="${"inline-flex items-center px-1 pt-1 text-tiny font-medium text-slate-900 hover:text-rose-600"}">More
+		
+		<svg class="${"text-slate-600 h-5 w-5 group-hover:text-rose-600"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></a>
+	
+	<div class="${"relative sm:hidden"}">
+		<div class="${"absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen sm:w-60 max-w-md sm:px-0"}"><div class="${"rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"}"><div class="${"relative grid gap-6 bg-white px-2 py-4 sm:gap-5 sm:p-8"}"><a href="${"#"}" class="${"-m-3 p-3 flex items-start text-slate-900 hover:text-rose-600 text-tiny"}">Flight + Hotel
+					</a>
 
-						<div class="${"dropdown dropdown-end"}"><div class="${"flex"}"><a href="${"/"}" class="${"text-slate-900 group bg-white rounded-md inline-flex items-center text-tiny font-medium hover:text-pred-900 focus:outline-none"}">${validate_component(Icon, "Icon").$$render($$result, { src: UserCircle, class: "h-7 w-7" }, {}, {})}</a></div>
+					<a href="${"#"}" class="${"-m-3 p-3 flex items-start text-slate-900 hover:text-rose-600 text-tiny"}">Things to do
+					</a>
 
-							<ul tabindex="${"0"}" class="${"mt-3 p-2 shadow menu menu-compact dropdown-content bg-white text-slate-900 rounded-box w-96"}"><li><div class="${"flex pt-6"}"><p class="${"text-tiny"}">Members can access discounts, points and special features
-										</p></div></li>
-								<li><div class="${"flex pt-0 min-w-full"}"><button class="${"btn btn-sm min-w-full"}">Sign In</button></div></li>
-								<li><div class="${"flex pt-4"}"><p class="${"text-tiny"}">Not a member?</p>
-										<a href="${"/"}" class="${"text-sky-700 text-tiny font-semibold"}">Create a free account</a></div></li>
-								<li class="${"hidden"}"><div class="${"flex pt-0 min-w-full"}"><button class="${"btn btn-sm bg-white border-slate-900 min-w-full hover:bg-white hover:text-slate-900 text-slate-900"}">Register</button></div></li></ul></div>
-						
-						<div class="${"dropdown dropdown-end"}"><label tabindex="${"0"}" class="${"btn btn-ghost btn-circle avatar"}"><div class="${"w-10 rounded-full"}"><img src="${"https://api.lorem.space/image/face?hash=33791"}" alt="${"profile image"}"></div></label>
-							<ul tabindex="${"0"}" class="${"mt-3 p-2 shadow menu menu-compact dropdown-content bg-white text-slate-900 rounded-box w-52"}"><li><a href="${"/"}" class="${"justify-between"}">Profile
-										</a></li>
-								<li><a href="${"/"}">Settings</a></li>
-								<li><a href="${"/"}">Logout</a></li></ul></div></ul></div></div></div></div></nav>`;
+					<a href="${"#"}" class="${"-m-3 p-3 flex items-start text-slate-900 hover:text-rose-600 text-tiny"}">Explore
+					</a>
+					<a href="${"#"}" class="${"-m-3 p-3 flex items-start text-gray-400 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none pointer-events-none text-tiny"}">Cruises
+					</a></div></div></div></div>
+
+	
+	<div class="${"hidden bg-white text-tiny z-50 list-none divide-y divide-gray-100 rounded shadow w-40"}" id="${"dropdown"}"><ul class="${"py-1"}" aria-labelledby="${"dropdown"}"><li><a href="${"#"}" class="${"text-sm font-medium hover:bg-gray-100 hover:text-rose-600 text-slate-900 block px-4 py-2"}"><span>Flight + Hotel</span></a></li>
+			<li><a href="${"#"}" class="${"text-sm font-medium hover:bg-gray-100 hover:text-rose-600 text-slate-900 block px-4 py-2"}">Explore</a></li></ul>
+		<div class="${"px-4 py-3"}"><span class="${"block text-sm text-slate-400"}">Cruises</span></div></div></div>`;
+    });
+    MobileMenuItems = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"hidden md:hidden"}" id="${"mobile-menu"}"><div class="${"pt-2 pb-3 space-y-1"}">
+		<a href="${"#"}" class="${"bg-pblue-50 border-pblue-500 text-pblue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"}">Dashboard</a>
+		<a href="${"#"}" class="${"border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"}">Team</a>
+		<a href="${"#"}" class="${"border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"}">Projects</a>
+		<a href="${"#"}" class="${"border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"}">Calendar</a></div>
+	<div class="${"pt-4 pb-3 border-t border-gray-200"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"flex-shrink-0"}"><img class="${"h-10 w-10 rounded-full"}" src="${"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"}" alt="${""}"></div>
+			<div class="${"ml-3"}"><div class="${"text-base font-medium text-gray-800"}">Tom Cook</div>
+				<div class="${"text-sm font-medium text-gray-500"}">tom@example.com</div></div>
+			<button type="${"button"}" class="${"ml-auto flex-shrink-0 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}"><span class="${"sr-only"}">View notifications</span>
+				
+				<svg class="${"h-6 w-6"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" aria-hidden="${"true"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"}"></path></svg></button></div>
+		<div class="${"mt-3 space-y-1"}"><a href="${"#"}" class="${"block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"}">Your Profile</a>
+			<a href="${"#"}" class="${"block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"}">Settings</a>
+			<a href="${"#"}" class="${"block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"}">Sign out</a></div></div></div>`;
+    });
+    ProfileDropdown = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"ml-3 relative"}"><div><button type="${"button"}" class="${"bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}" id="${"user-menu-button"}" aria-expanded="${"false"}" aria-haspopup="${"true"}"><span class="${"sr-only"}">Open user menu</span>
+			<img class="${"h-8 w-8 rounded-full"}" src="${"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"}" alt="${""}"></button></div>
+
+	
+	
+	<div class="${"hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"}" role="${"menu"}" aria-orientation="${"vertical"}" aria-labelledby="${"user-menu-button"}" tabindex="${"-1"}">
+		<a href="${"#"}" class="${"block px-4 py-2 text-sm text-gray-700"}" role="${"menuitem"}" tabindex="${"-1"}" id="${"user-menu-item-0"}">Your Profile</a>
+		<a href="${"#"}" class="${"block px-4 py-2 text-sm text-gray-700"}" role="${"menuitem"}" tabindex="${"-1"}" id="${"user-menu-item-1"}">Settings</a>
+		<a href="${"#"}" class="${"block px-4 py-2 text-sm text-gray-700"}" role="${"menuitem"}" tabindex="${"-1"}" id="${"user-menu-item-2"}">Sign out</a></div></div>`;
+    });
+    RightNavMenuItems = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"flex-shrink-0 hidden sm:flex"}"><a href="${"#"}" class="${"text-slate-900 hover:text-rose-600 flex items-center"}"><img src="${"https://tailwindui.com/img/flags/flag-canada.svg"}" alt="${""}" class="${"w-5 h-auto block flex-shrink-0"}">
+		<span class="${"ml-3 block text-tiny font-medium"}">Francais </span>
+		<span class="${"sr-only"}">, change language</span></a></div>
+
+
+<div class="${"flex-shrink-0 "}"><a href="${"#"}" class="${"text-slate-900 hover:text-rose-600 flex items-center"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-4 w-auto mr-0"}" fill="${"currentColor"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"none"}" d="${"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"}"></path></svg>
+
+		<span class="${"ml-3 block text-tiny font-medium"}">Contact Us </span>
+		<span class="${"sr-only"}">contact us</span></a></div>
+<span class="${"h-6 w-px bg-gray-200"}" aria-hidden="${"true"}"></span>
+<div class="${"hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center"}">
+	<button type="${"button"}" class="${"hidden bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}"><span class="${"sr-only"}">User login</span>
+		
+		<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"}"></path></svg></button>
+	
+	${validate_component(ProfileDropdown, "ProfileDropdown").$$render($$result, {}, {}, {})}</div>`;
+    });
+    MainNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<nav class="${"bg-white shadow relative z-20"}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"flex justify-between h-16"}"><div class="${"flex"}"><div class="${"-ml-2 mr-2 flex items-center md:hidden"}">
+					${validate_component(MobMenuBtn, "MobMenuBtn").$$render($$result, {}, {}, {})}</div>
+				
+				${validate_component(Logo, "Logo").$$render($$result, {}, {}, {})}
+				
+				${validate_component(NavMenuItems, "NavMenuItems").$$render($$result, {}, {}, {})}</div>
+
+			<div class="${"flex items-center gap-1 sm:gap-8 "}">${validate_component(RightNavMenuItems, "RightNavMenuItems").$$render($$result, {}, {}, {})}</div></div></div>
+
+	${validate_component(MobileMenuItems, "MobileMenuItems").$$render($$result, {}, {}, {})}</nav>`;
     });
     Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<header class="${"relative overflow-hidden"}">
-	${validate_component(CovidAlert, "CovidAlert").$$render($$result, {}, {}, {})}
+	${validate_component(AlertCovid, "AlertCovid").$$render($$result, {}, {}, {})}
 	
+	${validate_component(MainNav, "MainNav").$$render($$result, {}, {}, {})}
 	
-	${validate_component(NewNav, "NewNav").$$render($$result, {}, {}, {})}
-	
-	
-	${validate_component(HeaderHeroAlt, "HeaderHeroAlt").$$render($$result, {}, {}, {})}
-	</header>`;
+	${validate_component(HeaderHeroAlt, "HeaderHeroAlt").$$render($$result, {}, {}, {})}</header>`;
     });
     FooterLogos = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"}"><div class="${"grid grid-cols-8 gap-8 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-9"}"><div class="${"col-span-1 flex lg:justify-center sm:col-span-2 md:col-span-2 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-tico.svg"}" alt="${"Tuple"}"></div>
-			<div class="${"col-span-1 flex justify-center md:col-span-2 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-iata.svg"}" alt="${"Mirage"}"></div>
-			<div class="${"col-span-1 flex justify-center md:col-span-2 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-asta.svg"}" alt="${"StaticKit"}"></div>
-			<div class="${"col-span-1 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-firstData.svg"}" alt="${"Transistor"}"></div>
+<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"}"><div class="${"grid grid-cols-9 gap-8 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-9"}"><div class="${"col-span-2 flex lg:justify-center sm:col-span-2 md:col-span-2 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-tico.svg"}" alt="${"Tuple"}"></div>
+			<div class="${"col-span-2 flex justify-center md:col-span-2 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-iata.svg"}" alt="${"Mirage"}"></div>
+			<div class="${"col-span-3 flex justify-center md:col-span-2 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-asta.svg"}" alt="${"StaticKit"}"></div>
 			<div class="${"col-span-2 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-visa.svg"}" alt="${"Workcation"}"></div>
+			<div class="${"col-span-3 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-firstData.svg"}" alt="${"Transistor"}"></div>
 			<div class="${"col-span-2 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-masterCard.svg"}" alt="${"Workcation"}"></div>
 			<div class="${"col-span-2 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-americanExpress.svg"}" alt="${"Workcation"}"></div>
 			<div class="${"col-span-2 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-BBB.svg"}" alt="${"Workcation"}"></div>
-			<div class="${"col-span-2 flex justify-center md:col-span-3 lg:col-span-1"}"><img class="${"h-12"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/footer-icons/svg/footer-icon-secureSSL.svg"}" alt="${"Workcation"}"></div></div></div></div>`;
+			</div></div></div>`;
     });
     Copyright = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"py-6 md:flex md:items-center md:justify-between border-t"}"><div class="${"text-center md:text-left "}"><p class="${"text-sm text-gray-500"}">\xA9 2022 Trip Support.
@@ -5796,81 +5835,85 @@ var init_layout_svelte = __esm({
 
 				<a${add_attribute("href", "#", 0)} class="${"text-sm text-gray-500 hover:text-gray-600"}">Privacy </a>
 
-				<a${add_attribute("href", "#", 0)} class="${"text-sm text-gray-500 hover:text-gray-600"}">Terms </a></div>
+				<a${add_attribute("href", "#", 0)} class="${"text-sm text-gray-500 hover:text-gray-600"}">Pay Later Terms </a></div>
 
-			<div class="${"ml-6 border-l border-gray-200 pl-6"}"><a${add_attribute("href", "#", 0)} class="${"flex items-center text-gray-500 hover:text-gray-600"}"><img src="${"https://tailwindui.com/img/flags/flag-canada.svg"}" alt="${""}" class="${"w-5 h-auto flex-shrink-0"}">
-					<span class="${"ml-3 text-sm"}">Francais </span>
-					<span class="${"sr-only"}">location and currency</span></a></div></div></div></div>`;
+			</div></div></div>`;
+    });
+    FooterLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"mx-auto max-w-7xl py-2 px-4 sm:px-6 sm:py-8 lg:py-20 lg:px-8 lg:pb-8"}"><div class="${"xl:grid xl:grid-cols-12 xl:gap-8"}"><div class="${"mt-12 grid grid-cols-12 gap-8 xl:col-span-12 xl:mt-0"}"><div class="${"col-span-6 sm:col-span-2"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Vacation Deals
+				</h3>
+				<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Spring Vacations
+						</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Winter Vacations</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Summer Vacations</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Fall Vacations</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Group Travel</a></li></ul></div>
+
+			<div class="${"col-span-6 sm:col-span-2"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Destinations
+				</h3>
+				<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Westjet Vacations</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Porter Vacations</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunwing Vacations</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunquest Vacations</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Signature Vacations</a></li></ul></div>
+
+			<div class="${"col-span-6 sm:col-span-2"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Flight Deals
+				</h3>
+				<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flights to edmonton</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Flight To San Francisco</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to toronto</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to vancouver</a></li></ul></div>
+
+			<div class="${"col-span-6 sm:col-span-2"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">travel deals
+				</h3>
+				<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">all inclusive resorts</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">singles vacations</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">3 - 5 day vacations</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">2 weeks vacation</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">best family resorts</a></li></ul></div>
+
+			<div class="${"col-span-6 sm:col-span-2"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">quick links</h3>
+				<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">about us</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Baggage policy</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">contact us</a></li>
+
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">faqs</a></li>
+					<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">book now pay later</a></li></ul></div>
+			<div class="${"col-span-6 sm:col-span-2"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Social media
+				</h3>
+
+				<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-facebook mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"}"></path></svg>
+							Facebook
+						</a></li>
+
+					<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-orange-500 focus:z-10 focus:ring-2 focus:ring-orange-500 focus:text-orange-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-instagram mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"}"></path></svg>
+							Instagram
+						</a></li>
+
+					<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-pred-700 focus:z-10 focus:ring-2 focus:ring-pred-700 focus:text-pred-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-youtube mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"}"></path></svg>
+							Youtube
+						</a></li>
+
+					<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-pred-700 focus:z-10 focus:ring-2 focus:ring-pred-700 focus:text-pred-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-pinterest mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"}"></path></svg>
+							Pinterest
+						</a></li>
+					</ul></div></div></div></div>`;
     });
     Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <footer class="${"border-t bg-white px-4"}" aria-labelledby="${"footer-heading"}"><h2 id="${"footer-heading"}" class="${"sr-only"}">Footer</h2>
-
-	<div class="${"mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-20 lg:px-8 lg:pb-8"}"><div class="${"xl:grid xl:grid-cols-4 xl:gap-8"}"><div class="${"space-y-6 xl:col-span-1"}"><img class="${"h-10"}" src="${"./logos/logo-main.svg"}" alt="${"Trip Support"}">
-				<p class="${"max-w-prose text-slate-700 text-sm"}">Trip Support is committed to providing its clients with the best connivance and economical
-					solutions for their travel and vacation requirements.
-				</p>
-				
-				<div class="${"flex space-x-6"}"><a${add_attribute("href", "https://www.facebook.com/tripsupportcanada/", 0)} target="${"_blank"}" class="${"text-slate-600 hover:text-slate-600"}"><span class="${"sr-only"}">Facebook</span>
-						<svg class="${"h-6 w-6"}" fill="${"currentColor"}" viewBox="${"0 0 24 24"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"}" clip-rule="${"evenodd"}"></path></svg></a>
-
-					<a${add_attribute("href", "https://www.instagram.com/trip.support/", 0)} target="${"_blank"}" class="${"text-slate-600 hover:text-slate-600"}"><span class="${"sr-only"}">Instagram</span>
-						<svg class="${"h-6 w-6"}" fill="${"currentColor"}" viewBox="${"0 0 24 24"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"}" clip-rule="${"evenodd"}"></path></svg></a>
-
-					<a${add_attribute("href", "#", 0)} class="${"text-slate-600 hover:text-slate-600"}"><span class="${"sr-only"}">Twitter</span>
-						<svg class="${"h-6 w-6"}" fill="${"currentColor"}" viewBox="${"0 0 24 24"}" aria-hidden="${"true"}"><path d="${"M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"}"></path></svg></a></div></div>
-			<div class="${"mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 xl:col-span-3 xl:mt-0 "}"><div><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal tracking-wider"}">Vacation Deals
-					</h3>
-					<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Spring Vacations
-							</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Winter Vacations</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Summer Vacations</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Fall Vacations</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Group Travel</a></li></ul></div>
-
-				<div><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal tracking-wider"}">Destinations
-					</h3>
-					<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Westjet Vacations</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Porter Vacations</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunwing Vacations</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunquest Vacations</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Signature Vacations</a></li></ul></div>
-
-				<div><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal tracking-wider"}">Flight Deals
-					</h3>
-					<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flights to edmonton</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Flight To San Francisco</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to toronto</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to vancouver</a></li></ul></div>
-
-				<div><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal tracking-wider"}">travel deals
-					</h3>
-					<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">all inclusive resorts</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">singles vacations</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">3 - 5 day vacations</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">2 weeks vacation</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">best family resorts</a></li></ul></div>
-
-				<div><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal tracking-wider"}">quick links
-					</h3>
-					<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">about us</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Baggage policy</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">contact us</a></li>
-
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">faqs</a></li>
-						<li><a${add_attribute("href", "#", 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">book now pay later</a></li></ul></div></div></div></div>
-
+	${validate_component(FooterLinks, "FooterLinks").$$render($$result, {}, {}, {})}
 	${validate_component(FooterLogos, "FooterLogos").$$render($$result, {}, {}, {})}
 	${validate_component(Copyright, "Copyright").$$render($$result, {}, {}, {})}</footer>`;
     });
@@ -5894,9 +5937,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-173cb92b.js";
-    js = ["pages/__layout.svelte-173cb92b.js", "chunks/vendor-b0ebfa30.js"];
-    css = ["assets/pages/__layout.svelte-5d913f03.css"];
+    entry = "pages/__layout.svelte-41ca5833.js";
+    js = ["pages/__layout.svelte-41ca5833.js", "chunks/vendor-146651ab.js"];
+    css = ["assets/pages/__layout.svelte-791222b5.css"];
   }
 });
 
@@ -5944,8 +5987,8 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-37391ff4.js";
-    js2 = ["error.svelte-37391ff4.js", "chunks/vendor-b0ebfa30.js"];
+    entry2 = "error.svelte-d8982268.js";
+    js2 = ["error.svelte-d8982268.js", "chunks/vendor-146651ab.js"];
     css2 = [];
   }
 });
@@ -5955,126 +5998,223 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var VacationsTab, FlightsTab, HotelsTab, HotelFlightTab, VacationsTabContent, FlightsTabContent, HotelsTabContent, HotelFlightTabContent, HorizontalTab, Booking, HomeSection1, HomeSection2, HomeSection3, Subscribe, PromoSection, Routes;
+var FlightsTab, VacationsTab, HotelsTab, Tabs, FlightsTabContent, VacationsTabContent, HotelsTabContent, TopTabFlights, TopTabVacations, TopTabHotels, TabsContent, BookingWidget, Booking, HomeSection1, HomeSection2, HomeSection3, Subscribe, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_587706cc();
-    VacationsTab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<button class="${"inline-flex py-4 my-auto sm:py-3 px-0 text-tiny font-medium text-slate-600 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-slate-900 dark:hover:text-gray-300 "}" id="${"vacations-tab"}" data-tabs-target="${"#vacations"}" type="${"button"}" role="${"tab"}" aria-controls="${"vacations"}" aria-selected="${"true"}">
-
-	Vacations
-</button>`;
-    });
     FlightsTab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<button class="${"inline-flex py-4 my-auto px-0 text-tiny font-medium text-slate-600 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 active"}" id="${"flights-tab"}" data-tabs-target="${"#flights"}" type="${"button"}" role="${"tab"}" aria-controls="${"flights"}" aria-selected="${"false"}">
-	Flights
-</button>`;
+      return `<li class="${"mr-2"}" role="${"presentation"}"><button class="${"inline-flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 active"}" id="${"flights-tab"}" data-tabs-target="${"#flights"}" type="${"button"}" role="${"tab"}" aria-controls="${"flights"}" aria-selected="${"true"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"-ml-0.5 mr-2 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.64 14.26l2.86.95 4.02-4.02-8-4.59 1.16-1.16c.1-.1.26-.14.41-.1l9.3 2.98c1.58-1.58 3.15-3.2 4.77-4.75.31-.33.7-.58 1.16-.73.45-.16.87-.27 1.25-.34.55-.05.98.4.93.93-.07.38-.18.8-.34 1.25-.15.46-.4.85-.73 1.16l-4.75 4.78 2.97 9.29c.05.15 0 .29-.1.41l-1.17 1.16-4.57-8.02L8.8 17.5l.95 2.84L8.6 21.5l-2.48-3.62L2.5 15.4l1.14-1.14z"}" clip-rule="${"evenodd"}"></path></svg>
+		Flights
+	</button></li>`;
+    });
+    VacationsTab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<li class="${"mr-2"}" role="${"presentation"}"><button class="${"inline-flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"}" id="${"vacations-tab"}" data-tabs-target="${"#vacations"}" type="${"button"}" role="${"tab"}" aria-controls="${"vacations"}" aria-selected="${"false"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"-ml-0.5 mr-2 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M21.59 11.59h-2.36V8.66c0-.23-.2-.41-.43-.41h-5.82a.42.42 0 00-.43.41v2.93H10.2a.42.42 0 00-.43.41v8.34c0 .23.21.41.43.41h11.4c.21 0 .41-.2.41-.41V12c0-.23-.2-.41-.41-.41zm-7.36-1.68h3.32v1.68h-3.32V9.91zm3.79 9.06l-1.2-1.17 2.37-2.36 1.17 1.17-2.34 2.36zM10.89 4.91V3.66a.4.4 0 00-.41-.41H4.64a.4.4 0 00-.41.41v2.93H2.4A.4.4 0 002 7v13.34c0 .2.18.41.41.41h5.7V10.34c0-.23.18-.43.41-.43h2.37v-5zM9.23 6.59H5.89V4.91h3.34v1.68z"}" clip-rule="${"evenodd"}"></path></svg>
+		Vacations
+	</button></li>`;
     });
     HotelsTab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<button class="${"inline-flex py-4 px-0 text-tiny font-medium text-slate-600 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"}" id="${"hotels-tab"}" data-tabs-target="${"#hotels"}" type="${"button"}" role="${"tab"}" aria-controls="${"hotels"}" aria-selected="${"false"}">
-	Hotels
-</button>`;
+      return `<li class="${"mr-2"}" role="${"presentation"}"><button class="${"inline-flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"}" id="${"hotels-tab"}" data-tabs-target="${"#hotels"}" type="${"button"}" role="${"tab"}" aria-controls="${"hotels"}" aria-selected="${"false"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"-ml-0.5 mr-2 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M21.61 21.41l-.47-1.1a.49.49 0 00-.16-.2.4.4 0 00-.23-.06h-.84V7.4a.4.4 0 00-.12-.28.38.38 0 00-.29-.13h-3.75V2.41a.4.4 0 00-.12-.28.38.38 0 00-.29-.13H4.5a.38.38 0 00-.3.13.4.4 0 00-.11.28v17.64h-.84a.4.4 0 00-.23.07.49.49 0 00-.16.18l-.47 1.11a.44.44 0 00-.03.2c0 .08.03.14.07.2a.38.38 0 00.33.2h18.48a.38.38 0 00.33-.2.36.36 0 00.07-.2c0-.06 0-.13-.03-.2zM9.09 17h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 12.77h-2.5V14.5h2.5v5.27zm0-7.77h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 10h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12z"}" clip-rule="${"evenodd"}"></path></svg>
+		Hotels
+	</button></li>`;
     });
-    HotelFlightTab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<button class="${"inline-flex py-4 px-0 text-tiny font-medium text-slate-600 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"}" id="${"hotelflight-tab"}" data-tabs-target="${"#hotelflight"}" type="${"button"}" role="${"tab"}" aria-controls="${"hotelflight"}" aria-selected="${"false"}">
-	Hotel + Flight
-</button>`;
-    });
-    VacationsTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800"}" id="${"vacations"}" role="${"tabpanel"}" aria-labelledby="${"vacations-tab"}"><p class="${"text-tiny text-slate-900 dark:text-gray-400"}">Vacations</p></div>`;
+    Tabs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"mb-0 border-b border-gray-200 dark:border-gray-700"}"><ul class="${"flex flex-wrap -mb-px"}" id="${"myTab"}" data-tabs-toggle="${"#myTabContent"}" role="${"tablist"}">${validate_component(FlightsTab, "FlightsTab").$$render($$result, {}, {}, {})}
+		${validate_component(VacationsTab, "VacationsTab").$$render($$result, {}, {}, {})}
+		${validate_component(HotelsTab, "HotelsTab").$$render($$result, {}, {}, {})}</ul></div>`;
     });
     FlightsTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"p-0 bg-white rounded-lg dark:bg-gray-800"}" id="${"flights"}" role="${"tabpanel"}" aria-labelledby="${"flights-tab"}"><div class="${"pt-2"}">
-		<div class="${"mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12"}"><div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Leaving from?</label>
+<div class="${"pt-0"}"><div class="${"mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12"}"><div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Leaving from?</label>
+				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+
+				<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"YYZ-Toronto Lester B. Pearson Intl, Canada"}"></div></div>
+		
+
+		<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Going to?</label>
+				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+				<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}"></div></div>
+
+		<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Departure / Return</label>
+				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
+				<div class="${"flex"}"><input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}">
+					<span class="${"h-5 mx-4 h-6 w-px bg-gray-400 lg:mx-6"}" aria-hidden="${"true"}"></span>
+					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-11 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
+
+					<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}"></div></div></div>
+		<div class="${"sm:col-span-8"}"><div class="${"flex"}"><div><fieldset class="${"my-2"}"><legend class="${"sr-only"}">Notification method</legend>
+						<div class="${"space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10"}"><div class="${"flex items-center"}"><input id="${"email"}" name="${"notification-method"}" type="${"radio"}" checked class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
+								<label for="${"email"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Flexible Search (+/- 3days)
+								</label></div>
+
+							<div class="${"flex items-center"}"><input id="${"sms"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
+								<label for="${"sms"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Non-stop flights only
+								</label></div>
+							<div class="${"flex items-center"}"><input id="${"sms"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
+								<label for="${"sms"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Airline Specific
+								</label></div></div></fieldset></div></div></div>
+		<div class="${"sm:col-span-4"}"><div class="${"flex flex-row-reverse"}"><button type="${"button"}" class="${"inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">
+					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 mr-2"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"}"></path></svg>
+					Search flights
+				</button></div></div></div>
+	<div id="${"accordion-flush"}" data-accordion="${"collapse"}" data-active-classes="${"bg-white dark:bg-gray-900 text-gray-900 dark:text-white"}" data-inactive-classes="${"text-gray-500 dark:text-gray-400"}"><h2 id="${"accordion-flush-heading-3"}"><button type="${"button"}" class="${"flex items-center justify-between pt-5 font-medium text-left text-gray-500 dark:text-gray-400"}" data-accordion-target="${"#more-options"}" aria-expanded="${"false"}" aria-controls="${"more-options"}"><span class="${"text-sm"}">More options</span>
+				<svg data-accordion-icon class="${"w-6 h-6"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button></h2>
+		<div id="${"more-options"}" class="${"hidden"}" aria-labelledby="${"more-options-heading-3"}"><div class="${"py-3 "}"><p class="${"text-slate-700 text-sm"}">This is where we will input advanced options, users can select by flight name etc.
+				</p></div></div></div></div>
+`;
+    });
+    VacationsTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"pt-0"}"><div class="${"mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12"}"><div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Leaving from?</label>
+				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+
+				<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"YYZ-Toronto Lester B. Pearson Intl, Canada"}"></div></div>
+		
+
+		<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Going to?</label>
+				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+				<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}"></div></div>
+
+		<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Departure / Return</label>
+				<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
+				<div class="${"flex"}"><input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}">
+					<span class="${"h-5 mx-4 h-6 w-px bg-gray-400 lg:mx-6"}" aria-hidden="${"true"}"></span>
+					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-11 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
+
+					<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}"></div></div></div>
+		<div class="${"sm:col-span-8"}"><div class="${"flex"}"><div><fieldset class="${"my-2"}"><legend class="${"sr-only"}">Notification method</legend>
+						<div class="${"space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10"}"><div class="${"flex items-center"}"><input id="${"email"}" name="${"notification-method"}" type="${"radio"}" checked class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
+								<label for="${"email"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">All-inclusive only
+								</label></div></div></fieldset></div></div></div>
+		<div class="${"sm:col-span-4"}"><div class="${"flex flex-row-reverse"}"><button type="${"button"}" class="${"inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">
+					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 mr-2"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"}"></path></svg>
+					Search flights
+				</button></div></div></div></div>
+`;
+    });
+    HotelsTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+
+<div class="${"bg-white"}" id="${"flights"}" role="${"tabpanel"}" aria-labelledby="${"flights-tab"}">
+	<div class="${"pt-0"}"><div class="${"mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12"}"><div class="${"sm:col-span-6"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Destination to?</label>
 					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
 
 					<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"YYZ-Toronto Lester B. Pearson Intl, Canada"}"></div></div>
-			<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Going to?</label>
-					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
-					<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}"></div></div>
 
-			<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Departure / Return</label>
+			<div class="${"sm:col-span-4"}"><div class="${"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"}">Departure / Return</label>
 					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
 					<div class="${"flex"}"><input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}">
 						<span class="${"h-5 mx-4 h-6 w-px bg-gray-400 lg:mx-6"}" aria-hidden="${"true"}"></span>
 						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-11 h-5 text-slate-500 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
 
 						<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"}" placeholder="${"AMS-Amsterdam Airport Schiphol, Netherlands"}"></div></div></div>
-			<div class="${"sm:col-span-8"}"><div class="${"flex"}"><div><fieldset class="${"my-2"}"><legend class="${"sr-only"}">Notification method</legend>
-							<div class="${"space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10"}"><div class="${"flex items-center"}"><input id="${"email"}" name="${"notification-method"}" type="${"radio"}" checked class="${"focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"}">
-									<label for="${"email"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Flexible Search (+/- 3days)
-									</label></div>
 
-								<div class="${"flex items-center"}"><input id="${"sms"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"}">
-									<label for="${"sms"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Non-stop flights only
-									</label></div>
-								<div class="${"flex items-center"}"><input id="${"sms"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"}">
-									<label for="${"sms"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Airline Specific
-									</label></div></div></fieldset></div></div></div>
-			<div class="${"sm:col-span-4"}"><div class="${"flex flex-row-reverse"}"><button type="${"button"}" class="${"inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"}">
+			<div class="${"sm:col-span-2 sm:my-auto"}"><div class="${"flex flex-row-reverse"}"><button type="${"button"}" class="${"inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">
 						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 mr-2"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"}"></path></svg>
 						Search flights
-					</button></div></div></div></div></div>`;
+					</button></div></div></div></div>
+	</div>`;
     });
-    HotelsTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800"}" id="${"hotels"}" role="${"tabpanel"}" aria-labelledby="${"settings-tab"}"><p class="${"text-tiny text-slate-600 dark:text-gray-400"}">Hotels</p></div>`;
+    TopTabFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"grid grid-cols-6 gap-4 mt-5"}"><div class="${"col-start-1 col-end-3 my-auto"}"><ul class="${"flex flex-wrap"}"><li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-white bg-pblue-700 rounded-full active"}" aria-current="${"page"}">Roundtrip</a></li>
+			<li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-gray-500 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"}">One-way</a></li>
+			<li class="${"mr-2"}"><a href="${"#"}" class="${"inline-block py-2 px-4 text-sm font-medium text-center text-gray-500 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"}">Multi-city</a></li></ul></div>
+	<div class="${"col-start-5 col-end-5 col-span-1 my-auto"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownTravellersLink"}" data-dropdown-toggle="${"dropdownTravellers"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Traveller(s) <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
+					
+					<div id="${"dropdownTravellers"}" class="${"hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"}"><ul class="${"py-1"}" aria-labelledby="${"dropdownLargeButton"}"><li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Adults</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Child</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Infant</a></li></ul>
+						</div></li></ul></div></div>
+	<div class="${"my-6"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownEconomyLink"}" data-dropdown-toggle="${"dropdownEconomy"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Economy <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
+					
+					<div id="${"dropdownEconomy"}" class="${"hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"}"><ul class="${"py-1"}" aria-labelledby="${"dropdownLargeButton"}"><li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Premium Economy</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Business Class</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">First Class</a></li></ul>
+						</div></li></ul></div></div></div>`;
     });
-    HotelFlightTabContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800"}" id="${"hotelflight"}" role="${"tabpanel"}" aria-labelledby="${"contacts-tab"}"><p class="${"text-tiny text-slate-600 dark:text-gray-400"}">Hotel + Flight</p></div>`;
+    TopTabVacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"grid grid-cols-6 gap-4 mt-5"}"><div class="${"col-start-1 col-end-3 my-auto"}"><h2 class="${"hidden"}">Hello</h2></div>
+	<div class="${"col-start-5 col-end-5 col-span-1 my-auto"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownTravellersLink"}" data-dropdown-toggle="${"dropdownTravellers"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Traveller(s) <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
+					
+					<div id="${"dropdownTravellers"}" class="${"hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"}"><ul class="${"py-1"}" aria-labelledby="${"dropdownLargeButton"}"><li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Adults</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Child</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Infant</a></li></ul>
+						</div></li></ul></div></div>
+	<div class="${"my-6"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownEconomyLink"}" data-dropdown-toggle="${"dropdownEconomy"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Travellers <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
+					
+					<div id="${"dropdownEconomy"}" class="${"hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"}">
+						<div class="${"py-1"}"><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Done</a></div></div></li></ul></div></div></div>`;
     });
-    HorizontalTab = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div>
+    TopTabHotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"grid grid-cols-6 gap-4 mt-5"}"><div class="${"col-start-1 col-end-3 my-auto"}"><h2 class="${"hidden"}">Hello</h2></div>
+	<div class="${"col-start-5 col-end-5 col-span-1 my-auto"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownTravellersLink"}" data-dropdown-toggle="${"dropdownTravellers"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Traveller(s) <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
+					
+					<div id="${"dropdownTravellers"}" class="${"hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"}"><ul class="${"py-1"}" aria-labelledby="${"dropdownLargeButton"}"><li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Adults</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Child</a></li>
+							<li><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Infant</a></li></ul>
+						</div></li></ul></div></div>
+	<div class="${"my-6"}"><div class="${"hidden w-full md:block md:w-auto"}" id="${"mobile-menu"}"><ul class="${"flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium"}"><li><button id="${"dropdownEconomyLink"}" data-dropdown-toggle="${"dropdownEconomy"}" class="${"flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"}">Rooms <svg class="${"ml-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
+					
+					<div id="${"dropdownEconomy"}" class="${"hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"}">
+						<div class="${"py-1"}"><a href="${"#"}" class="${"block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"}">Done</a></div></div></li></ul></div></div></div>`;
+    });
+    TabsContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div id="${"myTabContent"}">
+	<div class="${"bg-white"}" id="${"flights"}" role="${"tabpanel"}" aria-labelledby="${"flights-tab"}">${validate_component(TopTabFlights, "TopTabFlights").$$render($$result, {}, {}, {})}
+		${validate_component(FlightsTabContent, "FlightsTabContent").$$render($$result, {}, {}, {})}</div>
+	
+	<div class="${"hidden bg-white"}" id="${"vacations"}" role="${"tabpanel"}" aria-labelledby="${"vacations-tab"}">${validate_component(TopTabVacations, "TopTabVacations").$$render($$result, {}, {}, {})}
+		${validate_component(VacationsTabContent, "VacationsTabContent").$$render($$result, {}, {}, {})}</div>
+	
+	<div class="${"hidden bg-white"}" id="${"hotels"}" role="${"tabpanel"}" aria-labelledby="${"hotels-tab"}">${validate_component(TopTabHotels, "TopTabHotels").$$render($$result, {}, {}, {})}
+		${validate_component(HotelsTabContent, "HotelsTabContent").$$render($$result, {}, {}, {})}</div></div>`;
+    });
+    BookingWidget = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${$$result.head += ``, ""}
 
-	<div class="${"mb-2 border-b border-gray-200 dark:border-gray-700"}"><ul class="${"flex flex-wrap -mb-px"}" id="${"myTab"}" data-tabs-toggle="${"#myTabContent"}" role="${"tablist"}"><li class="${"mr-3 sm:mr-6"}" role="${"presentation"}">${validate_component(FlightsTab, "VacationsTab").$$render($$result, {}, {}, {})}</li>
-			<li class="${"mr-3 sm:mr-6"}" role="${"presentation"}">${validate_component(VacationsTab, "FlightsTab").$$render($$result, {}, {}, {})}</li>
-			<li class="${"mr-3 sm:mr-6"}" role="${"presentation"}">${validate_component(HotelsTab, "HotelsTab").$$render($$result, {}, {}, {})}</li>
-			<li class="${"mr-3 sm:mr-0"}" role="${"presentation"}">${validate_component(HotelFlightTab, "HotelFlightTab").$$render($$result, {}, {}, {})}</li></ul></div>
-	<div id="${"myTabContent"}">${validate_component(VacationsTabContent, "FlightsTabContent").$$render($$result, {}, {}, {})}
-		${validate_component(FlightsTabContent, "VacationsTabContent").$$render($$result, {}, {}, {})}
-		${validate_component(HotelsTabContent, "HotelsTabContent").$$render($$result, {}, {}, {})}
-		${validate_component(HotelFlightTabContent, "HotelFlightTabContent").$$render($$result, {}, {}, {})}</div></div>`;
+${validate_component(Tabs, "Tabs").$$render($$result, {}, {}, {})}
+${validate_component(TabsContent, "TabsContent").$$render($$result, {}, {}, {})}`;
     });
     Booking = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<section class="${"relative z-10 mx-auto -mt-24 max-w-7xl px-0 sm:px-4 pb-12 sm:px-6 lg:px-8 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"grid grid-cols-1 gap-y-20 lg:grid-cols-1 lg:gap-y-0 lg:gap-x-8"}"><div class="${"flex flex-col rounded-none sm:rounded-xl bg-white shadow-xl"}"><div class="${"relative flex-1 px-4 sm:px-8 py-4 md:px-10"}">
-				${validate_component(HorizontalTab, "HorizontalTab").$$render($$result, {}, {}, {})}
-				<div class="${"my-8"}"></div></div></div></div></section>`;
+      return `<section class="${"relative z-10 mx-auto sm:-mt-24 -mt-16 max-w-7xl px-0 pb-12 sm:px-6 lg:px-8 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"grid grid-cols-1 gap-y-20 lg:grid-cols-1 lg:gap-y-0 lg:gap-x-8"}"><div class="${"flex flex-col rounded-none sm:rounded-xl bg-white shadow-xl"}"><div class="${"relative flex-1 px-4 sm:px-8 py-4 md:px-10"}">
+				${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}</div></div></div></section>`;
     });
     HomeSection1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"relative py-0 sm:py-12 px-4 sm:px-0 lg:pb-4 lg:pt-12 lg:px-8"}">
+      return `<div class="${"relative py-4 sm:py-12 px-4 sm:px-0 lg:pb-24 lg:px-8"}">
 
-	<div class="${"relative"}"><div class="${"sm:text-left lg:mx-auto max-w-md sm:max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8"}">
-			
-			<div class="${"sm:text-left lg:text-left"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline sm:inline text-rose-600"}">Your Trip,</span>
-					<span class="${"block text-blue-900 sm:inline xl:inline"}">Our Support</span></h1>
-				<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:mx-auto md:mt-3 md:text-md lg:mx-0"}">We&#39;re focused on making travel better for everyone. To make the entire planning and
-					booking experience easy, simple and enjoyable from start to finish.
-				</p></div></div>
+	<div class="${"relative"}"><div class="${"sm:text-left lg:mx-auto max-w-md sm:max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-lg tracking-tight font-extrabold text-gray-900 sm:text-xl md:text-2xl"}"><span class="${"block xl:inline"}">Inspirational stories from the experts </span>
+					</h1>
+
+				<a href="${"#"}" class="${"hidden text-sm font-semibold text-pred-600 hover:text-pblue-900 sm:block"}">View all posts<span aria-hidden="${"true"}">\u2192</span></a></div>
+			<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-ppred sm:mx-auto md:mt-3 md:text-md lg:mx-0"}">Latest blog articles on travel, flights and vacation deals
+			</p></div>
 		
 		
 
 		
 
-		<div class="${"sm:mx-auto mt-8 grid max-w-full gap-4 sm:max-w-7xl sm:flex sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"}"><div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-48 sm:h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-easyBooking.jpg"}" alt="${""}"></div>
-				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Easy &amp; Fast Booking</p>
-							<p class="${"mt-0 text-gray-500 text-tiny"}">Search, compare and book your tickets at the lowest fares. You pick the place and
-								we&#39;ll make it happen.
-							</p></a></div></div></div>
+		<div class="${"sm:mx-auto mt-8 grid max-w-full gap-4 sm:max-w-7xl sm:flex sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8"}"><div class="${"flex flex-col overflow-hidden "}"><div class="${"max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"}"><a href="${"#"}"><img class="${"rounded-t-lg"}" src="${"images/home/destination-dubai.jpg"}" alt="${""}"></a>
+					<div class="${"p-5"}"><a href="${"#"}"><h5 class="${"mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"}">Top 15 Tips For Traveling To Mexico
+							</h5></a>
+						<p class="${"mb-3 font-normal text-tiny text-gray-500 "}">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse ...
+						</p>
+						<a href="${"#"}" class="${"inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-pblue-700 rounded-lg hover:bg-pblue-800 focus:ring-4 focus:ring-pblue-300 dark:bg-pblue-600 dark:hover:bg-pblue-700 dark:focus:ring-pblue-800"}">Read more
+							<svg class="${"ml-2 -mr-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></a></div></div></div>
 
-			<div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-48 sm:h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-pieceOfMind.jpg"}" alt="${""}"></div>
-				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">No stress, just peace of mind</p>
-							<p class="${"mt-0 text-gray-500 text-tiny"}">Every expense is given to you up front or paid later, so you can feel relaxed before
-								and after your trip.
-							</p></a></div></div></div>
+			<div class="${"flex flex-col overflow-hidden "}"><div class="${"max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"}"><a href="${"#"}"><img class="${"rounded-t-lg"}" src="${"images/home/destination-dubai.jpg"}" alt="${""}"></a>
+					<div class="${"p-5"}"><a href="${"#"}"><h5 class="${"mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"}">Top 15 Tips For Traveling To Mexico
+							</h5></a>
+						<p class="${"mb-3 font-normal text-tiny text-gray-500 "}">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse ...
+						</p>
+						<a href="${"#"}" class="${"inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-pblue-700 rounded-lg hover:bg-pblue-800 focus:ring-4 focus:ring-pblue-300 dark:bg-pblue-600 dark:hover:bg-pblue-700 dark:focus:ring-pblue-800"}">Read more
+							<svg class="${"ml-2 -mr-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></a></div></div></div>
 
-			
-			
-
-			<div class="${"flex flex-col overflow-hidden "}"><div class="${"flex-shrink-0"}"><img class="${"h-48 sm:h-80 w-full object-cover"}" src="${"https://tripsupport.s3.ca-central-1.amazonaws.com/why-trip-support/tripSupport-customerService.jpg"}" alt="${""}"></div>
-				<div class="${"flex flex-1 flex-col justify-between bg-white py-4"}"><div class="${"flex-1"}"><a${add_attribute("href", "#", 0)} class="${"block"}"><p class="${"font-semibold text-slate-900 text-lg"}">Seamless travel experience</p>
-							<p class="${"mt-0 text-gray-500 text-tiny"}">Giving customers overall satisfaction by offering high quality personalized and
-								tailor-made packages
-							</p></a></div></div></div></div></div></div>`;
+			<div class="${"flex flex-col overflow-hidden "}"><div class="${"max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"}"><a href="${"#"}"><img class="${"rounded-t-lg"}" src="${"images/home/destination-dubai.jpg"}" alt="${""}"></a>
+					<div class="${"p-5"}"><a href="${"#"}"><h5 class="${"mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"}">Top 15 Tips For Traveling To Mexico
+							</h5></a>
+						<p class="${"mb-3 font-normal text-tiny text-gray-500 "}">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse ...
+						</p>
+						<a href="${"#"}" class="${"inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-pblue-700 rounded-lg hover:bg-pblue-800 focus:ring-4 focus:ring-pblue-300 dark:bg-pblue-600 dark:hover:bg-pblue-700 dark:focus:ring-pblue-800"}">Read more
+							<svg class="${"ml-2 -mr-1 w-4 h-4"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></a></div></div></div></div></div></div>`;
     });
     HomeSection2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6142,7 +6282,7 @@ var init_index_svelte = __esm({
 <div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Vacation Destinations</span>
 				</h1>
 
-			<a href="${"#"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-blue-900 sm:block"}">Browse all Vacation Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
+			<a href="${"#"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Vacation Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
 		<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose sm:mx-auto md:mt-3 md:text-md lg:mx-0"}">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
 			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
 		</p>
@@ -6172,15 +6312,28 @@ var init_index_svelte = __esm({
 		<div class="${"mt-6 sm:hidden"}"><a href="${"#"}" class="${"block text-sm font-semibold text-indigo-600 hover:text-indigo-500"}">Browse all categories<span aria-hidden="${"true"}">\u2192</span></a></div></div></div>`;
     });
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto pt-4 pb-12 px-4 sm:pt-8 sm:py-12 sm:px-6 lg:px-2"}"><div class="${"bg-white shadow-lg sm:rounded-lg"}"><div class="${"lg:mx-auto mt-8 grid max-w-md gap-4 sm:max-w-full sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"}"><div class="${"col-span-2 overflow-hidden "}"><div class="${"px-4 py-5 sm:p-6"}"><h3 class="${"text-lg leading-6 font-medium text-gray-900"}">Sign up today, we\u2019ve got deals to share!
-						</h3>
-						<div class="${"flex"}"><div class="${"mt-2 max-w-xl text-sm text-gray-500"}"><p>Members access great rates and savings. Sign up to get email updates when
-									restrictions change. And discover the best deals to get you there.
-								</p></div></div></div></div>
+      return `
 
-				<div class="${"col-span-1 overflow-hidden "}"><div class="${"px-4 py-5 sm:p-6"}"><form class="${"mt-5 sm:flex sm:items-center"}"><div class="${"w-full sm:max-w-xs"}"><label for="${"email"}" class="${"sr-only"}">Email</label>
-								<input type="${"email"}" name="${"email"}" id="${"email"}" class="${"shadow-sm focus:ring-pblue-700 focus:border-pblue-700 block w-full sm:text-sm border-gray-300 rounded-md"}" placeholder="${"you@example.com"}"></div>
-							<button type="${"submit"}" class="${"mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-pblue-800 hover:bg-pblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"}">Subscribe</button></form></div></div></div></div></div></div>`;
+
+<div class="${"relative overflow-hidden"}">
+	<div aria-hidden="${"true"}" class="${"absolute inset-0"}"><div class="${"absolute inset-0 max-w-7xl mx-auto overflow-hidden xl:px-0 rounded-lg"}"><img src="${"images/home/spring-break2.jpg"}" alt="${""}" class="${"w-full h-full object-center object-cover"}"></div>
+		<div class="${"absolute inset-0 bg-white bg-opacity-75"}"></div>
+		<div class="${"absolute inset-0 bg-gradient-to-t from-white via-white"}"></div></div>
+
+	
+	<section aria-labelledby="${"sale-heading"}" class="${"relative max-w-7xl mx-auto pt-32 px-4 flex flex-col items-center text-center sm:px-6 lg:px-8"}"><div class="${"max-w-xl mx-auto lg:max-w-3xl"}"><aside id="${"revue-embed"}" class="${"p-4 my-8 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"}"><h3 class="${"mb-3 text-xl font-medium text-gray-900 dark:text-white"}">Sign up today, we\u2019ve got deals to share!
+				</h3>
+				<p class="${"mb-5 text-sm font-medium text-gray-500 dark:text-gray-300"}">Members access great rates and savings. Sign up to get email updates when restrictions
+					change. And discover the best deals to get you there.
+				</p>
+				<form action="${"https://www.getrevue.co/profile/flowbite/add_subscriber"}" method="${"post"}" id="${"revue-form"}" name="${"revue-form"}" target="${"_blank"}"><div class="${"flex items-end mb-3"}"><div class="${"relative mr-3 w-full revue-form-group"}"><label for="${"member_email"}" class="${"block hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"}">Email address</label>
+							<div class="${"flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"}"><svg class="${"w-5 h-5 text-gray-500 dark:text-gray-400"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg></div>
+							<input class="${"revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pblue-500 focus:border-pblue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-pblue-500 dark:focus:border-pblue-500"}" placeholder="${"Your email address..."}" type="${"email"}" name="${"member[email]"}" id="${"member_email"}" required="${""}"></div>
+						<div class="${"revue-form-actions"}"><input type="${"submit"}" value="${"Subscribe"}" class="${"cursor-pointer text-white bg-pblue-700 hover:bg-pblue-800 focus:ring-4 focus:ring-pblue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-pblue-600 dark:hover:bg-pblue-700 dark:focus:ring-pblue-800"}" name="${"member[subscribe]"}" id="${"member_submit"}"></div></div>
+					<div class="${"text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300"}">By subscribing, you agree with Revue\u2019s <a target="${"_blank"}" rel="${"nofollow"}" href="${"https://www.getrevue.co/terms"}" class="${"text-pblue-600 hover:underline dark:text-pblue-500"}">Terms of Service</a>
+						and
+						<a target="${"_blank"}" rel="${"nofollow"}" class="${"text-pblue-600 hover:underline dark:text-pblue-500"}" href="${"https://www.getrevue.co/privacy"}">Privacy Policy</a>.
+					</div></form></aside></div></section></div>`;
     });
     PromoSection = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6227,8 +6380,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-08bf31f5.js";
-    js3 = ["pages/index.svelte-08bf31f5.js", "chunks/vendor-b0ebfa30.js"];
+    entry3 = "pages/index.svelte-739a466b.js";
+    js3 = ["pages/index.svelte-739a466b.js", "chunks/vendor-146651ab.js"];
     css3 = [];
   }
 });
@@ -6260,8 +6413,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-ff499a75.js";
-    js4 = ["pages/book-now-pay-later.svelte-ff499a75.js", "chunks/vendor-b0ebfa30.js"];
+    entry4 = "pages/book-now-pay-later.svelte-e93e2f72.js";
+    js4 = ["pages/book-now-pay-later.svelte-e93e2f72.js", "chunks/vendor-146651ab.js"];
     css4 = [];
   }
 });
@@ -6293,8 +6446,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-c567c22a.js";
-    js5 = ["pages/flight-hotel.svelte-c567c22a.js", "chunks/vendor-b0ebfa30.js"];
+    entry5 = "pages/flight-hotel.svelte-8f4c6838.js";
+    js5 = ["pages/flight-hotel.svelte-8f4c6838.js", "chunks/vendor-146651ab.js"];
     css5 = [];
   }
 });
@@ -6326,8 +6479,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_vacations_svelte();
-    entry6 = "pages/vacations.svelte-55cf35ef.js";
-    js6 = ["pages/vacations.svelte-55cf35ef.js", "chunks/vendor-b0ebfa30.js"];
+    entry6 = "pages/vacations.svelte-3d7a4305.js";
+    js6 = ["pages/vacations.svelte-3d7a4305.js", "chunks/vendor-146651ab.js"];
     css6 = [];
   }
 });
@@ -6359,8 +6512,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_explore_svelte();
-    entry7 = "pages/explore.svelte-d5ddaea3.js";
-    js7 = ["pages/explore.svelte-d5ddaea3.js", "chunks/vendor-b0ebfa30.js"];
+    entry7 = "pages/explore.svelte-6e1b357a.js";
+    js7 = ["pages/explore.svelte-6e1b357a.js", "chunks/vendor-146651ab.js"];
     css7 = [];
   }
 });
@@ -6392,8 +6545,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_flights_svelte();
-    entry8 = "pages/flights.svelte-0f6c0dd0.js";
-    js8 = ["pages/flights.svelte-0f6c0dd0.js", "chunks/vendor-b0ebfa30.js"];
+    entry8 = "pages/flights.svelte-d4d8b479.js";
+    js8 = ["pages/flights.svelte-d4d8b479.js", "chunks/vendor-146651ab.js"];
     css8 = [];
   }
 });
@@ -6425,8 +6578,8 @@ var entry9, js9, css9;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_hotels_svelte();
-    entry9 = "pages/hotels.svelte-9028c5d2.js";
-    js9 = ["pages/hotels.svelte-9028c5d2.js", "chunks/vendor-b0ebfa30.js"];
+    entry9 = "pages/hotels.svelte-5719a9c6.js";
+    js9 = ["pages/hotels.svelte-5719a9c6.js", "chunks/vendor-146651ab.js"];
     css9 = [];
   }
 });
@@ -8405,7 +8558,7 @@ var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });
-var template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + '</div>\n		<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"><\/script>\n	</body>\n</html>\n';
+var template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<link rel="stylesheet"\n					href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + '</div>\n		<script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"><\/script>\n	</body>\n</html>\n';
 var read = null;
 set_paths({ "base": "", "assets": "" });
 var get_hooks = (hooks) => ({
@@ -8460,10 +8613,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/home/alberta.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/vancouver.jpg", "logos/logo-main.svg"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/home/alberta.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/vancouver.jpg", "logo.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-87c37e75.js", "js": ["start-87c37e75.js", "chunks/vendor-b0ebfa30.js"], "css": [] },
+    entry: { "file": "start-137766af.js", "js": ["start-137766af.js", "chunks/vendor-146651ab.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -1,6 +1,6 @@
 <!-- Flights CONTENT -->
 <div class="pt-0">
-	<div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
+	<div class="-mt-2 sm:mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
 		<div class="sm:col-span-4">
 			<div
 				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"

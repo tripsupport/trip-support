@@ -7,28 +7,34 @@
 				</h3>
 				<ul role={'list'} class="mt-4 space-y-2">
 					<li>
-						<a href={'#'} class=" capitalize text-slate-600 text-sm hover:text-gray-900"
+						<a
+							href="javascript:void(0)"
+							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
 							>Spring Vacations
 						</a>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Winter Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Winter Vacations</a
 						>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Summer Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Summer Vacations</a
 						>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Fall Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Fall Vacations</a
 						>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Group Travel</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Group Travel</a
 						>
 					</li>
 				</ul>
@@ -40,31 +46,36 @@
 				</h3>
 				<ul role={'list'} class="mt-4 space-y-2">
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Westjet Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Westjet Vacations</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Porter Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Porter Vacations</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Sunwing Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Sunwing Vacations</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Sunquest Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Sunquest Vacations</a
 						>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Signature Vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Signature Vacations</a
 						>
 					</li>
 				</ul>
@@ -76,25 +87,37 @@
 				</h3>
 				<ul role={'list'} class="mt-4 space-y-2">
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900">
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
 							flights to edmonton</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900">
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
 							Flight To San Francisco</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900">
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
 							flight to toronto</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900">
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
 							flight to vancouver</a
 						>
 					</li>
@@ -107,31 +130,36 @@
 				</h3>
 				<ul role={'list'} class="mt-4 space-y-2">
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>all inclusive resorts</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">all inclusive resorts</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>singles vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">singles vacations</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>3 - 5 day vacations</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">3 - 5 day vacations</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>2 weeks vacation</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">2 weeks vacation</a
 						>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>best family resorts</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">best family resorts</a
 						>
 					</li>
 				</ul>
@@ -141,27 +169,36 @@
 				<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">quick links</h3>
 				<ul role={'list'} class="mt-4 space-y-2">
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900">about us</a>
-					</li>
-
-					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>Baggage policy</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">about us</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>contact us</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">Baggage policy</a
 						>
 					</li>
 
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900">faqs</a>
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">contact us</a
+						>
+					</li>
+
+					<li>
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">faqs</a
+						>
 					</li>
 					<li>
-						<a href={'#'} class="capitalize text-slate-600 text-sm hover:text-gray-900"
-							>book now pay later</a
+						<a
+							href="javascript:void(0)"
+							class="capitalize text-slate-600 text-sm hover:text-gray-900">book now pay later</a
 						>
 					</li>
 				</ul>

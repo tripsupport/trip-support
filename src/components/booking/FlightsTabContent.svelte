@@ -1,13 +1,13 @@
 <!-- Flights CONTENT -->
-<div class="pt-0">
-	<div class="-mt-2 sm:mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
+<div>
+	<div class="-mt-4 md:mt-4 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
 		<div class="sm:col-span-4">
 			<div
-				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 			>
 				<label
 					for="name"
-					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"
+					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-pblue-900"
 					>Leaving from?</label
 				>
 				<svg
@@ -27,7 +27,7 @@
 					type="text"
 					name="name"
 					id="name"
-					class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+					class="block w-full border-0 p-1 text-pblue-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 					placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
 				/>
 			</div>
@@ -56,11 +56,11 @@
 
 		<div class="sm:col-span-4">
 			<div
-				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 			>
 				<label
 					for="name"
-					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"
+					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-pblue-900"
 					>Going to?</label
 				>
 				<svg
@@ -79,7 +79,7 @@
 					type="text"
 					name="name"
 					id="name"
-					class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+					class="block w-full border-0 p-1 text-pblue-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 					placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 				/>
 			</div>
@@ -87,11 +87,11 @@
 
 		<div class="sm:col-span-4">
 			<div
-				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 			>
 				<label
 					for="name"
-					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900"
+					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-pblue-900"
 					>Departure / Return</label
 				>
 				<svg
@@ -111,10 +111,10 @@
 						type="text"
 						name="name"
 						id="name"
-						class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+						class="block w-full border-0 p-1 text-pblue-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 						placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 					/>
-					<span class="h-5 mx-4 h-6 w-px bg-gray-400 lg:mx-6" aria-hidden="true" />
+					<span class="mx-4 h-6 w-px bg-pblue-400 mt-1 lg:mx-6" aria-hidden="true" />
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-11 h-5 text-slate-500 mt-[5px]"
@@ -132,7 +132,7 @@
 						type="text"
 						name="name"
 						id="name"
-						class="block w-full border-0 p-1 text-gray-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
+						class="block w-full border-0 p-1 text-pblue-900 placeholder-slate-400 focus:ring-0 sm:text-sm"
 						placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 					/>
 				</div>
@@ -150,9 +150,9 @@
 									name="notification-method"
 									type="radio"
 									checked
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-pblue-300"
 								/>
-								<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
+								<label for="email" class="ml-3 block text-sm font-medium text-pblue-700">
 									Flexible Search (+/- 3days)
 								</label>
 							</div>
@@ -162,9 +162,9 @@
 									id="sms"
 									name="notification-method"
 									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-pblue-300"
 								/>
-								<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
+								<label for="sms" class="ml-3 block text-sm font-medium text-pblue-700">
 									Non-stop flights only
 								</label>
 							</div>
@@ -173,17 +173,41 @@
 									id="sms"
 									name="notification-method"
 									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-pblue-300"
 								/>
-								<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
+								<label for="sms" class="ml-3 block text-sm font-medium text-pblue-700">
 									Airline Specific
 								</label>
+							</div>
+							<div class="flex items-center">
+								<button
+									type="button"
+									class="flex items-center justify-between font-medium text-sm text-left text-pblue-700 "
+									data-accordion-target="#more-options"
+									aria-expanded="false"
+									aria-controls="more-options"
+								>
+									<span class="text-sm">More options</span>
+									<svg
+										data-accordion-icon
+										class="w-4 h-4"
+										fill="currentColor"
+										viewBox="0 0 20 20"
+										xmlns="http://www.w3.org/2000/svg"
+										><path
+											fill-rule="evenodd"
+											d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+											clip-rule="evenodd"
+										/></svg
+									>
+								</button>
 							</div>
 						</div>
 					</fieldset>
 				</div>
 			</div>
 		</div>
+
 		<div class="sm:col-span-4">
 			<div class="flex flex-row-reverse">
 				<button
@@ -207,43 +231,6 @@
 					</svg>
 					Search flights
 				</button>
-			</div>
-		</div>
-	</div>
-	<div
-		id="accordion-flush"
-		data-accordion="collapse"
-		data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-		data-inactive-classes="text-gray-500 dark:text-gray-400"
-	>
-		<h2 id="accordion-flush-heading-3">
-			<button
-				type="button"
-				class="flex items-center justify-between pt-5 font-medium text-left text-gray-500 dark:text-gray-400"
-				data-accordion-target="#more-options"
-				aria-expanded="false"
-				aria-controls="more-options"
-			>
-				<span class="text-sm">More options</span>
-				<svg
-					data-accordion-icon
-					class="w-6 h-6"
-					fill="currentColor"
-					viewBox="0 0 20 20"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						fill-rule="evenodd"
-						d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-						clip-rule="evenodd"
-					/></svg
-				>
-			</button>
-		</h2>
-		<div id="more-options" class="hidden" aria-labelledby="more-options-heading-3">
-			<div class="py-3 ">
-				<p class=" text-slate-700 text-sm">
-					This is where we will input advanced options, users can select by flight name etc.
-				</p>
 			</div>
 		</div>
 	</div>

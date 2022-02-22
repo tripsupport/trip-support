@@ -22,7 +22,9 @@
 				<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
 			</h1>
 
-			<a href="#" class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
+			<a
+				href="javascript:void(0)"
+				class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
 				>Browse all Vacation Deals<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>
@@ -46,7 +48,7 @@
 				<div class="p-6 flex items-end">
 					<div>
 						<h3 class="font-semibold text-white">
-							<a href="#">
+							<a href="javascript:void(0)">
 								<span class="absolute inset-0" />
 								Sun Destinations
 							</a>
@@ -72,7 +74,7 @@
 				<div class="p-6 flex items-end sm:absolute sm:inset-0">
 					<div>
 						<h3 class="font-semibold text-white">
-							<a href="#">
+							<a href="javascript:void(0)">
 								<span class="absolute inset-0" />
 								Euro Pakcages
 							</a>
@@ -98,7 +100,7 @@
 				<div class="p-6 flex items-end sm:absolute sm:inset-0">
 					<div>
 						<h3 class="font-semibold text-white">
-							<a href="#">
+							<a href="javascript:void(0)">
 								<span class="absolute inset-0" />
 								Dubai - the city of wonders
 							</a>
@@ -112,7 +114,9 @@
 		</div>
 
 		<div class="mt-6 sm:hidden">
-			<a href="#" class="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+			<a
+				href="javascript:void(0)"
+				class="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
 				>Browse all categories<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>

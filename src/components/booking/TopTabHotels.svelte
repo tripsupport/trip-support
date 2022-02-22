@@ -1,7 +1,8 @@
-<div class="grid grid-cols-6 gap-4 mt-5">
-	<div class="col-start-1 col-end-3 my-auto">
-		<h2 class="hidden">Hello</h2>
-	</div>
+<script>
+	let travellerCount = 0;
+</script>
+
+<div class="hidden sm:grid grid-cols-6 gap-4 mt-0">
 	<div class="col-start-5 col-end-5 col-span-1 my-auto">
 		<div class="hidden w-full md:block md:w-auto" id="mobile-menu">
 			<ul class="flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium">
@@ -10,7 +11,8 @@
 						id="dropdownTravellersLink"
 						data-dropdown-toggle="dropdownTravellers"
 						class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-						>Traveller(s) <svg
+						>{travellerCount} Traveller(s)
+						<svg
 							class="ml-1 w-4 h-4"
 							fill="currentColor"
 							viewBox="0 0 20 20"
@@ -30,21 +32,21 @@
 						<ul class="py-1" aria-labelledby="dropdownLargeButton">
 							<li>
 								<a
-									href="#"
-									class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
-									>Adults</a
+									href="javascript:void(0)"
+									class="block py-2 px-4 text-tiny text-pblue-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+									>Travellers</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="javascript:void(0)"
 									class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 									>Child</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="javascript:void(0)"
 									class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 									>Infant</a
 								>
@@ -52,7 +54,7 @@
 						</ul>
 						<!-- <div class="py-1">
 							<a
-								href="#"
+								href="javascript:void(0)"
 								class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 								>Sign out</a
 							>
@@ -62,7 +64,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class=" my-6">
+	<div class="my-0 sm:my-6">
 		<div class="hidden w-full md:block md:w-auto" id="mobile-menu">
 			<ul class="flex flex-col mt-4 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium">
 				<li>
@@ -90,21 +92,21 @@
 						<!-- <ul class="py-1" aria-labelledby="dropdownLargeButton">
 							<li>
 								<a
-									href="#"
+									href="javascript:void(0)"
 									class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 									>Premium Economy</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="javascript:void(0)"
 									class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 									>Business Class</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="javascript:void(0)"
 									class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 									>First Class</a
 								>
@@ -112,7 +114,7 @@
 						</ul> -->
 						<div class="py-1">
 							<a
-								href="#"
+								href="javascript:void(0)"
 								class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
 								>Done</a
 							>

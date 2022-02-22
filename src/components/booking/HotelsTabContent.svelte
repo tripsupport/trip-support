@@ -2,11 +2,11 @@
 <!-- you can add bg-gray-50 below class -->
 <div class="bg-white" id="flights" role="tabpanel" aria-labelledby="flights-tab">
 	<!-- HOtels CONTENT -->
-	<div class="pt-0">
-		<div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
+	<div>
+		<div class="mt-8 sm:mt-0 pb-4 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
 			<div class="sm:col-span-6">
 				<div
-					class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+					class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 				>
 					<label
 						for="name"
@@ -38,7 +38,7 @@
 
 			<div class="sm:col-span-4">
 				<div
-					class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+					class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 				>
 					<label
 						for="name"

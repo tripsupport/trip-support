@@ -1,6 +1,6 @@
 <li class="mr-2" role="presentation">
 	<button
-		class="inline-flex py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
+		class="inline-flex py-4 px-4 text-tiny font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300"
 		id="hotels-tab"
 		data-tabs-target="#hotels"
 		type="button"

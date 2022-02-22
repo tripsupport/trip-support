@@ -9,15 +9,19 @@
 
 		<div class="mt-4 flex items-center justify-center md:mt-0">
 			<div class="flex space-x-8">
-				<a href={'#'} class="text-sm text-gray-500 hover:text-gray-600"> Accessibility </a>
+				<a href="javascript:void(0)" class="text-sm text-gray-500 hover:text-gray-600">
+					Accessibility
+				</a>
 
-				<a href={'#'} class="text-sm text-gray-500 hover:text-gray-600"> Privacy </a>
+				<a href="javascript:void(0)" class="text-sm text-gray-500 hover:text-gray-600"> Privacy </a>
 
-				<a href={'#'} class="text-sm text-gray-500 hover:text-gray-600"> Pay Later Terms </a>
+				<a href="javascript:void(0)" class="text-sm text-gray-500 hover:text-gray-600">
+					Pay Later Terms
+				</a>
 			</div>
 
 			<!-- <div class="ml-6 border-l border-gray-200 pl-6">
-				<a href={'#'} class="flex items-center text-gray-500 hover:text-gray-600">
+				<a href="javascript:void(0)" class="flex items-center text-gray-500 hover:text-gray-600">
 					<img
 						src="https://tailwindui.com/img/flags/flag-canada.svg"
 						alt=""

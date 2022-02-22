@@ -58,6 +58,7 @@ module.exports = {
       'xs': '0.75rem',
       'xz': '0.8rem',
 			'sm': '.845rem',
+      'tabBody': '0.865rem',
 			'tiny': '.895rem',
 			'base': '1rem',
 			'lg': '1.125rem',
@@ -89,9 +90,9 @@ module.exports = {
     require('flowbite/plugin')
   ],
   daisyui: {
-    styled: true,
+    styled: false,
     themes: true,
-    base: true,
+    base: false,
     utils: true,
     logs: true,
     rtl: false,

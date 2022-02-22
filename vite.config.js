@@ -1,0 +1,3 @@
+{
+  "server.hmr.overlay": false;
+}

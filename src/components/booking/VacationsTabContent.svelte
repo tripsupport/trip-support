@@ -1,9 +1,9 @@
 <!-- Flights CONTENT -->
 <div class="pt-0">
-	<div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
+	<div class="mt-8 sm:mt-0 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-12">
 		<div class="sm:col-span-4">
 			<div
-				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 			>
 				<label
 					for="name"
@@ -56,7 +56,7 @@
 
 		<div class="sm:col-span-4">
 			<div
-				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 			>
 				<label
 					for="name"
@@ -87,7 +87,7 @@
 
 		<div class="sm:col-span-4">
 			<div
-				class="relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
+				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex"
 			>
 				<label
 					for="name"
@@ -150,7 +150,7 @@
 									name="notification-method"
 									type="radio"
 									checked
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+									class="focus:ring-pblue-500 5-4 w-4 text-pblue-600 border-pblue-300"
 								/>
 								<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
 									All-inclusive only

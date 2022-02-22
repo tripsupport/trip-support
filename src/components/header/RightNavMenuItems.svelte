@@ -3,8 +3,8 @@
 </script>
 
 <!-- Language selection -->
-<div class="flex-shrink-0 hidden sm:flex">
-	<a href="#" class="text-slate-900 hover:text-rose-600 flex items-center">
+<div class="flex-shrink-0 flex">
+	<a href="javascript:void(0)" class="text-slate-900 hover:text-rose-600 flex items-center">
 		<img
 			src="https://tailwindui.com/img/flags/flag-canada.svg"
 			alt=""
@@ -17,7 +17,7 @@
 
 <!-- Language selection -->
 <div class="flex-shrink-0 ">
-	<a href="#" class="text-slate-900 hover:text-rose-600 flex items-center">
+	<a href="javascript:void(0)" class="text-slate-900 hover:text-rose-600 flex items-center">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			class="h-4 w-auto mr-0"
@@ -43,6 +43,7 @@
 	<button
 		type="button"
 		class="hidden bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+		data-collapse-toggle="user-profile"
 	>
 		<span class="sr-only">User login</span>
 		<!-- Heroicon name: user-circle -->
@@ -62,5 +63,66 @@
 		</svg>
 	</button>
 	<!-- Dropdown for Uer login -->
-	<ProfileDropdown />
+	<!-- Profile dropdown -->
+	<div class="mx-2 relative">
+		<div>
+			<button
+				type="button"
+				class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+				aria-expanded="false"
+				aria-haspopup="true"
+				data-collapse-toggle="profile"
+			>
+				<span class="sr-only">Open user menu</span>
+				<img
+					class="h-8 w-8 rounded-full"
+					src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+					alt=""
+				/>
+			</button>
+		</div>
+
+		<!--
+              Dropdown menu, show/hide based on menu state.
+
+              Entering: "transition ease-out duration-200"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+		<!-- currently hidden -->
+		<div
+			class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+			role="menu"
+			id="profile"
+			aria-orientation="vertical"
+			aria-labelledby="user-menu-button"
+			tabindex="-1"
+		>
+			<!-- Active: "bg-gray-100", Not Active: "" -->
+			<a
+				href="javascript:void(0)"
+				class="block px-4 py-2 text-tiny font-medium text-gray-700"
+				role="menuitem"
+				tabindex="-1"
+				id="user-menu-item-0">Your Profile</a
+			>
+			<a
+				href="javascript:void(0)"
+				class="block px-4 py-2 text-tiny font-medium text-gray-700"
+				role="menuitem"
+				tabindex="-1"
+				id="user-menu-item-1">Settings</a
+			>
+			<a
+				href="javascript:void(0)"
+				class="block px-4 py-2 text-tiny font-medium text-gray-700"
+				role="menuitem"
+				tabindex="-1"
+				id="user-menu-item-2">Sign out</a
+			>
+		</div>
+	</div>
 </div>

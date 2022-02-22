@@ -1,8 +1,10 @@
 <!-- Hero section -->
-<div class="relative bg-gray-50 sm:py-36 py-8 -mt-16 px-4 sm:px-0 ">
-	<div class="py-16 lg:py-0">
+<div
+	class="relative bg-gradient-to-r from-gray-100 via-white to-gray-100 sm:py-36 sm:-mt-16 px-4 sm:px-0 "
+>
+	<div class="py-8 lg:py-0">
 		<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
-			<div class="sm:max-w-xl ml-2 mr-4 pb-0">
+			<div class="sm:max-w-xl ml-2 mt-0 mr-4 pb-0">
 				<h1 class="text-2xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl">
 					<span
 						class="inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text pb-2 text-transparent sm:pb-2"
@@ -11,13 +13,15 @@
 					>
 				</h1>
 
-				<p class="my-4 text-tiny text-slate-600  sm:text-md sm:max-w-xl sm:mx-auto  sm:text-md ">
+				<p
+					class="hidden md:flex my-4 text-tiny text-slate-600  sm:text-md sm:max-w-xl sm:mx-auto  sm:text-md "
+				>
 					Secure your ticket with a small deposit. No Credit Check Needed.
 				</p>
 
 				<a
-					href="#"
-					class="max-w-smflex items-center justify-center px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:px-8 "
+					href="javascript:void(0)"
+					class="hidden md:flex max-w-smflex items-center justify-center px-4 py-2 border border-transparent text-tiny font-medium rounded-md shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:px-8 "
 				>
 					Learn more
 				</a>
@@ -34,7 +38,7 @@
 						>
 							<div class="w-full h-auto rounded-lg overflow-hidden">
 								<img
-									src="images/home/beach-party.jpg"
+									src="images/home/home-hero.jpg"
 									alt=""
 									class="w-full h-full object-center object-cover"
 								/>

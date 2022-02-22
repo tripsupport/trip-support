@@ -7,7 +7,7 @@
 					<div class="sm:mx-auto sm:px-4">
 						<h2
 							id="sale-heading"
-							class="hidden sm:block text-4xl font-extrabold tracking-tight text-white md:text-5xl"
+							class="hidden sm:block text-4xl font-extrabold sm:leading-snug tracking-tight sm:tracking-normal text-white md:text-5xl"
 						>
 							Vacation Deals
 							<br />
@@ -15,12 +15,12 @@
 						</h2>
 						<h2
 							id="sale-heading"
-							class="block sm:hidden text-2xl font-extrabold tracking-tight text-white"
+							class="block sm:hidden text-2xl font-extrabold tracking-tight sm:tracking-normal text-white"
 						>
 							Vacation Deals upto 50% off
 						</h2>
 						<div class="mt-6 text-base">
-							<a href="#" class="font-semibold text-white"
+							<a href="javascript:void(0)" class="font-semibold text-white"
 								>View our promotions<span aria-hidden="true"> &rarr;</span></a
 							>
 						</div>

@@ -56,7 +56,7 @@
 								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
 							>
 								<h3>
-									<a href="#">
+									<a href="javascript:void(0)">
 										<span aria-hidden="true" class="absolute inset-0" />
 										Alberta
 									</a>
@@ -90,7 +90,7 @@
 								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
 							>
 								<h3>
-									<a href="#">
+									<a href="javascript:void(0)">
 										<span aria-hidden="true" class="absolute inset-0" />
 										California
 									</a>
@@ -123,7 +123,7 @@
 								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
 							>
 								<h3>
-									<a href="#">
+									<a href="javascript:void(0)">
 										<span aria-hidden="true" class="absolute inset-0" />
 										Montreal
 									</a>
@@ -156,7 +156,7 @@
 								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
 							>
 								<h3>
-									<a href="#">
+									<a href="javascript:void(0)">
 										<span aria-hidden="true" class="absolute inset-0" />
 										New York
 									</a>
@@ -189,7 +189,7 @@
 								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
 							>
 								<h3>
-									<a href="#">
+									<a href="javascript:void(0)">
 										<span aria-hidden="true" class="absolute inset-0" />
 										Singapore
 									</a>
@@ -222,7 +222,7 @@
 								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
 							>
 								<h3>
-									<a href="#">
+									<a href="javascript:void(0)">
 										<span aria-hidden="true" class="absolute inset-0" />
 										Vancouver
 									</a>

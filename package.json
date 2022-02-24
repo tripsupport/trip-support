@@ -7,9 +7,7 @@
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview -p 3001",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"prepare": "npm run smui-theme",
-		"smui-theme": "smui-theme compile static/smui.css -i src/theme"
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@smui/button": "^6.0.0-beta.14",
@@ -28,7 +26,6 @@
 		"postcss": "^8.4.6",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
-		"smui-theme": "^6.0.0-beta.14",
 		"svelte-bootstrap-icons": "^1.8.1",
 		"svelte-hero-icons": "^4.0.3",
 		"svelte-preprocess": "^4.10.1",

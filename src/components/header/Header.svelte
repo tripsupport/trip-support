@@ -2,6 +2,7 @@
 	import AlertCovid from '../home/AlertCovid.svelte';
 	import HeaderHeroAlt from './hero/HeaderHeroAlt.svelte';
 	import MainNav from './MainNav.svelte';
+	import Hero from '../home/Hero.svelte';
 </script>
 
 <header class="relative overflow-hidden">
@@ -10,5 +11,6 @@
 	<!-- Main nav -->
 	<MainNav />
 	<!-- <Header hero /> -->
-	<HeaderHeroAlt />
+	<!-- <HeaderHeroAlt /> -->
+	<Hero />
 </header>

@@ -16,7 +16,7 @@
 -->
 <div class="relative py-12 bg-white">
 	<div class="hidden absolute top-0 inset-x-0 h-1/2 bg-white lg:block" aria-hidden="true" />
-	<div class="max-w-7xl mx-auto bg-pblue-600 lg:bg-transparent lg:px-8">
+	<div class="max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-8">
 		<div class="lg:grid lg:grid-cols-12">
 			<div
 				class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"
@@ -34,7 +34,7 @@
 			</div>
 
 			<div
-				class="relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center border shadow-xl"
+				class="relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center  shadow-xl"
 			>
 				<div
 					class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"

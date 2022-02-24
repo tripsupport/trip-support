@@ -3,6 +3,7 @@
 	import Seating from './Seating.svelte';
 	import TravellersMenu from './TravellersMenu.svelte';
 	import TravellerCount from './TravellerCount.svelte';
+	import SearchFlightsButton from '../flights/SearchFlightsButton.svelte';
 	let activeSubTab = 'roundTrip';
 </script>
 
@@ -201,6 +202,39 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="flex items-center">
+		<fieldset>
+			<div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+				<div class="flex items-center">
+					<input
+						id="email"
+						name="notification-method"
+						type="radio"
+						checked
+						class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+					/>
+					<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
+						Flexible Search (+/- 3 Days)
+					</label>
+				</div>
+
+				<div class="flex items-center">
+					<input
+						id="sms"
+						name="notification-method"
+						type="radio"
+						class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+					/>
+					<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
+						Non-stop flights only
+					</label>
+				</div>
+			</div>
+		</fieldset>
+		<div class="flex ">
+			<SearchFlightsButton />
 		</div>
 	</div>
 {/if}
@@ -535,111 +569,3 @@
 		</div>
 	</div>
 {/if}
-
-<div class="my-2">
-	<div class="grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
-		<div class="col-span-1 lg:col-span-2 hidden lg:block">
-			<div
-				class="flex-none flex items-center justify-start sm:justify-start space-x-2 md:py-3 rounded sm:bg-transparent px-2 sm:px-0 "
-			>
-				<div>
-					<fieldset class="mt-4">
-						<legend class="sr-only">Notification method</legend>
-						<div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-							<div class="flex items-center">
-								<input
-									id="email"
-									name="notification-method"
-									type="radio"
-									checked
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-								/>
-								<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
-									Flexible Search (+/- 3 Days)
-								</label>
-							</div>
-
-							<div class="flex items-center">
-								<input
-									id="sms"
-									name="notification-method"
-									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-								/>
-								<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
-									Non-stop flights only
-								</label>
-							</div>
-
-							<div class="flex items-center">
-								<input
-									id="push"
-									name="notification-method"
-									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-								/>
-								<label for="push" class="ml-3 block text-sm font-medium text-gray-700">
-									Airline specific
-								</label>
-							</div>
-							<div class="flex items-center">
-								<input
-									id="push"
-									name="notification-method"
-									type="radio"
-									class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-								/>
-								<label for="push" class="ml-3 block text-sm font-medium text-gray-700">
-									More
-								</label>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-			</div>
-		</div>
-		<!-- Mobile version -->
-		<div class="col-span-1 lg:col-span-2  lg:hidden">
-			<div
-				class=" items-center justify-start sm:justify-start space-x-2 md:py-3 rounded sm:bg-transparent px-2 sm:px-0 "
-			>
-				<div>
-					<label for="location" class="block text-xs font-medium text-gray-700">More options</label>
-					<select
-						id="location"
-						name="location"
-						class="mt-1 block w-full pl-3 pr-10 py-1 text-base border-gray-300 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-xs rounded-md"
-					>
-						<option>Flexible Search (+/- 3 Days)</option>
-						<option>Non-stop flights only</option>
-						<option>Airline specific</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<div class="col-span-1 lg:col-span-1">
-			<div
-				class="flex  items-center justify-end sm:justify-end space-x-2 md:py-3 rounded sm:bg-transparent px-2 sm:px-0"
-			>
-				<a
-					href="javascript:void(0)"
-					class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded-full  bg-pblue-900 text-white hover:text-white hover:bg-pblue-700 focus:ring focus:ring-pblue-500 focus:ring-opacity-50 active:bg-pblue-900 "
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5"
-						viewBox="0 0 20 20"
-						fill="currentColor"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-							clip-rule="evenodd"
-						/>
-					</svg>
-					<span class="flex">Search Flights</span>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>

@@ -197,7 +197,7 @@
 								</div>
 							</div>
 
-							<div class="col-span-1">
+							<!-- <div class="col-span-1">
 								{#each Array(countChild) as _, i}
 									<div id={countChild}>
 										<label for="location" class="block text-sm font-medium text-gray-700"
@@ -214,7 +214,7 @@
 										</select>
 									</div>
 								{/each}
-							</div>
+							</div> -->
 
 							<!-- END Children -->
 						</dl>
@@ -269,7 +269,7 @@
 									</button>
 								</div>
 							</div>
-							{#each Array(countInfant) as _, i}
+							<!-- {#each Array(countInfant) as _, i}
 								<div id={countInfant}>
 									<span class="text-sm font-bold flex">Infant {countInfant}:</span>
 									<div
@@ -302,13 +302,13 @@
 										</div>
 									</div>
 								</div>
-							{/each}
+							{/each} -->
 						</dl>
 					</div>
 				</div>
-				{#if countChild || countInfant > 0}
+				<!-- Error -->
+				<!-- {#if countChild || countInfant > 0}
 					<div class="mt-6 text-sm font-medium">
-						<!-- Danger Alert -->
 						<div class="p-4 md:p-5 rounded text-red-700 bg-red-100">
 							<div class="flex items-center">
 								<svg
@@ -325,9 +325,8 @@
 								<h3 class="font-semibold">Please provide the ages of children</h3>
 							</div>
 						</div>
-						<!-- END Danger Alert -->
 					</div>
-				{/if}
+				{/if} -->
 			</div>
 		</div>
 	</div>

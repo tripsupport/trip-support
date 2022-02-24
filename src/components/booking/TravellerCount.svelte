@@ -57,7 +57,7 @@
 </button>
 
 {#if dropdownOpen}
-	<div transition:fly={{ y: -10, duration: 100 }} role="menu" aria-labelledby="tk-dropdown-simple">
+	<div role="menu" aria-labelledby="tk-dropdown-simple" class="z-50">
 		<div class="absolute bg-white shadow overflow-hidden sm:rounded-lg z-40 text-left mt-3">
 			<div class="px-4 py-3 sm:px-6">
 				<h3 class="text-lg leading-6 font-medium text-gray-900">Travellers</h3>
@@ -67,19 +67,19 @@
 			</div>
 
 			<div class="border-t text-left border-gray-200 px-4 py-4 sm:px-6">
-				<!-- Danger Alert -->
-				{#if countChild || countInfant > 0}
+				<!-- Ages of children error msg -->
+				<!-- {#if countChild || countInfant > 0}
 					<div class="p-3 md:p-4 mb-2 rounded text-red-700 bg-red-100">
 						<div class="flex items-center">
 							<div class="font-semibold text-sm">Please provide the ages of children</div>
 						</div>
 					</div>
-				{/if}
+				{/if} -->
 				<!-- END Danger Alert -->
 				<dl class="grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-2">
 					<div class="sm:col-span-1 my-auto">
 						<dt class="text-tiny font-medium text-gray-900">Adults</dt>
-						<dd class="text-xs font-normal text-gray-500">18 +</dd>
+						<dd class="text-xs font-normal text-gray-500">Age 12+</dd>
 					</div>
 					<div class="sm:col-span-1">
 						<div class="inline-flex my-2">
@@ -130,7 +130,7 @@
 					<!-- BEGIN Child -->
 					<div class="sm:col-span-1 my-auto">
 						<dt class="text-tiny font-medium text-gray-900">Children</dt>
-						<dd class="text-xs font-normal text-gray-500">2 to 17</dd>
+						<dd class="text-xs font-normal text-gray-500">Age 2-11</dd>
 					</div>
 					<div class="sm:col-span-1">
 						<div class="inline-flex my-2">
@@ -178,15 +178,15 @@
 							</button>
 						</div>
 					</div>
-					{#each Array(countChild) as _, i}
+					<!-- {#each Array(countChild) as _, i}
 						<div id={countChild}>
 							<div class="my-4 w-full flex">
-								<!-- This example requires Tailwind CSS v2.0+ -->
+
 								<div>
 									<div class="mt-1 relative">
 										<button
 											type="button"
-											class="bg-white relative w-full border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+											class="bg-white relative w-full border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
 											aria-haspopup="listbox"
 											aria-expanded={ageDropdownOpen ? 'true' : 'false'}
 											on:click={() => (ageDropdownOpen = !ageDropdownOpen)}
@@ -195,7 +195,7 @@
 											<span
 												class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none"
 											>
-												<!-- Heroicon name: solid/selector -->
+
 												<svg
 													class="h-5 w-5 text-gray-400"
 													xmlns="http://www.w3.org/2000/svg"
@@ -228,9 +228,8 @@
 													<span class="font-normal block truncate"> Wade Cooper </span>
 
 													<span
-														class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4"
+														class="text-pblue-600 absolute inset-y-0 right-0 flex items-center pr-4"
 													>
-														<!-- Heroicon name: solid/check -->
 														<svg
 															class="h-5 w-5"
 															xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +246,6 @@
 													</span>
 												</li>
 
-												<!-- More items... -->
 												<li
 													class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9"
 													id="listbox-option-0"
@@ -262,13 +260,13 @@
 							</div>
 						</div>
 						<div />
-					{/each}
+					{/each} -->
 
 					<!-- END Children -->
 					<!-- BEGIN Infant -->
 					<div class="sm:col-span-1 my-auto">
 						<dt class="text-tiny font-medium text-gray-900">Infant</dt>
-						<dd class="text-xs font-normal text-gray-500">Younger than 2</dd>
+						<dd class="text-xs font-normal text-gray-500">Age under 2</dd>
 					</div>
 					<div class="sm:col-span-1">
 						<div class="inline-flex my-2">
@@ -315,7 +313,7 @@
 							</button>
 						</div>
 					</div>
-					{#each Array(countInfant) as _, i}
+					<!-- {#each Array(countInfant) as _, i}
 						<div id={countInfant}>
 							<span class="text-sm font-bold flex">Infant {countInfant}:</span>
 							<div class="space-y-4 mt-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-6" id="">
@@ -345,8 +343,15 @@
 								</div>
 							</div>
 						</div>
-					{/each}
+					{/each} -->
 				</dl>
+				<div class="flex items-center justify-center mt-4 mb-2">
+					<button
+						type="button"
+						class="w-full items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+						>Done</button
+					>
+				</div>
 			</div>
 		</div>
 	</div>

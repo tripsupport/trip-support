@@ -30,7 +30,6 @@
 <!-- Dropdown -->
 {#if dropdownOpen}
 	<div
-		transition:fly={{ y: -10, duration: 200 }}
 		role="menu"
 		aria-labelledby="tk-dropdown-simple"
 		class="absolute mt-3 w-56 shadow-xl rounded z-20 "

@@ -1,6 +1,6 @@
 <!-- Hero section -->
 <div
-	class="relative bg-gradient-to-r from-gray-100 via-white to-gray-100 sm:py-36 sm:-mt-16 px-4 sm:px-0 "
+	class="relative bg-gradient-to-r from-gray-50 via-white to-gray-50 sm:py-36 sm:-mt-16 px-4 sm:px-0 "
 >
 	<div class="py-8 lg:py-0">
 		<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">

@@ -44,6 +44,13 @@
 
 	// import SelectAge from './SelectAge.svelte';
 	let ageDropdownOpen = false;
+	let totalCount;
+
+	import { clickOutside } from '../clickOutside';
+
+	function handleClickOutside(event) {
+		dropdownOpen = !dropdownOpen;
+	}
 </script>
 
 <!-- Dropdown Container -->
@@ -64,7 +71,7 @@
 			aria-expanded={dropdownOpen ? 'true' : 'false'}
 			on:click={() => (dropdownOpen = !dropdownOpen)}
 		>
-			Travellers +
+			{1} Traveller(s) +
 		</button>
 	</div>
 
@@ -72,9 +79,11 @@
 		<div
 			role="menu"
 			aria-labelledby="tk-dropdown-simple"
-			class="z-50 absolute origin-top-left left-0 right-auto mt-2 w-96"
+			class="z-30 overflow-hidden md:origin-top-right absolute md:right-0 md:left-auto origin-top-left left-0 right-auto mt-2 w-96"
+			use:clickOutside
+			on:click_outside={handleClickOutside}
 		>
-			<div class="bg-white shadow overflow-hidden sm:rounded-lg text-left mt-3 z-51">
+			<div class="bg-white shadow overflow-hidden sm:rounded-lg text-left mt-3">
 				<div class="px-4 py-3 sm:px-6">
 					<h3 class="text-lg leading-6 font-medium text-gray-900">Travellers</h3>
 					<p class="mt-1 max-w-2xl text-xs text-gray-500 font-light">
@@ -365,7 +374,8 @@
 						<button
 							type="button"
 							class="w-full items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
-							>Done</button
+							aria-expanded={dropdownOpen ? 'true' : 'false'}
+							on:click={() => (dropdownOpen = !dropdownOpen)}>Done</button
 						>
 					</div>
 				</div>

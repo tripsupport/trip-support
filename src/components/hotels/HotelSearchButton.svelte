@@ -10,6 +10,6 @@
 				clip-rule="evenodd"
 			/>
 		</svg>
-		<span class="flex">Search Flights</span>
+		<span class="flex">Search Hotels</span>
 	</a>
 </div>

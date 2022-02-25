@@ -12,7 +12,7 @@
 </script>
 
 <section
-	class="relative max-w-7xl z-10 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-4 pb-12 lg:px-8 lg:mb-6"
+	class="relative max-w-7xl z-30 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-4 pb-12 lg:px-8 lg:mb-6"
 	aria-labelledby="contact-heading"
 >
 	<div class="flex flex-col rounded-xl bg-white shadow-xl">
@@ -58,7 +58,7 @@
 		</div>
 		<!-- END Card Header -->
 
-		<div class="px-5 py-4 lg:px-6 lg:py-6 grow w-full">
+		<div class="px-5 pt-4 pb-3 lg:px-6 lg:pb-5 lg:pb-6 grow w-full">
 			{#if activeTab === 'flights'}
 				<FlightsTab />
 			{/if}

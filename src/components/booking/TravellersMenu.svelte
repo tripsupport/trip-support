@@ -56,7 +56,7 @@
 			aria-expanded={dropdownOpen ? 'true' : 'false'}
 			on:click={() => (dropdownOpen = !dropdownOpen)}
 		>
-			Travellers +
+			{1} Traveller(s) +
 		</button>
 	</div>
 </div>
@@ -73,7 +73,7 @@
   -->
 {#if dropdownOpen}
 	<div
-		class="absolute z-10 inset-x-0 transform shadow-lg"
+		class="absolute z-50 inset-x-0 transform shadow-lg"
 		transition:fly={{ y: -10, duration: 200 }}
 		role="menu"
 		aria-labelledby="tk-dropdown-simple"
@@ -83,7 +83,7 @@
 			<div class="bg-gray-50 w-1/2" />
 		</div>
 		<div class="relative max-w-7xl bg-gray-50">
-			<div class="x-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+			<div class="x-4 pt-4 pb-2 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
 				<div class="mx-auto grid grid-cols-3">
 					<div class="col-span-3 border-b text-left border-gray-200">
 						<div class="px-4 py-3 sm:px-6">
@@ -310,6 +310,7 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- Error -->
 				<!-- {#if countChild || countInfant > 0}
 					<div class="mt-6 text-sm font-medium">
@@ -330,7 +331,16 @@
 							</div>
 						</div>
 					</div>
+					
 				{/if} -->
+			</div>
+			<div class="flex items-center justify-center mt-0 mb-6">
+				<button
+					type="button"
+					class="w-full mx-4 items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+					aria-expanded={dropdownOpen ? 'true' : 'false'}
+					on:click={() => (dropdownOpen = !dropdownOpen)}>Done</button
+				>
 			</div>
 		</div>
 	</div>

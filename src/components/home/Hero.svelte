@@ -33,8 +33,8 @@
 				class="sm:-mt-40 -mt-12 aspect-w-4 aspect-h-1 lg:aspect-w-5 lg:aspect-h-3 hidden sm:block"
 			>
 				<img
-					class="transform translate-x-6 translate-y-6 rounded-b-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-					src="images/home/home-hero.jpg"
+					class="transform translate-x-6 translate-y-6 rounded-b-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20 "
+					src="images/hero/hotair-bg.jpg"
 					alt="App screenshot"
 				/>
 			</div>

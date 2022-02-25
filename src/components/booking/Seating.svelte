@@ -2,6 +2,12 @@
 	import { fly } from 'svelte/transition';
 
 	let dropdownOpen = false;
+
+	import { clickOutside } from '../clickOutside';
+
+	function handleClickOutside(event) {
+		dropdownOpen = !dropdownOpen;
+	}
 </script>
 
 <button
@@ -33,6 +39,8 @@
 		role="menu"
 		aria-labelledby="tk-dropdown-simple"
 		class="absolute mt-3 w-56 shadow-xl rounded z-20 "
+		use:clickOutside
+		on:click_outside={handleClickOutside}
 	>
 		<div class="bg-white ring-1 ring-black ring-opacity-5 rounded divide-y divide-gray-100">
 			<div class="p-2 space-y-1">

@@ -6,8 +6,8 @@
 <nav aria-label="Top" class="relative z-10">
 	<!-- Top navigation -->
 	<div class="bg-gray-900">
-		<div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
-			<div class="hidden sm:flex">
+		<div class="max-w-7xl lg:mx-auto h-10 px-3 flex items-center justify-between  lg:px-8">
+			<div class="hidden lg:flex">
 				<Icon src={Exclamation} class="h-6 text-slate-50 w-5 mr-2" />
 				<span class="text-xz my-auto text-white"
 					>All air passengers must comply with COVID-19 travel and vaccination requirements imposed

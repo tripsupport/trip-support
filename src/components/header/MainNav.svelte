@@ -10,17 +10,18 @@
 <!-- Main navigation -->
 <nav class="bg-white shadow relative z-20">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-2">
-		<div class="container flex flex-wrap justify-between items-center mx-auto">
+		<div class="flex container flex-wrap justify-between items-center ">
 			<div class="flex">
 				<!-- Nav logo -->
 				<Logo />
+
 				<!-- Nav Menu Items -->
-				<div class="lg:flex items-center gap-1 hidden">
+				<div class="hidden lg:flex items-center gap-1 ">
 					<NavMenuItems />
 				</div>
 			</div>
 
-			<div class="inline-flex items-center p-2 text-sm text-gray-900 rounded-lg md:hidden ">
+			<div class="inline-flex items-center p-2 text-sm text-gray-900 rounded-lg lg:hidden">
 				<!-- Mobile menu button -->
 				<ProfileDropdown />
 				<MobMenuBtn />

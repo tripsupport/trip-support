@@ -1,5 +1,5 @@
 <!-- Nav menu items -->
-<div class="hidden md:ml-6 md:flex md:space-x-8">
+<div class="hidden md:ml-6 lg:flex md:space-x-8">
 	<a
 		href="javascript:void(0)"
 		class="text-tiny font-semibold text-rose-600 inline-flex items-center px-1 pt-1 sm:ml-4"

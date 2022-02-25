@@ -8,7 +8,7 @@
 </script>
 
 <div class="grid grid-cols-12">
-	<div class="col-span-8 flex gap-x-4">
+	<div class="col-span-12 md:col-span-8 flex gap-x-4">
 		<div class="col-span-2 lg:col-span-1">
 			<!-- Simple Button (extra small) -->
 			<button
@@ -56,12 +56,12 @@
 			<!-- END Simple Button (small) -->
 		</div>
 	</div>
-	<div class="col-span-12 md:col-span-4 mt-6 md:mt-0 flex gap-x-2 sm:gap-x-6">
-		<div class="hidden ml-3 md:block col-span-2 lg:col-span-1">
+	<div class="col-span-12 md:col-span-4 mt-6 md:mt-0 flex gap-x-2 sm:gap-x-12">
+		<div class="hidden ml-3 sm:block col-span-2 lg:col-span-1">
 			<TravellerCount />
 		</div>
 		<!-- Mobile Modal -->
-		<div class="md:hidden col-span-2 lg:col-span-1">
+		<div class="sm:hidden col-span-2 lg:col-span-1">
 			<!-- Travellers Section -->
 			<TravellersMenu />
 		</div>
@@ -78,8 +78,8 @@
 	<div class="mt-8 mb-4">
 		<div class="grid grid-cols-12 lg:gird-cols-12 gap-4">
 			<div class="col-span-12 lg:col-span-8">
-				<div class="grid grid-cols-12">
-					<div class="col-span-5">
+				<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative">
+					<div class="col-span-12 md:col-span-6">
 						<div
 							class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 active:border-transparent flex"
 						>
@@ -111,11 +111,25 @@
 						</div>
 					</div>
 
-					<div class="col-span-1 my-auto mx-auto">
-						<Icon src={SwitchHorizontal} class="h-6 text-pblue-900 w-6" />
+					<div
+						class="z-50 hidden md:block absolute top-1/2 left-[49.97%] transform -translate-x-1/2 -translate-y-3 "
+					>
+						<Icon
+							src={SwitchHorizontal}
+							class="z-50 bg-white h-8 text-pblue-900 w-8 border rounded-full p-[5px] border-pblue-500"
+						/>
 					</div>
 
-					<div class="col-span-5">
+					<div
+						class="z-50 md:hidden absolute top-[47.3%] left-[94%] transform -translate-x-1/2 -translate-y-3"
+					>
+						<Icon
+							src={SwitchHorizontal}
+							class="bg-white h-8 text-pblue-900 w-8 rotate-90 border rounded-full p-[5px] border-pblue-500"
+						/>
+					</div>
+
+					<div class="col-span-12 md:col-span-6">
 						<div
 							class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 active:border-transparent flex"
 						>
@@ -149,7 +163,7 @@
 				</div>
 			</div>
 			<!-- Departure and return -->
-			<div class="col-span-12 md:col-span-4 lg:col-span-4">
+			<div class="col-span-12 lg:col-span-4">
 				<div
 					class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 flex items-center"
 				>
@@ -158,19 +172,7 @@
 						class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-pblue-900"
 						>Departure / Return</label
 					>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="w-7 h-6 text-pblue-800"
-						viewBox="0 0 20 20"
-						fill="currentColor"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-							clip-rule="evenodd"
-						/>
-					</svg>
-					<div class="flex items-center">
+					<div class="flex items-center col-span-6">
 						<input
 							type="text"
 							name="name"
@@ -192,48 +194,72 @@
 							/>
 						</svg>
 
-						<input
-							type="text"
-							name="name"
-							id="name"
-							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
-							placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
-						/>
+						<div class="flex items-center col-span-6">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
+								placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
+							/>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
+								placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
+							/>
+							<span class="mx-4 h-6 w-px bg-pblue-400 mt-1 lg:mx-6" aria-hidden="true" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-12 h-5 text-pblue-800"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="flex items-center">
-		<fieldset>
-			<div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-				<div class="flex items-center">
-					<input
-						id="email"
-						name="notification-method"
-						type="radio"
-						checked
-						class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-					/>
-					<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
-						Flexible Search (+/- 3 Days)
-					</label>
-				</div>
+	<div class="grid grid-cols-3 justify-self-start place-content-between gap-4 items-center">
+		<div class="col-span-2">
+			<fieldset>
+				<div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+					<div class="inline-flex items-center">
+						<input
+							id="email"
+							name="notification-method"
+							type="radio"
+							checked
+							class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+						/>
+						<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
+							Flexible Search (+/- 3 Days)
+						</label>
+					</div>
 
-				<div class="flex items-center">
-					<input
-						id="sms"
-						name="notification-method"
-						type="radio"
-						class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-					/>
-					<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
-						Non-stop flights only
-					</label>
+					<div class="flex items-center">
+						<input
+							id="sms"
+							name="notification-method"
+							type="radio"
+							class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
+						/>
+						<label for="sms" class="ml-3 block text-sm font-medium text-gray-700">
+							Non-stop flights only
+						</label>
+					</div>
 				</div>
-			</div>
-		</fieldset>
-		<div class="flex ">
+			</fieldset>
+		</div>
+		<div class="justify-self-end">
 			<SearchFlightsButton />
 		</div>
 	</div>

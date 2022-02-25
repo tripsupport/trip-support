@@ -12,17 +12,19 @@
 					>
 				</h1>
 				<div class="grid grid-cols-12 items-center mt-4 gap-x-2 md:gap-x-0 sm:gap-x-0">
-					<div class="col-span-6 sm:col-span-8 md:col-span-7 lg:col-span-7   ">
+					<div class="col-span-7 sm:col-span-8 md:col-span-7 lg:col-span-7 ">
 						<p
-							class="sm:text-tiny font-semibold  text-slate-600 mx-auto md:text-lg xl:text-2xl lg:text-xl"
+							class="sm:text-base text-base font-semibold  text-slate-600 mx-auto md:text-lg xl:text-2xl lg:text-xl"
 						>
 							No Credit Check Needed.
 						</p>
 					</div>
-					<div class="col-span-6 sm:col-span-4 md-col-span-5 lg:col-span-5 justify-self-start">
+					<div
+						class="col-span-4 sm:col-span-4 md-col-span-5 lg:col-span-5 justify-self-end sm:justify-self-start"
+					>
 						<a
 							href="javascript:void(0)"
-							class=" items-center justify-center py-2 px-3 border border-transparent text-tiny font-medium rounded-full shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:text-xz "
+							class=" items-center justify-center py-1 sm:py-2 px-3 border border-transparent text-sm sm:text-tiny font-medium rounded-full shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:text-xz "
 						>
 							Learn more
 						</a>

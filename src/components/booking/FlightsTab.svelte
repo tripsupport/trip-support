@@ -64,7 +64,9 @@
 			<!-- END Simple Button (small) -->
 		</div>
 	</div>
-	<div class="col-span-12 md:col-span-4 mt-6 md:mt-0 flex justify-end gap-x-2 sm:gap-x-10">
+	<div
+		class="col-span-12 md:col-span-4 mt-6 md:mt-0 flex md:justify-end justify-start gap-x-2 sm:gap-x-10"
+	>
 		<div class="hidden ml-3 sm:block col-span-2 lg:col-span-1">
 			<TravellerCount />
 		</div>

@@ -88,7 +88,7 @@
 	<!-- Mobile menu, show/hide based on menu state. -->
 	<div
 		bind:this={popoverDropdownRef}
-		class="bg-white text-tiny font-medium z-50 float-left py-2 list-none text-left rounded shadow-lg w-56 {dropdownPopoverShow
+		class="bg-white text-tiny font-medium z-30 float-left py-2 list-none text-left rounded shadow-lg w-56 {dropdownPopoverShow
 			? 'block'
 			: 'hidden'}"
 	>

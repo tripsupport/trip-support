@@ -18,8 +18,7 @@
 	>
 		Hotels
 	</a>
-	<div class="dropdown">
-		<!-- svelte-ignore a11y-label-has-associated-control -->
+	<!-- <div class="dropdown">
 		<label
 			tabindex="0"
 			class="inline-flex items-center px-1 pt-1 text-tiny font-medium text-slate-900 hover:text-rose-600"
@@ -74,5 +73,5 @@
 				</a>
 			</li>
 		</ul>
-	</div>
+	</div> -->
 </div>

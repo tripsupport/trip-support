@@ -2,7 +2,7 @@
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
 </script>
 
-<div class="mt-8 mb-4">
+<div class="my-6">
 	<div class="grid grid-cols-12 lg:gird-cols-12 gap-4 items-center">
 		<div class="col-span-12 lg:col-span-8">
 			<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative">

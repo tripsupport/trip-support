@@ -6,7 +6,7 @@
 <nav aria-label="Top" class="relative z-10">
 	<!-- Top navigation -->
 	<div class="bg-gray-900">
-		<div class="max-w-7xl lg:mx-auto h-10 px-3 flex items-center justify-between  lg:px-8">
+		<div class="max-w-7xl lg:mx-auto py-2 px-4 flex items-center justify-between">
 			<div class="hidden lg:flex">
 				<Icon src={Exclamation} class="h-6 text-slate-50 w-5 mr-2" />
 				<span class="text-xz my-auto text-white"

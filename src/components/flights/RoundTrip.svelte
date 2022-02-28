@@ -2,7 +2,7 @@
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
 </script>
 
-<div class="mt-8 mb-4">
+<div class="my-6">
 	<div class="grid grid-cols-12 lg:gird-cols-12 gap-4 items-center">
 		<div class="col-span-12 lg:col-span-8">
 			<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative">
@@ -32,7 +32,7 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm "
+							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 							placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
 						/>
 					</div>
@@ -82,7 +82,7 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm "
+							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
 							placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
 						/>
 					</div>
@@ -119,7 +119,7 @@
 									type="text"
 									name="name"
 									id="name"
-									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
+									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 									placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 								/>
 							</div>
@@ -147,7 +147,7 @@
 									type="text"
 									name="name"
 									id="name"
-									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
+									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 									placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 								/>
 							</div>

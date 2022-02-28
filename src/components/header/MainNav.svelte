@@ -9,29 +9,27 @@
 
 <!-- Main navigation -->
 <nav class="bg-white shadow relative z-20">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-2">
-		<div class="flex container flex-wrap justify-between items-center ">
-			<div class="flex">
+	<div class="max-w-7xl mx-auto py-2">
+		<div class="flex flex-wrap justify-between items-center ">
+			<div class="flex px-6">
 				<!-- Nav logo -->
 				<Logo />
 
 				<!-- Nav Menu Items -->
-				<div class="hidden lg:flex items-center gap-1 ">
+				<div class="hidden lg:flex items-center gap-1 px-6">
 					<NavMenuItems />
 				</div>
 			</div>
 
-			<div class="inline-flex items-center p-2 text-sm text-gray-900 rounded-lg lg:hidden">
+			<div class="inline-flex items-center py-2 text-sm text-gray-900 rounded-lg lg:hidden px-6">
 				<!-- Mobile menu button -->
 				<ProfileDropdown />
 				<MobMenuBtn />
 			</div>
 
-			<div class="hidden lg:flex items-center gap-1 sm:gap-8 ">
+			<div class="hidden lg:flex items-center gap-1 sm:gap-8 px-6">
 				<RightNavMenuItems />
 			</div>
 		</div>
 	</div>
-
-	<MobileMenuItems />
 </nav>

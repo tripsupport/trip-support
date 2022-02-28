@@ -16,7 +16,7 @@
 </script>
 
 <div class="grid grid-cols-12">
-	<div class="col-span-12 md:col-span-8 flex gap-x-4">
+	<div class="col-span-12 md:col-span-8 flex gap-x-4 justify-start">
 		<div class="col-span-2 lg:col-span-1">
 			<!-- Simple Button (extra small) -->
 			<button
@@ -64,16 +64,12 @@
 			<!-- END Simple Button (small) -->
 		</div>
 	</div>
-	<div class="col-span-12 md:col-span-4 mt-6 md:mt-0 flex md:justify-end justify-start">
-		<div class="hidden ml-3 sm:block col-span-2 lg:col-span-1">
+	<div class="col-span-12 md:col-span-4 flex md:justify-end justify-start mt-6">
+		<div class="col-span-2 lg:col-span-1">
 			<TravellerCount />
 		</div>
-		<!-- Mobile Modal -->
-		<div class="sm:hidden col-span-2 lg:col-span-1">
-			<!-- Travellers Section -->
-			<TravellersMenu />
-		</div>
-		<div class="col-span-2 lg:col-span-1 mr-2">
+
+		<div class="col-span-2 lg:col-span-1">
 			<Seating />
 		</div>
 	</div>

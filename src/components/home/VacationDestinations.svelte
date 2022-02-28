@@ -15,7 +15,7 @@
   ```
 -->
 <div class="bg-white">
-	<div class="max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2">
 		<div class="sm:flex sm:items-baseline sm:justify-between">
 			<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
 				<span class="block xl:inline">Vacation Destinations</span>
@@ -29,7 +29,7 @@
 			>
 		</div>
 		<p
-			class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose sm:mx-auto md:mt-3 md:text-md lg:mx-0"
+			class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
 		>
 			Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
 			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
@@ -116,8 +116,8 @@
 		<div class="mt-6 sm:hidden">
 			<a
 				href="javascript:void(0)"
-				class="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-				>Browse all categories<span aria-hidden="true"> &rarr;</span></a
+				class="block text-sm font-semibold text-rose-600 hover:text-rose-400"
+				>Browse all vacation destinations<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>
 	</div>

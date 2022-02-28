@@ -1,27 +1,28 @@
 <!-- Blog section -->
-<div class="relative bg-gray-50 py-6 sm:py-12 lg:py-12 my-4">
-	<div class="sm:text-left lg:mx-auto max-w-md  sm:max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8">
+<div class="bg-white">
+	<div class="max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2">
 		<div class="sm:flex sm:items-baseline sm:justify-between">
-			<div class="px-4 sm:px-0">
-				<h1 class="text-lg tracking-tight font-extrabold text-gray-900 sm:text-xl md:text-2xl">
-					<span class="block xl:inline"> Inspirational stories from the experts </span>
-					<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
-				</h1>
-				<p
-					class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-ppred sm:mx-auto md:mt-3 md:text-md lg:mx-0"
-				>
-					Latest blog articles on travel, flights and vacation deals
-				</p>
-			</div>
+			<h1 class="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
+				<span class="block xl:inline">Inspiration Stories from Experts</span>
+				<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
+			</h1>
 
-			<a href="#" class="hidden text-sm font-semibold text-pred-600 hover:text-pblue-900 sm:block"
-				>View all posts<span aria-hidden="true"> &rarr;</span></a
+			<a
+				href="javascript:void(0)"
+				class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
+				>Browse all Blog Posts<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>
+		<p
+			class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
+		>
+			Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
+			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
+		</p>
 	</div>
 
 	<div
-		class="mt-6 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl"
+		class="mt-6 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 md:grid-cols-2 md:max-w-7xl lg:px-8 lg:grid-cols-3 lg:max-w-7xl"
 	>
 		<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 			<div class="flex-shrink-0">
@@ -33,8 +34,10 @@
 						<a href="#" class="hover:underline"> Blog </a>
 					</p>
 					<a href="#" class="block mt-2">
-						<p class="text-xl font-semibold text-gray-900">Top 15 Tips For Traveling To Mexico</p>
-						<p class="mt-3 text-base text-gray-500">
+						<p class="text-lg lg:text-lg font-semibold text-gray-900">
+							Top 15 Tips For Traveling To Mexico
+						</p>
+						<p class="mt-3 text-tiny text-gray-500">
 							Looking for travelling to Mexico tips?
 							<br /> Mexico is a colourful, vibrant country full of history, culture, nature and some...
 						</p>
@@ -73,8 +76,10 @@
 						<a href="#" class="hover:underline"> Blog </a>
 					</p>
 					<a href="#" class="block mt-2">
-						<p class="text-xl font-semibold text-gray-900">10 Snowiest Cities in Canada</p>
-						<p class="mt-3 text-base text-gray-500">
+						<p class="text-lg lg:text-lg font-semibold text-gray-900">
+							10 Snowiest Cities in Canada
+						</p>
+						<p class="mt-3 text-tiny text-gray-500">
 							Let’s plan a trip to one of the snowiest cities in Canada. If you enjoy winter
 							activities and cooler climates, Canada...
 						</p>
@@ -113,8 +118,10 @@
 						<a href="#" class="hover:underline"> Blog </a>
 					</p>
 					<a href="#" class="block mt-2">
-						<p class="text-xl font-semibold text-gray-900">10 Downtown Honolulu Restaurants</p>
-						<p class="mt-3 text-base text-gray-500">
+						<p class="text-lg lg:text-lg font-semibold text-gray-900">
+							10 Downtown Honolulu Restaurants
+						</p>
+						<p class="mt-3 text-tiny text-gray-500">
 							Say aloha to some delicious dining experiences when you arrive in sunny Honolulu. From
 							fine dining to cheap
 						</p>
@@ -141,6 +148,13 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="sm:hidden">
+			<a
+				href="javascript:void(0)"
+				class="block text-sm font-semibold text-rose-600 hover:text-rose-400"
+				>View all blog posts<span aria-hidden="true"> &rarr;</span></a
+			>
 		</div>
 	</div>
 </div>

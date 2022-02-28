@@ -2,7 +2,7 @@
 <div class="relative bg-white overflow-hidden">
 	<div class="max-w-7xl mx-auto">
 		<div
-			class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"
+			class="relative z-10 pb-4 bg-white sm:pb-6 md:pb-8 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"
 		>
 			<svg
 				class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
@@ -14,16 +14,14 @@
 				<polygon points="50,0 100,0 50,100 0,100" />
 			</svg>
 
-			<main
-				class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-			>
-				<div class="sm:text-center lg:text-left">
+			<main class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+				<div class="text-left">
 					<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
 						<span class="block xl:inline">Popular Flights Deals</span>
 						<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
 					</h1>
 					<p
-						class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose sm:mx-auto md:mt-3 md:text-md lg:mx-0"
+						class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
 					>
 						Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
 						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
@@ -235,6 +233,13 @@
 				</div>
 			</main>
 		</div>
+	</div>
+	<div class="sm:hidden px-4">
+		<a
+			href="javascript:void(0)"
+			class="block text-sm font-semibold text-rose-600 hover:text-rose-400"
+			>Browse all vacation destinations<span aria-hidden="true"> &rarr;</span></a
+		>
 	</div>
 	<div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 		<img

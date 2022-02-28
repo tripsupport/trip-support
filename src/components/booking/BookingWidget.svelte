@@ -19,15 +19,15 @@
 		<!-- Card -->
 
 		<!-- Card Header -->
-		<div class="py-4 px-5 lg:px-6 w-full">
-			<nav class="flex items-center border-b border-gray-200">
+		<div class="py-2 px-5 lg:px-6 w-full">
+			<nav class="flex items-center sm:justify-start justify-between border-b border-gray-200">
 				<button
 					on:click={() => (activeTab = 'flights')}
 					type="button"
-					class="px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
+					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'flights'
 						? 'text-pblue-900 border-b-2 border-pblue-900 '
-						: 'text-gray-500 hover:text-pblue-900'}"
+						: 'text-gray-700 hover:text-pblue-900'}"
 				>
 					<FlightsIcon />
 					flights
@@ -35,10 +35,10 @@
 				<button
 					on:click={() => (activeTab = 'vacations')}
 					type="button"
-					class="px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
+					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'vacations'
 						? 'text-pblue-900 border-b-2 border-pblue-900 '
-						: 'text-gray-500 hover:text-pblue-900'}"
+						: 'text-gray-700 hover:text-pblue-900'}"
 				>
 					<VacationsIcon />
 					vacations
@@ -46,10 +46,10 @@
 				<button
 					on:click={() => (activeTab = 'hotels')}
 					type="button"
-					class="px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
+					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'hotels'
 						? 'text-pblue-900 border-b-2 border-pblue-900 '
-						: 'text-gray-500 hover:text-pblue-900'}"
+						: 'text-gray-700 hover:text-pblue-900'}"
 				>
 					<HotelsIcon />
 					hotels
@@ -58,7 +58,7 @@
 		</div>
 		<!-- END Card Header -->
 
-		<div class="px-5 pt-4 pb-3 lg:px-6 lg:pb-5 lg:pb-6 grow w-full">
+		<div class="px-5 py-4 mb-3 lg:px-6 lg:pb-4 grow w-full">
 			{#if activeTab === 'flights'}
 				<FlightsTab />
 			{/if}

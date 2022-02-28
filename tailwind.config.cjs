@@ -18,8 +18,6 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xs': '370px',
-      // => @media (min-width: 370px) { ... }
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -84,7 +82,7 @@ module.exports = {
       'xz': '0.8rem',
 			'sm': '.845rem',
       'tabBody': '0.865rem',
-			'tiny': '.895rem',
+			'tiny': '.9125rem',
 			'base': '1rem',
 			'lg': '1.125rem',
 			'xl': '1.25rem',

@@ -1,4 +1,4 @@
-<div class="space-x-2 rounded sm:bg-transparent sm:px-0 mb-4">
+<div class=" rounded sm:bg-transparent ">
 	<a
 		href="javascript:void(0)"
 		class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded-full  bg-pblue-900 text-white hover:text-white hover:bg-pblue-700 focus:ring focus:ring-pblue-500 focus:ring-opacity-50 active:bg-pblue-900 w-full "

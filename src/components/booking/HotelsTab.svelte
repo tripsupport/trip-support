@@ -9,25 +9,21 @@
 <!-- OneWay Tab -->
 
 <div class="flex md:justify-end justify-start ">
-	<div class="col-span-12 md:col-span-4 md:mt-6 -mt-2 flex">
-		<div class="hidden ml-3 md:block col-span-2 lg:col-span-1">
+	<div class="col-span-12 md:col-span-4 flex">
+		<div class="col-span-2 lg:col-span-1">
 			<TravellerCount />
 		</div>
-		<!-- Mobile Modal -->
-		<div class="md:hidden col-span-2 lg:col-span-1">
-			<!-- Travellers Section -->
-			<TravellersMenu />
-		</div>
-		<div class="col-span-2 lg:col-span-1 mr-2">
+
+		<div class="col-span-2 lg:col-span-1 ">
 			<Rooms />
 		</div>
 	</div>
 </div>
 
-<div class="mt-8 mb-4">
+<div class="my-6">
 	<div class="grid grid-cols-12 lg:gird-cols-12 gap-4 items-center">
 		<div class="col-span-12 lg:col-span-8">
-			<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative">
+			<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-0 relative">
 				<div class="col-span-12 ">
 					<div
 						class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 active:border-transparent flex"

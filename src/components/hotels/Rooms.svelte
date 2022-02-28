@@ -57,15 +57,19 @@
 			});
 		}
 	};
+
+	// outclick
+	import OutClick from 'svelte-outclick';
+
+	const hideDropdown = () => {
+		if (dropdownPopoverShow) {
+			dropdownPopoverShow = false;
+		}
+	};
 </script>
 
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class=" md:hidden max-w-7xl mx-auto sm:px-6 lg:px-8">
-	Testing
-	<!-- Content goes here -->
-</div>
-<div class="flex flex-wrap">
-	<div class="w-full sm:w-full px-0">
+<OutClick on:outclick={hideDropdown}>
+	<div class="flex flex-wrap">
 		<div class="relative inline-flex align-middle items-center w-full">
 			<button
 				class="flex text-pblue-900 font-bold capitalize text-sm px-2 py-0  outline-none focus:outline-none mr-1 mb-1  ease-linear transition-all duration-150"
@@ -151,7 +155,15 @@
 						<!-- END Adult -->
 					</dl>
 				</div>
+				<div class="flex items-center justify-center mt-0 mb-6">
+					<button
+						type="button"
+						class="w-full mx-4 items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+						aria-expanded={dropdownPopoverShow ? 'true' : 'false'}
+						on:click={() => (dropdownPopoverShow = !dropdownPopoverShow)}>Done</button
+					>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</OutClick>

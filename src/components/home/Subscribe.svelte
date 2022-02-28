@@ -23,9 +23,9 @@
 			>
 				<div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
 				<div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
-					<div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+					<div class="aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1">
 						<img
-							class="object-cover object-center rounded-l-xl shadow-2xl"
+							class="object-cover object-center lg:rounded-l-xl rounded-xl lg:shadow-2xl"
 							src="images/home/subscribe.jpg"
 							alt=""
 						/>
@@ -37,20 +37,20 @@
 				class="relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center  shadow-xl"
 			>
 				<div
-					class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
+					class="relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 				>
-					<h2 class="text-3xl font-extrabold text-slate-900" id="join-heading">
+					<h2 class="text-2xl font-extrabold text-slate-900" id="join-heading">
 						Sign up today, we’ve got deals to share!
 					</h2>
 
-					<p class="mb-5 text-sm font-medium text-slate-900 ">
+					<p class="text-sm font-medium text-slate-900 ">
 						Members access great rates and savings. Sign up to get email updates when restrictions
 						change. And discover the best deals to get you there.
 					</p>
 					<form action="#" method="post" id="revue-form" name="revue-form" target="_blank">
 						<div class="flex items-end mb-3">
 							<div class="relative mr-3 w-full revue-form-group">
-								<label for="member_email" class="hidden  mb-2 text-sm font-medium text-gray-900 "
+								<label for="member_email" class="hidden text-sm font-medium text-gray-900 "
 									>Email address</label
 								>
 								<div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -65,7 +65,7 @@
 									>
 								</div>
 								<input
-									class="revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pblue-500 focus:border-pblue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-slate-900 dark:focus:ring-pblue-500 dark:focus:border-pblue-500"
+									class="revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pblue-500 focus:border-pblue-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-slate-900 dark:focus:ring-pblue-500 dark:focus:border-pblue-500"
 									placeholder="Your email address..."
 									type="email"
 									name="member[email]"

@@ -1,5 +1,5 @@
 <!-- Mobile menu, show/hide based on menu state. -->
-<div class="hidden md:hidden" id="mobile-menu">
+<div class="" id="mobile-menu">
 	<div class="pt-2 pb-3 space-y-1">
 		<!-- Current: "bg-pblue-50 border-pblue-500 text-pblue-700", Default: "border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
 		<a

@@ -1,19 +1,19 @@
 <!-- Nav menu items -->
 <div class="hidden md:ml-6 lg:flex md:space-x-8">
 	<a
-		href="javascript:void(0)"
+		href="flights"
 		class="text-tiny font-semibold text-rose-600 inline-flex items-center px-1 pt-1 sm:ml-4"
 	>
 		Flights
 	</a>
 	<a
-		href="javascript:void(0)"
+		href="vacations"
 		class=" inline-flex items-center px-1 pt-1 text-tiny font-medium text-slate-900 hover:text-rose-600"
 	>
 		Vacations
 	</a>
 	<a
-		href="javascript:void(0)"
+		href="hotels"
 		class="inline-flex items-center px-1 pt-1 text-tiny font-medium text-slate-900 hover:text-rose-600"
 	>
 		Hotels

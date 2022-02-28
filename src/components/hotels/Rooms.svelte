@@ -38,67 +38,66 @@
 		}
 	}
 
-	import { fly } from 'svelte/transition';
+	import { createPopper } from '@popperjs/core';
 
-	let dropdownOpen = false;
+	// core components
 
-	// import SelectAge from './SelectAge.svelte';
-	let ageDropdownOpen = false;
-	let totalCount;
+	let dropdownPopoverShow = false;
 
-	import { clickOutside } from '../clickOutside';
+	let btnDropdownRef;
+	let popoverDropdownRef;
 
-	function handleClickOutside(event) {
-		dropdownOpen = !dropdownOpen;
-	}
+	const toggleDropdown = () => {
+		if (dropdownPopoverShow) {
+			dropdownPopoverShow = false;
+		} else {
+			dropdownPopoverShow = true;
+			createPopper(btnDropdownRef, popoverDropdownRef, {
+				placement: 'bottom-start'
+			});
+		}
+	};
 </script>
 
-<!-- Dropdown Container -->
-
-<!-- <button
-	class="inline-flex justify-center items-center space-x-2  font-semibold focus:outline-none  text-sm text-pblue-700 hover:text-pblue-900 "
-	aria-expanded={dropdownOpen ? 'true' : 'false'}
-	on:click={() => (dropdownOpen = !dropdownOpen)}
->
-	Travellers +
-</button> -->
-
-<!-- NEw -->
-<div class="relative inline-block text-left min-w-7xl">
-	<div>
-		<button
-			class="inline-flex justify-center items-center space-x-2  font-semibold focus:outline-none  text-sm text-pblue-700 hover:text-pblue-900 "
-			aria-expanded={dropdownOpen ? 'true' : 'false'}
-			on:click={() => (dropdownOpen = !dropdownOpen)}
-		>
-			{1} Room(s)
-		</button>
-	</div>
-
-	{#if dropdownOpen}
-		<div
-			role="menu"
-			aria-labelledby="tk-dropdown-simple"
-			class="z-30 overflow-hidden md:origin-top-right absolute md:right-0 md:left-auto origin-top-left left-0 right-auto mt-2 w-96"
-			use:clickOutside
-			on:click_outside={handleClickOutside}
-		>
-			<div class="bg-white shadow overflow-hidden sm:rounded-lg text-left mt-3">
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class=" md:hidden max-w-7xl mx-auto sm:px-6 lg:px-8">
+	Testing
+	<!-- Content goes here -->
+</div>
+<div class="flex flex-wrap">
+	<div class="w-full sm:w-full px-0">
+		<div class="relative inline-flex align-middle items-center w-full">
+			<button
+				class="flex text-pblue-900 font-bold capitalize text-sm px-2 py-0  outline-none focus:outline-none mr-1 mb-1  ease-linear transition-all duration-150"
+				type="button"
+				bind:this={btnDropdownRef}
+				on:click={toggleDropdown}
+			>
+				1 Rooms
+				<svg
+					class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
+					fill="currentColor"
+					viewBox="0 0 20 20"
+					xmlns="http://www.w3.org/2000/svg"
+					><path
+						fill-rule="evenodd"
+						d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+						clip-rule="evenodd"
+					/></svg
+				>
+			</button>
+			<div
+				bind:this={popoverDropdownRef}
+				class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-4 w-96 {dropdownPopoverShow
+					? 'block'
+					: 'hidden'}"
+			>
 				<div class="px-4 py-3 sm:px-6">
 					<h3 class="text-lg leading-6 font-medium text-gray-900">Rooms</h3>
 					<p class="mt-1 max-w-2xl text-xs text-gray-500 font-light">Selec the number of rooms</p>
 				</div>
 
 				<div class="border-t text-left border-gray-200 px-4 py-4 sm:px-6">
-					<!-- Ages of children error msg -->
-					<!-- {#if countChild || countInfant > 0}
-					<div class="p-3 md:p-4 mb-2 rounded text-red-700 bg-red-100">
-						<div class="flex items-center">
-							<div class="font-semibold text-sm">Please provide the ages of children</div>
-						</div>
-					</div>
-				{/if} -->
-					<!-- END Danger Alert -->
 					<dl class="grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-2">
 						<div class="sm:col-span-1 my-auto">
 							<dt class="text-tiny font-medium text-gray-900">Rooms</dt>
@@ -151,16 +150,8 @@
 						</div>
 						<!-- END Adult -->
 					</dl>
-					<div class="flex items-center justify-center mt-4 mb-2">
-						<button
-							type="button"
-							class="w-full items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
-							aria-expanded={dropdownOpen ? 'true' : 'false'}
-							on:click={() => (dropdownOpen = !dropdownOpen)}>Done</button
-						>
-					</div>
 				</div>
 			</div>
 		</div>
-	{/if}
+	</div>
 </div>

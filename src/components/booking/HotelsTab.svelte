@@ -9,7 +9,7 @@
 <!-- OneWay Tab -->
 
 <div class="flex md:justify-end justify-start ">
-	<div class="col-span-12 md:col-span-4 md:mt-6 -mt-2 flex gap-x-2 sm:gap-x-10">
+	<div class="col-span-12 md:col-span-4 md:mt-6 -mt-2 flex">
 		<div class="hidden ml-3 md:block col-span-2 lg:col-span-1">
 			<TravellerCount />
 		</div>

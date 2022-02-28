@@ -5802,9 +5802,9 @@ var init_layout_svelte = __esm({
     });
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"bg-white"}"><div class="${"relative bg-gradient-to-r from-gray-50 via-white to-gray-50 py-0 sm:py-12 md:py-20 lg:py-20 px-4 sm:px-0 overflow-hidden w-full"}"><div class="${"max-w-7xl mx-auto grid grid-cols-2"}"><div class="${"sm:col-span-1 col-span-2 my-8 sm:my-0 sm:pl-8"}"><h1 class="${"font font-extrabold tracking-tight"}"><span class="${"inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl sm:text-[28px] md:text-[32px] lg:text-4xl"}">Book Now Pay Later</span></h1>
-				<div class="${"grid grid-cols-12 items-center mt-4 gap-x-2 md:gap-x-0 sm:gap-x-0"}"><div class="${"col-span-6 sm:col-span-8 md:col-span-7 lg:col-span-7 "}"><p class="${"sm:text-tiny font-semibold text-slate-600 mx-auto md:text-lg xl:text-2xl lg:text-xl"}">No Credit Check Needed.
+				<div class="${"grid grid-cols-12 items-center mt-4 gap-x-2 md:gap-x-0 sm:gap-x-0"}"><div class="${"col-span-7 sm:col-span-8 md:col-span-7 lg:col-span-7 "}"><p class="${"sm:text-base text-base font-semibold text-slate-600 mx-auto md:text-lg xl:text-2xl lg:text-xl"}">No Credit Check Needed.
 						</p></div>
-					<div class="${"col-span-6 sm:col-span-4 md-col-span-5 lg:col-span-5 justify-self-start"}"><a href="${"javascript:void(0)"}" class="${"items-center justify-center py-2 px-3 border border-transparent text-tiny font-medium rounded-full shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:text-xz "}">Learn more
+					<div class="${"col-span-4 sm:col-span-4 md-col-span-5 lg:col-span-5 justify-self-end sm:justify-self-start"}"><a href="${"javascript:void(0)"}" class="${"items-center justify-center py-1 sm:py-2 px-3 border border-transparent text-sm sm:text-tiny font-medium rounded-full shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 sm:text-xz "}">Learn more
 						</a></div></div></div>
 			<div class="${"sm:-mt-40 -mt-12 aspect-w-4 aspect-h-1 lg:aspect-w-5 lg:aspect-h-3 hidden sm:block"}"><img class="${"transform translate-x-6 translate-y-6 rounded-b-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20 "}" src="${"images/hero/hotair-bg.jpg"}" alt="${"App screenshot"}"></div></div></div></div>`;
     });
@@ -5942,9 +5942,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-429e5077.js";
-    js = ["pages/__layout.svelte-429e5077.js", "chunks/vendor-f87894bd.js"];
-    css = ["assets/pages/__layout.svelte-cd0084f9.css"];
+    entry = "pages/__layout.svelte-38f720fd.js";
+    js = ["pages/__layout.svelte-38f720fd.js", "chunks/vendor-f87894bd.js"];
+    css = ["assets/pages/__layout.svelte-93b152fa.css"];
   }
 });
 
@@ -6048,12 +6048,14 @@ ${``}`;
 	${``}</div>`;
     });
     SearchFlightsButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"space-x-2 rounded sm:bg-transparent sm:px-0"}"><a href="${"javascript:void(0)"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded-full bg-pblue-900 text-white hover:text-white hover:bg-pblue-700 focus:ring focus:ring-pblue-500 focus:ring-opacity-50 active:bg-pblue-900 w-full "}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"}" clip-rule="${"evenodd"}"></path></svg>
+      return `<div class="${"space-x-2 rounded sm:bg-transparent sm:px-0 mb-4"}"><a href="${"javascript:void(0)"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded-full bg-pblue-900 text-white hover:text-white hover:bg-pblue-700 focus:ring focus:ring-pblue-500 focus:ring-opacity-50 active:bg-pblue-900 w-full "}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"}" clip-rule="${"evenodd"}"></path></svg>
 		<span class="${"flex"}">Search Flights</span></a></div>`;
     });
     SearchOptions = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"col-span-12 md:col-span-2"}"><fieldset><div class="${"space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 xs:space-x-12"}"><div class="${"inline-flex items-center"}"><input id="${"email"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
-				<label for="${"email"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Flexible Search (+/- 3 Days)
+				<label for="${"email"}" class="${"hidden sm:block ml-3 text-sm font-medium text-gray-700"}">Flexible Search (+/- 3 Days)
+				</label>
+				<label for="${"email"}" class="${"sm:hidden ml-3 block text-sm font-medium text-gray-700"}">Flexible Search
 				</label></div>
 
 			<div class="${"inline-flex items-center"}"><input id="${"sms"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
@@ -6102,7 +6104,7 @@ ${``}`;
 			<button type="${"button"}" class="${"inline-flex justify-center items-center space-x-2 rounded-full border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm focus:ring focus:ring-gray-500 focus:ring-opacity-25 " + escape("bg-white text-pblue-900")}">Multi-city
 			</button>
 			</div></div>
-	<div class="${"col-span-12 md:col-span-4 mt-6 md:mt-0 flex justify-end gap-x-2 sm:gap-x-10"}"><div class="${"hidden ml-3 sm:block col-span-2 lg:col-span-1"}">${validate_component(TravellerCount, "TravellerCount").$$render($$result, {}, {}, {})}</div>
+	<div class="${"col-span-12 md:col-span-4 mt-6 md:mt-0 flex md:justify-end justify-start gap-x-2 sm:gap-x-10"}"><div class="${"hidden ml-3 sm:block col-span-2 lg:col-span-1"}">${validate_component(TravellerCount, "TravellerCount").$$render($$result, {}, {}, {})}</div>
 		
 		<div class="${"sm:hidden col-span-2 lg:col-span-1"}">
 			${validate_component(TravellersMenu, "TravellersMenu").$$render($$result, {}, {}, {})}</div>
@@ -6122,7 +6124,7 @@ ${``}
 ${``}`;
     });
     BookingWidget = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<section class="${"relative max-w-7xl z-30 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-4 pb-12 lg:px-8 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}">
+      return `<section class="${"relative max-w-7xl z-30 -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-8 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}">
 
 		
 		<div class="${"py-4 px-5 lg:px-6 w-full"}"><nav class="${"flex items-center border-b border-gray-200"}"><button type="${"button"}" class="${"px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize " + escape("text-pblue-900 border-b-2 border-pblue-900 ")}">${validate_component(FlightsIcon, "FlightsIcon").$$render($$result, {}, {}, {})}
@@ -6346,8 +6348,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-c0184205.js";
-    js3 = ["pages/index.svelte-c0184205.js", "chunks/vendor-f87894bd.js"];
+    entry3 = "pages/index.svelte-80767f37.js";
+    js3 = ["pages/index.svelte-80767f37.js", "chunks/vendor-f87894bd.js"];
     css3 = [];
   }
 });
@@ -8582,7 +8584,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "logo.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-364aa4ed.js", "js": ["start-364aa4ed.js", "chunks/vendor-f87894bd.js"], "css": [] },
+    entry: { "file": "start-29682921.js", "js": ["start-29682921.js", "chunks/vendor-f87894bd.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

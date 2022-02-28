@@ -9,7 +9,7 @@
 	import PromoSection from '../components/home/PromoSection.svelte';
 </script>
 
-<Hero />
+<!-- <Hero /> -->
 <BookingWidget />
 <!-- Sections -->
 <PopularFlightDeals />

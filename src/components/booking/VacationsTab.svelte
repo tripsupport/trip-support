@@ -48,7 +48,7 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm "
+							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
 							placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
 						/>
 					</div>
@@ -98,7 +98,7 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm "
+							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
 							placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
 						/>
 					</div>
@@ -135,7 +135,7 @@
 									type="text"
 									name="name"
 									id="name"
-									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
+									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 									placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
 								/>
 							</div>
@@ -173,7 +173,7 @@
 									type="text"
 									name="name"
 									id="name"
-									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 sm:text-sm"
+									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 									placeholder="7 or 8 days"
 								/>
 							</div>

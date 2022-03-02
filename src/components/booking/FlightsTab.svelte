@@ -17,7 +17,7 @@
 	import MultiCityMob from '../flights/MultiCityMobForm.svelte';
 	let activeSubTab = 'roundTrip';
 
-	let count = 1;
+	let count = 2;
 </script>
 
 <div class="grid grid-cols-12">

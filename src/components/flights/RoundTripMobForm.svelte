@@ -1,5 +1,10 @@
 <script>
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
+	$: title = leaving;
+
+	let leaving = 'Leaving from?';
+	let going = 'Going to?';
+
 	$: showRoundTrip = false;
 	let leavingFrom = '';
 	let goingTo = '';
@@ -85,7 +90,7 @@
 					<div class="absolute">
 						<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
 							<div class="flex p-4 sm:px-6 justify-between border-b">
-								<div class="text-tiny leading-6 font-semibold text-gray-900">Round Trip</div>
+								<div class="text-tiny leading-6 font-semibold text-gray-900">{title}</div>
 								<button
 									type="button"
 									aria-expanded={showRoundTrip ? 'true' : 'false'}
@@ -136,6 +141,9 @@
 											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={leavingFrom}
+											on:click={() => {
+												title = leaving;
+											}}
 										/>
 									</div>
 								</div>
@@ -167,6 +175,9 @@
 											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={goingTo}
+											on:click={() => {
+												title = going;
+											}}
 										/>
 									</div>
 								</div>

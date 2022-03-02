@@ -1,68 +1,53 @@
 <script>
-	let countAdult = 0;
+	$: countAdult = 1;
 	function incAdult() {
-		++countAdult;
+		countAdult += 1;
 	}
 
 	function decAdult() {
 		if (countAdult == 0) {
 			return;
 		} else {
-			--countAdult;
+			countAdult -= 1;
 		}
 	}
 
-	let countChild = 0;
+	$: countChild = 0;
 	function incChild() {
-		++countChild;
+		countChild += 1;
 	}
 
 	function decChild() {
 		if (countChild == 0) {
 			return;
 		} else {
-			--countChild;
+			countChild -= 1;
 		}
 	}
 
-	let countInfant = 0;
+	$: countInfant = 0;
 	function incInfant() {
-		++countInfant;
+		countInfant += 1;
 	}
 
 	function decInfant() {
 		if (countInfant == 0) {
 			return;
 		} else {
-			--countInfant;
+			countInfant -= 1;
 		}
 	}
 
-	// Child's Age
-	let showChildAge = false;
-
-	const toggleAge = () => {
-		showChildAge = !showChildAge;
-	};
+	$: totalCount = countAdult + countChild + countInfant;
 
 	let travellerShow = false;
 
 	// outclick
 	import OutClick from 'svelte-outclick';
 
-	const toggleDropdown = () => {
-		travellerShow = !travellerShow;
-	};
-
 	const hideDropdown = () => {
 		if (travellerShow) {
 			travellerShow = false;
-		}
-	};
-
-	const hideAge = () => {
-		if (showChildAge) {
-			showChildAge = false;
 		}
 	};
 </script>
@@ -78,7 +63,7 @@
 				aria-expanded={travellerShow ? 'true' : 'false'}
 				on:click={() => (travellerShow = !travellerShow)}
 			>
-				1 Travellers
+				{totalCount} Travellers
 				<svg
 					class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
 					fill="currentColor"
@@ -96,14 +81,11 @@
 	{#if travellerShow}
 		<div class="absolute">
 			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
-				<div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
-					<div class="justify-start col-span-3">
+				<div class="p-3 flex items-center justify-between mt-1">
+					<div class="justify-content-center">
 						<h3 class="text-lg leading-6 font-medium text-gray-900">Travellers</h3>
-						<p class="mt-1 max-w-2xl text-xs text-gray-500 font-light">
-							Please choose the number of travellers
-						</p>
 					</div>
-					<div class="col-span-1 p-3">
+					<div class="justify-content-center">
 						<button
 							type="button"
 							aria-expanded={travellerShow ? 'true' : 'false'}
@@ -281,79 +263,6 @@
 							</div>
 						</div>
 					</dl>
-					<OutClick on:outclick={hideAge}>
-						{#if countChild == 1}
-							<dl class="grid grid-cols-2 gap-x-2 gap-y-4 w-full mt-4">
-								<div class="col-span-1 my-auto">
-									<dt class="text-tiny font-medium text-gray-900">Child 1</dt>
-								</div>
-								<div class="col-span-1">
-									<!-- This example requires Tailwind CSS v2.0+ -->
-									<div class=" inline-flex w-[148px] justify-end">
-										<div>
-											<button
-												type="button"
-												class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 "
-												on:click={toggleAge}
-											>
-												Select Age
-												<!-- Heroicon name: solid/chevron-down -->
-												<svg
-													class="-mr-1 ml-2 h-5 w-5"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 20 20"
-													fill="currentColor"
-													aria-hidden="true"
-												>
-													<path
-														fill-rule="evenodd"
-														d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-														clip-rule="evenodd"
-													/>
-												</svg>
-											</button>
-										</div>
-
-										<!-- Mobile Dropdown hidden -->
-										{#if showChildAge}
-											<div
-												class="origin-bottom-left absolute right-10 mt-2 w-[148px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-												role="menu"
-												aria-orientation="vertical"
-												aria-labelledby="menu-button"
-												tabindex="-1"
-											>
-												<div class="py-1" role="none">
-													<!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-													<a
-														href="#"
-														class="text-gray-700 block px-4 py-2 text-sm"
-														role="menuitem"
-														tabindex="-1"
-														id="menu-item-0">2</a
-													>
-													<a
-														href="#"
-														class="text-gray-700 block px-4 py-2 text-sm"
-														role="menuitem"
-														tabindex="-1"
-														id="menu-item-1">3</a
-													>
-													<a
-														href="#"
-														class="text-gray-700 block px-4 py-2 text-sm"
-														role="menuitem"
-														tabindex="-1"
-														id="menu-item-2">4</a
-													>
-												</div>
-											</div>
-										{/if}
-									</div>
-								</div>
-							</dl>
-						{/if}
-					</OutClick>
 				</div>
 				<div class="flex my-4 bottom-0 absolute justify-center w-full">
 					<button

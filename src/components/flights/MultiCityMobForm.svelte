@@ -1,11 +1,16 @@
 <script>
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
-	$: showMultiCity = false;
+	$: title = leaving;
+
+	let leaving = 'Leaving from?';
+	let going = 'Going to?';
+
+	$: showRoundTrip = false;
 	let leavingFrom = '';
 	let goingTo = '';
 </script>
 
-<div class="my-6">
+<div class="py-2">
 	<div class="grid grid-cols-12 lg:gird-cols-12 gap-4 items-center">
 		<div class="col-span-12 lg:col-span-8">
 			<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative">
@@ -35,8 +40,8 @@
 							type="button"
 							name="departure"
 							class="block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
-							aria-expanded={showMultiCity ? 'true' : 'false'}
-							on:click={() => (showMultiCity = !showMultiCity)}
+							aria-expanded={showRoundTrip ? 'true' : 'false'}
+							on:click={() => (showRoundTrip = !showRoundTrip)}
 						/>
 					</div>
 				</div>
@@ -75,21 +80,21 @@
 							name="departure"
 							class="block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 							placeholder=""
-							aria-expanded={showMultiCity ? 'true' : 'false'}
-							on:click={() => (showMultiCity = !showMultiCity)}
+							aria-expanded={showRoundTrip ? 'true' : 'false'}
+							on:click={() => (showRoundTrip = !showRoundTrip)}
 						/>
 					</div>
 				</div>
 
-				{#if showMultiCity}
+				{#if showRoundTrip}
 					<div class="absolute">
 						<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
 							<div class="flex p-4 sm:px-6 justify-between border-b">
-								<div class="text-tiny leading-6 font-semibold text-gray-900">Round Trip</div>
+								<div class="text-tiny leading-6 font-semibold text-gray-900">{title}</div>
 								<button
 									type="button"
-									aria-expanded={showMultiCity ? 'true' : 'false'}
-									on:click={() => (showMultiCity = !showMultiCity)}
+									aria-expanded={showRoundTrip ? 'true' : 'false'}
+									on:click={() => (showRoundTrip = !showRoundTrip)}
 								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -136,6 +141,9 @@
 											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={leavingFrom}
+											on:click={() => {
+												title = leaving;
+											}}
 										/>
 									</div>
 								</div>
@@ -167,6 +175,9 @@
 											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={goingTo}
+											on:click={() => {
+												title = going;
+											}}
 										/>
 									</div>
 								</div>

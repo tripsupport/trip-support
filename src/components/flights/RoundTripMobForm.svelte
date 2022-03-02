@@ -138,7 +138,7 @@
 										<input
 											type="text"
 											name="departure"
-											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
+											class="block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={leavingFrom}
 											on:click={() => {
@@ -172,7 +172,7 @@
 										<input
 											type="text"
 											name="departure"
-											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
+											class="block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={goingTo}
 											on:click={() => {

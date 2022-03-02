@@ -61,9 +61,9 @@
 	{#if travellerShow}
 		<div class="absolute">
 			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
-				<!-- <div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
+				<div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
 					<div class="justify-start col-span-3">
-						<h3 class="text-lg leading-6 font-medium text-gray-900">Rooms</h3>
+						<h3 class="text-lg leading-6 font-semibold text-gray-900">Rooms</h3>
 						<p class="mt-1 max-w-2xl text-xs text-gray-500 font-light">
 							Select the number of rooms
 						</p>
@@ -88,13 +88,13 @@
 							</svg>
 						</button>
 					</div>
-				</div> -->
+				</div>
 
 				<div class="border-t text-left border-gray-200 px-4 py-4 sm:px-6">
 					<dl class="grid grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-2 items-center">
 						<div class="sm:col-span-1">
 							<dt class="text-tiny font-medium text-gray-900">Rooms</dt>
-							<dd class="text-xs font-normal text-gray-500">Select the number of rooms</dd>
+							<dd class="text-xs font-normal text-gray-500">Maximum 4</dd>
 						</div>
 						<div class="sm:col-span-1 place-self-end">
 							<div class="inline-flex my-2">
@@ -144,7 +144,7 @@
 						<!-- END Room selection -->
 					</dl>
 				</div>
-				<div class="flex bottom-10 absolute justify-center w-full">
+				<div class="flex justify-center w-full fixed bottom-20">
 					<button
 						type="button"
 						class="w-full mx-4 items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"

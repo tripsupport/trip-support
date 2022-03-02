@@ -5831,7 +5831,9 @@ var init_layout_svelte = __esm({
 				
 				<div class="${"hidden lg:flex items-center gap-1 px-4"}">${validate_component(NavMenuItems, "NavMenuItems").$$render($$result, {}, {}, {})}</div></div>
 
-			<div class="${"inline-flex items-center py-2 text-sm text-gray-900 rounded-lg lg:hidden pr-4"}">${validate_component(ProfileDropdown, "ProfileDropdown").$$render($$result, {}, {}, {})}
+			<div class="${"inline-flex items-center py-2 text-sm text-gray-900 rounded-lg lg:hidden pr-4"}"><a href="${"/"}" type="${"button"}" class="${"inline-flex items-center p-2 border mr-4 border-transparent rounded-full shadow-sm text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">
+					<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-4 w-4"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg></a>
+				${validate_component(ProfileDropdown, "ProfileDropdown").$$render($$result, {}, {}, {})}
 				${validate_component(MobMenuBtn, "MobMenuBtn").$$render($$result, {}, {}, {})}</div>
 
 			<div class="${"hidden lg:flex items-center gap-1 sm:gap-8 px-6"}">${validate_component(RightNavMenuItems, "RightNavMenuItems").$$render($$result, {}, {}, {})}</div></div></div></nav>`;
@@ -5970,9 +5972,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-5232cc03.js";
-    js = ["pages/__layout.svelte-5232cc03.js", "chunks/vendor-ad8edccf.js"];
-    css = ["assets/pages/__layout.svelte-ecccb442.css"];
+    entry = "pages/__layout.svelte-1fc95494.js";
+    js = ["pages/__layout.svelte-1fc95494.js", "chunks/vendor-ad8edccf.js"];
+    css = ["assets/pages/__layout.svelte-a59cec3a.css"];
   }
 });
 
@@ -6282,7 +6284,7 @@ var init_index_svelte = __esm({
     init_OutClick_9697805c();
     PopularFlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative pb-4 bg-white sm:pb-6 md:pb-8 lg:max-w-7xl lg:w-full lg:pb-12 xl:pb-12"}">
+<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative pb-4 z-[2] bg-white sm:pb-6 md:pb-8 lg:max-w-7xl lg:w-full lg:pb-12 xl:pb-12"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg>
 
 			<div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8 "}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
 							</h1>
@@ -6292,7 +6294,7 @@ var init_index_svelte = __esm({
 						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
 					</p>
 
-					<div class="${"mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-4 = sm:gap-y-10 "}"><div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/alberta.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
+					<div class="${"mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-3 sm:gap-y-10 "}"><div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/alberta.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
 									</div></div></div>
 							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
@@ -6301,7 +6303,7 @@ var init_index_svelte = __esm({
 								<p>$249</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div>
 
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/california.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
+						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/california.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
 									</div></div></div>
 							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
@@ -6309,7 +6311,7 @@ var init_index_svelte = __esm({
 									</a></h3>
 								<p>$540</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div>
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/montreal.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
+						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/montreal.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
 									</div></div></div>
 							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
@@ -6317,7 +6319,7 @@ var init_index_svelte = __esm({
 									</a></h3>
 								<p>$199</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">One-way</p></div>
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/newyork.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
+						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/newyork.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
 									</div></div></div>
 							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
@@ -6325,7 +6327,7 @@ var init_index_svelte = __esm({
 									</a></h3>
 								<p>$129</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">One-way</p></div>
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/singapore.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
+						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/singapore.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
 									</div></div></div>
 							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
@@ -6333,23 +6335,7 @@ var init_index_svelte = __esm({
 									</a></h3>
 								<p>$789</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div>
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/vancouver.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
-								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
-									</div></div></div>
-							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
-										Vancouver
-									</a></h3>
-								<p>$349</p></div>
-							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div>
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/vancouver.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
-								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
-									</div></div></div>
-							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
-										Vancouver
-									</a></h3>
-								<p>$349</p></div>
-							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div>
-						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/vancouver.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
+						<div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/vancouver.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
 									</div></div></div>
 							<div class="${"mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"}"><h3><a href="${"javascript:void(0)"}"><span aria-hidden="${"true"}" class="${"absolute inset-0"}"></span>
@@ -6358,7 +6344,7 @@ var init_index_svelte = __esm({
 								<p>$349</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div></div></div></div></div></div>
 	<div class="${"sm:hidden px-4"}"><a href="${"javascript:void(0)"}" class="${"block text-sm font-semibold text-rose-600 hover:text-rose-400"}">Browse all vacation destinations<span aria-hidden="${"true"}">\u2192</span></a></div>
-	</div>`;
+	<div class="${"lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"}"><img class="${"hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div>`;
     });
     VacationDestinations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6443,8 +6429,8 @@ var init_index_svelte = __esm({
     });
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative py-12 lg:py-24 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-8"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[2] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
-				<div class="${"max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1"}"><img class="${"object-cover object-center lg:rounded-l-xl rounded-xl lg:shadow-2xl"}" src="${"images/home/subscribe.jpg"}" alt="${""}"></div></div></div>
+<div class="${"relative my-3 py-12 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-8"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[3] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
+				<div class="${"max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1"}"><img class="${"object-cover object-center md:rounded-l-xl lg:shadow-2xl"}" src="${"images/home/subscribe.jpg"}" alt="${""}"></div></div></div>
 
 			<div class="${"relative z-[1] bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center shadow-xl"}"><div class="${"relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"}"><h2 class="${"text-2xl font-extrabold text-slate-900"}" id="${"join-heading"}">Sign up today, we\u2019ve got deals to share!
 					</h2>
@@ -6508,8 +6494,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-2e31a65b.js";
-    js3 = ["pages/index.svelte-2e31a65b.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-7d21b5cc.js"];
+    entry3 = "pages/index.svelte-d87e27c2.js";
+    js3 = ["pages/index.svelte-d87e27c2.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-a1728f04.js"];
     css3 = [];
   }
 });
@@ -6682,8 +6668,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_flights_svelte();
-    entry8 = "pages/flights.svelte-fe1c5901.js";
-    js8 = ["pages/flights.svelte-fe1c5901.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-7d21b5cc.js"];
+    entry8 = "pages/flights.svelte-62019c23.js";
+    js8 = ["pages/flights.svelte-62019c23.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-a1728f04.js"];
     css8 = [];
   }
 });
@@ -8753,7 +8739,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "logo.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-d94e716a.js", "js": ["start-d94e716a.js", "chunks/vendor-ad8edccf.js"], "css": [] },
+    entry: { "file": "start-c776dea0.js", "js": ["start-c776dea0.js", "chunks/vendor-ad8edccf.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -183,7 +183,7 @@
 								</div>
 								<!-- Two arrow icon -->
 								<div
-									class="z-30 md:hidden absolute top-[20.4%] left-[90%] transform -translate-x-1/2 -translate-y-3"
+									class="z-30 md:hidden absolute top-[136px] left-[90%] transform -translate-x-1/2 -translate-y-3"
 								>
 									<Icon
 										src={SwitchHorizontal}

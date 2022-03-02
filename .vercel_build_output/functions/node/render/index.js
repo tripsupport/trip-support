@@ -6028,10 +6028,10 @@ var init__2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BookingWidget-5a403561.js
-var SwitchHorizontal, FlightsIcon, VacationsIcon, HotelsIcon, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, RoundTrip, RoundTripMobForm, FlightsTab, BookingWidget;
-var init_BookingWidget_5a403561 = __esm({
-  ".svelte-kit/output/server/chunks/BookingWidget-5a403561.js"() {
+// .svelte-kit/output/server/chunks/BookingWidget-80b6499e.js
+var SwitchHorizontal, FlightsIcon, VacationsIcon, HotelsIcon, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, RoundTrip, leaving, RoundTripMobForm, FlightsTab, BookingWidget;
+var init_BookingWidget_80b6499e = __esm({
+  ".svelte-kit/output/server/chunks/BookingWidget-80b6499e.js"() {
     init_index_c100796a();
     init_OutClick_9697805c();
     SwitchHorizontal = [[{ "d": "M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" }]];
@@ -6063,11 +6063,19 @@ var init_BookingWidget_5a403561 = __esm({
       })}`;
     });
     TravellersMob = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let countAdult;
+      let countChild;
+      let countInfant;
+      let totalCount;
+      countAdult = 1;
+      countChild = 0;
+      countInfant = 0;
+      totalCount = countAdult + countChild + countInfant;
       return `
 
 ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="${"flex flex-wrap"}"><div class="${"relative inline-flex items-center w-full"}"><button class="${"flex text-pblue-900 font-semibold capitalize text-sm px-2 py-0 outline-none focus:outline-none ease-linear transition-all duration-150"}" type="${"button"}"${add_attribute("aria-expanded", "false", 0)}>1 Travellers
+          return `<div class="${"flex flex-wrap"}"><div class="${"relative inline-flex items-center w-full"}"><button class="${"flex text-pblue-900 font-semibold capitalize text-sm px-2 py-0 outline-none focus:outline-none ease-linear transition-all duration-150"}" type="${"button"}"${add_attribute("aria-expanded", "false", 0)}>${escape(totalCount)} Travellers
 				<svg class="${"hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button></div></div>
 	${``}`;
         }
@@ -6077,14 +6085,16 @@ ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
       let countAdult;
       let countChild;
       let countInfant;
+      let totalCount;
       let btnDropdownRef;
       let popoverDropdownRef;
-      countAdult = 0;
+      countAdult = 1;
       countChild = 0;
       countInfant = 0;
+      totalCount = countAdult + countChild + countInfant;
       return `${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
         default: () => {
-          return `<div class="${"flex flex-wrap "}"><button class="${"flex text-pblue-900 font-semibold capitalize text-sm px-2 py-0 outline-none focus:outline-none ease-linear transition-all duration-150"}" type="${"button"}"${add_attribute("this", btnDropdownRef, 0)}>1 Travellers
+          return `<div class="${"flex flex-wrap "}"><button class="${"flex text-pblue-900 font-semibold capitalize text-sm px-2 py-0 outline-none focus:outline-none ease-linear transition-all duration-150"}" type="${"button"}"${add_attribute("this", btnDropdownRef, 0)}>${escape(totalCount)} Travellers
 			<svg class="${"hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></button>
 		<div class="${"bg-white text-base z-30 float-left py-2 list-none text-left rounded shadow-lg mt-4 w-96 " + escape("hidden")}"${add_attribute("this", popoverDropdownRef, 0)}><div class="${"px-4 py-3 sm:px-6"}"><h3 class="${"text-lg leading-6 font-medium text-gray-900"}">Travellers</h3>
 				<p class="${"mt-1 max-w-2xl text-xs text-gray-500 font-light"}">Please choose the number of travellers
@@ -6105,8 +6115,7 @@ ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
 						<dd class="${"text-xs font-normal text-gray-500"}">Age under 2</dd>
 					</div><div class="${"col-span-1"}"><div class="${"inline-flex my-2"}"><button type="${"button"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded-l active:z-1 focus:z-1 -mr-px border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 active:bg-white active:border-white active:shadow-none"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"inline-block w-5 h-5 text-rose-500"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"}" clip-rule="${"evenodd"}"></path></svg></button>
 							<button type="${"button"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-2 leading-6 active:z-1 focus:z-1 -mr-px border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 active:bg-white active:border-white active:shadow-none"}"><span>${escape(countInfant)}</span></button>
-							<button type="${"button"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded-r active:z-1 focus:z-1 border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 active:bg-white active:border-white active:shadow-none"}"><svg class="${"hi-solid hi-plus inline-block w-5 h-5 text-emerald-500"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"}" clip-rule="${"evenodd"}"></path></svg></button></div></div></dl>
-				</div></div></div>`;
+							<button type="${"button"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded-r active:z-1 focus:z-1 border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 active:bg-white active:border-white active:shadow-none"}"><svg class="${"hi-solid hi-plus inline-block w-5 h-5 text-emerald-500"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" d="${"M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"}" clip-rule="${"evenodd"}"></path></svg></button></div></div></dl></div></div></div>`;
         }
       })}
 `;
@@ -6154,10 +6163,13 @@ ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
 						<div class="${"col-span-5 place-self-end"}"><div class="${"flex items-center justify-self-center"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-12 h-5 text-pblue-800"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"}" clip-rule="${"evenodd"}"></path></svg>
 								<input type="${"text"}" name="${"name"}" id="${"name"}" class="${"block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"}" placeholder="${""}"></div></div></div></div></div></div></div></div>`;
     });
+    leaving = "Leaving from?";
     RoundTripMobForm = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let title;
       let showRoundTrip;
       let leavingFrom = "";
       let goingTo = "";
+      title = leaving;
       showRoundTrip = false;
       return `<div class="${"my-6"}"><div class="${"grid grid-cols-12 lg:gird-cols-12 gap-4 items-center"}"><div class="${"col-span-12 lg:col-span-8"}"><div class="${"grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative"}"><div class="${"col-span-12 md:col-span-6"}"><div class="${"relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 active:border-transparent flex"}"><label for="${"name"}" class="${"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-pblue-900"}">Leaving from?</label>
 						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"w-5 h-5 text-pblue-800 mt-[5px]"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
@@ -6174,7 +6186,7 @@ ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
 
 						<input type="${"button"}" name="${"departure"}" class="${"block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"}" placeholder="${""}"${add_attribute("aria-expanded", showRoundTrip ? "true" : "false", 0)}></div></div>
 
-				${showRoundTrip ? `<div class="${"absolute"}"><div class="${"bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0"}"><div class="${"flex p-4 sm:px-6 justify-between border-b"}"><div class="${"text-tiny leading-6 font-semibold text-gray-900"}">Round Trip</div>
+				${showRoundTrip ? `<div class="${"absolute"}"><div class="${"bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0"}"><div class="${"flex p-4 sm:px-6 justify-between border-b"}"><div class="${"text-tiny leading-6 font-semibold text-gray-900"}">${escape(title)}</div>
 								<button type="${"button"}"${add_attribute("aria-expanded", showRoundTrip ? "true" : "false", 0)}><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fillrule="${"evenodd"}" d="${"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"}" cliprule="${"evenodd"}"></path></svg></button></div>
 							
 							<div>
@@ -6268,7 +6280,7 @@ var PopularFlightDeals, VacationDestinations, BlogPosts, Subscribe, PromoSection
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_c100796a();
-    init_BookingWidget_5a403561();
+    init_BookingWidget_80b6499e();
     init_OutClick_9697805c();
     PopularFlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6498,8 +6510,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-01eea80e.js";
-    js3 = ["pages/index.svelte-01eea80e.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-63c19d94.js"];
+    entry3 = "pages/index.svelte-ac0cb961.js";
+    js3 = ["pages/index.svelte-ac0cb961.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-da2fd760.js"];
     css3 = [];
   }
 });
@@ -6645,7 +6657,7 @@ var Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
     init_index_c100796a();
-    init_BookingWidget_5a403561();
+    init_BookingWidget_80b6499e();
     init_OutClick_9697805c();
     Flights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6672,8 +6684,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_flights_svelte();
-    entry8 = "pages/flights.svelte-bec83473.js";
-    js8 = ["pages/flights.svelte-bec83473.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-63c19d94.js"];
+    entry8 = "pages/flights.svelte-cc76e71f.js";
+    js8 = ["pages/flights.svelte-cc76e71f.js", "chunks/vendor-ad8edccf.js", "chunks/BookingWidget-da2fd760.js"];
     css8 = [];
   }
 });
@@ -8743,7 +8755,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "logo.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-1974a234.js", "js": ["start-1974a234.js", "chunks/vendor-ad8edccf.js"], "css": [] },
+    entry: { "file": "start-2b887b22.js", "js": ["start-2b887b22.js", "chunks/vendor-ad8edccf.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -2,6 +2,10 @@
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
 	import HotelSearchButton from '../../components/hotels/HotelSearchButton.svelte';
 
+	$: title = going;
+	let leaving = 'Leaving from?';
+	let going = 'Going to?';
+
 	$: showRoundTrip = false;
 	let leavingFrom = '';
 	let goingTo = '';
@@ -34,7 +38,7 @@
 						</svg>
 
 						<input
-							type="text"
+							type="button"
 							name="departure"
 							class="block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 							placeholder=""
@@ -48,7 +52,7 @@
 					<div class="absolute">
 						<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
 							<div class="flex p-4 sm:px-6 justify-between border-b">
-								<div class="text-tiny leading-6 font-semibold text-gray-900">Round Trip</div>
+								<div class="text-tiny leading-6 font-semibold text-gray-900">{title}</div>
 								<button
 									type="button"
 									aria-expanded={showRoundTrip ? 'true' : 'false'}
@@ -70,8 +74,7 @@
 							</div>
 							<!-- Form -->
 							<div>
-								<!-- Leaving from  -->
-								<div class="mt-4 py-3 px-4">
+								<div class="py-3 px-4">
 									<div
 										class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 active:border-transparent flex"
 									>
@@ -96,15 +99,17 @@
 										<input
 											type="text"
 											name="departure"
-											class="block sm:hidden w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
+											class="block sm:hidden w-full border-0 p-0 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 											placeholder=""
 											bind:value={goingTo}
+											on:click={() => {
+												title = going;
+											}}
 										/>
 									</div>
 								</div>
-
 								<div class="pt-3 px-5 font-semibold text-sm">
-									Matching with
+									Matching with <span class="font-bold text-sm">{leavingFrom}</span> to
 									<span class="font-bold text-sm">{goingTo}</span>
 								</div>
 							</div>
@@ -113,6 +118,7 @@
 				{/if}
 			</div>
 		</div>
+
 		<div class="col-span-12 lg:col-span-4">
 			<div
 				class="relative border border-pblue-500 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-pblue-600 focus-within:border-pblue-600 "
@@ -181,7 +187,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="grid grid-cols-6 justify-self-start place-content-between md:gap-4 items-center">
 	<div class="col-span-6 md:col-span-4" />
 	<div class="col-span-6 md:col-span-2 w-full md:justify-self-end mt-4 md:mt-0">

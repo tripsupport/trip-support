@@ -1,5 +1,5 @@
 <script>
-	let countAdult = 0;
+	$: countAdult = 1;
 	function incAdult() {
 		++countAdult;
 	}
@@ -12,7 +12,7 @@
 		}
 	}
 
-	let countChild = 0;
+	$: countChild = 0;
 	function incChild() {
 		++countChild;
 	}
@@ -24,6 +24,8 @@
 			--countChild;
 		}
 	}
+
+	$: totalCount = countAdult + countChild;
 
 	// Child's Age
 	let showChildAge = false;
@@ -65,7 +67,7 @@
 				aria-expanded={travellerShow ? 'true' : 'false'}
 				on:click={() => (travellerShow = !travellerShow)}
 			>
-				1 Travellers
+				{totalCount} Travellers
 				<svg
 					class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
 					fill="currentColor"
@@ -83,14 +85,11 @@
 	{#if travellerShow}
 		<div class="absolute">
 			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
-				<div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
-					<div class="justify-start col-span-3">
+				<div class="p-3 flex items-center justify-between mt-1">
+					<div class="justify-content-center">
 						<h3 class="text-lg leading-6 font-medium text-gray-900">Travellers</h3>
-						<p class="mt-1 max-w-2xl text-xs text-gray-500 font-light">
-							Please choose the number of travellers
-						</p>
 					</div>
-					<div class="col-span-1 p-3">
+					<div class="justify-content-center">
 						<button
 							type="button"
 							aria-expanded={travellerShow ? 'true' : 'false'}

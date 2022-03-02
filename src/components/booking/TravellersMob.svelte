@@ -38,7 +38,7 @@
 		}
 	}
 
-	$: totalCount = countAdult + countChild + countInfant;
+	$: passengerCount = countAdult + countChild + countInfant;
 
 	let travellerShow = false;
 
@@ -63,7 +63,7 @@
 				aria-expanded={travellerShow ? 'true' : 'false'}
 				on:click={() => (travellerShow = !travellerShow)}
 			>
-				{totalCount} Travellers
+				{passengerCount} Travellers
 				<svg
 					class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
 					fill="currentColor"

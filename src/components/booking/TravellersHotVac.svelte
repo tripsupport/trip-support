@@ -1,5 +1,5 @@
 <script>
-	$: countAdult = 0;
+	$: countAdult = 1;
 	function incAdult() {
 		++countAdult;
 	}
@@ -24,6 +24,8 @@
 			--countChild;
 		}
 	}
+
+	$: totalCount = countAdult + countChild;
 
 	// Child's Age
 	let showChildAge = false;
@@ -79,7 +81,7 @@
 			bind:this={btnDropdownRef}
 			on:click={toggleDropdown}
 		>
-			1 Travellers
+			{totalCount} Travellers
 			<svg
 				class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
 				fill="currentColor"

@@ -14,17 +14,17 @@
   }
   ```
 -->
-<div class="relative py-12 lg:py-24 bg-white">
+<div class="relative my-3 py-12 lg:my-12 bg-white">
 	<div class="max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-8">
 		<div class="lg:grid lg:grid-cols-12">
 			<div
-				class="relative z-[2] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"
+				class="relative z-[3] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"
 			>
 				<div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
 				<div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
 					<div class="aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1">
 						<img
-							class="object-cover object-center lg:rounded-l-xl rounded-xl lg:shadow-2xl"
+							class="object-cover object-center md:rounded-l-xl  lg:shadow-2xl"
 							src="images/home/subscribe.jpg"
 							alt=""
 						/>

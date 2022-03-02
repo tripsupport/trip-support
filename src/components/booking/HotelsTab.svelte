@@ -1,21 +1,21 @@
 <script>
 	import Rooms from './Rooms.svelte';
 	import RoomsMob from './RoomsMob.svelte';
-	import TravellersMob from './TravellersMob.svelte';
-	import Travellers from './Travellers.svelte';
 	import Hotels from '../hotels/Hotels.svelte';
 	import HotelsMob from '../hotels/HotelsMob.svelte';
+	import TravellersHotVac from './TravellersHotVac.svelte';
+	import TravellersHotVacMob from './TravellersHotVacMob.svelte';
 </script>
 
 <!-- OneWay Tab -->
 
 <div class="col-span-12 md:col-span-4 flex md:justify-end justify-start">
 	<div class="hidden sm:flex col-span-2 lg:col-span-1">
-		<Travellers />
+		<TravellersHotVac />
 	</div>
 
 	<div class="sm:hidden flex col-span-2 lg:col-span-1">
-		<TravellersMob />
+		<TravellersHotVacMob />
 	</div>
 
 	<div class="hidden sm:flex col-span-2 lg:col-span-1">

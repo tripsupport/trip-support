@@ -1,40 +1,18 @@
 <script>
-	let countAdult = 0;
-	function incAdult() {
-		++countAdult;
-	}
+	$: countRoom = 1;
 
-	function decAdult() {
-		if (countAdult == 0) {
+	function incRoom() {
+		if (countRoom > 3) {
 			return;
-		} else {
-			--countAdult;
 		}
+		countRoom += 1;
 	}
 
-	let countChild = 0;
-	function incChild() {
-		++countChild;
-	}
-
-	function decChild() {
-		if (countChild == 0) {
+	function decRoom() {
+		if (countRoom == 0) {
 			return;
 		} else {
-			--countChild;
-		}
-	}
-
-	let countInfant = 0;
-	function incInfant() {
-		++countInfant;
-	}
-
-	function decInfant() {
-		if (countInfant == 0) {
-			return;
-		} else {
-			--countInfant;
+			countRoom -= 1;
 		}
 	}
 
@@ -68,7 +46,7 @@
 	};
 
 	// error
-	let showError = false;
+	let showError = true;
 	const toggleError = () => {
 		if (showError == true) {
 			return;
@@ -86,7 +64,7 @@
 				bind:this={btnDropdownRef}
 				on:click={toggleDropdown}
 			>
-				1 Rooms
+				{countRoom} Rooms
 				<svg
 					class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
 					fill="currentColor"
@@ -152,7 +130,7 @@
 									<button
 										type="button"
 										class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded-l active:z-1 focus:z-1 -mr-px border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300   active:bg-white active:border-white active:shadow-none"
-										on:click={decAdult}
+										on:click={decRoom}
 									>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -171,12 +149,12 @@
 										type="button"
 										class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-2 leading-6 active:z-1 focus:z-1 -mr-px border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300   active:bg-white active:border-white active:shadow-none"
 									>
-										<span>{countAdult}</span>
+										<span>{countRoom}</span>
 									</button>
 									<button
 										type="button"
 										class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded-r active:z-1 focus:z-1 border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300   active:bg-white active:border-white active:shadow-none"
-										on:click={incAdult && toggleError}
+										on:click={incRoom}
 									>
 										<svg
 											class="hi-solid hi-plus inline-block w-5 h-5 text-emerald-500"

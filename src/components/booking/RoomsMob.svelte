@@ -1,15 +1,18 @@
 <script>
-	let countRoom = 0;
+	$: countRoom = 1;
 
 	function incRoom() {
-		++countRoom;
+		if (countRoom > 4) {
+			return;
+		}
+		countRoom += 1;
 	}
 
 	function decRoom() {
 		if (countRoom == 0) {
 			return;
 		} else {
-			--countRoom;
+			countRoom -= 1;
 		}
 	}
 
@@ -40,7 +43,7 @@
 				aria-expanded={travellerShow ? 'true' : 'false'}
 				on:click={() => (travellerShow = !travellerShow)}
 			>
-				1 Rooms
+				{countRoom} Rooms
 				<svg
 					class="hi-solid hi-chevron-down inline-block w-5 h-5 opacity-100"
 					fill="currentColor"
@@ -58,7 +61,7 @@
 	{#if travellerShow}
 		<div class="absolute">
 			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
-				<div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
+				<!-- <div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
 					<div class="justify-start col-span-3">
 						<h3 class="text-lg leading-6 font-medium text-gray-900">Rooms</h3>
 						<p class="mt-1 max-w-2xl text-xs text-gray-500 font-light">
@@ -69,7 +72,7 @@
 						<button
 							type="button"
 							aria-expanded={travellerShow ? 'true' : 'false'}
-							on:click={() => (travellerShow = !travellerShow)}
+							on:click={toggleDropdown}
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +88,7 @@
 							</svg>
 						</button>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="border-t text-left border-gray-200 px-4 py-4 sm:px-6">
 					<dl class="grid grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-2 items-center">
@@ -141,7 +144,7 @@
 						<!-- END Room selection -->
 					</dl>
 				</div>
-				<div class="flex my-4 bottom-0 absolute justify-center w-full">
+				<div class="flex bottom-10 absolute justify-center w-full">
 					<button
 						type="button"
 						class="w-full mx-4 items-center content-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-pblue-900 hover:bg-pblue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"

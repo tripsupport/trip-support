@@ -12,7 +12,7 @@
 </script>
 
 <section
-	class="relative max-w-7xl z-30 -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-8 lg:mb-6"
+	class="relative max-w-7xl z-10 -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-8 lg:mb-6"
 	aria-labelledby="contact-heading"
 >
 	<div class="flex flex-col rounded-xl bg-white shadow-xl">
@@ -24,41 +24,41 @@
 				<button
 					on:click={() => (activeTab = 'flights')}
 					type="button"
-					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
+					class="text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'flights'
-						? 'text-pblue-900 border-b-2 border-pblue-900 '
-						: 'text-gray-700 hover:text-pblue-900'}"
+						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
+						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
 				>
 					<FlightsIcon />
-					flights
+					Flights
 				</button>
 				<button
 					on:click={() => (activeTab = 'vacations')}
 					type="button"
 					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'vacations'
-						? 'text-pblue-900 border-b-2 border-pblue-900 '
-						: 'text-gray-700 hover:text-pblue-900'}"
+						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
+						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
 				>
 					<VacationsIcon />
-					vacations
+					Vacations
 				</button>
 				<button
 					on:click={() => (activeTab = 'hotels')}
 					type="button"
 					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'hotels'
-						? 'text-pblue-900 border-b-2 border-pblue-900 '
-						: 'text-gray-700 hover:text-pblue-900'}"
+						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
+						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
 				>
 					<HotelsIcon />
-					hotels
+					Hotels
 				</button>
 			</nav>
 		</div>
 		<!-- END Card Header -->
 
-		<div class="px-5 py-4 mb-3 lg:px-6 lg:pb-4 grow w-full">
+		<div class="px-5 py-3 mb-3 lg:px-6 lg:pb-4 grow w-full">
 			{#if activeTab === 'flights'}
 				<FlightsTab />
 			{/if}

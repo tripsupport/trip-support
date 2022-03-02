@@ -14,12 +14,11 @@
   }
   ```
 -->
-<div class="relative py-12 bg-white">
-	<div class="hidden absolute top-0 inset-x-0 h-1/2 bg-white lg:block" aria-hidden="true" />
+<div class="relative py-12 lg:py-24 bg-white">
 	<div class="max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-8">
 		<div class="lg:grid lg:grid-cols-12">
 			<div
-				class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"
+				class="relative z-[2] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"
 			>
 				<div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
 				<div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
@@ -34,7 +33,7 @@
 			</div>
 
 			<div
-				class="relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center  shadow-xl"
+				class="relative z-[1] bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center  shadow-xl"
 			>
 				<div
 					class="relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
@@ -104,51 +103,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- <div class="bg-white">
-	<div class="max-w-7xl mx-auto pt-4 pb-12 px-4 sm:pt-8 sm:py-12 sm:px-6 lg:px-2">
-		<div class="bg-white shadow-lg sm:rounded-lg">
-			<div
-				class="lg:mx-auto mt-8 grid max-w-md gap-4 sm:max-w-full sm:px-6 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
-			>
-				<div class="col-span-2 overflow-hidden ">
-					<div class="px-4 py-5 sm:p-6">
-						<h3 class="text-lg leading-6 font-medium text-gray-900">
-							Sign up today, we’ve got deals to share!
-						</h3>
-						<div class="flex">
-							<div class="mt-2 max-w-xl text-sm text-gray-500">
-								<p>
-									Members access great rates and savings. Sign up to get email updates when
-									restrictions change. And discover the best deals to get you there.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-span-1 overflow-hidden ">
-					<div class="px-4 py-5 sm:p-6">
-						<form class="mt-5 sm:flex sm:items-center">
-							<div class="w-full sm:max-w-xs">
-								<label for="email" class="sr-only">Email</label>
-								<input
-									type="email"
-									name="email"
-									id="email"
-									class="shadow-sm focus:ring-ppblue-700 focus:border-ppblue-700 block w-full sm:text-sm border-gray-300 rounded-md"
-									placeholder="you@example.com"
-								/>
-							</div>
-							<button
-								type="submit"
-								class="mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-slate-900 bg-ppblue-800 hover:bg-ppblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ppblue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-								>Subscribe</button
-							>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->

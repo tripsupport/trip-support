@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-69e515f2.js",
+    "file": "start-cb8c80da.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -40,13 +40,13 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f8368422.js",
+    "file": "pages/index.svelte-ee601f19.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-8a8ffe8d.js",
-      "_BookingWidget-46b5df98.js"
+      "_BookingWidget-5dd1d7e8.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
@@ -86,13 +86,13 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-12375ec6.js",
+    "file": "pages/flights.svelte-52a8441d.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-8a8ffe8d.js",
-      "_BookingWidget-46b5df98.js"
+      "_BookingWidget-5dd1d7e8.js"
     ]
   },
   "src/routes/hotels.svelte": {
@@ -107,8 +107,8 @@
   "_vendor-8a8ffe8d.js": {
     "file": "chunks/vendor-8a8ffe8d.js"
   },
-  "_BookingWidget-46b5df98.js": {
-    "file": "chunks/BookingWidget-46b5df98.js",
+  "_BookingWidget-5dd1d7e8.js": {
+    "file": "chunks/BookingWidget-5dd1d7e8.js",
     "imports": [
       "_vendor-8a8ffe8d.js"
     ]

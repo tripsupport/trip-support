@@ -2,8 +2,8 @@
 <div class="bg-white">
 	<div class="max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2">
 		<div class="sm:flex sm:items-baseline sm:justify-between">
-			<h1 class="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
-				<span class="block xl:inline">Inspiration Stories from Experts</span>
+			<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+				<span class="block xl:inline">Inspirational Stories from Experts</span>
 				<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
 			</h1>
 
@@ -22,7 +22,7 @@
 	</div>
 
 	<div
-		class="mt-6 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 md:grid-cols-2 md:max-w-7xl lg:px-8 lg:grid-cols-3 lg:max-w-7xl"
+		class=" mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 md:grid-cols-2 md:max-w-7xl lg:px-8 lg:grid-cols-3 lg:max-w-7xl"
 	>
 		<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 			<div class="flex-shrink-0">

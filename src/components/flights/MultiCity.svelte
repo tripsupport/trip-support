@@ -2,7 +2,7 @@
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
 </script>
 
-<div class="my-6">
+<div class="py-1">
 	<div class="grid grid-cols-12 lg:gird-cols-12 gap-4 items-center">
 		<div class="col-span-12 lg:col-span-8">
 			<div class="grid grid-cols-12 items-center gap-6 py-2 md:py-1 relative">
@@ -33,7 +33,7 @@
 							name="name"
 							id="name"
 							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
-							placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
+							placeholder=""
 						/>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 							name="name"
 							id="name"
 							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
-							placeholder="YYZ-Toronto Lester B. Pearson Intl, Canada"
+							placeholder=""
 						/>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 				<label
 					for="name"
 					class="absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-pblue-900"
-					>Departure / Return</label
+					>Departure</label
 				>
 				<div class="flex items-center">
 					<div class="grid grid-cols-1 content-between place-items-center">
@@ -120,7 +120,7 @@
 									name="name"
 									id="name"
 									class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
-									placeholder="AMS-Amsterdam Airport Schiphol, Netherlands"
+									placeholder=""
 								/>
 							</div>
 						</div>

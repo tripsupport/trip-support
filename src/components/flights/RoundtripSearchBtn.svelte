@@ -10,6 +10,6 @@
 				clip-rule="evenodd"
 			/>
 		</svg>
-		<span class="flex">Search Multi-City Flights</span>
+		<span class="flex">Search Roundtrip Flights</span>
 	</a>
 </div>

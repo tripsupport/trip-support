@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite/**/*.js'],
+  content: ['./src/**/*.{html,js,svelte,ts}', "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"],
   safelist: [
     'w-64',
     'w-1/2',
@@ -81,7 +81,8 @@ module.exports = {
       'xs': '0.75rem',
       'xz': '0.8rem',
 			'sm': '.845rem',
-      'tabBody': '0.865rem',
+      'sz': '0.875rem',
+
 			'tiny': '.9125rem',
 			'base': '1rem',
 			'lg': '1.125rem',

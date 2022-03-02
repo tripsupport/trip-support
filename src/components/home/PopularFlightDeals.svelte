@@ -1,10 +1,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white overflow-hidden">
 	<div class="max-w-7xl mx-auto">
-		<div
-			class="relative z-10 pb-4 bg-white sm:pb-6 md:pb-8 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"
-		>
-			<svg
+		<div class="relative pb-4 bg-white sm:pb-6 md:pb-8 lg:max-w-7xl lg:w-full lg:pb-12 xl:pb-12">
+			<!-- <svg
 				class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
 				fill="currentColor"
 				viewBox="0 0 100 100"
@@ -12,24 +10,32 @@
 				aria-hidden="true"
 			>
 				<polygon points="50,0 100,0 50,100 0,100" />
-			</svg>
+			</svg> -->
 
-			<main class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+			<div class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8 ">
 				<div class="text-left">
-					<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
-						<span class="block xl:inline">Popular Flights Deals</span>
-						<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
-					</h1>
+					<div class="sm:flex sm:items-baseline sm:justify-between">
+						<h1
+							class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
+						>
+							<span class="block xl:inline">Popular Flight Deals</span>
+							<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
+						</h1>
+
+						<a
+							href="javascript:void(0)"
+							class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
+							>Browse all Popular Flight Deals<span aria-hidden="true"> &rarr;</span></a
+						>
+					</div>
 					<p
 						class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
 					>
 						Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
 					</p>
 
-					<div
-						class="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-3  sm:gap-y-10 lg:grid-cols-3"
-					>
+					<div class="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-4 = sm:gap-y-10 ">
 						<div class="relative group">
 							<div
 								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
@@ -229,9 +235,75 @@
 							</div>
 							<p class="mt-1 text-sm text-gray-500">Round trip</p>
 						</div>
+						<div class="relative group">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
+								<img
+									src="images/home/vancouver.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="javascript:void(0)">
+										<span aria-hidden="true" class="absolute inset-0" />
+										Vancouver
+									</a>
+								</h3>
+								<p>$349</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+						</div>
+						<div class="relative group">
+							<div
+								class="aspect-w-5 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 rounded-lg overflow-hidden bg-gray-100"
+							>
+								<img
+									src="images/home/vancouver.jpg"
+									alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+									class="object-center object-cover"
+								/>
+								<div
+									class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+									aria-hidden="true"
+								>
+									<div
+										class="w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"
+									>
+										View Deal
+									</div>
+								</div>
+							</div>
+							<div
+								class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<h3>
+									<a href="javascript:void(0)">
+										<span aria-hidden="true" class="absolute inset-0" />
+										Vancouver
+									</a>
+								</h3>
+								<p>$349</p>
+							</div>
+							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+						</div>
 					</div>
 				</div>
-			</main>
+			</div>
 		</div>
 	</div>
 	<div class="sm:hidden px-4">
@@ -241,11 +313,11 @@
 			>Browse all vacation destinations<span aria-hidden="true"> &rarr;</span></a
 		>
 	</div>
-	<div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+	<!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 		<img
 			class="hidden h-56 max-w-7xl object-cover sm:h-72 md:h-auto lg:block lg:w-full lg:h-auto"
 			src="images/home/flights-section.jpg"
 			alt=""
 		/>
-	</div>
+	</div> -->
 </div>

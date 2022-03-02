@@ -33,7 +33,7 @@
 
 <OutClick on:outclick={hideDropdown}>
 	<!-- Profile dropdown -->
-	<div class="mx-2 relative">
+	<div class="mx-2 relative ">
 		<div>
 			<button
 				type="button"
@@ -54,30 +54,24 @@
 		</div>
 		<div
 			bind:this={popoverDropdownRef}
-			class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1 w-56 {dropdownPopoverShow
+			class=" bg-white text-base z-50 py-2 list-none w-[100vw] rounded shadow-lg   {dropdownPopoverShow
 				? 'block'
 				: 'hidden'}"
 		>
 			<a
-				href="javascript:void(0)"
-				class="block px-4 py-2 text-tiny text-gray-900"
-				role="menuitem"
-				tabindex="-1"
-				id="user-menu-item-0">Your Profile</a
+				href="flights"
+				class="bg-pblue-50 border-rose-600 text-pblue-900 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"
+				>Profile</a
 			>
 			<a
-				href="javascript:void(0)"
-				class="block px-4 py-2 text-tiny text-gray-900"
-				role="menuitem"
-				tabindex="-1"
-				id="user-menu-item-1">Settings</a
+				href="vacations"
+				class="border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"
+				>Settings</a
 			>
 			<a
-				href="javascript:void(0)"
-				class="block px-4 py-2 text-tiny text-gray-900"
-				role="menuitem"
-				tabindex="-1"
-				id="user-menu-item-2">Sign out</a
+				href="vacations"
+				class="border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"
+				>Sign out</a
 			>
 		</div>
 	</div>

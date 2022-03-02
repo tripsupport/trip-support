@@ -6,27 +6,25 @@
 			<div class=" sm:col-span-1 col-span-2 my-8 sm:my-0 sm:pl-8">
 				<h1 class="font font-extrabold tracking-tight">
 					<span
-						class="inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl sm:text-[28px] md:text-[32px] lg:text-4xl"
+						class="inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl sm:text-[28px] md:text-4xl lg:text-5xl "
 					>
 						Book Now Pay Later</span
 					>
 				</h1>
-				<div class="grid grid-cols-12 items-center mt-4 gap-x-2">
-					<div class="col-span-7 ">
-						<p
-							class="sm:text-base text-base font-semibold  text-slate-600 mx-auto md:text-lg xl:text-2xl lg:text-xl"
-						>
+				<div class="grid grid-cols-12 items-center gap-x-2">
+					<div class="col-span-12">
+						<p class="text-lg font-semibold  text-gray-600 mx-auto md:text-lg lg:text-2xl">
 							No Credit Check Needed.
 						</p>
 					</div>
-					<div class="col-span-5 justify-self-start ">
+					<!-- <div class="col-span-5 justify-self-start ">
 						<a
 							href="javascript:void(0)"
-							class=" items-center justify-center py-1 sm:py-2 px-3 border border-transparent text-sm sm:text-tiny font-medium rounded-full shadow-sm text-white bg-blue-900 bg-opacity-100 hover:bg-opacity-70 "
+							class=" items-center justify-center   text-xz  font-medium text-pblue-900 "
 						>
 							Learn more
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div

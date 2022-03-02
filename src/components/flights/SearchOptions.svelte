@@ -1,6 +1,8 @@
 <div class="col-span-12 md:col-span-2">
 	<fieldset>
-		<div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 xs:space-x-12">
+		<div
+			class="flex items-center space-x-4 sm:space-x-8 lg:space-x-10 justify-between sm:justify-start"
+		>
 			<div class="inline-flex items-center">
 				<input
 					id="email"
@@ -8,10 +10,8 @@
 					type="radio"
 					class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
 				/>
-				<label for="email" class="hidden sm:block ml-3 text-sm font-medium text-gray-700">
-					Flexible Search (+/- 3 Days)
-				</label>
-				<label for="email" class="sm:hidden ml-3 block text-sm font-medium text-gray-700">
+
+				<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
 					Flexible Search
 				</label>
 			</div>

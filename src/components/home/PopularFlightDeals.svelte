@@ -2,7 +2,7 @@
 <div class="relative bg-white overflow-hidden">
 	<div class="max-w-7xl mx-auto">
 		<div
-			class="relative pb-4 z-[2] bg-white sm:pb-6 md:pb-8 lg:max-w-7xl lg:w-full lg:pb-12 xl:pb-12"
+			class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"
 		>
 			<svg
 				class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
@@ -24,11 +24,11 @@
 							<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
 						</h1>
 
-						<!-- <a
+						<a
 							href="javascript:void(0)"
 							class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
 							>Browse all Popular Flight Deals<span aria-hidden="true"> &rarr;</span></a
-						> -->
+						>
 					</div>
 					<p
 						class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"

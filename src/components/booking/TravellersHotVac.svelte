@@ -1,4 +1,39 @@
 <script>
+	$: selectAge = 'Select Age';
+
+	import { slide } from 'svelte/transition';
+	import { writable } from 'svelte/store';
+	function useToggle(initialState) {
+		const { subscribe, update } = writable(initialState);
+		return {
+			subscribe,
+			toggle: () => update((x) => !x)
+		};
+	}
+
+	let isModalOpen = false;
+
+	const isOpen = useToggle(false);
+
+	const age = [
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'10',
+		'11',
+		'12',
+		'13',
+		'14',
+		'15',
+		'16',
+		'17'
+	];
+
 	$: countAdult = 1;
 	function incAdult() {
 		++countAdult;
@@ -223,9 +258,9 @@
 										<button
 											type="button"
 											class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 "
-											on:click={toggleAge}
+											on:click={isOpen.toggle}
 										>
-											Select Age
+											{selectAge}
 
 											<svg
 												class="-mr-1 ml-2 h-5 w-5"
@@ -241,41 +276,60 @@
 												/>
 											</svg>
 										</button>
-									</div>
 
-									{#if showChildAge}
-										<div
-											class="origin-bottom-left absolute right-10 mt-2 w-[148px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-											role="menu"
-											aria-orientation="vertical"
-											aria-labelledby="menu-button"
-											tabindex="-1"
-										>
-											<div class="py-1" role="none">
-												<a
-													href="#"
-													class="text-gray-700 block px-4 py-2 text-sm"
-													role="menuitem"
-													tabindex="-1"
-													id="menu-item-0">2</a
-												>
-												<a
-													href="#"
-													class="text-gray-700 block px-4 py-2 text-sm"
-													role="menuitem"
-													tabindex="-1"
-													id="menu-item-1">3</a
-												>
-												<a
-													href="#"
-													class="text-gray-700 block px-4 py-2 text-sm"
-													role="menuitem"
-													tabindex="-1"
-													id="menu-item-2">4</a
-												>
+										{#if $isOpen}
+											<div
+												class="origin-bottom-left absolute right-10 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+												role="menu"
+												aria-orientation="vertical"
+												aria-labelledby="menu-button"
+												tabindex="-1"
+											>
+												<div class="py-1" role="none">
+													<!-- Select Box -->
+													<div class="space-y-1 text-right">
+														{#each age as _, i}
+															<option class="pr-6 hover:bg-gray-50 cursor-pointer">{i}</option>
+														{/each}
+													</div>
+												</div>
 											</div>
-										</div>
-									{/if}
+										{/if}
+
+										<!-- {#if showChildAge}
+											<div
+												class="origin-bottom-left absolute right-10 mt-2 w-[148px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+												role="menu"
+												aria-orientation="vertical"
+												aria-labelledby="menu-button"
+												tabindex="-1"
+											>
+												<div class="py-1" role="none">
+													<a
+														href="#"
+														class="text-gray-700 block px-4 py-2 text-sm"
+														role="menuitem"
+														tabindex="-1"
+														id="menu-item-0">2</a
+													>
+													<a
+														href="#"
+														class="text-gray-700 block px-4 py-2 text-sm"
+														role="menuitem"
+														tabindex="-1"
+														id="menu-item-1">3</a
+													>
+													<a
+														href="#"
+														class="text-gray-700 block px-4 py-2 text-sm"
+														role="menuitem"
+														tabindex="-1"
+														id="menu-item-2">4</a
+													>
+												</div>
+											</div>
+										{/if} -->
+									</div>
 								</div>
 							</div>
 						</dl>

@@ -35,7 +35,7 @@
 				<button
 					on:click={() => (activeTab = 'vacations')}
 					type="button"
-					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
+					class="text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'vacations'
 						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
 						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
@@ -46,7 +46,7 @@
 				<button
 					on:click={() => (activeTab = 'hotels')}
 					type="button"
-					class="text-tiny px-3 md:px-5 font-medium -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
+					class="text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'hotels'
 						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
 						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"

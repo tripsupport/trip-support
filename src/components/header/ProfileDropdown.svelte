@@ -37,7 +37,7 @@
 		<div>
 			<button
 				type="button"
-				class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 ease-linear transition-all duration-150"
+				class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 ease-linear transition-all duration-150"
 				aria-expanded="false"
 				aria-haspopup="true"
 				data-collapse-toggle="user-profile"

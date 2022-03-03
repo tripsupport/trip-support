@@ -22,7 +22,7 @@
 			</div>
 
 			<div class="inline-flex items-center py-2 text-sm text-gray-900 rounded-lg lg:hidden pr-4">
-				<a href="javascript:void(0)" class="text-pblue-900 hover:text-rose-600 ">
+				<a href="tel:1-855-606-0606" class="text-pblue-900 hover:text-rose-600 ">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-5 w-auto mr-2"

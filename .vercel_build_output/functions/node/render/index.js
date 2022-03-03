@@ -5973,7 +5973,7 @@ var init__ = __esm({
     init_layout_svelte();
     entry = "pages/__layout.svelte-ab9315ee.js";
     js = ["pages/__layout.svelte-ab9315ee.js", "chunks/vendor-4f048286.js"];
-    css = ["assets/pages/__layout.svelte-d03fc764.css"];
+    css = ["assets/pages/__layout.svelte-2b7a2dbd.css"];
   }
 });
 
@@ -6027,10 +6027,10 @@ var init__2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BookingWidget-b96aa4d7.js
+// .svelte-kit/output/server/chunks/BookingWidget-1e21c744.js
 var SwitchHorizontal, FlightsIcon, VacationsIcon, HotelsIcon, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, RoundTrip, leaving, RoundTripMobForm, FlightsTab, BookingWidget;
-var init_BookingWidget_b96aa4d7 = __esm({
-  ".svelte-kit/output/server/chunks/BookingWidget-b96aa4d7.js"() {
+var init_BookingWidget_1e21c744 = __esm({
+  ".svelte-kit/output/server/chunks/BookingWidget-1e21c744.js"() {
     init_index_c100796a();
     init_OutClick_9697805c();
     SwitchHorizontal = [[{ "d": "M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" }]];
@@ -6283,7 +6283,7 @@ var PopularFlightDeals, VacationDestinations, BlogPosts, Subscribe, PromoSection
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_c100796a();
-    init_BookingWidget_b96aa4d7();
+    init_BookingWidget_1e21c744();
     init_OutClick_9697805c();
     PopularFlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6497,8 +6497,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-24c663d5.js";
-    js3 = ["pages/index.svelte-24c663d5.js", "chunks/vendor-4f048286.js", "chunks/BookingWidget-f1f13876.js"];
+    entry3 = "pages/index.svelte-fbb8a98d.js";
+    js3 = ["pages/index.svelte-fbb8a98d.js", "chunks/vendor-4f048286.js", "chunks/BookingWidget-206a715d.js"];
     css3 = [];
   }
 });
@@ -6644,7 +6644,7 @@ var Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
     init_index_c100796a();
-    init_BookingWidget_b96aa4d7();
+    init_BookingWidget_1e21c744();
     init_OutClick_9697805c();
     Flights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6671,8 +6671,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_flights_svelte();
-    entry8 = "pages/flights.svelte-ed81165e.js";
-    js8 = ["pages/flights.svelte-ed81165e.js", "chunks/vendor-4f048286.js", "chunks/BookingWidget-f1f13876.js"];
+    entry8 = "pages/flights.svelte-fcdfc230.js";
+    js8 = ["pages/flights.svelte-fcdfc230.js", "chunks/vendor-4f048286.js", "chunks/BookingWidget-206a715d.js"];
     css8 = [];
   }
 });
@@ -8742,7 +8742,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "logo.svg"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg" },
-    entry: { "file": "start-619fda9a.js", "js": ["start-619fda9a.js", "chunks/vendor-4f048286.js"], "css": [] },
+    entry: { "file": "start-398f2663.js", "js": ["start-398f2663.js", "chunks/vendor-4f048286.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

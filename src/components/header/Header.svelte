@@ -7,5 +7,5 @@
 <header classn="relative overflow-hidden">
 	<AlertCovid />
 	<MainNav />
-	<Hero />
+	<!-- <Hero /> -->
 </header>

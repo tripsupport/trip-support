@@ -1,12 +1,27 @@
-// import adapter from '@sveltejs/adapter-auto';
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-static';
 
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
 	kit: {
-		adapter: vercel()
+		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: false
+		})
 	}
 };
+// import adapter from '@sveltejs/adapter-auto';
+// import vercel from '@sveltejs/adapter-vercel';
 
-export default config;
+
+// /** @type {import('@sveltejs/kit').Config} */
+// const config = {
+// 	kit: {
+// 		adapter: vercel()
+// 	}
+// };
+
+// export default config;
+
+

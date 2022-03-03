@@ -1,4 +1,5 @@
 module.exports = {
+  mdoe: 'jit',
   content: ['./src/**/*.{html,js,svelte,ts}', "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"],
   safelist: [
     'w-64',

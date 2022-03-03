@@ -89,7 +89,7 @@
 
 				{#if showRoundTrip}
 					<div class="absolute">
-						<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
+						<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100%] top-0 right-0">
 							<div class="flex p-4 sm:px-6 justify-between border-b">
 								<div class="text-tiny leading-6 font-semibold text-gray-900">{title}</div>
 								<button

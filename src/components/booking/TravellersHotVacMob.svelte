@@ -84,7 +84,7 @@
 	</div>
 	{#if travellerShow}
 		<div class="absolute">
-			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
+			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100%] top-0 right-0">
 				<div class="p-3 flex items-center justify-between mt-1">
 					<div class="justify-content-center">
 						<h3 class="text-lg leading-6 font-semibold text-gray-900">Travellers</h3>

@@ -59,8 +59,8 @@
 		</div>
 	</div>
 	{#if travellerShow}
-		<div class="absolute">
-			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100vh] top-0 right-0">
+		<div class="absolute overflow-hidden">
+			<div class="bg-white z-50 shadow sm:rounded-lg fixed w-full h-[100%] top-0 right-0">
 				<div class="p-4 sm:px-6 gird grid-cols-4 justify-between flex">
 					<div class="justify-start col-span-3">
 						<h3 class="text-lg leading-6 font-semibold text-gray-900">Rooms</h3>

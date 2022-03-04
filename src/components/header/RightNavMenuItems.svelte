@@ -16,7 +16,7 @@
 		} else {
 			dropdownPopoverShow = true;
 			createPopper(btnDropdownRef, popoverDropdownRef, {
-				placement: 'bottom-start'
+				placement: 'bottom-end'
 			});
 		}
 	};
@@ -115,31 +115,69 @@
 			</div>
 			<div
 				bind:this={popoverDropdownRef}
-				class="bg-white text-base z-40 float-left py-2 list-none text-left rounded shadow-lg w-56 {dropdownPopoverShow
+				class="bg-white text-base list-none text-left rounded shadow-lg w-96 {dropdownPopoverShow
 					? 'block'
 					: 'hidden'}"
 			>
-				<a
-					href="javascript:void(0)"
-					class="block px-4 py-2 text-tiny font-medium text-gray-900"
-					role="menuitem"
-					tabindex="-1"
-					id="user-menu-item-0">Your Profile</a
-				>
-				<a
-					href="javascript:void(0)"
-					class="block px-4 py-2 text-tiny font-medium text-gray-900"
-					role="menuitem"
-					tabindex="-1"
-					id="user-menu-item-1">Settings</a
-				>
-				<a
-					href="javascript:void(0)"
-					class="block px-4 py-2 text-tiny font-medium text-gray-900"
-					role="menuitem"
-					tabindex="-1"
-					id="user-menu-item-2">Sign out</a
-				>
+				<form class="space-y-4 p-6" action="#" method="POST">
+					<div>
+						<label for="email" class="block text-sm font-medium text-gray-700">
+							Email address
+						</label>
+						<div class="mt-1">
+							<input
+								id="email"
+								name="email"
+								type="email"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+
+					<div>
+						<label for="password" class="block text-sm font-medium text-gray-700"> Password </label>
+						<div class="mt-1">
+							<input
+								id="password"
+								name="password"
+								type="password"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<input
+								id="remember-me"
+								name="remember-me"
+								type="checkbox"
+								class="h-4 w-4 text-pblue-600 focus:ring-pblue-500 border-gray-300 rounded"
+							/>
+							<label for="remember-me" class="ml-2 block text-sm text-gray-900">
+								Remember me
+							</label>
+						</div>
+
+						<div class="text-sm">
+							<a href="#" class="font-medium text-pblue-600 hover:text-pblue-500">
+								Forgot your password?
+							</a>
+						</div>
+					</div>
+
+					<div>
+						<button
+							type="submit"
+							class="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+							>Sign in</button
+						>
+					</div>
+				</form>
 			</div>
 		</div>
 	</OutClick>

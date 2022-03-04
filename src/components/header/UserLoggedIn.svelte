@@ -1,3 +1,7 @@
+<script>
+	import { Icon, UserCircle } from 'svelte-hero-icons';
+</script>
+
 <li tabindex="0">
 	<a
 		href="/"

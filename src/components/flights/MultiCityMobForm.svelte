@@ -8,6 +8,20 @@
 	$: showRoundTrip = false;
 	let leavingFrom = '';
 	let goingTo = '';
+
+	import SearchFlightsMob from '../booking/SearchFlightsMob.svelte';
+
+	import { writable } from 'svelte/store';
+	function useToggle(initialState) {
+		const { subscribe, update } = writable(initialState);
+		return {
+			subscribe,
+			toggle: () => update((x) => !x)
+		};
+	}
+
+	const searchFrom = useToggle(true);
+	const searchTo = useToggle(false);
 </script>
 
 <div class="py-2">
@@ -194,6 +208,9 @@
 									Matching with <span class="font-bold text-sm">{leavingFrom}</span> to
 									<span class="font-bold text-sm">{goingTo}</span>
 								</div>
+								{#if $searchFrom}
+									<SearchFlightsMob />
+								{/if}
 							</div>
 						</div>
 					</div>

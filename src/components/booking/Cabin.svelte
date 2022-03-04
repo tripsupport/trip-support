@@ -64,7 +64,7 @@
 		</button>
 		<div
 			bind:this={popoverDropdownRef}
-			class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1 w-56 {dropdownPopoverShow
+			class="bg-white text-base z-30 float-left py-2 list-none text-left rounded shadow-lg mt-1 w-56 {dropdownPopoverShow
 				? 'block'
 				: 'hidden'}"
 		>

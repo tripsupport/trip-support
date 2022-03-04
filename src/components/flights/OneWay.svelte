@@ -1,5 +1,18 @@
 <script>
+	import OutClick from 'svelte-outclick';
 	import { Icon, SwitchHorizontal } from 'svelte-hero-icons';
+	import SearchFlights from '../booking/SearchFlights.svelte';
+	import { writable } from 'svelte/store';
+	function useToggle(initialState) {
+		const { subscribe, update } = writable(initialState);
+		return {
+			subscribe,
+			toggle: () => update((x) => !x)
+		};
+	}
+
+	const searchFrom = useToggle(false);
+	const searchTo = useToggle(false);
 </script>
 
 <div class="my-6">
@@ -34,8 +47,15 @@
 							id="name"
 							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
 							placeholder=""
+							autocomplete="off"
+							on:click={searchFrom.toggle}
 						/>
 					</div>
+					{#if $searchFrom}
+						<OutClick on:outclick={searchFrom.toggle}>
+							<SearchFlights />
+						</OutClick>
+					{/if}
 				</div>
 
 				<div
@@ -84,8 +104,15 @@
 							id="name"
 							class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm "
 							placeholder=""
+							autocomplete="off"
+							on:click={searchTo.toggle}
 						/>
 					</div>
+					{#if $searchTo}
+						<OutClick on:outclick={searchTo.toggle}>
+							<SearchFlights />
+						</OutClick>
+					{/if}
 				</div>
 			</div>
 		</div>
@@ -118,6 +145,7 @@
 						id="name"
 						class="block w-full border-0 p-1 text-pblue-900 placeholder-gray-400 focus:ring-0 text-sm"
 						placeholder=""
+						autocomplete="off"
 					/>
 				</div>
 			</div>

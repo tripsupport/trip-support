@@ -15,6 +15,7 @@
 	import MultiCityMobForm from '../flights/MultiCityMobForm.svelte';
 	import OneWayMobForm from '../flights/OneWayMobForm.svelte';
 	import MultiCityMob from '../flights/MultiCityMobForm.svelte';
+	import InputError from '../booking/InputError.svelte';
 	let activeSubTab = 'roundTrip';
 
 	let count = 2;
@@ -29,8 +30,8 @@
 				type="button"
 				class="inline-flex justify-center items-center space-x-2 rounded-full border font-semibold focus:outline-none px-3 py-2 text-sm focus:ring focus:ring-gray-500 focus:ring-opacity-25 
               {activeSubTab === 'roundTrip'
-					? 'text-white bg-pblue-900 border-white shadow-none'
-					: 'bg-white text-pblue-900'}
+					? 'text-white bg-pblue-800 border-white shadow-none'
+					: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
               "
 			>
 				Roundtrip
@@ -45,8 +46,8 @@
 				type="button"
 				class="inline-flex justify-center items-center space-x-2 rounded-full border font-semibold focus:outline-none px-3 py-2 text-sm focus:ring focus:ring-gray-500 focus:ring-opacity-25 
               {activeSubTab === 'oneWay'
-					? 'text-white bg-pblue-900 border-white shadow-none'
-					: 'bg-white text-pblue-900'}
+					? 'text-white bg-pblue-800 border-white shadow-none'
+					: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
               "
 			>
 				One-way
@@ -60,8 +61,8 @@
 				type="button"
 				class="inline-flex justify-center items-center space-x-2 rounded-full border font-semibold focus:outline-none px-3 py-2 text-sm focus:ring focus:ring-gray-500 focus:ring-opacity-25 
               {activeSubTab === 'multiCity'
-					? 'text-white bg-pblue-900 border-white shadow-none'
-					: 'bg-white text-pblue-900'}
+					? 'text-white bg-pblue-800 border-white shadow-none'
+					: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
               "
 			>
 				Multi-city
@@ -106,6 +107,7 @@
 
 <!-- OneWay Tab -->
 {#if activeSubTab === 'oneWay'}
+	<InputError />
 	<div class="hidden sm:block">
 		<OneWay />
 	</div>

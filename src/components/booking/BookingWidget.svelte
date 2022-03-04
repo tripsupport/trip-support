@@ -12,7 +12,7 @@
 </script>
 
 <section
-	class="relative max-w-7xl z-10 -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-8 lg:mb-6"
+	class="relative max-w-7xl z-[3] -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-8 lg:mb-6"
 	aria-labelledby="contact-heading"
 >
 	<div class="flex flex-col rounded-xl bg-white shadow-xl">
@@ -26,8 +26,8 @@
 					type="button"
 					class="text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'flights'
-						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
-						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
+						? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
+						: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 				>
 					<FlightsIcon />
 					Flights
@@ -37,8 +37,8 @@
 					type="button"
 					class="text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'vacations'
-						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
-						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
+						? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
+						: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 				>
 					<VacationsIcon />
 					Vacations
@@ -48,8 +48,8 @@
 					type="button"
 					class="text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize {activeTab ===
 					'hotels'
-						? 'text-pblue-900 border-b-2 border-pblue-900 font-bold'
-						: 'text-gray-700 hover:text-pblue-900 font-semibold'}"
+						? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
+						: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 				>
 					<HotelsIcon />
 					Hotels

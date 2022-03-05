@@ -1,19 +1,18 @@
-import adapter from '@sveltejs/adapter-static';
+// import adapter from '@sveltejs/adapter-static';
+import vercel from '@sveltejs/adapter-vercel';
 
 export default {
 	kit: {
-		adapter: adapter({
+		adapter: vercel({
 			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null,
-			precompress: false
+			// pages: 'build',
+			// assets: 'build',
+			// fallback: null,
+			// precompress: false
 		})
 	}
 };
 // import adapter from '@sveltejs/adapter-auto';
-// import vercel from '@sveltejs/adapter-vercel';
-
 
 // /** @type {import('@sveltejs/kit').Config} */
 // const config = {
@@ -23,5 +22,3 @@ export default {
 // };
 
 // export default config;
-
-

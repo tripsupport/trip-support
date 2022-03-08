@@ -1,5 +1,6 @@
 <script>
-	import StarRating from './StarRating.svelte';
+	import StarRating from '../StarRating.svelte';
+	import PuertoVallartaCarousel from './PuertoVallartaCarousel.svelte';
 </script>
 
 <div class="relative bg-white">
@@ -8,11 +9,11 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <PuertoVallartaCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
-							src="images/vacations/cancun.jpg"
+							src="images/vacations/puertovallarta.jpg"
 							class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
 							alt="..."
 						/>
@@ -59,11 +60,11 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <PuertoVallartaCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
-							src="images/vacations/mexico/vac7.jpg"
+							src="images/vacations/mexico/vac11.jpg"
 							class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
 							alt="..."
 						/>
@@ -110,7 +111,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <PuertoVallartaCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
@@ -162,11 +163,11 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <PuertoVallartaCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
-							src="images/vacations/mexico/vac18.jpg"
+							src="images/vacations/mexico/vac13.jpg"
 							class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
 							alt="..."
 						/>
@@ -213,11 +214,11 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <PuertoVallartaCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
-							src="images/vacations/mexico/vac2.jpg"
+							src="images/vacations/mexico/vac14.jpg"
 							class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
 							alt="..."
 						/>
@@ -264,11 +265,11 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <PuertoVallartaCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
-							src="images/vacations/mexico/vac22.jpg"
+							src="images/vacations/mexico/vac15.jpg"
 							class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
 							alt="..."
 						/>

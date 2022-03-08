@@ -1,11 +1,11 @@
 <script>
-	import CayoCoco from './CayoCoco.svelte';
-	import CayoLargo from './CayoLargo.svelte';
-	import Havana from './Havana.svelte';
-	import Holguin from './Holguin.svelte';
-	import Varadero from './Varadero.svelte';
+	import CayoCoco from '../vacations/cuba/CayoCoco.svelte';
+	import CayoLargo from '../vacations/cuba/CayoLargo.svelte';
+	import Havana from '../vacations/cuba/Havana.svelte';
+	import Holguin from '../vacations/cuba/Holguin.svelte';
+	import Varadero from '../vacations/Varadero.svelte';
 
-	let activeSubTab = 'havana';
+	let activeSubTab = 'cayo-largo';
 </script>
 
 <div class="flex space-x-6 my-4">

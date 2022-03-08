@@ -1,27 +1,27 @@
 <script>
-	import Acapulco from '../vacations/mexico/Acapulco.svelte';
-	import Cancun from '../vacations/mexico/Cancun.svelte';
-	import LosCabos from '../vacations/mexico/LosCabos.svelte';
-	import PuertoVallarta from '../vacations/mexico/PuertoVallarta.svelte';
-	import RivieraMaya from '../vacations/mexico/RivieraMaya.svelte';
+	import Antigua from '../vacations/caribbean/Antigua.svelte';
+	import Aruba from '../vacations/caribbean/Aruba.svelte';
+	import Barbados from '../vacations/caribbean/Barbados.svelte';
+	import Nassau from '../vacations/caribbean/Nassau.svelte';
+	import TurksCaicos from '../vacations/caribbean/TurksCaicos.svelte';
 
-	let activeSubTab = 'cancun';
+	let activeSubTab = 'nassau';
 </script>
 
 <div class="flex-1 sm:flex grid gap-4 space-x-6 my-4">
 	<button
-		on:click={() => (activeSubTab = 'acapulco')}
+		on:click={() => (activeSubTab = 'antigua')}
 		type="button"
 		class="inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
-                {activeSubTab === 'acapulco'
+                {activeSubTab === 'antigua'
 			? 'text-white bg-pblue-800 border-white shadow-none'
 			: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
                 "
 	>
-		Acapulco
+		Antigua
 		<span
 			class="hidden ml-3 py-[2px] px-2 rounded-full text-xx font-semibold md:inline-block
-                {activeSubTab === 'acapulco'
+                {activeSubTab === 'antigua'
 				? 'text-slate-900 bg-white border-pblue-500 shadow-none'
 				: 'text-white bg-pblue-800 '}
                 ">6</span
@@ -29,18 +29,18 @@
 	</button>
 
 	<button
-		on:click={() => (activeSubTab = 'cancun')}
+		on:click={() => (activeSubTab = 'aruba')}
 		type="button"
 		class="inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
-                {activeSubTab === 'cancun'
+                {activeSubTab === 'aruba'
 			? 'text-white bg-pblue-800 border-white shadow-none'
 			: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
                 "
 	>
-		Cancun
+		Aruba
 		<span
 			class="hidden ml-3 py-[2px] px-2 rounded-full text-xx font-semibold md:inline-block
-                {activeSubTab === 'cancun'
+                {activeSubTab === 'aruba'
 				? 'text-slate-900 bg-white border-pblue-500 shadow-none'
 				: 'text-white bg-pblue-800'}
                 ">12</span
@@ -48,72 +48,72 @@
 	</button>
 
 	<button
-		on:click={() => (activeSubTab = 'los-cabos')}
+		on:click={() => (activeSubTab = 'barbados')}
 		type="button"
 		class="inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
-                {activeSubTab === 'los-cabos'
+                {activeSubTab === 'barbados'
 			? 'text-white bg-pblue-800 border-white shadow-none'
 			: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
                 "
 	>
-		Los Cabos
+		Barbados
 		<span
 			class="hidden ml-3 py-[2px] px-2 rounded-full text-xx font-semibold md:inline-block
-                {activeSubTab === 'los-cabos'
+                {activeSubTab === 'barbados'
 				? 'text-slate-900 bg-white border-pblue-500 shadow-none'
 				: 'text-white bg-pblue-800'}
                 ">9</span
 		>
 	</button>
 	<button
-		on:click={() => (activeSubTab = 'puerto-vallarta')}
+		on:click={() => (activeSubTab = 'nassau')}
 		type="button"
 		class="inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
-                {activeSubTab === 'puerto-vallarta'
+                {activeSubTab === 'nassau'
 			? 'text-white bg-pblue-800 border-white shadow-none'
 			: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
                 "
 	>
-		Puerto Vallarta
+		Nassau
 		<span
 			class="hidden ml-3 py-[2px] px-2 rounded-full text-xx font-semibold md:inline-block
-                {activeSubTab === 'puerto-vallarta'
+                {activeSubTab === 'nassau'
 				? 'text-slate-900 bg-white border-pblue-500 shadow-none'
 				: 'text-white bg-pblue-800'}
                 ">5</span
 		>
 	</button>
 	<button
-		on:click={() => (activeSubTab = 'riviera-maya')}
+		on:click={() => (activeSubTab = 'turks-caicos')}
 		type="button"
 		class="inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
-                {activeSubTab === 'riviera-maya'
+                {activeSubTab === 'turks-caicos'
 			? 'text-white bg-pblue-800 border-white shadow-none'
 			: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}
                 "
 	>
-		Riviera Maya
+		Turks & Caicos
 		<span
 			class="hidden ml-3 py-[2px] px-2 rounded-full text-xx font-semibold md:inline-block
-                {activeSubTab === 'riviera-maya'
+                {activeSubTab === 'turks-caicos'
 				? 'text-slate-900 bg-white border-pblue-500 shadow-none'
 				: 'text-white bg-pblue-800'}
                 ">18</span
 		>
 	</button>
 </div>
-{#if activeSubTab === 'acapulco'}
-	<Acapulco />
+{#if activeSubTab === 'antigua'}
+	<Antigua />
 {/if}
-{#if activeSubTab === 'cancun'}
-	<Cancun />
+{#if activeSubTab === 'aruba'}
+	<Aruba />
 {/if}
-{#if activeSubTab === 'los-cabos'}
-	<LosCabos />
+{#if activeSubTab === 'barbados'}
+	<Barbados />
 {/if}
-{#if activeSubTab === 'puerto-vallarta'}
-	<PuertoVallarta />
+{#if activeSubTab === 'nassau'}
+	<Nassau />
 {/if}
-{#if activeSubTab === 'riviera-maya'}
-	<RivieraMaya />
+{#if activeSubTab === 'turks-caicos'}
+	<TurksCaicos />
 {/if}

@@ -2,6 +2,11 @@
 	import BookingWidget from '../components/booking/BookingWidget.svelte';
 	import MexicoSubTabs from '../components/vacations/MexicoSubTabs.svelte';
 	import CubaSubTabs from '../components/vacations/CubaSubTabs.svelte';
+	import DominicanSubTabs from '../components/vacations/DominicanSubTabs.svelte';
+	import JamaicaSubTabs from '../components/vacations/JamaicaSubTabs.svelte';
+	import FloridaSubTabs from '../components/vacations/FloridaSubTabs.svelte';
+	import HawaiiSubTabs from '../components/vacations/HawaiiSubTabs.svelte';
+	import CaribbeanSubTabs from '../components/vacations/CaribbeanSubTabs.svelte';
 	// Tabs
 	let activeTab = 'mexico';
 </script>
@@ -150,6 +155,21 @@
 				{/if}
 				{#if activeTab === 'cuba'}
 					<CubaSubTabs />
+				{/if}
+				{#if activeTab === 'dominican-republic'}
+					<DominicanSubTabs />
+				{/if}
+				{#if activeTab === 'jamaica'}
+					<JamaicaSubTabs />
+				{/if}
+				{#if activeTab === 'florida'}
+					<FloridaSubTabs />
+				{/if}
+				{#if activeTab === 'hawaii'}
+					<HawaiiSubTabs />
+				{/if}
+				{#if activeTab === 'caribbean'}
+					<CaribbeanSubTabs />
 				{/if}
 				<!-- add rest here -->
 			</div>

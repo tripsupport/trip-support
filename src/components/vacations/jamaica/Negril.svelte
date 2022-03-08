@@ -1,5 +1,5 @@
 <script>
-	import StarRating from './StarRating.svelte';
+	import StarRating from '../StarRating.svelte';
 </script>
 
 <div class="relative bg-white">
@@ -8,7 +8,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <NegrilCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
@@ -59,7 +59,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <NegrilCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
@@ -110,7 +110,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <NegrilCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
@@ -162,7 +162,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <NegrilCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
@@ -213,7 +213,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <NegrilCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img
@@ -264,7 +264,7 @@
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">
-					<!-- <CancunCarousel /> -->
+					<!-- <NegrilCarousel /> -->
 					<!-- Below is single image -->
 					<div class="overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48">
 						<img

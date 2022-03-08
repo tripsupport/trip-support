@@ -1,5 +1,5 @@
 <script>
-	import StarRating from './StarRating.svelte';
+	import StarRating from '../StarRating.svelte';
 </script>
 
 <div class="relative bg-white">

@@ -4,7 +4,7 @@
 
 <div class="mx-auto max-w-7xl h-[422px]">
 	<div class="hidden sm:flex justify-between ">
-		<div class="lg:pt-16 pb-2 px-4 sm:px-6 z-10 w-xl">
+		<div class="lg:pt-16 pb-2 px-4 sm:px-8 z-10 w-xl">
 			<h1
 				class="mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl "
 			>

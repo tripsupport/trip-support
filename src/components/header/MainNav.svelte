@@ -1,26 +1,16 @@
 <script>
 	import MobMenuBtn from './MobMenuBtn.svelte';
 	import Logo from './Logo.svelte';
-	import NavMenuItems from './NavMenuItems.svelte';
-	import MobileMenuItems from './MobileMenuItems.svelte';
 	import RightNavMenuItems from './RightNavMenuItems.svelte';
 	import ProfileDropdown from './ProfileDropdown.svelte';
-	import UserLoggedIn from './UserLoggedIn.svelte';
 	import Signup from './Signup.svelte';
 
-	const pages = [
-		{ title: 'Flights', link: '/flights' },
-		{ title: 'Vacations', link: '/vacations' },
-		{ title: 'Hotels', link: '/hotels' }
+	import { page } from '$app/stores';
+	const menu = [
+		{ title: 'Flights', url: '/flights' },
+		{ title: 'Vacations', url: '/vacations' },
+		{ title: 'Hotels', url: '/hotels' }
 	];
-
-	let selected = pages[0];
-	let iSelected = 0;
-
-	function changePage(e) {
-		selected = pages[e.srcElement.id];
-		iSelected = e.srcElement.id;
-	}
 </script>
 
 <!-- Main navigation -->
@@ -29,24 +19,22 @@
 		<div class="flex flex-wrap justify-between items-center ">
 			<div class="flex pl-4">
 				<!-- Nav logo -->
-				<Logo />
+				<a href="/" class="flex-shrink-0 flex place-items-start">
+					<img class=" h-9 sm:h-11 w-auto" src="logo.svg" alt="Trip Support Logo" />
+				</a>
 
 				<!-- Nav Menu Items -->
 				<div class="hidden lg:flex items-center gap-1 px-4">
 					<!-- Nav menu items -->
 					<div class="hidden md:ml-6 lg:flex md:space-x-8">
-						{#each pages as page, i}
+						{#each menu as item}
 							<a
-								href={page.link}
-								class="text-tiny inline-flex items-center px-1 pt-1 sm:ml-4 
-								{iSelected == i + 1
-									? 'text-rose-600 font-semibold'
-									: 'text-gray-900 font-medium hover:text-pblue-900'}
-		"
-								on:click={changePage}
-								id={i + 1}
+								href={item.url}
+								class="text-tiny inline-flex items-center px-1 pt-1 sm:ml-4 text-gray-900 font-medium hover:text-pblue-900
+								{$page.url.pathname === item.url.pathname ? 'active:text-rose-600' : 'text-gray-900'}
+								"
 							>
-								{page.title}
+								{item.title}
 							</a>
 						{/each}
 					</div>
@@ -81,3 +69,9 @@
 		</div>
 	</div>
 </nav>
+
+<style>
+	.active {
+		color: red;
+	}
+</style>

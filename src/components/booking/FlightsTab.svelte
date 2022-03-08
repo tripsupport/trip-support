@@ -19,6 +19,11 @@
 	let activeSubTab = 'roundTrip';
 
 	let count = 2;
+
+	let errorShow = true;
+	function errorToggle() {
+		errorShow != errorShow;
+	}
 </script>
 
 <div class="grid grid-cols-12">
@@ -107,7 +112,20 @@
 
 <!-- OneWay Tab -->
 {#if activeSubTab === 'oneWay'}
-	<InputError />
+	<!-- <InputError /> -->
+	<!-- This example requires Tailwind CSS v2.0+ -->
+	{#if errorShow}
+		<div class="bg-rose-50 border-l-4 border-rose-400 p-4 mt-4">
+			<div class="flex">
+				<div class="ml-3">
+					<p class="text-sm text-pred-700 font-medium">
+						To continue, please correct the errors below.
+					</p>
+				</div>
+			</div>
+		</div>
+	{/if}
+
 	<div class="hidden sm:block">
 		<OneWay />
 	</div>
@@ -120,7 +138,29 @@
 		</div>
 		<div class="col-span-6 md:col-span-2 w-full md:justify-self-end mt-4 md:mt-0">
 			<div id="each" />
-			<OneWaySearchBtn />
+			<!-- <OneWaySearchBtn /> -->
+			<div class="space-x-2 rounded sm:bg-transparent sm:px-0">
+				<a
+					type="button"
+					href="javascript:void(0)"
+					class="inline-flex justify-center items-center space-x-2 border font-medium tracking-wide focus:outline-none px-3 py-2 text-sm rounded-full  bg-pblue-800 text-white hover:text-white hover:bg-pblue-900 focus:ring focus:ring-pblue-500 focus:ring-opacity-50 w-full "
+					on:click={errorToggle}
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+					<span class="flex">Search One-way Flights</span>
+				</a>
+			</div>
 		</div>
 	</div>
 {/if}

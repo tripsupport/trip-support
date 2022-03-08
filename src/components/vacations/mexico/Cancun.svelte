@@ -35,9 +35,11 @@
 
 					<div class="flex flex-col">
 						<div>
-							<a href="#" class="block mt-3 capitalize prose">
-								<p class=" text-xl font-bold text-slate-900 mb-0 ">Grand Sunset Princess</p>
-								<p class="text-tiny font-medium m-0">all suites & spa</p>
+							<a href="#" class="block mt-4 capitalize prose">
+								<p class=" text-xl font-bold text-slate-900 m-0 truncate leading-tight">
+									Grand Sunset Princess All Suites & Spa
+								</p>
+								<p class="text-tiny font-medium m-0">Cancun, Mexico</p>
 							</a>
 						</div>
 					</div>
@@ -86,9 +88,11 @@
 
 					<div class="flex flex-col">
 						<div>
-							<a href="#" class="block mt-3 capitalize prose">
-								<p class=" text-xl font-bold text-slate-900 mb-0 ">Grand Sunset Princess</p>
-								<p class="text-tiny font-medium m-0">all suites & spa</p>
+							<a href="#" class="block mt-4 capitalize prose">
+								<p class=" text-xl font-bold text-slate-900 m-0 truncate leading-tight">
+									Grand Sunset Princess All Suites & Spa
+								</p>
+								<p class="text-tiny font-medium m-0">Cancun, Mexico</p>
 							</a>
 						</div>
 					</div>
@@ -137,9 +141,11 @@
 
 					<div class="flex flex-col">
 						<div>
-							<a href="#" class="block mt-3 capitalize prose">
-								<p class=" text-xl font-bold text-slate-900 mb-0 ">Grand Sunset Princess</p>
-								<p class="text-tiny font-medium m-0">all suites & spa</p>
+							<a href="#" class="block mt-4 capitalize prose">
+								<p class=" text-xl font-bold text-slate-900 m-0 truncate leading-tight">
+									Grand Sunset Princess All Suites & Spa
+								</p>
+								<p class="text-tiny font-medium m-0">Cancun, Mexico</p>
 							</a>
 						</div>
 					</div>
@@ -189,9 +195,11 @@
 
 					<div class="flex flex-col">
 						<div>
-							<a href="#" class="block mt-3 capitalize prose">
-								<p class=" text-xl font-bold text-slate-900 mb-0 ">Grand Sunset Princess</p>
-								<p class="text-tiny font-medium m-0">all suites & spa</p>
+							<a href="#" class="block mt-4 capitalize prose">
+								<p class=" text-xl font-bold text-slate-900 m-0 truncate leading-tight">
+									Grand Sunset Princess All Suites & Spa
+								</p>
+								<p class="text-tiny font-medium m-0">Cancun, Mexico</p>
 							</a>
 						</div>
 					</div>
@@ -240,9 +248,11 @@
 
 					<div class="flex flex-col">
 						<div>
-							<a href="#" class="block mt-3 capitalize prose">
-								<p class=" text-xl font-bold text-slate-900 mb-0 ">Grand Sunset Princess</p>
-								<p class="text-tiny font-medium m-0">all suites & spa</p>
+							<a href="#" class="block mt-4 capitalize prose">
+								<p class=" text-xl font-bold text-slate-900 m-0 truncate leading-tight">
+									Grand Sunset Princess All Suites & Spa
+								</p>
+								<p class="text-tiny font-medium m-0">Cancun, Mexico</p>
 							</a>
 						</div>
 					</div>
@@ -291,9 +301,11 @@
 
 					<div class="flex flex-col">
 						<div>
-							<a href="#" class="block mt-3 capitalize prose">
-								<p class=" text-xl font-bold text-slate-900 mb-0 ">Grand Sunset Princess</p>
-								<p class="text-tiny font-medium m-0">all suites & spa</p>
+							<a href="#" class="block mt-4 capitalize prose">
+								<p class=" text-xl font-bold text-slate-900 m-0 truncate leading-tight">
+									Grand Sunset Princess All Suites & Spa
+								</p>
+								<p class="text-tiny font-medium m-0">Cancun, Mexico</p>
 							</a>
 						</div>
 					</div>
@@ -480,7 +492,7 @@
 			<button
 				type="button"
 				class="text-center  items-center w-48 px-3.5 py-2.5 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"
-				on:click={() => (showMore = !showMore)}
+				on:click={() => (showMore = true)}
 			>
 				View more
 			</button>

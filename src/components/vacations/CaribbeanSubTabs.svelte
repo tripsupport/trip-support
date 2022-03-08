@@ -8,11 +8,11 @@
 	let activeSubTab = 'nassau';
 </script>
 
-<div class="flex-1 sm:flex grid gap-4 space-x-6 my-4">
+<div class="flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4">
 	<button
 		on:click={() => (activeSubTab = 'antigua')}
 		type="button"
-		class="inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
+		class="my-2 sm:my-0 inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 
                 {activeSubTab === 'antigua'
 			? 'text-white bg-pblue-800 border-white shadow-none'
 			: 'bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white'}

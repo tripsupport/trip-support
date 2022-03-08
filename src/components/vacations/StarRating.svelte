@@ -1,6 +1,6 @@
 <div class="flex">
 	<span
-		class="inline-flex items-center px-2.5 py-0.5 rounded-full -ml-2.5 text-xs font-medium bg-yellow-100 text-yellow-800"
+		class="inline-flex items-center px-2.5 py-0.5 rounded-full -ml-2.5 text-xs font-medium bg-yellow-300 text-black"
 	>
 		5 star vacation
 	</span>

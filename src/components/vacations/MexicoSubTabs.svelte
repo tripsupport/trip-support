@@ -8,7 +8,7 @@
 	let activeSubTab = 'cancun';
 </script>
 
-<div class="flex-1 sm:flex grid gap-4 space-x-6 my-4">
+<div class="flex-1 sm:flex grid space-x-6 my-4">
 	<button
 		on:click={() => (activeSubTab = 'acapulco')}
 		type="button"

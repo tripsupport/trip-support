@@ -6,7 +6,7 @@
 
 <div class="relative bg-white">
 	<div class="relative max-w-7xl mx-auto">
-		<div class="mt-10 max-w-lg mx-auto grid gap-6 lg:grid-cols-3 lg:max-w-none">
+		<div class="mt-10 max-w-lg mx-auto grid gap-y-8 gap-x-7 lg:grid-cols-3 lg:max-w-none">
 			<!-- BEGIN Vacation Pacakge 1 -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 				<div class="flex-shrink-0">

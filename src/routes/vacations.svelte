@@ -59,9 +59,9 @@
 			<!-- Card -->
 
 			<!-- Countries Tab -->
-			<div class="py-2 space-x-2 w-full">
+			<div class="py-2 w-full">
 				<nav
-					class="flex-1 sm:flex items-center sm:justify-start justify-between border-b border-gray-200"
+					class="flex-nowrap sm:flex items-center sm:justify-start justify-between border-b border-gray-200 space-x-1"
 				>
 					<button
 						on:click={() => (activeTab = 'mexico')}
@@ -71,7 +71,7 @@
 							? 'text-pblue-800 border-b border-pblue-800 font-bold'
 							: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 					>
-						<img src="icons/countries/mexico.svg" alt="mexico flag" class="w-5 mr-1" />
+						<img src="icons/countries/mexico.svg" alt="mexico flag" class="w-5 mr-2" />
 						Mexico
 					</button>
 					<button
@@ -82,7 +82,7 @@
 							? 'text-pblue-800 border-b border-pblue-800 font-bold'
 							: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 					>
-						<img src="icons/countries/cuba.svg" alt="cuba flag" class="w-5 mr-1" />
+						<img src="icons/countries/cuba.svg" alt="cuba flag" class="w-5 mr-2" />
 						Cuba
 					</button>
 					<button
@@ -96,7 +96,7 @@
 						<img
 							src="icons/countries/dominican-republic.svg"
 							alt="dominican-republic flag"
-							class="w-5 mr-1"
+							class="w-5 mr-2"
 						/>
 						Dominican Republic
 					</button>
@@ -108,7 +108,7 @@
 							? 'text-pblue-800 border-b border-pblue-800 font-bold'
 							: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 					>
-						<img src="icons/countries/jamaica.svg" alt="jamaica flag" class="w-5 mr-1" />
+						<img src="icons/countries/jamaica.svg" alt="jamaica flag" class="w-5 mr-2" />
 						Jamaica
 					</button>
 
@@ -120,7 +120,7 @@
 							? 'text-pblue-800 border-b border-pblue-800 font-bold'
 							: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 					>
-						<img src="icons/countries/usa.svg" alt="usa flag" class="w-5 mr-1" />
+						<img src="icons/countries/usa.svg" alt="usa flag" class="w-5 mr-2" />
 						Florida
 					</button>
 					<button
@@ -131,7 +131,7 @@
 							? 'text-pblue-800 border-b border-pblue-800 font-bold'
 							: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 					>
-						<img src="icons/countries/hawaii.svg" alt="mexico flag" class="w-5 mr-1" />
+						<img src="icons/countries/hawaii.svg" alt="mexico flag" class="w-5 mr-2" />
 						Hawaii
 					</button>
 					<button
@@ -177,21 +177,3 @@
 		</div>
 	</section>
 </div>
-
-<!-- Roundtrip Tab -->
-<!-- {#if activeSubTab === 'roundTrip'}
-	<div class="hidden sm:block">
-		<RoundTrip />
-	</div>
-	<div class="block sm:hidden">
-		<RoundTripMobForm />
-	</div>
-	<div class="grid grid-cols-6 justify-self-start place-content-between md:gap-4 items-center">
-		<div class="col-span-6 md:col-span-4">
-			<SearchOptions />
-		</div>
-		<div class="col-span-6 md:col-span-2 w-full md:justify-self-end mt-4 md:mt-0">
-			<RoundtripSearchBtn />
-		</div>
-	</div>
-{/if} -->

@@ -6019,7 +6019,7 @@ var init__ = __esm({
     init_layout_svelte();
     entry = "pages/__layout.svelte-36b17ff0.js";
     js = ["pages/__layout.svelte-36b17ff0.js", "chunks/vendor-059dcc2f.js"];
-    css = ["assets/pages/__layout.svelte-7c5eb8d8.css"];
+    css = ["assets/pages/__layout.svelte-10e25910.css"];
   }
 });
 
@@ -6781,7 +6781,7 @@ var vacations_svelte_exports = {};
 __export(vacations_svelte_exports, {
   default: () => Vacations
 });
-var StarRating, CancunCarousel, Cancun, MexicoSubTabs, Vacations;
+var StarRating, Cancun, MexicoSubTabs, Vacations;
 var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
     init_index_61db0db4();
@@ -6800,31 +6800,11 @@ var init_vacations_svelte = __esm({
 
 	<svg class="${"h-5 w-5 flex-shrink-0 text-yellow-300"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg></div>`;
     });
-    CancunCarousel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div id="${"default-carousel"}" data-carousel="${"slide"}" class="${"relative"}"><div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><div class="${"duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0"}" data-carousel-item="${"active"}"><img src="${"images/vacations/cancun.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div>
-
-		<div class="${"duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full"}" data-carousel-item="${""}"><img src="${"images/vacations/cancun.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div>
-
-		<div class="${"hidden duration-700 ease-in-out absolute inset-0 transition-all transform"}" data-carousel-item="${""}"><img src="${"images/vacations/cancun.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div>
-
-		<div class="${"hidden duration-700 ease-in-out absolute inset-0 transition-all transform"}" data-carousel-item="${""}"><img src="${"images/vacations/cancun.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div>
-
-		<div class="${"duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full"}" data-carousel-item="${""}"><img src="${"images/vacations/cancun.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
-
-	<div class="${"flex absolute bottom-5 top-1/2 left-1/2 space-x-3 -translate-x-1/2"}"><button type="${"button"}" class="${"w-3 h-3 rounded-full bg-white dark:bg-gray-800"}" aria-current="${"true"}" aria-label="${"Slide 1"}" data-carousel-slide-to="${"0"}"></button>
-		<button type="${"button"}" class="${"w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"}" aria-current="${"false"}" aria-label="${"Slide 2"}" data-carousel-slide-to="${"1"}"></button>
-		<button type="${"button"}" class="${"w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"}" aria-current="${"false"}" aria-label="${"Slide 3"}" data-carousel-slide-to="${"2"}"></button>
-		<button type="${"button"}" class="${"w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"}" aria-current="${"false"}" aria-label="${"Slide 4"}" data-carousel-slide-to="${"3"}"></button>
-		<button type="${"button"}" class="${"w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"}" aria-current="${"false"}" aria-label="${"Slide 5"}" data-carousel-slide-to="${"4"}"></button></div>
-
-	<button type="${"button"}" class="${"flex absolute top-0 left-0 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"}" data-carousel-prev="${""}"><span class="${"inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"}"><svg class="${"w-5 h-5 text-white sm:w-5 sm:h-5 dark:text-gray-800"}" fill="${"none"}" stroke="${"currentColor"}" viewBox="${"0 0 24 24"}" xmlns="${"http://www.w3.org/2000/svg"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M15 19l-7-7 7-7"}"></path></svg>
-			<span class="${"hidden"}">Previous</span></span></button>
-	<button type="${"button"}" class="${"flex absolute top-0 right-0 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"}" data-carousel-next="${""}"><span class="${"inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/50 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"}"><svg class="${"w-5 h-5 text-white sm:w-5 sm:h-5 dark:text-gray-800"}" fill="${"none"}" stroke="${"currentColor"}" viewBox="${"0 0 24 24"}" xmlns="${"http://www.w3.org/2000/svg"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M9 5l7 7-7 7"}"></path></svg>
-			<span class="${"hidden"}">Next</span></span></button></div>`;
-    });
     Cancun = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"relative bg-white"}"><div class="${"relative max-w-7xl mx-auto"}"><div class="${"mt-10 max-w-lg mx-auto grid gap-6 lg:grid-cols-3 lg:max-w-none"}">
-			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">${validate_component(CancunCarousel, "CancunCarousel").$$render($$result, {}, {}, {})}</div>
+			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">
+					
+					<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/cancun.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
 				<div class="${"flex p-6 flex-col"}"><div class="${"grid grid-cols-2 "}">${validate_component(StarRating, "StarRating").$$render($$result, {}, {}, {})}
 						<div class="${"mt-3"}"><p class="${"text-sm font-medium text-gray-900"}"></p>
 							<div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
@@ -6841,7 +6821,9 @@ var init_vacations_svelte = __esm({
 							</p></div></div></div></div>
 			
 			
-			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">${validate_component(CancunCarousel, "CancunCarousel").$$render($$result, {}, {}, {})}</div>
+			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">
+					
+					<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/mexico/vac7.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
 				<div class="${"flex p-6 flex-col"}"><div class="${"grid grid-cols-2 "}">${validate_component(StarRating, "StarRating").$$render($$result, {}, {}, {})}
 						<div class="${"mt-3"}"><p class="${"text-sm font-medium text-gray-900"}"></p>
 							<div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
@@ -6858,7 +6840,9 @@ var init_vacations_svelte = __esm({
 							</p></div></div></div></div>
 			
 			
-			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">${validate_component(CancunCarousel, "CancunCarousel").$$render($$result, {}, {}, {})}</div>
+			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">
+					
+					<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/mexico/vac12.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
 				<div class="${"flex p-6 flex-col"}"><div class="${"grid grid-cols-2 "}">${validate_component(StarRating, "StarRating").$$render($$result, {}, {}, {})}
 						<div class="${"mt-3"}"><p class="${"text-sm font-medium text-gray-900"}"></p>
 							<div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
@@ -6876,7 +6860,9 @@ var init_vacations_svelte = __esm({
 			
 
 			
-			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">${validate_component(CancunCarousel, "CancunCarousel").$$render($$result, {}, {}, {})}</div>
+			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">
+					
+					<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/mexico/vac18.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
 				<div class="${"flex p-6 flex-col"}"><div class="${"grid grid-cols-2 "}">${validate_component(StarRating, "StarRating").$$render($$result, {}, {}, {})}
 						<div class="${"mt-3"}"><p class="${"text-sm font-medium text-gray-900"}"></p>
 							<div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
@@ -6893,7 +6879,9 @@ var init_vacations_svelte = __esm({
 							</p></div></div></div></div>
 			
 			
-			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">${validate_component(CancunCarousel, "CancunCarousel").$$render($$result, {}, {}, {})}</div>
+			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">
+					
+					<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/mexico/vac2.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
 				<div class="${"flex p-6 flex-col"}"><div class="${"grid grid-cols-2 "}">${validate_component(StarRating, "StarRating").$$render($$result, {}, {}, {})}
 						<div class="${"mt-3"}"><p class="${"text-sm font-medium text-gray-900"}"></p>
 							<div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
@@ -6910,7 +6898,9 @@ var init_vacations_svelte = __esm({
 							</p></div></div></div></div>
 			
 			
-			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">${validate_component(CancunCarousel, "CancunCarousel").$$render($$result, {}, {}, {})}</div>
+			<div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}">
+					
+					<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/mexico/vac22.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
 				<div class="${"flex p-6 flex-col"}"><div class="${"grid grid-cols-2 "}">${validate_component(StarRating, "StarRating").$$render($$result, {}, {}, {})}
 						<div class="${"mt-3"}"><p class="${"text-sm font-medium text-gray-900"}"></p>
 							<div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
@@ -6925,7 +6915,10 @@ var init_vacations_svelte = __esm({
 						<div class="${"text-left pt-2"}"><p class="${"capitalize text-xz font-semibold text-slate-900"}">April 6, 2022 (7 days)</p>
 							<p class="${"capitalize text-xs font-light text-slate-900"}">price includes taxes and fees
 							</p></div></div></div></div>
-			</div></div></div>`;
+			
+			${``}</div>
+		<div class="${"flex justify-center mt-10 w-full"}"><button type="${"button"}" class="${"text-center items-center w-48 px-3.5 py-2.5 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"}">View more
+			</button></div></div></div>`;
     });
     MexicoSubTabs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex-1 sm:flex grid gap-4 space-x-6 my-4"}"><button type="${"button"}" class="${"inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 " + escape("bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white")}">Acapulco
@@ -6990,6 +6983,11 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
 			
 			<div class="${"py-1 mb-2 lg:pb-4 "}">${`${validate_component(MexicoSubTabs, "MexicoSubTabs").$$render($$result, {}, {}, {})}`}
 				${``}
+				${``}
+				${``}
+				${``}
+				${``}
+				${``}
 				</div>
 			</div></section></div>
 
@@ -7011,8 +7009,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_vacations_svelte();
-    entry6 = "pages/vacations.svelte-21f7cf0a.js";
-    js6 = ["pages/vacations.svelte-21f7cf0a.js", "chunks/vendor-059dcc2f.js", "chunks/BookingWidget-36a3b4de.js"];
+    entry6 = "pages/vacations.svelte-d12c1a77.js";
+    js6 = ["pages/vacations.svelte-d12c1a77.js", "chunks/vendor-059dcc2f.js", "chunks/BookingWidget-36a3b4de.js"];
     css6 = [];
   }
 });
@@ -9237,10 +9235,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/hawaii.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/vacations/cancun.jpg", "images/vacations/grand-sunset-1.jpg", "images/vacations/loscabos.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "lottie/54972-world-map-tallinn.json"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/hawaii.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "lottie/54972-world-map-tallinn.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-efbfaddb.js", "js": ["start-efbfaddb.js", "chunks/vendor-059dcc2f.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-391a22bb.js", "js": ["start-391a22bb.js", "chunks/vendor-059dcc2f.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

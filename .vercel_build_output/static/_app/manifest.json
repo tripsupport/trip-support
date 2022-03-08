@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-c0fbf357.js",
+    "file": "start-315aff87.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -28,7 +28,7 @@
       "_vendor-059dcc2f.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-9c36863e.css"
+      "assets/pages/__layout.svelte-283f9c8a.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -41,14 +41,13 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-ff275739.js",
+    "file": "pages/index.svelte-fd1d4bcf.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-059dcc2f.js",
-      "_BookingWidget-36a3b4de.js",
-      "_Subscribe-741d8ca6.js"
+      "_Subscribe-4b99f96a.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
@@ -70,13 +69,13 @@
     ]
   },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-86cf1eb7.js",
+    "file": "pages/vacations.svelte-3a1b1ce9.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-059dcc2f.js",
-      "_BookingWidget-36a3b4de.js"
+      "_Subscribe-4b99f96a.js"
     ]
   },
   "src/routes/explore.svelte": {
@@ -89,15 +88,14 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-c359238f.js",
+    "file": "pages/flights.svelte-7044e4ae.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-059dcc2f.js",
       "_preload-helper-e4860ae8.js",
-      "_BookingWidget-36a3b4de.js",
-      "_Subscribe-741d8ca6.js"
+      "_Subscribe-4b99f96a.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
@@ -118,14 +116,8 @@
   "_preload-helper-e4860ae8.js": {
     "file": "chunks/preload-helper-e4860ae8.js"
   },
-  "_BookingWidget-36a3b4de.js": {
-    "file": "chunks/BookingWidget-36a3b4de.js",
-    "imports": [
-      "_vendor-059dcc2f.js"
-    ]
-  },
-  "_Subscribe-741d8ca6.js": {
-    "file": "chunks/Subscribe-741d8ca6.js",
+  "_Subscribe-4b99f96a.js": {
+    "file": "chunks/Subscribe-4b99f96a.js",
     "imports": [
       "_vendor-059dcc2f.js"
     ]

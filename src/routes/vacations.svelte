@@ -17,7 +17,7 @@
 
 <div class="mx-auto max-w-7xl ">
 	<div class="flex gap-x-10  ">
-		<div class="lg:pt-16  px-4 sm:px-6 z-10 max-w-2xl py-4">
+		<div class="lg:pt-16 px-4 sm:px-6 z-10 max-w-2xl py-4">
 			<h1
 				class="mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl "
 			>
@@ -28,7 +28,7 @@
 			</p>
 		</div>
 
-		<div aria-hidden="true" class="hidden sm:relative w-2/3">
+		<div aria-hidden="true" class="hidden sm:flex sm:relative w-2/3">
 			<img
 				src="images/vacations/vacation-bg.jpg"
 				alt=""

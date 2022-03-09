@@ -1,5 +1,5 @@
 <script>
-	import LottiePlayer from '../LottiePlayer.svelte';
+	import LottieFlights from '../LottieFlights.svelte';
 </script>
 
 <div class="flex justify-between h-[422px] mx-auto max-w-7xl">
@@ -15,6 +15,6 @@
 	</div>
 
 	<div class="relative w-[750px] ">
-		<LottiePlayer />
+		<LottieFlights />
 	</div>
 </div>

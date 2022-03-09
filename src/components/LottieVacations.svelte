@@ -26,7 +26,7 @@
 
 {#if LottiePlayer}
 	<LottiePlayer
-		src="lottie/54972-world-map-tallinn.json"
+		src="https://assets2.lottiefiles.com/packages/lf20_birvxdbz.json"
 		autoplay={true}
 		loop={true}
 		controls={false}

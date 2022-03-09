@@ -1,5 +1,5 @@
 <script>
-	import LottiePlayer from '../LottiePlayer.svelte';
+	import LottieFlights from '../LottieFlights.svelte';
 </script>
 
 <div class="relative h-36 w-full">
@@ -10,6 +10,6 @@
 	</div>
 
 	<div class="w-full mt-4 absolute">
-		<LottiePlayer />
+		<LottieFlights />
 	</div>
 </div>

@@ -2,6 +2,7 @@
 	import BookingWidget from '../components/booking/BookingWidget.svelte';
 	import Subscribe from '../components/home/Subscribe.svelte';
 	import BlogPosts from '../components/home/BlogPosts.svelte';
+	import VacationsHero from '../components/vacations/VacationsHero.svelte';
 
 	// Tabs
 	import MexicoSubTabs from '../components/vacations/MexicoSubTabs.svelte';
@@ -15,7 +16,7 @@
 	let activeTab = 'mexico';
 </script>
 
-<div class="mx-auto max-w-7xl ">
+<!-- <div class="mx-auto max-w-7xl ">
 	<div class="flex gap-x-10  ">
 		<div class="lg:pt-16 px-4 sm:px-6 z-10 max-w-2xl py-4">
 			<h1
@@ -37,7 +38,9 @@
 			<div class="absolute inset-0 -top-30 bg-gradient-to-t from-white" />
 		</div>
 	</div>
-</div>
+</div> -->
+
+<VacationsHero />
 
 <BookingWidget />
 
@@ -136,6 +139,7 @@
 						? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
 						: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
 				>
+					<img src="icons/countries/sun.svg" alt="mexico flag" class="w-5 mr-2" />
 					Caribbean
 				</button>
 			</nav>

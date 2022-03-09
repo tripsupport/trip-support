@@ -1,16 +1,15 @@
 <script>
 	import MobMenuBtn from './MobMenuBtn.svelte';
-	import Logo from './Logo.svelte';
+
 	import RightNavMenuItems from './RightNavMenuItems.svelte';
 	import ProfileDropdown from './ProfileDropdown.svelte';
 	import Signup from './Signup.svelte';
 
-	import { page } from '$app/stores';
-	const menu = [
-		{ title: 'Flights', url: '/flights' },
-		{ title: 'Vacations', url: '/vacations' },
-		{ title: 'Hotels', url: '/hotels' }
-	];
+	let active = 1;
+
+	function toggleActive(num) {
+		active = num;
+	}
 </script>
 
 <!-- Main navigation -->
@@ -19,7 +18,12 @@
 		<div class="flex flex-wrap justify-between items-center ">
 			<div class="flex pl-4">
 				<!-- Nav logo -->
-				<a href="/" class="flex-shrink-0 flex place-items-start">
+				<a
+					sveltekit:prefetch
+					href="/"
+					class="flex-shrink-0 flex place-items-start"
+					on:click={() => toggleActive(1)}
+				>
 					<img class=" h-9 sm:h-11 w-auto" src="logo.svg" alt="Trip Support Logo" />
 				</a>
 
@@ -27,16 +31,36 @@
 				<div class="hidden lg:flex items-center gap-1 px-4">
 					<!-- Nav menu items -->
 					<div class="hidden md:ml-6 lg:flex md:space-x-8">
-						{#each menu as item}
-							<a
-								href={item.url}
-								class="text-tiny inline-flex items-center px-1 pt-1 sm:ml-4 text-gray-900 font-medium hover:text-pblue-900
-								{$page.url.pathname === item.url.pathname ? 'active:text-rose-600' : 'text-gray-900'}
+						<a
+							sveltekit:prefetch
+							href="/flights"
+							class="text-tiny inline-flex items-center px-1 pt-1 sm:ml-4  hover:text-rose-600
+								{active === 2 ? 'text-rose-600 font-semibold' : 'text-gray-900 font-medium'}
 								"
-							>
-								{item.title}
-							</a>
-						{/each}
+							on:click={() => toggleActive(2)}
+						>
+							Flights
+						</a>
+						<a
+							sveltekit:prefetch
+							href="/vacations"
+							class="text-tiny inline-flex items-center px-1 pt-1 sm:ml-4 hover:text-rose-600
+								{active === 3 ? 'text-rose-600 font-semibold' : 'text-gray-900 font-medium'}
+								"
+							on:click={() => toggleActive(3)}
+						>
+							Vacations
+						</a>
+						<a
+							sveltekit:prefetch
+							href="/hotels"
+							class="text-tiny inline-flex items-center px-1 pt-1 sm:ml-4 hover:text-rose-600
+								{active === 4 ? 'text-rose-600 font-semibold' : 'text-gray-900 font-medium'}
+								"
+							on:click={() => toggleActive(4)}
+						>
+							Hotels
+						</a>
 					</div>
 				</div>
 			</div>

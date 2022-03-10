@@ -64,7 +64,7 @@
 	<section class="relative" aria-labelledby="contact-heading">
 		<div class="flex flex-col rounded-xl bg-white w-full ">
 			<nav
-				class=" overflow-x-scroll flex items-center sm:justify-start border-b border-gray-200 space-x-8 sm:space-x-12"
+				class=" overflow-x-scroll overflow-hidden flex items-center sm:justify-start border-b border-gray-200 space-x-8 sm:space-x-12"
 			>
 				<button
 					on:click={() => (activeTab = 'mexico')}

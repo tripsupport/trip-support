@@ -15,7 +15,7 @@
   ```
 -->
 <div class="relative my-3 py-12 lg:my-12 bg-white">
-	<div class="max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-8">
+	<div class="max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6">
 		<div class="lg:grid lg:grid-cols-12">
 			<div
 				class="relative z-[3] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"

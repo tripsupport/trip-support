@@ -32,7 +32,7 @@
 					</div>
 				</section>
 				<div
-					class="flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4 px-4 whitespace-nowrap overflow-x-scroll"
+					class="flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4 px-4 whitespace-nowrap overflow-x-scroll overflow-hidden"
 				>
 					<button
 						on:click={() => (category = 'canada')}
@@ -152,7 +152,7 @@
 			</div>
 			<div class="col-span-12 md:col-span-3">
 				<section class="relative mt-3 px-6">
-					<div class="sm:flex mt-16">
+					<div class="sm:flex">
 						<h1 class="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-2xl">
 							<span class="block xl:inline">Popular Posts</span>
 						</h1>

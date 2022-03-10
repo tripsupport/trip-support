@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-25033174.js",
+    "file": "start-9efa0317.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -13,14 +13,17 @@
       "src/routes/index.svelte",
       "src/routes/book-now-pay-later.svelte",
       "src/routes/flight-hotel.svelte",
+      "src/routes/blog-post.svelte",
       "src/routes/vacations.svelte",
+      "src/routes/contact.svelte",
       "src/routes/explore.svelte",
       "src/routes/flights.svelte",
-      "src/routes/hotels.svelte"
+      "src/routes/hotels.svelte",
+      "src/routes/blog.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-871dd1ec.js",
+    "file": "pages/__layout.svelte-2b0918e2.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -28,7 +31,7 @@
       "_vendor-c3e464d3.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-ebac92f0.css"
+      "assets/pages/__layout.svelte-3bf229ed.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -41,13 +44,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f73c433a.js",
+    "file": "pages/index.svelte-f424a0f4.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
-      "_Subscribe-28fcbb84.js"
+      "_BlogPosts-33659968.js",
+      "_Subscribe-580e6bf2.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
@@ -68,18 +72,33 @@
       "_vendor-c3e464d3.js"
     ]
   },
+  "src/routes/blog-post.svelte": {
+    "file": "pages/blog-post.svelte-f689f952.js",
+    "src": "src/routes/blog-post.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-c3e464d3.js"
+    ]
+  },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-c8535f21.js",
+    "file": "pages/vacations.svelte-ef11f6bf.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
-      "_Subscribe-28fcbb84.js",
-      "_preload-helper-e4860ae8.js"
-    ],
-    "dynamicImports": [
-      "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
+      "_BlogPosts-33659968.js",
+      "_Subscribe-580e6bf2.js"
+    ]
+  },
+  "src/routes/contact.svelte": {
+    "file": "pages/contact.svelte-918cc6e3.js",
+    "src": "src/routes/contact.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-c3e464d3.js"
     ]
   },
   "src/routes/explore.svelte": {
@@ -92,31 +111,43 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-b0b98082.js",
+    "file": "pages/flights.svelte-6b0e921b.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
       "_preload-helper-e4860ae8.js",
-      "_Subscribe-28fcbb84.js"
+      "_BlogPosts-33659968.js",
+      "_Subscribe-580e6bf2.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
     ]
   },
   "src/routes/hotels.svelte": {
-    "file": "pages/hotels.svelte-c68f9298.js",
+    "file": "pages/hotels.svelte-b899b72a.js",
     "src": "src/routes/hotels.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
       "_preload-helper-e4860ae8.js",
-      "_Subscribe-28fcbb84.js"
+      "_BlogPosts-33659968.js",
+      "_Subscribe-580e6bf2.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
+    ]
+  },
+  "src/routes/blog.svelte": {
+    "file": "pages/blog.svelte-faab185b.js",
+    "src": "src/routes/blog.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-c3e464d3.js",
+      "_Subscribe-580e6bf2.js"
     ]
   },
   "_vendor-c3e464d3.js": {
@@ -125,8 +156,14 @@
   "_preload-helper-e4860ae8.js": {
     "file": "chunks/preload-helper-e4860ae8.js"
   },
-  "_Subscribe-28fcbb84.js": {
-    "file": "chunks/Subscribe-28fcbb84.js",
+  "_BlogPosts-33659968.js": {
+    "file": "chunks/BlogPosts-33659968.js",
+    "imports": [
+      "_vendor-c3e464d3.js"
+    ]
+  },
+  "_Subscribe-580e6bf2.js": {
+    "file": "chunks/Subscribe-580e6bf2.js",
     "imports": [
       "_vendor-c3e464d3.js"
     ]

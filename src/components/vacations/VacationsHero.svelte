@@ -18,8 +18,23 @@
 		</div>
 
 		<div class="hidden sm:flex col-span-6">
-			<div class="-mt-28 justify-self-end ml-8">
-				<LottieVacations />
+			<div class="relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20">
+				<svg
+					class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+					fill="currentColor"
+					viewBox="0 0 100 100"
+					preserveAspectRatio="none"
+					aria-hidden="true"
+				>
+					<polygon points="50,0 100,0 50,100 0,100" />
+				</svg>
+			</div>
+			<div class="-mt-10">
+				<img
+					class="hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full"
+					src="images/home/flights-section.jpg"
+					alt=""
+				/>
 			</div>
 		</div>
 	</div>

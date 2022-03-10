@@ -1,3 +1,47 @@
+<!-- <script>
+	import LottieVacations from '../LottieVacations.svelte';
+</script>
+
+<div class="mx-auto max-w-7xl">
+	<div class="grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]">
+		<div class="col-span-1 sm:col-span-6">
+			<div class="lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 ">
+				<h1
+					class="bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl "
+				>
+					<span class="flex">Book Now Pay Later</span>
+				</h1>
+
+				<p class="prose text-sm sm:text-tiny max-w-sm">
+					More options, our best prices, less headaches. Secure your ticket with a small deposit. No
+					Credit Check Needed.
+				</p>
+			</div>
+		</div>
+
+		<div class="hidden sm:flex col-span-6">
+			<div class="relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20">
+				<svg
+					class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+					fill="currentColor"
+					viewBox="0 0 100 100"
+					preserveAspectRatio="none"
+					aria-hidden="true"
+				>
+					<polygon points="50,0 100,0 50,100 0,100" />
+				</svg>
+			</div>
+			<div class="-mt-10">
+				<img
+					class="hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full"
+					src="images/hero/hotair-bg.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+	</div>
+</div> -->
+
 <div class="bg-white">
 	<div
 		class="relative bg-gradient-to-r from-gray-50 via-white to-gray-50 py-0 sm:py-12 md:py-20 lg:py-20 px-4 sm:px-0 overflow-hidden w-full"
@@ -17,14 +61,6 @@
 							No Credit Check Needed.
 						</p>
 					</div>
-					<!-- <div class="col-span-5 justify-self-start ">
-						<a
-							href="javascript:void(0)"
-							class=" items-center justify-center   text-xz  font-medium text-pblue-900 "
-						>
-							Learn more
-						</a>
-					</div> -->
 				</div>
 			</div>
 			<div

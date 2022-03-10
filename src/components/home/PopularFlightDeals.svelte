@@ -67,9 +67,16 @@
 										Alberta
 									</a>
 								</h3>
-								<p>$249</p>
+								<div class="text-gray-500 font-medium">
+									<del>$750</del>
+								</div>
 							</div>
-							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+							<div
+								class="mt-0 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<p class="mt-1 text-sm text-gray-500">Round trip</p>
+								<div class="text-rose-600">$468</div>
+							</div>
 						</div>
 
 						<div class="relative group">
@@ -101,9 +108,16 @@
 										California
 									</a>
 								</h3>
-								<p>$540</p>
+								<div class="text-slate-900 font-medium">
+									<p>$750</p>
+								</div>
 							</div>
-							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+							<div
+								class="mt-0 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<p class="mt-1 text-sm text-gray-500">Round trip</p>
+								<!-- <div class="text-rose-600">$468</div> -->
+							</div>
 						</div>
 						<div class="relative group">
 							<div
@@ -134,9 +148,16 @@
 										Montreal
 									</a>
 								</h3>
-								<p>$199</p>
+								<div class="text-gray-500 font-medium">
+									<del>$750</del>
+								</div>
 							</div>
-							<p class="mt-1 text-sm text-gray-500">One-way</p>
+							<div
+								class="mt-0 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<p class="mt-1 text-sm text-gray-500">One-way</p>
+								<div class="text-rose-600">$468</div>
+							</div>
 						</div>
 						<div class="relative group">
 							<div
@@ -200,9 +221,16 @@
 										Singapore
 									</a>
 								</h3>
-								<p>$789</p>
+								<div class="text-gray-500 font-medium">
+									<del>$750</del>
+								</div>
 							</div>
-							<p class="mt-1 text-sm text-gray-500">Round trip</p>
+							<div
+								class="mt-0 flex items-center justify-between text-base font-medium text-gray-900 space-x-8"
+							>
+								<p class="mt-1 text-sm text-gray-500">One-way</p>
+								<div class="text-rose-600">$468</div>
+							</div>
 						</div>
 						<div class="relative group">
 							<div

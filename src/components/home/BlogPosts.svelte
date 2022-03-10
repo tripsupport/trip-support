@@ -48,7 +48,7 @@
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
-								src="images/home/destination-europe.jpg"
+								src="images/blog/shefali.jpg"
 								alt="Roel Aufderehar"
 							/>
 						</a>

@@ -1,10 +1,10 @@
 <!-- Overlapping cards -->
 <section
-	class="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 lg:px-0"
+	class="-mt-32 max-w-7xl mx-auto relative z-10 pb-12 sm:pb-20 px-4 lg:px-0"
 	aria-labelledby="contact-heading"
 >
 	<h2 class="sr-only" id="contact-heading">Contact us</h2>
-	<div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 lg:gap-8 sm:px-4">
 		<!-- Important Blog 1 -->
 		<div class="flex flex-col bg-white rounded-2xl shadow-xl">
 			<div class="flex-shrink-0">
@@ -17,6 +17,7 @@
 			<div class="flex-1 bg-white px-6 pt-6 pb-4 flex flex-col justify-between">
 				<div class="flex-1">
 					<p class="text-sm font-medium text-pink-600">Canada</p>
+
 					<a href="/blog-post" class="block mt-2">
 						<p class="text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize">
 							The top 15 places to see in Canada and the things you can do
@@ -55,7 +56,7 @@
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
-								src="images/home/destination-europe.jpg"
+								src="images/blog/shefali.jpg"
 								alt="Roel Aufderehar"
 							/>
 						</a>
@@ -128,7 +129,7 @@
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
-								src="images/home/destination-europe.jpg"
+								src="images/blog/shefali.jpg"
 								alt="Roel Aufderehar"
 							/>
 						</a>
@@ -202,7 +203,7 @@
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
-								src="images/home/destination-europe.jpg"
+								src="images/blog/shefali.jpg"
 								alt="Roel Aufderehar"
 							/>
 						</a>

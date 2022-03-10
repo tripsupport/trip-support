@@ -1,4 +1,13 @@
 <script>
+	import BlogCanada from './BlogCanada.svelte';
+	import BlogUsa from './BlogUsa.svelte';
+	import BlogMexico from './BlogMexico.svelte';
+	import BlogCaribbean from './BlogCaribbean.svelte';
+	import BlogAsia from './BlogAsia.svelte';
+	import BlogAirTravel from './BlogAirTravel.svelte';
+	import BlogEurope from './BlogEurope.svelte';
+	import BlogSouthAmerica from './BlogSouthAmerica.svelte';
+	import PopularPostsCanada from './PopularPostsCanada.svelte';
 	let category = 'canada';
 </script>
 
@@ -6,8 +15,8 @@
 <div class="relative bg-white overflow-hidden">
 	<div class="max-w-7xl mx-auto">
 		<div class="grid grid-cols-12">
-			<div class="col-span-9">
-				<section class="relative mb-6">
+			<div class="col-span-12 lg:col-span-9">
+				<section class="relative mb-6 px-4">
 					<div class="text-left">
 						<div class="sm:flex sm:items-baseline sm:justify-between">
 							<h1
@@ -22,7 +31,9 @@
 						</p>
 					</div>
 				</section>
-				<div class="flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4">
+				<div
+					class="flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4 px-4 whitespace-nowrap overflow-x-scroll"
+				>
 					<button
 						on:click={() => (category = 'canada')}
 						type="button"
@@ -114,37 +125,42 @@
 						South America
 					</button>
 				</div>
-				{#if category === 'new-york'}
-					Testing
+				{#if category === 'canada'}
+					<BlogCanada />
 				{/if}
-				{#if category === 'san-francisco'}
-					Testing
+				{#if category === 'usa'}
+					<BlogUsa />
 				{/if}
-				{#if category === 'los-angeles'}
-					Testing
+				{#if category === 'mexico'}
+					<BlogMexico />
 				{/if}
-				{#if category === 'miami'}
-					Testing
+				{#if category === 'caribbean'}
+					<BlogCaribbean />
 				{/if}
-				{#if category === 'boston'}
-					Testing
+				{#if category === 'asia'}
+					<BlogAsia />
+				{/if}
+				{#if category === 'air-travel'}
+					<BlogAirTravel />
+				{/if}
+				{#if category === 'europe'}
+					<BlogEurope />
+				{/if}
+				{#if category === 'south-america'}
+					<BlogSouthAmerica />
 				{/if}
 			</div>
-			<div class="col-span-3">
-				<section class="relative mb-6 mt-3 ">
-					<div class="text-left">
-						<div class="sm:flex sm:items-baseline sm:justify-between">
-							<h1
-								class="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-2xl"
-							>
-								<span class="block xl:inline">Popular Posts</span>
-							</h1>
-						</div>
-						<p class="my-2 text-md text-gray-500 sm:text-md sm:max-w-prose  md:text-md lg:mx-0">
-							A listo of our most popular blog posts
-						</p>
+			<div class="col-span-12 md:col-span-3">
+				<section class="relative mt-3 px-6">
+					<div class="sm:flex mt-16">
+						<h1 class="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-2xl">
+							<span class="block xl:inline">Popular Posts</span>
+						</h1>
 					</div>
-					<!-- Content goes here -->
+					<p class="my-2 text-md text-gray-500 sm:text-md sm:max-w-prose  md:text-md lg:mx-0">
+						A listo of our most popular blog posts
+					</p>
+					<PopularPostsCanada />
 				</section>
 			</div>
 		</div>

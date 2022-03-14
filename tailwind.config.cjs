@@ -86,6 +86,7 @@ module.exports = {
       'sz': '0.875rem',
 
 			'tiny': '.9125rem',
+      'tb' : '.935rem',
 			'base': '1rem',
 			'lg': '1.125rem',
 			'xl': '1.25rem',
@@ -93,9 +94,9 @@ module.exports = {
 			'3xl': '1.875rem',
 			'4xl': '2.25rem',
       '4xxl': '2.5rem',
-			'5xl': '3rem',
-			'6xl': '3.5rem',
-			'7xl': '5rem'
+			'5xl': '2.75rem',
+			'6xl': '3rem',
+			'7xl': '3.5rem'
       },
         
     },

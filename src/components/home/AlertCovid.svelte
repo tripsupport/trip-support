@@ -3,7 +3,7 @@
 	import { Icon, Exclamation } from 'svelte-hero-icons';
 </script>
 
-<nav aria-label="Top" class="relative z-10">
+<nav aria-label="Top" class="relative z-[1]">
 	<!-- Top navigation -->
 	<div class="bg-gray-900">
 		<div class="max-w-7xl lg:mx-auto py-2 px-4 flex items-center justify-between">

@@ -1,5 +1,6 @@
 <script>
 	import LottieHotels from '../components/hotels/HotelsHero.svelte';
+	import HotelsHero from '../components/hotels/HotelsHero.svelte';
 	import BookingWidget from '../components/booking/BookingWidget.svelte';
 	import BlogPosts from '../components/home/BlogPosts.svelte';
 	import Subscribe from '../components/home/Subscribe.svelte';
@@ -16,7 +17,7 @@
 	let activeTab = 'canada';
 </script>
 
-<LottieHotels />
+<HotelsHero />
 <BookingWidget />
 
 <div class="mx-auto max-w-7xl p-6">

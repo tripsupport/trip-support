@@ -34,13 +34,13 @@
 				</div>
 			</a>
 			<div class="p-4">
-				<h4 class="font-bold text-md grow">
+				<h4 class="font-bold text-tb grow">
 					<a href="javascript:void(0)" class=" text-slate-800 hover:text-rose-600 line-clamp-2"
 						>The 10 best hiking trails in the world you should put in your bucket list</a
 					>
 				</h4>
 				<div class="mt-6 flex items-center justify-between">
-					<div class="inline-flex flex-shrink-0">
+					<!-- <div class="inline-flex flex-shrink-0">
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
@@ -57,7 +57,11 @@
 								<span aria-hidden="true"> &middot; </span>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					<p class="text-gray-900 text-xz">
+						<span class="font-semibold">Shefali</span> on
+						<span class="font-semibold">March 3, 2021</span>
+					</p>
 				</div>
 			</div>
 
@@ -96,13 +100,13 @@
 				</div>
 			</a>
 			<div class="p-4">
-				<h4 class="font-bold text-md grow">
+				<h4 class="font-bold text-tb grow">
 					<a href="javascript:void(0)" class=" text-slate-800 hover:text-rose-600 line-clamp-2"
 						>The 10 best hiking trails in the world you should put in your bucket list</a
 					>
 				</h4>
 				<div class="mt-6 flex items-center justify-between">
-					<div class="inline-flex flex-shrink-0">
+					<!-- <div class="inline-flex flex-shrink-0">
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
@@ -119,7 +123,11 @@
 								<span aria-hidden="true"> &middot; </span>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					<p class="text-gray-900 text-xz">
+						<span class="font-semibold">Shefali</span> on
+						<span class="font-semibold">March 3, 2021</span>
+					</p>
 				</div>
 			</div>
 
@@ -158,13 +166,13 @@
 				</div>
 			</a>
 			<div class="p-4">
-				<h4 class="font-bold text-md grow">
+				<h4 class="font-bold text-tb grow">
 					<a href="javascript:void(0)" class=" text-slate-800 hover:text-rose-600 line-clamp-2"
 						>The 10 best hiking trails in the world you should put in your bucket list</a
 					>
 				</h4>
 				<div class="mt-6 flex items-center justify-between">
-					<div class="inline-flex flex-shrink-0">
+					<!-- <div class="inline-flex flex-shrink-0">
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
@@ -181,7 +189,11 @@
 								<span aria-hidden="true"> &middot; </span>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					<p class="text-gray-900 text-xz">
+						<span class="font-semibold">Shefali</span> on
+						<span class="font-semibold">March 3, 2021</span>
+					</p>
 				</div>
 			</div>
 

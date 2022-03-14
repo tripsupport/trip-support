@@ -5,9 +5,9 @@
 <div class="mx-auto max-w-7xl">
 	<div class="grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]">
 		<div class="col-span-1 sm:col-span-6">
-			<div class="lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8 z-10 ">
+			<div class="lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8">
 				<h1
-					class="mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl "
+					class="bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"
 				>
 					<span class="flex">Longing for a Getaway?</span>
 				</h1>

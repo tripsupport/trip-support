@@ -4,7 +4,7 @@
 		<img class="w-full h-full object-cover" src="images/blog/travel-guide.jpg" alt="" />
 		<div class="absolute inset-0 bg-gray-800 opacity-75 mix-blend-multiply" aria-hidden="true" />
 	</div>
-	<div class="relative max-w-7xl mx-auto py-12 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
+	<div class="relative max-w-7xl mx-auto py-12 px-4 sm:py-20 sm:px-6 lg:px-8 text-center">
 		<h1 class="text-2xl text-center font-extrabold text-white md:text-4xl lg:text-5xl">
 			Your Travel Guide to the World
 		</h1>

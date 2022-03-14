@@ -19,17 +19,18 @@
 					<p class="text-sm font-medium text-pink-600">Canada</p>
 
 					<a href="/blog-post" class="block mt-2">
-						<p class="text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize">
+						<p class="text-lg lg:text-lg font-semibold text-pblue-900 line-clamp-1 capitalize">
 							The top 15 places to see in Canada and the things you can do
 						</p>
-						<p class="mt-3 text-tiny text-gray-500 line-clamp-3">
+						<p class="mt-3 prose text-tiny text-slate-700 line-clamp-2">
 							Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
 							history, culture, nature and some Looking for travelling to Mexico tips? Mexico is a
 							colourful, vibrant country full of history, culture, nature and some
 						</p>
 					</a>
 				</div>
-				<div class="truncate mt-6 flex gap-2">
+
+				<div class="mt-2 block overflow-hidden line-clamp-1">
 					<span
 						class="items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"
 					>
@@ -50,9 +51,14 @@
 					>
 						Equipment Rental
 					</span>
+					<span
+						class="items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"
+					>
+						Equipment Rental
+					</span>
 				</div>
 				<div class="mt-6 flex items-center">
-					<div class="flex-shrink-0">
+					<!-- <div class="flex-shrink-0">
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
@@ -69,13 +75,17 @@
 							<time datetime="2020-03-16"> Mar 16, 2020 </time>
 							<span aria-hidden="true"> &middot; </span>
 						</div>
-					</div>
+					</div> -->
+					<p class="text-gray-900 text-xz">
+						<span class="font-semibold">Shefali</span> on
+						<span class="font-semibold">March 3, 2021</span>
+					</p>
 				</div>
 			</div>
 
 			<div class="p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-				<a href="#" class="text-tiny font-medium text-slate-700 hover:text-slate-900"
-					>Book your trip to Canada<span aria-hidden="true" class="ml-1"> &rarr;</span></a
+				<a href="#" class="text-sz font-bold text-slate-700 hover:text-slate-900"
+					>Explore Canada <span aria-hidden="true" class="ml-1"> &rarr;</span></a
 				>
 			</div>
 		</div>
@@ -92,10 +102,10 @@
 				<div class="flex-1">
 					<p class="text-sm font-medium text-pink-600">Spring Break</p>
 					<a href="/blog-post" class="block mt-2">
-						<p class="text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize">
+						<p class="text-lg lg:text-lg font-semibold text-pblue-900 line-clamp-1 capitalize">
 							Top Spring Break Destinations
 						</p>
-						<p class="mt-3 text-tiny text-gray-500 line-clamp-3">
+						<p class="mt-3 prose text-tiny text-slate-700 line-clamp-2">
 							Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
 							history, culture, nature and some Looking for travelling to Mexico tips? Mexico is a
 							colourful, vibrant country full of history, culture, nature and some
@@ -125,7 +135,7 @@
 					</span>
 				</div>
 				<div class="mt-6 flex items-center">
-					<div class="flex-shrink-0">
+					<!-- <div class="flex-shrink-0">
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
@@ -142,13 +152,17 @@
 							<time datetime="2020-03-16"> Mar 16, 2020 </time>
 							<span aria-hidden="true"> &middot; </span>
 						</div>
-					</div>
+					</div> -->
+					<p class="text-gray-900 text-xz">
+						<span class="font-semibold">Shefali</span> on
+						<span class="font-semibold">March 3, 2021</span>
+					</p>
 				</div>
 			</div>
 
 			<div class="p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-				<a href="#" class="text-tiny font-medium text-slate-700 hover:text-slate-900"
-					>Book your spring break vacation<span aria-hidden="true" class="ml-1"> &rarr;</span></a
+				<a href="#" class="text-sz font-bold text-slate-700 hover:text-slate-900"
+					>Plan your spring break<span aria-hidden="true" class="ml-1"> &rarr;</span></a
 				>
 			</div>
 		</div>
@@ -166,10 +180,10 @@
 				<div class="flex-1">
 					<p class="text-sm font-medium text-pink-600">Asia • Indonesia • Bali</p>
 					<a href="/blog-post" class="block mt-2">
-						<p class="text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize">
+						<p class="text-lg lg:text-lg font-semibold text-pblue-900 line-clamp-1 capitalize">
 							Why Bali is the next asia hot spot for tourists?
 						</p>
-						<p class="mt-3 text-tiny text-gray-500 line-clamp-3">
+						<p class="mt-3 prose text-tiny text-slate-700 line-clamp-2">
 							Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
 							history, culture, nature and some Looking for travelling to Mexico tips? Mexico is a
 							colourful, vibrant country full of history, culture, nature and some
@@ -199,7 +213,7 @@
 					</span>
 				</div>
 				<div class="mt-6 flex items-center">
-					<div class="flex-shrink-0">
+					<!-- <div class="flex-shrink-0">
 						<a href="#">
 							<img
 								class="h-10 w-10 rounded-full"
@@ -216,13 +230,17 @@
 							<time datetime="2020-03-16"> Mar 16, 2020 </time>
 							<span aria-hidden="true"> &middot; </span>
 						</div>
-					</div>
+					</div> -->
+					<p class="text-gray-900 text-xz">
+						<span class="font-semibold">Shefali</span> on
+						<span class="font-semibold">March 3, 2021</span>
+					</p>
 				</div>
 			</div>
 
 			<div class="p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-				<a href="#" class="text-tiny font-medium text-slate-700 hover:text-slate-900"
-					>Book your trip to the Philippines<span aria-hidden="true" class="ml-1"> &rarr;</span></a
+				<a href="#" class="text-sz font-bold text-slate-700 hover:text-slate-900"
+					>Book your trip to Bali<span aria-hidden="true" class="ml-1"> &rarr;</span></a
 				>
 			</div>
 		</div>

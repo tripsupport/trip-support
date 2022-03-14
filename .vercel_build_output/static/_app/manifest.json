@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-9efa0317.js",
+    "file": "start-2eacd623.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -31,7 +31,7 @@
       "_vendor-c3e464d3.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-3bf229ed.css"
+      "assets/pages/__layout.svelte-60aadd93.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -44,14 +44,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f424a0f4.js",
+    "file": "pages/index.svelte-0a2603b6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
       "_BlogPosts-33659968.js",
-      "_Subscribe-580e6bf2.js"
+      "_Subscribe-1e07e387.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
@@ -82,14 +82,14 @@
     ]
   },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-ef11f6bf.js",
+    "file": "pages/vacations.svelte-607120b7.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
       "_BlogPosts-33659968.js",
-      "_Subscribe-580e6bf2.js"
+      "_Subscribe-1e07e387.js"
     ]
   },
   "src/routes/contact.svelte": {
@@ -111,7 +111,7 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-6b0e921b.js",
+    "file": "pages/flights.svelte-e8461068.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -119,14 +119,14 @@
       "_vendor-c3e464d3.js",
       "_preload-helper-e4860ae8.js",
       "_BlogPosts-33659968.js",
-      "_Subscribe-580e6bf2.js"
+      "_Subscribe-1e07e387.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
     ]
   },
   "src/routes/hotels.svelte": {
-    "file": "pages/hotels.svelte-b899b72a.js",
+    "file": "pages/hotels.svelte-f8bf52b9.js",
     "src": "src/routes/hotels.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -134,20 +134,20 @@
       "_vendor-c3e464d3.js",
       "_preload-helper-e4860ae8.js",
       "_BlogPosts-33659968.js",
-      "_Subscribe-580e6bf2.js"
+      "_Subscribe-1e07e387.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
     ]
   },
   "src/routes/blog.svelte": {
-    "file": "pages/blog.svelte-faab185b.js",
+    "file": "pages/blog.svelte-3aa59829.js",
     "src": "src/routes/blog.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
-      "_Subscribe-580e6bf2.js"
+      "_Subscribe-1e07e387.js"
     ]
   },
   "_vendor-c3e464d3.js": {
@@ -162,8 +162,8 @@
       "_vendor-c3e464d3.js"
     ]
   },
-  "_Subscribe-580e6bf2.js": {
-    "file": "chunks/Subscribe-580e6bf2.js",
+  "_Subscribe-1e07e387.js": {
+    "file": "chunks/Subscribe-1e07e387.js",
     "imports": [
       "_vendor-c3e464d3.js"
     ]

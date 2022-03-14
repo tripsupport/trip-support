@@ -1,34 +1,25 @@
 <script>
 	// popper dropdown
 	// library for creating dropdown menu appear on click
-	import { createPopper } from '@popperjs/core';
-
-	// core components
-
-	let dropdownPopoverShow = false;
-
-	let btnDropdownRef;
-	let popoverDropdownRef;
-
-	const toggleDropdown = () => {
-		if (dropdownPopoverShow) {
-			dropdownPopoverShow = false;
-		} else {
-			dropdownPopoverShow = true;
-			createPopper(btnDropdownRef, popoverDropdownRef, {
-				placement: 'bottom-end'
-			});
-		}
-	};
 
 	// outclick
 	import OutClick from 'svelte-outclick';
 
-	const hideDropdown = () => {
-		if (dropdownPopoverShow) {
-			dropdownPopoverShow = false;
-		}
-	};
+	import { writable } from 'svelte/store';
+
+	function useToggle(initialState) {
+		const { subscribe, update } = writable(initialState);
+		return {
+			subscribe,
+			toggle: () => update((x) => !x)
+		};
+	}
+
+	const showSignin = useToggle(false);
+	const showForgotPass = useToggle(false);
+	const showCreateAccount = useToggle(false);
+	const signedIn = useToggle(false);
+	const signedInMenu = useToggle(false);
 </script>
 
 <!-- Language selection -->
@@ -68,17 +59,19 @@
 </div>
 <span class="h-6 w-px bg-gray-200" aria-hidden="true" />
 <div class="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
+	<!-- Dropdown for Uer login -->
 	<!-- currently hidden -->
 	<button
 		type="button"
-		class="hidden bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+		class=" bg-white p-1 rounded-full text-gray-700 hover:text-gray-600 focus:outline-none "
 		data-collapse-toggle="user-profile"
+		on:click={showSignin.toggle}
 	>
 		<span class="sr-only">User login</span>
 		<!-- Heroicon name: user-circle -->
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			class="h-6 w-6"
+			class="h-7 w-7"
 			fill="none"
 			viewBox="0 0 24 24"
 			stroke="currentColor"
@@ -91,33 +84,54 @@
 			/>
 		</svg>
 	</button>
-	<!-- Dropdown for Uer login -->
-	<OutClick on:outclick={hideDropdown}>
-		<!-- Profile dropdown -->
-		<div class="mx-2 relative">
-			<div>
-				<button
-					type="button"
-					class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 ease-linear transition-all duration-150"
-					aria-expanded="false"
-					aria-haspopup="true"
-					data-collapse-toggle="user-profile"
-					bind:this={btnDropdownRef}
-					on:click={toggleDropdown}
-				>
-					<span class="sr-only">Open user menu</span>
-					<img
-						class="h-8 w-8 rounded-full"
-						src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-						alt=""
-					/>
-				</button>
+	{#if signedIn}
+		<OutClick on:outclick={signedIn}>
+			<div class="mx-2 relative">
+				<div>
+					<button
+						type="button"
+						class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 ease-linear transition-all duration-150"
+						on:click={signedInMenu.toggle}
+					>
+						<span class="sr-only">Open user menu</span>
+						<img
+							class="h-8 w-8 rounded-full"
+							src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+							alt=""
+						/>
+					</button>
+				</div>
+				{#if $signedInMenu}
+					<div
+						class="bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[44px] -translate-x-[348px]"
+					>
+						<div class="pt-2 pb-3 space-y-1">
+							<!-- Current: "bg-pblue-50 border-pblue-500 text-pblue-700", Default: "border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+							<a
+								href="flights"
+								class="bg-pblue-50 border-rose-600 text-pblue-900 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"
+								>Profile</a
+							>
+							<a
+								href="vacations"
+								class="border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"
+								>Settings</a
+							>
+							<a
+								href="vacations"
+								class="border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"
+								>Sign out</a
+							>
+						</div>
+					</div>
+				{/if}
 			</div>
+		</OutClick>
+	{/if}
+	{#if $showSignin}
+		<OutClick on:outclick={showSignin.toggle}>
 			<div
-				bind:this={popoverDropdownRef}
-				class="bg-white text-base list-none text-left rounded shadow-lg w-96 {dropdownPopoverShow
-					? 'block'
-					: 'hidden'}"
+				class="bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[58px] -translate-x-[348px]"
 			>
 				<form class="space-y-4 p-6" action="#" method="POST">
 					<div>
@@ -163,11 +177,11 @@
 							</label>
 						</div>
 
-						<div class="text-sm">
+						<button class="text-sm" on:click={showForgotPass.toggle}>
 							<a href="#" class="font-medium text-pblue-600 hover:text-pblue-500">
 								Forgot your password?
 							</a>
-						</div>
+						</button>
 					</div>
 
 					<div>
@@ -177,8 +191,155 @@
 							>Sign in</button
 						>
 					</div>
+					<!-- This example requires Tailwind CSS v2.0+ -->
+					<div class="relative ">
+						<div class="absolute inset-0 flex items-center" aria-hidden="true">
+							<div class="w-full border-t border-gray-300" />
+						</div>
+						<div class="relative flex justify-center">
+							<span class="px-2 bg-white text-sm text-gray-500"> Don't have an account? </span>
+						</div>
+					</div>
+					<div>
+						<button
+							type="submit"
+							class="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"
+							on:click={showCreateAccount.toggle}>Create Account</button
+						>
+					</div>
 				</form>
 			</div>
-		</div>
-	</OutClick>
+		</OutClick>
+	{/if}
+	{#if $showForgotPass}
+		<OutClick on:outclick={showForgotPass.toggle}>
+			<div
+				class="bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[58px] -translate-x-[348px] pt-3 pb-6"
+			>
+				<div class="px-6 py-2">
+					<h2 class="font-bold ">Forgot your password?</h2>
+					<p class="text-sz">Please enter your email below</p>
+				</div>
+				<form class="space-y-4 px-6" action="#" method="POST">
+					<div>
+						<label for="email" class="block text-sm font-medium text-gray-700">
+							Email address
+						</label>
+						<div class="mt-1">
+							<input
+								id="email"
+								name="email"
+								type="email"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+
+					<div>
+						<button
+							type="submit"
+							class="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+							>Reset Password</button
+						>
+					</div>
+				</form>
+			</div>
+		</OutClick>
+	{/if}
+	{#if $showCreateAccount}
+		<OutClick on:outclick={showCreateAccount.toggle}>
+			<div
+				class="bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[58px] -translate-x-[348px] pt-3 pb-6"
+			>
+				<div class="px-6 py-2">
+					<h2 class="font-bold ">Create an account</h2>
+					<p class="text-sz">Please fill in the form below</p>
+				</div>
+				<form class="space-y-4 px-6" action="#" method="POST">
+					<div>
+						<label for="first_name" class="block text-sm font-medium text-gray-700">
+							First Name
+						</label>
+						<div class="mt-1">
+							<input
+								id="first_name"
+								name="first_name"
+								type="text"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+					<div>
+						<label for="last_name" class="block text-sm font-medium text-gray-700">
+							Last Name
+						</label>
+						<div class="mt-1">
+							<input
+								id="last_name"
+								name="last_name"
+								type="text"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+					<div>
+						<label for="email" class="block text-sm font-medium text-gray-700">
+							Email address
+						</label>
+						<div class="mt-1">
+							<input
+								id="email"
+								name="email"
+								type="email"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+					<div>
+						<label for="password" class="block text-sm font-medium text-gray-700"> Password </label>
+						<div class="mt-1">
+							<input
+								id="password"
+								name="password"
+								type="password"
+								autocomplete="off"
+								required
+								class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"
+							/>
+						</div>
+					</div>
+					<div>
+						<button
+							type="submit"
+							class="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"
+							>Create Account</button
+						>
+					</div>
+					<div class="relative ">
+						<div class="absolute inset-0 flex items-center" aria-hidden="true">
+							<div class="w-full border-t border-gray-300" />
+						</div>
+						<div class="relative flex justify-center">
+							<span class="px-2 bg-white text-sm text-gray-500"> Already have an account?</span>
+						</div>
+					</div>
+					<div>
+						<button
+							type="submit"
+							class="w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"
+							>Sign in</button
+						>
+					</div>
+				</form>
+			</div>
+		</OutClick>
+	{/if}
 </div>

@@ -4,47 +4,22 @@
 
 <div class="relative">
 	<div
-		class="absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"
+		class="hidden sm:flex absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"
 	/>
 	<div
-		class="absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"
-	/>
-	<div
-		class="absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"
-	/>
-	<div
-		class="absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"
+		class="absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-blue-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"
 	/>
 
 	<div class="bg-white shadow overflow-hidden sm:rounded-md relative">
 		<a href="#" class="block hover:bg-gray-50 no-underline">
 			<div class="flex items-center px-4 sm:px-6">
 				<div class="min-w-0 flex-1 flex items-center">
-					<div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center">
-						<div>
-							<p class="flex items-center text-sm text-pblue-900">
-								<!-- Heroicon name: solid/mail -->
-
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="flex-shrink-0 mr-1.5 h-5 w-5"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-										clip-rule="evenodd"
-									/>
-								</svg>
-								Trip Support deals on Niagara Falls
-							</p>
-						</div>
+					<div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-1 md:gap-4 place-items-center">
 						<div class="flex">
 							<div>
-								<p class="flex items-center text-sm text-rose-600 truncate">
+								<p class="flex items-center font-bold text-sm text-pblue-900 truncate">
 									<FlightsIcon />
-									Book your flight now
+									Get the best flight deals at Trip Support, Book Now, Pay Later!
 								</p>
 							</div>
 						</div>

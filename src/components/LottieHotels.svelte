@@ -26,7 +26,7 @@
 
 {#if LottiePlayer}
 	<LottiePlayer
-		src="https://assets9.lottiefiles.com/packages/lf20_vetvpg7c.json"
+		src="lottie/97942-desinsafe-buildings.json"
 		autoplay={true}
 		loop={true}
 		controls={false}

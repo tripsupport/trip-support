@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-2eacd623.js",
+    "file": "start-2f41512f.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -23,7 +23,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-2b0918e2.js",
+    "file": "pages/__layout.svelte-173753ac.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -31,7 +31,7 @@
       "_vendor-c3e464d3.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-60aadd93.css"
+      "assets/pages/__layout.svelte-e2b4a5ae.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -44,14 +44,15 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-0a2603b6.js",
+    "file": "pages/index.svelte-ddf74c88.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
-      "_BlogPosts-33659968.js",
-      "_Subscribe-1e07e387.js"
+      "_BlogPosts-d0398f78.js",
+      "_Subscribe-d8087278.js",
+      "_HotelsIcon-3980de83.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
@@ -73,23 +74,25 @@
     ]
   },
   "src/routes/blog-post.svelte": {
-    "file": "pages/blog-post.svelte-f689f952.js",
+    "file": "pages/blog-post.svelte-9f3aac74.js",
     "src": "src/routes/blog-post.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c3e464d3.js"
+      "_vendor-c3e464d3.js",
+      "_HotelsIcon-3980de83.js"
     ]
   },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-607120b7.js",
+    "file": "pages/vacations.svelte-0607bd5a.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
-      "_BlogPosts-33659968.js",
-      "_Subscribe-1e07e387.js"
+      "_BlogPosts-d0398f78.js",
+      "_Subscribe-d8087278.js",
+      "_HotelsIcon-3980de83.js"
     ]
   },
   "src/routes/contact.svelte": {
@@ -111,43 +114,45 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-e8461068.js",
+    "file": "pages/flights.svelte-4d276cb6.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
       "_preload-helper-e4860ae8.js",
-      "_BlogPosts-33659968.js",
-      "_Subscribe-1e07e387.js"
+      "_BlogPosts-d0398f78.js",
+      "_Subscribe-d8087278.js",
+      "_HotelsIcon-3980de83.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
     ]
   },
   "src/routes/hotels.svelte": {
-    "file": "pages/hotels.svelte-f8bf52b9.js",
+    "file": "pages/hotels.svelte-73d74fa4.js",
     "src": "src/routes/hotels.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
       "_preload-helper-e4860ae8.js",
-      "_BlogPosts-33659968.js",
-      "_Subscribe-1e07e387.js"
+      "_BlogPosts-d0398f78.js",
+      "_Subscribe-d8087278.js",
+      "_HotelsIcon-3980de83.js"
     ],
     "dynamicImports": [
       "node_modules/@lottiefiles/svelte-lottie-player/src/components/index.js"
     ]
   },
   "src/routes/blog.svelte": {
-    "file": "pages/blog.svelte-3aa59829.js",
+    "file": "pages/blog.svelte-203e4ca5.js",
     "src": "src/routes/blog.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-c3e464d3.js",
-      "_Subscribe-1e07e387.js"
+      "_Subscribe-d8087278.js"
     ]
   },
   "_vendor-c3e464d3.js": {
@@ -156,14 +161,21 @@
   "_preload-helper-e4860ae8.js": {
     "file": "chunks/preload-helper-e4860ae8.js"
   },
-  "_BlogPosts-33659968.js": {
-    "file": "chunks/BlogPosts-33659968.js",
+  "_BlogPosts-d0398f78.js": {
+    "file": "chunks/BlogPosts-d0398f78.js",
+    "imports": [
+      "_vendor-c3e464d3.js",
+      "_HotelsIcon-3980de83.js"
+    ]
+  },
+  "_Subscribe-d8087278.js": {
+    "file": "chunks/Subscribe-d8087278.js",
     "imports": [
       "_vendor-c3e464d3.js"
     ]
   },
-  "_Subscribe-1e07e387.js": {
-    "file": "chunks/Subscribe-1e07e387.js",
+  "_HotelsIcon-3980de83.js": {
+    "file": "chunks/HotelsIcon-3980de83.js",
     "imports": [
       "_vendor-c3e464d3.js"
     ]

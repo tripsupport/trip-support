@@ -1,17 +1,14 @@
 <div class="mx-auto max-w-7xl">
-	<div class="hidden sm:grid grid-cols-1 sm:grid-cols-12 h-44 lg:h-[400px]">
-		<div class="hidden sm:block col-span-1 sm:col-span-6">
+	<div class="grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]">
+		<div class="col-span-1 sm:col-span-6 z-[1]">
 			<div class="lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8">
 				<h1
-					class="bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"
+					class="bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"
 				>
 					Vacation packages
 				</h1>
-				<p
-					class="hidden sm:block prose text-sm sm:text-tiny lg:text-base whitespace-nowrap max-w-sm"
-				>
-					Looking for vacations?
-					<br />Save now with packages that include flight and vacations.
+				<p class="prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700">
+					Looking for vacations? Save on vacations that include flight.
 				</p>
 			</div>
 		</div>
@@ -37,7 +34,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="sm:hidden grid grid-cols-1 h-28">
+	<!-- <div class="sm:hidden grid grid-cols-1 h-28">
 		<div class="flex sm:hidden col-span-1 justify-center">
 			<h1 class="absolute z-[2] top-32 text-2xl tracking-tight font-extrabold text-white">
 				Search Vacation packages
@@ -50,5 +47,5 @@
 				/>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>

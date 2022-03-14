@@ -68,18 +68,18 @@
 			</ol>
 		</nav>
 
-		<!-- Heading -->
-		<div class="text-center">
-			<div class="text-sm uppercase font-bold tracking-wider mb-1 text-rose-600">Canada</div>
-			<h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-				8 Unique Winter Getaways Near Toronto
-			</h2>
-			<h3 class="text-md md:text-lg md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto">
-				<a href="javascript:void(0)" class="text-pblue-700 hover:text-pblue-400">Shefali</a> on
-				<span class="font-semibold">March 15, 2021</span> · 8 min read
-			</h3>
+		<div class="prose prose-slate prose-lg mx-auto">
+			<!-- Heading -->
+			<div class="text-left">
+				<div class="text-sm uppercase font-bold tracking-wider mb-1 text-rose-600">Canada</div>
+				<div class="text-3xl md:text-4xl font-extrabold">8 Unique Winter Getaways Near Toronto</div>
+				<div class="text-base md:text-md md:leading-relaxed font-medium text-gray-600 lg:w-2/3">
+					<a href="javascript:void(0)" class="text-pblue-700 hover:text-pblue-400">Shefali</a> on
+					<span class="font-semibold">March 15, 2021</span> · 8 min read
+				</div>
+			</div>
+			<!-- END Heading -->
 		</div>
-		<!-- END Heading -->
 
 		<!-- Blog Post -->
 		<article class="prose prose-slate prose-lg mx-auto">

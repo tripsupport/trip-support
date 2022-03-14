@@ -5742,7 +5742,7 @@ var init_layout_svelte = __esm({
     init_OutClick_f79208e6();
     Exclamation = [[{ "fill-rule": "evenodd", "d": "M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" }]];
     AlertCovid = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<nav aria-label="${"Top"}" class="${"relative z-10"}">
+      return `<nav aria-label="${"Top"}" class="${"relative z-[1]"}">
 	<div class="${"bg-gray-900"}"><div class="${"max-w-7xl lg:mx-auto py-2 px-4 flex items-center justify-between"}"><div class="${"hidden lg:flex"}">${validate_component(Icon, "Icon").$$render($$result, {
         src: Exclamation,
         class: "h-6 text-slate-50 w-5 mr-2"
@@ -5836,7 +5836,7 @@ var init_layout_svelte = __esm({
     });
     MainNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<nav class="${"bg-white shadow relative z-10"}"><div class="${"max-w-7xl mx-auto py-2"}"><div class="${"flex flex-wrap justify-between items-center "}"><div class="${"flex pl-4"}">
+<nav class="${"bg-white shadow relative z-[2]"}"><div class="${"max-w-7xl mx-auto py-2"}"><div class="${"flex flex-wrap justify-between items-center "}"><div class="${"flex pl-4"}">
 				<a sveltekit:prefetch href="${"/"}" class="${"flex-shrink-0 flex place-items-start"}"><img class="${"h-9 sm:h-11 w-auto"}" src="${"logo.svg"}" alt="${"Trip Support Logo"}"></a>
 
 				
@@ -5984,9 +5984,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-2b0918e2.js";
-    js = ["pages/__layout.svelte-2b0918e2.js", "chunks/vendor-c3e464d3.js"];
-    css = ["assets/pages/__layout.svelte-60aadd93.css"];
+    entry = "pages/__layout.svelte-173753ac.js";
+    js = ["pages/__layout.svelte-173753ac.js", "chunks/vendor-c3e464d3.js"];
+    css = ["assets/pages/__layout.svelte-e2b4a5ae.css"];
   }
 });
 
@@ -6040,7 +6040,24 @@ var init__2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BlogPosts-24336865.js
+// .svelte-kit/output/server/chunks/HotelsIcon-3f320ed3.js
+var FlightsIcon, VacationsIcon, HotelsIcon;
+var init_HotelsIcon_3f320ed3 = __esm({
+  ".svelte-kit/output/server/chunks/HotelsIcon-3f320ed3.js"() {
+    init_index_32debfaa();
+    FlightsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.64 14.26l2.86.95 4.02-4.02-8-4.59 1.16-1.16c.1-.1.26-.14.41-.1l9.3 2.98c1.58-1.58 3.15-3.2 4.77-4.75.31-.33.7-.58 1.16-.73.45-.16.87-.27 1.25-.34.55-.05.98.4.93.93-.07.38-.18.8-.34 1.25-.15.46-.4.85-.73 1.16l-4.75 4.78 2.97 9.29c.05.15 0 .29-.1.41l-1.17 1.16-4.57-8.02L8.8 17.5l.95 2.84L8.6 21.5l-2.48-3.62L2.5 15.4l1.14-1.14z"}" clip-rule="${"evenodd"}"></path></svg>`;
+    });
+    VacationsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M21.59 11.59h-2.36V8.66c0-.23-.2-.41-.43-.41h-5.82a.42.42 0 00-.43.41v2.93H10.2a.42.42 0 00-.43.41v8.34c0 .23.21.41.43.41h11.4c.21 0 .41-.2.41-.41V12c0-.23-.2-.41-.41-.41zm-7.36-1.68h3.32v1.68h-3.32V9.91zm3.79 9.06l-1.2-1.17 2.37-2.36 1.17 1.17-2.34 2.36zM10.89 4.91V3.66a.4.4 0 00-.41-.41H4.64a.4.4 0 00-.41.41v2.93H2.4A.4.4 0 002 7v13.34c0 .2.18.41.41.41h5.7V10.34c0-.23.18-.43.41-.43h2.37v-5zM9.23 6.59H5.89V4.91h3.34v1.68z"}" clip-rule="${"evenodd"}"></path></svg>`;
+    });
+    HotelsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M21.61 21.41l-.47-1.1a.49.49 0 00-.16-.2.4.4 0 00-.23-.06h-.84V7.4a.4.4 0 00-.12-.28.38.38 0 00-.29-.13h-3.75V2.41a.4.4 0 00-.12-.28.38.38 0 00-.29-.13H4.5a.38.38 0 00-.3.13.4.4 0 00-.11.28v17.64h-.84a.4.4 0 00-.23.07.49.49 0 00-.16.18l-.47 1.11a.44.44 0 00-.03.2c0 .08.03.14.07.2a.38.38 0 00.33.2h18.48a.38.38 0 00.33-.2.36.36 0 00.07-.2c0-.06 0-.13-.03-.2zM9.09 17h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 12.77h-2.5V14.5h2.5v5.27zm0-7.77h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 10h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12z"}" clip-rule="${"evenodd"}"></path></svg>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/chunks/BlogPosts-83f28332.js
 function writable2(value, start = noop2) {
   let stop;
   const subscribers = /* @__PURE__ */ new Set();
@@ -6082,21 +6099,13 @@ function writable2(value, start = noop2) {
   }
   return { set, update, subscribe: subscribe2 };
 }
-var SwitchHorizontal, FlightsIcon, VacationsIcon, HotelsIcon, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, subscriber_queue2, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget, BlogPosts;
-var init_BlogPosts_24336865 = __esm({
-  ".svelte-kit/output/server/chunks/BlogPosts-24336865.js"() {
+var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, subscriber_queue2, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget, BlogPosts;
+var init_BlogPosts_83f28332 = __esm({
+  ".svelte-kit/output/server/chunks/BlogPosts-83f28332.js"() {
     init_index_32debfaa();
+    init_HotelsIcon_3f320ed3();
     init_OutClick_f79208e6();
     SwitchHorizontal = [[{ "d": "M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" }]];
-    FlightsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.64 14.26l2.86.95 4.02-4.02-8-4.59 1.16-1.16c.1-.1.26-.14.41-.1l9.3 2.98c1.58-1.58 3.15-3.2 4.77-4.75.31-.33.7-.58 1.16-.73.45-.16.87-.27 1.25-.34.55-.05.98.4.93.93-.07.38-.18.8-.34 1.25-.15.46-.4.85-.73 1.16l-4.75 4.78 2.97 9.29c.05.15 0 .29-.1.41l-1.17 1.16-4.57-8.02L8.8 17.5l.95 2.84L8.6 21.5l-2.48-3.62L2.5 15.4l1.14-1.14z"}" clip-rule="${"evenodd"}"></path></svg>`;
-    });
-    VacationsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M21.59 11.59h-2.36V8.66c0-.23-.2-.41-.43-.41h-5.82a.42.42 0 00-.43.41v2.93H10.2a.42.42 0 00-.43.41v8.34c0 .23.21.41.43.41h11.4c.21 0 .41-.2.41-.41V12c0-.23-.2-.41-.41-.41zm-7.36-1.68h3.32v1.68h-3.32V9.91zm3.79 9.06l-1.2-1.17 2.37-2.36 1.17 1.17-2.34 2.36zM10.89 4.91V3.66a.4.4 0 00-.41-.41H4.64a.4.4 0 00-.41.41v2.93H2.4A.4.4 0 002 7v13.34c0 .2.18.41.41.41h5.7V10.34c0-.23.18-.43.41-.43h2.37v-5zM9.23 6.59H5.89V4.91h3.34v1.68z"}" clip-rule="${"evenodd"}"></path></svg>`;
-    });
-    HotelsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M21.61 21.41l-.47-1.1a.49.49 0 00-.16-.2.4.4 0 00-.23-.06h-.84V7.4a.4.4 0 00-.12-.28.38.38 0 00-.29-.13h-3.75V2.41a.4.4 0 00-.12-.28.38.38 0 00-.29-.13H4.5a.38.38 0 00-.3.13.4.4 0 00-.11.28v17.64h-.84a.4.4 0 00-.23.07.49.49 0 00-.16.18l-.47 1.11a.44.44 0 00-.03.2c0 .08.03.14.07.2a.38.38 0 00.33.2h18.48a.38.38 0 00.33-.2.36.36 0 00.07-.2c0-.06 0-.13-.03-.2zM9.09 17h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 12.77h-2.5V14.5h2.5v5.27zm0-7.77h-2.5V9.5h2.5V12zm0-5h-2.5V4.5h2.5V7zm4.16 10h-2.5v-2.5h2.5V17zm0-5h-2.5V9.5h2.5V12z"}" clip-rule="${"evenodd"}"></path></svg>`;
-    });
     Cabin = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let btnDropdownRef;
       let popoverDropdownRef;
@@ -6410,7 +6419,7 @@ ${``}
 ${``}`;
     });
     BookingWidget = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<section class="${"relative max-w-7xl z-[3] -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-6 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}">
+      return `<section class="${"relative max-w-7xl z-[2] -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-6 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}">
 
 		
 		<div class="${"py-2 px-5 lg:px-6 w-full"}"><nav class="${"flex items-center sm:justify-start justify-between border-b border-gray-200"}"><button type="${"button"}" class="${"text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize " + escape("text-pblue-800 border-b-2 border-pblue-800 font-bold")}">${validate_component(FlightsIcon, "FlightsIcon").$$render($$result, {}, {}, {})}
@@ -6479,17 +6488,17 @@ ${``}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/Subscribe-35711aae.js
+// .svelte-kit/output/server/chunks/Subscribe-8a503f02.js
 var Subscribe;
-var init_Subscribe_35711aae = __esm({
-  ".svelte-kit/output/server/chunks/Subscribe-35711aae.js"() {
+var init_Subscribe_8a503f02 = __esm({
+  ".svelte-kit/output/server/chunks/Subscribe-8a503f02.js"() {
     init_index_32debfaa();
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative my-3 py-12 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[3] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
+<div class="${"relative my-3 py-12 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[1] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
 				<div class="${"max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1"}"><img class="${"object-cover object-center md:rounded-l-xl lg:shadow-2xl"}" src="${"images/home/subscribe.jpg"}" alt="${""}"></div></div></div>
 
-			<div class="${"relative z-[1] bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center shadow-xl"}"><div class="${"relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"}"><h2 class="${"text-2xl font-extrabold text-slate-900"}" id="${"join-heading"}">Sign up today, we\u2019ve got deals to share!
+			<div class="${"relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center shadow-xl"}"><div class="${"relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"}"><h2 class="${"text-2xl font-extrabold text-slate-900"}" id="${"join-heading"}">Sign up today, we\u2019ve got deals to share!
 					</h2>
 
 					<p class="${"text-sm font-medium text-slate-900 "}">Members access great rates and savings. Sign up to get email updates when restrictions
@@ -6516,16 +6525,20 @@ var Hero, PopularFlightDeals, VacationDestinations, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_32debfaa();
-    init_BlogPosts_24336865();
-    init_Subscribe_35711aae();
+    init_BlogPosts_83f28332();
+    init_Subscribe_8a503f02();
+    init_HotelsIcon_3f320ed3();
     init_OutClick_f79208e6();
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `
+      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Book Now Pay Later</span></h1>
 
-<div class="${"bg-white"}"><div class="${"relative bg-gradient-to-r from-gray-50 via-white to-gray-50 py-0 sm:py-12 md:py-20 lg:py-20 px-4 sm:px-0 overflow-hidden w-full"}"><div class="${"max-w-7xl mx-auto grid grid-cols-2"}"><div class="${"sm:col-span-1 col-span-2 my-8 sm:my-0 sm:pl-8"}"><h1 class="${"font font-extrabold tracking-tight"}"><span class="${"inline bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl sm:text-[28px] md:text-4xl lg:text-5xl "}">Book Now Pay Later</span></h1>
-				<div class="${"grid grid-cols-12 items-center gap-x-2"}"><div class="${"col-span-12"}"><p class="${"text-lg font-semibold text-gray-600 mx-auto md:text-lg lg:text-2xl"}">No Credit Check Needed.
-						</p></div></div></div>
-			<div class="${"sm:-mt-40 -mt-12 aspect-w-4 aspect-h-1 lg:aspect-w-5 lg:aspect-h-3 hidden sm:block"}"><img class="${"transform translate-x-6 translate-y-6 rounded-b-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20 "}" src="${"images/hero/hotair-bg.jpg"}" alt="${"App screenshot"}"></div></div></div></div>`;
+				<p class="${"prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700"}">Secure your ticket with a small deposit.
+					<br>No Credit Check Needed.
+				</p></div></div>
+
+		<div class="${"hidden sm:flex col-span-6"}">
+			<div class="${"-mt-10"}"><img class="${"hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full rounded-xl"}" src="${"images/hero/hotair-bg.jpg"}" alt="${""}"></div></div></div></div>
+`;
     });
     PopularFlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -6676,8 +6689,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-0a2603b6.js";
-    js3 = ["pages/index.svelte-0a2603b6.js", "chunks/vendor-c3e464d3.js", "chunks/BlogPosts-33659968.js", "chunks/Subscribe-1e07e387.js"];
+    entry3 = "pages/index.svelte-ddf74c88.js";
+    js3 = ["pages/index.svelte-ddf74c88.js", "chunks/vendor-c3e464d3.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
     css3 = [];
   }
 });
@@ -6753,12 +6766,348 @@ var blog_post_svelte_exports = {};
 __export(blog_post_svelte_exports, {
   default: () => Blog_post
 });
-var Blog_post;
+var FlightCTA, HotelCTA, VacationCTA, Blog_post;
 var init_blog_post_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog-post.svelte.js"() {
     init_index_32debfaa();
+    init_HotelsIcon_3f320ed3();
+    FlightCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
+	<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
+	<div class="${"absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
+	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
+
+	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center"}"><div><p class="${"flex items-center text-sm text-pblue-900"}">
+
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"flex-shrink-0 mr-1.5 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+								Trip Support deals on Niagara Falls
+							</p></div>
+						<div class="${"flex"}"><div><p class="${"flex items-center text-sm text-rose-600 truncate"}">${validate_component(FlightsIcon, "FlightsIcon").$$render($$result, {}, {}, {})}
+									Book your flight now
+								</p></div></div></div></div>
+				<div>
+					<svg class="${"h-5 w-5 text-gray-400"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"}" clip-rule="${"evenodd"}"></path></svg></div></div></a></div></div>`;
+    });
+    HotelCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
+	<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
+	<div class="${"absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
+	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
+
+	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center"}"><div><p class="${"flex items-center text-sm text-pblue-900"}">
+
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"flex-shrink-0 mr-1.5 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+								Trip Support Hotel Deals
+							</p></div>
+						<div class="${"flex"}"><div><p class="${"flex items-center text-sm text-rose-600 truncate"}">${validate_component(HotelsIcon, "HotelsIcon").$$render($$result, {}, {}, {})}
+									Book the Hotel you want
+								</p></div></div></div></div>
+				<div>
+					<svg class="${"h-5 w-5 text-gray-400"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"}" clip-rule="${"evenodd"}"></path></svg></div></div></a></div></div>`;
+    });
+    VacationCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
+	<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
+	<div class="${"absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
+	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
+
+	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center"}"><div><p class="${"flex items-center text-sm text-pblue-900"}">
+
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"flex-shrink-0 mr-1.5 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
+								Plan your Vacation with Trip Support
+							</p></div>
+						<div class="${"flex"}"><div><p class="${"flex items-center text-sm text-rose-600 truncate"}">${validate_component(VacationsIcon, "VacationsIcon").$$render($$result, {}, {}, {})}
+									Book your vacation now, Pay later
+								</p></div></div></div></div>
+				<div>
+					<svg class="${"h-5 w-5 text-gray-400"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"}" clip-rule="${"evenodd"}"></path></svg></div></div></a></div></div>`;
+    });
     Blog_post = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+      return `
+<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8"}">
+		<nav class="${"flex"}" aria-label="${"Breadcrumb"}"><ol role="${"list"}" class="${"flex items-center space-x-4"}"><li><div><a href="${"/"}" class="${"text-gray-400 hover:text-gray-500"}">
+							<svg class="${"flex-shrink-0 h-5 w-5"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"}"></path></svg>
+							<span class="${"sr-only"}">Home</span></a></div></li>
+
+				<li><div class="${"flex items-center"}"><svg class="${"flex-shrink-0 h-5 w-5 text-gray-300"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" aria-hidden="${"true"}"><path d="${"M5.555 17.776l8-16 .894.448-8 16-.894-.448z"}"></path></svg>
+						<a href="${"/blog"}" class="${"ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"}">Blog</a></div></li>
+
+				<li><div class="${"flex items-center"}"><svg class="${"flex-shrink-0 h-5 w-5 text-gray-300"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" aria-hidden="${"true"}"><path d="${"M5.555 17.776l8-16 .894.448-8 16-.894-.448z"}"></path></svg>
+						<a href="${"#"}" class="${"ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"}" aria-current="${"page"}">8 Unique Winter Getaways Near Toronto</a></div></li></ol></nav>
+
+		
+		<div class="${"text-center"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">Canada</div>
+			<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">8 Unique Winter Getaways Near Toronto
+			</h2>
+			<h3 class="${"text-md md:text-lg md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto"}"><a href="${"javascript:void(0)"}" class="${"text-pblue-700 hover:text-pblue-400"}">Shefali</a> on
+				<span class="${"font-semibold"}">March 15, 2021</span> \xB7 8 min read
+			</h3></div>
+		
+
+		
+		<article class="${"prose prose-slate prose-lg mx-auto"}">
+			<div class="${"object-cover w-full"}"><img src="${"images/blog-post/blog-post-1.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>Sometimes it\u2019s nice to escape the city of Toronto to explore some of the nearby areas. In
+				your backyard, there are many fabulous places to visit without having to catch a long flight
+				or take a week off work. So for a mini getaway to keep you going between more extended
+				vacations, here are some destinations to note. We hope this list of eight unique winter
+				getaways near Toronto inspires you to take a break.
+			</p>
+			
+			<h3>1. Mississauga</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/mississauga.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>Not far from Toronto, Mississauga is a vibrant city on Lake Ontario. The lakefront is one of
+				the most scenic parts of the city, with a red and white lighthouse as the prettiest
+				landmark. There are also shops and restaurants along a boardwalk so you can explore at a
+				leisurely pace, even sitting on benches outside if it\u2019s warm enough.
+			</p>
+			<p>The only indoor ski and snowboard training centers are in Mississauga. Beginners can learn
+				and get a sample of the sports before committing to buying a lot of gear or hitting the real
+				slopes. It\u2019s also great for medium-level or advanced skiers and snowboarders who want to
+				ride the snow but don\u2019t have time to get to the ski fields.
+			</p>
+			${validate_component(HotelCTA, "HotelCTA").$$render($$result, {}, {}, {})}
+			<p>A waterfront trail is a nice place for a stroll, and it\u2019s usually quite apart from the
+				resident ducks, geese, and seagulls hanging around.
+			</p>
+			<p>Mississauga Celebration Square has an ice skating rink in winter. You can skate around in
+				the urban setting then head indoors for some retail therapy or hot food and drink. Being the
+				6th biggest city in Canada, Mississauga has plenty of shopping and dining, from bargains to
+				luxury to cheap eats to fine dining. There are also plenty of art galleries, museums and
+				tourist attractions to discover. When it comes to winter getaways near Toronto, Mississauga
+				is a winner.
+			</p>
+			
+			<h3>2. Niagara Falls</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/niagara-falls.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>The city of Niagara Falls is a favourite place for visitors who have seen Toronto and want
+				to explore the greater area. The falls, linked with America by the Rainbow Bridge, is the
+				main attraction for many visitors. Seeing the massive waterfalls is an awe-inspiring sight,
+				and there are many viewing points to see the stunning wonder of nature.
+			</p>
+			<p>Riding the glass tower to the Skylon Tower that looks over the falls is one of the best
+				places to see the waterfalls. You can also ride the gondola, book a helicopter tour to see
+				the falls from the air, or go zip lining over the water if you are a thrill-seeker.
+			</p>
+			<p>Beyond the falls you can find casinos, historic sites, spas, theme parks, shopping, dining,
+				golf courses, nightlife, wineries, theatre and many more entertaining places to visit. Or
+				you might like to relax in your luxury hotel with room service and movies. Whatever you
+				desire, it can be found in this modern city, well set up for hospitality and tourism. If you
+				are on a budget, there are many free things to do in Niagara Falls, including hiking Niagara
+				Glen and visiting the Niagara Falls Botanical Gardens. This is one of our top picks for
+				winter getaways near Toronto.
+			</p>
+			
+			${validate_component(FlightCTA, "FlightCTA").$$render($$result, {}, {}, {})}
+
+			
+			<h3>3. Barrie</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/barrie.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>Let\u2019s go to Barrie, a lovely city on the shores of Kempenfelt Bay with beautiful winter
+				landscapes. It\u2019s a winter wonderland all season long with plenty of outdoor activities for
+				the whole family. Snowboarding, ice skating, skiing and winter hiking can be enjoyed in the
+				most scenic surroundings and when it\u2019s time to get warm, there is lots of dining, shopping,
+				entertainment and tourist attractions to see.
+			</p>
+			<p>Buy a winter fun pass for great deals, promotions and discounts on winter experiences in
+				Barrie. It is free and easy to use on your phone. Sneak some spa time, relax in a cafe or
+				roam some art galleries to keep warm between outdoor excursions. Don\u2019t miss the 420-foot
+				suspension bridge at the Scenic Caves Nature Adventures Nordic Centre. With amazing views of
+				Georgian Bay and beyond, the long bridge hangs 82 feet above the ground, so it looks like it
+				is floating on the forest top. It\u2019s a bit challenging if you are scared of heights, but
+				worth it for the epic views.
+			</p>
+			<p>Take in the lights with a night ice skate session at the rink at City Hall in downtown
+				Barrie. After some fun laps on the ice, you can go shopping and enjoy a meal. If you are
+				there on a Saturday morning, you can catch the Barrie Farmer\u2019s Market to try some of the
+				local\u2019s freshest produce.
+			</p>
+			<p>Many events are happening in winter, with the highlight being the Hello Winter Festival in
+				February and March. The city lights up and buzzes with entertainment with a winter theme,
+				drawing crowds from near and far.
+			</p>
+
+			
+			<h3>4. Hamilton</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/hamilton.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>The port city of Hamilton is an interesting winter getaway, including some interesting
+				attractions for history buffs.
+			</p>
+			<p>Learn about Canada\u2019s military history when you visit the HMCS Haida, a naval warship on
+				Hamilton\u2019s lakefront and the Canadian Warplane Heritage Museum, which has an impressive
+				collection of old planes and paraphernalia. The Dundurn National Historic Site in a regal
+				castle overlooking the bay and the Art Gallery of Hamilton compliment the history trail that
+				can fill a few days.
+			</p>
+			<p>For a more modern look at the city the street art that adorns the walls of building around
+				the city are eye-catching and thought-provoking. Grab your camera and take a walking tour to
+				see the vibrant murals. Keep walking into nature and see frozen waterfalls or rent some gear
+				to go snowshoeing at Christie Lake or Dundas Valley.
+			</p>
+			<p>The city has several ice skating rinks as well as attractive walking trails to explore.
+				There is a zip lining adventure park open during winter and the experience is dramatically
+				different from swinging through the treetops in summer.
+			</p>
+			<p>The city often hosts events, and Winterfest is the biggest annual one to catch with shows,
+				music, performances, and installations.
+			</p>
+			<p>The food scene is alive and well in Hamilton, with cozy cafes, restaurants and bars with
+				heated patios to welcome patrons in from the cold. To sample artisan cider head to West
+				Avenue Cider at Somerset Orchards.
+			</p>
+			<p>The countryside setting is a charming place to have lunch and their food is as outstanding
+				as their beverages. Dine outside in front of your private fire pit or stay cozy indoors,
+				then stock up on cheese, baked goods and other treats at the bakery on your way out. For
+				winter getaways near Toronto, Hamilton is calling.
+			</p>
+
+			
+			<h3>5. London</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/london.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			${validate_component(VacationCTA, "VacationCTA").$$render($$result, {}, {}, {})}
+			<p>In London, Ontario, you might run into out-of-town visitors from Toronto or other parts of
+				Canada, overseas tourists or locals enjoying their backyard. There are heaps to see and do
+				in the winter months, so for a unique winter getaway, you can\u2019t go wrong.
+			</p>
+			<p>There is a charming ice skating venue called Storybook Gardens. The 250-meter skate trail
+				circles a play village with lots of appearances from storybook characters along the way.
+				Victoria Park and Convent Garden Market are also wonderful for ice skating, with coffee and
+				hot chocolate for sale on the sidelines. If you are more into skiing, tubing or
+				snowboarding, Boler Mountain is the place to be.
+			</p>
+			<p>If you want to play inside, there are exciting options like rock climbing, axe throwing and
+				escape rooms. Of course, as you would expect from a city setting, there are shopping
+				entertainment and dining options to suit every budget. If you are vegan, London has a lively
+				foodie scene catering for vegans and all kinds of healthy eats. Plant Matter Kitchen and
+				Plant Matter Cafe serve up delicious offerings and The Tea Lounge is hot with tea lovers.
+			</p>
+
+			
+			<h3>6. Whitby</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/whitby.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>Welcome to Whitby, a town with warm hospitality and charming character. You should know
+				there are two downtown areas so be careful not to miss one. Downtown Whitby and Downtown
+				Brooklin are both vibrant areas for dining, shopping and soaking in the arty atmosphere.
+				Downtown Whitby has historical buildings and boutique stores, while Downtown Brooklin has
+				spas and the Whitby Courthouse Theatre.
+			</p>
+			<p>The prettiest ice skating rinks are outdoors at Peel Park and Brooklin Memorial Park.
+				Breathing in the fresh, crisp air while twirling on the ice is such an iconic wintertime
+				activity, along with winter walks and hikes.
+			</p>
+			<p>The accommodation in Whitby is appealing, with many top-notch hotels, suites and lodges to
+				call home for a short or long stay. Nothing beats a hotel with a hot tub or jacuzzi in
+				winter and if you are looking for luxury, we recommend booking a few nights at the Residence
+				Inn by Marriott Whitby.
+			</p>
+			<p>From there, it\u2019s not far to the Thermea Spa Village, where you can soak in therapeutic hot
+				water and blissfully unwind and relax. With an underground floatation pool, rituals and
+				treatments, and healthy food and drink options, you could easily pamper your soul for a
+				whole day there. It\u2019s one of the many reasons people visit Whitby several times a year.
+			</p>
+
+			
+			<h3>7. Kawartha Lakes</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/kawartha-lakes.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>The City of Kawartha Lakes is a place for nature lovers and adventurers. The great outdoors
+				includes hiking trails, rivers and, of course, the lakes. You can get there in less than 2
+				hours from Toronto, so why not plan a trip there soon? Snowshoeing, ice skating,
+				snowmobiling, cross-country skiing and winter walks are some of the wintery activities that
+				await you at Kawartha Lakes.
+			</p>
+			<p>Maple syrup is a major industry in the area, so there are plenty of farm tours and other
+				sweet activities to sample and you will see it for sale all over the place. For sure, it
+				will be on your pancakes served at the quaint bed and breakfast you stay at or the charming
+				country cottage you book right on the lake.
+			</p>
+			<p>There are plenty of options with 250 lakes in the area if waking up with lake views sounds
+				exciting. You can even stay on a houseboat which is a unique experience and rocking good
+				time.
+			</p>
+			
+			<h3>8. Brampton</h3>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/brampton.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>We call it beautiful Brampton and in winter, it\u2019s a wonderland. Walk around Gage Park, then
+				visit the nearby Historic Bovaird House before going ice skating at indoor or outdoor rinks,
+				including Gage Park and Gore Meadows. Brampton has many scenic places for winter hiking like
+				Clairville and Heart Lake conservation areas and the Etobicoke Creek Trail.
+			</p>
+			<p>Go Canadian goose spotting during a walk around Professors Lake or sledding down Major Oaks
+				Park hills for more fun outdoors.
+			</p>
+			<p>When it\u2019s time to warm up indoors, you have the Peel Art Gallery, Museum and Archives to
+				explore and they are inside a gorgeous mix of 19th-century and modern buildings. Downtown
+				you might catch a show at the Rose Theatre, a popular performing arts venue that always has
+				something exciting going on, including big-screen movies and live events. When it\u2019s time for
+				dinner, you are spoiled for choice with so many excellent restaurants all over the city.
+			</p>
+			<p>The Winter Lights Festival, usually in November, is always a great event if you are in town.
+				Book your accommodation early for this one because it draws crowds from near and far. If you
+				miss that, the whole downtown is decorated with lights for most of the winter. It\u2019s free and
+				makes a lovely evening walk.
+			</p>
+			<p>In Canada, every season is quite dramatically different from the next. So anywhere you visit
+				in winter will offer a different experience in the summer. That means if you have fun
+				somewhere, you can start planning your next trip to see and do other things but maybe return
+				to some of your favourite shops and restaurants.
+			</p>
+			
+			<div class="${"bg-blue-50 border-l-4 border-pblue-400 p-3"}"><div class="${"flex"}"><div class="${"ml-3"}"><p class="${"prose text-pblue-800"}">Visit the Trip Support website or call our travel experts on <a href="${"#"}" class="${"font-medium underline text-pblue-700 hover:text-pblue-400"}">#1-855-606-0606
+							</a> for more information on winter getaways near Toronto. They are always ready to help
+							our clients plan their next epic vacation.
+						</p></div></div></div>
+			<div class="${"object-cover w-full"}">
+				<img src="${"images/blog-post/blog-post-1.jpg"}" alt="${"Featured Image of blog post"}" class="${"rounded w-full object-cover aspect-[5/2]"}"></div>
+			<p>The face of travel is changing rapidly. We are proudly leading the industry with an
+				innovative and flexible Book Now, Pay Later option. You can buy the air ticket and vacation
+				packages by putting down a small deposit to secure the services and pay the balance in
+				installments. Flexibility and savings are just some of the benefits of flying with Trip
+				Support.
+			</p>
+
+			
+			<div class="${"bg-rose-50 border-l-4 border-rose-400 p-3"}"><div class="${"flex"}"><div class="${"ml-3"}"><p class="${"prose text-rose-700"}">We don&#39;t check credit scores so this payment <a href="${"#"}" class="${"font-medium underline text-rose-700 hover:text-rose-400"}">Book Now, Pay Later
+							</a> method is available to everyone. You can book now and pay later in installments. There
+							is no credit check with this fantastic pay later option.
+						</p></div></div></div></article>
+		</div></div>
+
+
+
+
+
+
+<div class="${"bg-white overflow-hidden"}"><div class="${"container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32"}"><div class="${"flex flex-col md:flex-row md:items-center space-y-16 md:space-y-0 md:space-x-28"}">
+			<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
+				<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
+				<div class="${"absolute rounded-3xl top-0 right-0 w-32 h-32 bg-rose-200 bg-opacity-50 -mt-10 -mr-10 transform -rotate-6"}"></div>
+				<div class="${"absolute rounded-3xl bottom-0 left-0 w-32 h-32 bg-blue-200 bg-opacity-50 -mb-10 -ml-10 transform rotate-6"}"></div>
+				
+				<img src="${"images/blog-post/blog-post-1.jpg"}" alt="${"Hero Image"}" class="${"relative rounded-lg mx-auto shadow-lg w-full object-cover aspect-[5/2]"}"></div>
+			
+
+			<div class="${"space-y-10 w-full"}">
+				<div><div class="${"text-sm font-semibold mb-1 text-pblue-700"}">Trip Support Flights, Hotels &amp; Vacation Deals
+					</div>
+					<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">Book with us and save</h2>
+					<h3 class="${"text-lg md:text-xl md:leading-relaxed font-medium text-gray-600"}">Secure your flight ticket, hotel reservation, or your vacation trip with a small
+						deposit. No Credit Check Needed.
+					</h3></div>
+				
+
+				
+				<div class="${"flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-2"}"><a href="${"javascript:void(0)"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded-full border-rose-600 bg-rose-600 text-white hover:text-white hover:bg-rose-700 hover:border-rose-700 focus:ring focus:ring-rose-500 focus:ring-opacity-50 active:bg-rose-600 active:border-rose-600"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"opacity-50 hi-solid hi-check inline-block w-5 h-5"}"><path fill-rule="${"evenodd"}" d="${"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"}" clip-rule="${"evenodd"}"></path></svg>
+						<span>Book Now, Pay Later</span></a></div>
+				</div></div></div></div>
+`;
     });
   }
 });
@@ -6775,8 +7124,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_blog_post_svelte();
-    entry6 = "pages/blog-post.svelte-f689f952.js";
-    js6 = ["pages/blog-post.svelte-f689f952.js", "chunks/vendor-c3e464d3.js"];
+    entry6 = "pages/blog-post.svelte-9f3aac74.js";
+    js6 = ["pages/blog-post.svelte-9f3aac74.js", "chunks/vendor-c3e464d3.js", "chunks/HotelsIcon-3980de83.js"];
     css6 = [];
   }
 });
@@ -6790,16 +7139,22 @@ var VacationsHero, StarRating, Cancun, MexicoSubTabs, Vacations;
 var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
     init_index_32debfaa();
-    init_BlogPosts_24336865();
-    init_Subscribe_35711aae();
+    init_BlogPosts_83f28332();
+    init_Subscribe_8a503f02();
+    init_HotelsIcon_3f320ed3();
     init_OutClick_f79208e6();
     VacationsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl "}"><span class="${"flex"}">Search Vacation packages</span></h1>
-				<p class="${"prose text-sm sm:text-tiny max-w-sm"}">Looking for vacations? Save now with packages that include flight and vacations.
+      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"hidden sm:grid grid-cols-1 sm:grid-cols-12 h-44 lg:h-[400px]"}"><div class="${"hidden sm:block col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}">Vacation packages
+				</h1>
+				<p class="${"hidden sm:block prose text-sm sm:text-tiny lg:text-base whitespace-nowrap max-w-sm"}">Looking for vacations?
+					<br>Save now with packages that include flight and vacations.
 				</p></div></div>
 
-		<div class="${"hidden sm:flex col-span-6"}"><div class="${"relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg></div>
-			<div class="${"-mt-10"}"><img class="${"hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div></div></div>`;
+		<div class="${"hidden sm:flex col-span-6"}"><div class="${"relative pb-8 bg-white sm:pb-16 md:pb-20"}"><svg class="${"block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg></div>
+			<div class="${"-mt-40 lg:-mt-10"}"><img class="${"max-w-7xl object-cover sm:h-72 md:h-1/2 lg:block lg:w-full lg:h-full"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div></div>
+	<div class="${"sm:hidden grid grid-cols-1 h-28"}"><div class="${"flex sm:hidden col-span-1 justify-center"}"><h1 class="${"absolute z-[2] top-32 text-2xl tracking-tight font-extrabold text-white"}">Search Vacation packages
+			</h1>
+			<div class="${"-mt-6 bg-black"}"><img class="${"sm:hidden opacity-75 z-1 w-full h-auto max-w-7xl object-cover"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div></div></div>`;
     });
     StarRating = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex"}"><span class="${"inline-flex items-center px-2.5 py-0.5 rounded-full -ml-2.5 text-xs font-medium bg-yellow-300 text-black"}">5 star vacation
@@ -7025,8 +7380,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-607120b7.js";
-    js7 = ["pages/vacations.svelte-607120b7.js", "chunks/vendor-c3e464d3.js", "chunks/BlogPosts-33659968.js", "chunks/Subscribe-1e07e387.js"];
+    entry7 = "pages/vacations.svelte-0607bd5a.js";
+    js7 = ["pages/vacations.svelte-0607bd5a.js", "chunks/vendor-c3e464d3.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
     css7 = [];
   }
 });
@@ -7132,8 +7487,9 @@ var LottieFlights, FlightHero, FlightDeals, Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
     init_index_32debfaa();
-    init_BlogPosts_24336865();
-    init_Subscribe_35711aae();
+    init_BlogPosts_83f28332();
+    init_Subscribe_8a503f02();
+    init_HotelsIcon_3f320ed3();
     init_OutClick_f79208e6();
     LottieFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${``}`;
@@ -7142,11 +7498,14 @@ var init_flights_svelte = __esm({
       return `
 
 
-<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl "}"><span class="${"flex"}">Amazing Flight Deals</span></h1>
-				<p class="${"prose max-w-sm"}">More options, our best prices, less headaches. Secure your ticket with a small deposit.
+<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 h-44 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}">Amazing Flight Deals
+				</h1>
+				<p class="${"hidden sm:block prose max-w-sm"}">More options, our best prices, less headaches. Secure your ticket with a small deposit.
 				</p></div></div>
 
-		<div class="${"hidden sm:flex col-span-6"}"><div class="${"justify-self-end "}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div></div></div>`;
+		<div class="${"hidden sm:flex sm:col-span-6"}"><div class="${"justify-self-end "}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div>
+
+		<div class="${"sm:hidden absolute top-32 col-span-1"}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div></div>`;
     });
     FlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -7244,8 +7603,8 @@ var entry10, js10, css10;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_flights_svelte();
-    entry10 = "pages/flights.svelte-e8461068.js";
-    js10 = ["pages/flights.svelte-e8461068.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-33659968.js", "chunks/Subscribe-1e07e387.js"];
+    entry10 = "pages/flights.svelte-4d276cb6.js";
+    js10 = ["pages/flights.svelte-4d276cb6.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
     css10 = [];
   }
 });
@@ -7259,8 +7618,9 @@ var LottieHotels, HotelsHero, Toronto, CanadaSubTabs, Hotels;
 var init_hotels_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/hotels.svelte.js"() {
     init_index_32debfaa();
-    init_BlogPosts_24336865();
-    init_Subscribe_35711aae();
+    init_BlogPosts_83f28332();
+    init_Subscribe_8a503f02();
+    init_HotelsIcon_3f320ed3();
     init_OutClick_f79208e6();
     LottieHotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${``}
@@ -7269,7 +7629,7 @@ var init_hotels_svelte = __esm({
 `;
     });
     HotelsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xl "}"><span class="${"flex"}">Longing for a Getaway?</span></h1>
+      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Longing for a Getaway?</span></h1>
 				<p class="${"prose text-sm sm:text-tiny max-w-sm"}">You\u2019re in luck\u2014we offer top hotels wherever you\u2019re headed, from boutique and luxury to
 					beachfront accommodations and hotels with pools.
 				</p></div></div>
@@ -7366,7 +7726,7 @@ ${``}
 ${``}`;
     });
     Hotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `${validate_component(HotelsHero, "LottieHotels").$$render($$result, {}, {}, {})}
+      return `${validate_component(HotelsHero, "HotelsHero").$$render($$result, {}, {}, {})}
 ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
 
 <div class="${"mx-auto max-w-7xl p-6"}">
@@ -7432,8 +7792,8 @@ var entry11, js11, css11;
 var init__11 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_hotels_svelte();
-    entry11 = "pages/hotels.svelte-f8bf52b9.js";
-    js11 = ["pages/hotels.svelte-f8bf52b9.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-33659968.js", "chunks/Subscribe-1e07e387.js"];
+    entry11 = "pages/hotels.svelte-73d74fa4.js";
+    js11 = ["pages/hotels.svelte-73d74fa4.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
     css11 = [];
   }
 });
@@ -7447,12 +7807,12 @@ var BlogHeader, BlogTop, BlogCanada, PopularPostsCanada, BlogPosts2, Blog;
 var init_blog_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog.svelte.js"() {
     init_index_32debfaa();
-    init_Subscribe_35711aae();
+    init_Subscribe_8a503f02();
     BlogHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative pb-28 lg:pb-20 bg-gray-800"}"><div class="${"absolute inset-0"}"><img class="${"w-full h-full object-cover"}" src="${"images/blog/travel-guide.jpg"}" alt="${""}">
 		<div class="${"absolute inset-0 bg-gray-800 opacity-75 mix-blend-multiply"}" aria-hidden="${"true"}"></div></div>
-	<div class="${"relative max-w-7xl mx-auto py-12 px-4 sm:py-32 sm:px-6 lg:px-8 text-center"}"><h1 class="${"text-2xl text-center font-extrabold text-white md:text-4xl lg:text-5xl"}">Your Travel Guide to the World
+	<div class="${"relative max-w-7xl mx-auto py-12 px-4 sm:py-20 sm:px-6 lg:px-8 text-center"}"><h1 class="${"text-2xl text-center font-extrabold text-white md:text-4xl lg:text-5xl"}">Your Travel Guide to the World
 		</h1>
 		<p class="${"my-4 sm:my-6 text-tiny sm:text-xl text-gray-300"}">Discover holiday ideas, guides, and stories unique to your next getaway
 		</p>
@@ -7470,32 +7830,34 @@ var init_blog_svelte = __esm({
 		<div class="${"flex flex-col bg-white rounded-2xl shadow-xl"}"><div class="${"flex-shrink-0"}"><img class="${"rounded-t-lg h-48 w-full object-cover"}" src="${"images/blog/places-canada.jpg"}" alt="${""}"></div>
 			<div class="${"flex-1 bg-white px-6 pt-6 pb-4 flex flex-col justify-between"}"><div class="${"flex-1"}"><p class="${"text-sm font-medium text-pink-600"}">Canada</p>
 
-					<a href="${"/blog-post"}" class="${"block mt-2"}"><p class="${"text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize"}">The top 15 places to see in Canada and the things you can do
+					<a href="${"/blog-post"}" class="${"block mt-2"}"><p class="${"text-lg lg:text-lg font-semibold text-pblue-900 line-clamp-1 capitalize"}">The top 15 places to see in Canada and the things you can do
 						</p>
-						<p class="${"mt-3 text-tiny text-gray-500 line-clamp-3"}">Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
+						<p class="${"mt-3 prose text-tiny text-slate-700 line-clamp-2"}">Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
 							history, culture, nature and some Looking for travelling to Mexico tips? Mexico is a
 							colourful, vibrant country full of history, culture, nature and some
 						</p></a></div>
-				<div class="${"truncate mt-6 flex gap-2"}"><span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Ski Resort
+
+				<div class="${"mt-2 block overflow-hidden line-clamp-1"}"><span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Ski Resort
 					</span>
 					<span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Family Friendly
 					</span>
 					<span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Outdoors
 					</span>
 					<span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Equipment Rental
+					</span>
+					<span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Equipment Rental
 					</span></div>
-				<div class="${"mt-6 flex items-center"}"><div class="${"flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a></div>
-					<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-						<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-							<span aria-hidden="${"true"}">\xB7 </span></div></div></div></div>
+				<div class="${"mt-6 flex items-center"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p></div></div>
 
-			<div class="${"p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8"}"><a href="${"#"}" class="${"text-tiny font-medium text-slate-700 hover:text-slate-900"}">Book your trip to Canada<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></a></div></div>
+			<div class="${"p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8"}"><a href="${"#"}" class="${"text-sz font-bold text-slate-700 hover:text-slate-900"}">Explore Canada <span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></a></div></div>
 		
 		<div class="${"flex flex-col bg-white rounded-2xl shadow-xl"}"><div class="${"flex-shrink-0"}"><img class="${"rounded-t-lg h-48 w-full object-cover"}" src="${"images/blog/spring-break.jpg"}" alt="${""}"></div>
 			<div class="${"flex-1 bg-white px-6 pt-6 pb-4 flex flex-col justify-between"}"><div class="${"flex-1"}"><p class="${"text-sm font-medium text-pink-600"}">Spring Break</p>
-					<a href="${"/blog-post"}" class="${"block mt-2"}"><p class="${"text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize"}">Top Spring Break Destinations
+					<a href="${"/blog-post"}" class="${"block mt-2"}"><p class="${"text-lg lg:text-lg font-semibold text-pblue-900 line-clamp-1 capitalize"}">Top Spring Break Destinations
 						</p>
-						<p class="${"mt-3 text-tiny text-gray-500 line-clamp-3"}">Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
+						<p class="${"mt-3 prose text-tiny text-slate-700 line-clamp-2"}">Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
 							history, culture, nature and some Looking for travelling to Mexico tips? Mexico is a
 							colourful, vibrant country full of history, culture, nature and some
 						</p></a></div>
@@ -7507,19 +7869,18 @@ var init_blog_svelte = __esm({
 					</span>
 					<span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Roundtrip
 					</span></div>
-				<div class="${"mt-6 flex items-center"}"><div class="${"flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a></div>
-					<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-						<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-							<span aria-hidden="${"true"}">\xB7 </span></div></div></div></div>
+				<div class="${"mt-6 flex items-center"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p></div></div>
 
-			<div class="${"p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8"}"><a href="${"#"}" class="${"text-tiny font-medium text-slate-700 hover:text-slate-900"}">Book your spring break vacation<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></a></div></div>
+			<div class="${"p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8"}"><a href="${"#"}" class="${"text-sz font-bold text-slate-700 hover:text-slate-900"}">Plan your spring break<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></a></div></div>
 
 		
 		<div class="${"flex flex-col bg-white rounded-2xl shadow-xl"}"><div class="${"flex-shrink-0"}"><img class="${"rounded-t-lg h-48 w-full object-cover"}" src="${"images/blog/philippines.jpg"}" alt="${""}"></div>
 			<div class="${"flex-1 bg-white px-6 pt-6 pb-4 flex flex-col justify-between"}"><div class="${"flex-1"}"><p class="${"text-sm font-medium text-pink-600"}">Asia \u2022 Indonesia \u2022 Bali</p>
-					<a href="${"/blog-post"}" class="${"block mt-2"}"><p class="${"text-lg lg:text-lg font-semibold text-pblue-900 truncate capitalize"}">Why Bali is the next asia hot spot for tourists?
+					<a href="${"/blog-post"}" class="${"block mt-2"}"><p class="${"text-lg lg:text-lg font-semibold text-pblue-900 line-clamp-1 capitalize"}">Why Bali is the next asia hot spot for tourists?
 						</p>
-						<p class="${"mt-3 text-tiny text-gray-500 line-clamp-3"}">Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
+						<p class="${"mt-3 prose text-tiny text-slate-700 line-clamp-2"}">Looking for travelling to Mexico tips? Mexico is a colourful, vibrant country full of
 							history, culture, nature and some Looking for travelling to Mexico tips? Mexico is a
 							colourful, vibrant country full of history, culture, nature and some
 						</p></a></div>
@@ -7531,90 +7892,95 @@ var init_blog_svelte = __esm({
 					</span>
 					<span class="${"items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-600"}">Roundtrip
 					</span></div>
-				<div class="${"mt-6 flex items-center"}"><div class="${"flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a></div>
-					<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-						<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-							<span aria-hidden="${"true"}">\xB7 </span></div></div></div></div>
+				<div class="${"mt-6 flex items-center"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p></div></div>
 
-			<div class="${"p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8"}"><a href="${"#"}" class="${"text-tiny font-medium text-slate-700 hover:text-slate-900"}">Book your trip to the Philippines<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></a></div></div></div></section>`;
+			<div class="${"p-3 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8"}"><a href="${"#"}" class="${"text-sz font-bold text-slate-700 hover:text-slate-900"}">Book your trip to Bali<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></a></div></div></div></section>`;
     });
     BlogCanada = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 
 <div class="${"space-y-4 container xl:max-w-7xl mx-auto px-4 py-8 lg:py-8"}">
 	<div class="${"space-y-4 sm:space-y-10"}">
-		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
-					<img src="${"images/blog/blog-canada-1.jpg"}" alt="${"Featured Image of blog post"}">
+		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"/blog-post"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
+
+					<div class="${"hidden md:flex"}"><img src="${"images/blog/blog-canada-1.jpg"}" alt="${"Featured Image of blog post"}"></div>
+					<div class="${"flex md:hidden"}">
+						<img src="${"images/blog/blog-canada-1.jpg"}" alt="${"Featured Image of blog post"}" class="${"w-full object-cover aspect-[5/2]"}"></div>
 					<div class="${"flex items-center justify-center absolute inset-0 bg-pblue-700 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div></a></div>
-			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"javascript:void(0)"}" class="${"text-gray-800 hover:text-gray-600"}">8 Winter Getaways In Alberta
+			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"/blog-post"}" class="${"text-gray-800 hover:text-gray-600"}">8 Winter Getaways In Alberta
 					</a></h4>
 
-				<p class="${"text-tiny line-clamp-3"}">When it\u2019s time to beat the winter blues, a vacation can be just what you need. The
+				<p class="${"text-tiny line-clamp-2 prose text-slate-700"}">When it\u2019s time to beat the winter blues, a vacation can be just what you need. The
 					beautiful province of Alberta is the perfect place to swap everyday life for some time in
 					a snowy winter wonderland. If you like snuggling up in a cozy cabin or exploring the great
 					outdoors, Alberta has the snowy spot for you.
 				</p>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div>
-					<div class="${"place-self-end"}"><a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div>
+				<div class="${"mt-6 flex items-center justify-between"}">
+
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p>
+					<div class="${"place-self-end"}"><a href="${"/blog-post"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div>
 
 		
-		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
-					<img src="${"images/blog/blog-canada-2.jpg"}" alt="${"Featured Image of blog post"}">
+		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"/blog-post"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
+					<div class="${"hidden md:flex"}"><img src="${"images/blog/blog-canada-2.jpg"}" alt="${"Featured Image of blog post"}"></div>
+					<div class="${"flex md:hidden"}">
+						<img src="${"images/blog/blog-canada-2.jpg"}" alt="${"Featured Image of blog post"}" class="${"w-full object-cover aspect-[5/2]"}"></div>
 					<div class="${"flex items-center justify-center absolute inset-0 bg-pblue-700 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div></a></div>
-			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"javascript:void(0)"}" class="${"text-gray-800 hover:text-gray-600"}">10 Downtown Honolulu Restaurants
+			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"/blog-post"}" class="${"text-gray-800 hover:text-gray-600"}">10 Downtown Honolulu Restaurants
 					</a></h4>
 
-				<p class="${"text-tiny line-clamp-3"}">Say aloha to some delicious dining experiences when you arrive in sunny Honolulu. From
+				<p class="${"text-tiny line-clamp-2 prose text-slate-700"}">Say aloha to some delicious dining experiences when you arrive in sunny Honolulu. From
 					fine dining to cheap eats, international to traditional Hawaiian dishes, you can find a
 					huge array of options for brunch, lunch and dinner in the downtown area of Hawaii. If only
 					there was time to try all of the downtown Honolulu restaurants. Your meals will be sweet
 					and savoury memories of your Hawaiian vacation with flavours that are sure to please.
 				</p>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div>
-					<div class="${"place-self-end"}"><a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div>
+				<div class="${"mt-6 flex items-center justify-between"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p>
+					<div class="${"place-self-end"}"><a href="${"/blog-post"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div>
 
 		
-		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
-					<img src="${"images/blog/blog-canada-3.jpg"}" alt="${"Featured Image of blog post"}">
+		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"/blog-post"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
+					<div class="${"hidden md:flex"}"><img src="${"images/blog/blog-canada-3.jpg"}" alt="${"Featured Image of blog post"}"></div>
+					<div class="${"flex md:hidden"}">
+						<img src="${"images/blog/blog-canada-3.jpg"}" alt="${"Featured Image of blog post"}" class="${"w-full object-cover aspect-[5/2]"}"></div>
 					<div class="${"flex items-center justify-center absolute inset-0 bg-pblue-700 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div></a></div>
-			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"javascript:void(0)"}" class="${"text-gray-800 hover:text-gray-600"}">8 Unique Winter Getaways Near Toronto
+			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"/blog-post"}" class="${"text-gray-800 hover:text-gray-600"}">8 Unique Winter Getaways Near Toronto
 					</a></h4>
 
-				<p class="${"text-tiny line-clamp-3"}">Sometimes it\u2019s nice to escape the city of Toronto to explore some of the nearby areas. In
+				<p class="${"text-tiny line-clamp-2 prose text-slate-700"}">Sometimes it\u2019s nice to escape the city of Toronto to explore some of the nearby areas. In
 					your backyard, there are many fabulous places to visit without having to catch a long
 					flight or take a week off work. So for a mini getaway to keep you going between more
 					extended vacations, here are some destinations to note. We hope this list of eight unique
 					winter getaways near Toronto inspires you to take a break.
 				</p>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div>
-					<div class="${"place-self-end"}"><a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div>
+				<div class="${"mt-6 flex items-center justify-between"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p>
+					<div class="${"place-self-end"}"><a href="${"/blog-post"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div>
 
 		
-		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
-					<img src="${"images/blog/blog-canada-4.jpg"}" alt="${"Featured Image of blog post"}">
+		<div class="${"flex flex-col md:flex-row items-center bg-white rounded-lg overflow-hidden shadow-sm border"}"><div class="${"lg:w-[36%]"}"><a href="${"/blog-post"}" class="${"block relative group rounded-none lg:rounded-none overflow-hidden"}">
+					<div class="${"hidden md:flex"}"><img src="${"images/blog/blog-canada-4.jpg"}" alt="${"Featured Image of blog post"}"></div>
+					<div class="${"flex md:hidden"}">
+						<img src="${"images/blog/blog-canada-4.jpg"}" alt="${"Featured Image of blog post"}" class="${"w-full object-cover aspect-[5/2]"}"></div>
 					<div class="${"flex items-center justify-center absolute inset-0 bg-pblue-700 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div></a></div>
-			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"javascript:void(0)"}" class="${"text-gray-800 hover:text-gray-600"}">Top 14 Free Things To Do in Toronto
+			<div class="${"w-full lg:w-[64%] p-6 lg:py-6 lg:px-8"}"><h4 class="${"font-bold text-lg sm:text-xl mb-2 line-clamp-1"}"><a href="${"/blog-post"}" class="${"text-gray-800 hover:text-gray-600"}">Top 14 Free Things To Do in Toronto
 					</a></h4>
 
-				<p class="${"text-tiny line-clamp-3"}">As one of the top tourist destinations in Canada, Toronto is a fairly expensive city.
+				<p class="${"text-tiny line-clamp-2 prose text-slate-700"}">As one of the top tourist destinations in Canada, Toronto is a fairly expensive city.
 					Whether you\u2019re a local or are planning a family vacation in Ontario\u2019s capital, it can be
 					daunting to figure out how to have fun without breaking the bank. Luckily, our team at
 					Trip Support has got you covered.
 				</p>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div>
-					<div class="${"place-self-end"}"><a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div></div>
+				<div class="${"mt-6 flex items-center justify-between"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p>
+					<div class="${"place-self-end"}"><a href="${"/blog-post"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 rounded-full md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div></div></div></div></div>
 	</div>`;
     });
     PopularPostsCanada = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7625,11 +7991,10 @@ var init_blog_svelte = __esm({
 		<div class="${"flex flex-col rounded-lg shadow"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-t-lg rounded-b-none overflow-hidden"}"><div class="${"flex items-center justify-center absolute inset-0 bg-rose-600 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div>
 				
 				<div class="${"aspect-w-2 aspect-h-1"}"><img src="${"images/blog/blog-bg.jpg"}" alt="${"Featured Image of blog post"}" class="${"object-cover"}"></div></a>
-			<div class="${"p-4"}"><h4 class="${"font-bold text-md grow"}"><a href="${"javascript:void(0)"}" class="${"text-slate-800 hover:text-rose-600 line-clamp-2"}">The 10 best hiking trails in the world you should put in your bucket list</a></h4>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div></div></div>
+			<div class="${"p-4"}"><h4 class="${"font-bold text-tb grow"}"><a href="${"javascript:void(0)"}" class="${"text-slate-800 hover:text-rose-600 line-clamp-2"}">The 10 best hiking trails in the world you should put in your bucket list</a></h4>
+				<div class="${"mt-6 flex items-center justify-between"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p></div></div>
 
 			<a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div>
 		
@@ -7638,11 +8003,10 @@ var init_blog_svelte = __esm({
 		<div class="${"flex flex-col rounded-lg shadow"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-t-lg rounded-b-none overflow-hidden"}"><div class="${"flex items-center justify-center absolute inset-0 bg-rose-600 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div>
 				<div class="${"aspect-w-2 aspect-h-1"}">
 					<img src="${"images/blog/philippines.jpg"}" alt="${"Featured Image of blog post"}"></div></a>
-			<div class="${"p-4"}"><h4 class="${"font-bold text-md grow"}"><a href="${"javascript:void(0)"}" class="${"text-slate-800 hover:text-rose-600 line-clamp-2"}">The 10 best hiking trails in the world you should put in your bucket list</a></h4>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div></div></div>
+			<div class="${"p-4"}"><h4 class="${"font-bold text-tb grow"}"><a href="${"javascript:void(0)"}" class="${"text-slate-800 hover:text-rose-600 line-clamp-2"}">The 10 best hiking trails in the world you should put in your bucket list</a></h4>
+				<div class="${"mt-6 flex items-center justify-between"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p></div></div>
 
 			<a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div>
 		
@@ -7651,11 +8015,10 @@ var init_blog_svelte = __esm({
 		<div class="${"flex flex-col rounded-lg shadow"}"><a href="${"javascript:void(0)"}" class="${"block relative group rounded-t-lg rounded-b-none overflow-hidden"}"><div class="${"flex items-center justify-center absolute inset-0 bg-rose-600 bg-opacity-60 opacity-0 transition ease-out duration-150 group-hover:opacity-100"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></div>
 				<div class="${"aspect-w-2 aspect-h-1"}">
 					<img src="${"images/blog/spring-break.jpg"}" alt="${"Featured Image of blog post"}"></div></a>
-			<div class="${"p-4"}"><h4 class="${"font-bold text-md grow"}"><a href="${"javascript:void(0)"}" class="${"text-slate-800 hover:text-rose-600 line-clamp-2"}">The 10 best hiking trails in the world you should put in your bucket list</a></h4>
-				<div class="${"mt-6 flex items-center justify-between"}"><div class="${"inline-flex flex-shrink-0"}"><a href="${"#"}"><img class="${"h-10 w-10 rounded-full"}" src="${"images/blog/shefali.jpg"}" alt="${"Roel Aufderehar"}"></a>
-						<div class="${"ml-3"}"><p class="${"text-sm font-medium text-gray-900"}"><a href="${"#"}" class="${"hover:underline"}">Shefali </a></p>
-							<div class="${"flex space-x-1 text-xs text-gray-500"}"><time datetime="${"2020-03-16"}">Mar 16, 2020 </time>
-								<span aria-hidden="${"true"}">\xB7 </span></div></div></div></div></div>
+			<div class="${"p-4"}"><h4 class="${"font-bold text-tb grow"}"><a href="${"javascript:void(0)"}" class="${"text-slate-800 hover:text-rose-600 line-clamp-2"}">The 10 best hiking trails in the world you should put in your bucket list</a></h4>
+				<div class="${"mt-6 flex items-center justify-between"}">
+					<p class="${"text-gray-900 text-xz"}"><span class="${"font-semibold"}">Shefali</span> on
+						<span class="${"font-semibold"}">March 3, 2021</span></p></div></div>
 
 			<a href="${"#"}" class="${"text-sm font-medium text-slate-700 hover:text-slate-900"}"><div class="${"p-2 bg-gray-100 md:px-8"}">Read more<span aria-hidden="${"true"}" class="${"ml-1"}">\u2192</span></div></a></div>
 		</div></div>
@@ -7667,7 +8030,7 @@ var init_blog_svelte = __esm({
 								</h1></div>
 						<p class="${"my-2 text-md text-gray-500 sm:text-md sm:max-w-prose md:text-md lg:mx-0"}">Browse blog posts by category
 						</p></div></section>
-				<div class="${"flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4 px-4 whitespace-nowrap overflow-x-scroll overflow-hidden"}"><button type="${"button"}" class="${"my-2 sm:my-0 inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 " + escape("text-white bg-pblue-800 border-white shadow-none")}">Canada
+				<div class="${"flex-1 sm:flex space-x-0 sm:space-x-6 my-2 sm:my-4 px-4 py-2 whitespace-nowrap overflow-x-scroll overflow-hidden"}"><button type="${"button"}" class="${"inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 " + escape("text-white bg-pblue-800 border-white shadow-none")}">Canada
 					</button>
 
 					<button type="${"button"}" class="${"inline-flex justify-center items-center rounded-full border font-semibold focus:outline-none px-3 py-1 text-xs focus:ring focus:ring-gray-500 focus:ring-opacity-25 " + escape("bg-white text-pblue-800 hover:bg-pblue-800 hover:text-white")}">USA
@@ -7721,8 +8084,8 @@ var entry12, js12, css12;
 var init__12 = __esm({
   ".svelte-kit/output/server/nodes/11.js"() {
     init_blog_svelte();
-    entry12 = "pages/blog.svelte-3aa59829.js";
-    js12 = ["pages/blog.svelte-3aa59829.js", "chunks/vendor-c3e464d3.js", "chunks/Subscribe-1e07e387.js"];
+    entry12 = "pages/blog.svelte-203e4ca5.js";
+    js12 = ["pages/blog.svelte-203e4ca5.js", "chunks/vendor-c3e464d3.js", "chunks/Subscribe-d8087278.js"];
     css12 = [];
   }
 });
@@ -9755,10 +10118,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-2eacd623.js", "js": ["start-2eacd623.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-2f41512f.js", "js": ["start-2f41512f.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -5419,7 +5419,7 @@ var init_install_fetch = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-32debfaa.js
+// .svelte-kit/output/server/chunks/index-c9c8dd9a.js
 function noop2() {
 }
 function run(fn) {
@@ -5604,8 +5604,8 @@ function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key2) => style_object[key2]).map((key2) => `${key2}: ${style_object[key2]};`).join(" ");
 }
 var current_component, boolean_attributes, invalid_attribute_name_character, escaped, missing_component, on_destroy;
-var init_index_32debfaa = __esm({
-  ".svelte-kit/output/server/chunks/index-32debfaa.js"() {
+var init_index_c9c8dd9a = __esm({
+  ".svelte-kit/output/server/chunks/index-c9c8dd9a.js"() {
     Promise.resolve();
     boolean_attributes = /* @__PURE__ */ new Set([
       "allowfullscreen",
@@ -5647,11 +5647,52 @@ var init_index_32debfaa = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/OutClick-f79208e6.js
-var Icon, OutClick;
-var init_OutClick_f79208e6 = __esm({
-  ".svelte-kit/output/server/chunks/OutClick-f79208e6.js"() {
-    init_index_32debfaa();
+// .svelte-kit/output/server/chunks/index-2043b91f.js
+function writable2(value, start = noop2) {
+  let stop;
+  const subscribers = /* @__PURE__ */ new Set();
+  function set(new_value) {
+    if (safe_not_equal(value, new_value)) {
+      value = new_value;
+      if (stop) {
+        const run_queue = !subscriber_queue2.length;
+        for (const subscriber of subscribers) {
+          subscriber[1]();
+          subscriber_queue2.push(subscriber, value);
+        }
+        if (run_queue) {
+          for (let i2 = 0; i2 < subscriber_queue2.length; i2 += 2) {
+            subscriber_queue2[i2][0](subscriber_queue2[i2 + 1]);
+          }
+          subscriber_queue2.length = 0;
+        }
+      }
+    }
+  }
+  function update(fn) {
+    set(fn(value));
+  }
+  function subscribe2(run2, invalidate = noop2) {
+    const subscriber = [run2, invalidate];
+    subscribers.add(subscriber);
+    if (subscribers.size === 1) {
+      stop = start(set) || noop2;
+    }
+    run2(value);
+    return () => {
+      subscribers.delete(subscriber);
+      if (subscribers.size === 0) {
+        stop();
+        stop = null;
+      }
+    };
+  }
+  return { set, update, subscribe: subscribe2 };
+}
+var Icon, OutClick, subscriber_queue2;
+var init_index_2043b91f = __esm({
+  ".svelte-kit/output/server/chunks/index-2043b91f.js"() {
+    init_index_c9c8dd9a();
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $$restProps = compute_rest_props($$props, ["src", "size", "solid", "class"]);
       let { src = [] } = $$props;
@@ -5727,6 +5768,7 @@ var init_OutClick_f79208e6 = __esm({
 
 <div class="${"outclick " + escape(className)}"${add_attribute("style", !className && !useWrapper ? "display: contents" : "", 0)}${add_attribute("this", wrapper, 0)}>${slots.default ? slots.default({}) : ``}</div>`;
     });
+    subscriber_queue2 = [];
   }
 });
 
@@ -5738,8 +5780,8 @@ __export(layout_svelte_exports, {
 var Exclamation, AlertCovid, MobMenuBtn, RightNavMenuItems, ProfileDropdown, Signup, MainNav, Header, FooterLogos, Copyright, FooterLinks, Footer, _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
-    init_index_32debfaa();
-    init_OutClick_f79208e6();
+    init_index_c9c8dd9a();
+    init_index_2043b91f();
     Exclamation = [[{ "fill-rule": "evenodd", "d": "M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" }]];
     AlertCovid = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<nav aria-label="${"Top"}" class="${"relative z-[1]"}">
@@ -5776,8 +5818,27 @@ var init_layout_svelte = __esm({
       })}`;
     });
     RightNavMenuItems = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let btnDropdownRef;
-      let popoverDropdownRef;
+      let $signedInMenu, $$unsubscribe_signedInMenu;
+      let $showSignin, $$unsubscribe_showSignin;
+      let $showForgotPass, $$unsubscribe_showForgotPass;
+      let $showCreateAccount, $$unsubscribe_showCreateAccount;
+      function useToggle(initialState) {
+        const { subscribe: subscribe2, update } = writable2(initialState);
+        return { subscribe: subscribe2, toggle: () => update((x2) => !x2) };
+      }
+      const showSignin = useToggle(false);
+      $$unsubscribe_showSignin = subscribe(showSignin, (value) => $showSignin = value);
+      const showForgotPass = useToggle(false);
+      $$unsubscribe_showForgotPass = subscribe(showForgotPass, (value) => $showForgotPass = value);
+      const showCreateAccount = useToggle(false);
+      $$unsubscribe_showCreateAccount = subscribe(showCreateAccount, (value) => $showCreateAccount = value);
+      const signedIn = useToggle(false);
+      const signedInMenu = useToggle(false);
+      $$unsubscribe_signedInMenu = subscribe(signedInMenu, (value) => $signedInMenu = value);
+      $$unsubscribe_signedInMenu();
+      $$unsubscribe_showSignin();
+      $$unsubscribe_showForgotPass();
+      $$unsubscribe_showCreateAccount();
       return `
 <div class="${"flex-shrink-0 flex"}"><a href="${"javascript:void(0)"}" class="${"text-slate-900 hover:text-rose-600 flex items-center"}"><img src="${"https://tailwindui.com/img/flags/flag-canada.svg"}" alt="${""}" class="${"w-5 h-auto block flex-shrink-0"}">
 		<span class="${"ml-3 block text-tiny font-medium"}">Francais </span>
@@ -5790,16 +5851,23 @@ var init_layout_svelte = __esm({
 		<span class="${"sr-only"}">contact us</span></a></div>
 <span class="${"h-6 w-px bg-gray-200"}" aria-hidden="${"true"}"></span>
 <div class="${"hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center"}">
-	<button type="${"button"}" class="${"hidden bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}" data-collapse-toggle="${"user-profile"}"><span class="${"sr-only"}">User login</span>
-		
-		<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"}"></path></svg></button>
 	
-	${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+	<button type="${"button"}" class="${"bg-white p-1 rounded-full text-gray-700 hover:text-gray-600 focus:outline-none "}" data-collapse-toggle="${"user-profile"}"><span class="${"sr-only"}">User login</span>
+		
+		<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-7 w-7"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"}"></path></svg></button>
+	${signedIn ? `${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
         default: () => {
-          return `
-		<div class="${"mx-2 relative"}"><div><button type="${"button"}" class="${"bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 ease-linear transition-all duration-150"}" aria-expanded="${"false"}" aria-haspopup="${"true"}" data-collapse-toggle="${"user-profile"}"${add_attribute("this", btnDropdownRef, 0)}><span class="${"sr-only"}">Open user menu</span>
-					<img class="${"h-8 w-8 rounded-full"}" src="${"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"}" alt="${""}"></button></div>
-			<div class="${"bg-white text-base list-none text-left rounded shadow-lg w-96 " + escape("hidden")}"${add_attribute("this", popoverDropdownRef, 0)}><form class="${"space-y-4 p-6"}" action="${"#"}" method="${"POST"}"><div><label for="${"email"}" class="${"block text-sm font-medium text-gray-700"}">Email address
+          return `<div class="${"mx-2 relative"}"><div><button type="${"button"}" class="${"bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 ease-linear transition-all duration-150"}"><span class="${"sr-only"}">Open user menu</span>
+						<img class="${"h-8 w-8 rounded-full"}" src="${"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"}" alt="${""}"></button></div>
+				${$signedInMenu ? `<div class="${"bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[44px] -translate-x-[348px]"}"><div class="${"pt-2 pb-3 space-y-1"}">
+							<a href="${"flights"}" class="${"bg-pblue-50 border-rose-600 text-pblue-900 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Profile</a>
+							<a href="${"vacations"}" class="${"border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Settings</a>
+							<a href="${"vacations"}" class="${"border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Sign out</a></div></div>` : ``}</div>`;
+        }
+      })}` : ``}
+	${$showSignin ? `${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="${"bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[58px] -translate-x-[348px]"}"><form class="${"space-y-4 p-6"}" action="${"#"}" method="${"POST"}"><div><label for="${"email"}" class="${"block text-sm font-medium text-gray-700"}">Email address
 						</label>
 						<div class="${"mt-1"}"><input id="${"email"}" name="${"email"}" type="${"email"}" autocomplete="${"off"}" required class="${"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"}"></div></div>
 
@@ -5810,12 +5878,48 @@ var init_layout_svelte = __esm({
 							<label for="${"remember-me"}" class="${"ml-2 block text-sm text-gray-900"}">Remember me
 							</label></div>
 
-						<div class="${"text-sm"}"><a href="${"#"}" class="${"font-medium text-pblue-600 hover:text-pblue-500"}">Forgot your password?
-							</a></div></div>
+						<button class="${"text-sm"}"><a href="${"#"}" class="${"font-medium text-pblue-600 hover:text-pblue-500"}">Forgot your password?
+							</a></button></div>
 
-					<div><button type="${"submit"}" class="${"w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">Sign in</button></div></form></div></div>`;
+					<div><button type="${"submit"}" class="${"w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">Sign in</button></div>
+					
+					<div class="${"relative "}"><div class="${"absolute inset-0 flex items-center"}" aria-hidden="${"true"}"><div class="${"w-full border-t border-gray-300"}"></div></div>
+						<div class="${"relative flex justify-center"}"><span class="${"px-2 bg-white text-sm text-gray-500"}">Don&#39;t have an account? </span></div></div>
+					<div><button type="${"submit"}" class="${"w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"}">Create Account</button></div></form></div>`;
         }
-      })}</div>`;
+      })}` : ``}
+	${$showForgotPass ? `${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="${"bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[58px] -translate-x-[348px] pt-3 pb-6"}"><div class="${"px-6 py-2"}"><h2 class="${"font-bold "}">Forgot your password?</h2>
+					<p class="${"text-sz"}">Please enter your email below</p></div>
+				<form class="${"space-y-4 px-6"}" action="${"#"}" method="${"POST"}"><div><label for="${"email"}" class="${"block text-sm font-medium text-gray-700"}">Email address
+						</label>
+						<div class="${"mt-1"}"><input id="${"email"}" name="${"email"}" type="${"email"}" autocomplete="${"off"}" required class="${"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"}"></div></div>
+
+					<div><button type="${"submit"}" class="${"w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">Reset Password</button></div></form></div>`;
+        }
+      })}` : ``}
+	${$showCreateAccount ? `${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `<div class="${"bg-white text-base list-none text-left rounded shadow-lg w-96 absolute top-[58px] -translate-x-[348px] pt-3 pb-6"}"><div class="${"px-6 py-2"}"><h2 class="${"font-bold "}">Create an account</h2>
+					<p class="${"text-sz"}">Please fill in the form below</p></div>
+				<form class="${"space-y-4 px-6"}" action="${"#"}" method="${"POST"}"><div><label for="${"first_name"}" class="${"block text-sm font-medium text-gray-700"}">First Name
+						</label>
+						<div class="${"mt-1"}"><input id="${"first_name"}" name="${"first_name"}" type="${"text"}" autocomplete="${"off"}" required class="${"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"}"></div></div>
+					<div><label for="${"last_name"}" class="${"block text-sm font-medium text-gray-700"}">Last Name
+						</label>
+						<div class="${"mt-1"}"><input id="${"last_name"}" name="${"last_name"}" type="${"text"}" autocomplete="${"off"}" required class="${"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"}"></div></div>
+					<div><label for="${"email"}" class="${"block text-sm font-medium text-gray-700"}">Email address
+						</label>
+						<div class="${"mt-1"}"><input id="${"email"}" name="${"email"}" type="${"email"}" autocomplete="${"off"}" required class="${"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"}"></div></div>
+					<div><label for="${"password"}" class="${"block text-sm font-medium text-gray-700"}">Password </label>
+						<div class="${"mt-1"}"><input id="${"password"}" name="${"password"}" type="${"password"}" autocomplete="${"off"}" required class="${"appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-pblue-500 focus:border-pblue-500 sm:text-sm"}"></div></div>
+					<div><button type="${"submit"}" class="${"w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500"}">Create Account</button></div>
+					<div class="${"relative "}"><div class="${"absolute inset-0 flex items-center"}" aria-hidden="${"true"}"><div class="${"w-full border-t border-gray-300"}"></div></div>
+						<div class="${"relative flex justify-center"}"><span class="${"px-2 bg-white text-sm text-gray-500"}">Already have an account?</span></div></div>
+					<div><button type="${"submit"}" class="${"w-full flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-pblue-800 hover:bg-pblue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500"}">Sign in</button></div></form></div>`;
+        }
+      })}` : ``}</div>`;
     });
     ProfileDropdown = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let btnDropdownRef;
@@ -5825,7 +5929,7 @@ var init_layout_svelte = __esm({
           return `
 	<div class="${"mx-2 relative "}"><div><button type="${"button"}" class="${"bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 ease-linear transition-all duration-150"}" aria-expanded="${"false"}" aria-haspopup="${"true"}" data-collapse-toggle="${"user-profile"}"${add_attribute("this", btnDropdownRef, 0)}><span class="${"sr-only"}">Open user menu</span>
 				<img class="${"h-8 w-8 rounded-full"}" src="${"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"}" alt="${""}"></button></div>
-		<div class="${"bg-white text-base z-50 py-2 list-none w-[100vw] rounded shadow-lg " + escape("hidden")}"${add_attribute("this", popoverDropdownRef, 0)}><a href="${"flights"}" class="${"bg-pblue-50 border-rose-600 text-pblue-900 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Profile</a>
+		<div class="${"bg-white text-base z-[5] py-2 list-none w-[100vw] rounded shadow-lg " + escape("hidden")}"${add_attribute("this", popoverDropdownRef, 0)}><a href="${"flights"}" class="${"bg-pblue-50 border-rose-600 text-pblue-900 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Profile</a>
 			<a href="${"vacations"}" class="${"border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Settings</a>
 			<a href="${"vacations"}" class="${"border-transparent text-slate-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-tiny font-medium sm:pl-5 sm:pr-6"}">Sign out</a></div></div>`;
         }
@@ -5984,9 +6088,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-173753ac.js";
-    js = ["pages/__layout.svelte-173753ac.js", "chunks/vendor-c3e464d3.js"];
-    css = ["assets/pages/__layout.svelte-e2b4a5ae.css"];
+    entry = "pages/__layout.svelte-ebcc9bd0.js";
+    js = ["pages/__layout.svelte-ebcc9bd0.js", "chunks/vendor-aa7f3673.js"];
+    css = ["assets/pages/__layout.svelte-fbd457c1.css"];
   }
 });
 
@@ -6002,7 +6106,7 @@ function load({ error: error2, status }) {
 var Error2;
 var init_error_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/error.svelte.js"() {
-    init_index_32debfaa();
+    init_index_c9c8dd9a();
     Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
       let { error: error2 } = $$props;
@@ -6034,17 +6138,17 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-738f8c3f.js";
-    js2 = ["error.svelte-738f8c3f.js", "chunks/vendor-c3e464d3.js"];
+    entry2 = "error.svelte-d1de1579.js";
+    js2 = ["error.svelte-d1de1579.js", "chunks/vendor-aa7f3673.js"];
     css2 = [];
   }
 });
 
-// .svelte-kit/output/server/chunks/HotelsIcon-3f320ed3.js
+// .svelte-kit/output/server/chunks/HotelsIcon-bcf3d6d6.js
 var FlightsIcon, VacationsIcon, HotelsIcon;
-var init_HotelsIcon_3f320ed3 = __esm({
-  ".svelte-kit/output/server/chunks/HotelsIcon-3f320ed3.js"() {
-    init_index_32debfaa();
+var init_HotelsIcon_bcf3d6d6 = __esm({
+  ".svelte-kit/output/server/chunks/HotelsIcon-bcf3d6d6.js"() {
+    init_index_c9c8dd9a();
     FlightsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.64 14.26l2.86.95 4.02-4.02-8-4.59 1.16-1.16c.1-.1.26-.14.41-.1l9.3 2.98c1.58-1.58 3.15-3.2 4.77-4.75.31-.33.7-.58 1.16-.73.45-.16.87-.27 1.25-.34.55-.05.98.4.93.93-.07.38-.18.8-.34 1.25-.15.46-.4.85-.73 1.16l-4.75 4.78 2.97 9.29c.05.15 0 .29-.1.41l-1.17 1.16-4.57-8.02L8.8 17.5l.95 2.84L8.6 21.5l-2.48-3.62L2.5 15.4l1.14-1.14z"}" clip-rule="${"evenodd"}"></path></svg>`;
     });
@@ -6057,54 +6161,13 @@ var init_HotelsIcon_3f320ed3 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BlogPosts-83f28332.js
-function writable2(value, start = noop2) {
-  let stop;
-  const subscribers = /* @__PURE__ */ new Set();
-  function set(new_value) {
-    if (safe_not_equal(value, new_value)) {
-      value = new_value;
-      if (stop) {
-        const run_queue = !subscriber_queue2.length;
-        for (const subscriber of subscribers) {
-          subscriber[1]();
-          subscriber_queue2.push(subscriber, value);
-        }
-        if (run_queue) {
-          for (let i2 = 0; i2 < subscriber_queue2.length; i2 += 2) {
-            subscriber_queue2[i2][0](subscriber_queue2[i2 + 1]);
-          }
-          subscriber_queue2.length = 0;
-        }
-      }
-    }
-  }
-  function update(fn) {
-    set(fn(value));
-  }
-  function subscribe2(run2, invalidate = noop2) {
-    const subscriber = [run2, invalidate];
-    subscribers.add(subscriber);
-    if (subscribers.size === 1) {
-      stop = start(set) || noop2;
-    }
-    run2(value);
-    return () => {
-      subscribers.delete(subscriber);
-      if (subscribers.size === 0) {
-        stop();
-        stop = null;
-      }
-    };
-  }
-  return { set, update, subscribe: subscribe2 };
-}
-var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, subscriber_queue2, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget, BlogPosts;
-var init_BlogPosts_83f28332 = __esm({
-  ".svelte-kit/output/server/chunks/BlogPosts-83f28332.js"() {
-    init_index_32debfaa();
-    init_HotelsIcon_3f320ed3();
-    init_OutClick_f79208e6();
+// .svelte-kit/output/server/chunks/BlogPosts-b1f1233d.js
+var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget, BlogPosts;
+var init_BlogPosts_b1f1233d = __esm({
+  ".svelte-kit/output/server/chunks/BlogPosts-b1f1233d.js"() {
+    init_index_c9c8dd9a();
+    init_HotelsIcon_bcf3d6d6();
+    init_index_2043b91f();
     SwitchHorizontal = [[{ "d": "M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" }]];
     Cabin = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let btnDropdownRef;
@@ -6235,7 +6298,6 @@ ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
 		<li class="${"parent hover:bg-gray-50 p-2"}"><button class="${"flex mx-2 items-center text-sm text-pblue font-bold bg-white py-1 bg-transparent flex-nowrap justify-start text-left "}">${validate_component(PlaneSearch, "PlaneSearch").$$render($$result, {}, {}, {})}
 				<div class="${"text-pblue-900 flex-wrap ml-[0.5rem] justify-start"}"><div class="${"truncate"}"><span>Search for \u201Cyyz\u201D</span></div></div></button></li></ul></div>`;
     });
-    subscriber_queue2 = [];
     RoundTrip = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $searchFrom, $$unsubscribe_searchFrom;
       let $searchTo, $$unsubscribe_searchTo;
@@ -6419,7 +6481,7 @@ ${``}
 ${``}`;
     });
     BookingWidget = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<section class="${"relative max-w-7xl z-[2] -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-6 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}">
+      return `<section class="${"relative max-w-7xl -mt-5 mx-auto xl:-mt-32 lg:-mt-28 md:-mt-8 px-0 md:px-4 pb-12 lg:px-6 lg:mb-6"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white shadow-xl"}">
 
 		
 		<div class="${"py-2 px-5 lg:px-6 w-full"}"><nav class="${"flex items-center sm:justify-start justify-between border-b border-gray-200"}"><button type="${"button"}" class="${"text-tiny px-3 md:px-5 -mb-px flex items-center space-x-2 py-4 capitalize " + escape("text-pblue-800 border-b-2 border-pblue-800 font-bold")}">${validate_component(FlightsIcon, "FlightsIcon").$$render($$result, {}, {}, {})}
@@ -6488,11 +6550,11 @@ ${``}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/Subscribe-8a503f02.js
+// .svelte-kit/output/server/chunks/Subscribe-20d5a66c.js
 var Subscribe;
-var init_Subscribe_8a503f02 = __esm({
-  ".svelte-kit/output/server/chunks/Subscribe-8a503f02.js"() {
-    init_index_32debfaa();
+var init_Subscribe_20d5a66c = __esm({
+  ".svelte-kit/output/server/chunks/Subscribe-20d5a66c.js"() {
+    init_index_c9c8dd9a();
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative my-3 py-12 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[1] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
@@ -6524,11 +6586,11 @@ __export(index_svelte_exports, {
 var Hero, PopularFlightDeals, VacationDestinations, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
-    init_index_32debfaa();
-    init_BlogPosts_83f28332();
-    init_Subscribe_8a503f02();
-    init_HotelsIcon_3f320ed3();
-    init_OutClick_f79208e6();
+    init_index_c9c8dd9a();
+    init_BlogPosts_b1f1233d();
+    init_Subscribe_20d5a66c();
+    init_HotelsIcon_bcf3d6d6();
+    init_index_2043b91f();
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Book Now Pay Later</span></h1>
 
@@ -6689,8 +6751,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-ddf74c88.js";
-    js3 = ["pages/index.svelte-ddf74c88.js", "chunks/vendor-c3e464d3.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
+    entry3 = "pages/index.svelte-6951d186.js";
+    js3 = ["pages/index.svelte-6951d186.js", "chunks/vendor-aa7f3673.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
     css3 = [];
   }
 });
@@ -6703,7 +6765,7 @@ __export(book_now_pay_later_svelte_exports, {
 var Book_now_pay_later;
 var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
-    init_index_32debfaa();
+    init_index_c9c8dd9a();
     Book_now_pay_later = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
@@ -6722,8 +6784,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-18a1d31f.js";
-    js4 = ["pages/book-now-pay-later.svelte-18a1d31f.js", "chunks/vendor-c3e464d3.js"];
+    entry4 = "pages/book-now-pay-later.svelte-99514f30.js";
+    js4 = ["pages/book-now-pay-later.svelte-99514f30.js", "chunks/vendor-aa7f3673.js"];
     css4 = [];
   }
 });
@@ -6736,7 +6798,7 @@ __export(flight_hotel_svelte_exports, {
 var Flight_hotel;
 var init_flight_hotel_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flight-hotel.svelte.js"() {
-    init_index_32debfaa();
+    init_index_c9c8dd9a();
     Flight_hotel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
@@ -6755,8 +6817,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-3fad8014.js";
-    js5 = ["pages/flight-hotel.svelte-3fad8014.js", "chunks/vendor-c3e464d3.js"];
+    entry5 = "pages/flight-hotel.svelte-5a90a5bc.js";
+    js5 = ["pages/flight-hotel.svelte-5a90a5bc.js", "chunks/vendor-aa7f3673.js"];
     css5 = [];
   }
 });
@@ -6769,55 +6831,33 @@ __export(blog_post_svelte_exports, {
 var FlightCTA, HotelCTA, VacationCTA, Blog_post;
 var init_blog_post_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog-post.svelte.js"() {
-    init_index_32debfaa();
-    init_HotelsIcon_3f320ed3();
+    init_index_c9c8dd9a();
+    init_HotelsIcon_bcf3d6d6();
     FlightCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
-	<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
-	<div class="${"absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
-	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
+      return `<div class="${"relative"}"><div class="${"hidden sm:flex absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
+	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-blue-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
 
-	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center"}"><div><p class="${"flex items-center text-sm text-pblue-900"}">
-
-								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"flex-shrink-0 mr-1.5 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
-								Trip Support deals on Niagara Falls
-							</p></div>
-						<div class="${"flex"}"><div><p class="${"flex items-center text-sm text-rose-600 truncate"}">${validate_component(FlightsIcon, "FlightsIcon").$$render($$result, {}, {}, {})}
-									Book your flight now
+	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-1 md:gap-4 place-items-center"}"><div class="${"flex"}"><div><p class="${"flex items-center font-bold text-sm text-pblue-900 truncate"}">${validate_component(FlightsIcon, "FlightsIcon").$$render($$result, {}, {}, {})}
+									Get the best flight deals at Trip Support, Book Now, Pay Later!
 								</p></div></div></div></div>
 				<div>
 					<svg class="${"h-5 w-5 text-gray-400"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"}" clip-rule="${"evenodd"}"></path></svg></div></div></a></div></div>`;
     });
     HotelCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
-	<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
-	<div class="${"absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
-	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
+      return `<div class="${"relative"}"><div class="${"hidden sm:flex absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
+	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-rose-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
 
-	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center"}"><div><p class="${"flex items-center text-sm text-pblue-900"}">
-
-								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"flex-shrink-0 mr-1.5 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
-								Trip Support Hotel Deals
-							</p></div>
-						<div class="${"flex"}"><div><p class="${"flex items-center text-sm text-rose-600 truncate"}">${validate_component(HotelsIcon, "HotelsIcon").$$render($$result, {}, {}, {})}
-									Book the Hotel you want
-								</p></div></div></div></div>
+	<div class="${"bg-white shadow overflow-hidden rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-1 md:gap-4 place-items-center"}"><div class="${"flex"}"><div><p class="${"flex items-center font-bold text-sm text-pblue-900"}">${validate_component(HotelsIcon, "HotelsIcon").$$render($$result, {}, {}, {})}
+									<span class="${"line-clamp-1 sm:line-clamp-none"}">Booking a hotel in Mississauga Ontario with Trip Support and save!</span></p></div></div></div></div>
 				<div>
 					<svg class="${"h-5 w-5 text-gray-400"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"}" clip-rule="${"evenodd"}"></path></svg></div></div></a></div></div>`;
     });
     VacationCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"relative"}"><div class="${"absolute pattern-dots-lg text-gray-200 top-0 left-0 w-32 h-48 md:h-72 transform -translate-y-12 -translate-x-16 -rotate-3"}"></div>
-	<div class="${"absolute pattern-dots-lg text-gray-200 bottom-0 right-0 w-32 h-48 md:h-72 transform translate-y-12 translate-x-16 rotate-3"}"></div>
-	<div class="${"absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
+      return `<div class="${"relative"}"><div class="${"hidden sm:flex absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
 	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-yellow-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
 
-	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4 place-items-center"}"><div><p class="${"flex items-center text-sm text-pblue-900"}">
-
-								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"flex-shrink-0 mr-1.5 h-5 w-5"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg>
-								Plan your Vacation with Trip Support
-							</p></div>
-						<div class="${"flex"}"><div><p class="${"flex items-center text-sm text-rose-600 truncate"}">${validate_component(VacationsIcon, "VacationsIcon").$$render($$result, {}, {}, {})}
-									Book your vacation now, Pay later
+	<div class="${"bg-white shadow overflow-hidden sm:rounded-md relative"}"><a href="${"#"}" class="${"block hover:bg-gray-50 no-underline"}"><div class="${"flex items-center px-4 sm:px-6"}"><div class="${"min-w-0 flex-1 flex items-center"}"><div class="${"min-w-0 flex-1 px-4 md:grid md:grid-cols-1 md:gap-4 place-items-center"}"><div class="${"flex"}"><div><p class="${"flex items-center font-bold text-sm text-pblue-900 truncate"}">${validate_component(VacationsIcon, "VacationsIcon").$$render($$result, {}, {}, {})}
+									Planning a Vacation has never been easier, plan it with us.
 								</p></div></div></div></div>
 				<div>
 					<svg class="${"h-5 w-5 text-gray-400"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"}" clip-rule="${"evenodd"}"></path></svg></div></div></a></div></div>`;
@@ -6835,14 +6875,13 @@ var init_blog_post_svelte = __esm({
 				<li><div class="${"flex items-center"}"><svg class="${"flex-shrink-0 h-5 w-5 text-gray-300"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" aria-hidden="${"true"}"><path d="${"M5.555 17.776l8-16 .894.448-8 16-.894-.448z"}"></path></svg>
 						<a href="${"#"}" class="${"ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"}" aria-current="${"page"}">8 Unique Winter Getaways Near Toronto</a></div></li></ol></nav>
 
-		
-		<div class="${"text-center"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">Canada</div>
-			<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">8 Unique Winter Getaways Near Toronto
-			</h2>
-			<h3 class="${"text-md md:text-lg md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto"}"><a href="${"javascript:void(0)"}" class="${"text-pblue-700 hover:text-pblue-400"}">Shefali</a> on
-				<span class="${"font-semibold"}">March 15, 2021</span> \xB7 8 min read
-			</h3></div>
-		
+		<div class="${"prose prose-slate prose-lg mx-auto"}">
+			<div class="${"text-left"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">Canada</div>
+				<div class="${"text-3xl md:text-4xl font-extrabold"}">8 Unique Winter Getaways Near Toronto</div>
+				<div class="${"text-base md:text-md md:leading-relaxed font-medium text-gray-600 lg:w-2/3"}"><a href="${"javascript:void(0)"}" class="${"text-pblue-700 hover:text-pblue-400"}">Shefali</a> on
+					<span class="${"font-semibold"}">March 15, 2021</span> \xB7 8 min read
+				</div></div>
+			</div>
 
 		
 		<article class="${"prose prose-slate prose-lg mx-auto"}">
@@ -7124,8 +7163,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_blog_post_svelte();
-    entry6 = "pages/blog-post.svelte-9f3aac74.js";
-    js6 = ["pages/blog-post.svelte-9f3aac74.js", "chunks/vendor-c3e464d3.js", "chunks/HotelsIcon-3980de83.js"];
+    entry6 = "pages/blog-post.svelte-e77a5193.js";
+    js6 = ["pages/blog-post.svelte-e77a5193.js", "chunks/vendor-aa7f3673.js", "chunks/HotelsIcon-74235531.js"];
     css6 = [];
   }
 });
@@ -7138,23 +7177,20 @@ __export(vacations_svelte_exports, {
 var VacationsHero, StarRating, Cancun, MexicoSubTabs, Vacations;
 var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
-    init_index_32debfaa();
-    init_BlogPosts_83f28332();
-    init_Subscribe_8a503f02();
-    init_HotelsIcon_3f320ed3();
-    init_OutClick_f79208e6();
+    init_index_c9c8dd9a();
+    init_BlogPosts_b1f1233d();
+    init_Subscribe_20d5a66c();
+    init_HotelsIcon_bcf3d6d6();
+    init_index_2043b91f();
     VacationsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"hidden sm:grid grid-cols-1 sm:grid-cols-12 h-44 lg:h-[400px]"}"><div class="${"hidden sm:block col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}">Vacation packages
+      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6 z-[1]"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}">Vacation packages
 				</h1>
-				<p class="${"hidden sm:block prose text-sm sm:text-tiny lg:text-base whitespace-nowrap max-w-sm"}">Looking for vacations?
-					<br>Save now with packages that include flight and vacations.
+				<p class="${"prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700"}">Looking for vacations? Save on vacations that include flight.
 				</p></div></div>
 
 		<div class="${"hidden sm:flex col-span-6"}"><div class="${"relative pb-8 bg-white sm:pb-16 md:pb-20"}"><svg class="${"block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg></div>
 			<div class="${"-mt-40 lg:-mt-10"}"><img class="${"max-w-7xl object-cover sm:h-72 md:h-1/2 lg:block lg:w-full lg:h-full"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div></div>
-	<div class="${"sm:hidden grid grid-cols-1 h-28"}"><div class="${"flex sm:hidden col-span-1 justify-center"}"><h1 class="${"absolute z-[2] top-32 text-2xl tracking-tight font-extrabold text-white"}">Search Vacation packages
-			</h1>
-			<div class="${"-mt-6 bg-black"}"><img class="${"sm:hidden opacity-75 z-1 w-full h-auto max-w-7xl object-cover"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div></div></div>`;
+	</div>`;
     });
     StarRating = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex"}"><span class="${"inline-flex items-center px-2.5 py-0.5 rounded-full -ml-2.5 text-xs font-medium bg-yellow-300 text-black"}">5 star vacation
@@ -7315,9 +7351,7 @@ ${``}
 ${``}`;
     });
     Vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `
-
-${validate_component(VacationsHero, "VacationsHero").$$render($$result, {}, {}, {})}
+      return `${validate_component(VacationsHero, "VacationsHero").$$render($$result, {}, {}, {})}
 
 ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
 
@@ -7380,8 +7414,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-0607bd5a.js";
-    js7 = ["pages/vacations.svelte-0607bd5a.js", "chunks/vendor-c3e464d3.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
+    entry7 = "pages/vacations.svelte-b5f30858.js";
+    js7 = ["pages/vacations.svelte-b5f30858.js", "chunks/vendor-aa7f3673.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
     css7 = [];
   }
 });
@@ -7394,7 +7428,7 @@ __export(contact_svelte_exports, {
 var Contact;
 var init_contact_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/contact.svelte.js"() {
-    init_index_32debfaa();
+    init_index_c9c8dd9a();
     Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl p-4"}">
 	<section class="${"bg-white py-20 lg:py-[120px] overflow-hidden relative z-10"}"><div class="${"container"}"><div class="${"flex flex-wrap lg:justify-between -mx-4"}"><div class="${"w-full lg:w-1/2 xl:w-6/12 px-4"}"><div class="${"max-w-[570px] mb-12 lg:mb-0"}"><span class="${"block mb-4 text-base text-primary font-semibold"}">Contact Us </span>
@@ -7439,8 +7473,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_contact_svelte();
-    entry8 = "pages/contact.svelte-918cc6e3.js";
-    js8 = ["pages/contact.svelte-918cc6e3.js", "chunks/vendor-c3e464d3.js"];
+    entry8 = "pages/contact.svelte-d96b5147.js";
+    js8 = ["pages/contact.svelte-d96b5147.js", "chunks/vendor-aa7f3673.js"];
     css8 = [];
   }
 });
@@ -7453,7 +7487,7 @@ __export(explore_svelte_exports, {
 var Explore;
 var init_explore_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/explore.svelte.js"() {
-    init_index_32debfaa();
+    init_index_c9c8dd9a();
     Explore = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
@@ -7472,8 +7506,8 @@ var entry9, js9, css9;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_explore_svelte();
-    entry9 = "pages/explore.svelte-66151e16.js";
-    js9 = ["pages/explore.svelte-66151e16.js", "chunks/vendor-c3e464d3.js"];
+    entry9 = "pages/explore.svelte-ebf6de89.js";
+    js9 = ["pages/explore.svelte-ebf6de89.js", "chunks/vendor-aa7f3673.js"];
     css9 = [];
   }
 });
@@ -7486,11 +7520,11 @@ __export(flights_svelte_exports, {
 var LottieFlights, FlightHero, FlightDeals, Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
-    init_index_32debfaa();
-    init_BlogPosts_83f28332();
-    init_Subscribe_8a503f02();
-    init_HotelsIcon_3f320ed3();
-    init_OutClick_f79208e6();
+    init_index_c9c8dd9a();
+    init_BlogPosts_b1f1233d();
+    init_Subscribe_20d5a66c();
+    init_HotelsIcon_bcf3d6d6();
+    init_index_2043b91f();
     LottieFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${``}`;
     });
@@ -7498,14 +7532,14 @@ var init_flights_svelte = __esm({
       return `
 
 
-<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 h-44 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}">Amazing Flight Deals
+<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}">Amazing Flight Deals
 				</h1>
-				<p class="${"hidden sm:block prose max-w-sm"}">More options, our best prices, less headaches. Secure your ticket with a small deposit.
+				<p class="${"hidden md:flex prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700"}">More options, our best prices, less headaches. Secure your ticket now.
 				</p></div></div>
 
-		<div class="${"hidden sm:flex sm:col-span-6"}"><div class="${"justify-self-end "}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div>
+		<div class="${"hidden md:flex sm:col-span-6"}"><div class="${"justify-self-end "}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div>
 
-		<div class="${"sm:hidden absolute top-32 col-span-1"}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div></div>`;
+		<div class="${"md:hidden absolute top-32 col-span-1"}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div></div>`;
     });
     FlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
@@ -7603,8 +7637,8 @@ var entry10, js10, css10;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_flights_svelte();
-    entry10 = "pages/flights.svelte-4d276cb6.js";
-    js10 = ["pages/flights.svelte-4d276cb6.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
+    entry10 = "pages/flights.svelte-7474d86e.js";
+    js10 = ["pages/flights.svelte-7474d86e.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
     css10 = [];
   }
 });
@@ -7617,11 +7651,11 @@ __export(hotels_svelte_exports, {
 var LottieHotels, HotelsHero, Toronto, CanadaSubTabs, Hotels;
 var init_hotels_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/hotels.svelte.js"() {
-    init_index_32debfaa();
-    init_BlogPosts_83f28332();
-    init_Subscribe_8a503f02();
-    init_HotelsIcon_3f320ed3();
-    init_OutClick_f79208e6();
+    init_index_c9c8dd9a();
+    init_BlogPosts_b1f1233d();
+    init_Subscribe_20d5a66c();
+    init_HotelsIcon_bcf3d6d6();
+    init_index_2043b91f();
     LottieHotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${``}
 
@@ -7629,13 +7663,13 @@ var init_hotels_svelte = __esm({
 `;
     });
     HotelsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Longing for a Getaway?</span></h1>
-				<p class="${"prose text-sm sm:text-tiny max-w-sm"}">You\u2019re in luck\u2014we offer top hotels wherever you\u2019re headed, from boutique and luxury to
-					beachfront accommodations and hotels with pools.
+      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Longing for a Getaway?</span></h1>
+				<p class="${"prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700"}">You\u2019re in luck\u2014we offer top hotels wherever you\u2019re headed, from boutique and luxury to
+					beachfront accommodations.
 				</p></div></div>
 
 		
-		<div class="${"hidden sm:flex col-span-6"}"><div class="${"-mt-[192px] mr-[44px]"}">${validate_component(LottieHotels, "LottieHotels").$$render($$result, {}, {}, {})}</div></div>
+		<div class="${"hidden md:flex col-span-6"}"><div class="${"xl:-mt-[192px] lg:-mt-[120px] md:-mt-[30px] mr-[44px]"}">${validate_component(LottieHotels, "LottieHotels").$$render($$result, {}, {}, {})}</div></div>
 		</div></div>`;
     });
     Toronto = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7792,8 +7826,8 @@ var entry11, js11, css11;
 var init__11 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_hotels_svelte();
-    entry11 = "pages/hotels.svelte-73d74fa4.js";
-    js11 = ["pages/hotels.svelte-73d74fa4.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-d0398f78.js", "chunks/HotelsIcon-3980de83.js", "chunks/Subscribe-d8087278.js"];
+    entry11 = "pages/hotels.svelte-96bb7c09.js";
+    js11 = ["pages/hotels.svelte-96bb7c09.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
     css11 = [];
   }
 });
@@ -7806,8 +7840,8 @@ __export(blog_svelte_exports, {
 var BlogHeader, BlogTop, BlogCanada, PopularPostsCanada, BlogPosts2, Blog;
 var init_blog_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog.svelte.js"() {
-    init_index_32debfaa();
-    init_Subscribe_8a503f02();
+    init_index_c9c8dd9a();
+    init_Subscribe_20d5a66c();
     BlogHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative pb-28 lg:pb-20 bg-gray-800"}"><div class="${"absolute inset-0"}"><img class="${"w-full h-full object-cover"}" src="${"images/blog/travel-guide.jpg"}" alt="${""}">
@@ -8084,8 +8118,8 @@ var entry12, js12, css12;
 var init__12 = __esm({
   ".svelte-kit/output/server/nodes/11.js"() {
     init_blog_svelte();
-    entry12 = "pages/blog.svelte-203e4ca5.js";
-    js12 = ["pages/blog.svelte-203e4ca5.js", "chunks/vendor-c3e464d3.js", "chunks/Subscribe-d8087278.js"];
+    entry12 = "pages/blog.svelte-3148055e.js";
+    js12 = ["pages/blog.svelte-3148055e.js", "chunks/vendor-aa7f3673.js", "chunks/Subscribe-bd4fac92.js"];
     css12 = [];
   }
 });
@@ -8171,7 +8205,7 @@ async function setResponse(res, response) {
 }
 
 // .svelte-kit/output/server/app.js
-init_index_32debfaa();
+init_index_c9c8dd9a();
 var __accessCheck2 = (obj, member, msg) => {
   if (!member.has(obj))
     throw TypeError("Cannot " + msg);
@@ -10121,7 +10155,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-2f41512f.js", "js": ["start-2f41512f.js", "chunks/vendor-c3e464d3.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-6e96fdb3.js", "js": ["start-6e96fdb3.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -172,8 +172,9 @@
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>book now pay later</a
+					<a
+						href="/book-now-pay-later"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">book now pay later</a
 					>
 				</li>
 			</ul>

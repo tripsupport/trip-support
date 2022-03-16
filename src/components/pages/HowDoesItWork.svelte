@@ -32,7 +32,7 @@
 						<div class="-mb-px flex space-x-10" aria-orientation="horizontal" role="tablist">
 							<!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
 							<button
-								class="border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-sm
+								class="border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-tb
                 {activeTab === 'weekly'
 									? 'border-rose-600 text-rose-600", text-rose-600 font-bold'
 									: 'text-gray-500  hover:text-rose-600 hover:border-rose-600 font-semibold'}
@@ -45,7 +45,7 @@
 							</button>
 
 							<button
-								class="border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-sm
+								class="border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-tb
                 {activeTab === 'bi-weekly'
 									? 'border-rose-600 text-rose-600", text-rose-600 font-bold'
 									: 'text-gray-500  hover:text-rose-600 hover:border-rose-600 font-semibold'}"
@@ -56,7 +56,7 @@
 								Bi-Weekly Payment Plan
 							</button>
 							<button
-								class="border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-sm
+								class="border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-tb
                 {activeTab === 'monthly'
 									? 'border-rose-600 text-rose-600", text-rose-600 font-bold'
 									: 'text-gray-500  hover:text-rose-600 hover:border-rose-600 font-semibold'}"

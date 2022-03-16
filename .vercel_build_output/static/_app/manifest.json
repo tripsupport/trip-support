@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-6e96fdb3.js",
+    "file": "start-26f850b7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -23,7 +23,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-ebcc9bd0.js",
+    "file": "pages/__layout.svelte-6ae4a147.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -31,7 +31,7 @@
       "_vendor-aa7f3673.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-fbd457c1.css"
+      "assets/pages/__layout.svelte-c80a6405.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -44,24 +44,27 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-6951d186.js",
+    "file": "pages/index.svelte-a99b2ea8.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-aa7f3673.js",
-      "_BlogPosts-5b0e5621.js",
+      "_BookingWidget-33ace931.js",
+      "_BlogPosts-08852c0b.js",
       "_Subscribe-bd4fac92.js",
       "_HotelsIcon-74235531.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
-    "file": "pages/book-now-pay-later.svelte-99514f30.js",
+    "file": "pages/book-now-pay-later.svelte-bee1056a.js",
     "src": "src/routes/book-now-pay-later.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-aa7f3673.js"
+      "_vendor-aa7f3673.js",
+      "_BookingWidget-33ace931.js",
+      "_HotelsIcon-74235531.js"
     ]
   },
   "src/routes/flight-hotel.svelte": {
@@ -84,14 +87,15 @@
     ]
   },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-b5f30858.js",
+    "file": "pages/vacations.svelte-82e6d7e2.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-aa7f3673.js",
-      "_BlogPosts-5b0e5621.js",
+      "_BookingWidget-33ace931.js",
       "_Subscribe-bd4fac92.js",
+      "_BlogPosts-08852c0b.js",
       "_HotelsIcon-74235531.js"
     ]
   },
@@ -114,14 +118,15 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-7474d86e.js",
+    "file": "pages/flights.svelte-963be6f3.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-aa7f3673.js",
       "_preload-helper-e4860ae8.js",
-      "_BlogPosts-5b0e5621.js",
+      "_BookingWidget-33ace931.js",
+      "_BlogPosts-08852c0b.js",
       "_Subscribe-bd4fac92.js",
       "_HotelsIcon-74235531.js"
     ],
@@ -130,14 +135,15 @@
     ]
   },
   "src/routes/hotels.svelte": {
-    "file": "pages/hotels.svelte-96bb7c09.js",
+    "file": "pages/hotels.svelte-b79c14a4.js",
     "src": "src/routes/hotels.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-aa7f3673.js",
       "_preload-helper-e4860ae8.js",
-      "_BlogPosts-5b0e5621.js",
+      "_BookingWidget-33ace931.js",
+      "_BlogPosts-08852c0b.js",
       "_Subscribe-bd4fac92.js",
       "_HotelsIcon-74235531.js"
     ],
@@ -161,11 +167,17 @@
   "_preload-helper-e4860ae8.js": {
     "file": "chunks/preload-helper-e4860ae8.js"
   },
-  "_BlogPosts-5b0e5621.js": {
-    "file": "chunks/BlogPosts-5b0e5621.js",
+  "_BookingWidget-33ace931.js": {
+    "file": "chunks/BookingWidget-33ace931.js",
     "imports": [
       "_vendor-aa7f3673.js",
       "_HotelsIcon-74235531.js"
+    ]
+  },
+  "_BlogPosts-08852c0b.js": {
+    "file": "chunks/BlogPosts-08852c0b.js",
+    "imports": [
+      "_vendor-aa7f3673.js"
     ]
   },
   "_Subscribe-bd4fac92.js": {

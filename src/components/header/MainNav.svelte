@@ -93,9 +93,3 @@
 		</div>
 	</div>
 </nav>
-
-<style>
-	.active {
-		color: red;
-	}
-</style>

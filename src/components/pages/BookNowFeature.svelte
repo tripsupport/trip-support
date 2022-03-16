@@ -50,7 +50,7 @@
 					/>
 					<ApprovedIcon />
 				</div>
-				<h4 class="text-lg font-bold mb-2">Guaranteed Approval</h4>
+				<h4 class="text-lg font-bold mb-2">No Credit Check</h4>
 			</div>
 			<div class="py-5">
 				<div class="group inline-flex items-center justify-center w-12 h-12 mb-8 relative">

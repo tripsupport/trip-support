@@ -6039,7 +6039,7 @@ var init_layout_svelte = __esm({
 				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">about us</a></li>
 				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">contact us</a></li>
 				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Baggage policy</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">book now pay later</a></li></ul></div>
+				<li><a href="${"/book-now-pay-later"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">book now pay later</a></li></ul></div>
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Social media</h3>
 
 			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-facebook mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"}"></path></svg>
@@ -6088,9 +6088,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-ebcc9bd0.js";
-    js = ["pages/__layout.svelte-ebcc9bd0.js", "chunks/vendor-aa7f3673.js"];
-    css = ["assets/pages/__layout.svelte-fbd457c1.css"];
+    entry = "pages/__layout.svelte-6ae4a147.js";
+    js = ["pages/__layout.svelte-6ae4a147.js", "chunks/vendor-aa7f3673.js"];
+    css = ["assets/pages/__layout.svelte-c80a6405.css"];
   }
 });
 
@@ -6161,10 +6161,10 @@ var init_HotelsIcon_bcf3d6d6 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BlogPosts-b1f1233d.js
-var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget, BlogPosts;
-var init_BlogPosts_b1f1233d = __esm({
-  ".svelte-kit/output/server/chunks/BlogPosts-b1f1233d.js"() {
+// .svelte-kit/output/server/chunks/BookingWidget-39488cf8.js
+var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget;
+var init_BookingWidget_39488cf8 = __esm({
+  ".svelte-kit/output/server/chunks/BookingWidget-39488cf8.js"() {
     init_index_c9c8dd9a();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
@@ -6500,6 +6500,14 @@ ${``}`;
 			${``}</div>
 		</div></section>`;
     });
+  }
+});
+
+// .svelte-kit/output/server/chunks/BlogPosts-5c3b104a.js
+var BlogPosts;
+var init_BlogPosts_5c3b104a = __esm({
+  ".svelte-kit/output/server/chunks/BlogPosts-5c3b104a.js"() {
+    init_index_c9c8dd9a();
     BlogPosts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Inspirational Stories from Experts</span>
@@ -6587,7 +6595,8 @@ var Hero, PopularFlightDeals, VacationDestinations, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_c9c8dd9a();
-    init_BlogPosts_b1f1233d();
+    init_BookingWidget_39488cf8();
+    init_BlogPosts_5c3b104a();
     init_Subscribe_20d5a66c();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
@@ -6751,8 +6760,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-6951d186.js";
-    js3 = ["pages/index.svelte-6951d186.js", "chunks/vendor-aa7f3673.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
+    entry3 = "pages/index.svelte-a99b2ea8.js";
+    js3 = ["pages/index.svelte-a99b2ea8.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-bd4fac92.js"];
     css3 = [];
   }
 });
@@ -6762,12 +6771,240 @@ var book_now_pay_later_svelte_exports = {};
 __export(book_now_pay_later_svelte_exports, {
   default: () => Book_now_pay_later
 });
-var Book_now_pay_later;
+var BookNowHero, BookingIcon, ApprovedIcon, NoPostPayIcon, FlexPayIcon, FastConvenientIcon, BookNowFeature, WeeklyExample, HowDoesItWork, BnplFlights, BnplVacations, Book_now_pay_later;
 var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
     init_index_c9c8dd9a();
+    init_BookingWidget_39488cf8();
+    init_HotelsIcon_bcf3d6d6();
+    init_index_2043b91f();
+    BookNowHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"bg-white"}"><div class="${"overflow-hidden"}"><div class="${"bg-gradient-to-r from-pblue-900 to-rose-900"}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"relative pt-6 sm:pt-28 pb-10 sm:pb-48"}"><div><h2 id="${"sale-heading"}" class="${"text-4xl font-extrabold tracking-tight text-white md:text-6xl"}">Book Now, Pay Later
+						</h2>
+						<p class="${"hidden sm:flex prose text-sm sm:text-lg md:max-w-sm font-medium text-slate-100 mt-2"}">Secure your ticket with a small deposit.
+							<br>No Credit Check Needed.
+						</p>
+						<div class="${"mt-4 text-base"}"><a href="${"#"}" class="${"font-semibold text-white"}">View Offers<span aria-hidden="${"true"}" class="${"ml-2"}">\u2192</span></a></div></div>
+
+					<div class="${"hidden sm:flex absolute top-24 left-1/2 transform -translate-x-1/2 sm:top-4 sm:translate-x-0"}"><div class="${"ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-4"}"><div class="${"flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-4"}"><div class="${"flex-shrink-0"}"><img class="${"h-[200px] w-[180px] rounded-lg object-cover"}" src="${"/images/blog/blog-bg.jpg"}" alt="${""}"></div>
+
+								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-[200px] w-[180px] rounded-lg object-cover"}" src="${"/images/hotels/hotel-11.jpg"}" alt="${""}"></div></div>
+							<div class="${"flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-4"}"><div class="${"flex-shrink-0"}"><img class="${"h-[250px] w-[180px] rounded-lg object-cover"}" src="${"/images/hero/hero-2.jpg"}" alt="${""}"></div>
+
+								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-[250px] w-[180px] rounded-lg object-cover"}" src="${"/images/home/flights-section.jpg"}" alt="${""}"></div></div>
+							<div class="${"flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-4"}"><div class="${"flex-shrink-0"}"><img class="${"h-[200px] w-[180px] rounded-lg object-cover"}" src="${"/images/vacations/acapulco.jpg"}" alt="${""}"></div>
+
+								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-[200px] w-[180px] rounded-lg object-cover"}" src="${"/images/hotels/muskoka.jpg"}" alt="${""}"></div></div></div></div></div></div></div></div></div>`;
+    });
+    BookingIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg viewBox="${"0 0 512 512"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m406.713 15.5h-301.425c-58.056 0-105.288 47.232-105.288 105.288s47.232 105.288 105.288 105.288h76.663v85.063l-3.743-3.14c-18.503-15.527-47.457-14.265-64.538 2.818-17.9 17.9-16.728 46.349 2.737 62.681l65.543 54.998v53.004c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15v-168.556c0-22.656-16.954-41.854-39.437-44.655l-80.563-10.037v-32.178h134.763c58.056 0 105.287-47.232 105.287-105.288s-47.231-105.286-105.287-105.286zm-194.763 451v-30h150v30zm136.855-168.441c7.494.934 13.146 7.333 13.146 14.885v93.556h-159.541l-66.72-55.984c-5.922-4.969-6.281-13.012-.807-18.487 6.148-6.147 17.382-6.637 24.042-1.049l28.384 23.817c9.736 8.168 24.642 1.239 24.642-11.491v-191.806c0-8.271 6.729-15 15-15s15 6.729 15 15v120c0 7.567 5.637 13.949 13.146 14.885zm57.908-101.984h-134.763v-44.575c0-24.813-20.187-45-45-45s-45 20.187-45 45v44.575h-76.663c-41.513 0-75.287-33.774-75.287-75.287s33.774-75.288 75.288-75.288h301.425c41.513 0 75.287 33.774 75.287 75.288s-33.774 75.287-75.287 75.287z"}"></path><path fill="${"currentColor"}" d="${"m395.294 79.894-49.394 49.393-19.394-19.393c-5.857-5.858-15.355-5.858-21.213 0s-5.858 15.355 0 21.213l30 30c5.857 5.858 15.355 5.859 21.213 0l60-60c5.858-5.858 5.858-15.355 0-21.213-5.857-5.859-15.355-5.859-21.212 0z"}"></path></svg>`;
+    });
+    ApprovedIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg viewBox="${"0 0 512 512"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m484.304688 231.558594c-2.253907-2.703125-2.550782-6.539063-.734376-9.554688 7.269532-11.636718 9.441407-25.75 6.011719-39.035156-3.367187-13.3125-12.222656-24.570312-24.367187-30.976562-3.0625-1.710938-4.65625-5.214844-3.933594-8.644532.398438-1.890625.699219-3.796875.902344-5.714844.367187-3.476562-1.492188-6.808593-4.648438-8.320312-3.152344-1.507812-6.914062-.871094-9.390625 1.597656l-39.277343 39.273438-239.078126 239.070312-39.308593 39.308594c-2.46875 2.480469-3.109375 6.25-1.59375 9.402344 1.515625 3.15625 4.851562 5.015625 8.332031 4.636718 1.914062-.203124 3.816406-.503906 5.699219-.898437 3.433593-.726563 6.941406.863281 8.652343 3.929687 6.402344 12.148438 17.660157 21.007813 30.96875 24.378907 13.261719 3.414062 27.34375 1.25 38.96875-5.980469 3.0625-1.878906 6.988282-1.566406 9.714844.777344 9.085938 8.03125 20.796875 12.464844 32.921875 12.46875 1.527344 0 3.058594-.066406 4.59375-.214844 13.710938-1.351562 26.277344-8.230469 34.808594-19.050781 2.242187-2.765625 5.984375-3.816407 9.339844-2.625 12.78125 5.039062 27.078125 4.582031 39.511719-1.265625 12.484374-5.90625 22.023437-16.636719 26.425781-29.726563 1.214843-3.417969 4.46875-5.6875 8.09375-5.648437 13.703125.1875 26.914062-5.121094 36.675781-14.742188 9.679688-9.691406 15.011719-22.894531 14.773438-36.589844-.015626-3.644531 2.261718-6.90625 5.6875-8.152343 13.066406-4.417969 23.773437-13.957031 29.671874-26.425781 5.832032-12.402344 6.296876-26.65625 1.289063-39.414063-1.230469-3.394531-.164063-7.195313 2.652344-9.457031 10.789062-8.546875 17.644531-21.109375 18.992187-34.808594 1.253906-13.699219-3.21875-27.308594-12.355468-37.597656zm-113.242188 139.925781c-47.21875 47.617187-117.777344 63.511719-180.851562 40.734375l13.269531-13.277344c14.75 4.5 30.078125 6.8125 45.496093 6.871094 49.484376-.167969 95.984376-23.695312 125.433594-63.460938 29.453125-39.769531 38.394532-91.105468 24.128906-138.492187l13.210938-13.210937c22.769531 63.0625 6.898438 133.601562-40.6875 180.835937zm14.039062-154.15625c10.980469 47.132813-3.152343 96.597656-37.375 130.8125-34.222656 34.21875-83.683593 48.34375-130.816406 37.355469zm82.414063 73.582031c-8.59375 6.742188-11.785156 18.304688-7.867187 28.507813 3.414062 8.507812 3.113281 18.0625-.828126 26.339843-3.949218 8.394532-11.136718 14.824219-19.917968 17.824219-10.324219 3.488281-17.214844 13.242188-17.050782 24.136719.1875 9.101562-3.296874 17.894531-9.667968 24.394531-6.367188 6.503907-15.089844 10.167969-24.191406 10.164063h-1.105469c-10.714844.015625-20.238281 6.835937-23.695313 16.980468-2.980468 8.792969-9.410156 15.996094-17.8125 19.949219-8.304687 3.964844-17.886718 4.261719-26.425781.828125-10.160156-3.875-21.660156-.6875-28.382813 7.859375-5.726562 7.25-14.160156 11.855469-23.351562 12.761719-9.066406.859375-18.082031-2.074219-24.90625-8.101562-4.480469-4.042969-10.304688-6.269532-16.335938-6.242188-4.632812 0-9.175781 1.285156-13.121093 3.714844-7.773438 4.914062-17.238281 6.375-26.128907 4.027344-8.820312-2.230469-16.28125-8.101563-20.53125-16.152344-2.46875-4.613282-6.363281-8.300782-11.105468-10.519532l22.320312-22.386718c70.628906 28.503906 151.449219 12.042968 205.300782-41.8125 53.855468-53.855469 70.3125-134.679688 41.808593-205.300782l22.410157-22.414062c2.210937 4.742188 5.90625 8.636719 10.519531 11.097656 8.046875 4.257813 13.914062 11.71875 16.15625 20.539063 2.34375 8.910156.871093 18.398437-4.066407 26.179687-5.746093 9.242188-4.738281 21.164063 2.480469 29.3125 6.050781 6.835938 9.011719 15.867188 8.183594 24.957032-.894531 9.1875-5.484375 17.621093-12.71875 23.355468zm0 0"}"></path><path fill="${"currentColor"}" d="${"m13.289062 275.714844c-7.261718 11.640625-9.429687 25.75-5.992187 39.035156 3.363281 13.308594 12.210937 24.566406 24.351563 30.976562 3.0625 1.710938 4.65625 5.214844 3.929687 8.644532-.398437 1.890625-.699219 3.796875-.898437 5.714844-.367188 3.476562 1.492187 6.808593 4.644531 8.320312 3.152343 1.507812 6.917969.871094 9.394531-1.597656l39.273438-39.273438 239.105468-239.097656 39.257813-39.265625c2.472656-2.480469 3.109375-6.246094 1.59375-9.402344-1.511719-3.15625-4.851563-5.015625-8.332031-4.636719-1.914063.203126-3.816407.503907-5.699219.898438-3.433594.730469-6.941407-.863281-8.652344-3.929688-6.398437-12.140624-17.640625-21-30.945313-24.378906-13.257812-3.425781-27.34375-1.265625-38.96875 5.980469-3.0625 1.882813-6.988281 1.566406-9.710937-.777344-10.269531-9.105469-23.851563-13.550781-37.515625-12.277343-13.710938 1.351562-26.28125 8.230468-34.808594 19.050781-2.246094 2.761719-5.984375 3.8125-9.339844 2.625-12.78125-5.046875-27.082031-4.589844-39.515624 1.261719-12.480469 5.910156-22.023438 16.640624-26.425782 29.730468-1.097656 3.503906-4.425781 5.824219-8.09375 5.648438-13.707031-.21875-26.929687 5.085937-36.6875 14.714844-9.683594 9.703124-15.011718 22.921874-14.757812 36.625.011718 3.644531-2.265625 6.90625-5.691406 8.152343-13.0625 4.417969-23.773438 13.957031-29.671876 26.425781-5.828124 12.402344-6.292968 26.65625-1.285156 39.414063 1.226563 3.394531.164063 7.195313-2.652344 9.457031-10.789062 8.546875-17.644531 21.109375-18.992187 34.808594-1.238281 13.695312 3.246094 27.296875 12.386719 37.574219 2.257812 2.714843 2.539062 6.5625.699218 9.578125zm112.507813-149.472656c47.222656-47.609376 117.777344-63.503907 180.851563-40.734376l-13.210938 13.253907c-55.226562-16.683594-115.152344-1.636719-155.945312 39.152343-40.796876 40.792969-55.847657 100.714844-39.167969 155.941407l-13.253907 13.257812c-22.777343-63.082031-6.886718-133.648437 40.726563-180.878906zm-14.035156 154.15625c-10.988281-47.136719 3.144531-96.605469 37.371093-130.824219 34.222657-34.222657 83.691407-48.34375 130.828126-37.351563zm-82.417969-73.582032c8.597656-6.742187 11.789062-18.304687 7.871094-28.503906-3.414063-8.511719-3.117188-18.066406.824218-26.34375 3.953126-8.394531 11.140626-14.824219 19.917969-17.824219 10.328125-3.488281 17.21875-13.246093 17.054688-24.144531-.1875-9.101562 3.292969-17.894531 9.664062-24.394531 6.371094-6.503907 15.089844-10.167969 24.195313-10.164063h1.105468c10.714844-.015625 20.234376-6.839844 23.691407-16.980468 2.996093-8.792969 9.4375-15.988282 17.847656-19.933594 8.304687-3.964844 17.886719-4.261719 26.425781-.828125 10.15625 3.875 21.652344.691406 28.375-7.851563 5.726563-7.246094 14.160156-11.851562 23.351563-12.757812 9.066406-.863282 18.082031 2.070312 24.90625 8.101562 8.171875 7.28125 20.164062 8.308594 29.457031 2.523438 7.773438-4.910156 17.238281-6.367188 26.128906-4.027344 8.820313 2.234375 16.28125 8.101562 20.53125 16.152344 2.46875 4.613281 6.363282 8.304687 11.105469 10.519531l-22.394531 22.414063c-70.625-28.53125-151.460938-12.082032-205.316406 41.785156-53.851563 53.863281-70.285157 134.703125-41.742188 205.320312l-22.410156 22.371094c-2.214844-4.742188-5.90625-8.636719-10.523438-11.097656-8.042968-4.257813-13.910156-11.71875-16.152344-20.539063-2.347656-8.910156-.875-18.398437 4.0625-26.179687 5.746094-9.242188 4.738282-21.164063-2.476562-29.316406-6.054688-6.832032-9.015625-15.863282-8.183594-24.953126.894532-9.1875 5.484375-17.621093 12.71875-23.355468zm0 0"}"></path><path fill="${"currentColor"}" d="${"m122.378906 425.714844c2.699219 1.300781 5.886719 1.039062 8.339844-.683594 2.449219-1.722656 3.773438-4.636719 3.460938-7.613281-.308594-2.980469-2.210938-5.554688-4.960938-6.734375l-64.222656-29.191406c-3.132813-1.421876-6.816406-.75-9.25 1.679687-2.429688 2.429687-3.101563 6.113281-1.683594 9.246094l29.207031 64.230469c1.160157 2.777343 3.742188 4.703124 6.734375 5.023437 2.992188.324219 5.925782-1.007813 7.648438-3.476563 1.726562-2.464843 1.972656-5.675781.648437-8.375l-4.957031-10.851562 18.167969-18.167969zm-36.335937-2.800782-7.851563-17.285156 17.273438 7.855469zm0 0"}"></path><path fill="${"currentColor"}" d="${"m149.160156 403.101562c3.339844.003907 6.355469-2.007812 7.636719-5.09375 1.277344-3.085937.574219-6.636718-1.789063-9l-17.523437-17.523437 5.847656-5.839844c9.671875-9.679687 9.667969-25.367187-.011719-35.039062-9.675781-9.671875-25.363281-9.667969-35.035156.007812l-5.839844 5.839844c-3.097656 3.097656-4.839843 7.300781-4.839843 11.679687 0 4.382813 1.742187 8.585938 4.839843 11.683594l17.425782 17.414063.089844.097656.097656.101563 23.261718 23.261718c1.550782 1.546875 3.652344 2.414063 5.839844 2.410156zm-17.515625-49.132812-5.847656 5.835938-11.675781-11.675782 5.839844-5.839844c2.085937-2.085937 5.125-2.902343 7.976562-2.140624 2.851562.765624 5.078125 2.992187 5.84375 5.839843.765625 2.851563-.050781 5.890625-2.136719 7.980469zm0 0"}"></path><path fill="${"currentColor"}" d="${"m195.875 356.386719c3.339844 0 6.351562-2.011719 7.628906-5.097657 1.277344-3.085937.570313-6.636718-1.789062-9l-17.515625-17.523437 5.839843-5.835937c9.386719-9.722657 9.253907-25.171876-.300781-34.730469-9.558593-9.554688-25.011719-9.691407-34.730469-.300781l-5.847656 5.839843c-6.445312 6.449219-6.445312 16.902344 0 23.351563l40.878906 40.878906c1.546876 1.546875 3.648438 2.417969 5.835938 2.417969zm-17.515625-49.132813-5.835937 5.835938-11.675782-11.675782 5.835938-5.839843c3.242187-3.128907 8.390625-3.082031 11.578125.101562 3.183593 3.183594 3.230469 8.335938.097656 11.578125zm0 0"}"></path><path fill="${"currentColor"}" d="${"m274.203125 278.058594c0-4.558594-3.695313-8.257813-8.257813-8.257813h-27.0625c7.976563-10.351562 6.539063-25.117187-3.28125-33.734375-9.820312-8.621094-24.648437-8.132812-33.878906 1.117188l-5.835937 5.835937c-6.449219 6.449219-6.449219 16.90625 0 23.355469l40.875 40.878906c3.253906 3.046875 8.339843 2.964844 11.492187-.1875 3.148438-3.15625 3.230469-8.242187.175782-11.492187l-9.257813-9.257813h26.773437c4.5625 0 8.257813-3.695312 8.257813-8.257812zm-49.125-17.523438-5.839844 5.847656-11.683593-11.683593 5.835937-5.839844c2.085937-2.085937 5.128906-2.902344 7.980469-2.140625 2.847656.761719 5.078125 2.988281 5.839844 5.839844.765624 2.847656-.046876 5.890625-2.132813 7.976562zm0 0"}"></path><path fill="${"currentColor"}" d="${"m306.824219 248.859375c9.648437-9.6875 9.648437-25.351563 0-35.039063l-23.355469-23.34375c-9.800781-9.367187-25.234375-9.367187-35.039062 0-9.671876 9.671876-9.671876 25.355469 0 35.027344l23.355468 23.355469c4.644532 4.648437 10.949219 7.257813 17.519532 7.257813 6.570312 0 12.871093-2.609376 17.519531-7.257813zm-46.714844-35.039063c-2.148437-2.074218-3.007813-5.144531-2.253906-8.03125.757812-2.886718 3.011719-5.140624 5.898437-5.898437 2.886719-.753906 5.957032.105469 8.03125 2.253906l23.351563 23.351563c2.089843 2.085937 2.90625 5.128906 2.140625 7.980468-.761719 2.847657-2.988282 5.074219-5.835938 5.839844-2.851562.765625-5.890625-.046875-7.980468-2.132812zm0 0"}"></path><path fill="${"currentColor"}" d="${"m347.699219 204.5625c2.976562 0 5.71875-1.601562 7.183593-4.191406 1.464844-2.585938 1.421876-5.761719-.105468-8.3125l-35.03125-58.398438c-2.347656-3.910156-7.421875-5.179687-11.332032-2.828125-3.910156 2.347657-5.179687 7.421875-2.828124 11.332031l17.992187 30.070313-30.058594-18.046875c-3.910156-2.34375-8.984375-1.078125-11.328125 2.832031-2.347656 3.914063-1.078125 8.984375 2.832032 11.332031l58.382812 35.039063c1.300781.773437 2.785156 1.179687 4.292969 1.171875zm0 0"}"></path><path fill="${"currentColor"}" d="${"m382.738281 169.53125c2.164063 0 4.238281-.847656 5.78125-2.359375l23.59375-23.125c3.257813-3.191406 3.3125-8.421875.121094-11.679687-3.191406-3.257813-8.421875-3.3125-11.683594-.121094l-17.753906 17.390625-11.742187-11.734375 11.683593-11.675782c2.148438-2.074218 3.007813-5.144531 2.253907-8.03125-.757813-2.886718-3.011719-5.140624-5.898438-5.898437-2.886719-.753906-5.957031.105469-8.03125 2.253906l-11.683594 11.675781-11.679687-11.683593 17.515625-17.515625c3.132812-3.242188 3.085937-8.390625-.097656-11.578125-3.1875-3.183594-8.335938-3.230469-11.578126-.101563l-23.351562 23.363282c-3.226562 3.226562-3.226562 8.453124 0 11.675781l23.351562 23.355469 23.363282 23.363281c1.546875 1.550781 3.648437 2.425781 5.835937 2.425781zm0 0"}"></path><path fill="${"currentColor"}" d="${"m429.449219 122.808594c2.1875 0 4.289062-.871094 5.835937-2.421875l5.839844-5.835938c12.894531-12.898437 12.894531-33.808593 0-46.707031l-11.675781-11.679688c-12.902344-12.894531-33.808594-12.894531-46.710938 0l-5.835937 5.839844c-3.222656 3.226563-3.222656 8.453125 0 11.675782l46.707031 46.707031c1.546875 1.550781 3.648437 2.421875 5.839844 2.421875zm-11.679688-54.964844 11.679688 11.675781c6.445312 6.449219 6.445312 16.902344 0 23.355469l-35.03125-35.03125c6.535156-6.234375 16.816406-6.234375 23.351562 0zm0 0"}"></path></svg>`;
+    });
+    NoPostPayIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg viewBox="${"0 0 128 128"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m64 0c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64zm-31.2 12.7c8.5 4.7 15.1 9 16.9 10.8 3.1 3.2 6.5 8.3 6.5 10.9 0 2.5-.1 7-.2 9.5l-6-.9c-2-3.2-5-7.6-9.2-14.2l-2.3-3.6c-.6-.9-1.8-1.2-2.8-.6-.9.6-1.2 1.8-.6 2.8l2.3 3.6c13.4 20.7 13.4 20.7 15.1 23.4 2.4 3.8 1.3 6.8-.5 7.9-2.7 1.7-5.1.7-7.2-1.7-.4-.4-.7-.8-1.2-1.6-.8-1.1-1.9-2.8-4.3-5.8-.9-1.1-10.1-11.8-11.2-12.9-1.5-1.5-3.5-2-5.7-2.5-3-.6-6.5-1.3-9.6-4.9 4.9-8.2 11.8-15.1 20-20.2zm-14.5 28.3c1.2.3 3.4.8 3.5.8-.5 3-1.2 9.6.4 11.7.4.5 3.2 4.9 4 6.1-.2.5-.6 1.1-1.5 1.5-1.3.6-2.4.2-3.1-.9-1.3-2-5.8-11-5.9-12.7.1-.9 1.3-3.9 2.6-6.5zm11 15.9c-.7-1-3.3-5.1-3.8-5.8-.4-1.1-.2-5.1.1-7.6.2.3.5.5.8.9 1.4 1.5 3.5 3.8 6.1 6.9zm-25.3 7.1c0-9.9 2.4-19.2 6.7-27.4 1.3 1.3 2.6 2.2 3.9 2.9-1 2.2-2.7 6.1-2.7 8.1 0 3.1 5.6 13.6 6.5 14.9 1.2 1.9 3.2 2.9 5.3 2.9h.8l-4 6.9c-.6 1-.2 2.2.7 2.7l13.6 7.9c.3.2.7.3 1 .3.7 0 1.4-.4 1.7-1 .6-1 .2-2.2-.7-2.7l-11.8-6.9 10.4-17.9c.3.4.6.7.9 1.1 2.3 2.9 3.4 4.5 4.2 5.6.6.9 1 1.5 1.7 2.1 2.5 2.7 4.2 3.3 6.4 3.6 2.6.4 5.1-.6 6.4-1.9 2.8-2.7 3.5-5.9 2.6-9.3l2.4 1.3c.3.2.6.3 1 .3.7 0 1.4-.4 1.7-1 .5-1 .2-2.2-.8-2.7l-7.8-4.4c-.3-.5-.7-1.1-1.2-1.8l14.8 2.4h.3c1 0 1.8-.7 2-1.7.2-1.1-.6-2.1-1.6-2.3l-8.4-1.4c.1-2.4.2-7.4.2-10.2 0-4.8-5-11.1-7.6-13.8-2.6-2.6-10.6-7.3-15.7-10.2 8.2-4.1 17.4-6.4 27.1-6.4 15.8 0 30.2 6.2 40.9 16.2l-84.7 84.8c-10-10.8-16.2-25.2-16.2-41zm60 60c-15.8 0-30.2-6.2-40.9-16.2l84.7-84.8c10 10.8 16.2 25.2 16.2 41 0 33.1-26.9 60-60 60z"}"></path><path fill="${"currentColor"}" d="${"m113.7 54.9c-.3-.4-.8-.7-1.3-.8l-24.3-4.3c-1.1-.2-2.1.5-2.3 1.6s.5 2.1 1.6 2.3l22.2 3.9-6.2 31.1-8.2-1.4 5.3-9.6c.5-1 .2-2.2-.8-2.7l-22.6-12.7c-1-.5-2.2-.2-2.7.8s-.2 2.2.8 2.7l21 11.8-15.2 27.4-30.3-17.5c-1-.6-2.2-.2-2.7.7-.6 1-.2 2.2.7 2.7l31.9 18.5c1 .5 2.2.3 2.8-.8l9.7-17.6 11.5 1.9h.3c.9 0 1.8-.7 2-1.6l7-35c.2-.4.1-1-.2-1.4z"}"></path></svg>`;
+    });
+    FlexPayIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg viewBox="${"0 0 64 64"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m17 13h2v2h2v-7c0-1.654-1.346-3-3-3s-3 1.346-3 3v7h2zm1-6c.551 0 1 .449 1 1v3h-2v-3c0-.551.449-1 1-1z"}"></path><path fill="${"currentColor"}" d="${"m9 11h1c1.654 0 3-1.346 3-3s-1.346-3-3-3h-3v10h2zm0-4h1c.551 0 1 .449 1 1s-.449 1-1 1h-1z"}"></path><path fill="${"currentColor"}" d="${"m25 10.816v4.184h2v-4.184c1.161-.414 2-1.514 2-2.816v-3h-2v3c0 .551-.449 1-1 1s-1-.449-1-1v-3h-2v3c0 1.302.839 2.402 2 2.816z"}"></path><path fill="${"currentColor"}" d="${"m63 32c0-5.969-4.782-10.832-10.715-10.986 2.846-1.99 4.715-5.286 4.715-9.014 0-6.065-4.935-11-11-11-5.728 0-10.442 4.402-10.949 10h-2.051v-8c0-1.103-.897-2-2-2h-26c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h4v13.917c0 .084-.15.097-.165.014l-.293-1.76c-.402-2.417-2.473-4.171-4.924-4.171-1.444 0-2.618 1.174-2.618 2.677 0 .343.064.678.191.994l.593 1.483c.825 2.062 1.402 4.221 1.716 6.418.338 2.366 1.608 4.491 3.5 5.928v18.5h18v-10h4v-2h-4v-6.718c1.305-2.065 2-4.437 2-6.887v-4.395h6v-2h-6v-3c0-1.654-1.346-3-3-3-.395 0-.77.081-1.116.22-.345-1.275-1.501-2.22-2.884-2.22-.771 0-1.468.301-2 .78-.532-.48-1.229-.78-2-.78-.352 0-.686.072-1 .184v-4.184h16c1.103 0 2-.897 2-2v-4h2.051c.499 5.504 5.067 9.841 10.664 9.986-2.588 1.81-4.363 4.701-4.664 8.014h-6.051v2h6.051c.31 3.42 2.19 6.39 4.913 8.186-.639-.116-1.293-.186-1.964-.186-5.728 0-10.442 4.402-10.949 10h-2.051v2h2.051c.507 5.598 5.221 10 10.949 10 6.065 0 11-4.935 11-11 0-3.837-1.978-7.217-4.964-9.186.639.116 1.293.186 1.964.186 6.065 0 11-4.935 11-11zm-40 29h-14v-16h14zm-7-36c.551 0 1 .449 1 1v7h2v-7c0-.551.449-1 1-1s1 .449 1 1v7h2v-5c0-.551.449-1 1-1s1 .449 1 1v9.395c0 1.986-.541 3.911-1.558 5.605h-15.112c-1.542-1.12-2.579-2.817-2.85-4.711-.336-2.355-.955-4.669-1.838-6.878l-.593-1.484c-.033-.079-.049-.163-.049-.309 0-.341.277-.618.618-.618 1.469 0 2.71 1.052 2.952 2.5l.293 1.759c.168 1.009 1.032 1.741 2.054 1.741 1.149 0 2.083-.934 2.083-2.083v-14.917c0-.551.449-1 1-1s1 .449 1 1v15h2v-7c0-.551.449-1 1-1zm15-8h-16.184c-.414-1.161-1.514-2-2.816-2s-2.402.839-2.816 2h-4.184v-14h26zm22 35c0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9 9 4.038 9 9zm-16-40c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9-9-4.038-9-9zm6 20c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9-9-4.038-9-9z"}"></path><path fill="${"currentColor"}" d="${"m53 39v-2h2v-3c0-1.654-1.346-3-3-3-.551 0-1-.449-1-1v-1h1c.551 0 1 .449 1 1v1h2v-1c0-1.302-.839-2.402-2-2.816v-2.184h-2v2h-2v3c0 1.654 1.346 3 3 3 .551 0 1 .449 1 1v1h-1c-.551 0-1-.449-1-1v-1h-2v1c0 1.302.839 2.402 2 2.816v2.184z"}"></path><path fill="${"currentColor"}" d="${"m47 19v-2h2v-3c0-1.654-1.346-3-3-3-.551 0-1-.449-1-1v-1h1c.551 0 1 .449 1 1v1h2v-1c0-1.302-.839-2.402-2-2.816v-2.184h-2v2h-2v3c0 1.654 1.346 3 3 3 .551 0 1 .449 1 1v1h-1c-.551 0-1-.449-1-1v-1h-2v1c0 1.302.839 2.402 2 2.816v2.184z"}"></path><path fill="${"currentColor"}" d="${"m43 45v2h-2v3c0 1.654 1.346 3 3 3 .551 0 1 .449 1 1v1h-1c-.551 0-1-.449-1-1v-1h-2v1c0 1.302.839 2.402 2 2.816v2.184h2v-2h2v-3c0-1.654-1.346-3-3-3-.551 0-1-.449-1-1v-1h1c.551 0 1 .449 1 1v1h2v-1c0-1.302-.839-2.402-2-2.816v-2.184z"}"></path></svg>`;
+    });
+    FastConvenientIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg viewBox="${"0 0 512 512"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block w-10 h-10 text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m387.302 125.987c3.001-6.026 4.698-12.81 4.698-19.987 0-24.813-20.187-45-45-45s-45 20.187-45 45c0 7.177 1.697 13.961 4.698 19.987-71.564 18.032-124.698 82.93-124.698 160.013 0 90.981 74.019 165 165 165s165-74.019 165-165c0-77.083-53.134-141.981-124.698-160.013zm-55.302-19.987c0-8.271 6.729-15 15-15s15 6.729 15 15-6.729 15-15 15-15-6.729-15-15zm30 314.162v-14.162c0-8.284-6.716-15-15-15s-15 6.716-15 15v14.162c-62.479-6.939-112.223-56.683-119.162-119.162h14.162c8.284 0 15-6.716 15-15s-6.716-15-15-15h-14.162c6.939-62.479 56.683-112.223 119.162-119.162v14.162c0 8.284 6.716 15 15 15s15-6.716 15-15v-14.162c62.479 6.939 112.223 56.684 119.162 119.162h-14.162c-8.284 0-15 6.716-15 15s6.716 15 15 15h14.162c-6.939 62.479-56.683 112.223-119.162 119.162z"}"></path><path fill="${"currentColor"}" d="${"m137 121h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m137 211h-62c-8.284 0-15 6.716-15 15s6.716 15 15 15h62c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m137 301h-92c-8.284 0-15 6.716-15 15s6.716 15 15 15h92c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m137 391h-122c-8.284 0-15 6.716-15 15s6.716 15 15 15h122c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m407 271h-45v-45c0-8.284-6.716-15-15-15s-15 6.716-15 15v60c0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path></svg>`;
+    });
+    BookNowFeature = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-4 py-6 lg:px-8 lg:py-12"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">What is the Book Now Pay Later Feature?
+			</h2>
+			<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Ready to pursue your wanderlust and explore the world easier than ever before? Trip
+				Support\u2019s Book Now Pay Later Travel plan can help cover your travel expenses in a
+				cost-effective manner. These expenses can include transportation costs, accommodations,
+				food, activities, tours, and more. Uniquely, we offer this approach without the need for
+				credit checks and extra boring, time-consuming documentation.<br>
+				<span class="${"font-bold"}">We believe that people should be able to travel regardless of their credit score</span>.
+			</p></div>
+		
+
+		
+		<div class="${"grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-12 text-center content-center"}"><div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative "}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-pblue-900 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
+					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-pblue-900 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
+					${validate_component(BookingIcon, "BookingIcon").$$render($$result, {}, {}, {})}</div>
+				<h4 class="${"text-lg font-bold mb-2"}">Early Booking</h4></div>
+			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-rose-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
+					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-rose-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
+					${validate_component(ApprovedIcon, "ApprovedIcon").$$render($$result, {}, {}, {})}</div>
+				<h4 class="${"text-lg font-bold mb-2"}">Guaranteed Approval</h4></div>
+			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-blue-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
+					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-blue-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
+					${validate_component(NoPostPayIcon, "NoPostPayIcon").$$render($$result, {}, {}, {})}</div>
+				<h4 class="${"text-lg font-bold mb-2"}">No Post Payments</h4></div>
+			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-emerald-700 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
+					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-emerald-700 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
+					${validate_component(FlexPayIcon, "FlexPayIcon").$$render($$result, {}, {}, {})}</div>
+				<h4 class="${"text-lg font-bold mb-2"}">Flexible Payments</h4></div>
+			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-yellow-400 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
+					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-yellow-400 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
+					${validate_component(FastConvenientIcon, "FastConvenientIcon").$$render($$result, {}, {}, {})}</div>
+				<h4 class="${"text-lg font-bold mb-2"}">Fast &amp; Convenient</h4></div></div>
+		</div></div>`;
+    });
+    WeeklyExample = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"pt-8 flex-wrap sm:flex sm:space-x-10 space-y-2 mb-6 sm:mb-0 lg:pt-12 items-center"}"><h3 class="${"text-lg font-bold text-gray-900"}">Varadero, Cuba</h3>
+	<p class="${"text-sm text-slate-700"}">Vacation Package Cost: <span class="${"font-bold"}">CA $835.00</span>/ Adult
+	</p>
+	<p class="${"text-sm text-slate-700"}">Total: <span class="${"font-bold"}">CA $1806.67</span> (For 2 adults)
+	</p>
+	<p class="${"text-sm text-slate-700"}">Your Weekly Installments will be <span class="${"font-bold"}">CA $47.54</span> T&amp;C:
+	</p></div>
+<div class="${"space-y-16 pt-4 lg:pt-10"}" role="${"tabpanel"}"><div class="${"flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-16"}"><div class="${"mt-6 lg:mt-0 lg:col-span-8"}">
+			<div class="${"relative py-12"}">
+				<div class="${"w-10 md:w-12 absolute top-0 left-0 bottom-0 flex flex-col justify-center lg:left-1/2 lg:-ml-6"}"><div class="${"mx-auto w-1 h-2.5 grow-0 bg-gradient-to-b from-transparent to-indigo-100 rounded-t"}"></div>
+					<div class="${"mx-auto w-1 grow bg-indigo-100"}"></div>
+					<div class="${"mx-auto w-1 h-2.5 grow-0 bg-gradient-to-t from-transparent to-indigo-100 rounded-b"}"></div></div>
+				
+
+				
+				<ul class="${"relative space-y-4 pl-10 md:pl-12 lg:pl-0"}">
+					<li class="${"relative lg:w-1/2 lg:pr-6 lg:mr-auto"}"><div class="${"w-10 md:w-12 absolute top-0 left-0 bottom-0 -translate-x-full flex justify-center mt-5 lg:translate-x-6 lg:left-auto lg:right-0"}"><div class="${"w-3 h-3 bg-indigo-500 rounded-full ring ring-indigo-100 ring-opacity-100 ring-offset-2"}"></div></div>
+						<div class="${"bg-gray-100 hover:ring hover:ring-gray-100 hover:ring-offset-2 rounded-xl p-4"}"><h4 class="${"font-bold text-tiny mb-2 text-slate-800"}">Purchased Vacation Package</h4>
+							<p class="${"text-sm leading-relaxed text-slate-600"}">Let&#39;s assume you purhcased a vacation package for two adults at <span class="${"font-bold"}">CA $835.00</span>
+								per adult. Total Cost: <span class="${"font-bold"}">CA $1806.67</span>(For 2 adults).
+								Your weekly installments for you vacation package for 2 adults will be as follows:
+							</p></div>
+						<div class="${"px-4 py-2 lg:w-40 lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:translate-x-full lg:flex lg:flex-col lg:mt-4 lg:py-0 lg:pr-0 lg:pl-6"}"><p class="${"text-sm font-semibold text-slate-600"}">February 01, 2022</p></div></li>
+					
+
+					
+					<li class="${"relative lg:w-1/2 lg:pl-6 lg:ml-auto"}"><div class="${"w-10 md:w-12 absolute top-0 left-0 bottom-0 -translate-x-full flex justify-center mt-5 lg:-translate-x-6"}"><div class="${"w-3 h-3 bg-indigo-500 rounded-full ring ring-indigo-100 ring-opacity-100 ring-offset-2"}"></div></div>
+						<div class="${"bg-gray-100 hover:ring hover:ring-gray-100 hover:ring-offset-2 rounded-xl p-4"}"><h4 class="${"font-bold text-tiny mb-2 text-slate-800"}">1<span class="${"align-super text-xx"}">st</span> weekly installment
+							</h4>
+							<p class="${"text-sm leading-relaxed text-slate-600"}">Your weekly installment will be <span class="${"font-bold"}">CA $47.54</span></p></div>
+						<div class="${"px-4 py-2 lg:w-40 lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:-translate-x-full lg:flex lg:flex-col lg:text-right lg:mt-4 lg:py-0 lg:pl-0 lg:pr-6"}"><p class="${"text-sm font-semibold text-slate-600"}">February 8, 2022</p></div></li>
+					
+
+					
+					<li class="${"relative lg:w-1/2 lg:pr-6 lg:mr-auto"}"><div class="${"w-10 md:w-12 absolute top-0 left-0 bottom-0 -translate-x-full flex justify-center mt-5 lg:translate-x-6 lg:left-auto lg:right-0"}"><div class="${"w-3 h-3 bg-indigo-500 rounded-full ring ring-indigo-100 ring-opacity-100 ring-offset-2"}"></div></div>
+						<div class="${"bg-gray-100 hover:ring hover:ring-gray-100 hover:ring-offset-2 rounded-xl p-4"}"><h4 class="${"font-bold text-tiny mb-2 text-slate-800"}">2<span class="${"align-super text-xx"}">nd</span> weekly installment
+							</h4>
+							<p class="${"text-sm leading-relaxed text-slate-600"}">Your weekly installment will be <span class="${"font-bold"}">CA $47.54</span></p></div>
+						<div class="${"px-4 py-2 lg:w-40 lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:translate-x-full lg:flex lg:flex-col lg:mt-4 lg:py-0 lg:pr-0 lg:pl-6"}"><p class="${"text-sm font-semibold text-slate-600"}">February 15, 2022</p></div></li>
+					
+
+					
+					<li class="${"relative lg:w-1/2 lg:pl-6 lg:ml-auto"}"><div class="${"w-10 md:w-12 absolute top-0 left-0 bottom-0 -translate-x-full flex justify-center mt-5 lg:-translate-x-6"}"><div class="${"w-3 h-3 bg-indigo-500 rounded-full ring ring-indigo-100 ring-opacity-100 ring-offset-2"}"></div></div>
+						<div class="${"bg-gray-100 hover:ring hover:ring-gray-100 hover:ring-offset-2 rounded-xl p-4"}"><h4 class="${"font-bold text-tiny mb-2 text-slate-800"}">Last installment</h4>
+							<p class="${"text-sm leading-relaxed text-slate-600"}">Your last weekly installment will be <span class="${"font-bold"}">CA $47.54</span></p></div>
+						<div class="${"px-4 py-2 lg:w-40 lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:-translate-x-full lg:flex lg:flex-col lg:text-right lg:mt-4 lg:py-0 lg:pl-0 lg:pr-6"}"><p class="${"text-sm font-semibold text-slate-600"}">November 15, 2021</p></div></li>
+					</ul>
+				</div>
+			</div>
+		<div class="${"lg:col-span-4"}"><div class="${"aspect-w-2 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden sm:aspect-w-2 sm:aspect-h-3"}"><img src="${"/images/booknow-paylater/cuba-varadero.jpg"}" alt="${"Maple organizer base with slots, supporting white polycarbonate trays of various sizes."}" class="${"object-center object-cover"}"></div></div></div></div>`;
+    });
+    HowDoesItWork = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"bg-white"}"><section aria-labelledby="${"features-heading"}" class="${"max-w-7xl mx-auto py-4 sm:py-12 sm:px-2 lg:px-8"}"><div class="${"max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">How Does This Work?
+				</h2>
+				<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">At Trip Support, we believe in offering you simple solutions for your travel needs. That\u2019s
+					why our Book Now Pay Later system is as easy as can be. Simply choose your travel
+					destination, and we will do the rest. We will buy your tickets and your vacation packages.
+					Once that happens, you\u2019d be asked to pay us in installments. Our Book Now Pay Later option
+					allows you to enjoy the benefits of early bookings savings. Instead of paying the full
+					amount of your trip in advance, you only have to place a deposit to secure your tickets.
+				</p></div>
+
+			<div class="${"mt-4"}"><div class="${"-mx-4 flex overflow-x-auto sm:mx-0"}"><div class="${"flex-auto px-4 border-b border-gray-200 sm:px-0"}"><div class="${"-mb-px flex space-x-10"}" aria-orientation="${"horizontal"}" role="${"tablist"}">
+							<button class="${"border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-sm " + escape('border-rose-600 text-rose-600", text-rose-600 font-bold')}" role="${"tab"}" type="${"button"}">Weekly Payment Plan
+							</button>
+
+							<button class="${"border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-sm " + escape("text-gray-500  hover:text-rose-600 hover:border-rose-600 font-semibold")}" role="${"tab"}" type="${"button"}">Bi-Weekly Payment Plan
+							</button>
+							<button class="${"border-transparent whitespace-nowrap py-6 border-b-2 font-medium text-sm " + escape("text-gray-500  hover:text-rose-600 hover:border-rose-600 font-semibold")}" role="${"tab"}" type="${"button"}">Monthly Payment Plan
+							</button></div></div></div>
+
+				${`${validate_component(WeeklyExample, "WeeklyExample").$$render($$result, {}, {}, {})}`}
+
+				${``}
+
+				${``}</div></div></section></div>`;
+    });
+    BnplFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"bg-white"}"><div class="${"max-w-2xl mx-auto py-6 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">Book Now Pay Later Plan for Flights
+			</h2>
+			<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Flights can be one of the costliest expenses you have to make when going on a trip. Whether
+				you\u2019re travelling for work, for visiting family, or for relaxation purposes, flying is
+				almost always an inevitable part of the process, but it doesn\u2019t have to be an expensive
+				part. You can pay off flights in installments with our Book Now, Pay Later Flight plan.
+				Everyone is eligible for a flight payment plan with no credit check required. All you have
+				to do is Book Now and Pay using our easy monthly installment options.
+			</p></div>
+
+		<div class="${"mt-11 grid items-start grid-cols-1 gap-y-8 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"}"><div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}">Flights within <span class="${"font-bold"}">North America</span></h3></div>
+				<div class="${"aspect-w-3 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/home/california.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}">Flights to <span class="${"font-bold"}">Europe</span></h3></div>
+				<div class="${"aspect-w-3 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/blog/blog-canada-3.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}">Flights to <span class="${"font-bold"}">Asia</span></h3></div>
+				<div class="${"aspect-w-3 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/vacations/puertovallarta.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}">Flights to <span class="${"font-bold"}">Middle East</span></h3></div>
+				<div class="${"aspect-w-3 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/vacations/morocco.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div></div></div></div>`;
+    });
+    BnplVacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"bg-white"}"><div class="${"max-w-2xl mx-auto py-6 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">Book Now Pay Later for Vacations
+			</h2>
+			<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Everyone has daydreamed about their ideal vacation paradise at least a few times, but for
+				many people who think they can\u2019t afford to go on a vacation, this only stays as a dream. At
+				Trip Support, we believe everyone and anyone should be able to take the trip of their dreams
+				regardless of their financial situation. We do this through our Book Now Pay Later plan for
+				Vacation Packages. Simply decide where you want to go, and we\u2019ll do the rest.
+			</p></div>
+
+		<div class="${"mt-11 grid items-start grid-cols-2 gap-y-8 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-6 lg:gap-x-8"}"><div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}"><span class="${"font-bold"}">Varadero</span>, Cuba
+					</h3></div>
+				<div class="${"aspect-w-2 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/home/california.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}"><span class="${"font-bold"}">Punta Cana</span>, Dominican
+					</h3></div>
+				<div class="${"aspect-w-2 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/blog/blog-canada-3.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}"><span class="${"font-bold"}">Cancun</span>, Mexico
+					</h3></div>
+				<div class="${"aspect-w-2 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/vacations/puertovallarta.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}"><span class="${"font-bold"}">Montego Bay</span>, Jamaica
+					</h3></div>
+				<div class="${"aspect-w-2 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/vacations/morocco.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}"><span class="${"font-bold"}">Aruba</span>, Caribbean
+					</h3></div>
+				<div class="${"aspect-w-2 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/vacations/morocco.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div>
+			<div class="${"flex flex-col-reverse"}"><div class="${"mt-6"}"><h3 class="${"text-sz font-medium text-gray-900 text-center"}"><span class="${"font-bold"}">Maui</span>, Hawaii
+					</h3></div>
+				<div class="${"aspect-w-2 aspect-h-1 sm:aspect-w-3 sm:aspect-h-2 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"/images/vacations/morocco.jpg"}" alt="${"Green cardstock box containing white, beige, and brown cards."}" class="${"object-center object-cover"}"></div></div></div></div></div>`;
+    });
     Book_now_pay_later = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+      return `${validate_component(BookNowHero, "BookNowHero").$$render($$result, {}, {}, {})}
+${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
+${validate_component(BookNowFeature, "BookNowFeature").$$render($$result, {}, {}, {})}
+${validate_component(HowDoesItWork, "HowDoesItWork").$$render($$result, {}, {}, {})}
+
+${validate_component(BnplFlights, "BnplFlights").$$render($$result, {}, {}, {})}
+${validate_component(BnplVacations, "BnplVacations").$$render($$result, {}, {}, {})}
+
+<div class="${"bg-white"}"><div class="${"max-w-2xl mx-auto py-6 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">Pros of Book Now Pay Later
+			</h2>
+			<ul class="${"mt-4 ml-4 text-gray-700 max-w-4xl prose list-disc"}"><li>You can instantly take advantage of any and all time-sensitive discounts and deals
+					Airlines may be offering
+				</li>
+				<li>No credit check means no headache when it comes to financing your trip</li>
+				<li>No hidden charges or fees</li>
+				<li>You can choose the best plan that works for you</li></ul></div></div></div>
+
+<div class="${"bg-white"}"><div class="${"max-w-2xl mx-auto py-6 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">Book Now Pay Later plan does not apply to:
+			</h2>
+			<ul class="${"mt-4 ml-4 text-gray-700 max-w-3xl prose list-disc"}"><li>People without a valid credit/debit card from a Canada or the US bank.</li>
+				<li>Hotel bookings, however for more information and other payment options you may reach out
+					to us by dialing for CA: <a href="${"tel:+1-855-606-0606"}">1-855-606-0606</a> and for US:
+					<a href="${"tel:+1-833-606-0606"}">1-833-606-0606</a></li>
+				<li>No hidden charges or fees</li>
+				<li>You can choose the best plan that works for you</li></ul></div></div></div>`;
     });
   }
 });
@@ -6784,8 +7021,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-99514f30.js";
-    js4 = ["pages/book-now-pay-later.svelte-99514f30.js", "chunks/vendor-aa7f3673.js"];
+    entry4 = "pages/book-now-pay-later.svelte-bee1056a.js";
+    js4 = ["pages/book-now-pay-later.svelte-bee1056a.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js"];
     css4 = [];
   }
 });
@@ -7178,8 +7415,9 @@ var VacationsHero, StarRating, Cancun, MexicoSubTabs, Vacations;
 var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
     init_index_c9c8dd9a();
-    init_BlogPosts_b1f1233d();
+    init_BookingWidget_39488cf8();
     init_Subscribe_20d5a66c();
+    init_BlogPosts_5c3b104a();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     VacationsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7414,8 +7652,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-b5f30858.js";
-    js7 = ["pages/vacations.svelte-b5f30858.js", "chunks/vendor-aa7f3673.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
+    entry7 = "pages/vacations.svelte-82e6d7e2.js";
+    js7 = ["pages/vacations.svelte-82e6d7e2.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js", "chunks/BlogPosts-08852c0b.js"];
     css7 = [];
   }
 });
@@ -7521,7 +7759,8 @@ var LottieFlights, FlightHero, FlightDeals, Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
     init_index_c9c8dd9a();
-    init_BlogPosts_b1f1233d();
+    init_BookingWidget_39488cf8();
+    init_BlogPosts_5c3b104a();
     init_Subscribe_20d5a66c();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
@@ -7637,8 +7876,8 @@ var entry10, js10, css10;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_flights_svelte();
-    entry10 = "pages/flights.svelte-7474d86e.js";
-    js10 = ["pages/flights.svelte-7474d86e.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
+    entry10 = "pages/flights.svelte-963be6f3.js";
+    js10 = ["pages/flights.svelte-963be6f3.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-bd4fac92.js"];
     css10 = [];
   }
 });
@@ -7652,7 +7891,8 @@ var LottieHotels, HotelsHero, Toronto, CanadaSubTabs, Hotels;
 var init_hotels_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/hotels.svelte.js"() {
     init_index_c9c8dd9a();
-    init_BlogPosts_b1f1233d();
+    init_BookingWidget_39488cf8();
+    init_BlogPosts_5c3b104a();
     init_Subscribe_20d5a66c();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
@@ -7826,8 +8066,8 @@ var entry11, js11, css11;
 var init__11 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_hotels_svelte();
-    entry11 = "pages/hotels.svelte-96bb7c09.js";
-    js11 = ["pages/hotels.svelte-96bb7c09.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BlogPosts-5b0e5621.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
+    entry11 = "pages/hotels.svelte-b79c14a4.js";
+    js11 = ["pages/hotels.svelte-b79c14a4.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-bd4fac92.js"];
     css11 = [];
   }
 });
@@ -10152,10 +10392,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-6e96fdb3.js", "js": ["start-6e96fdb3.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-26f850b7.js", "js": ["start-26f850b7.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -6087,9 +6087,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-6ae4a147.js";
-    js = ["pages/__layout.svelte-6ae4a147.js", "chunks/vendor-aa7f3673.js"];
-    css = ["assets/pages/__layout.svelte-90528451.css"];
+    entry = "pages/__layout.svelte-a6d640e9.js";
+    js = ["pages/__layout.svelte-a6d640e9.js", "chunks/vendor-6ea63d49.js"];
+    css = ["assets/pages/__layout.svelte-93b3cb88.css"];
   }
 });
 
@@ -6137,8 +6137,8 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-d1de1579.js";
-    js2 = ["error.svelte-d1de1579.js", "chunks/vendor-aa7f3673.js"];
+    entry2 = "error.svelte-8f89e959.js";
+    js2 = ["error.svelte-8f89e959.js", "chunks/vendor-6ea63d49.js"];
     css2 = [];
   }
 });
@@ -6557,14 +6557,14 @@ var init_BlogPosts_5c3b104a = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Subscribe-20d5a66c.js
+// .svelte-kit/output/server/chunks/Subscribe-9843ead1.js
 var Subscribe;
-var init_Subscribe_20d5a66c = __esm({
-  ".svelte-kit/output/server/chunks/Subscribe-20d5a66c.js"() {
+var init_Subscribe_9843ead1 = __esm({
+  ".svelte-kit/output/server/chunks/Subscribe-9843ead1.js"() {
     init_index_c9c8dd9a();
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative my-3 py-12 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[1] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
+<div class="${"relative my-3 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[1] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
 				<div class="${"max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1"}"><img class="${"object-cover object-center md:rounded-l-xl lg:shadow-2xl"}" src="${"images/home/subscribe.jpg"}" alt="${""}"></div></div></div>
 
 			<div class="${"relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center shadow-xl"}"><div class="${"relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"}"><h2 class="${"text-2xl font-extrabold text-slate-900"}" id="${"join-heading"}">Sign up today, we\u2019ve got deals to share!
@@ -6596,7 +6596,7 @@ var init_index_svelte = __esm({
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
     init_BlogPosts_5c3b104a();
-    init_Subscribe_20d5a66c();
+    init_Subscribe_9843ead1();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6759,8 +6759,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-a99b2ea8.js";
-    js3 = ["pages/index.svelte-a99b2ea8.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-bd4fac92.js"];
+    entry3 = "pages/index.svelte-f8b62608.js";
+    js3 = ["pages/index.svelte-f8b62608.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
     css3 = [];
   }
 });
@@ -6770,12 +6770,12 @@ var book_now_pay_later_svelte_exports = {};
 __export(book_now_pay_later_svelte_exports, {
   default: () => Book_now_pay_later
 });
-var BookNowHero, BookingIcon, ApprovedIcon, NoPostPayIcon, FlexPayIcon, FastConvenientIcon, BookNowFeature, WeeklyExample, HowDoesItWork, PaymentPlans, BnplFaq1, BnplFaq2, BnplFaqs, Book_now_pay_later;
+var BookNowHero, BookNowFeature, WeeklyExample, HowDoesItWork, PaymentPlans, BnplFaq1, BnplFaq2, BnplFaqs, Book_now_pay_later;
 var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_Subscribe_20d5a66c();
+    init_Subscribe_9843ead1();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     BookNowHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6796,58 +6796,97 @@ var init_book_now_pay_later_svelte = __esm({
 
 								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-[200px] w-[180px] rounded-lg object-cover"}" src="${"/images/hotels/muskoka.jpg"}" alt="${""}"></div></div></div></div></div></div></div></div></div>`;
     });
-    BookingIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg viewBox="${"0 0 512 512"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m406.713 15.5h-301.425c-58.056 0-105.288 47.232-105.288 105.288s47.232 105.288 105.288 105.288h76.663v85.063l-3.743-3.14c-18.503-15.527-47.457-14.265-64.538 2.818-17.9 17.9-16.728 46.349 2.737 62.681l65.543 54.998v53.004c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15v-168.556c0-22.656-16.954-41.854-39.437-44.655l-80.563-10.037v-32.178h134.763c58.056 0 105.287-47.232 105.287-105.288s-47.231-105.286-105.287-105.286zm-194.763 451v-30h150v30zm136.855-168.441c7.494.934 13.146 7.333 13.146 14.885v93.556h-159.541l-66.72-55.984c-5.922-4.969-6.281-13.012-.807-18.487 6.148-6.147 17.382-6.637 24.042-1.049l28.384 23.817c9.736 8.168 24.642 1.239 24.642-11.491v-191.806c0-8.271 6.729-15 15-15s15 6.729 15 15v120c0 7.567 5.637 13.949 13.146 14.885zm57.908-101.984h-134.763v-44.575c0-24.813-20.187-45-45-45s-45 20.187-45 45v44.575h-76.663c-41.513 0-75.287-33.774-75.287-75.287s33.774-75.288 75.288-75.288h301.425c41.513 0 75.287 33.774 75.287 75.288s-33.774 75.287-75.287 75.287z"}"></path><path fill="${"currentColor"}" d="${"m395.294 79.894-49.394 49.393-19.394-19.393c-5.857-5.858-15.355-5.858-21.213 0s-5.858 15.355 0 21.213l30 30c5.857 5.858 15.355 5.859 21.213 0l60-60c5.858-5.858 5.858-15.355 0-21.213-5.857-5.859-15.355-5.859-21.212 0z"}"></path></svg>`;
-    });
-    ApprovedIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg viewBox="${"0 0 512 512"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m484.304688 231.558594c-2.253907-2.703125-2.550782-6.539063-.734376-9.554688 7.269532-11.636718 9.441407-25.75 6.011719-39.035156-3.367187-13.3125-12.222656-24.570312-24.367187-30.976562-3.0625-1.710938-4.65625-5.214844-3.933594-8.644532.398438-1.890625.699219-3.796875.902344-5.714844.367187-3.476562-1.492188-6.808593-4.648438-8.320312-3.152344-1.507812-6.914062-.871094-9.390625 1.597656l-39.277343 39.273438-239.078126 239.070312-39.308593 39.308594c-2.46875 2.480469-3.109375 6.25-1.59375 9.402344 1.515625 3.15625 4.851562 5.015625 8.332031 4.636718 1.914062-.203124 3.816406-.503906 5.699219-.898437 3.433593-.726563 6.941406.863281 8.652343 3.929687 6.402344 12.148438 17.660157 21.007813 30.96875 24.378907 13.261719 3.414062 27.34375 1.25 38.96875-5.980469 3.0625-1.878906 6.988282-1.566406 9.714844.777344 9.085938 8.03125 20.796875 12.464844 32.921875 12.46875 1.527344 0 3.058594-.066406 4.59375-.214844 13.710938-1.351562 26.277344-8.230469 34.808594-19.050781 2.242187-2.765625 5.984375-3.816407 9.339844-2.625 12.78125 5.039062 27.078125 4.582031 39.511719-1.265625 12.484374-5.90625 22.023437-16.636719 26.425781-29.726563 1.214843-3.417969 4.46875-5.6875 8.09375-5.648437 13.703125.1875 26.914062-5.121094 36.675781-14.742188 9.679688-9.691406 15.011719-22.894531 14.773438-36.589844-.015626-3.644531 2.261718-6.90625 5.6875-8.152343 13.066406-4.417969 23.773437-13.957031 29.671874-26.425781 5.832032-12.402344 6.296876-26.65625 1.289063-39.414063-1.230469-3.394531-.164063-7.195313 2.652344-9.457031 10.789062-8.546875 17.644531-21.109375 18.992187-34.808594 1.253906-13.699219-3.21875-27.308594-12.355468-37.597656zm-113.242188 139.925781c-47.21875 47.617187-117.777344 63.511719-180.851562 40.734375l13.269531-13.277344c14.75 4.5 30.078125 6.8125 45.496093 6.871094 49.484376-.167969 95.984376-23.695312 125.433594-63.460938 29.453125-39.769531 38.394532-91.105468 24.128906-138.492187l13.210938-13.210937c22.769531 63.0625 6.898438 133.601562-40.6875 180.835937zm14.039062-154.15625c10.980469 47.132813-3.152343 96.597656-37.375 130.8125-34.222656 34.21875-83.683593 48.34375-130.816406 37.355469zm82.414063 73.582031c-8.59375 6.742188-11.785156 18.304688-7.867187 28.507813 3.414062 8.507812 3.113281 18.0625-.828126 26.339843-3.949218 8.394532-11.136718 14.824219-19.917968 17.824219-10.324219 3.488281-17.214844 13.242188-17.050782 24.136719.1875 9.101562-3.296874 17.894531-9.667968 24.394531-6.367188 6.503907-15.089844 10.167969-24.191406 10.164063h-1.105469c-10.714844.015625-20.238281 6.835937-23.695313 16.980468-2.980468 8.792969-9.410156 15.996094-17.8125 19.949219-8.304687 3.964844-17.886718 4.261719-26.425781.828125-10.160156-3.875-21.660156-.6875-28.382813 7.859375-5.726562 7.25-14.160156 11.855469-23.351562 12.761719-9.066406.859375-18.082031-2.074219-24.90625-8.101562-4.480469-4.042969-10.304688-6.269532-16.335938-6.242188-4.632812 0-9.175781 1.285156-13.121093 3.714844-7.773438 4.914062-17.238281 6.375-26.128907 4.027344-8.820312-2.230469-16.28125-8.101563-20.53125-16.152344-2.46875-4.613282-6.363281-8.300782-11.105468-10.519532l22.320312-22.386718c70.628906 28.503906 151.449219 12.042968 205.300782-41.8125 53.855468-53.855469 70.3125-134.679688 41.808593-205.300782l22.410157-22.414062c2.210937 4.742188 5.90625 8.636719 10.519531 11.097656 8.046875 4.257813 13.914062 11.71875 16.15625 20.539063 2.34375 8.910156.871093 18.398437-4.066407 26.179687-5.746093 9.242188-4.738281 21.164063 2.480469 29.3125 6.050781 6.835938 9.011719 15.867188 8.183594 24.957032-.894531 9.1875-5.484375 17.621093-12.71875 23.355468zm0 0"}"></path><path fill="${"currentColor"}" d="${"m13.289062 275.714844c-7.261718 11.640625-9.429687 25.75-5.992187 39.035156 3.363281 13.308594 12.210937 24.566406 24.351563 30.976562 3.0625 1.710938 4.65625 5.214844 3.929687 8.644532-.398437 1.890625-.699219 3.796875-.898437 5.714844-.367188 3.476562 1.492187 6.808593 4.644531 8.320312 3.152343 1.507812 6.917969.871094 9.394531-1.597656l39.273438-39.273438 239.105468-239.097656 39.257813-39.265625c2.472656-2.480469 3.109375-6.246094 1.59375-9.402344-1.511719-3.15625-4.851563-5.015625-8.332031-4.636719-1.914063.203126-3.816407.503907-5.699219.898438-3.433594.730469-6.941407-.863281-8.652344-3.929688-6.398437-12.140624-17.640625-21-30.945313-24.378906-13.257812-3.425781-27.34375-1.265625-38.96875 5.980469-3.0625 1.882813-6.988281 1.566406-9.710937-.777344-10.269531-9.105469-23.851563-13.550781-37.515625-12.277343-13.710938 1.351562-26.28125 8.230468-34.808594 19.050781-2.246094 2.761719-5.984375 3.8125-9.339844 2.625-12.78125-5.046875-27.082031-4.589844-39.515624 1.261719-12.480469 5.910156-22.023438 16.640624-26.425782 29.730468-1.097656 3.503906-4.425781 5.824219-8.09375 5.648438-13.707031-.21875-26.929687 5.085937-36.6875 14.714844-9.683594 9.703124-15.011718 22.921874-14.757812 36.625.011718 3.644531-2.265625 6.90625-5.691406 8.152343-13.0625 4.417969-23.773438 13.957031-29.671876 26.425781-5.828124 12.402344-6.292968 26.65625-1.285156 39.414063 1.226563 3.394531.164063 7.195313-2.652344 9.457031-10.789062 8.546875-17.644531 21.109375-18.992187 34.808594-1.238281 13.695312 3.246094 27.296875 12.386719 37.574219 2.257812 2.714843 2.539062 6.5625.699218 9.578125zm112.507813-149.472656c47.222656-47.609376 117.777344-63.503907 180.851563-40.734376l-13.210938 13.253907c-55.226562-16.683594-115.152344-1.636719-155.945312 39.152343-40.796876 40.792969-55.847657 100.714844-39.167969 155.941407l-13.253907 13.257812c-22.777343-63.082031-6.886718-133.648437 40.726563-180.878906zm-14.035156 154.15625c-10.988281-47.136719 3.144531-96.605469 37.371093-130.824219 34.222657-34.222657 83.691407-48.34375 130.828126-37.351563zm-82.417969-73.582032c8.597656-6.742187 11.789062-18.304687 7.871094-28.503906-3.414063-8.511719-3.117188-18.066406.824218-26.34375 3.953126-8.394531 11.140626-14.824219 19.917969-17.824219 10.328125-3.488281 17.21875-13.246093 17.054688-24.144531-.1875-9.101562 3.292969-17.894531 9.664062-24.394531 6.371094-6.503907 15.089844-10.167969 24.195313-10.164063h1.105468c10.714844-.015625 20.234376-6.839844 23.691407-16.980468 2.996093-8.792969 9.4375-15.988282 17.847656-19.933594 8.304687-3.964844 17.886719-4.261719 26.425781-.828125 10.15625 3.875 21.652344.691406 28.375-7.851563 5.726563-7.246094 14.160156-11.851562 23.351563-12.757812 9.066406-.863282 18.082031 2.070312 24.90625 8.101562 8.171875 7.28125 20.164062 8.308594 29.457031 2.523438 7.773438-4.910156 17.238281-6.367188 26.128906-4.027344 8.820313 2.234375 16.28125 8.101562 20.53125 16.152344 2.46875 4.613281 6.363282 8.304687 11.105469 10.519531l-22.394531 22.414063c-70.625-28.53125-151.460938-12.082032-205.316406 41.785156-53.851563 53.863281-70.285157 134.703125-41.742188 205.320312l-22.410156 22.371094c-2.214844-4.742188-5.90625-8.636719-10.523438-11.097656-8.042968-4.257813-13.910156-11.71875-16.152344-20.539063-2.347656-8.910156-.875-18.398437 4.0625-26.179687 5.746094-9.242188 4.738282-21.164063-2.476562-29.316406-6.054688-6.832032-9.015625-15.863282-8.183594-24.953126.894532-9.1875 5.484375-17.621093 12.71875-23.355468zm0 0"}"></path><path fill="${"currentColor"}" d="${"m122.378906 425.714844c2.699219 1.300781 5.886719 1.039062 8.339844-.683594 2.449219-1.722656 3.773438-4.636719 3.460938-7.613281-.308594-2.980469-2.210938-5.554688-4.960938-6.734375l-64.222656-29.191406c-3.132813-1.421876-6.816406-.75-9.25 1.679687-2.429688 2.429687-3.101563 6.113281-1.683594 9.246094l29.207031 64.230469c1.160157 2.777343 3.742188 4.703124 6.734375 5.023437 2.992188.324219 5.925782-1.007813 7.648438-3.476563 1.726562-2.464843 1.972656-5.675781.648437-8.375l-4.957031-10.851562 18.167969-18.167969zm-36.335937-2.800782-7.851563-17.285156 17.273438 7.855469zm0 0"}"></path><path fill="${"currentColor"}" d="${"m149.160156 403.101562c3.339844.003907 6.355469-2.007812 7.636719-5.09375 1.277344-3.085937.574219-6.636718-1.789063-9l-17.523437-17.523437 5.847656-5.839844c9.671875-9.679687 9.667969-25.367187-.011719-35.039062-9.675781-9.671875-25.363281-9.667969-35.035156.007812l-5.839844 5.839844c-3.097656 3.097656-4.839843 7.300781-4.839843 11.679687 0 4.382813 1.742187 8.585938 4.839843 11.683594l17.425782 17.414063.089844.097656.097656.101563 23.261718 23.261718c1.550782 1.546875 3.652344 2.414063 5.839844 2.410156zm-17.515625-49.132812-5.847656 5.835938-11.675781-11.675782 5.839844-5.839844c2.085937-2.085937 5.125-2.902343 7.976562-2.140624 2.851562.765624 5.078125 2.992187 5.84375 5.839843.765625 2.851563-.050781 5.890625-2.136719 7.980469zm0 0"}"></path><path fill="${"currentColor"}" d="${"m195.875 356.386719c3.339844 0 6.351562-2.011719 7.628906-5.097657 1.277344-3.085937.570313-6.636718-1.789062-9l-17.515625-17.523437 5.839843-5.835937c9.386719-9.722657 9.253907-25.171876-.300781-34.730469-9.558593-9.554688-25.011719-9.691407-34.730469-.300781l-5.847656 5.839843c-6.445312 6.449219-6.445312 16.902344 0 23.351563l40.878906 40.878906c1.546876 1.546875 3.648438 2.417969 5.835938 2.417969zm-17.515625-49.132813-5.835937 5.835938-11.675782-11.675782 5.835938-5.839843c3.242187-3.128907 8.390625-3.082031 11.578125.101562 3.183593 3.183594 3.230469 8.335938.097656 11.578125zm0 0"}"></path><path fill="${"currentColor"}" d="${"m274.203125 278.058594c0-4.558594-3.695313-8.257813-8.257813-8.257813h-27.0625c7.976563-10.351562 6.539063-25.117187-3.28125-33.734375-9.820312-8.621094-24.648437-8.132812-33.878906 1.117188l-5.835937 5.835937c-6.449219 6.449219-6.449219 16.90625 0 23.355469l40.875 40.878906c3.253906 3.046875 8.339843 2.964844 11.492187-.1875 3.148438-3.15625 3.230469-8.242187.175782-11.492187l-9.257813-9.257813h26.773437c4.5625 0 8.257813-3.695312 8.257813-8.257812zm-49.125-17.523438-5.839844 5.847656-11.683593-11.683593 5.835937-5.839844c2.085937-2.085937 5.128906-2.902344 7.980469-2.140625 2.847656.761719 5.078125 2.988281 5.839844 5.839844.765624 2.847656-.046876 5.890625-2.132813 7.976562zm0 0"}"></path><path fill="${"currentColor"}" d="${"m306.824219 248.859375c9.648437-9.6875 9.648437-25.351563 0-35.039063l-23.355469-23.34375c-9.800781-9.367187-25.234375-9.367187-35.039062 0-9.671876 9.671876-9.671876 25.355469 0 35.027344l23.355468 23.355469c4.644532 4.648437 10.949219 7.257813 17.519532 7.257813 6.570312 0 12.871093-2.609376 17.519531-7.257813zm-46.714844-35.039063c-2.148437-2.074218-3.007813-5.144531-2.253906-8.03125.757812-2.886718 3.011719-5.140624 5.898437-5.898437 2.886719-.753906 5.957032.105469 8.03125 2.253906l23.351563 23.351563c2.089843 2.085937 2.90625 5.128906 2.140625 7.980468-.761719 2.847657-2.988282 5.074219-5.835938 5.839844-2.851562.765625-5.890625-.046875-7.980468-2.132812zm0 0"}"></path><path fill="${"currentColor"}" d="${"m347.699219 204.5625c2.976562 0 5.71875-1.601562 7.183593-4.191406 1.464844-2.585938 1.421876-5.761719-.105468-8.3125l-35.03125-58.398438c-2.347656-3.910156-7.421875-5.179687-11.332032-2.828125-3.910156 2.347657-5.179687 7.421875-2.828124 11.332031l17.992187 30.070313-30.058594-18.046875c-3.910156-2.34375-8.984375-1.078125-11.328125 2.832031-2.347656 3.914063-1.078125 8.984375 2.832032 11.332031l58.382812 35.039063c1.300781.773437 2.785156 1.179687 4.292969 1.171875zm0 0"}"></path><path fill="${"currentColor"}" d="${"m382.738281 169.53125c2.164063 0 4.238281-.847656 5.78125-2.359375l23.59375-23.125c3.257813-3.191406 3.3125-8.421875.121094-11.679687-3.191406-3.257813-8.421875-3.3125-11.683594-.121094l-17.753906 17.390625-11.742187-11.734375 11.683593-11.675782c2.148438-2.074218 3.007813-5.144531 2.253907-8.03125-.757813-2.886718-3.011719-5.140624-5.898438-5.898437-2.886719-.753906-5.957031.105469-8.03125 2.253906l-11.683594 11.675781-11.679687-11.683593 17.515625-17.515625c3.132812-3.242188 3.085937-8.390625-.097656-11.578125-3.1875-3.183594-8.335938-3.230469-11.578126-.101563l-23.351562 23.363282c-3.226562 3.226562-3.226562 8.453124 0 11.675781l23.351562 23.355469 23.363282 23.363281c1.546875 1.550781 3.648437 2.425781 5.835937 2.425781zm0 0"}"></path><path fill="${"currentColor"}" d="${"m429.449219 122.808594c2.1875 0 4.289062-.871094 5.835937-2.421875l5.839844-5.835938c12.894531-12.898437 12.894531-33.808593 0-46.707031l-11.675781-11.679688c-12.902344-12.894531-33.808594-12.894531-46.710938 0l-5.835937 5.839844c-3.222656 3.226563-3.222656 8.453125 0 11.675782l46.707031 46.707031c1.546875 1.550781 3.648437 2.421875 5.839844 2.421875zm-11.679688-54.964844 11.679688 11.675781c6.445312 6.449219 6.445312 16.902344 0 23.355469l-35.03125-35.03125c6.535156-6.234375 16.816406-6.234375 23.351562 0zm0 0"}"></path></svg>`;
-    });
-    NoPostPayIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg viewBox="${"0 0 128 128"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m64 0c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64zm-31.2 12.7c8.5 4.7 15.1 9 16.9 10.8 3.1 3.2 6.5 8.3 6.5 10.9 0 2.5-.1 7-.2 9.5l-6-.9c-2-3.2-5-7.6-9.2-14.2l-2.3-3.6c-.6-.9-1.8-1.2-2.8-.6-.9.6-1.2 1.8-.6 2.8l2.3 3.6c13.4 20.7 13.4 20.7 15.1 23.4 2.4 3.8 1.3 6.8-.5 7.9-2.7 1.7-5.1.7-7.2-1.7-.4-.4-.7-.8-1.2-1.6-.8-1.1-1.9-2.8-4.3-5.8-.9-1.1-10.1-11.8-11.2-12.9-1.5-1.5-3.5-2-5.7-2.5-3-.6-6.5-1.3-9.6-4.9 4.9-8.2 11.8-15.1 20-20.2zm-14.5 28.3c1.2.3 3.4.8 3.5.8-.5 3-1.2 9.6.4 11.7.4.5 3.2 4.9 4 6.1-.2.5-.6 1.1-1.5 1.5-1.3.6-2.4.2-3.1-.9-1.3-2-5.8-11-5.9-12.7.1-.9 1.3-3.9 2.6-6.5zm11 15.9c-.7-1-3.3-5.1-3.8-5.8-.4-1.1-.2-5.1.1-7.6.2.3.5.5.8.9 1.4 1.5 3.5 3.8 6.1 6.9zm-25.3 7.1c0-9.9 2.4-19.2 6.7-27.4 1.3 1.3 2.6 2.2 3.9 2.9-1 2.2-2.7 6.1-2.7 8.1 0 3.1 5.6 13.6 6.5 14.9 1.2 1.9 3.2 2.9 5.3 2.9h.8l-4 6.9c-.6 1-.2 2.2.7 2.7l13.6 7.9c.3.2.7.3 1 .3.7 0 1.4-.4 1.7-1 .6-1 .2-2.2-.7-2.7l-11.8-6.9 10.4-17.9c.3.4.6.7.9 1.1 2.3 2.9 3.4 4.5 4.2 5.6.6.9 1 1.5 1.7 2.1 2.5 2.7 4.2 3.3 6.4 3.6 2.6.4 5.1-.6 6.4-1.9 2.8-2.7 3.5-5.9 2.6-9.3l2.4 1.3c.3.2.6.3 1 .3.7 0 1.4-.4 1.7-1 .5-1 .2-2.2-.8-2.7l-7.8-4.4c-.3-.5-.7-1.1-1.2-1.8l14.8 2.4h.3c1 0 1.8-.7 2-1.7.2-1.1-.6-2.1-1.6-2.3l-8.4-1.4c.1-2.4.2-7.4.2-10.2 0-4.8-5-11.1-7.6-13.8-2.6-2.6-10.6-7.3-15.7-10.2 8.2-4.1 17.4-6.4 27.1-6.4 15.8 0 30.2 6.2 40.9 16.2l-84.7 84.8c-10-10.8-16.2-25.2-16.2-41zm60 60c-15.8 0-30.2-6.2-40.9-16.2l84.7-84.8c10 10.8 16.2 25.2 16.2 41 0 33.1-26.9 60-60 60z"}"></path><path fill="${"currentColor"}" d="${"m113.7 54.9c-.3-.4-.8-.7-1.3-.8l-24.3-4.3c-1.1-.2-2.1.5-2.3 1.6s.5 2.1 1.6 2.3l22.2 3.9-6.2 31.1-8.2-1.4 5.3-9.6c.5-1 .2-2.2-.8-2.7l-22.6-12.7c-1-.5-2.2-.2-2.7.8s-.2 2.2.8 2.7l21 11.8-15.2 27.4-30.3-17.5c-1-.6-2.2-.2-2.7.7-.6 1-.2 2.2.7 2.7l31.9 18.5c1 .5 2.2.3 2.8-.8l9.7-17.6 11.5 1.9h.3c.9 0 1.8-.7 2-1.6l7-35c.2-.4.1-1-.2-1.4z"}"></path></svg>`;
-    });
-    FlexPayIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg viewBox="${"0 0 64 64"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m17 13h2v2h2v-7c0-1.654-1.346-3-3-3s-3 1.346-3 3v7h2zm1-6c.551 0 1 .449 1 1v3h-2v-3c0-.551.449-1 1-1z"}"></path><path fill="${"currentColor"}" d="${"m9 11h1c1.654 0 3-1.346 3-3s-1.346-3-3-3h-3v10h2zm0-4h1c.551 0 1 .449 1 1s-.449 1-1 1h-1z"}"></path><path fill="${"currentColor"}" d="${"m25 10.816v4.184h2v-4.184c1.161-.414 2-1.514 2-2.816v-3h-2v3c0 .551-.449 1-1 1s-1-.449-1-1v-3h-2v3c0 1.302.839 2.402 2 2.816z"}"></path><path fill="${"currentColor"}" d="${"m63 32c0-5.969-4.782-10.832-10.715-10.986 2.846-1.99 4.715-5.286 4.715-9.014 0-6.065-4.935-11-11-11-5.728 0-10.442 4.402-10.949 10h-2.051v-8c0-1.103-.897-2-2-2h-26c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h4v13.917c0 .084-.15.097-.165.014l-.293-1.76c-.402-2.417-2.473-4.171-4.924-4.171-1.444 0-2.618 1.174-2.618 2.677 0 .343.064.678.191.994l.593 1.483c.825 2.062 1.402 4.221 1.716 6.418.338 2.366 1.608 4.491 3.5 5.928v18.5h18v-10h4v-2h-4v-6.718c1.305-2.065 2-4.437 2-6.887v-4.395h6v-2h-6v-3c0-1.654-1.346-3-3-3-.395 0-.77.081-1.116.22-.345-1.275-1.501-2.22-2.884-2.22-.771 0-1.468.301-2 .78-.532-.48-1.229-.78-2-.78-.352 0-.686.072-1 .184v-4.184h16c1.103 0 2-.897 2-2v-4h2.051c.499 5.504 5.067 9.841 10.664 9.986-2.588 1.81-4.363 4.701-4.664 8.014h-6.051v2h6.051c.31 3.42 2.19 6.39 4.913 8.186-.639-.116-1.293-.186-1.964-.186-5.728 0-10.442 4.402-10.949 10h-2.051v2h2.051c.507 5.598 5.221 10 10.949 10 6.065 0 11-4.935 11-11 0-3.837-1.978-7.217-4.964-9.186.639.116 1.293.186 1.964.186 6.065 0 11-4.935 11-11zm-40 29h-14v-16h14zm-7-36c.551 0 1 .449 1 1v7h2v-7c0-.551.449-1 1-1s1 .449 1 1v7h2v-5c0-.551.449-1 1-1s1 .449 1 1v9.395c0 1.986-.541 3.911-1.558 5.605h-15.112c-1.542-1.12-2.579-2.817-2.85-4.711-.336-2.355-.955-4.669-1.838-6.878l-.593-1.484c-.033-.079-.049-.163-.049-.309 0-.341.277-.618.618-.618 1.469 0 2.71 1.052 2.952 2.5l.293 1.759c.168 1.009 1.032 1.741 2.054 1.741 1.149 0 2.083-.934 2.083-2.083v-14.917c0-.551.449-1 1-1s1 .449 1 1v15h2v-7c0-.551.449-1 1-1zm15-8h-16.184c-.414-1.161-1.514-2-2.816-2s-2.402.839-2.816 2h-4.184v-14h26zm22 35c0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9 9 4.038 9 9zm-16-40c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9-9-4.038-9-9zm6 20c0-4.962 4.038-9 9-9s9 4.038 9 9-4.038 9-9 9-9-4.038-9-9z"}"></path><path fill="${"currentColor"}" d="${"m53 39v-2h2v-3c0-1.654-1.346-3-3-3-.551 0-1-.449-1-1v-1h1c.551 0 1 .449 1 1v1h2v-1c0-1.302-.839-2.402-2-2.816v-2.184h-2v2h-2v3c0 1.654 1.346 3 3 3 .551 0 1 .449 1 1v1h-1c-.551 0-1-.449-1-1v-1h-2v1c0 1.302.839 2.402 2 2.816v2.184z"}"></path><path fill="${"currentColor"}" d="${"m47 19v-2h2v-3c0-1.654-1.346-3-3-3-.551 0-1-.449-1-1v-1h1c.551 0 1 .449 1 1v1h2v-1c0-1.302-.839-2.402-2-2.816v-2.184h-2v2h-2v3c0 1.654 1.346 3 3 3 .551 0 1 .449 1 1v1h-1c-.551 0-1-.449-1-1v-1h-2v1c0 1.302.839 2.402 2 2.816v2.184z"}"></path><path fill="${"currentColor"}" d="${"m43 45v2h-2v3c0 1.654 1.346 3 3 3 .551 0 1 .449 1 1v1h-1c-.551 0-1-.449-1-1v-1h-2v1c0 1.302.839 2.402 2 2.816v2.184h2v-2h2v-3c0-1.654-1.346-3-3-3-.551 0-1-.449-1-1v-1h1c.551 0 1 .449 1 1v1h2v-1c0-1.302-.839-2.402-2-2.816v-2.184z"}"></path></svg>`;
-    });
-    FastConvenientIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<svg viewBox="${"0 0 512 512"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"icon-laravel inline-block w-10 h-10 text-white relative transform transition ease-out duration-150 group-hover:scale-125"}"><path fill="${"currentColor"}" d="${"m387.302 125.987c3.001-6.026 4.698-12.81 4.698-19.987 0-24.813-20.187-45-45-45s-45 20.187-45 45c0 7.177 1.697 13.961 4.698 19.987-71.564 18.032-124.698 82.93-124.698 160.013 0 90.981 74.019 165 165 165s165-74.019 165-165c0-77.083-53.134-141.981-124.698-160.013zm-55.302-19.987c0-8.271 6.729-15 15-15s15 6.729 15 15-6.729 15-15 15-15-6.729-15-15zm30 314.162v-14.162c0-8.284-6.716-15-15-15s-15 6.716-15 15v14.162c-62.479-6.939-112.223-56.683-119.162-119.162h14.162c8.284 0 15-6.716 15-15s-6.716-15-15-15h-14.162c6.939-62.479 56.683-112.223 119.162-119.162v14.162c0 8.284 6.716 15 15 15s15-6.716 15-15v-14.162c62.479 6.939 112.223 56.684 119.162 119.162h-14.162c-8.284 0-15 6.716-15 15s6.716 15 15 15h14.162c-6.939 62.479-56.683 112.223-119.162 119.162z"}"></path><path fill="${"currentColor"}" d="${"m137 121h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m137 211h-62c-8.284 0-15 6.716-15 15s6.716 15 15 15h62c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m137 301h-92c-8.284 0-15 6.716-15 15s6.716 15 15 15h92c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m137 391h-122c-8.284 0-15 6.716-15 15s6.716 15 15 15h122c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path><path fill="${"currentColor"}" d="${"m407 271h-45v-45c0-8.284-6.716-15-15-15s-15 6.716-15 15v60c0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"}"></path></svg>`;
-    });
     BookNowFeature = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-4 py-6 lg:px-8 lg:py-12"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">What is the Book Now Pay Later Feature?
+      const data = [
+        {
+          title: "Great offers",
+          content: "When airlines have crazy discounts to a destination you plan on visiting, you can easily be frustrated if you can\u2019t come up with the money right away. Likewise, if you see a dream destination on offer, you can use Book Now Pay Later flights and hotel deals to pay for the trip while discount prices still prevail. Book Now Pay Later flights allow you to make savings on reduced airfares and offers, and the best part is that most international and local airlines are cool with this arrangement. For example, if you were to check our site for Book Now Pay Later no credit check Canada flights, you can find flights to most holiday and business destinations in the world."
+        },
+        {
+          title: "No credit check",
+          content: "Book Now Pay Later with no credit check, you can pursue your wanderlust and explore the world easier than ever before. Trip Support\u2019s Book Now Pay Later plan can help you cover all your travel expenses such as transportation costs, accommodation, food, activities, tours, and others. To qualify for a book now pay later flight, some agencies ask that you raise an amount/percentage of the airfare, but the guarantee is that your financing will be approved. In fact, you can get no credit check airline ticket financing, and unlike credit loans, you don\u2019t have to provide a whole file of paperwork to get it approved. You also don\u2019t have to get a guarantor or collateral, and sometimes you can get a waiver for the initial deposit and just pay for the flight when you are able to. This means that even with a limited credit card, your travel is sorted out."
+        },
+        {
+          title: "Flexible payment plans",
+          content: "Book Now Pay Later flights plan offer flexible repayment options, as you can choose between weekly, bi-monthly or monthly payments, whatever works for you best. The finance term for book or travel and pay later flights is determined by you. Depending on the amount you want to pay per month, you can complete paying for the financing within three months, six months, or even a year with little to no interest. This means that even unemployed people can book a flight on a book now payment plan from book now pay later agencies as long as they give assurance of payment."
+        },
+        {
+          title: "No hidden fees",
+          content: "Once you reimburse the amount agreed on in the payment plan, your debt is done. Everything is laid out at the start and included in the package, and since it is not a revolving credit facility, you can plan your finances down to the last cent. That said, in case you want to change your payment plan in the future, you will have to make a new application to buy the flight ticket."
+        },
+        {
+          title: "Fast & convenient",
+          content: "To make sure you don\u2019t miss the best travel deals, we will process and approve your travel loan right away. "
+        },
+        {
+          title: "No post-vacation payments",
+          content: "With credit card payments, you have to think about your remaining instalments after you come back home. However, with this travel loan, you pay your trip in advance (you have up to 180 days before the departure date to repay). This means that you can relax and enjoy your vacation without being worried about the payments once you come back from your trip."
+        }
+      ];
+      return `
+<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-2 py-16"}">
+		<div class="${"text-center"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">Trip Support Feature
+			</div>
+			<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">What is the Book Now Pay Later Feature?
 			</h2>
-			<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Ready to pursue your wanderlust and explore the world easier than ever before? Trip
+			<h3 class="${"text-md md:text-base md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto"}">Ready to pursue your wanderlust and explore the world easier than ever before? Trip
 				Support\u2019s Book Now Pay Later Travel plan can help cover your travel expenses in a
 				cost-effective manner. These expenses can include transportation costs, accommodations,
 				food, activities, tours, and more. Uniquely, we offer this approach without the need for
-				credit checks and extra boring, time-consuming documentation.<br>
+				credit checks and extra boring, time-consuming documentation.
 				<span class="${"font-bold"}">We believe that people should be able to travel regardless of their credit score</span>.
-			</p></div>
+			</h3></div>
 		
 
 		
-		<div class="${"grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-12 text-center content-center"}"><div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative "}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-pblue-900 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
-					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-pblue-900 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
-					${validate_component(BookingIcon, "BookingIcon").$$render($$result, {}, {}, {})}</div>
-				<h4 class="${"text-lg font-bold mb-2"}">Early Booking</h4></div>
-			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-rose-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
-					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-rose-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
-					${validate_component(ApprovedIcon, "ApprovedIcon").$$render($$result, {}, {}, {})}</div>
-				<h4 class="${"text-lg font-bold mb-2"}">No Credit Check</h4></div>
-			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-blue-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
-					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-blue-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
-					${validate_component(NoPostPayIcon, "NoPostPayIcon").$$render($$result, {}, {}, {})}</div>
-				<h4 class="${"text-lg font-bold mb-2"}">No Post Payments</h4></div>
-			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-emerald-700 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
-					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-emerald-700 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
-					${validate_component(FlexPayIcon, "FlexPayIcon").$$render($$result, {}, {}, {})}</div>
-				<h4 class="${"text-lg font-bold mb-2"}">Flexible Payments</h4></div>
-			<div class="${"py-5"}"><div class="${"group inline-flex items-center justify-center w-12 h-12 mb-8 relative"}"><div class="${"absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-yellow-400 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110"}"></div>
-					<div class="${"absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-yellow-400 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110"}"></div>
-					${validate_component(FastConvenientIcon, "FastConvenientIcon").$$render($$result, {}, {}, {})}</div>
-				<h4 class="${"text-lg font-bold mb-2"}">Fast &amp; Convenient</h4></div></div>
-		</div></div>`;
+		<div class="${"grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5"}"><div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-orange-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
+						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-orange-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+
+						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-adjustments inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg></div></div>
+				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[0].title)}</h4>
+				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[0].content)}</p>`}
+				<button class="${"text-tiny text-rose-600"}">read more</button></div>
+			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
+						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+
+						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-chart-pie inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"}"></path><path fill-rule="${"evenodd"}" d="${"M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
+				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[1].title)}</h4>
+				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[1].content)}</p>`}
+				<button class="${"text-tiny text-rose-600"}">read more</button></div>
+			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-emerald-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
+						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-emerald-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+
+						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-globe inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
+				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[2].title)}</h4>
+				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[2].content)}</p>`}
+				<button class="${"text-tiny text-rose-600"}">read more</button></div>
+			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-purple-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
+						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-purple-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+
+						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-lightning-bolt inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z"}" clip-rule="${"evenodd"}"></path><path d="${"M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"}"></path></svg></div></div>
+				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[3].title)}</h4>
+				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[3].content)}</p>`}
+				<button class="${"text-tiny text-rose-600"}">read more</button></div>
+			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-blue-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
+						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-blue-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+
+						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-puzzle inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
+				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[4].title)}</h4>
+				${`<p class="${"leading-relaxed text-gray-600"}">${escape(data[4].content)}</p>`}
+				</div>
+			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-pink-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
+						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-pink-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+
+						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-users inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"}"></path><path fill-rule="${"evenodd"}" d="${"M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
+				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[5].title)}</h4>
+				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[5].content)}</p>`}
+				<button class="${"text-tiny text-rose-600"}">read more</button></div></div>
+		</div></div>
+`;
     });
     WeeklyExample = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex pt-6"}"><h3 class="${"text-lg font-bold text-gray-900"}">Varadero, Cuba</h3></div>
+<div><p class="${"text-sm text-gray-400"}">Taxes included</p></div>
 <div class="${"flex-wrap sm:flex sm:space-x-10 my-2 sm:mb-0"}"><p class="${"text-sm text-slate-700"}">Booking Date: <span class="${"font-bold"}">March 16, 2022</span></p>
 	<p class="${"text-sm text-slate-700"}">Departure Date: <span class="${"font-bold"}">April 13, 2022</span></p>
 	<p class="${"text-sm text-slate-700"}">Total: <span class="${"font-bold"}">CA $2,124.60</span> (Adult x 2)
@@ -6909,14 +6948,7 @@ var init_book_now_pay_later_svelte = __esm({
 							<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-5 w-5 text-pblue-500"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" stroke-width="${"2"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" d="${"M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"}"></path></svg></div>
 						<div class="${"ml-3 flex-1 md:flex md:justify-between"}"><p class="${"text-sm text-slate-900"}">The total amount must be paid in full a week prior to your departure date.
 							</p></div></div></div></div>
-			<div class="${"flex sm:space-x-4"}"></div>
-			<div class="${"flex mt-4"}"><p class="${"text-xs text-gray-500"}">*Estimated <span class="${"font-bold"}">weekly</span> payments and rate based on credit
-					information and other factors, actual amounts may vary; $1,699.52 trip price, first
-					payment of $151.50, 11 payments of $151.50 at 15.00% APR, $118.48 total interest charge,
-					$1,548.02 loan amount, and $1,818.00 total repayment amount. Applicants are subject to
-					approval by Uplift Canada. Eligibility is not guaranteed and conditional to satisfactory
-					credit check. Some conditions do apply. Please see our
-					<a href="${"#"}" class="${"text-rose-600"}">Privacy Policy</a>,
+			<div class="${"flex mt-4"}"><p class="${"text-xs text-gray-500"}">Some conditions do apply. Please see our
 					<a href="${"#"}" class="${"text-rose-600"}">Pay Later Terms</a>.
 				</p></div>
 			</div>
@@ -6993,33 +7025,35 @@ var init_book_now_pay_later_svelte = __esm({
 						</p></div></div></div></div></div></div>`;
     });
     BnplFaq1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-6 px-6"}"><div class="${"max-w-7xl "}"><ul class="${"mt-4 ml-4 text-gray-700 max-w-4xl prose list-disc"}"><li>You can instantly take advantage of any and all time-sensitive discounts and deals
-					Airlines may be offering
-				</li>
-				<li>No credit check means no headache when it comes to financing your trip</li>
-				<li>No hidden charges or fees</li>
-				<li>You can choose the best plan that works for you</li></ul></div></div></div>`;
+      return `<div class="${"max-w-7xl mx-auto py-6 px-6"}"><div class="${"max-w-7xl "}"><ul class="${"ml-4 text-gray-700 max-w-4xl prose list-disc"}"><li>You can instantly take advantage of any and all time-sensitive discounts and deals Airlines
+				may be offering
+			</li>
+			<li>No credit check means no headache when it comes to financing your trip</li>
+			<li>No hidden charges or fees</li>
+			<li>You can choose the best plan that works for you</li></ul></div></div>`;
     });
     BnplFaq2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-6 px-6"}"><div class="${"max-w-7xl "}"><ul class="${"ml-4 text-gray-700 max-w-3xl prose list-disc"}"><li>People without a valid credit/debit card from a Canada or the US bank.</li>
-				<li>Hotel bookings, however for more information and other payment options you may reach out
-					to us by dialing for CA: <a href="${"tel:+1-855-606-0606"}">1-855-606-0606</a> and for US:
-					<a href="${"tel:+1-833-606-0606"}">1-833-606-0606</a></li>
-				<li>No hidden charges or fees</li>
-				<li>You can choose the best plan that works for you</li></ul></div></div></div>`;
+      return `<div class="${"max-w-7xl mx-auto py-6 px-6"}"><div class="${"max-w-7xl "}"><ul class="${"ml-4 text-gray-700 max-w-3xl prose list-disc"}"><li>People without a valid credit/debit card from a Canada or the US bank.</li>
+			<li>Hotel bookings, however for more information and other payment options you may reach out to
+				us by dialing for CA: <a href="${"tel:+1-855-606-0606"}" class="${"text-rose-600 hover:text-rose-500"}">1-855-606-0606</a>
+				and for US:
+				<a href="${"tel:+1-833-606-0606"}" class="${"text-rose-600 hover:text-rose-500"}">1-833-606-0606</a></li>
+			<li>No hidden charges or fees</li>
+			<li>You can choose the best plan that works for you</li></ul></div></div>`;
     });
     BnplFaqs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8"}"><div class="${"max-w-4xl "}"><h2 class="${"text-3xl font-extrabold text-gray-900 sm:text-4xl"}">Frequently asked questions</h2>
+      return `<div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8"}">
 
-			<div class="${"bg-white mt-8"}"><div id="${"accordion-arrow-icon"}" data-accordion="${"open"}">
-					<h2 id="${"accordion-arrow-icon-heading-1"}"><button type="${"button"}" class="${"flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"}" data-accordion-target="${"#accordion-arrow-icon-body-1"}" aria-expanded="${"true"}" aria-controls="${"accordion-arrow-icon-body-1"}"><span>Why should I use Book Now, Pay Later?</span>
-							<svg data-accordion-icon="${""}" class="${"w-6 h-6 shrink-0"}" fill="${"none"}" stroke="${"currentColor"}" viewBox="${"0 0 24 24"}" xmlns="${"http://www.w3.org/2000/svg"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"}"></path></svg></button></h2>
-					<div id="${"accordion-arrow-icon-body-1"}" aria-labelledby="${"accordion-arrow-icon-heading-1"}"><div class="${"p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"}">${validate_component(BnplFaq1, "BnplFaq1").$$render($$result, {}, {}, {})}</div></div>
-
-					
-					<h2 id="${"accordion-arrow-icon-heading-2"}"><button type="${"button"}" class="${"flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"}" data-accordion-target="${"#accordion-arrow-icon-body-2"}" aria-expanded="${"false"}" aria-controls="${"accordion-arrow-icon-body-2"}"><span>What does Book Now, Pay Later not apply to?</span>
-							<svg data-accordion-icon="${""}" class="${"w-6 h-6 shrink-0"}" fill="${"none"}" stroke="${"currentColor"}" viewBox="${"0 0 24 24"}" xmlns="${"http://www.w3.org/2000/svg"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"}"></path></svg></button></h2>
-					<div id="${"accordion-arrow-icon-body-2"}" class="${"hidden"}" aria-labelledby="${"accordion-arrow-icon-heading-2"}"><div class="${"p-5 border border-b-0 border-gray-200 dark:border-gray-700"}">${validate_component(BnplFaq2, "BnplFaq2").$$render($$result, {}, {}, {})}</div></div></div></div></div></div></div>`;
+		
+		<div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8"}"><div class="${"lg:grid lg:grid-cols-3 lg:gap-8"}"><div><h2 class="${"text-3xl font-extrabold text-gray-900"}">Frequently asked questions</h2>
+						<p class="${"mt-4 text-lg text-gray-500"}">Can\u2019t find the answer you\u2019re looking for? Reach out to our <a href="${"#"}" class="${"font-medium text-rose-600 hover:text-rose-500"}">customer support</a> team.
+						</p></div>
+					<div class="${"mt-12 lg:mt-0 lg:col-span-2"}"><dl class="${"space-y-4"}"><div><dt class="${"text-lg leading-6 font-bold text-gray-900"}">Pros of Book Now Pay Later
+								</dt>
+								<dd class="${"text-base text-gray-500"}">${validate_component(BnplFaq1, "BnplFaq1").$$render($$result, {}, {}, {})}</dd>
+							</div><div><dt class="${"text-lg leading-6 font-bold text-gray-900"}">Book Now Pay Later plan does not apply to:
+								</dt>
+								<dd class="${"text-base text-gray-500"}">${validate_component(BnplFaq2, "BnplFaq2").$$render($$result, {}, {}, {})}</dd></div></dl></div></div></div></div></div></div>`;
     });
     Book_now_pay_later = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(BookNowHero, "BookNowHero").$$render($$result, {}, {}, {})}
@@ -7047,8 +7081,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-56345a25.js";
-    js4 = ["pages/book-now-pay-later.svelte-56345a25.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js"];
+    entry4 = "pages/book-now-pay-later.svelte-0e4b01c5.js";
+    js4 = ["pages/book-now-pay-later.svelte-0e4b01c5.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js"];
     css4 = [];
   }
 });
@@ -7080,8 +7114,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-5a90a5bc.js";
-    js5 = ["pages/flight-hotel.svelte-5a90a5bc.js", "chunks/vendor-aa7f3673.js"];
+    entry5 = "pages/flight-hotel.svelte-10446fc4.js";
+    js5 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
     css5 = [];
   }
 });
@@ -7426,8 +7460,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_blog_post_svelte();
-    entry6 = "pages/blog-post.svelte-e77a5193.js";
-    js6 = ["pages/blog-post.svelte-e77a5193.js", "chunks/vendor-aa7f3673.js", "chunks/HotelsIcon-74235531.js"];
+    entry6 = "pages/blog-post.svelte-1575c176.js";
+    js6 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
     css6 = [];
   }
 });
@@ -7442,7 +7476,7 @@ var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_Subscribe_20d5a66c();
+    init_Subscribe_9843ead1();
     init_BlogPosts_5c3b104a();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
@@ -7678,8 +7712,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-82e6d7e2.js";
-    js7 = ["pages/vacations.svelte-82e6d7e2.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-bd4fac92.js", "chunks/BlogPosts-08852c0b.js"];
+    entry7 = "pages/vacations.svelte-bb0bfcde.js";
+    js7 = ["pages/vacations.svelte-bb0bfcde.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js", "chunks/BlogPosts-7c4c833b.js"];
     css7 = [];
   }
 });
@@ -7737,8 +7771,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_contact_svelte();
-    entry8 = "pages/contact.svelte-d96b5147.js";
-    js8 = ["pages/contact.svelte-d96b5147.js", "chunks/vendor-aa7f3673.js"];
+    entry8 = "pages/contact.svelte-a40723a2.js";
+    js8 = ["pages/contact.svelte-a40723a2.js", "chunks/vendor-6ea63d49.js"];
     css8 = [];
   }
 });
@@ -7770,8 +7804,8 @@ var entry9, js9, css9;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_explore_svelte();
-    entry9 = "pages/explore.svelte-ebf6de89.js";
-    js9 = ["pages/explore.svelte-ebf6de89.js", "chunks/vendor-aa7f3673.js"];
+    entry9 = "pages/explore.svelte-3e87b525.js";
+    js9 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
     css9 = [];
   }
 });
@@ -7787,7 +7821,7 @@ var init_flights_svelte = __esm({
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
     init_BlogPosts_5c3b104a();
-    init_Subscribe_20d5a66c();
+    init_Subscribe_9843ead1();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     LottieFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7902,8 +7936,8 @@ var entry10, js10, css10;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_flights_svelte();
-    entry10 = "pages/flights.svelte-963be6f3.js";
-    js10 = ["pages/flights.svelte-963be6f3.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-bd4fac92.js"];
+    entry10 = "pages/flights.svelte-2707f7e7.js";
+    js10 = ["pages/flights.svelte-2707f7e7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
     css10 = [];
   }
 });
@@ -7919,7 +7953,7 @@ var init_hotels_svelte = __esm({
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
     init_BlogPosts_5c3b104a();
-    init_Subscribe_20d5a66c();
+    init_Subscribe_9843ead1();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     LottieHotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -8092,8 +8126,8 @@ var entry11, js11, css11;
 var init__11 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_hotels_svelte();
-    entry11 = "pages/hotels.svelte-b79c14a4.js";
-    js11 = ["pages/hotels.svelte-b79c14a4.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-bd4fac92.js"];
+    entry11 = "pages/hotels.svelte-ddf1fd2d.js";
+    js11 = ["pages/hotels.svelte-ddf1fd2d.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
     css11 = [];
   }
 });
@@ -8107,7 +8141,7 @@ var BlogHeader, BlogTop, BlogCanada, PopularPostsCanada, BlogPosts2, Blog;
 var init_blog_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog.svelte.js"() {
     init_index_c9c8dd9a();
-    init_Subscribe_20d5a66c();
+    init_Subscribe_9843ead1();
     BlogHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative pb-28 lg:pb-20 bg-gray-800"}"><div class="${"absolute inset-0"}"><img class="${"w-full h-full object-cover"}" src="${"images/blog/travel-guide.jpg"}" alt="${""}">
@@ -8384,8 +8418,8 @@ var entry12, js12, css12;
 var init__12 = __esm({
   ".svelte-kit/output/server/nodes/11.js"() {
     init_blog_svelte();
-    entry12 = "pages/blog.svelte-3148055e.js";
-    js12 = ["pages/blog.svelte-3148055e.js", "chunks/vendor-aa7f3673.js", "chunks/Subscribe-bd4fac92.js"];
+    entry12 = "pages/blog.svelte-89b8d8ca.js";
+    js12 = ["pages/blog.svelte-89b8d8ca.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-0127000c.js"];
     css12 = [];
   }
 });
@@ -10421,7 +10455,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-49d997b4.js", "js": ["start-49d997b4.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-f35fe854.js", "js": ["start-f35fe854.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -1,6 +1,9 @@
 <div class="flex pt-6">
 	<h3 class="text-lg font-bold text-gray-900">Varadero, Cuba</h3>
 </div>
+<div>
+	<p class="text-sm text-gray-400">Taxes included</p>
+</div>
 <div class="flex-wrap sm:flex sm:space-x-10 my-2 sm:mb-0">
 	<p class="text-sm text-slate-700">
 		Booking Date: <span class="font-bold">March 16, 2022</span>
@@ -217,16 +220,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex sm:space-x-4" />
 			<div class="flex mt-4">
 				<p class="text-xs text-gray-500">
-					*Estimated <span class="font-bold">weekly</span> payments and rate based on credit
-					information and other factors, actual amounts may vary; $1,699.52 trip price, first
-					payment of $151.50, 11 payments of $151.50 at 15.00% APR, $118.48 total interest charge,
-					$1,548.02 loan amount, and $1,818.00 total repayment amount. Applicants are subject to
-					approval by Uplift Canada. Eligibility is not guaranteed and conditional to satisfactory
-					credit check. Some conditions do apply. Please see our
-					<a href="#" class="text-rose-600">Privacy Policy</a>,
+					Some conditions do apply. Please see our
 					<a href="#" class="text-rose-600"> Pay Later Terms</a>.
 				</p>
 			</div>

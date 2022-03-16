@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-26f850b7.js",
+    "file": "start-49d997b4.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -31,7 +31,7 @@
       "_vendor-aa7f3673.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-c80a6405.css"
+      "assets/pages/__layout.svelte-90528451.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -57,13 +57,14 @@
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
-    "file": "pages/book-now-pay-later.svelte-bee1056a.js",
+    "file": "pages/book-now-pay-later.svelte-56345a25.js",
     "src": "src/routes/book-now-pay-later.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-aa7f3673.js",
       "_BookingWidget-33ace931.js",
+      "_Subscribe-bd4fac92.js",
       "_HotelsIcon-74235531.js"
     ]
   },

@@ -12,7 +12,7 @@
 				Accessibility
 			</a>
 
-			<a href="/privacy" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+			<a href="/privacy-policy" class="text-xs font-medium text-gray-500 hover:text-gray-600">
 				Privacy Policy
 			</a>
 

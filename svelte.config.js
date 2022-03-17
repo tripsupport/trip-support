@@ -11,7 +11,6 @@
 // 		})
 // 	}
 // };
-// import adapter from '@sveltejs/adapter-auto';
 import vercel from '@sveltejs/adapter-vercel';
 
 

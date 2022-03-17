@@ -1638,10 +1638,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry15 = this._queue.shift();
-              this._queueTotalSize -= entry15.byteLength;
+              const entry19 = this._queue.shift();
+              this._queueTotalSize -= entry19.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry15.buffer, entry15.byteOffset, entry15.byteLength);
+              const view = new Uint8Array(entry19.buffer, entry19.byteOffset, entry19.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5586,7 +5586,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css15) => css15.code).join("\n"),
+          code: Array.from(result.css).map((css19) => css19.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5984,7 +5984,7 @@ var init_layout_svelte = __esm({
 		<div class="${"flex space-x-8"}"><a href="${"/accessibility"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Accessibility
 			</a>
 
-			<a href="${"/privacy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy Policy
+			<a href="${"/privacy-policy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy Policy
 			</a>
 
 			<a href="${"/pay-later-terms"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Pay Later Terms
@@ -6087,8 +6087,8 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-f9c498cf.js";
-    js = ["pages/__layout.svelte-f9c498cf.js", "chunks/vendor-6ea63d49.js"];
+    entry = "pages/__layout.svelte-732deb3c.js";
+    js = ["pages/__layout.svelte-732deb3c.js", "chunks/vendor-6ea63d49.js"];
     css = ["assets/pages/__layout.svelte-e4132931.css"];
   }
 });
@@ -7088,6 +7088,138 @@ var init__4 = __esm({
   }
 });
 
+// .svelte-kit/output/server/entries/pages/pay-later-terms.svelte.js
+var pay_later_terms_svelte_exports = {};
+__export(pay_later_terms_svelte_exports, {
+  default: () => Pay_later_terms
+});
+var Pay_later_terms;
+var init_pay_later_terms_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/pay-later-terms.svelte.js"() {
+    init_index_c9c8dd9a();
+    Pay_later_terms = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/4.js
+var __exports5 = {};
+__export(__exports5, {
+  css: () => css5,
+  entry: () => entry5,
+  js: () => js5,
+  module: () => pay_later_terms_svelte_exports
+});
+var entry5, js5, css5;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/4.js"() {
+    init_pay_later_terms_svelte();
+    entry5 = "pages/pay-later-terms.svelte-8d023e26.js";
+    js5 = ["pages/pay-later-terms.svelte-8d023e26.js", "chunks/vendor-6ea63d49.js"];
+    css5 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/baggage-policy.svelte.js
+var baggage_policy_svelte_exports = {};
+__export(baggage_policy_svelte_exports, {
+  default: () => Baggage_policy
+});
+var Baggage_policy;
+var init_baggage_policy_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/baggage-policy.svelte.js"() {
+    init_index_c9c8dd9a();
+    Baggage_policy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/5.js
+var __exports6 = {};
+__export(__exports6, {
+  css: () => css6,
+  entry: () => entry6,
+  js: () => js6,
+  module: () => baggage_policy_svelte_exports
+});
+var entry6, js6, css6;
+var init__6 = __esm({
+  ".svelte-kit/output/server/nodes/5.js"() {
+    init_baggage_policy_svelte();
+    entry6 = "pages/baggage-policy.svelte-defca122.js";
+    js6 = ["pages/baggage-policy.svelte-defca122.js", "chunks/vendor-6ea63d49.js"];
+    css6 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/privacy-policy.svelte.js
+var privacy_policy_svelte_exports = {};
+__export(privacy_policy_svelte_exports, {
+  default: () => Privacy_policy
+});
+var Privacy_policy;
+var init_privacy_policy_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/privacy-policy.svelte.js"() {
+    init_index_c9c8dd9a();
+    Privacy_policy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/6.js
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css7,
+  entry: () => entry7,
+  js: () => js7,
+  module: () => privacy_policy_svelte_exports
+});
+var entry7, js7, css7;
+var init__7 = __esm({
+  ".svelte-kit/output/server/nodes/6.js"() {
+    init_privacy_policy_svelte();
+    entry7 = "pages/privacy-policy.svelte-dc9a8965.js";
+    js7 = ["pages/privacy-policy.svelte-dc9a8965.js", "chunks/vendor-6ea63d49.js"];
+    css7 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/accessibility.svelte.js
+var accessibility_svelte_exports = {};
+__export(accessibility_svelte_exports, {
+  default: () => Accessibility
+});
+var Accessibility;
+var init_accessibility_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/accessibility.svelte.js"() {
+    init_index_c9c8dd9a();
+    Accessibility = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/7.js
+var __exports8 = {};
+__export(__exports8, {
+  css: () => css8,
+  entry: () => entry8,
+  js: () => js8,
+  module: () => accessibility_svelte_exports
+});
+var entry8, js8, css8;
+var init__8 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
+    init_accessibility_svelte();
+    entry8 = "pages/accessibility.svelte-2fe3dc74.js";
+    js8 = ["pages/accessibility.svelte-2fe3dc74.js", "chunks/vendor-6ea63d49.js"];
+    css8 = [];
+  }
+});
+
 // .svelte-kit/output/server/entries/pages/flight-hotel.svelte.js
 var flight_hotel_svelte_exports = {};
 __export(flight_hotel_svelte_exports, {
@@ -7103,21 +7235,80 @@ var init_flight_hotel_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/4.js
-var __exports5 = {};
-__export(__exports5, {
-  css: () => css5,
-  entry: () => entry5,
-  js: () => js5,
+// .svelte-kit/output/server/nodes/8.js
+var __exports9 = {};
+__export(__exports9, {
+  css: () => css9,
+  entry: () => entry9,
+  js: () => js9,
   module: () => flight_hotel_svelte_exports
 });
-var entry5, js5, css5;
-var init__5 = __esm({
-  ".svelte-kit/output/server/nodes/4.js"() {
+var entry9, js9, css9;
+var init__9 = __esm({
+  ".svelte-kit/output/server/nodes/8.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-10446fc4.js";
-    js5 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
-    css5 = [];
+    entry9 = "pages/flight-hotel.svelte-10446fc4.js";
+    js9 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
+    css9 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/contact-us.svelte.js
+var contact_us_svelte_exports = {};
+__export(contact_us_svelte_exports, {
+  default: () => Contact_us
+});
+var Contact_us;
+var init_contact_us_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/contact-us.svelte.js"() {
+    init_index_c9c8dd9a();
+    Contact_us = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"mx-auto max-w-7xl p-4"}">
+	<section class="${"bg-white py-20 lg:py-[120px] overflow-hidden relative z-10"}"><div class="${"container"}"><div class="${"flex flex-wrap lg:justify-between -mx-4"}"><div class="${"w-full lg:w-1/2 xl:w-6/12 px-4"}"><div class="${"max-w-[570px] mb-12 lg:mb-0"}"><span class="${"block mb-4 text-base text-primary font-semibold"}">Contact Us </span>
+						<h2 class="${"text-dark mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px] "}">GET IN TOUCH WITH US
+						</h2>
+						<p class="${"text-base text-body-color leading-relaxed mb-9"}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt
+							ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud
+							exercitation ullamco
+						</p>
+						<div class="${"flex mb-8 max-w-[370px] w-full"}"><div class="${"max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded "}"><svg width="${"24"}" height="${"24"}" viewBox="${"0 0 24 24"}" class="${"fill-current"}"><path d="${"M21.8182 24H16.5584C15.3896 24 14.4156 23.0256 14.4156 21.8563V17.5688C14.4156 17.1401 14.0649 16.7893 13.6364 16.7893H10.4026C9.97403 16.7893 9.62338 17.1401 9.62338 17.5688V21.8173C9.62338 22.9866 8.64935 23.961 7.48052 23.961H2.14286C0.974026 23.961 0 22.9866 0 21.8173V8.21437C0 7.62972 0.311688 7.08404 0.818182 6.77223L11.1039 0.263094C11.6494 -0.0876979 12.3896 -0.0876979 12.9351 0.263094L23.2208 6.77223C23.7273 7.08404 24 7.62972 24 8.21437V21.7783C24 23.0256 23.026 24 21.8182 24ZM10.3636 15.4251H13.5974C14.7662 15.4251 15.7403 16.3995 15.7403 17.5688V21.8173C15.7403 22.246 16.0909 22.5968 16.5195 22.5968H21.8182C22.2468 22.5968 22.5974 22.246 22.5974 21.8173V8.25335C22.5974 8.13642 22.5195 8.01949 22.4416 7.94153L12.1948 1.4324C12.0779 1.35445 11.9221 1.35445 11.8442 1.4324L1.55844 7.94153C1.44156 8.01949 1.4026 8.13642 1.4026 8.25335V21.8563C1.4026 22.285 1.75325 22.6358 2.18182 22.6358H7.48052C7.90909 22.6358 8.25974 22.285 8.25974 21.8563V17.5688C8.22078 16.3995 9.19481 15.4251 10.3636 15.4251Z"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"font-bold text-dark text-xl mb-1"}">Our Location</h4>
+								<p class="${"text-base text-body-color"}">99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+								</p></div></div>
+						<div class="${"flex mb-8 max-w-[370px] w-full"}"><div class="${"max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded "}"><svg width="${"24"}" height="${"26"}" viewBox="${"0 0 24 26"}" class="${"fill-current"}"><path d="${"M22.6149 15.1386C22.5307 14.1704 21.7308 13.4968 20.7626 13.4968H2.82869C1.86042 13.4968 1.10265 14.2125 0.97636 15.1386L0.092295 23.9793C0.0501967 24.4845 0.21859 25.0317 0.555377 25.4106C0.892163 25.7895 1.39734 26 1.94462 26H21.6887C22.1939 26 22.6991 25.7895 23.078 25.4106C23.4148 25.0317 23.5832 24.5266 23.5411 23.9793L22.6149 15.1386ZM21.9413 24.4424C21.8992 24.4845 21.815 24.5687 21.6466 24.5687H1.94462C1.81833 24.5687 1.69203 24.4845 1.64993 24.4424C1.60783 24.4003 1.52364 24.3161 1.56574 24.1477L2.4498 15.2649C2.4498 15.0544 2.61819 14.9281 2.82869 14.9281H20.8047C21.0152 14.9281 21.1415 15.0544 21.1835 15.2649L22.0676 24.1477C22.0255 24.274 21.9834 24.4003 21.9413 24.4424Z"}"></path><path d="${"M11.7965 16.7805C10.1547 16.7805 8.84961 18.0855 8.84961 19.7273C8.84961 21.3692 10.1547 22.6742 11.7965 22.6742C13.4383 22.6742 14.7434 21.3692 14.7434 19.7273C14.7434 18.0855 13.4383 16.7805 11.7965 16.7805ZM11.7965 21.2008C10.9966 21.2008 10.3231 20.5272 10.3231 19.7273C10.3231 18.9275 10.9966 18.2539 11.7965 18.2539C12.5964 18.2539 13.2699 18.9275 13.2699 19.7273C13.2699 20.5272 12.5964 21.2008 11.7965 21.2008Z"}"></path><path d="${"M1.10265 7.85562C1.18684 9.70794 2.82868 10.4657 3.67064 10.4657H6.61752C6.65962 10.4657 6.65962 10.4657 6.65962 10.4657C7.92257 10.3815 9.18552 9.53955 9.18552 7.85562V6.84526C10.5748 6.84526 13.7742 6.84526 15.1635 6.84526V7.85562C15.1635 9.53955 16.4264 10.3815 17.6894 10.4657H17.7315H20.6363C21.4782 10.4657 23.1201 9.70794 23.2043 7.85562C23.2043 7.72932 23.2043 7.26624 23.2043 6.84526C23.2043 6.50847 23.2043 6.21378 23.2043 6.17169C23.2043 6.12959 23.2043 6.08749 23.2043 6.08749C23.078 4.90874 22.657 3.94047 21.9413 3.18271L21.8992 3.14061C20.8468 2.17235 19.5838 1.62507 18.6155 1.28828C15.795 0.193726 12.2587 0.193726 12.0903 0.193726C9.6065 0.235824 8.00677 0.446315 5.60716 1.28828C4.681 1.58297 3.41805 2.13025 2.36559 3.09851L2.3235 3.14061C1.60782 3.89838 1.18684 4.86664 1.06055 6.04539C1.06055 6.08749 1.06055 6.12959 1.06055 6.12959C1.06055 6.21378 1.06055 6.46637 1.06055 6.80316C1.10265 7.18204 1.10265 7.68722 1.10265 7.85562ZM3.37595 4.15097C4.21792 3.3932 5.27038 2.93012 6.15444 2.59333C8.34355 1.79346 9.7749 1.62507 12.1745 1.58297C12.3429 1.58297 15.6266 1.62507 18.1525 2.59333C19.0365 2.93012 20.089 3.3511 20.931 4.15097C21.394 4.65615 21.6887 5.32972 21.7729 6.12959C21.7729 6.25588 21.7729 6.46637 21.7729 6.80316C21.7729 7.22414 21.7729 7.68722 21.7729 7.81352C21.7308 8.78178 20.8047 8.99227 20.6784 8.99227H17.7736C17.3526 8.95017 16.679 8.78178 16.679 7.85562V6.12959C16.679 5.7928 16.4685 5.54021 16.1738 5.41392C15.9213 5.32972 8.55405 5.32972 8.30146 5.41392C8.00677 5.49811 7.79628 5.7928 7.79628 6.12959V7.85562C7.79628 8.78178 7.1227 8.95017 6.70172 8.99227H3.79694C3.67064 8.99227 2.74448 8.78178 2.70238 7.81352C2.70238 7.68722 2.70238 7.22414 2.70238 6.80316C2.70238 6.46637 2.70238 6.29798 2.70238 6.17169C2.61818 5.32972 2.91287 4.65615 3.37595 4.15097Z"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"font-bold text-dark text-xl mb-1"}">Phone Number</h4>
+								<p class="${"text-base text-body-color"}">(+62)81 414 257 9980</p></div></div>
+						<div class="${"flex mb-8 max-w-[370px] w-full"}"><div class="${"max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded "}"><svg width="${"28"}" height="${"19"}" viewBox="${"0 0 28 19"}" class="${"fill-current"}"><path d="${"M25.3636 0H2.63636C1.18182 0 0 1.16785 0 2.6052V16.3948C0 17.8322 1.18182 19 2.63636 19H25.3636C26.8182 19 28 17.8322 28 16.3948V2.6052C28 1.16785 26.8182 0 25.3636 0ZM25.3636 1.5721C25.5909 1.5721 25.7727 1.61702 25.9545 1.75177L14.6364 8.53428C14.2273 8.75886 13.7727 8.75886 13.3636 8.53428L2.04545 1.75177C2.22727 1.66194 2.40909 1.5721 2.63636 1.5721H25.3636ZM25.3636 17.383H2.63636C2.09091 17.383 1.59091 16.9338 1.59091 16.3499V3.32388L12.5 9.8818C12.9545 10.1513 13.4545 10.2861 13.9545 10.2861C14.4545 10.2861 14.9545 10.1513 15.4091 9.8818L26.3182 3.32388V16.3499C26.4091 16.9338 25.9091 17.383 25.3636 17.383Z"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"font-bold text-dark text-xl mb-1"}">Email Address</h4>
+								<p class="${"text-base text-body-color"}">info@yourdomain.com</p></div></div></div></div>
+				<div class="${"w-full lg:w-1/2 xl:w-5/12 px-4"}"><div class="${"bg-white relative rounded-lg p-8 sm:p-12 shadow-lg"}"><form><div class="${"mb-6"}"><input type="${"text"}" placeholder="${"Your Name"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary "}"></div>
+							<div class="${"mb-6"}"><input type="${"email"}" placeholder="${"Your Email"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary "}"></div>
+							<div class="${"mb-6"}"><input type="${"text"}" placeholder="${"Your Phone"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary "}"></div>
+							<div class="${"mb-6"}"><textarea rows="${"6"}" placeholder="${"Your Message"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-primary "}"></textarea></div>
+							<div><button type="${"submit"}" class="${"w-full text-white bg-primary rounded border border-primary p-3 transition hover:bg-opacity-90 "}">Send Message
+								</button></div></form>
+						<div><span class="${"absolute -top-10 -right-9 z-[-1]"}"><svg width="${"100"}" height="${"100"}" viewBox="${"0 0 100 100"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" clip-rule="${"evenodd"}" d="${"M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"}" fill="${"#3056D3"}"></path></svg></span>
+							<span class="${"absolute -right-10 top-[90px] z-[-1]"}"><svg width="${"34"}" height="${"134"}" viewBox="${"0 0 34 134"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"31.9993"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 132)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 88)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 45)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 16)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 59)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 132)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 88)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 45)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 16)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 59)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 1.66665)"}" fill="${"#13C296"}"></circle></svg></span>
+							<span class="${"absolute -left-7 -bottom-7 z-[-1]"}"><svg width="${"107"}" height="${"134"}" viewBox="${"0 0 107 134"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"104.999"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 104.999 132)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 104.999 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 104.999 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 104.999 88)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 104.999 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 104.999 45)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 104.999 16)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 104.999 59)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 104.999 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 104.999 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 132)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 132)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 88)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 88)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 45)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 45)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 16)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 16)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 59)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 59)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 132)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 88)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 45)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 16)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 59)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 132)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 88)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 45)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 16)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 59)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 1.66665)"}" fill="${"#13C296"}"></circle></svg></span></div></div></div></div></div></section></div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/9.js
+var __exports10 = {};
+__export(__exports10, {
+  css: () => css10,
+  entry: () => entry10,
+  js: () => js10,
+  module: () => contact_us_svelte_exports
+});
+var entry10, js10, css10;
+var init__10 = __esm({
+  ".svelte-kit/output/server/nodes/9.js"() {
+    init_contact_us_svelte();
+    entry10 = "pages/contact-us.svelte-cb5a6467.js";
+    js10 = ["pages/contact-us.svelte-cb5a6467.js", "chunks/vendor-6ea63d49.js"];
+    css10 = [];
   }
 });
 
@@ -7449,21 +7640,21 @@ var init_blog_post_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/5.js
-var __exports6 = {};
-__export(__exports6, {
-  css: () => css6,
-  entry: () => entry6,
-  js: () => js6,
+// .svelte-kit/output/server/nodes/10.js
+var __exports11 = {};
+__export(__exports11, {
+  css: () => css11,
+  entry: () => entry11,
+  js: () => js11,
   module: () => blog_post_svelte_exports
 });
-var entry6, js6, css6;
-var init__6 = __esm({
-  ".svelte-kit/output/server/nodes/5.js"() {
+var entry11, js11, css11;
+var init__11 = __esm({
+  ".svelte-kit/output/server/nodes/10.js"() {
     init_blog_post_svelte();
-    entry6 = "pages/blog-post.svelte-1575c176.js";
-    js6 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
-    css6 = [];
+    entry11 = "pages/blog-post.svelte-1575c176.js";
+    js11 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
+    css11 = [];
   }
 });
 
@@ -7701,21 +7892,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/6.js
-var __exports7 = {};
-__export(__exports7, {
-  css: () => css7,
-  entry: () => entry7,
-  js: () => js7,
+// .svelte-kit/output/server/nodes/11.js
+var __exports12 = {};
+__export(__exports12, {
+  css: () => css12,
+  entry: () => entry12,
+  js: () => js12,
   module: () => vacations_svelte_exports
 });
-var entry7, js7, css7;
-var init__7 = __esm({
-  ".svelte-kit/output/server/nodes/6.js"() {
+var entry12, js12, css12;
+var init__12 = __esm({
+  ".svelte-kit/output/server/nodes/11.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-bb0bfcde.js";
-    js7 = ["pages/vacations.svelte-bb0bfcde.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js", "chunks/BlogPosts-7c4c833b.js"];
-    css7 = [];
+    entry12 = "pages/vacations.svelte-bb0bfcde.js";
+    js12 = ["pages/vacations.svelte-bb0bfcde.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js", "chunks/BlogPosts-7c4c833b.js"];
+    css12 = [];
   }
 });
 
@@ -7831,80 +8022,21 @@ var init_about_us_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/7.js
-var __exports8 = {};
-__export(__exports8, {
-  css: () => css8,
-  entry: () => entry8,
-  js: () => js8,
+// .svelte-kit/output/server/nodes/12.js
+var __exports13 = {};
+__export(__exports13, {
+  css: () => css13,
+  entry: () => entry13,
+  js: () => js13,
   module: () => about_us_svelte_exports
 });
-var entry8, js8, css8;
-var init__8 = __esm({
-  ".svelte-kit/output/server/nodes/7.js"() {
+var entry13, js13, css13;
+var init__13 = __esm({
+  ".svelte-kit/output/server/nodes/12.js"() {
     init_about_us_svelte();
-    entry8 = "pages/about-us.svelte-0d691d7e.js";
-    js8 = ["pages/about-us.svelte-0d691d7e.js", "chunks/vendor-6ea63d49.js"];
-    css8 = [];
-  }
-});
-
-// .svelte-kit/output/server/entries/pages/contact.svelte.js
-var contact_svelte_exports = {};
-__export(contact_svelte_exports, {
-  default: () => Contact
-});
-var Contact;
-var init_contact_svelte = __esm({
-  ".svelte-kit/output/server/entries/pages/contact.svelte.js"() {
-    init_index_c9c8dd9a();
-    Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"mx-auto max-w-7xl p-4"}">
-	<section class="${"bg-white py-20 lg:py-[120px] overflow-hidden relative z-10"}"><div class="${"container"}"><div class="${"flex flex-wrap lg:justify-between -mx-4"}"><div class="${"w-full lg:w-1/2 xl:w-6/12 px-4"}"><div class="${"max-w-[570px] mb-12 lg:mb-0"}"><span class="${"block mb-4 text-base text-primary font-semibold"}">Contact Us </span>
-						<h2 class="${"text-dark mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px] "}">GET IN TOUCH WITH US
-						</h2>
-						<p class="${"text-base text-body-color leading-relaxed mb-9"}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt
-							ut labore et dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud
-							exercitation ullamco
-						</p>
-						<div class="${"flex mb-8 max-w-[370px] w-full"}"><div class="${"max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded "}"><svg width="${"24"}" height="${"24"}" viewBox="${"0 0 24 24"}" class="${"fill-current"}"><path d="${"M21.8182 24H16.5584C15.3896 24 14.4156 23.0256 14.4156 21.8563V17.5688C14.4156 17.1401 14.0649 16.7893 13.6364 16.7893H10.4026C9.97403 16.7893 9.62338 17.1401 9.62338 17.5688V21.8173C9.62338 22.9866 8.64935 23.961 7.48052 23.961H2.14286C0.974026 23.961 0 22.9866 0 21.8173V8.21437C0 7.62972 0.311688 7.08404 0.818182 6.77223L11.1039 0.263094C11.6494 -0.0876979 12.3896 -0.0876979 12.9351 0.263094L23.2208 6.77223C23.7273 7.08404 24 7.62972 24 8.21437V21.7783C24 23.0256 23.026 24 21.8182 24ZM10.3636 15.4251H13.5974C14.7662 15.4251 15.7403 16.3995 15.7403 17.5688V21.8173C15.7403 22.246 16.0909 22.5968 16.5195 22.5968H21.8182C22.2468 22.5968 22.5974 22.246 22.5974 21.8173V8.25335C22.5974 8.13642 22.5195 8.01949 22.4416 7.94153L12.1948 1.4324C12.0779 1.35445 11.9221 1.35445 11.8442 1.4324L1.55844 7.94153C1.44156 8.01949 1.4026 8.13642 1.4026 8.25335V21.8563C1.4026 22.285 1.75325 22.6358 2.18182 22.6358H7.48052C7.90909 22.6358 8.25974 22.285 8.25974 21.8563V17.5688C8.22078 16.3995 9.19481 15.4251 10.3636 15.4251Z"}"></path></svg></div>
-							<div class="${"w-full"}"><h4 class="${"font-bold text-dark text-xl mb-1"}">Our Location</h4>
-								<p class="${"text-base text-body-color"}">99 S.t Jomblo Park Pekanbaru 28292. Indonesia
-								</p></div></div>
-						<div class="${"flex mb-8 max-w-[370px] w-full"}"><div class="${"max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded "}"><svg width="${"24"}" height="${"26"}" viewBox="${"0 0 24 26"}" class="${"fill-current"}"><path d="${"M22.6149 15.1386C22.5307 14.1704 21.7308 13.4968 20.7626 13.4968H2.82869C1.86042 13.4968 1.10265 14.2125 0.97636 15.1386L0.092295 23.9793C0.0501967 24.4845 0.21859 25.0317 0.555377 25.4106C0.892163 25.7895 1.39734 26 1.94462 26H21.6887C22.1939 26 22.6991 25.7895 23.078 25.4106C23.4148 25.0317 23.5832 24.5266 23.5411 23.9793L22.6149 15.1386ZM21.9413 24.4424C21.8992 24.4845 21.815 24.5687 21.6466 24.5687H1.94462C1.81833 24.5687 1.69203 24.4845 1.64993 24.4424C1.60783 24.4003 1.52364 24.3161 1.56574 24.1477L2.4498 15.2649C2.4498 15.0544 2.61819 14.9281 2.82869 14.9281H20.8047C21.0152 14.9281 21.1415 15.0544 21.1835 15.2649L22.0676 24.1477C22.0255 24.274 21.9834 24.4003 21.9413 24.4424Z"}"></path><path d="${"M11.7965 16.7805C10.1547 16.7805 8.84961 18.0855 8.84961 19.7273C8.84961 21.3692 10.1547 22.6742 11.7965 22.6742C13.4383 22.6742 14.7434 21.3692 14.7434 19.7273C14.7434 18.0855 13.4383 16.7805 11.7965 16.7805ZM11.7965 21.2008C10.9966 21.2008 10.3231 20.5272 10.3231 19.7273C10.3231 18.9275 10.9966 18.2539 11.7965 18.2539C12.5964 18.2539 13.2699 18.9275 13.2699 19.7273C13.2699 20.5272 12.5964 21.2008 11.7965 21.2008Z"}"></path><path d="${"M1.10265 7.85562C1.18684 9.70794 2.82868 10.4657 3.67064 10.4657H6.61752C6.65962 10.4657 6.65962 10.4657 6.65962 10.4657C7.92257 10.3815 9.18552 9.53955 9.18552 7.85562V6.84526C10.5748 6.84526 13.7742 6.84526 15.1635 6.84526V7.85562C15.1635 9.53955 16.4264 10.3815 17.6894 10.4657H17.7315H20.6363C21.4782 10.4657 23.1201 9.70794 23.2043 7.85562C23.2043 7.72932 23.2043 7.26624 23.2043 6.84526C23.2043 6.50847 23.2043 6.21378 23.2043 6.17169C23.2043 6.12959 23.2043 6.08749 23.2043 6.08749C23.078 4.90874 22.657 3.94047 21.9413 3.18271L21.8992 3.14061C20.8468 2.17235 19.5838 1.62507 18.6155 1.28828C15.795 0.193726 12.2587 0.193726 12.0903 0.193726C9.6065 0.235824 8.00677 0.446315 5.60716 1.28828C4.681 1.58297 3.41805 2.13025 2.36559 3.09851L2.3235 3.14061C1.60782 3.89838 1.18684 4.86664 1.06055 6.04539C1.06055 6.08749 1.06055 6.12959 1.06055 6.12959C1.06055 6.21378 1.06055 6.46637 1.06055 6.80316C1.10265 7.18204 1.10265 7.68722 1.10265 7.85562ZM3.37595 4.15097C4.21792 3.3932 5.27038 2.93012 6.15444 2.59333C8.34355 1.79346 9.7749 1.62507 12.1745 1.58297C12.3429 1.58297 15.6266 1.62507 18.1525 2.59333C19.0365 2.93012 20.089 3.3511 20.931 4.15097C21.394 4.65615 21.6887 5.32972 21.7729 6.12959C21.7729 6.25588 21.7729 6.46637 21.7729 6.80316C21.7729 7.22414 21.7729 7.68722 21.7729 7.81352C21.7308 8.78178 20.8047 8.99227 20.6784 8.99227H17.7736C17.3526 8.95017 16.679 8.78178 16.679 7.85562V6.12959C16.679 5.7928 16.4685 5.54021 16.1738 5.41392C15.9213 5.32972 8.55405 5.32972 8.30146 5.41392C8.00677 5.49811 7.79628 5.7928 7.79628 6.12959V7.85562C7.79628 8.78178 7.1227 8.95017 6.70172 8.99227H3.79694C3.67064 8.99227 2.74448 8.78178 2.70238 7.81352C2.70238 7.68722 2.70238 7.22414 2.70238 6.80316C2.70238 6.46637 2.70238 6.29798 2.70238 6.17169C2.61818 5.32972 2.91287 4.65615 3.37595 4.15097Z"}"></path></svg></div>
-							<div class="${"w-full"}"><h4 class="${"font-bold text-dark text-xl mb-1"}">Phone Number</h4>
-								<p class="${"text-base text-body-color"}">(+62)81 414 257 9980</p></div></div>
-						<div class="${"flex mb-8 max-w-[370px] w-full"}"><div class="${"max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded "}"><svg width="${"28"}" height="${"19"}" viewBox="${"0 0 28 19"}" class="${"fill-current"}"><path d="${"M25.3636 0H2.63636C1.18182 0 0 1.16785 0 2.6052V16.3948C0 17.8322 1.18182 19 2.63636 19H25.3636C26.8182 19 28 17.8322 28 16.3948V2.6052C28 1.16785 26.8182 0 25.3636 0ZM25.3636 1.5721C25.5909 1.5721 25.7727 1.61702 25.9545 1.75177L14.6364 8.53428C14.2273 8.75886 13.7727 8.75886 13.3636 8.53428L2.04545 1.75177C2.22727 1.66194 2.40909 1.5721 2.63636 1.5721H25.3636ZM25.3636 17.383H2.63636C2.09091 17.383 1.59091 16.9338 1.59091 16.3499V3.32388L12.5 9.8818C12.9545 10.1513 13.4545 10.2861 13.9545 10.2861C14.4545 10.2861 14.9545 10.1513 15.4091 9.8818L26.3182 3.32388V16.3499C26.4091 16.9338 25.9091 17.383 25.3636 17.383Z"}"></path></svg></div>
-							<div class="${"w-full"}"><h4 class="${"font-bold text-dark text-xl mb-1"}">Email Address</h4>
-								<p class="${"text-base text-body-color"}">info@yourdomain.com</p></div></div></div></div>
-				<div class="${"w-full lg:w-1/2 xl:w-5/12 px-4"}"><div class="${"bg-white relative rounded-lg p-8 sm:p-12 shadow-lg"}"><form><div class="${"mb-6"}"><input type="${"text"}" placeholder="${"Your Name"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary "}"></div>
-							<div class="${"mb-6"}"><input type="${"email"}" placeholder="${"Your Email"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary "}"></div>
-							<div class="${"mb-6"}"><input type="${"text"}" placeholder="${"Your Phone"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary "}"></div>
-							<div class="${"mb-6"}"><textarea rows="${"6"}" placeholder="${"Your Message"}" class="${"w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-primary "}"></textarea></div>
-							<div><button type="${"submit"}" class="${"w-full text-white bg-primary rounded border border-primary p-3 transition hover:bg-opacity-90 "}">Send Message
-								</button></div></form>
-						<div><span class="${"absolute -top-10 -right-9 z-[-1]"}"><svg width="${"100"}" height="${"100"}" viewBox="${"0 0 100 100"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path fill-rule="${"evenodd"}" clip-rule="${"evenodd"}" d="${"M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"}" fill="${"#3056D3"}"></path></svg></span>
-							<span class="${"absolute -right-10 top-[90px] z-[-1]"}"><svg width="${"34"}" height="${"134"}" viewBox="${"0 0 34 134"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"31.9993"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 132)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 88)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 45)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 16)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 59)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 132)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 88)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 45)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 16)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 59)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 1.66665)"}" fill="${"#13C296"}"></circle></svg></span>
-							<span class="${"absolute -left-7 -bottom-7 z-[-1]"}"><svg width="${"107"}" height="${"134"}" viewBox="${"0 0 107 134"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"104.999"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 104.999 132)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 104.999 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 104.999 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 104.999 88)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 104.999 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 104.999 45)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 104.999 16)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 104.999 59)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 104.999 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"104.999"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 104.999 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"90.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 90.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 132)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 132)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 88)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 88)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 45)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 45)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 16)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 16)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 59)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 59)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"75.6654"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 75.6654 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"31.9993"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 31.9993 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 132)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 88)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 45)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 16)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 59)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"60.9993"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 60.9993 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"17.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 17.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 132)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"132"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 132)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"117.333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 117.333)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"102.667"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 102.667)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 88)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"88"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 88)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"73.3333"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 73.3333)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 45)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"45"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 45)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 16)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"16"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 16)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 59)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"59"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 59)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"30.6666"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 30.6666)"}" fill="${"#13C296"}"></circle><circle cx="${"46.3333"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 46.3333 1.66665)"}" fill="${"#13C296"}"></circle><circle cx="${"2.66536"}" cy="${"1.66665"}" r="${"1.66667"}" transform="${"rotate(180 2.66536 1.66665)"}" fill="${"#13C296"}"></circle></svg></span></div></div></div></div></div></section></div>`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/nodes/8.js
-var __exports9 = {};
-__export(__exports9, {
-  css: () => css9,
-  entry: () => entry9,
-  js: () => js9,
-  module: () => contact_svelte_exports
-});
-var entry9, js9, css9;
-var init__9 = __esm({
-  ".svelte-kit/output/server/nodes/8.js"() {
-    init_contact_svelte();
-    entry9 = "pages/contact.svelte-a40723a2.js";
-    js9 = ["pages/contact.svelte-a40723a2.js", "chunks/vendor-6ea63d49.js"];
-    css9 = [];
+    entry13 = "pages/about-us.svelte-0d691d7e.js";
+    js13 = ["pages/about-us.svelte-0d691d7e.js", "chunks/vendor-6ea63d49.js"];
+    css13 = [];
   }
 });
 
@@ -7923,21 +8055,21 @@ var init_explore_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/9.js
-var __exports10 = {};
-__export(__exports10, {
-  css: () => css10,
-  entry: () => entry10,
-  js: () => js10,
+// .svelte-kit/output/server/nodes/13.js
+var __exports14 = {};
+__export(__exports14, {
+  css: () => css14,
+  entry: () => entry14,
+  js: () => js14,
   module: () => explore_svelte_exports
 });
-var entry10, js10, css10;
-var init__10 = __esm({
-  ".svelte-kit/output/server/nodes/9.js"() {
+var entry14, js14, css14;
+var init__14 = __esm({
+  ".svelte-kit/output/server/nodes/13.js"() {
     init_explore_svelte();
-    entry10 = "pages/explore.svelte-3e87b525.js";
-    js10 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
-    css10 = [];
+    entry14 = "pages/explore.svelte-3e87b525.js";
+    js14 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
+    css14 = [];
   }
 });
 
@@ -8055,21 +8187,21 @@ ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/nodes/10.js
-var __exports11 = {};
-__export(__exports11, {
-  css: () => css11,
-  entry: () => entry11,
-  js: () => js11,
+// .svelte-kit/output/server/nodes/14.js
+var __exports15 = {};
+__export(__exports15, {
+  css: () => css15,
+  entry: () => entry15,
+  js: () => js15,
   module: () => flights_svelte_exports
 });
-var entry11, js11, css11;
-var init__11 = __esm({
-  ".svelte-kit/output/server/nodes/10.js"() {
+var entry15, js15, css15;
+var init__15 = __esm({
+  ".svelte-kit/output/server/nodes/14.js"() {
     init_flights_svelte();
-    entry11 = "pages/flights.svelte-2707f7e7.js";
-    js11 = ["pages/flights.svelte-2707f7e7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
-    css11 = [];
+    entry15 = "pages/flights.svelte-2707f7e7.js";
+    js15 = ["pages/flights.svelte-2707f7e7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
+    css15 = [];
   }
 });
 
@@ -8245,21 +8377,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/11.js
-var __exports12 = {};
-__export(__exports12, {
-  css: () => css12,
-  entry: () => entry12,
-  js: () => js12,
+// .svelte-kit/output/server/nodes/15.js
+var __exports16 = {};
+__export(__exports16, {
+  css: () => css16,
+  entry: () => entry16,
+  js: () => js16,
   module: () => hotels_svelte_exports
 });
-var entry12, js12, css12;
-var init__12 = __esm({
-  ".svelte-kit/output/server/nodes/11.js"() {
+var entry16, js16, css16;
+var init__16 = __esm({
+  ".svelte-kit/output/server/nodes/15.js"() {
     init_hotels_svelte();
-    entry12 = "pages/hotels.svelte-ddf1fd2d.js";
-    js12 = ["pages/hotels.svelte-ddf1fd2d.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
-    css12 = [];
+    entry16 = "pages/hotels.svelte-ddf1fd2d.js";
+    js16 = ["pages/hotels.svelte-ddf1fd2d.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
+    css16 = [];
   }
 });
 
@@ -8537,21 +8669,21 @@ var init_blog_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/12.js
-var __exports13 = {};
-__export(__exports13, {
-  css: () => css13,
-  entry: () => entry13,
-  js: () => js13,
+// .svelte-kit/output/server/nodes/16.js
+var __exports17 = {};
+__export(__exports17, {
+  css: () => css17,
+  entry: () => entry17,
+  js: () => js17,
   module: () => blog_svelte_exports
 });
-var entry13, js13, css13;
-var init__13 = __esm({
-  ".svelte-kit/output/server/nodes/12.js"() {
+var entry17, js17, css17;
+var init__17 = __esm({
+  ".svelte-kit/output/server/nodes/16.js"() {
     init_blog_svelte();
-    entry13 = "pages/blog.svelte-89b8d8ca.js";
-    js13 = ["pages/blog.svelte-89b8d8ca.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-0127000c.js"];
-    css13 = [];
+    entry17 = "pages/blog.svelte-89b8d8ca.js";
+    js17 = ["pages/blog.svelte-89b8d8ca.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-0127000c.js"];
+    css17 = [];
   }
 });
 
@@ -8642,21 +8774,21 @@ var init_faqs_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/13.js
-var __exports14 = {};
-__export(__exports14, {
-  css: () => css14,
-  entry: () => entry14,
-  js: () => js14,
+// .svelte-kit/output/server/nodes/17.js
+var __exports18 = {};
+__export(__exports18, {
+  css: () => css18,
+  entry: () => entry18,
+  js: () => js18,
   module: () => faqs_svelte_exports
 });
-var entry14, js14, css14;
-var init__14 = __esm({
-  ".svelte-kit/output/server/nodes/13.js"() {
+var entry18, js18, css18;
+var init__18 = __esm({
+  ".svelte-kit/output/server/nodes/17.js"() {
     init_faqs_svelte();
-    entry14 = "pages/faqs.svelte-23c8e084.js";
-    js14 = ["pages/faqs.svelte-23c8e084.js", "chunks/vendor-6ea63d49.js"];
-    css14 = [];
+    entry18 = "pages/faqs.svelte-23c8e084.js";
+    js18 = ["pages/faqs.svelte-23c8e084.js", "chunks/vendor-6ea63d49.js"];
+    css18 = [];
   }
 });
 
@@ -8982,12 +9114,12 @@ function devalue(value) {
   }
   walk(value);
   var names = /* @__PURE__ */ new Map();
-  Array.from(counts).filter(function(entry15) {
-    return entry15[1] > 1;
+  Array.from(counts).filter(function(entry19) {
+    return entry19[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry15, i2) {
-    names.set(entry15[0], getName(i2));
+  }).forEach(function(entry19, i2) {
+    names.set(entry19[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -10691,7 +10823,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/about/flight.jpg", "images/about/hotel.jpg", "images/about/office.jpg", "images/about/tripsupport-team.jpg", "images/about/vacation.jpg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-a95cdfae.js", "js": ["start-a95cdfae.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-6d01eb55.js", "js": ["start-6d01eb55.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -10706,7 +10838,11 @@ var manifest = {
       () => Promise.resolve().then(() => (init__11(), __exports11)),
       () => Promise.resolve().then(() => (init__12(), __exports12)),
       () => Promise.resolve().then(() => (init__13(), __exports13)),
-      () => Promise.resolve().then(() => (init__14(), __exports14))
+      () => Promise.resolve().then(() => (init__14(), __exports14)),
+      () => Promise.resolve().then(() => (init__15(), __exports15)),
+      () => Promise.resolve().then(() => (init__16(), __exports16)),
+      () => Promise.resolve().then(() => (init__17(), __exports17)),
+      () => Promise.resolve().then(() => (init__18(), __exports18))
     ],
     routes: [
       {
@@ -10729,11 +10865,56 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/pay-later-terms\/?$/,
+        params: null,
+        path: "/pay-later-terms",
+        shadow: null,
+        a: [0, 4],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/baggage-policy\/?$/,
+        params: null,
+        path: "/baggage-policy",
+        shadow: null,
+        a: [0, 5],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/privacy-policy\/?$/,
+        params: null,
+        path: "/privacy-policy",
+        shadow: null,
+        a: [0, 6],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/accessibility\/?$/,
+        params: null,
+        path: "/accessibility",
+        shadow: null,
+        a: [0, 7],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/flight-hotel\/?$/,
         params: null,
         path: "/flight-hotel",
         shadow: null,
-        a: [0, 4],
+        a: [0, 8],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/contact-us\/?$/,
+        params: null,
+        path: "/contact-us",
+        shadow: null,
+        a: [0, 9],
         b: [1]
       },
       {
@@ -10742,7 +10923,7 @@ var manifest = {
         params: null,
         path: "/blog-post",
         shadow: null,
-        a: [0, 5],
+        a: [0, 10],
         b: [1]
       },
       {
@@ -10751,7 +10932,7 @@ var manifest = {
         params: null,
         path: "/vacations",
         shadow: null,
-        a: [0, 6],
+        a: [0, 11],
         b: [1]
       },
       {
@@ -10760,16 +10941,7 @@ var manifest = {
         params: null,
         path: "/about-us",
         shadow: null,
-        a: [0, 7],
-        b: [1]
-      },
-      {
-        type: "page",
-        pattern: /^\/contact\/?$/,
-        params: null,
-        path: "/contact",
-        shadow: null,
-        a: [0, 8],
+        a: [0, 12],
         b: [1]
       },
       {
@@ -10778,7 +10950,7 @@ var manifest = {
         params: null,
         path: "/explore",
         shadow: null,
-        a: [0, 9],
+        a: [0, 13],
         b: [1]
       },
       {
@@ -10787,7 +10959,7 @@ var manifest = {
         params: null,
         path: "/flights",
         shadow: null,
-        a: [0, 10],
+        a: [0, 14],
         b: [1]
       },
       {
@@ -10796,7 +10968,7 @@ var manifest = {
         params: null,
         path: "/hotels",
         shadow: null,
-        a: [0, 11],
+        a: [0, 15],
         b: [1]
       },
       {
@@ -10805,7 +10977,7 @@ var manifest = {
         params: null,
         path: "/blog",
         shadow: null,
-        a: [0, 12],
+        a: [0, 16],
         b: [1]
       },
       {
@@ -10814,7 +10986,7 @@ var manifest = {
         params: null,
         path: "/faqs",
         shadow: null,
-        a: [0, 13],
+        a: [0, 17],
         b: [1]
       }
     ]

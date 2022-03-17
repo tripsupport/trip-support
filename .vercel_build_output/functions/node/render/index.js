@@ -5981,13 +5981,13 @@ var init_layout_svelte = __esm({
 				<span class="${"text-xs font-medium ml-6 border-l border-gray-200 pl-6"}"></span> All Rights Reserved
 			</p></div>
 
-		<div class="${"flex space-x-8"}"><a href="${"javascript:void(0)"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Accessibility
+		<div class="${"flex space-x-8"}"><a href="${"/accessibility"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Accessibility
 			</a>
 
-			<a href="${"javascript:void(0)"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy
+			<a href="${"/privacy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy Policy
 			</a>
 
-			<a href="${"javascript:void(0)"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Pay Later Terms
+			<a href="${"/pay-later-terms"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Pay Later Terms
 			</a></div>
 
 		</div></div>`;
@@ -5995,68 +5995,68 @@ var init_layout_svelte = __esm({
     FooterLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl py-2 px-4 sm:px-6 sm:py-8 lg:py-20 lg:px-8 lg:pb-8"}"><div class="${"mt-12 grid grid-cols-6 gap-8 xl:col-span-12 xl:mt-0"}"><div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Vacation Deals
 			</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Spring Vacations
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Spring Vacations
 					</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Winter Vacations</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Summer Vacations</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Fall Vacations</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Group Travel</a></li></ul></div>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Winter Vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Summer Vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Fall Vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Group Travel</a></li></ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Destinations</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Westjet Vacations</a></li>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Westjet Vacations</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Porter Vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Porter Vacations</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunwing Vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunwing Vacations</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunquest Vacations</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Signature Vacations</a></li></ul></div>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunquest Vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Signature Vacations</a></li></ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Flight Deals</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flights to edmonton</a></li>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flights to edmonton</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Flight To San Francisco</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Flight To San Francisco</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to toronto</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to toronto</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to vancouver</a></li></ul></div>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to vancouver</a></li></ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">travel deals</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">all inclusive resorts</a></li>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">all inclusive resorts</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">singles vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">singles vacations</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">3 - 5 day vacations</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">3 - 5 day vacations</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">2 weeks vacation</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">best family resorts</a></li></ul></div>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">2 weeks vacation</a></li>
+				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">best family resorts</a></li></ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">quick links</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"/blog"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">blog</a></li>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"/blog"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">blog</a></li>
 
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">faqs</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">about us</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">contact us</a></li>
-				<li><a href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Baggage policy</a></li>
+				<li><a sveltekit:prefetch href="${"/faqs"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">faqs</a></li>
+				<li><a sveltekit:prefetch href="${"/about-us"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">about us</a></li>
+				<li><a sveltekit:prefetch href="${"/contact-us"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">contact us</a></li>
+				<li><a sveltekit:prefetch href="${"baggage-policy"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Baggage policy</a></li>
 				<li><a href="${"/book-now-pay-later"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">book now pay later</a></li></ul></div>
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Social media</h3>
 
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-facebook mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"}"></path></svg>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-facebook mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"}"></path></svg>
 						Facebook
 					</a></li>
 
-				<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-orange-500 focus:z-10 focus:ring-2 focus:ring-orange-500 focus:text-orange-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-instagram mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"}"></path></svg>
+				<li><a sveltekit:prefetch href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-orange-500 focus:z-10 focus:ring-2 focus:ring-orange-500 focus:text-orange-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-instagram mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"}"></path></svg>
 						Instagram
 					</a></li>
 
-				<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-pred-700 focus:z-10 focus:ring-2 focus:ring-pred-700 focus:text-pred-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-youtube mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"}"></path></svg>
+				<li><a sveltekit:prefetch href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-pred-700 focus:z-10 focus:ring-2 focus:ring-pred-700 focus:text-pred-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-youtube mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"}"></path></svg>
 						Youtube
 					</a></li>
 
-				<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-pred-700 focus:z-10 focus:ring-2 focus:ring-pred-700 focus:text-pred-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-pinterest mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"}"></path></svg>
+				<li><a sveltekit:prefetch href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-pred-700 focus:z-10 focus:ring-2 focus:ring-pred-700 focus:text-pred-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-pinterest mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"}"></path></svg>
 						Pinterest
 					</a></li>
-				<li><a href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-slate-700 focus:z-10 focus:ring-2 focus:ring-slate-700 focus:text-slate-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-at mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"}"></path></svg>
+				<li><a sveltekit:prefetch href="${"https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"}" target="${"_blank"}" rel="${"noopener nofollow noreferrer"}" class="${"flex items-center px-4 py-2 mr-3 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-slate-700 focus:z-10 focus:ring-2 focus:ring-slate-700 focus:text-slate-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"currentColor"}" class="${"bi bi-at mr-2 -ml-1 w-4 h-4"}" viewBox="${"0 0 16 16"}"><path d="${"M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"}"></path></svg>
 						Email us
 					</a></li></ul></div></div></div>`;
     });
@@ -6087,9 +6087,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-6ae4a147.js";
-    js = ["pages/__layout.svelte-6ae4a147.js", "chunks/vendor-aa7f3673.js"];
-    css = ["assets/pages/__layout.svelte-ed0b8308.css"];
+    entry = "pages/__layout.svelte-f9c498cf.js";
+    js = ["pages/__layout.svelte-f9c498cf.js", "chunks/vendor-6ea63d49.js"];
+    css = ["assets/pages/__layout.svelte-e4132931.css"];
   }
 });
 
@@ -6137,8 +6137,8 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-d1de1579.js";
-    js2 = ["error.svelte-d1de1579.js", "chunks/vendor-aa7f3673.js"];
+    entry2 = "error.svelte-8f89e959.js";
+    js2 = ["error.svelte-8f89e959.js", "chunks/vendor-6ea63d49.js"];
     css2 = [];
   }
 });
@@ -6759,8 +6759,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-f5911f23.js";
-    js3 = ["pages/index.svelte-f5911f23.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-812e9b52.js"];
+    entry3 = "pages/index.svelte-f8b62608.js";
+    js3 = ["pages/index.svelte-f8b62608.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
     css3 = [];
   }
 });
@@ -7082,8 +7082,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-f568d0ac.js";
-    js4 = ["pages/book-now-pay-later.svelte-f568d0ac.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-812e9b52.js"];
+    entry4 = "pages/book-now-pay-later.svelte-19ebf3a6.js";
+    js4 = ["pages/book-now-pay-later.svelte-19ebf3a6.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js"];
     css4 = [];
   }
 });
@@ -7115,8 +7115,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-5a90a5bc.js";
-    js5 = ["pages/flight-hotel.svelte-5a90a5bc.js", "chunks/vendor-aa7f3673.js"];
+    entry5 = "pages/flight-hotel.svelte-10446fc4.js";
+    js5 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
     css5 = [];
   }
 });
@@ -7461,8 +7461,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_blog_post_svelte();
-    entry6 = "pages/blog-post.svelte-e77a5193.js";
-    js6 = ["pages/blog-post.svelte-e77a5193.js", "chunks/vendor-aa7f3673.js", "chunks/HotelsIcon-74235531.js"];
+    entry6 = "pages/blog-post.svelte-1575c176.js";
+    js6 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
     css6 = [];
   }
 });
@@ -7713,8 +7713,8 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-7c350f16.js";
-    js7 = ["pages/vacations.svelte-7c350f16.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-812e9b52.js", "chunks/BlogPosts-08852c0b.js"];
+    entry7 = "pages/vacations.svelte-bb0bfcde.js";
+    js7 = ["pages/vacations.svelte-bb0bfcde.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js", "chunks/BlogPosts-7c4c833b.js"];
     css7 = [];
   }
 });
@@ -7724,12 +7724,109 @@ var about_us_svelte_exports = {};
 __export(about_us_svelte_exports, {
   default: () => About_us
 });
-var About_us;
+var AboutSvg, About_us;
 var init_about_us_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/about-us.svelte.js"() {
     init_index_c9c8dd9a();
+    AboutSvg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<svg width="${"134"}" height="${"106"}" viewBox="${"0 0 134 106"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"1.66667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 31 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3334"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 60.3334 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 103 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 132 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 31 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 103 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 132 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"74.6673"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 74.6673)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 31 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 31 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 103 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 103 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 132 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 132 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 31 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 31 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 103 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 103 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 132 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 132 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 31 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 31 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 103 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 103 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 132 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 132 1.66683)"}" fill="${"#3056D3"}"></circle></svg>`;
+    });
     About_us = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+      return `<div class="${"mx-auto max-w-7xl p-4"}">
+	<section class="${"pt-10 lg:pt-20 pb-6 lg:pb-16 overflow-hidden"}"><div class="${"container"}"><div class="${"flex flex-wrap justify-between items-center"}"><div class="${"w-full lg:w-7/12 xl:w-7/12 px-4"}"><div class="${"lg:mt-0 prose"}"><h2 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-slate-900 to-rose-600 bg-clip-text text-transparent"}">Trip Support</span></h2>
+						<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4 mt-0"}">About Us</h2>
+						<p class="${"text-base font-semibold text-gray-700"}">We\u2019re a North American travel company established in Canada and the USA, that
+							specializes in flight, tours, and vacation packages.
+						</p>
+						<p class="${"text-base text-gray-700"}">Here at Trip Support, we believe that travel should be affordable for all.
+						</p>
+						<p class="${"text-base text-gray-700"}">By establishing positive and lasting relationships with clients, utilizing
+							state-of-the-art technology, and providing service beyond reproach, we make that
+							belief a reality.
+						</p></div></div>
+				<div class="${"w-full lg:w-5/12 px-4"}"><div class="${"flex items-center -mx-3 sm:-mx-4"}"><div class="${"w-full xl:w-1/2 px-3 sm:px-4"}"><div class="${"py-3 sm:py-4"}"><img src="${"/images/about/flight.jpg"}" alt="${""}" class="${"rounded-2xl w-full"}"></div>
+							<div class="${"py-3 sm:py-4"}"><img src="${"/images/about/hotel.jpg"}" alt="${""}" class="${"rounded-2xl w-full"}"></div></div>
+						<div class="${"w-full xl:w-1/2 px-3 sm:px-4"}"><div class="${"my-4 relative z-10"}"><img src="${"/images/about/vacation.jpg"}" alt="${""}" class="${"rounded-2xl w-full"}">
+								<span class="${"absolute -right-7 -bottom-7 z-[-1]"}">${validate_component(AboutSvg, "AboutSvg").$$render($$result, {}, {}, {})}</span></div></div></div></div></div></div></section>
+	</div>
+
+
+<div class="${"bg-white overflow-hidden"}"><div class="${"container xl:max-w-7xl mx-auto px-4 py-12 lg:px-8 "}"><div class="${"flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0 lg:space-x-20"}"><div class="${"lg:w-1/3 flex-none relative"}"><div class="${"pattern-dots-xl opacity-10 absolute top-0 left-0 w-48 h-96 transform -translate-x-10 -translate-y-10"}"></div>
+				<div class="${"pattern-dots-xl opacity-10 absolute bottom-0 right-0 w-48 h-96 transform translate-x-10 translate-y-10"}"></div>
+				
+				<img src="${"/images/about/office.jpg"}" alt="${"Preview Feature Image"}" class="${"relative rounded-lg shadow-xl mx-auto"}"></div>
+			<div class="${"lg:w-2/3 md:py-12 space-y-10"}">
+				<div class="${"prose"}"><h2 class="${"text-3xl md:text-4xl font-extrabold mb-4 mt-0"}">Our Mission</h2>
+					<p class="${"text-gray-700"}">Our mission at Trip Support is to provide its clients with the best convenient and
+						economical solutions for their travel and vacation requirements.
+					</p>
+					<p class="${"text-gray-700"}">Trip Support uses up-to-date technology and financing tools that provide clients with
+						the best possible travel solutions. We offer high-quality, personalized, and tailor-made
+						services and packages at the best possible prices. Trip Support prides itself on its
+						outstanding client care, best available rates, deals, and easy payment methods. With
+						these tools and skills, we establish positive and lasting relationships with clients. We
+						are committed to providing our guests with the best possible travel and vacations
+						experiences.
+					</p>
+					<p class="${"text-gray-700"}">Trip Support offers a unique travel financing service program that makes payments easy
+						for everyone. We use a \u201CBook Now, Pay Later\u201D approach, where payments can be made in
+						easy installments. Uniquely, we offer this approach without the need for credit checks
+						and extra boring, time-consuming documentation. <span class="${"font-bold"}">We believe that people should be able to travel regardless of their credit score.
+						</span></p></div>
+				</div></div></div></div>
+
+
+<div class="${"bg-white overflow-hidden"}"><div class="${"container xl:max-w-7xl mx-auto px-4 py-12 lg:px-8 "}"><div class="${"flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0 lg:space-x-20"}"><div class="${"lg:w-9/12 md:py-12 space-y-10"}">
+				<div class="${"prose"}"><h2 class="${"text-3xl md:text-4xl font-extrabold mb-4 mt-0"}">Our Brand</h2>
+					<p class="${"text-gray-700"}">Trip Support is an incorporation (INC) that was established in 2014 in Toronto, Canada.
+						In 2019, we expanded our service to American travelers by establishing a branch in
+						Newport Beach, California.
+					</p>
+					<p class="${"text-gray-700"}">Trip Support is one of the fastest-growing travel agencies in North America. At the core
+						of our brand, we believe in making travel simple and easy for all our clients. Today,
+						our multinational business structure is a testament to its CEO\u2019s long-standing vision of
+						making \u201Ctravel affordable for all.\u201D
+					</p>
+					<p class="${"text-gray-700"}">Trip Support offers a unique travel financing service program that makes payments easy
+						for everyone. We use a \u201CBook Now, Pay Later\u201D approach, where payments can be made in
+						easy installments. Uniquely, we offer this approach without the need for credit checks
+						and extra boring, time-consuming documentation. <span class="${"font-bold"}">We believe that people should be able to travel regardless of their credit score.
+						</span></p></div>
+				</div>
+			<div class="${"lg:w-1/3 flex-none relative"}"><div class="${"pattern-dots-xl opacity-10 absolute top-0 left-0 w-48 h-96 transform -translate-x-10 -translate-y-10"}"></div>
+				<div class="${"pattern-dots-xl opacity-10 absolute bottom-0 right-0 w-48 h-96 transform translate-x-10 translate-y-10"}"></div>
+				
+				<img src="${"logo.svg"}" alt="${"Preview Feature Image"}" class="${"relative rounded-lg shadow-xl mx-auto"}"></div></div></div></div>
+
+
+<div class="${"relative bg-gray-900"}"><div class="${"h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full"}"><div class="${"h-full w-full xl:grid xl:grid-cols-2"}"><div class="${"h-full xl:relative xl:col-start-2"}"><img class="${"h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"}" src="${"/images/about/tripsupport-team.jpg"}" alt="${"People working on laptops"}">
+				<div aria-hidden="${"true"}" class="${"absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-92 xl:bg-gradient-to-r"}"></div></div></div></div>
+	<div class="${"max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-3 xl:grid-flow-col-dense xl:gap-x-8"}"><div class="${"relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 col-span-2 xl:pb-24 prose max-w-prose"}"><h3 class="${"mt-3 text-3xl leading-normal tracking-wide font-bold text-white"}">Our Entity</h3>
+			<p class="${"border-gray-50 text-slate-100 font-light"}">We have grown substantially since our opening in 2014. Thanks to our state-of-the-art
+				services, we went from about $165,000 in revenue in 2014 to about $22.5M CAD in 2019, which
+				shows an average growth rate of over 2000%.
+			</p>
+			<p class="${"border-gray-50 text-slate-100 font-light"}">One of our early insights was to formulate a novel travel financing service. We started our
+				\u201CBook Now, Pay Later\u201D service in 2015, which made us extremely competitive in the travel
+				sector. We offer this service without the need for credit checks, which allows our customers
+				to travel even if they have poor credit scores. We have also continued to develop our
+				expertise in all aspects of travel by focusing on specific fields such as corporate
+				services, leisure, special &amp; tailor-made packages, and luxury travel services to ensure
+				rapid and substantial growth.
+			</p>
+			<p class="${"border-gray-50 text-slate-100 font-light"}">Trip Support has become a well-known entity in Canada. We have expanded our business to
+				include not only corporate businesses but also immigrant communities. Our services to
+				European and Asian visitors have provided us with an international presence.
+			</p>
+			<p class="${"border-gray-50 text-slate-100 font-light"}">In addition to our base services, we have added an airline ticketing facility and individual
+				customized travel planning. These were done with a personalized service approach,
+				consistently a key element in Trip Support&#39;s delivery of travel arrangements. Trip Support
+				is also focused on adding new products and services such as &quot;Things to Do,&quot; which will give
+				our customers an option to book day tours, entry tickets, and much more.
+			</p>
+			<p class="${"border-gray-50 text-slate-100 font-light"}">At Trip Support, we believe that you should be able to go on the vacation of your dreams, no
+				matter who you are.
+			</p></div></div></div>`;
     });
   }
 });
@@ -7746,8 +7843,8 @@ var entry8, js8, css8;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_about_us_svelte();
-    entry8 = "pages/about-us.svelte-90157816.js";
-    js8 = ["pages/about-us.svelte-90157816.js", "chunks/vendor-aa7f3673.js"];
+    entry8 = "pages/about-us.svelte-0d691d7e.js";
+    js8 = ["pages/about-us.svelte-0d691d7e.js", "chunks/vendor-6ea63d49.js"];
     css8 = [];
   }
 });
@@ -7805,8 +7902,8 @@ var entry9, js9, css9;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_contact_svelte();
-    entry9 = "pages/contact.svelte-d96b5147.js";
-    js9 = ["pages/contact.svelte-d96b5147.js", "chunks/vendor-aa7f3673.js"];
+    entry9 = "pages/contact.svelte-a40723a2.js";
+    js9 = ["pages/contact.svelte-a40723a2.js", "chunks/vendor-6ea63d49.js"];
     css9 = [];
   }
 });
@@ -7838,8 +7935,8 @@ var entry10, js10, css10;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_explore_svelte();
-    entry10 = "pages/explore.svelte-ebf6de89.js";
-    js10 = ["pages/explore.svelte-ebf6de89.js", "chunks/vendor-aa7f3673.js"];
+    entry10 = "pages/explore.svelte-3e87b525.js";
+    js10 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
     css10 = [];
   }
 });
@@ -7970,8 +8067,8 @@ var entry11, js11, css11;
 var init__11 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_flights_svelte();
-    entry11 = "pages/flights.svelte-4abac226.js";
-    js11 = ["pages/flights.svelte-4abac226.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-812e9b52.js"];
+    entry11 = "pages/flights.svelte-2707f7e7.js";
+    js11 = ["pages/flights.svelte-2707f7e7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
     css11 = [];
   }
 });
@@ -8160,8 +8257,8 @@ var entry12, js12, css12;
 var init__12 = __esm({
   ".svelte-kit/output/server/nodes/11.js"() {
     init_hotels_svelte();
-    entry12 = "pages/hotels.svelte-8bd4f7de.js";
-    js12 = ["pages/hotels.svelte-8bd4f7de.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-812e9b52.js"];
+    entry12 = "pages/hotels.svelte-ddf1fd2d.js";
+    js12 = ["pages/hotels.svelte-ddf1fd2d.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
     css12 = [];
   }
 });
@@ -8452,8 +8549,8 @@ var entry13, js13, css13;
 var init__13 = __esm({
   ".svelte-kit/output/server/nodes/12.js"() {
     init_blog_svelte();
-    entry13 = "pages/blog.svelte-bd45bba5.js";
-    js13 = ["pages/blog.svelte-bd45bba5.js", "chunks/vendor-aa7f3673.js", "chunks/Subscribe-812e9b52.js"];
+    entry13 = "pages/blog.svelte-89b8d8ca.js";
+    js13 = ["pages/blog.svelte-89b8d8ca.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-0127000c.js"];
     css13 = [];
   }
 });
@@ -8468,7 +8565,79 @@ var init_faqs_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/faqs.svelte.js"() {
     init_index_c9c8dd9a();
     Faqs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+      return `<div class="${"mx-auto max-w-7xl bg-white"}">
+	<section class="${"pt-20 pb-12 lg:pb-[90px] relative z-20 overflow-hidden "}">
+		<div class="${"container"}"><div class="${"flex flex-wrap -mx-4"}"><div class="${"w-full px-4"}"><div class="${"text-center mx-auto mb-[60px] lg:mb-20 max-w-[520px]"}"><span class="${"font-bold text-md mb-2 block"}">FAQ </span>
+						<h2 class="${"font-extrabold text-2xl sm:text-4xl text-gray-900 mb-4 "}">Frequently Asked Questions
+						</h2>
+						<p class="${"text-base text-body-color"}">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form.
+						</p></div></div></div>
+			<div class="${"flex flex-wrap -mx-4"}"><div class="${"w-full lg:w-1/2 px-4"}"><div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How can I get a copy of my itinerary or booking details?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How can I get a copy of my itinerary or booking details?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Why was my booking canceled?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">What is Trip Support\u2019s cancellation policy?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How do I know my booking is confirmed?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Can I print my e-ticket?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Why should I book with Trip Support?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How can I contact Trip Support customer support?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Where is Trip Support located?</h4></div></button>
+						${``}</div></div>
+				<div class="${"w-full lg:w-1/2 px-4"}"><div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Why was my booking canceled?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How do I check-in?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How do I get my boarding pass?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Where can I find my e-ticket number?
+								</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">What is Basic Economy?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">Do I need a visa for my trip?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How can I request a wheelchair?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">How can I select a meal?</h4></div></button>
+						${``}</div>
+					<div class="${"single-faq w-full bg-white border border-gray-100 rounded-lg p-4 sm:p-8 lg:px-6 xl:px-8 mb-8 "}"><button class="${"faq-btn flex w-full text-left"}"><div class="${"w-full max-w-[40px] h-10 flex items-center justify-center rounded-lg bg-primary text-primary bg-opacity-5 mr-5 "}"><svg width="${"17"}" height="${"10"}" viewBox="${"0 0 17 10"}" class="${"fill-current icon"}"><path d="${"M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"}" fill="${"#3056D3"}" stroke="${"#3056D3"}"></path></svg></div>
+							<div class="${"w-full"}"><h4 class="${"text-lg font-semibold text-black"}">I missed my flight, what should I do?
+								</h4></div></button>
+						${``}</div></div></div></div>
+		<div class="${"absolute bottom-0 right-0 z-[-1]"}"><svg width="${"1440"}" height="${"886"}" viewBox="${"0 0 1440 886"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path opacity="${"0.5"}" d="${"M193.307 -273.321L1480.87 1014.24L1121.85 1373.26C1121.85 1373.26 731.745 983.231 478.513 729.927C225.976 477.317 -165.714 85.6993 -165.714 85.6993L193.307 -273.321Z"}" fill="${"url(#paint0_linear)"}"></path><defs><linearGradient id="${"paint0_linear"}" x1="${"1308.65"}" y1="${"1142.58"}" x2="${"602.827"}" y2="${"-418.681"}" gradientUnits="${"userSpaceOnUse"}"><stop stop-color="${"#3056D3"}" stop-opacity="${"0.36"}"></stop><stop offset="${"1"}" stop-color="${"#F5F2FD"}" stop-opacity="${"0"}"></stop><stop offset="${"1"}" stop-color="${"#F5F2FD"}" stop-opacity="${"0.096144"}"></stop></linearGradient></defs></svg></div></section>
+	</div>
+`;
     });
   }
 });
@@ -8485,8 +8654,8 @@ var entry14, js14, css14;
 var init__14 = __esm({
   ".svelte-kit/output/server/nodes/13.js"() {
     init_faqs_svelte();
-    entry14 = "pages/faqs.svelte-5c5d6a61.js";
-    js14 = ["pages/faqs.svelte-5c5d6a61.js", "chunks/vendor-aa7f3673.js"];
+    entry14 = "pages/faqs.svelte-23c8e084.js";
+    js14 = ["pages/faqs.svelte-23c8e084.js", "chunks/vendor-6ea63d49.js"];
     css14 = [];
   }
 });
@@ -10519,10 +10688,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/about/flight.jpg", "images/about/hotel.jpg", "images/about/office.jpg", "images/about/tripsupport-team.jpg", "images/about/vacation.jpg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-9bb289bc.js", "js": ["start-9bb289bc.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-a95cdfae.js", "js": ["start-a95cdfae.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

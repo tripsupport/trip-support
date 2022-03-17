@@ -1638,10 +1638,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry13 = this._queue.shift();
-              this._queueTotalSize -= entry13.byteLength;
+              const entry15 = this._queue.shift();
+              this._queueTotalSize -= entry15.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry13.buffer, entry13.byteOffset, entry13.byteLength);
+              const view = new Uint8Array(entry15.buffer, entry15.byteOffset, entry15.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5586,7 +5586,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css13) => css13.code).join("\n"),
+          code: Array.from(result.css).map((css15) => css15.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -6087,9 +6087,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-a6d640e9.js";
-    js = ["pages/__layout.svelte-a6d640e9.js", "chunks/vendor-6ea63d49.js"];
-    css = ["assets/pages/__layout.svelte-93b3cb88.css"];
+    entry = "pages/__layout.svelte-6ae4a147.js";
+    js = ["pages/__layout.svelte-6ae4a147.js", "chunks/vendor-aa7f3673.js"];
+    css = ["assets/pages/__layout.svelte-ed0b8308.css"];
   }
 });
 
@@ -6137,8 +6137,8 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-8f89e959.js";
-    js2 = ["error.svelte-8f89e959.js", "chunks/vendor-6ea63d49.js"];
+    entry2 = "error.svelte-d1de1579.js";
+    js2 = ["error.svelte-d1de1579.js", "chunks/vendor-aa7f3673.js"];
     css2 = [];
   }
 });
@@ -6759,8 +6759,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-f8b62608.js";
-    js3 = ["pages/index.svelte-f8b62608.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
+    entry3 = "pages/index.svelte-f5911f23.js";
+    js3 = ["pages/index.svelte-f5911f23.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-812e9b52.js"];
     css3 = [];
   }
 });
@@ -6770,7 +6770,7 @@ var book_now_pay_later_svelte_exports = {};
 __export(book_now_pay_later_svelte_exports, {
   default: () => Book_now_pay_later
 });
-var BookNowHero, BookNowFeature, WeeklyExample, HowDoesItWork, PaymentPlans, BnplFaq1, BnplFaq2, BnplFaqs, Book_now_pay_later;
+var BookNowHero, BookNowFeature, WeeklyExample, HowDoesItWork, PaymentPlans, BnplFaqs, Book_now_pay_later;
 var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
     init_index_c9c8dd9a();
@@ -6797,91 +6797,51 @@ var init_book_now_pay_later_svelte = __esm({
 								<div class="${"mt-6 flex-shrink-0 sm:mt-0"}"><img class="${"h-[200px] w-[180px] rounded-lg object-cover"}" src="${"/images/hotels/muskoka.jpg"}" alt="${""}"></div></div></div></div></div></div></div></div></div>`;
     });
     BookNowFeature = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      const data = [
-        {
-          title: "Great offers",
-          content: "When airlines have crazy discounts to a destination you plan on visiting, you can easily be frustrated if you can\u2019t come up with the money right away. Likewise, if you see a dream destination on offer, you can use Book Now Pay Later flights and hotel deals to pay for the trip while discount prices still prevail. Book Now Pay Later flights allow you to make savings on reduced airfares and offers, and the best part is that most international and local airlines are cool with this arrangement. For example, if you were to check our site for Book Now Pay Later no credit check Canada flights, you can find flights to most holiday and business destinations in the world."
-        },
-        {
-          title: "No credit check",
-          content: "Book Now Pay Later with no credit check, you can pursue your wanderlust and explore the world easier than ever before. Trip Support\u2019s Book Now Pay Later plan can help you cover all your travel expenses such as transportation costs, accommodation, food, activities, tours, and others. To qualify for a book now pay later flight, some agencies ask that you raise an amount/percentage of the airfare, but the guarantee is that your financing will be approved. In fact, you can get no credit check airline ticket financing, and unlike credit loans, you don\u2019t have to provide a whole file of paperwork to get it approved. You also don\u2019t have to get a guarantor or collateral, and sometimes you can get a waiver for the initial deposit and just pay for the flight when you are able to. This means that even with a limited credit card, your travel is sorted out."
-        },
-        {
-          title: "Flexible payment plans",
-          content: "Book Now Pay Later flights plan offer flexible repayment options, as you can choose between weekly, bi-monthly or monthly payments, whatever works for you best. The finance term for book or travel and pay later flights is determined by you. Depending on the amount you want to pay per month, you can complete paying for the financing within three months, six months, or even a year with little to no interest. This means that even unemployed people can book a flight on a book now payment plan from book now pay later agencies as long as they give assurance of payment."
-        },
-        {
-          title: "No hidden fees",
-          content: "Once you reimburse the amount agreed on in the payment plan, your debt is done. Everything is laid out at the start and included in the package, and since it is not a revolving credit facility, you can plan your finances down to the last cent. That said, in case you want to change your payment plan in the future, you will have to make a new application to buy the flight ticket."
-        },
-        {
-          title: "Fast & convenient",
-          content: "To make sure you don\u2019t miss the best travel deals, we will process and approve your travel loan right away. "
-        },
-        {
-          title: "No post-vacation payments",
-          content: "With credit card payments, you have to think about your remaining instalments after you come back home. However, with this travel loan, you pay your trip in advance (you have up to 180 days before the departure date to repay). This means that you can relax and enjoy your vacation without being worried about the payments once you come back from your trip."
-        }
-      ];
       return `
-<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-2 py-16"}">
-		<div class="${"text-center"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">Trip Support Feature
-			</div>
-			<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">What is the Book Now Pay Later Feature?
-			</h2>
-			<h3 class="${"text-md md:text-base md:leading-relaxed font-medium text-gray-600 lg:w-2/3 mx-auto"}">Ready to pursue your wanderlust and explore the world easier than ever before? Trip
-				Support\u2019s Book Now Pay Later Travel plan can help cover your travel expenses in a
-				cost-effective manner. These expenses can include transportation costs, accommodations,
-				food, activities, tours, and more. Uniquely, we offer this approach without the need for
-				credit checks and extra boring, time-consuming documentation.
-				<span class="${"font-bold"}">We believe that people should be able to travel regardless of their credit score</span>.
-			</h3></div>
-		
 
-		
-		<div class="${"grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5"}"><div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-orange-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
-						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-orange-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
 
-						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-adjustments inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg></div></div>
-				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[0].title)}</h4>
-				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[0].content)}</p>`}
-				<button class="${"text-tiny text-rose-600"}">read more</button></div>
-			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
-						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+<div class="${"bg-white overflow-hidden"}"><div class="${"container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-12"}"><div class="${"flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0 lg:space-x-12"}">
+			<div class="${"lg:w-6/12 xl:w-6/12 md:py-12 space-y-10"}"><div class="${"prose"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">Trip Support
+					</div>
+					<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4 mt-0"}">Our Book Now Pay Later Feature
+					</h2>
+					<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Ready to pursue your wanderlust and explore the world easier than ever before? Trip
+						Support\u2019s Book Now Pay Later Travel plan can help cover your travel expenses in a
+						cost-effective manner. These expenses can include transportation costs, accommodations,
+						food, activities, tours, and more. Uniquely, we offer this approach without the need for
+						credit checks and extra boring, time-consuming documentation.
+						<span class="${"font-bold"}">We believe that people should be able to travel regardless of their credit score</span>.
+					</p></div></div>
+			
 
-						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-chart-pie inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"}"></path><path fill-rule="${"evenodd"}" d="${"M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
-				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[1].title)}</h4>
-				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[1].content)}</p>`}
-				<button class="${"text-tiny text-rose-600"}">read more</button></div>
-			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-emerald-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
-						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-emerald-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
-
-						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-globe inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
-				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[2].title)}</h4>
-				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[2].content)}</p>`}
-				<button class="${"text-tiny text-rose-600"}">read more</button></div>
-			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-purple-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
-						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-purple-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
-
-						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-lightning-bolt inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z"}" clip-rule="${"evenodd"}"></path><path d="${"M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"}"></path></svg></div></div>
-				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[3].title)}</h4>
-				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[3].content)}</p>`}
-				<button class="${"text-tiny text-rose-600"}">read more</button></div>
-			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-blue-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
-						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-blue-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
-
-						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-puzzle inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
-				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[4].title)}</h4>
-				${`<p class="${"leading-relaxed text-gray-600"}">${escape(data[4].content)}</p>`}
-				</div>
-			<div class="${"group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"}"><div class="${"text-center"}"><div class="${"inline-flex items-center justify-center w-12 h-12 m-5 mb-12 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-pink-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg"}"></div>
-						<div class="${"absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-pink-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
-
-						<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-users inline-block w-8 h-8"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"}"></path><path fill-rule="${"evenodd"}" d="${"M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"}" clip-rule="${"evenodd"}"></path></svg></div></div>
-				<h4 class="${"text-lg font-bold mb-2 text-center"}">${escape(data[5].title)}</h4>
-				${`<p class="${"leading-relaxed text-gray-600 line-clamp-3"}">${escape(data[5].content)}</p>`}
-				<button class="${"text-tiny text-rose-600"}">read more</button></div></div>
-		</div></div>
+			
+			<div class="${"lg:w-6/12 xl:w-6/12 flex-none relative"}"><div class="${"pattern-dots-xl opacity-10 absolute top-0 left-0 w-48 h-64 md:mt-20 transform -translate-x-10 -translate-y-10"}"></div>
+				<div class="${"pattern-dots-xl opacity-10 absolute bottom-0 right-0 w-48 h-64 md:mb-20 transform translate-x-10 translate-y-10"}"></div>
+				<div class="${"relative flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0"}"><div class="${"md:w-1/2 space-y-6"}"><div class="${"group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-orange-300"}"><div class="${"inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-blue-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"}"></div>
+								<div class="${"absolute inset-0 rounded-2xl transform -rotate-6 bg-blue-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-chart-pie inline-block w-7 h-7"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path d="${"M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"}"></path><path fill-rule="${"evenodd"}" d="${"M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"}" clip-rule="${"evenodd"}"></path></svg></div>
+							<h4 class="${"text-lg font-bold mb-2"}">No Credit Check</h4>
+							<p class="${"leading-relaxed text-tb text-gray-600"}">Pursue your wanderlust and explore the world easier than ever before
+							</p></div>
+						<div class="${"group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-red-300"}"><div class="${"inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"}"></div>
+								<div class="${"absolute inset-0 rounded-2xl transform -rotate-6 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-lightning-bolt inline-block w-6 h-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z"}" clip-rule="${"evenodd"}"></path><path d="${"M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"}"></path></svg></div>
+							<h4 class="${"text-lg font-bold mb-2"}">No hidden fees</h4>
+							<p class="${"leading-relaxed text-gray-600"}">Everything is laid out at the start and included in the package
+							</p></div></div>
+					<div class="${"md:w-1/2 space-y-6"}"><div class="${"group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-emerald-300"}"><div class="${"inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-emerald-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"}"></div>
+								<div class="${"absolute inset-0 rounded-2xl transform -rotate-6 bg-emerald-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-globe inline-block w-7 h-7"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"}" clip-rule="${"evenodd"}"></path></svg></div>
+							<h4 class="${"text-lg font-bold mb-2"}">Flexible Payments</h4>
+							<p class="${"leading-relaxed text-tb text-gray-600"}">Choose between weekly, bi-monthly or monthly payments
+							</p></div>
+						<div class="${"group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-purple-300"}"><div class="${"inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative"}"><div class="${"absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-purple-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"}"></div>
+								<div class="${"absolute inset-0 rounded-2xl transform -rotate-6 bg-purple-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"}"></div>
+								<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-puzzle inline-block w-6 h-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"}" clip-rule="${"evenodd"}"></path></svg></div>
+							<h4 class="${"text-lg font-bold mb-2"}">Fast &amp; convenient</h4>
+							<p class="${"leading-relaxed text-gray-600"}">We will process and approve your travel loan right away.
+							</p></div></div></div></div>
+			</div></div></div>
 `;
     });
     WeeklyExample = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6981,79 +6941,120 @@ var init_book_now_pay_later_svelte = __esm({
 				${``}</div></div></section></div>`;
     });
     PaymentPlans = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-white"}"><div class="${"max-w-2xl mx-auto py-6 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8"}"><div class="${"max-w-7xl "}"><h2 class="${"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"}">Book Now Pay Later Payment Plans
-			</h2>
-			<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Book Now Pay Later allows you to payy off flights in installments. Everyone is eligible for
-				the book now pay later plan with no credit check required. All you have to do is Book Now
-				and Pay using our easy monthly installment options.
-			</p></div>
-		<div class="${"grid grid-cols-1 md:grid-cols-2 gap-y-6 lg:gap-8 "}"><div class="${"flex flex-col bg-white"}"><div class="${"flex-1 bg-white sm:px-6 pt-6 pb-4 flex flex-col justify-between"}"><div class="${"flex-1"}"><h2 class="${"text-xl font-extrabold tracking-tight text-gray-900 sm:text-2xl mt-4"}">Flights
-						</h2>
-						<p class="${"py-2 mb-4 text-gray-700 max-w-4xl prose"}">Flights can be one of the costliest expenses you have to make when going on a trip.
+      return `
+
+
+<div class="${"bg-white overflow-hidden"}">
+
+	<div class="${"flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 gap-x-12"}"><div class="${"lg:w-1/3 lg:mr-16 lg:flex lg:justify-center lg:items-center"}"><div class="${"lg:w-96 relative"}"><div class="${"absolute rounded-full top-0 right-0 w-32 h-32 bg-yellow-200 bg-opacity-50 -mt-12 -mr-12"}"></div>
+
+				<div class="${"absolute rounded-xl bottom-0 left-0 w-32 h-32 bg-blue-200 bg-opacity-50 -mb-10 -ml-10 transform rotate-3"}"></div>
+				<div class="${"aspect-w-2 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden sm:aspect-w-1 sm:aspect-h-2"}"><img src="${"images/hero/hero-2.jpg"}" alt="${"Maple organizer base with slots, supporting white polycarbonate trays of various sizes."}" class="${"object-center object-cover"}"></div></div></div>
+		<div class="${"lg:w-2/3 lg:flex lg:items-center"}"><div><div class="${"font-medium inline-flex px-2 py-1.5 leading-4 mb-2 text-sm rounded text-emerald-700 bg-emerald-200"}">Trip Support makes travelling easy for everyone
+				</div>
+				<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">Book Now Pay Later Payment Plans</h2>
+				<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Book Now Pay Later allows you to pay off flights in installments. Everyone is eligible for
+					the book now pay later plan with no credit check required. All you have to do is Book Now
+					and Pay using our easy monthly installment options.
+				</p>
+				<div class="${"lg:w-full lg:flex lg:items-center pt-10"}"><div><h2 class="${"text-xl md:text-2xl font-extrabold mb-4"}">Flights</h2>
+						<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Flights can be one of the costliest expenses you have to make when going on a trip.
 							Whether you\u2019re travelling for work, for visiting family, or for relaxation purposes,
 							flying is almost always an inevitable part of the process, but it doesn\u2019t have to be
 							an expensive part. You can pay off flights in installments with our Book Now, Pay
 							Later Flight plan. Everyone is eligible for a flight payment plan with no credit check
 							required. All you have to do is Book Now and Pay using our easy monthly installment
 							options.
-						</p></div>
-					<div class="${"relative group"}"><div class="${"aspect-w-3 aspect-h-1 sm:aspect-w-4 sm:aspect-h-1 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"images/blog/philippines.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
-							<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><a href="${"#"}" class="${"w-full"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">Book Flight Now, Pay Later
-									</div></a></div></div></div>
-
-					<div class="${"flex space-x-2 justify-center mt-4"}"><button type="${"button"}" class="${"w-full sm:inline-block sm:px-6 py-2.5 bg-blue-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"}">Book your flight now, pay later</button></div></div></div>
-
-			<div class="${"flex flex-col bg-white"}"><div class="${"flex-1 bg-white sm:px-6 sm:pt-6 pb-4 flex flex-col justify-between"}"><h2 class="${"text-xl font-extrabold tracking-tight text-gray-900 sm:text-2xl mt-4"}">Vacations
-					</h2>
-					<p class="${"py-2 mb-4 text-gray-700 max-w-4xl prose"}">Everyone has daydreamed about their ideal vacation paradise at least a few times, but
-						for many people who think they can\u2019t afford to go on a vacation, this only stays as a
-						dream. At Trip Support, we believe everyone and anyone should be able to take the trip
-						of their dreams regardless of their financial situation. We do this through our Book Now
-						Pay Later plan for Vacation Packages. Simply decide where you want to go, and we\u2019ll do
-						the rest. plan for Vacation Packages. Simply decide where you want to go, and we\u2019ll do
-						the rest. plan for Vacation Packages. Simply decide where you want to go, and we\u2019ll do
-						the rest.
-					</p>
-					<div class="${"relative group"}"><div class="${"aspect-w-3 aspect-h-1 sm:aspect-w-4 sm:aspect-h-1 rounded-lg bg-gray-100 overflow-hidden"}"><img src="${"images/header-bg-image.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
-							<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><a href="${"#"}" class="${"w-full"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">Book Flight Now, Pay Later
-									</div></a></div></div></div>
-					<div class="${"flex space-x-2 justify-center mt-4"}"><button type="${"button"}" class="${"w-full sm:inline-block sm:px-6 py-2.5 bg-blue-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"}">Book your vacation now, pay later</button></div></div></div></div>
-
-		<div class="${"grid grid-cols-1 gap-y-20 lg:gap-8 mt-4"}"><div class="${"flex flex-col bg-white"}"><div class="${"flex-1 bg-white sm:px-6 pt-6 pb-4 flex flex-col justify-between"}"><div class="${"flex-1"}"><h2 class="${"text-xl font-extrabold tracking-tight text-gray-900 sm:text-2xl mt-4"}">Hotels
-						</h2>
-						<p class="${"py-2 mb-4 text-gray-700 max-w-4xl prose"}">Book Now, Pay Later for hotels is coming soon...
-						</p></div></div></div></div></div></div>`;
-    });
-    BnplFaq1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"max-w-7xl mx-auto py-6 px-6"}"><div class="${"max-w-7xl "}"><ul class="${"ml-4 text-gray-700 max-w-4xl prose list-disc"}"><li>You can instantly take advantage of any and all time-sensitive discounts and deals Airlines
-				may be offering
-			</li>
-			<li>No credit check means no headache when it comes to financing your trip</li>
-			<li>No hidden charges or fees</li>
-			<li>You can choose the best plan that works for you</li></ul></div></div>`;
-    });
-    BnplFaq2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"max-w-7xl mx-auto py-6 px-6"}"><div class="${"max-w-7xl "}"><ul class="${"ml-4 text-gray-700 max-w-3xl prose list-disc"}"><li>People without a valid credit/debit card from a Canada or the US bank.</li>
-			<li>Hotel bookings, however for more information and other payment options you may reach out to
-				us by dialing for CA: <a href="${"tel:+1-855-606-0606"}" class="${"text-rose-600 hover:text-rose-500"}">1-855-606-0606</a>
-				and for US:
-				<a href="${"tel:+1-833-606-0606"}" class="${"text-rose-600 hover:text-rose-500"}">1-833-606-0606</a></li>
-			<li>No hidden charges or fees</li>
-			<li>You can choose the best plan that works for you</li></ul></div></div>`;
+						</p>
+						<div class="${"flex w-1/2 flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-2 py-6 mb-6"}"><a href="${"javascript:void(0)"}" class="${"inline-flex w-full justify-center items-center tracking-wide space-x-2 border font-semibold focus:outline-none text-tiny px-4 py-2.5 rounded-full border-pblue-800 bg-pblue-800 text-white hover:text-white hover:bg-pblue-700 hover:border-pblue-800 focus:ring focus:ring-pblue-500 focus:ring-opacity-50 active:bg-pblue-700 active:border-pblue-700"}"><span>Book your flight now, pay later</span>
+								<svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></a></div></div></div>
+				<div class="${"lg:w-full lg:flex lg:items-center"}"><div><h2 class="${"text-xl md:text-2xl font-extrabold mb-4"}">Vacations</h2>
+						<p class="${"mt-4 text-gray-700 max-w-4xl prose"}">Everyone has daydreamed about their ideal vacation paradise at least a few times, but
+							for many people who think they can\u2019t afford to go on a vacation, this only stays as a
+							dream. At Trip Support, we believe everyone and anyone should be able to take the trip
+							of their dreams regardless of their financial situation. We do this through our Book
+							Now Pay Later plan for Vacation Packages. Simply decide where you want to go, and
+							we\u2019ll do the rest.
+						</p>
+						<div class="${"flex w-1/2 flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-2 py-6 mb-6"}"><a href="${"javascript:void(0)"}" class="${"inline-flex w-full justify-center items-center tracking-wide space-x-2 border font-medium focus:outline-none text-tiny px-4 py-2.5 rounded-full border-pblue-800 bg-pblue-800 text-white hover:text-white hover:bg-pblue-700 hover:border-pblue-800 focus:ring focus:ring-pblue-500 focus:ring-opacity-50"}"><span>Book your vacation now, pay later</span>
+								<svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"opacity-50 hi-solid hi-arrow-right inline-block w-5 h-5"}"><path fill-rule="${"evenodd"}" d="${"M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg></a></div></div></div>
+				<div class="${"lg:w-full lg:flex lg:items-center"}"><div><h2 class="${"text-xl md:text-2xl font-extrabold mb-4"}">Hotels</h2>
+						<h3 class="${"md:leading-relaxed font-medium text-gray-600"}">Book Now, Pay Later Feature for hotels is coming soon..
+						</h3></div></div></div></div></div>
+	</div>
+`;
     });
     BnplFaqs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8"}">
+      return `
+<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32"}">
+		<div class="${"text-left"}"><div class="${"text-sm uppercase font-bold tracking-wider mb-1 text-rose-600"}">We take pride in our customer support
+			</div>
+			<h2 class="${"text-3xl md:text-4xl font-extrabold mb-4"}">Frequently Asked Questions</h2></div>
+		
 
 		
-		<div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto sm:py-8 sm:px-4 "}"><div class="${"lg:grid lg:grid-cols-3 lg:gap-8"}"><div><h2 class="${"text-3xl font-extrabold text-gray-900"}">Frequently asked questions</h2>
-						<p class="${"mt-4 text-lg text-gray-500"}">Can\u2019t find the answer you\u2019re looking for? Reach out to our <a href="${"#"}" class="${"font-medium text-rose-600 hover:text-rose-500"}">customer support</a> team.
-						</p></div>
-					<div class="${"mt-12 lg:mt-0 lg:col-span-2"}"><dl class="${"space-y-4"}"><div><dt class="${"text-lg leading-6 font-bold text-gray-900"}">Pros of Book Now Pay Later
-								</dt>
-								<dd class="${"text-base text-gray-500"}">${validate_component(BnplFaq1, "BnplFaq1").$$render($$result, {}, {}, {})}</dd>
-							</div><div><dt class="${"text-lg leading-6 font-bold text-gray-900"}">Book Now Pay Later plan does not apply to:
-								</dt>
-								<dd class="${"text-base text-gray-500"}">${validate_component(BnplFaq2, "BnplFaq2").$$render($$result, {}, {}, {})}</dd></div></dl></div></div></div></div></div></div>`;
+		<div class="${"grid grid-cols-1 md:grid-cols-3 gap-4"}"><div class="${"space-y-4"}"><div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Do I get access to the community?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+						Pellentesque non accumsan orci. Praesent at lacinia dolor.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Can I get a refund just in case?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Pellentesque non accumsan orci. Praesent at lacinia dolor.
+					</p></div>
+				<div class="${"bg-purple-50 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">What features are included?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Can I use PayPal to pay you?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+						Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Can I use PayPal to pay you?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p></div></div>
+			<div class="${"space-y-4"}"><div class="${"bg-purple-50 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">What features are included?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Can I use PayPal to pay you?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Do you offer email support?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Quisque egestas nisl id lectus facilisis scelerisque.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Are the updates free for life?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Sed at mi velit. Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula
+						ipsum. Donec vitae ultrices dolor.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Do I get access to the community?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est,
+						in cursus enim venenatis eget! Nulla quis ligula ipsum. Donec vitae ultrices dolor.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Is there a free version?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p></div></div>
+			<div class="${"space-y-4"}"><div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Can I get a refund just in case?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida
+						sed consectetur ut, interdum quis nisi.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Do you offer email support?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Quisque egestas nisl id lectus facilisis scelerisque.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Are the updates free for life?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl
+						id lectus facilisis scelerisque.
+					</p></div>
+				<div class="${"bg-gray-100 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">Can I get a refund just in case?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p></div>
+				<div class="${"bg-purple-50 rounded p-5"}"><h4 class="${"font-semibold mb-2"}">What features are included?</h4>
+					<p class="${"text-sm text-gray-600 leading-relaxed"}">Gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis
+						scelerisque.
+					</p></div></div></div>
+		
+
+		
+		<div class="${"text-center"}"><a href="${"javascript:void(0)"}" class="${"inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"}"><svg fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}" class="${"opacity-50 hi-solid hi-external-link inline-block w-5 h-5"}"><path d="${"M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"}"></path><path d="${"M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"}"></path></svg>
+				<span>Can&#39;t find an answer to your question?</span></a></div>
+		</div></div>
+`;
     });
     Book_now_pay_later = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(BookNowHero, "BookNowHero").$$render($$result, {}, {}, {})}
@@ -7081,8 +7082,8 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-46fe836f.js";
-    js4 = ["pages/book-now-pay-later.svelte-46fe836f.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js"];
+    entry4 = "pages/book-now-pay-later.svelte-f568d0ac.js";
+    js4 = ["pages/book-now-pay-later.svelte-f568d0ac.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-812e9b52.js"];
     css4 = [];
   }
 });
@@ -7114,8 +7115,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_flight_hotel_svelte();
-    entry5 = "pages/flight-hotel.svelte-10446fc4.js";
-    js5 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
+    entry5 = "pages/flight-hotel.svelte-5a90a5bc.js";
+    js5 = ["pages/flight-hotel.svelte-5a90a5bc.js", "chunks/vendor-aa7f3673.js"];
     css5 = [];
   }
 });
@@ -7460,8 +7461,8 @@ var entry6, js6, css6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_blog_post_svelte();
-    entry6 = "pages/blog-post.svelte-1575c176.js";
-    js6 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
+    entry6 = "pages/blog-post.svelte-e77a5193.js";
+    js6 = ["pages/blog-post.svelte-e77a5193.js", "chunks/vendor-aa7f3673.js", "chunks/HotelsIcon-74235531.js"];
     css6 = [];
   }
 });
@@ -7712,9 +7713,42 @@ var entry7, js7, css7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_vacations_svelte();
-    entry7 = "pages/vacations.svelte-bb0bfcde.js";
-    js7 = ["pages/vacations.svelte-bb0bfcde.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js", "chunks/BlogPosts-7c4c833b.js"];
+    entry7 = "pages/vacations.svelte-7c350f16.js";
+    js7 = ["pages/vacations.svelte-7c350f16.js", "chunks/vendor-aa7f3673.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/Subscribe-812e9b52.js", "chunks/BlogPosts-08852c0b.js"];
     css7 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/about-us.svelte.js
+var about_us_svelte_exports = {};
+__export(about_us_svelte_exports, {
+  default: () => About_us
+});
+var About_us;
+var init_about_us_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/about-us.svelte.js"() {
+    init_index_c9c8dd9a();
+    About_us = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/7.js
+var __exports8 = {};
+__export(__exports8, {
+  css: () => css8,
+  entry: () => entry8,
+  js: () => js8,
+  module: () => about_us_svelte_exports
+});
+var entry8, js8, css8;
+var init__8 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
+    init_about_us_svelte();
+    entry8 = "pages/about-us.svelte-90157816.js";
+    js8 = ["pages/about-us.svelte-90157816.js", "chunks/vendor-aa7f3673.js"];
+    css8 = [];
   }
 });
 
@@ -7759,21 +7793,21 @@ var init_contact_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/7.js
-var __exports8 = {};
-__export(__exports8, {
-  css: () => css8,
-  entry: () => entry8,
-  js: () => js8,
+// .svelte-kit/output/server/nodes/8.js
+var __exports9 = {};
+__export(__exports9, {
+  css: () => css9,
+  entry: () => entry9,
+  js: () => js9,
   module: () => contact_svelte_exports
 });
-var entry8, js8, css8;
-var init__8 = __esm({
-  ".svelte-kit/output/server/nodes/7.js"() {
+var entry9, js9, css9;
+var init__9 = __esm({
+  ".svelte-kit/output/server/nodes/8.js"() {
     init_contact_svelte();
-    entry8 = "pages/contact.svelte-a40723a2.js";
-    js8 = ["pages/contact.svelte-a40723a2.js", "chunks/vendor-6ea63d49.js"];
-    css8 = [];
+    entry9 = "pages/contact.svelte-d96b5147.js";
+    js9 = ["pages/contact.svelte-d96b5147.js", "chunks/vendor-aa7f3673.js"];
+    css9 = [];
   }
 });
 
@@ -7792,21 +7826,21 @@ var init_explore_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/8.js
-var __exports9 = {};
-__export(__exports9, {
-  css: () => css9,
-  entry: () => entry9,
-  js: () => js9,
+// .svelte-kit/output/server/nodes/9.js
+var __exports10 = {};
+__export(__exports10, {
+  css: () => css10,
+  entry: () => entry10,
+  js: () => js10,
   module: () => explore_svelte_exports
 });
-var entry9, js9, css9;
-var init__9 = __esm({
-  ".svelte-kit/output/server/nodes/8.js"() {
+var entry10, js10, css10;
+var init__10 = __esm({
+  ".svelte-kit/output/server/nodes/9.js"() {
     init_explore_svelte();
-    entry9 = "pages/explore.svelte-3e87b525.js";
-    js9 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
-    css9 = [];
+    entry10 = "pages/explore.svelte-ebf6de89.js";
+    js10 = ["pages/explore.svelte-ebf6de89.js", "chunks/vendor-aa7f3673.js"];
+    css10 = [];
   }
 });
 
@@ -7924,21 +7958,21 @@ ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/nodes/9.js
-var __exports10 = {};
-__export(__exports10, {
-  css: () => css10,
-  entry: () => entry10,
-  js: () => js10,
+// .svelte-kit/output/server/nodes/10.js
+var __exports11 = {};
+__export(__exports11, {
+  css: () => css11,
+  entry: () => entry11,
+  js: () => js11,
   module: () => flights_svelte_exports
 });
-var entry10, js10, css10;
-var init__10 = __esm({
-  ".svelte-kit/output/server/nodes/9.js"() {
+var entry11, js11, css11;
+var init__11 = __esm({
+  ".svelte-kit/output/server/nodes/10.js"() {
     init_flights_svelte();
-    entry10 = "pages/flights.svelte-2707f7e7.js";
-    js10 = ["pages/flights.svelte-2707f7e7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
-    css10 = [];
+    entry11 = "pages/flights.svelte-4abac226.js";
+    js11 = ["pages/flights.svelte-4abac226.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-812e9b52.js"];
+    css11 = [];
   }
 });
 
@@ -8114,21 +8148,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/10.js
-var __exports11 = {};
-__export(__exports11, {
-  css: () => css11,
-  entry: () => entry11,
-  js: () => js11,
+// .svelte-kit/output/server/nodes/11.js
+var __exports12 = {};
+__export(__exports12, {
+  css: () => css12,
+  entry: () => entry12,
+  js: () => js12,
   module: () => hotels_svelte_exports
 });
-var entry11, js11, css11;
-var init__11 = __esm({
-  ".svelte-kit/output/server/nodes/10.js"() {
+var entry12, js12, css12;
+var init__12 = __esm({
+  ".svelte-kit/output/server/nodes/11.js"() {
     init_hotels_svelte();
-    entry11 = "pages/hotels.svelte-ddf1fd2d.js";
-    js11 = ["pages/hotels.svelte-ddf1fd2d.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
-    css11 = [];
+    entry12 = "pages/hotels.svelte-8bd4f7de.js";
+    js12 = ["pages/hotels.svelte-8bd4f7de.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-33ace931.js", "chunks/HotelsIcon-74235531.js", "chunks/BlogPosts-08852c0b.js", "chunks/Subscribe-812e9b52.js"];
+    css12 = [];
   }
 });
 
@@ -8406,21 +8440,54 @@ var init_blog_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/11.js
-var __exports12 = {};
-__export(__exports12, {
-  css: () => css12,
-  entry: () => entry12,
-  js: () => js12,
+// .svelte-kit/output/server/nodes/12.js
+var __exports13 = {};
+__export(__exports13, {
+  css: () => css13,
+  entry: () => entry13,
+  js: () => js13,
   module: () => blog_svelte_exports
 });
-var entry12, js12, css12;
-var init__12 = __esm({
-  ".svelte-kit/output/server/nodes/11.js"() {
+var entry13, js13, css13;
+var init__13 = __esm({
+  ".svelte-kit/output/server/nodes/12.js"() {
     init_blog_svelte();
-    entry12 = "pages/blog.svelte-89b8d8ca.js";
-    js12 = ["pages/blog.svelte-89b8d8ca.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-0127000c.js"];
-    css12 = [];
+    entry13 = "pages/blog.svelte-bd45bba5.js";
+    js13 = ["pages/blog.svelte-bd45bba5.js", "chunks/vendor-aa7f3673.js", "chunks/Subscribe-812e9b52.js"];
+    css13 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/faqs.svelte.js
+var faqs_svelte_exports = {};
+__export(faqs_svelte_exports, {
+  default: () => Faqs
+});
+var Faqs;
+var init_faqs_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/faqs.svelte.js"() {
+    init_index_c9c8dd9a();
+    Faqs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/13.js
+var __exports14 = {};
+__export(__exports14, {
+  css: () => css14,
+  entry: () => entry14,
+  js: () => js14,
+  module: () => faqs_svelte_exports
+});
+var entry14, js14, css14;
+var init__14 = __esm({
+  ".svelte-kit/output/server/nodes/13.js"() {
+    init_faqs_svelte();
+    entry14 = "pages/faqs.svelte-5c5d6a61.js";
+    js14 = ["pages/faqs.svelte-5c5d6a61.js", "chunks/vendor-aa7f3673.js"];
+    css14 = [];
   }
 });
 
@@ -8746,12 +8813,12 @@ function devalue(value) {
   }
   walk(value);
   var names = /* @__PURE__ */ new Map();
-  Array.from(counts).filter(function(entry13) {
-    return entry13[1] > 1;
+  Array.from(counts).filter(function(entry15) {
+    return entry15[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry13, i2) {
-    names.set(entry13[0], getName(i2));
+  }).forEach(function(entry15, i2) {
+    names.set(entry15[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -10455,7 +10522,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-dc6f1097.js", "js": ["start-dc6f1097.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-9bb289bc.js", "js": ["start-9bb289bc.js", "chunks/vendor-aa7f3673.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -10468,7 +10535,9 @@ var manifest = {
       () => Promise.resolve().then(() => (init__9(), __exports9)),
       () => Promise.resolve().then(() => (init__10(), __exports10)),
       () => Promise.resolve().then(() => (init__11(), __exports11)),
-      () => Promise.resolve().then(() => (init__12(), __exports12))
+      () => Promise.resolve().then(() => (init__12(), __exports12)),
+      () => Promise.resolve().then(() => (init__13(), __exports13)),
+      () => Promise.resolve().then(() => (init__14(), __exports14))
     ],
     routes: [
       {
@@ -10518,11 +10587,20 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/about-us\/?$/,
+        params: null,
+        path: "/about-us",
+        shadow: null,
+        a: [0, 7],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/contact\/?$/,
         params: null,
         path: "/contact",
         shadow: null,
-        a: [0, 7],
+        a: [0, 8],
         b: [1]
       },
       {
@@ -10531,7 +10609,7 @@ var manifest = {
         params: null,
         path: "/explore",
         shadow: null,
-        a: [0, 8],
+        a: [0, 9],
         b: [1]
       },
       {
@@ -10540,7 +10618,7 @@ var manifest = {
         params: null,
         path: "/flights",
         shadow: null,
-        a: [0, 9],
+        a: [0, 10],
         b: [1]
       },
       {
@@ -10549,7 +10627,7 @@ var manifest = {
         params: null,
         path: "/hotels",
         shadow: null,
-        a: [0, 10],
+        a: [0, 11],
         b: [1]
       },
       {
@@ -10558,7 +10636,16 @@ var manifest = {
         params: null,
         path: "/blog",
         shadow: null,
-        a: [0, 11],
+        a: [0, 12],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/faqs\/?$/,
+        params: null,
+        path: "/faqs",
+        shadow: null,
+        a: [0, 13],
         b: [1]
       }
     ]

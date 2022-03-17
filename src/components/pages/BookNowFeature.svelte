@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { slide } from 'svelte/transition';
 
 	let offer = false;
@@ -65,10 +65,9 @@
 	];
 </script>
 
-<!-- Features Section: Modern Alternate With Icons -->
 <div class="bg-white">
 	<div class="space-y-16 container xl:max-w-7xl mx-auto px-2 py-16">
-		<!-- Heading -->
+
 		<div class="text-center">
 			<div class="text-sm uppercase font-bold tracking-wider mb-1 text-rose-600">
 				Trip Support Feature
@@ -89,9 +88,6 @@
 				>.
 			</h3>
 		</div>
-		<!-- END Heading -->
-
-		<!-- Features -->
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
 			<div
 				class="group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"
@@ -283,7 +279,6 @@
 						{data[4].content}
 					</p>
 				{/if}
-				<!-- <button class="text-tiny text-rose-600" on:click={toggleFast}>read more</button> -->
 			</div>
 			<div
 				class="group p-5 transition ease-out duration-200 border border-transparent rounded-2xl hover:border-gray-200"
@@ -325,7 +320,169 @@
 				<button class="text-tiny text-rose-600" on:click={togglePost}>read more</button>
 			</div>
 		</div>
-		<!-- END Features -->
+	</div>
+</div> -->
+
+<!-- Features Section: Vertical Cards -->
+<div class="bg-white overflow-hidden">
+	<div class="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-12">
+		<div class="flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0 lg:space-x-12">
+			<!-- Heading -->
+			<div class="lg:w-6/12 xl:w-6/12 md:py-12 space-y-10">
+				<div class="prose">
+					<div class="text-sm uppercase font-bold tracking-wider mb-1 text-rose-600">
+						Trip Support
+					</div>
+					<h2 class="text-3xl md:text-4xl font-extrabold mb-4 mt-0">
+						Our Book Now Pay Later Feature
+					</h2>
+					<p class="mt-4 text-gray-700 max-w-4xl prose">
+						Ready to pursue your wanderlust and explore the world easier than ever before? Trip
+						Support’s Book Now Pay Later Travel plan can help cover your travel expenses in a
+						cost-effective manner. These expenses can include transportation costs, accommodations,
+						food, activities, tours, and more. Uniquely, we offer this approach without the need for
+						credit checks and extra boring, time-consuming documentation.
+						<span class="font-bold"
+							>We believe that people should be able to travel regardless of their credit score</span
+						>.
+					</p>
+				</div>
+			</div>
+			<!-- END Heading -->
+
+			<!-- Features in Cards -->
+			<div class="lg:w-6/12 xl:w-6/12 flex-none relative">
+				<div
+					class="pattern-dots-xl opacity-10 absolute top-0 left-0 w-48 h-64 md:mt-20 transform -translate-x-10 -translate-y-10"
+				/>
+				<div
+					class="pattern-dots-xl opacity-10 absolute bottom-0 right-0 w-48 h-64 md:mb-20 transform translate-x-10 translate-y-10"
+				/>
+				<div class="relative flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+					<div class="md:w-1/2 space-y-6">
+						<div
+							class="group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-orange-300"
+						>
+							<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+								<div
+									class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-blue-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"
+								/>
+								<div
+									class="absolute inset-0 rounded-2xl transform -rotate-6 bg-blue-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"
+								/>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-chart-pie inline-block w-7 h-7"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+									<path
+										fill-rule="evenodd"
+										d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<h4 class="text-lg font-bold mb-2">No Credit Check</h4>
+							<p class="leading-relaxed text-tb text-gray-600">
+								Pursue your wanderlust and explore the world easier than ever before
+							</p>
+						</div>
+						<div
+							class="group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-red-300"
+						>
+							<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+								<div
+									class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"
+								/>
+								<div
+									class="absolute inset-0 rounded-2xl transform -rotate-6 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"
+								/>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-lightning-bolt inline-block w-6 h-6"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z"
+										clip-rule="evenodd"
+									/>
+									<path
+										d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"
+									/>
+								</svg>
+							</div>
+							<h4 class="text-lg font-bold mb-2">No hidden fees</h4>
+							<p class="leading-relaxed text-gray-600">
+								Everything is laid out at the start and included in the package
+							</p>
+						</div>
+					</div>
+					<div class="md:w-1/2 space-y-6">
+						<div
+							class="group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-emerald-300"
+						>
+							<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+								<div
+									class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-emerald-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"
+								/>
+								<div
+									class="absolute inset-0 rounded-2xl transform -rotate-6 bg-emerald-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"
+								/>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-globe inline-block w-7 h-7"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<h4 class="text-lg font-bold mb-2">Flexible Payments</h4>
+							<p class="leading-relaxed text-tb text-gray-600">
+								Choose between weekly, bi-monthly or monthly payments
+							</p>
+						</div>
+						<div
+							class="group bg-white p-5 transition ease-out duration-200 border-2 border-gray-200 rounded-2xl hover:border-purple-300"
+						>
+							<div class="inline-flex items-center justify-center w-10 h-10 m-2 mb-6 relative">
+								<div
+									class="absolute inset-0 rounded-3xl -m-2 transform rotate-6 bg-purple-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105"
+								/>
+								<div
+									class="absolute inset-0 rounded-2xl transform -rotate-6 bg-purple-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105"
+								/>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="text-white relative transform transition ease-out duration-200 group-hover:scale-110 hi-outline hi-puzzle inline-block w-6 h-6"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<h4 class="text-lg font-bold mb-2">Fast & convenient</h4>
+							<p class="leading-relaxed text-gray-600">
+								We will process and approve your travel loan right away.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END Features in Cards -->
+		</div>
 	</div>
 </div>
-<!-- END Features Section: Modern Alternate With Icons -->
+<!-- END Features Section: Vertical Cards -->

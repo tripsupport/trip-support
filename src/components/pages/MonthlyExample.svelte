@@ -1,5 +1,5 @@
 <div class="flex pt-6">
-	<h3 class="text-lg font-bold text-gray-900">Cancun, Mexico</h3>
+	<h3 class="text-lg font-bold text-gray-900">Punta Cana, Dominican Republic</h3>
 </div>
 <div>
 	<p class="text-sm text-gray-400">Taxes included</p>
@@ -161,7 +161,7 @@
 						</div>
 						<div class="ml-3 flex-1 md:flex md:justify-between">
 							<p class="text-sm text-slate-900">
-								Number of weekly installments depends on your departure date.
+								Number of monthly installments depends on your departure date.
 							</p>
 						</div>
 					</div>

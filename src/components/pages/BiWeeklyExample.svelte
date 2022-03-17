@@ -164,7 +164,7 @@
 						</div>
 						<div class="ml-3 flex-1 md:flex md:justify-between">
 							<p class="text-sm text-slate-900">
-								Number of weekly installments depends on your departure date.
+								Number of bi-weekly installments depends on your departure date.
 							</p>
 						</div>
 					</div>

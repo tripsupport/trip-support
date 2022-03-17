@@ -1,123 +1,150 @@
-<script>
-	import BnplFaq1 from '../../components/pages/BnplFaq1.svelte';
-	import BnplFaq2 from '../../components/pages/BnplFaq2.svelte';
-</script>
+<!-- FAQ Section: In Grid -->
+<div class="bg-white">
+	<div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+		<!-- Heading -->
+		<div class="text-left">
+			<div class="text-sm uppercase font-bold tracking-wider mb-1 text-rose-600">
+				We take pride in our customer support
+			</div>
+			<h2 class="text-3xl md:text-4xl font-extrabold mb-4">Frequently Asked Questions</h2>
+		</div>
+		<!-- END Heading -->
 
-<div class="bg-gray-50">
-	<div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-		<!-- <div class="max-w-4xl ">
-			<h2 class=" text-3xl font-extrabold text-gray-900 sm:text-4xl">Frequently asked questions</h2>
-
-			<div class="bg-white mt-8">
-				<div id="accordion-arrow-icon" data-accordion="open">
-					<h2 id="accordion-arrow-icon-heading-1">
-						<button
-							type="button"
-							class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200  hover:bg-gray-100 dark:hover:bg-gray-800"
-							data-accordion-target="#accordion-arrow-icon-body-1"
-							aria-expanded="true"
-							aria-controls="accordion-arrow-icon-body-1"
-						>
-							<span>Why should I use Book Now, Pay Later?</span>
-							<svg
-								data-accordion-icon=""
-								class="w-6 h-6 shrink-0"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-								><path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"
-								/></svg
-							>
-						</button>
-					</h2>
-					<div id="accordion-arrow-icon-body-1" aria-labelledby="accordion-arrow-icon-heading-1">
-						<div
-							class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
-						>
-							<BnplFaq1 />
-						</div>
-					</div>
-
-					<h2 id="accordion-arrow-icon-heading-2">
-						<button
-							type="button"
-							class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200  hover:bg-gray-100 dark:hover:bg-gray-800"
-							data-accordion-target="#accordion-arrow-icon-body-2"
-							aria-expanded="false"
-							aria-controls="accordion-arrow-icon-body-2"
-						>
-							<span>What does Book Now, Pay Later not apply to?</span>
-							<svg
-								data-accordion-icon=""
-								class="w-6 h-6 shrink-0"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-								><path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
-								/></svg
-							>
-						</button>
-					</h2>
-					<div
-						id="accordion-arrow-icon-body-2"
-						class="hidden"
-						aria-labelledby="accordion-arrow-icon-heading-2"
-					>
-						<div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-							<BnplFaq2 />
-						</div>
-					</div>
+		<!-- FAQ -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+			<div class="space-y-4">
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Do I get access to the community?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+						Pellentesque non accumsan orci. Praesent at lacinia dolor.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Can I get a refund just in case?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Pellentesque non accumsan orci. Praesent at lacinia dolor.
+					</p>
+				</div>
+				<div class="bg-purple-50 rounded p-5">
+					<h4 class="font-semibold mb-2">What features are included?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Can I use PayPal to pay you?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+						Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Can I use PayPal to pay you?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p>
 				</div>
 			</div>
-		</div> -->
-
-		<!-- This example requires Tailwind CSS v2.0+ -->
-		<div class="bg-gray-50">
-			<div class="max-w-7xl mx-auto sm:py-8 sm:px-4 ">
-				<div class="lg:grid lg:grid-cols-3 lg:gap-8">
-					<div>
-						<h2 class="text-3xl font-extrabold text-gray-900">Frequently asked questions</h2>
-						<p class="mt-4 text-lg text-gray-500">
-							Can’t find the answer you’re looking for? Reach out to our <a
-								href="#"
-								class="font-medium text-rose-600 hover:text-rose-500">customer support</a
-							> team.
-						</p>
-					</div>
-					<div class="mt-12 lg:mt-0 lg:col-span-2">
-						<dl class="space-y-4">
-							<div>
-								<dt class="text-lg leading-6 font-bold text-gray-900">
-									Pros of Book Now Pay Later
-								</dt>
-								<dd class="text-base text-gray-500">
-									<BnplFaq1 />
-								</dd>
-							</div>
-
-							<!-- More questions... -->
-							<div>
-								<dt class="text-lg leading-6 font-bold text-gray-900">
-									Book Now Pay Later plan does not apply to:
-								</dt>
-								<dd class="text-base text-gray-500">
-									<BnplFaq2 />
-								</dd>
-							</div>
-						</dl>
-					</div>
+			<div class="space-y-4">
+				<div class="bg-purple-50 rounded p-5">
+					<h4 class="font-semibold mb-2">What features are included?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Can I use PayPal to pay you?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Do you offer email support?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Quisque egestas nisl id lectus facilisis scelerisque.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Are the updates free for life?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Sed at mi velit. Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula
+						ipsum. Donec vitae ultrices dolor.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Do I get access to the community?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est,
+						in cursus enim venenatis eget! Nulla quis ligula ipsum. Donec vitae ultrices dolor.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Is there a free version?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p>
+				</div>
+			</div>
+			<div class="space-y-4">
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Can I get a refund just in case?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida
+						sed consectetur ut, interdum quis nisi.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Do you offer email support?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Quisque egestas nisl id lectus facilisis scelerisque.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Are the updates free for life?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl
+						id lectus facilisis scelerisque.
+					</p>
+				</div>
+				<div class="bg-gray-100 rounded p-5">
+					<h4 class="font-semibold mb-2">Can I get a refund just in case?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Etiam egestas fringilla enim, id convallis lectus laoreet at.
+					</p>
+				</div>
+				<div class="bg-purple-50 rounded p-5">
+					<h4 class="font-semibold mb-2">What features are included?</h4>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						Gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis
+						scelerisque.
+					</p>
 				</div>
 			</div>
 		</div>
+		<!-- END FAQ -->
+
+		<!-- Link -->
+		<div class="text-center">
+			<a
+				href="javascript:void(0)"
+				class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-gray-300 bg-white text-gray-800 shadow-sm hover:text-gray-800 hover:bg-gray-100 hover:border-gray-300 hover:shadow focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-white active:border-white active:shadow-none"
+			>
+				<svg
+					fill="currentColor"
+					viewBox="0 0 20 20"
+					xmlns="http://www.w3.org/2000/svg"
+					class="opacity-50 hi-solid hi-external-link inline-block w-5 h-5"
+					><path
+						d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"
+					/><path
+						d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
+					/></svg
+				>
+				<span>Can't find an answer to your question?</span>
+			</a>
+		</div>
+		<!-- END Link -->
 	</div>
 </div>
+<!-- END FAQ Section: In Grid -->

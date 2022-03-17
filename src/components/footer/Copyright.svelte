@@ -8,15 +8,15 @@
 		</div>
 
 		<div class="flex space-x-8">
-			<a href="javascript:void(0)" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+			<a href="/accessibility" class="text-xs font-medium text-gray-500 hover:text-gray-600">
 				Accessibility
 			</a>
 
-			<a href="javascript:void(0)" class="text-xs font-medium text-gray-500 hover:text-gray-600">
-				Privacy
+			<a href="/privacy" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+				Privacy Policy
 			</a>
 
-			<a href="javascript:void(0)" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+			<a href="/pay-later-terms" class="text-xs font-medium text-gray-500 hover:text-gray-600">
 				Pay Later Terms
 			</a>
 		</div>

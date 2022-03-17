@@ -7,29 +7,38 @@
 			<ul role={'list'} class="mt-4 space-y-2">
 				<li>
 					<a
+						sveltekit:prefetch
 						href="javascript:void(0)"
 						class=" capitalize text-slate-600 text-sm hover:text-gray-900"
 						>Spring Vacations
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Winter Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Winter Vacations</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Summer Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Summer Vacations</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Fall Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Fall Vacations</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Group Travel</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Group Travel</a
 					>
 				</li>
 			</ul>
@@ -39,31 +48,41 @@
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">Destinations</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Westjet Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Westjet Vacations</a
 					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Porter Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Porter Vacations</a
 					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Sunwing Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Sunwing Vacations</a
 					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Sunquest Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Sunquest Vacations</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Signature Vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Signature Vacations</a
 					>
 				</li>
 			</ul>
@@ -74,6 +93,7 @@
 			<ul role={'list'} class="mt-4 space-y-2">
 				<li>
 					<a
+						sveltekit:prefetch
 						href="javascript:void(0)"
 						class="capitalize text-slate-600 text-sm hover:text-gray-900"
 					>
@@ -83,6 +103,7 @@
 
 				<li>
 					<a
+						sveltekit:prefetch
 						href="javascript:void(0)"
 						class="capitalize text-slate-600 text-sm hover:text-gray-900"
 					>
@@ -92,6 +113,7 @@
 
 				<li>
 					<a
+						sveltekit:prefetch
 						href="javascript:void(0)"
 						class="capitalize text-slate-600 text-sm hover:text-gray-900"
 					>
@@ -101,6 +123,7 @@
 
 				<li>
 					<a
+						sveltekit:prefetch
 						href="javascript:void(0)"
 						class="capitalize text-slate-600 text-sm hover:text-gray-900"
 					>
@@ -114,31 +137,41 @@
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">travel deals</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>all inclusive resorts</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">all inclusive resorts</a
 					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>singles vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">singles vacations</a
 					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>3 - 5 day vacations</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">3 - 5 day vacations</a
 					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>2 weeks vacation</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">2 weeks vacation</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>best family resorts</a
+					<a
+						sveltekit:prefetch
+						href="javascript:void(0)"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">best family resorts</a
 					>
 				</li>
 			</ul>
@@ -148,27 +181,39 @@
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">quick links</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
 				<li>
-					<a href="/blog" class="capitalize text-slate-600 text-sm hover:text-gray-900">blog</a>
+					<a
+						sveltekit:prefetch
+						href="/blog"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">blog</a
+					>
 				</li>
 
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>faqs</a
+					<a
+						sveltekit:prefetch
+						href="/faqs"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">faqs</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>about us</a
+					<a
+						sveltekit:prefetch
+						href="/about-us"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">about us</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>contact us</a
+					<a
+						sveltekit:prefetch
+						href="/contact-us"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">contact us</a
 					>
 				</li>
 				<li>
-					<a href="javascript:void(0)" class="capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Baggage policy</a
+					<a
+						sveltekit:prefetch
+						href="baggage-policy"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">Baggage policy</a
 					>
 				</li>
 				<li>
@@ -185,6 +230,7 @@
 			<ul role={'list'} class="mt-4 space-y-2">
 				<li>
 					<a
+						sveltekit:prefetch
 						href="https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"
 						target="_blank"
 						rel="noopener nofollow noreferrer"
@@ -206,6 +252,7 @@
 
 				<li>
 					<a
+						sveltekit:prefetch
 						href="https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"
 						target="_blank"
 						rel="noopener nofollow noreferrer"
@@ -227,6 +274,7 @@
 
 				<li>
 					<a
+						sveltekit:prefetch
 						href="https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"
 						target="_blank"
 						rel="noopener nofollow noreferrer"
@@ -248,6 +296,7 @@
 
 				<li>
 					<a
+						sveltekit:prefetch
 						href="https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"
 						target="_blank"
 						rel="noopener nofollow noreferrer"
@@ -268,6 +317,7 @@
 				</li>
 				<li>
 					<a
+						sveltekit:prefetch
 						href="https://github.com/themesberg/flowbite/blob/main/content/components/buttons.md"
 						target="_blank"
 						rel="noopener nofollow noreferrer"

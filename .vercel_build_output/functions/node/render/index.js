@@ -5586,7 +5586,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css19) => css19.code).join("\n"),
+          code: Array.from(result.css).map((css22) => css22.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5960,7 +5960,7 @@ var init_layout_svelte = __esm({
 			<div class="${"hidden lg:flex items-center gap-1 sm:gap-8 px-6"}">${validate_component(RightNavMenuItems, "RightNavMenuItems").$$render($$result, {}, {}, {})}</div></div></div></nav>`;
     });
     Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<header classn="${"relative overflow-hidden"}">${validate_component(AlertCovid, "AlertCovid").$$render($$result, {}, {}, {})}
+      return `<header class="${"relative overflow-hidden"}">${validate_component(AlertCovid, "AlertCovid").$$render($$result, {}, {}, {})}
 	${validate_component(MainNav, "MainNav").$$render($$result, {}, {}, {})}
 	</header>`;
     });
@@ -5981,7 +5981,7 @@ var init_layout_svelte = __esm({
 				<span class="${"text-xs font-medium ml-6 border-l border-gray-200 pl-6"}"></span> All Rights Reserved
 			</p></div>
 
-		<div class="${"flex space-x-8"}"><a href="${"/accessibility"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Accessibility
+		<div class="${"flex space-x-8"}"><a href="${"/terms-conditions"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Terms &amp; Conditions
 			</a>
 
 			<a href="${"/privacy-policy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy Policy
@@ -6087,9 +6087,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-732deb3c.js";
-    js = ["pages/__layout.svelte-732deb3c.js", "chunks/vendor-6ea63d49.js"];
-    css = ["assets/pages/__layout.svelte-e4132931.css"];
+    entry = "pages/__layout.svelte-124876a9.js";
+    js = ["pages/__layout.svelte-124876a9.js", "chunks/vendor-6ea63d49.js"];
+    css = ["assets/pages/__layout.svelte-352575b3.css"];
   }
 });
 
@@ -6502,20 +6502,23 @@ ${``}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/BlogPosts-5c3b104a.js
+// .svelte-kit/output/server/chunks/BlogPosts-bcd2e28a.js
 var BlogPosts;
-var init_BlogPosts_5c3b104a = __esm({
-  ".svelte-kit/output/server/chunks/BlogPosts-5c3b104a.js"() {
+var init_BlogPosts_bcd2e28a = __esm({
+  ".svelte-kit/output/server/chunks/BlogPosts-bcd2e28a.js"() {
     init_index_c9c8dd9a();
     BlogPosts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Inspirational Stories from Experts</span>
 				</h1>
 
-			<a href="${"javascript:void(0)"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Blog Posts<span aria-hidden="${"true"}">\u2192</span></a></div>
-		<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
-			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
-		</p></div>
+			<a href="${"/blog"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Blog Posts<span aria-hidden="${"true"}">\u2192</span></a></div>
+
+		<div class="${"max-w-4xl"}"><p class="${"mt-2 text-base text-gray-700 sm:mt-3 md:mt-3 md:text-md lg:mx-0"}">Have trouble deciding where you want to spend your dream vacation? Don\u2019t worry, we can help
+				you with that too! From listing the best hotel deals in Europe to the top attractions in
+				South Korea, Trip Support is home to countless articles specifically dedicated to helping
+				you discover your dream destination.
+			</p></div></div>
 
 	<div class="${"mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 md:grid-cols-2 md:max-w-7xl lg:px-8 lg:grid-cols-3 lg:max-w-7xl pb-16"}"><div class="${"flex flex-col rounded-lg shadow-lg overflow-hidden"}"><div class="${"flex-shrink-0"}"><img class="${"h-48 w-full object-cover"}" src="${"images/home/mexico.jpg"}" alt="${""}"></div>
 			<div class="${"flex-1 bg-white p-6 flex flex-col justify-between"}"><div class="${"flex-1"}"><p class="${"text-sm font-medium text-pblue-600"}"><a href="${"#"}" class="${"hover:underline"}">Blog </a></p>
@@ -6557,27 +6560,28 @@ var init_BlogPosts_5c3b104a = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Subscribe-9843ead1.js
+// .svelte-kit/output/server/chunks/Subscribe-5faa30c6.js
 var Subscribe;
-var init_Subscribe_9843ead1 = __esm({
-  ".svelte-kit/output/server/chunks/Subscribe-9843ead1.js"() {
+var init_Subscribe_5faa30c6 = __esm({
+  ".svelte-kit/output/server/chunks/Subscribe-5faa30c6.js"() {
     init_index_c9c8dd9a();
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative my-3 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[1] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
 				<div class="${"max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-1 lg:aspect-w-1"}"><img class="${"object-cover object-center md:rounded-l-xl lg:shadow-2xl"}" src="${"images/home/subscribe.jpg"}" alt="${""}"></div></div></div>
 
-			<div class="${"relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center shadow-xl"}"><div class="${"relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"}"><h2 class="${"text-2xl font-extrabold text-slate-900"}" id="${"join-heading"}">Sign up today, we\u2019ve got deals to share!
+			<div class="${"relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center shadow-xl"}"><div class="${"relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-4xl lg:p-0 lg:col-start-4 lg:col-span-6"}"><h2 class="${"text-2xl font-extrabold text-slate-900"}" id="${"join-heading"}">Sign up today. We\u2019ve got deals to share!
 					</h2>
 
-					<p class="${"text-sm font-medium text-slate-900 "}">Members access great rates and savings. Sign up to get email updates when restrictions
-						change. And discover the best deals to get you there.
+					<p class="${"text-sm font-medium text-slate-900 "}">Become a member and gain access to all of our great rates and savings. Sign up to get
+						email updates on upcoming deals and events.
 					</p>
 					<form action="${"#"}" method="${"post"}" id="${"revue-form"}" name="${"revue-form"}" target="${"_blank"}"><div class="${"flex items-end mb-3"}"><div class="${"relative mr-3 w-full revue-form-group"}"><label for="${"member_email"}" class="${"hidden text-sm font-medium text-gray-900 "}">Email address</label>
 								<div class="${"flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"}"><svg class="${"w-5 h-5 text-gray-500 dark:text-gray-400"}" fill="${"currentColor"}" viewBox="${"0 0 20 20"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg></div>
 								<input class="${"revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pblue-500 focus:border-pblue-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-slate-900 dark:focus:ring-pblue-500 dark:focus:border-pblue-500"}" placeholder="${"Your email address..."}" type="${"email"}" name="${"member[email]"}" id="${"member_email"}" required="${""}"></div>
 							<div class="${"revue-form-actions my-auto"}"><input type="${"submit"}" value="${"Subscribe"}" class="${"cursor-pointer text-slate-900 bg-gray-200 hover:bg-pblue-900 hover:text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center"}" name="${"member[subscribe]"}" id="${"member_submit"}"></div></div>
-						<div class="${"text-sm text-slate-900 revue-form-footer "}">By subscribing, you agree with Revue\u2019s <a target="${"_blank"}" rel="${"nofollow"}" href="${"https://www.getrevue.co/terms"}" class="${"text-slate-900 font-bold hover:underline"}">Terms of Service</a>
+						<div class="${"text-sm text-slate-900 revue-form-footer "}">By subscribing, you agree with Revue\u2019s
+							<a target="${"_blank"}" rel="${"nofollow"}" href="${"/terms-conditions"}" class="${"text-slate-900 font-bold hover:underline"}">Terms of Service</a>
 							and
 							<a target="${"_blank"}" rel="${"nofollow"}" class="${"text-slate-900 font-bold hover:underline"}" href="${"https://www.getrevue.co/privacy"}">Privacy Policy</a>.
 						</div></form></div></div></div></div></div>`;
@@ -6595,31 +6599,30 @@ var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_BlogPosts_5c3b104a();
-    init_Subscribe_9843ead1();
+    init_BlogPosts_bcd2e28a();
+    init_Subscribe_5faa30c6();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl mt-4 text-2xl tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Book Now Pay Later</span></h1>
+      return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-rose-600 bg-clip-text text-transparent text-3xl mt-4 tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Book Now Pay Later</span></h1>
 
-				<p class="${"prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700"}">Secure your ticket with a small deposit.
-					<br>No Credit Check Needed.
+				<p class="${"prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700"}">No Credit Check Needed.
 				</p></div></div>
 
-		<div class="${"hidden sm:flex col-span-6"}">
-			<div class="${"-mt-10"}"><img class="${"hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full rounded-xl"}" src="${"images/hero/hotair-bg.jpg"}" alt="${""}"></div></div></div></div>
-`;
+		<div class="${"hidden sm:flex col-span-6"}"><div class="${"-mt-10"}"><img class="${"hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full rounded-xl"}" src="${"images/hero/hotair-bg.jpg"}" alt="${""}"></div></div></div></div>`;
     });
     PopularFlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg>
+<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-5xl lg:w-full lg:pb-12 xl:pb-12"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg>
 
-			<div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8 "}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
+			<div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-4 "}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
 							</h1>
 
-						<a href="${"javascript:void(0)"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Popular Flight Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
-					<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
+						<a href="${"/flights#popular_flights"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Popular Flight Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
+					<p class="${"mt-2 text-base text-gray-700 sm:mt-3 md:mt-3 md:text-md lg:mx-0"}">Trip Support is here to connect you to the rest of the world at a rate you can afford.
+						We offer tons of flights packages and other flight deals that are tailored to your wants
+						and needs as a traveller. All you need to do is pick a flight that works for you, and
+						we\u2019ll do the rest.
 					</p>
 
 					<div class="${"mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-3 sm:gap-y-10 "}"><div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/alberta.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
@@ -6675,7 +6678,7 @@ var init_index_svelte = __esm({
 									</a></h3>
 								<p>$349</p></div>
 							<p class="${"mt-1 text-sm text-gray-500"}">Round trip</p></div></div></div></div></div></div>
-	<div class="${"sm:hidden px-4"}"><a href="${"javascript:void(0)"}" class="${"block text-sm font-semibold text-rose-600 hover:text-rose-400"}">Browse all vacation destinations<span aria-hidden="${"true"}">\u2192</span></a></div>
+	<div class="${"sm:hidden px-4"}"><a href="${"/flights#popular_flights"}" class="${"block text-sm font-semibold text-rose-600 hover:text-rose-400"}">Browse all vacation destinations<span aria-hidden="${"true"}">\u2192</span></a></div>
 	<div class="${"lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"}"><img class="${"hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full"}" src="${"images/home/flights-section.jpg"}" alt="${""}"></div></div>`;
     });
     VacationDestinations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6683,10 +6686,12 @@ var init_index_svelte = __esm({
 <div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Vacation Destinations</span>
 				</h1>
 
-			<a href="${"javascript:void(0)"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Vacation Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
-		<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
-			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
-		</p>
+			<a href="${"/vacations#popular_vacations"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Vacation Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
+		<div class="${"max-w-5xl"}"><p class="${"mt-2 text-base text-gray-700 sm:mt-3 md:mt-3 md:text-md lg:mx-0"}">The world is filled with many wonderful and exciting places great for spending a long
+				overdue vacation. Our goal is to make vacationing in these wonderful and exciting places
+				more affordable and accessible to every Canadian through our book now, pay later payment
+				plan.
+			</p></div>
 
 		<div class="${"mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8"}"><div class="${"group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2"}"><img src="${"images/home/destination-sun.jpg"}" alt="${"Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."}" class="${"object-center object-cover group-hover:opacity-75"}">
 				<div aria-hidden="${"true"}" class="${"bg-gradient-to-b from-transparent to-black opacity-50"}"></div>
@@ -6714,13 +6719,11 @@ var init_index_svelte = __esm({
     });
     PromoSection = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"bg-white"}"><div class="${"pt-32 overflow-hidden sm:pt-14"}"><div class="${"bg-gradient-to-r from-blue-900 to-rose-500 "}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"relative pt-48 pb-16 sm:pb-24"}"><div class="${"sm:mx-auto sm:px-4"}"><h2 id="${"sale-heading"}" class="${"hidden sm:block text-4xl font-extrabold sm:leading-snug tracking-tight sm:tracking-normal text-white md:text-5xl"}">Vacation Deals
-							<br>
-							upto 50% off
+<div class="${"bg-white"}"><div class="${"pt-32 overflow-hidden sm:pt-14"}"><div class="${"bg-gradient-to-r from-blue-900 to-rose-500 "}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"relative pt-48 pb-16 sm:pb-24"}"><div class="${"sm:px-4 sm:max-w-xl"}"><h2 id="${"sale-heading"}" class="${"hidden sm:block text-4xl font-extrabold sm:leading-snug tracking-tight sm:tracking-normal text-white md:text-5xl"}">Vacation Deals, Offers and Packages
 						</h2>
 						<h2 id="${"sale-heading"}" class="${"block sm:hidden text-2xl font-extrabold tracking-tight sm:tracking-normal text-white"}">Vacation Deals upto 50% off
 						</h2>
-						<div class="${"mt-6 text-base"}"><a href="${"javascript:void(0)"}" class="${"font-semibold text-white"}">View our promotions<span aria-hidden="${"true"}">\u2192</span></a></div></div>
+						<div class="${"mt-6 text-base"}"><a href="${"javascript:void(0)"}" class="${"font-semibold text-white"}">See what promotions are currently available<span aria-hidden="${"true"}">\u2192</span></a></div></div>
 
 					<div class="${"absolute -top-32 left-1/2 transform -translate-x-1/2 sm:top-6 sm:translate-x-0"}"><div class="${"ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-8"}"><div class="${"flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"}"><div class="${"flex-shrink-0"}"><img class="${"h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"}" src="${"images/home/deals-8.jpg"}" alt="${""}"></div>
 
@@ -6759,8 +6762,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-f8b62608.js";
-    js3 = ["pages/index.svelte-f8b62608.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
+    entry3 = "pages/index.svelte-f9d68e2f.js";
+    js3 = ["pages/index.svelte-f9d68e2f.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-d9c0b93c.js", "chunks/Subscribe-d08f4a8d.js"];
     css3 = [];
   }
 });
@@ -6775,7 +6778,7 @@ var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_Subscribe_9843ead1();
+    init_Subscribe_5faa30c6();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     BookNowHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7082,9 +7085,649 @@ var entry4, js4, css4;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-19ebf3a6.js";
-    js4 = ["pages/book-now-pay-later.svelte-19ebf3a6.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js"];
+    entry4 = "pages/book-now-pay-later.svelte-e7267c85.js";
+    js4 = ["pages/book-now-pay-later.svelte-e7267c85.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-d08f4a8d.js"];
     css4 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/terms-conditions.svelte.js
+var terms_conditions_svelte_exports = {};
+__export(terms_conditions_svelte_exports, {
+  default: () => Terms_conditions
+});
+var css5, isActive, Terms_conditions;
+var init_terms_conditions_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/terms-conditions.svelte.js"() {
+    init_index_c9c8dd9a();
+    css5 = {
+      code: "ol.svelte-1gmoxvt.svelte-1gmoxvt{counter-reset:item}ol.svelte-1gmoxvt>li.svelte-1gmoxvt{display:block;margin-bottom:2rem}ol.svelte-1gmoxvt>li.svelte-1gmoxvt:before{content:counters(item, '.') '. ';counter-increment:item;padding-right:8px}p.svelte-1gmoxvt.svelte-1gmoxvt{font-size:1.05rem;line-height:1.75;font-weight:400;padding:7px 0}p.svelte-1gmoxvt.svelte-1gmoxvt:first-child{margin-top:12px}",
+      map: null
+    };
+    isActive = 1;
+    Terms_conditions = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const tocs = [
+        {
+          id: 1,
+          is_active: false,
+          link: "#definitions",
+          title: "Definitions"
+        },
+        {
+          id: 2,
+          is_active: false,
+          link: "#ctta",
+          title: "Changes to this Agreement"
+        },
+        {
+          id: 3,
+          is_active: false,
+          link: "#rfuc",
+          title: "Rules for User Conduct"
+        },
+        {
+          id: 4,
+          is_active: false,
+          link: "#toaaattw",
+          title: "Termination of Accounts and Access to the Websites"
+        },
+        {
+          id: 5,
+          is_active: false,
+          link: "#tsip",
+          title: "Trip Support\u2019s Intellectual Property"
+        },
+        {
+          id: 6,
+          is_active: false,
+          link: "#uc",
+          title: "User Content"
+        },
+        {
+          id: 7,
+          is_active: false,
+          link: "#privacy",
+          title: "Privacy"
+        },
+        {
+          id: 8,
+          is_active: false,
+          link: "#tpl",
+          title: "Third-Party Links"
+        },
+        {
+          id: 9,
+          is_active: false,
+          link: "#tps",
+          title: "Third-Party Suppliers"
+        },
+        {
+          id: 10,
+          is_active: false,
+          link: "#tr",
+          title: "Travel Requirements"
+        },
+        {
+          id: 11,
+          is_active: false,
+          link: "#naad",
+          title: "Network Access and Devices"
+        },
+        {
+          id: 12,
+          is_active: false,
+          link: "#promotions",
+          title: "Promotions"
+        },
+        {
+          id: 13,
+          is_active: false,
+          link: "#parp",
+          title: "Payment and Refund Policy"
+        },
+        {
+          id: 14,
+          is_active: false,
+          link: "#cs",
+          title: "Customer Support"
+        },
+        {
+          id: 15,
+          is_active: false,
+          link: "#ur",
+          title: "User Relationships"
+        },
+        {
+          id: 16,
+          is_active: false,
+          link: "#dorcaw",
+          title: "Disclaimers of Representations, Conditions and Warranties"
+        },
+        {
+          id: 17,
+          is_active: false,
+          link: "#lol",
+          title: "Limitation of Liability"
+        },
+        {
+          id: 18,
+          is_active: false,
+          link: "#indemnification",
+          title: "Indemnification"
+        },
+        {
+          id: 19,
+          is_active: false,
+          link: "#survival",
+          title: "Survival"
+        },
+        {
+          id: 20,
+          is_active: false,
+          link: "#ea",
+          title: "Entire Agreement"
+        },
+        {
+          id: 21,
+          is_active: false,
+          link: "#serverability",
+          title: "Severability"
+        },
+        {
+          id: 22,
+          is_active: false,
+          link: "#assignment",
+          title: "Assignment"
+        },
+        {
+          id: 23,
+          is_active: false,
+          link: "#aaw",
+          title: "Amendments and Waivers"
+        },
+        {
+          id: 24,
+          is_active: false,
+          link: "#fm",
+          title: "Force Majeure"
+        },
+        {
+          id: 25,
+          is_active: false,
+          link: "#gl",
+          title: "Governing Law"
+        },
+        {
+          id: 26,
+          is_active: false,
+          link: "#ci",
+          title: "Contact Information"
+        }
+      ];
+      $$result.css.add(css5);
+      return `<div class="${"bg-gradient-to-r from-slate-900 to-fuchsia-900 "}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between"}"><div class="${"max-w-3xl"}"><h1 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-white to-rose-300 bg-clip-text text-transparent"}">Trip Support</span></h1>
+			<h2 class="${"text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"}">Terms &amp; Conditions
+			</h2>
+			<h3 class="${"text-white"}">Last updated: <span class="${"font-semibold"}">November 21, 2021</span></h3></div></div></div>
+
+<div class="${"py-10"}"><div class="${"max-w-3xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-12 lg:gap-8"}"><div class="${"lg:col-span-9 "}"><article class="${"max-w-4xl"}"><p class="${"svelte-1gmoxvt"}">Please read these Terms of Use (this <span class="${"font-bold"}">&quot;Agreement&quot;</span>) carefully
+					as it governs the terms and conditions under which Users (<span class="${"font-bold"}">&quot;you&quot;</span>
+					or <span class="${"font-bold"}">&quot;your&quot;</span>) may access, view and use the Trip Support
+					websites, <a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">support@tripsupport.ca</a>
+					and <a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">support@tripsupport.com</a>
+					(collectively, the
+					<span class="${"font-bold"}">&quot;Websites&quot;</span>).
+				</p>
+
+				<p class="${"svelte-1gmoxvt"}">The Websites are owned and operated by Trip Support Inc. (<span class="${"font-bold"}">&quot;Trip Support&quot;</span>, <span class="${"font-bold"}">&quot;us&quot;</span>, <span class="${"font-bold"}">&quot;we&quot;</span>, or
+					<span class="${"font-bold"}">&quot;our&quot;</span>). We operate the Websites and provide them for use
+					subject to compliance with this Agreement.
+				</p>
+				<p class="${"svelte-1gmoxvt"}">This Agreement includes our Privacy Policy, which is incorporated herein. Please note that
+					your use of the Websites constitutes your agreement to follow and be bound by the terms of
+					this Agreement and the Privacy Policy. If you object to anything in this Agreement or the
+					Privacy Policy, do not use the Websites.
+				</p>
+
+				<ol class="${"list-decimal py-10 svelte-1gmoxvt"}"><li id="${"definitions"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Definitions
+						<p class="${"pt-12 svelte-1gmoxvt"}"><span class="${"font-bold"}">&quot;Account(s)&quot;</span> means accounts belonging to and created by
+							Users for the purpose of making purchases and storing information relating to their purchases
+							via the Websites.
+						</p>
+						<p class="${"svelte-1gmoxvt"}"><span class="${"font-bold"}">\u201CTrip Support Content\u201D</span> means any data, information, content,
+							records, files, text, images, video, audio, other multimedia, software or other materials
+							that Trip Support makes available to Users through the Websites.
+						</p>
+						<p class="${"svelte-1gmoxvt"}"><span class="${"font-bold"}">\u201CUser(s)\u201D</span> means all individuals or entities that use, view
+							or access the Websites.
+						</p>
+						<p class="${"svelte-1gmoxvt"}"><span class="${"font-bold"}">\u201CUser Content\u201D</span> means any data, information, content, records,
+							files, text, images, video, audio or other multimedia, software or other information or
+							material that Users load or transmit through the Websites including, but not limited to,
+							reviews of products.
+						</p></li>
+					<li id="${"ctta"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Changes to this Agreement
+						<p class="${"svelte-1gmoxvt"}">This Agreement, including the Privacy Policy, are subject to change and may be updated
+							by Trip Support, at its sole discretion, from time to time. We will notify you of any
+							changes to this Agreement by posting the new agreement on the Websites, through your
+							Account, and/or by any other method of notice we see fit, including by email.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Changes to this Agreement will be effective immediately upon posting the amended
+							agreement to the Websites and/or your Account. Accordingly, please review this
+							Agreement periodically for any changes. If you do not accept the amendments, you are
+							required to stop using the Websites and your Account. Any use of the Websites and/or
+							Account after posting the amended agreement on the Websites will constitute acceptance
+							of said agreement.
+						</p></li>
+					<li id="${"rfuc"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Rules for User Conduct
+
+						<p class="${"svelte-1gmoxvt"}">As a condition of your use of the Websites, you agree that:</p>
+						<ul class="${"list-disc sm:ml-4"}"><li class="${"text-base font-normal p-1.5"}">By using, viewing, or accessing the Websites, you represent and warrant that you
+								have reached the age of majority in your country of residence;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">By purchasing a product, you represent and warrant that you are a citizen or
+								resident of Canada or the United States;
+							</li>
+
+							<li class="${"text-base font-normal p-1.5"}">Accounts may only be created, accessed, and used by a single, individual User. You
+								are responsible for providing accurate, current and complete information in
+								connection with your Account. You must not share Account credentials with others,
+								and you may not assign or otherwise transfer your Account to any other person or
+								entity. You must notify us immediately upon becoming aware of any breach of security
+								or unauthorized use of your Account;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You shall be solely responsible for all activity associated with your Account
+								credentials;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will in no way copy or otherwise reproduce Trip Support Content.
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You shall not, in connection with any purchase made on or through the Websites,
+								provide the payment information of any individual without that individual\u2019s express
+								authorization;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You shall not, in connection with any purchase made on or through the Websites,
+								provide any payment information that has been fraudulently obtained;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not use the Websites for any purpose that is unlawful under any applicable
+								laws or is otherwise prohibited by this Agreement;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not distribute viruses, harmful code, phishing scams, or any other harmful
+								content or technologies, or otherwise take any actions that do or are intended to
+								harm Trip Support, the Websites, Users, Accounts, third parties, or their interests\u2019
+								or property;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not solicit, harvest, access or otherwise collect information regarding the
+								Websites, Users, Accounts, third parties, or their interests, property, or data not
+								intended for you;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not interfere or attempt to interfere with the proper functioning of the
+								Websites, such as by making any automated or improper use of the Websites, or take
+								any action that we deem to impose or to potentially impose an unreasonable or
+								disproportionately large load on the Website\u2019s servers or network infrastructure;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not bypass any measures we take to restrict access to the Websites,
+								Accounts and Trip Support Content, or use any software, technology, or device to
+								scrape, spider, or crawl the Websites, Accounts and Trip Support Content, or harvest
+								or manipulate data related to same;
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not circumvent or manipulate our fee structure or payment process, or
+								otherwise evade fees owed to Trip Support; and
+							</li>
+							<li class="${"text-base font-normal p-1.5"}">You will not probe, scan or test the vulnerability of our Websites, or breach or
+								attempt to breach security or authentication measures related to the Websites and/or
+								Accounts.
+							</li></ul></li>
+					<li id="${"toaaattw"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Termination of Accounts and Access to the Websites
+						<p class="${"svelte-1gmoxvt"}">Trip Support shall be entitled to terminate your ability to use, access and view the
+							Websites, your Account and Trip Support Content. To the extent that Users\u2019 conduct, as
+							judged by us in our sole discretion, does not comply with this Agreement, we may
+							immediately terminate your access to all or part of the Websites, disable your
+							Account, and/or seek other remedies.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Trip Support may, in its sole discretion, modify, change, suspend or terminate,
+							temporarily or permanently, the Websites and/or Accounts or any part of the
+							aforementioned at any time, for any reason, without any notice or liability to you or
+							any other person.
+						</p></li>
+					<li id="${"tsip"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Trip Support\u2019s Intellectual Property
+
+						<p class="${"svelte-1gmoxvt"}">The Websites and all intellectual property rights in and to the Websites including,
+							without limitation, intellectual property rights in Trip Support Content, are owned by
+							us and/or our licensors. We and our licensors, as applicable, reserve all our
+							intellectual property rights, which include without limitation all copyright,
+							trademark, domain names, design rights, database rights, patent, trade secrets and all
+							other intellectual property rights of any kind, whether registered or unregistered
+							anywhere in the world.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Subject to your compliance with this Agreement, Trip Support grants you a limited,
+							revocable, non-exclusive, non-transferable, non-sublicensable licence, to access, view
+							and use the Websites. Nothing in this Agreement grants you any rights in the Websites
+							or Trip Support Content, other than as necessary to enable you to access, view and use
+							the Websites in compliance with this Agreement. You agree not to adjust, circumvent or
+							delete any intellectual property notices contained within the Websites and Trip
+							Support Content. You are expressly forbidden from using the Websites and the Trip
+							Support Content in any way that is not expressly and explicitly permitted under the
+							terms of this Agreement. The limited, revocable, non-exclusive, non-transferable,
+							non-sublicensable licence provided remains in effect until it is terminated by you or
+							by Trip Support. YOUR LICENSE IS AUTOMATICALLY REVOKED UPON BREACH OF THE AGREEMENT.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Trip Support\u2019 trademarks and the related words and logos are our trademarks or trade
+							names. Nothing in this Agreement or within the Websites should be construed as
+							granting any license or right for you to use any such marks or names in any way. We
+							expressly reserve all our trademark rights.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">The Websites and Trip Support Content, including, but not limited to, any data, text,
+							images, photographs, graphics, audio, and the arrangement of the foregoing, including
+							the look and feel of the Websites and Trip Support Content, are protected by
+							copyright. Trip Support either owns the copyright in and to the Websites and Trip
+							Support Content or has acquired the appropriate licenses, assignments or permissions
+							to use them. Trip Support hereby expressly reserves all copyright in and to the
+							Websites and the Trip Support Content.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Users are welcome to copy, reproduce and distribute Trip Support Content, such as
+							itineraries and travel products, for their own personal and informational. You shall
+							not otherwise use, copy, adapt, modify, prepare derivative works based upon,
+							distribute, license, sell, transfer, publicly display, publicly perform, transmit,
+							broadcast, download or otherwise exploit the Websites and Trip Support Content, except
+							as expressly permitted in the Agreement. No licenses or rights are granted to you by
+							implication or otherwise, except for the licenses and rights expressly granted in this
+							Agreement.
+						</p></li>
+					<li id="${"uc"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">User Content
+
+						<p class="${"svelte-1gmoxvt"}">Users retain any and all rights in and to their User Content submitted to us, whether
+							through the Websites, your Account, or otherwise.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">From time to time, however, we may also request your permission to use your User
+							Content for various advertising and marketing purposes. We will not use your User
+							Content unless expressly permitted by you.
+						</p></li>
+					<li id="${"privacy"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Privacy
+
+						<p class="${"svelte-1gmoxvt"}">Trip Support will only use the information you provide in accordance with our Privacy
+							Policy. For more information, see our full Privacy Policy, the terms of which are
+							incorporated herein.
+						</p></li>
+					<li id="${"tpl"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Third-Party Links
+
+						<p class="${"svelte-1gmoxvt"}">The Websites may contain hyperlinks or references to third party products, materials
+							or websites (collectively, <span class="${"font-bold"}">\u201CThird-Party Links\u201D</span>). Any
+							such embedment, hyperlink or reference is provided for your convenience only. The
+							display of or reference to any Third Party Links the Websites on the Website does not
+							constitute an endorsement of such third party\u2019s website or products. We have no
+							control over third party websites and accept no responsibility or liability for any
+							content, material or information contained in them. Your use of Third-Party Links may
+							be governed by the terms and conditions and privacy policies of Third-Party Links. We
+							strongly advise you to read the terms and conditions and privacy policies of any
+							Third-Party Links.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">For example, we employ third-party companies to process payment and complete purchases
+							made on the Websites. All data and information shared for the purpose of completing a
+							purchase is shared directly with the third-party and is subject to the privacy policy
+							and by the terms and conditions of that third-party.
+						</p>
+						<p class="${"svelte-1gmoxvt"}"><b>Further, please note that some Third-Party Links may be affiliated and any
+								purchases made through said Third-Party Links will result in a percentage of that
+								sale going to Trip Support. Alternatively, you may access this website independently
+								or through unaffiliated links, and a royalty will not be paid to Trip Support.
+							</b></p>
+						<p class="${"svelte-1gmoxvt"}">Trip Support expressly disclaims any liability, damage or loss, directly or
+							indirectly, alleged or derived from the use, access and/or viewing of Third-Party
+							Links. Further, Users hereby agree to hold Trip Support harmless from any liability
+							that may result from the use of the third-party websites linked to or referenced
+							within the Website.
+						</p></li>
+					<li id="${"tps"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Third-Party Suppliers
+
+						<p class="${"svelte-1gmoxvt"}">The products offered for sale on the Websites are those of third-party suppliers,
+							including but not limited to hotels, cruise lines, and vacation resorts (collectively,
+							the \u201CSuppliers\u201D). Trip Support advertises and makes available for purchase these
+							products in its capacity as a travel agency. Trip Support does not own, operate or
+							manage any of the Suppliers and consequently will not be liable for any of the
+							Suppliers\u2019 acts and/or omissions.
+						</p></li>
+					<li id="${"tr"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Travel Requirements
+
+						<p class="${"svelte-1gmoxvt"}">Users purchasing products on the Websites are responsible for informing themselves of
+							any travel requirements or restrictions affecting their destination, mode of transport
+							or product generally. Trip Support does not warrant a purchaser\u2019s eligibility to
+							travel to any destination, participate in any excursion, etc. Completing a purchase on
+							the Websites is not and should not be treated as confirmation of the User\u2019s
+							eligibility and/or capacity to take advantage of the purchased product.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Trip Support will not offer refunds to Users who failed to make the necessary
+							inquiries into travel requirements and restrictions prior to purchase and are, as a
+							result, unable to take advantage of their purchased product.
+						</p></li>
+					<li id="${"naad"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Network Access and Devices
+
+						<p class="${"svelte-1gmoxvt"}">You are responsible for obtaining the data network access necessary to use the
+							Websites and/or your Account. Your mobile network\u2019s data rates may apply if you access
+							or use the Websites and/or Account from a wireless-enabled device. We do not guarantee
+							that the Websites and/or Account, or any portion thereof, will function on all
+							hardware or devices. In addition, the Websites and/or Account may be subject to
+							malfunctions and delays inherent in the use of the Internet and electronic
+							communications for which we are not responsible.
+						</p></li>
+					<li id="${"promotions"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Promotions
+
+						<p class="${"svelte-1gmoxvt"}">From time-to-time, Trip Support may provide promotions, including but not limited to
+							promotional codes redeemable for discounts on products. All promotions are governed by
+							this Agreement and any such terms and conditions that are made known at the time the
+							promotion is made available to Users. By participating in a promotion through the
+							Websites, you confirm your agreement to and acceptance of this Agreement and the terms
+							and conditions of the promotion.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">All email addresses and phone numbers provided on the website, social media channels,
+							Trip Support\u2019s Marketing ads and promos will be used for marketing and promotional
+							purposes.
+						</p></li>
+					<li id="${"parp"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Payment and Refund Policy
+
+						<p class="${"svelte-1gmoxvt"}">All prices displayed on the Websites are advertised in. Prices are subject to change.
+							The Websites will be updated to reflect any such changes.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Payment can be made in full via credit card, VISA Debit or Debit Mastercard,
+							e-transfer to the address provided at the time of purchase, cash delivered to the Trip
+							Support office, or wire transfer (in which case additional fees may apply).
+							Additionally, U.S. customers may choose to pay by Zelle\u2122.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Alternatively, select purchases may be paid for in installments according to an
+							installment plan determined at the time of purchase. To be eligible for this \u201CBook
+							Now, Pay Later\u201D payment structure, the departure date associated with the product
+							being purchased must be at least twenty-two (22) calendar days from the purchase date.
+							Installments can be paid via VISA Debit, Debit Mastercard, e-transfer to the address
+							provided at the time of purchase, cash delivered to the Trip Support office, or wire
+							transfer (in which case additional fees may apply). U.S. Customers may additionally
+							pay instalments via the Automated Clearing House network, Venmo\u2122 or Zelle\u2122.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Users are responsible for the accuracy of their billing information. In the event that
+							we are unable to verify the billing information provided, your purchase may not be
+							processed. No compensation will be available in the event of a price increase and/or
+							missed installment payment as a result of incomplete or inaccurate billing information
+							provided by the User.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">By completing your purchase, you authorize Trip Support to process the reservation of
+							your purchased product, with the relevant third-party supplier, on your behalf.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">All applicable taxes are charged and collected at the time of purchase.</p>
+						<p class="${"svelte-1gmoxvt"}">In the event of a price update in the period between a User\u2019s browsing of the Websites
+							and the completion of a purchase, the price displayed on the purchase page will
+							prevail. Partial refunds as compensation for the reduction of the price of a product
+							following a purchase are not available.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Upon receipt of payment, you will receive an email with confirmation of your purchase
+							and details of your payment for your records. All purchases are subject to
+							availability at the time the purchase is completed. An e-mail confirmation confirms
+							that the product has been successfully reserved for you. Purchasers are responsible
+							for reviewing the information contained within the e-mail for accuracy and immediately
+							contacting us in the event of an error.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Additional fees, including but not limited to baggage fees and seat selection fees, if
+							not expressly included in the purchase price, may apply and may be paid to the
+							supplier at a later date. You are encouraged to carefully review a product\u2019s
+							inclusions before completing your purchase.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">By completing a purchase, you agree to the terms and conditions of the tour
+							company/operator, airline, cruise line, car or hotel or other supplier providing the
+							product you are purchasing. These terms and conditions are made available during the
+							purchase process.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">Further, cancellation and refund availability is governed by each product\u2019s terms and
+							conditions, as displayed to the purchaser at the time of purchase. Any refund
+							restriction applies equally to purchasers who chose at the time of purchase to pay in
+							installments. In the event that a product\u2019s terms and conditions preclude a refund,
+							these purchasers will be bound to make any and all remaining instalment . Changes to
+							reservations are also governed by the product\u2019s terms and conditions. Change fees may
+							apply and may be owed to one or both of Trip Support and the Supplier.
+						</p></li>
+					<li id="${"cs"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Customer Support
+
+						<p class="${"svelte-1gmoxvt"}">Customer support is available by contacting Trip Support via e-mail at
+							<a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">support@tripsupport.com</a> or calling.
+						</p></li>
+					<li id="${"ur"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">User Relationships
+
+						<p class="${"svelte-1gmoxvt"}">Nothing in this Agreement shall in any way be construed as forming a joint venture,
+							partnership, agency, or employment relationship between Trip Support and you.
+						</p></li>
+					<li id="${"dorcaw"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Disclaimers of Representations, Conditions and Warranties
+
+						<p class="${"svelte-1gmoxvt"}">THE WEBSITES AND TRIP SUPPORT CONTENT ARE PROVIDED STRICTLY ON AN \u201CAS IS\u201D AND \u201CAS
+							AVAILABLE\u201D BASIS WITHOUT REPRESENTATION, WARRANTY, GUARANTEE OR CONDITION OF ANY KIND,
+							WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE. TRIP SUPPORT EXPRESSLY EXCLUDES ALL
+							OTHER TERMS, CONDITIONS, WARRANTIES OR OTHER STIPULATIONS CONCERNING THE WEBSITES AND
+							TRIP SUPPORT CONTENT, WHETHER EXPRESS OR IMPLIED BY COMMON LAW OR UNDER STATUTE ARE
+							HEREBY EXCLUDED TO THE FULLEST EXTENT PERMITTED BY LAW.
+						</p>
+						<p class="${"svelte-1gmoxvt"}">WITHOUT LIMITING THE FOREGOING, TRIP SUPPORT EXPLICITLY DISCLAIMS ANY REPRESENTATIONS,
+							WARRANTIES OR GUARANTEES OF: (I) QUALITY, MERCHANTABILITY, OR FITNESS OF THE WEBSITES
+							AND TRIP SUPPORT CONTENT FOR A PARTICULAR PURPOSE; (II) NON-INFRINGEMENT OF THE
+							WEBSITES AND TRIP SUPPORT CONTENT; OR (III) CORRECTNESS, ADEQUACY, ACCURACY,
+							RELIABILITY, COMPLETENESS OR CURRENCY OF THE WEBSITES AND TRIP SUPPORT CONTENT. TRIP
+							SUPPORT MAKES NO REPRESENTATION, WARRANTY OR GUARANTEE THAT THE WEBSITES AND TRIP
+							SUPPORT CONTENT WILL BE AVAILABLE ON A TIMELY, UNINTERRUPTED, SECURE, OR ERROR-FREE
+							BASIS, THAT ANY DEFECTS OR ERRORS WITH THE WEBSITES AND TRIP SUPPORT CONTENT WILL BE
+							CORRECTED, OR THAT THE SERVER(S) THAT MAKE THE WEBSITES AND TRIP SUPPORT CONTENT
+							AVAILABLE ARE FREE FROM VIRUSES, MALWARE OR OTHER SIMILAR HARMFUL SOFTWARE CODE.
+						</p></li>
+					<li id="${"lol"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Limitation of Liability
+
+						<p class="${"svelte-1gmoxvt"}">IN NO EVENT WILL TRIP SUPPORT AND/OR ITS OFFICERS, DIRECTORS, SHAREHOLDERS, EMPLOYEES,
+							SUBSIDIARIES, AFFILIATES, SUCCESSORS, ASSIGNEES, AGENTS, REPRESENTATIVES, LICENSORS,
+							INDEPENDENT CONTRACTORS, OR CORPORATE PARTNERS BE LIABLE FOR DAMAGES WHATSOEVER,
+							INCLUDING WITHOUT LIMITATION, MONETARY LOSSES, LOST REVENUE OR PROFITS, BODILY INJURY,
+							EMOTIONAL DISTRESS, REPUTATION, AND/OR ANY OTHER DAMAGES, WHETHER DIRECT, INDIRECT,
+							GENERAL, SPECIAL, COMPENSATORY, AND/OR CONSEQUENTIAL, ARISING OUT OF OR RELATING TO
+							THE USE OF, ACCESS TO OR RELIANCE ON THE WEBSITES AND TRIP SUPPORT CONTENT.
+						</p></li>
+					<li id="${"indemnification"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Indemnification
+
+						<p class="${"svelte-1gmoxvt"}">You agree to indemnify, defend, release and hold harmless Trip Support, its officers,
+							directors, employees, agents, affiliates, licensors and suppliers from and against all
+							losses, liabilities, expenses, damages and costs, including reasonable legal fees,
+							arising out of or in any way connected with: (a) any violation of this Agreement; (b)
+							User Content submitted by you to us, whether through the Websites, your Account, or
+							otherwise, that violates any intellectual property, proprietary, contract, or other
+							right of any third party; or (c) access to or use of the Websites and/or Trip Support
+							Content by you or any other person accessing the Websites and/or Trip Support Content
+							using your Account. You further agree that you will fully cooperate in the defense of
+							such claims.
+						</p></li>
+					<li id="${"survival"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Survival
+
+						<p class="${"svelte-1gmoxvt"}">The following Sections, together with any other provision of this Agreement which
+							expressly or by its nature survives termination or expiration, or which contemplates
+							performance or observance subsequent to termination or expiration of this Agreement,
+							will survive expiration or termination of this Agreement for any reason, such as:
+							intellectual property and license provisions, warranties, disclaimers, indemnity and
+							limitations of liability.
+						</p></li>
+					<li id="${"ea"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Entire Agreement
+
+						<p class="${"svelte-1gmoxvt"}">This Agreement as well as Trip Support\u2019s Privacy Policy shall constitute the entire
+							agreement of the parties in relation to the use of the Websites and Trip Support
+							Content, and this Agreement shall supersede and replace any and all prior oral or
+							written understandings or agreements between Trip Support and you.
+						</p></li>
+					<li id="${"severability"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Severability
+
+						<p class="${"svelte-1gmoxvt"}">If any term or condition of this Agreement should be determined to be illegal, invalid
+							or otherwise unenforceable, then to the extent such term or condition is illegal,
+							invalid or unenforceable, it shall be severed and deleted from this Agreement and the
+							remaining Agreement shall survive, remain in full force and effect and continue to be
+							binding and enforceable.
+						</p></li>
+					<li id="${"assignment"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Assignment
+
+						<p class="${"svelte-1gmoxvt"}">You may not assign or transfer this Agreement, by operation of law or otherwise,
+							without Trip Support\u2019 prior written consent. Any attempt by you to assign or transfer
+							this Agreement, without such consent, will be null and of no effect. Trip Support may
+							assign or transfer this Agreement, at its sole discretion, without restriction.
+							Subject to the foregoing, this Agreement will bind and inure to the benefit of the
+							parties, their respective heirs, administrators, executors, legal personal
+							representatives, successors and permitted assigns.
+						</p></li>
+					<li id="${"aaw"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Amendments and Waivers
+
+						<p class="${"svelte-1gmoxvt"}">No amendment or waiver of any provision of this Agreement shall be binding on either
+							party unless consented to in writing by such party. No waiver of any provision of this
+							Agreement shall constitute a waiver of any other provision, nor shall any waiver
+							constitute a continuing waiver unless otherwise provided.
+						</p></li>
+					<li id="${"fm"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Force Majeure
+
+						<p class="${"svelte-1gmoxvt"}">Trip Support shall not be liable for any breach of this Agreement by it to the extent
+							that such breach arises from any act of God, war, national emergency, act of
+							terrorism, riot, civil commotion, fire, explosion, flood, storm, epidemic, power
+							outage, fuel shortage or any other similar cause beyond the reasonable control of Trip
+							Support.
+						</p></li>
+					<li id="${"gl"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Governing Law
+
+						<p class="${"svelte-1gmoxvt"}">This Agreement is governed by and interpreted and enforced in accordance with the laws
+							of the Province of Ontario and the federal laws of Canada applicable therein. By
+							agreeing to this Agreement, you hereby irrevocably consent to the exclusive
+							jurisdiction of the Courts of the Province of Ontario. If any provision of the
+							Agreement is held to be invalid or unenforceable by any court of competent
+							jurisdiction, such provision will, as to such jurisdiction, be ineffective solely to
+							the extent of such determination of invalidity or unenforceability without affecting
+							the validity or enforceability thereof in any other manner or jurisdiction and without
+							affecting the remaining provisions of the terms, which shall continue to be in full
+							force and effect.
+						</p></li>
+					<li id="${"ci"}" class="${"font-bold text-2xl svelte-1gmoxvt"}">Contact Information
+
+						<p class="${"svelte-1gmoxvt"}">If you have questions or concerns about this Agreement or our Privacy Policy, you may
+							contact us at <a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">info@tripsupport.com</a>.
+						</p></li></ol></article></div>
+		<aside class="${"hidden col-span-3 sm:block"}"><div class="${"sticky top-4 space-y-4"}"><section aria-labelledby="${"who-to-follow-heading"}">
+					<nav class="${"space-y-1"}" aria-label="${"Sidebar"}">
+						${each(tocs, (toc) => {
+        return `<a${add_attribute("href", toc.link, 0)} class="${"flex items-center px-3 py-2 text-sm font-medium rounded-md " + escape(isActive === toc.id ? "bg-gray-100 text-gray-900 " : "text-gray-600 hover:bg-gray-50 hover:text-gray-900")}"${add_attribute("aria-current", toc.link, 0)}><span class="${"truncate"}">${escape(toc.title)}</span>
+							</a>`;
+      })}</nav></section></div></aside></div></div>
+
+`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/4.js
+var __exports5 = {};
+__export(__exports5, {
+  css: () => css6,
+  entry: () => entry5,
+  js: () => js5,
+  module: () => terms_conditions_svelte_exports
+});
+var entry5, js5, css6;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/4.js"() {
+    init_terms_conditions_svelte();
+    entry5 = "pages/terms-conditions.svelte-3b370d2c.js";
+    js5 = ["pages/terms-conditions.svelte-3b370d2c.js", "chunks/vendor-6ea63d49.js"];
+    css6 = ["assets/pages/privacy-policy.svelte-7b118ffb.css"];
   }
 });
 
@@ -7093,31 +7736,167 @@ var pay_later_terms_svelte_exports = {};
 __export(pay_later_terms_svelte_exports, {
   default: () => Pay_later_terms
 });
-var Pay_later_terms;
+var css7, Pay_later_terms;
 var init_pay_later_terms_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/pay-later-terms.svelte.js"() {
     init_index_c9c8dd9a();
+    css7 = {
+      code: "ol.svelte-5yiqp2{counter-reset:item}li.svelte-5yiqp2{display:block;margin-bottom:2rem}li.svelte-5yiqp2:before{content:counters(item, '.') '. ';counter-increment:item;padding-right:8px}p.svelte-5yiqp2{font-size:1.05rem;line-height:1.75;font-weight:400;padding:8px 0}p.svelte-5yiqp2:first-child{margin-top:12px}",
+      map: null
+    };
     Pay_later_terms = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+      $$result.css.add(css7);
+      return `
+<div class="${"bg-gradient-to-r from-slate-900 to-purple-900 "}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between"}"><div class="${"max-w-3xl"}"><h1 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-white to-rose-300 bg-clip-text text-transparent"}">Trip Support</span></h1>
+			<h2 class="${"text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"}">Book Now, Pay Later Terms
+			</h2>
+			<h3 class="${"text-white"}">Last updated: <span class="${"font-semibold"}">November 23, 2021</span></h3></div></div></div>
+
+
+<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-4 pt-12 lg:px-8 "}">
+		<article class="${"max-w-4xl"}"><p class="${"svelte-5yiqp2"}">Trip Support offers flexible payment plans via installment payments so you can book your
+				travel plans more comfortably; however, all purchases are final and non-refundable.
+			</p>
+
+			<p class="${"svelte-5yiqp2"}">By selecting the Trip Support Book Now Pay Later service (the <span class="${"font-bold"}">\u201CService\u201D</span>), you expressly agree to be bound by these terms of use (these
+				<span class="${"font-bold"}">\u201CTerms\u201D</span>).
+			</p>
+
+			<ol class="${"list-decimal py-10 svelte-5yiqp2"}"><li class="${"font-bold text-2xl svelte-5yiqp2"}">Consent and Promise to Pay
+					<p class="${"pt-12 svelte-5yiqp2"}">The travel financing agreement (the <span class="${"font-bold"}">\u201CAgreement\u201D</span>) is
+						between the borrower, referred to as \u201Cyou\u201D and \u201Cyour\u201D throughout these Terms and Trip
+						Support Inc., referred to as \u201CTrip Support,\u201D \u201Cus\u201D, \u201Cwe\u201D, or \u201Cour.\u201D
+					</p>
+					<p class="${"svelte-5yiqp2"}">Before completing any booking through our Service, you promise to repay us in connection
+						with the funds disbursed on your behalf, in accordance with these Terms and your
+						Agreement, and any other supplements to your Agreement as required by law.
+					</p>
+					<p class="${"svelte-5yiqp2"}">If you do not agree to these Terms, you must not use the Service. Furthermore, if you
+						require any additional details you agree to contact us prior to completing any booking
+						using the Service.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-5yiqp2"}">Financing Terms
+					<p class="${"svelte-5yiqp2"}">You agree to carefully review the following key financing terms relating to your
+						Agreement with Trip Support prior to completing any booking using our Service. You also
+						agree to retain a copy of the following financing terms and this Agreement for your own
+						future reference.
+					</p>
+					<p class="${"svelte-5yiqp2"}">You are entitled to pay the full outstanding balance under your Agreement with Trip
+						Support at any time without any prepayment charge or penalty.
+					</p>
+					<ol class="${"list-decimal ml-8 mt-4 svelte-5yiqp2"}"><li class="${"svelte-5yiqp2"}">Initial Disclosure Statement
+							<p class="${"svelte-5yiqp2"}">The below Initial Disclosure Statement is incorporated by reference to this
+								Agreement with Trip Support. We are required by law to supplement this disclosure
+								statement if changes to the below statement are made (the <span class="${"font-bold"}">\u201CFinal Payment Schedule\u201D</span>). The Final Payment Schedule shall be delivered to you within 30 days after
+								amendments are made and will supersede the below or any prices shown on the website
+								at the time of booking.
+							</p>
+
+							<div class="${"mt-8 flex flex-col pb-8"}"><div class="${"-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8"}"><div class="${"inline-block min-w-full py-2 align-middle md:px-6 lg:px-8"}"><div class="${"overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"}"><table class="${"min-w-full divide-y divide-gray-300"}"><thead class="${"bg-gray-50"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">a</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Annual Percentage Rate (APR)</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Your Selected Interest but cannot be more than 60% per annum</th></tr></thead>
+
+												<thead class="${"white"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">b</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Interest rate payable on overdue payment
+														</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Your Selected Interest but cannot be more than 60% per annum
+														</th></tr></thead>
+												<thead class="${"bg-gray-50"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">c</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Term in weeks
+														</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">2-5
+														</th></tr></thead>
+												<thead class="${"bg-white"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">d</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Total outstanding principal balance
+														</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Depends on final booking price.
+														</th></tr></thead>
+												<thead class="${"bg-gray-50"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">e</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Cost of borrowing
+														</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Interest payment as described above.
+														</th></tr></thead>
+												<thead class="${"bg-white"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">f</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Total number of payments to be made by borrower (including down
+															payment)
+														</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Depends on payment plan (bi-weekly/monthly option) and final booking
+															price.
+														</th></tr></thead>
+												<thead class="${"bg-gray-50"}"><tr><th scope="${"col"}" class="${"py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"}">g</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">Default charges
+														</th>
+														<th scope="${"col"}" class="${"px-3 py-3.5 text-left text-sm font-semibold text-gray-900"}">$0; except as expressly provided in Section 3 and Section 4 below.
+														</th></tr></thead></table></div></div></div></div>
+
+							<p class="${"svelte-5yiqp2"}">The dates and payment options listed prior to finalizing any booking using the
+								Service are based on reasonable estimates gathered at the time of your purchase.
+								This includes all total amounts at the time of completing your travel booking. Your
+								actual payment dates and options will be finalized on the Final Payment Schedule
+								after being confirmed with the airline or hotel that you are booking with.
+							</p></li></ol></li>
+				<li class="${"font-bold text-2xl svelte-5yiqp2"}">Default and Deferral on Payment Plans
+					<p class="${"svelte-5yiqp2"}">If you fail to make any payment when due as required by the Service and these Terms, you
+						will be in default of your Agreement with Trip Support. A default will automatically
+						terminate the Service and may result in the cancellation of your travel booking.
+					</p>
+					<p class="${"svelte-5yiqp2"}">By accepting this Agreement and purchasing travel plans using the Service, you give us
+						the right to send your outstanding account for collection and to pursue all legal means
+						possible. You also expressly agree to reimburse Trip Support for all cost including but
+						not limited to legal costs incurred associated with collecting any outstanding payment.
+					</p>
+					<p class="${"svelte-5yiqp2"}">Upon the purchase of any travel booking using the Service, you expressly agree that you
+						will not apply for any chargebacks or stop payments from your card issuer or banking
+						institution at any time throughout the duration of your Agreement with Trip Support and
+						indefinitely thereafter until such time that the total amount owing is paid off.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-5yiqp2"}">Interest and Fees
+					<p class="${"svelte-5yiqp2"}">Trip Support will apply interest of 60% on any overdue account payment continuing for
+						more than 7 days. Trip Support will also deactivate your account in the event of default
+						spanning over the 7-day period. To avoid termination of our Service and the possibility
+						of trip cancellations, we require you to immediately pay the outstanding amount and the
+						interest accrued after the date of default and a $25.00 reactivation fee (<span class="${"font-bold"}">\u201CReactivation Fee\u201D</span>) to continue using our Service.
+					</p>
+					<p class="${"svelte-5yiqp2"}">If you do not wish to continue using our Service but want to avoid cancellation of your
+						travel booking in the event of default, you must pay the entire outstanding amount
+						including interest within 7 days of a missed payment.
+					</p>
+					<p class="${"svelte-5yiqp2"}">If you agree with these Terms and intend to be legally bound by them, please click on
+						the \u201CI accept\u201D button below. If you do not agree with these Terms, click on the \u201CI
+						decline\u201D button below. You may only proceed to complete your booking using the Service
+						if you accept these Terms.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-5yiqp2"}">Voluntary and Involuntary Refund
+					<p class="${"svelte-5yiqp2"}">In case of voluntary cancellation of a fully non-refundable product, all instalments of
+						the Book Now Pay Later service must be completed as scheduled, given the product is
+						acquired and paid in full to the supplier by Trip Support Inc. at the time of purchase.
+					</p>
+					<p class="${"svelte-5yiqp2"}">The first instalment and any incurred late fee (if any) of the Book Now Pay Later
+						service are fully non-refundable in either cases of voluntary or involuntary
+						cancelations. This includes ad hoc schedule changes or cancellations by suppliers.
+					</p></li></ol></article>
+		</div></div>
+
+`;
     });
   }
 });
 
-// .svelte-kit/output/server/nodes/4.js
-var __exports5 = {};
-__export(__exports5, {
-  css: () => css5,
-  entry: () => entry5,
-  js: () => js5,
+// .svelte-kit/output/server/nodes/5.js
+var __exports6 = {};
+__export(__exports6, {
+  css: () => css8,
+  entry: () => entry6,
+  js: () => js6,
   module: () => pay_later_terms_svelte_exports
 });
-var entry5, js5, css5;
-var init__5 = __esm({
-  ".svelte-kit/output/server/nodes/4.js"() {
+var entry6, js6, css8;
+var init__6 = __esm({
+  ".svelte-kit/output/server/nodes/5.js"() {
     init_pay_later_terms_svelte();
-    entry5 = "pages/pay-later-terms.svelte-8d023e26.js";
-    js5 = ["pages/pay-later-terms.svelte-8d023e26.js", "chunks/vendor-6ea63d49.js"];
-    css5 = [];
+    entry6 = "pages/pay-later-terms.svelte-3a593921.js";
+    js6 = ["pages/pay-later-terms.svelte-3a593921.js", "chunks/vendor-6ea63d49.js"];
+    css8 = ["assets/pages/pay-later-terms.svelte-47c20dc4.css"];
   }
 });
 
@@ -7136,21 +7915,21 @@ var init_baggage_policy_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/5.js
-var __exports6 = {};
-__export(__exports6, {
-  css: () => css6,
-  entry: () => entry6,
-  js: () => js6,
+// .svelte-kit/output/server/nodes/6.js
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css9,
+  entry: () => entry7,
+  js: () => js7,
   module: () => baggage_policy_svelte_exports
 });
-var entry6, js6, css6;
-var init__6 = __esm({
-  ".svelte-kit/output/server/nodes/5.js"() {
+var entry7, js7, css9;
+var init__7 = __esm({
+  ".svelte-kit/output/server/nodes/6.js"() {
     init_baggage_policy_svelte();
-    entry6 = "pages/baggage-policy.svelte-defca122.js";
-    js6 = ["pages/baggage-policy.svelte-defca122.js", "chunks/vendor-6ea63d49.js"];
-    css6 = [];
+    entry7 = "pages/baggage-policy.svelte-defca122.js";
+    js7 = ["pages/baggage-policy.svelte-defca122.js", "chunks/vendor-6ea63d49.js"];
+    css9 = [];
   }
 });
 
@@ -7159,45 +7938,217 @@ var privacy_policy_svelte_exports = {};
 __export(privacy_policy_svelte_exports, {
   default: () => Privacy_policy
 });
-var Privacy_policy;
+var css10, Privacy_policy;
 var init_privacy_policy_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/privacy-policy.svelte.js"() {
     init_index_c9c8dd9a();
+    css10 = {
+      code: "ol.svelte-1gmoxvt.svelte-1gmoxvt{counter-reset:item}ol.svelte-1gmoxvt>li.svelte-1gmoxvt{display:block;margin-bottom:2rem}ol.svelte-1gmoxvt>li.svelte-1gmoxvt:before{content:counters(item, '.') '. ';counter-increment:item;padding-right:8px}p.svelte-1gmoxvt.svelte-1gmoxvt{font-size:1.05rem;line-height:1.75;font-weight:400;padding:7px 0}p.svelte-1gmoxvt.svelte-1gmoxvt:first-child{margin-top:12px}",
+      map: null
+    };
     Privacy_policy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
-    });
-  }
-});
+      $$result.css.add(css10);
+      return `--&gt;
+<div class="${"bg-gradient-to-r from-slate-900 to-fuchsia-900 "}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between"}"><div class="${"max-w-3xl"}"><h1 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-white to-rose-300 bg-clip-text text-transparent"}">Trip Support</span></h1>
+			<h2 class="${"text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"}">Privacy Policy
+			</h2>
+			<h3 class="${"text-white"}">Last updated: <span class="${"font-semibold"}">November 16, 2021</span></h3></div></div></div>
 
-// .svelte-kit/output/server/nodes/6.js
-var __exports7 = {};
-__export(__exports7, {
-  css: () => css7,
-  entry: () => entry7,
-  js: () => js7,
-  module: () => privacy_policy_svelte_exports
-});
-var entry7, js7, css7;
-var init__7 = __esm({
-  ".svelte-kit/output/server/nodes/6.js"() {
-    init_privacy_policy_svelte();
-    entry7 = "pages/privacy-policy.svelte-dc9a8965.js";
-    js7 = ["pages/privacy-policy.svelte-dc9a8965.js", "chunks/vendor-6ea63d49.js"];
-    css7 = [];
-  }
-});
 
-// .svelte-kit/output/server/entries/pages/accessibility.svelte.js
-var accessibility_svelte_exports = {};
-__export(accessibility_svelte_exports, {
-  default: () => Accessibility
-});
-var Accessibility;
-var init_accessibility_svelte = __esm({
-  ".svelte-kit/output/server/entries/pages/accessibility.svelte.js"() {
-    init_index_c9c8dd9a();
-    Accessibility = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return ``;
+<div class="${"bg-white"}"><div class="${"space-y-16 container xl:max-w-7xl mx-auto px-4 pt-12 lg:px-8 "}">
+		<article class="${"max-w-4xl"}"><p class="${"svelte-1gmoxvt"}">Trip Support Inc. (<span class="${"font-bold"}">\u201CTrip Support\u201D</span>,
+				<span class="${"font-bold"}">&quot;us&quot;</span>, <span class="${"font-bold"}">&quot;we&quot;</span>, or
+				<span class="${"font-bold"}">&quot;our&quot;</span>) owns and operates the Trip Support websites,
+				<a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">www.tripsupport.ca</a> and
+				<a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">www.tripsupport.com</a> (collectively,
+				the \u201CWebsites\u201D).
+			</p>
+			<p class="${"svelte-1gmoxvt"}">Trip Support respects the privacy of its Users (\u201Cyou\u201D or \u201Cyour\u201D) and has developed this
+				Privacy Policy to demonstrate its commitment to protecting your privacy. This Privacy Policy
+				describes the information we collect, how that information may be used, with whom it may be
+				shared, and how it is protected.
+			</p>
+			<p class="${"svelte-1gmoxvt"}">This Privacy Policy is incorporated by reference in the Terms of Use (the \u201CAgreement\u201D).
+				Unless otherwise defined in this Privacy Policy, capitalized terms used in this Privacy
+				Policy have the same meanings as in the Agreement.
+			</p>
+			<p class="${"svelte-1gmoxvt"}">Please note that your use of the Websites and/or Account(s) constitutes your agreement to
+				follow and be bound by the terms of the Agreement and the Privacy Policy. If you object to
+				anything in the Agreement or the Privacy Policy, do not use the Websites and/or Account(s).
+			</p>
+
+			<ol class="${"list-decimal py-10 svelte-1gmoxvt"}"><li class="${"font-bold text-2xl svelte-1gmoxvt"}">Consent
+					<p class="${"pt-12 svelte-1gmoxvt"}">By using, viewing or accessing the Websites or your Account, you expressly consent to
+						the collection, use and disclosure of information in accordance with this Privacy
+						Policy.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">Further, whenever you provide information to Trip Support or contact Trip Support
+						through other means, you consent to the collection, use and disclosure of that
+						information in accordance with the provisions of this Privacy Policy.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Changes to the Privacy Policy
+					<p class="${"svelte-1gmoxvt"}">This Privacy Policy is subject to change and may be updated by Trip Support, at its sole
+						discretion, from time to time. We will notify you of any changes to this Agreement by
+						posting the new agreement on the Websites, through your Account, and/or by any other
+						method of notice we see fit, including by email.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">Accordingly, please review this Privacy Policy periodically for any changes. Changes to
+						this Privacy Policy will be effective immediately upon posting the amended agreement to
+						the Websites and/or your Account. If you do not accept the amendments, you are required
+						to stop using the Websites and your Account. Any use of the Websites and/or Account
+						after posting the amended agreement on the Websites will constitute acceptance of said
+						agreement.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">Should we make any significant changes to the way we collect, use, share, and protect
+						your Personal Information, we will let you know by posting notices on our Websites,
+						through your Account, and/or by sending you an email explaining the change.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Information Collection and Use
+					<ol class="${"ml-8 mt-4 svelte-1gmoxvt"}"><p class="${"svelte-1gmoxvt"}">We collect different types of data, described below, to provide and improve our
+							Websites and Trip Support Content.
+						</p>
+						<li class="${"svelte-1gmoxvt"}">Personal Information
+							<p class="${"svelte-1gmoxvt"}">While using the Websites and/or your Account, we may ask you to provide us with
+								certain personally identifiable information (<span class="${"font-bold"}">\u201CPersonal Information\u201D</span>). Personally identifiable information is information that can be used on its own,
+								or with other information to identify, contact or locate an individual. It does not
+								include non-personal information like business information or generic information
+								common to many individuals.
+							</p>
+							<p class="${"svelte-1gmoxvt"}">Trip Support collects Personal Information only if you voluntarily choose to share
+								such information with Trip Support. For example, in the course of opening an Account
+								or making a Purchase. When you do so, you authorize us to collect, access, manage
+								and retain information that may include, but is not limited to:
+							</p>
+							<ul class="${"list-disc sm:ml-4"}"><li class="${"text-base font-normal p-1.5"}">Your first and last name</li>
+								<li class="${"text-base font-normal p-1.5"}">Your mailing address</li>
+								<li class="${"text-base font-normal p-1.5"}">Your e-mail address</li>
+								<li class="${"text-base font-normal p-1.5"}">Your date of birth</li></ul></li>
+						<li class="${"svelte-1gmoxvt"}">Other Data
+							<p class="${"svelte-1gmoxvt"}">We also collect, access, manage and retain data, other than Personal Information.
+								These other types of data, described below, do not permit direct association with
+								any specific individual.
+							</p>
+							<p class="${"svelte-1gmoxvt"}"><span class="${"font-bold underline"}">Usage Data</span></p>
+							<p class="${"svelte-1gmoxvt"}">We may collect and retain information related to your use of and access to the
+								Websites and/or your Account <span class="${"font-bold"}">Usage Data</span>. For example,
+								the following types of data may be collected, but are not limited to:
+							</p>
+							<ul class="${"list-disc sm:ml-4"}"><li class="${"text-base font-normal p-1.5"}">frequency of visits to the Websites and/or your Account;
+								</li>
+								<li class="${"text-base font-normal p-1.5"}">frequency of interaction with different Trip Support Content; and
+								</li>
+								<li class="${"text-base font-normal p-1.5"}">frequency of your use of various features of the Websites and/or your Account.
+								</li></ul>
+
+							<p class="${"svelte-1gmoxvt"}"><span class="${"font-bold underline"}">Location Data</span></p>
+							<p class="${"svelte-1gmoxvt"}">We collect, use and retain information Internet Protocol (IP) information to ensure
+								mailing and billing addresses are accurate and to protect against fraudulent payment
+								activity.
+							</p>
+							<p class="${"svelte-1gmoxvt"}"><span class="${"font-bold underline"}">Cookies </span></p>
+							<p class="${"svelte-1gmoxvt"}">Cookies are small text files sent by us to your computer, and from your computer or
+								mobile device to us each time you visit the Websites and/or your Account. When
+								accessing the Websites through an Internet browser, you can manage your cookie
+								settings to accept or reject cookies, or simply notify you each time a cookie is set
+								by a website you visit. Please note, if you do not accept cookies, you may lose
+								certain functionality of the Websites and/or your Account.
+							</p>
+							<p class="${"svelte-1gmoxvt"}">We collect anonymous information from Users of our Websites and/or Accounts through
+								the use of cookies. We do not use cookies to collect Personal Information. Cookie
+								information is, for example, aggregated and used to improve the effectiveness of our
+								Websites and/or your Account.
+							</p></li></ol></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Use of Data
+					<p class="${"svelte-1gmoxvt"}">Trip Support may collect, access, manage and retain data and Personal Information for
+						purposes, such as to:
+					</p>
+					<ul class="${"list-disc sm:ml-4"}"><li class="${"text-base font-normal p-1.5"}">provide and maintain our Websites and/or your Account;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">notify you about changes to our Websites and/or your Account;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">allow you to participate in interactive features of our Websites and/or your Account,
+							whenm you chose to do so;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">administer promotions, when you provide your consent to be entered into such programs;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">process purchases made on the Websites;</li>
+						<li class="${"text-base font-normal p-1.5"}">identify fraudulent activity on the Websites;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">provide customer support and respond to your inquiries;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">perform analyses or gather valuable information so that we can improve our Websites
+							and/or
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">monitor the usage of our Websites and/or your Account;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">detect, prevent and address technical issues; and
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">maintain data security and user privacy.</li></ul></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Disclosure of Data
+					<p class="${"svelte-1gmoxvt"}">We reserve the right to use and disclose Personal Information to:</p>
+					<ul class="${"list-disc sm:ml-4"}"><li class="${"text-base font-normal p-1.5"}">comply with applicable laws and regulations;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">comply with governmental requests;</li>
+						<li class="${"text-base font-normal p-1.5"}">protect against legal liability;</li>
+						<li class="${"text-base font-normal p-1.5"}">prevent or investigate possible wrongdoing in connection with use of the Websites,
+							your Account, or Trip Support Content;
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">protect the personal safety of Users and/or the public; and
+						</li>
+						<li class="${"text-base font-normal p-1.5"}">protect the rights and property of Trip Support and its Users.
+						</li></ul>
+
+					<p class="${"svelte-1gmoxvt"}">If Trip Support is legally compelled to disclose your Personal Information, it will only
+						disclose the minimum amount necessary to meet our legal obligation.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Security of Data
+					<p class="${"svelte-1gmoxvt"}">You are responsible for keeping your Account login credentials confidential.</p>
+					<p class="${"svelte-1gmoxvt"}">Trip Support utilizes standard security protocols and commonplace security mechanisms to
+						secure your information from accidental loss and from unauthorized access, use,
+						alteration or disclosure.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">We periodically review our processes and systems to verify compliance with industry best
+						practices and to ensure the highest level of security for all our digital platforms.
+						However, the Internet is an open system and we cannot guarantee that unauthorized third
+						parties will not be able to defeat those measures or use your Personal Information for
+						improper purposes.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Data Transfer
+					<p class="${"svelte-1gmoxvt"}">Personal Information and data are stored on Canadian servers. We will take all steps
+						reasonably necessary to ensure that your Personal Information is treated securely and in
+						accordance with this Privacy Policy and Canadian law.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">In some cases, your Personal Information and data that we collect and manage may be
+						transferred to, maintained on and processed by computers located outside of your state,
+						province, country or other governmental jurisdiction where the data protection laws may
+						differ than those from your jurisdiction. Your consent to this Privacy Policy represents
+						your agreement to that transfer.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Business Affiliates
+					<p class="${"svelte-1gmoxvt"}">Trip Support reserves the right to transfer, sell or distribute all information
+						collected through the Websites and/or your Account to an affiliate, subsidiary, or third
+						party in the event of any reorganization, merger, sale, joint venture, assignment,
+						transfer or other disposition of all or part of our business, assets or stock.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">We will use our best efforts to ensure that the new entity follows this Privacy Policy
+						with respect to your Personal Information and to the extent required by applicable law.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Updating and Deleting your Data
+					<p class="${"svelte-1gmoxvt"}">Account information can be updated through your Account profile or by submitting a
+						request in writing to <a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">support@tripsupport.com</a>.
+					</p>
+					<p class="${"svelte-1gmoxvt"}">To deactivate your Account and request that associated data be deleted, including
+						Personal Information, please contact us at
+						<a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">support@tripsupport.com</a>.
+					</p></li>
+				<li class="${"font-bold text-2xl svelte-1gmoxvt"}">Contact Us
+					<p class="${"svelte-1gmoxvt"}">If you have questions or concerns regarding your Personal Information and this Privacy
+						Policy, or to update, correct or delete your Personal Information, please contact us at
+						<a href="${"#"}" class="${"text-rose-600 hover:text-rose-500"}">support@tripsupport.com</a>.
+					</p></li></ol></article>
+		</div></div>
+
+`;
     });
   }
 });
@@ -7205,18 +8156,18 @@ var init_accessibility_svelte = __esm({
 // .svelte-kit/output/server/nodes/7.js
 var __exports8 = {};
 __export(__exports8, {
-  css: () => css8,
+  css: () => css11,
   entry: () => entry8,
   js: () => js8,
-  module: () => accessibility_svelte_exports
+  module: () => privacy_policy_svelte_exports
 });
-var entry8, js8, css8;
+var entry8, js8, css11;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
-    init_accessibility_svelte();
-    entry8 = "pages/accessibility.svelte-2fe3dc74.js";
-    js8 = ["pages/accessibility.svelte-2fe3dc74.js", "chunks/vendor-6ea63d49.js"];
-    css8 = [];
+    init_privacy_policy_svelte();
+    entry8 = "pages/privacy-policy.svelte-33f073af.js";
+    js8 = ["pages/privacy-policy.svelte-33f073af.js", "chunks/vendor-6ea63d49.js"];
+    css11 = ["assets/pages/privacy-policy.svelte-7b118ffb.css"];
   }
 });
 
@@ -7238,18 +8189,18 @@ var init_flight_hotel_svelte = __esm({
 // .svelte-kit/output/server/nodes/8.js
 var __exports9 = {};
 __export(__exports9, {
-  css: () => css9,
+  css: () => css12,
   entry: () => entry9,
   js: () => js9,
   module: () => flight_hotel_svelte_exports
 });
-var entry9, js9, css9;
+var entry9, js9, css12;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_flight_hotel_svelte();
     entry9 = "pages/flight-hotel.svelte-10446fc4.js";
     js9 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
-    css9 = [];
+    css12 = [];
   }
 });
 
@@ -7297,18 +8248,18 @@ var init_contact_us_svelte = __esm({
 // .svelte-kit/output/server/nodes/9.js
 var __exports10 = {};
 __export(__exports10, {
-  css: () => css10,
+  css: () => css13,
   entry: () => entry10,
   js: () => js10,
   module: () => contact_us_svelte_exports
 });
-var entry10, js10, css10;
+var entry10, js10, css13;
 var init__10 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_contact_us_svelte();
     entry10 = "pages/contact-us.svelte-cb5a6467.js";
     js10 = ["pages/contact-us.svelte-cb5a6467.js", "chunks/vendor-6ea63d49.js"];
-    css10 = [];
+    css13 = [];
   }
 });
 
@@ -7643,18 +8594,18 @@ var init_blog_post_svelte = __esm({
 // .svelte-kit/output/server/nodes/10.js
 var __exports11 = {};
 __export(__exports11, {
-  css: () => css11,
+  css: () => css14,
   entry: () => entry11,
   js: () => js11,
   module: () => blog_post_svelte_exports
 });
-var entry11, js11, css11;
+var entry11, js11, css14;
 var init__11 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_blog_post_svelte();
     entry11 = "pages/blog-post.svelte-1575c176.js";
     js11 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
-    css11 = [];
+    css14 = [];
   }
 });
 
@@ -7668,14 +8619,14 @@ var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_Subscribe_9843ead1();
-    init_BlogPosts_5c3b104a();
+    init_Subscribe_5faa30c6();
+    init_BlogPosts_bcd2e28a();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     VacationsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6 z-[1]"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}">Vacation packages
 				</h1>
-				<p class="${"prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700"}">Looking for vacations? Save on vacations that include flight.
+				<p class="${"prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700"}">All-inclusive and affordable vacations
 				</p></div></div>
 
 		<div class="${"hidden sm:flex col-span-6"}"><div class="${"relative pb-8 bg-white sm:pb-16 md:pb-20"}"><svg class="${"block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg></div>
@@ -7846,10 +8797,11 @@ ${``}`;
 ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
 
 <div class="${"mx-auto max-w-7xl p-6"}">
-	<section class="${"relative mb-6"}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Vacations</span>
+	<section id="${"popular_vacations"}" class="${"relative mb-6"}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Vacations</span>
 					</h1></div>
-			<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Special offers from resorts and hotels across the Americas
-			</p></div></section>
+			<div class="${"max-w-5xl"}"><p class="${"mt-2 text-base text-gray-700 sm:mt-3 md:mt-3 md:text-md lg:mx-0"}">Special offers from resorts and hotels across North America, South America, the Caribbean,
+					Europe, Africa, the Middle East, and Asia.
+				</p></div></div></section>
 	<section class="${"relative"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white w-full "}"><nav class="${"overflow-x-scroll overflow-hidden flex items-center sm:justify-start border-b border-gray-200 space-x-8 sm:space-x-12"}"><button type="${"button"}" class="${"text-tiny px-2 md:px-6 flex items-center py-3 capitalize " + escape("text-pblue-800 border-b-2 border-pblue-800 font-bold")}"><img src="${"icons/countries/mexico.svg"}" alt="${"mexico flag"}" class="${"w-5 mr-2"}">
 					Mexico
 				</button>
@@ -7895,18 +8847,18 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
 // .svelte-kit/output/server/nodes/11.js
 var __exports12 = {};
 __export(__exports12, {
-  css: () => css12,
+  css: () => css15,
   entry: () => entry12,
   js: () => js12,
   module: () => vacations_svelte_exports
 });
-var entry12, js12, css12;
+var entry12, js12, css15;
 var init__12 = __esm({
   ".svelte-kit/output/server/nodes/11.js"() {
     init_vacations_svelte();
-    entry12 = "pages/vacations.svelte-bb0bfcde.js";
-    js12 = ["pages/vacations.svelte-bb0bfcde.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-0127000c.js", "chunks/BlogPosts-7c4c833b.js"];
-    css12 = [];
+    entry12 = "pages/vacations.svelte-e2c7b95e.js";
+    js12 = ["pages/vacations.svelte-e2c7b95e.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-d08f4a8d.js", "chunks/BlogPosts-d9c0b93c.js"];
+    css15 = [];
   }
 });
 
@@ -7987,10 +8939,10 @@ var init_about_us_svelte = __esm({
 			<div class="${"lg:w-1/3 flex-none relative"}"><div class="${"pattern-dots-xl opacity-10 absolute top-0 left-0 w-48 h-96 transform -translate-x-10 -translate-y-10"}"></div>
 				<div class="${"pattern-dots-xl opacity-10 absolute bottom-0 right-0 w-48 h-96 transform translate-x-10 translate-y-10"}"></div>
 				
-				<img src="${"logo.svg"}" alt="${"Preview Feature Image"}" class="${"relative rounded-lg shadow-xl mx-auto"}"></div></div></div></div>
+				<img src="${"logo.svg"}" alt="${"Preview Feature Image"}" class="${"relative mx-auto"}"></div></div></div></div>
 
 
-<div class="${"relative bg-gray-900"}"><div class="${"h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full"}"><div class="${"h-full w-full xl:grid xl:grid-cols-2"}"><div class="${"h-full xl:relative xl:col-start-2"}"><img class="${"h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"}" src="${"/images/about/tripsupport-team.jpg"}" alt="${"People working on laptops"}">
+<div class="${"relative bg-gray-900"}"><div class="${"h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full"}"><div class="${"h-full w-full xl:grid xl:grid-cols-2"}"><div class="${"h-full xl:relative xl:col-start-2"}"><img class="${"h-full w-full object-cover object-center opacity-40 xl:absolute xl:inset-0"}" src="${"/images/about/tripsupport-team.jpg"}" alt="${"People working on laptops"}">
 				<div aria-hidden="${"true"}" class="${"absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-92 xl:bg-gradient-to-r"}"></div></div></div></div>
 	<div class="${"max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-3 xl:grid-flow-col-dense xl:gap-x-8"}"><div class="${"relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 col-span-2 xl:pb-24 prose max-w-prose"}"><h3 class="${"mt-3 text-3xl leading-normal tracking-wide font-bold text-white"}">Our Entity</h3>
 			<p class="${"border-gray-50 text-slate-100 font-light"}">We have grown substantially since our opening in 2014. Thanks to our state-of-the-art
@@ -8025,18 +8977,18 @@ var init_about_us_svelte = __esm({
 // .svelte-kit/output/server/nodes/12.js
 var __exports13 = {};
 __export(__exports13, {
-  css: () => css13,
+  css: () => css16,
   entry: () => entry13,
   js: () => js13,
   module: () => about_us_svelte_exports
 });
-var entry13, js13, css13;
+var entry13, js13, css16;
 var init__13 = __esm({
   ".svelte-kit/output/server/nodes/12.js"() {
     init_about_us_svelte();
-    entry13 = "pages/about-us.svelte-0d691d7e.js";
-    js13 = ["pages/about-us.svelte-0d691d7e.js", "chunks/vendor-6ea63d49.js"];
-    css13 = [];
+    entry13 = "pages/about-us.svelte-a7dda59f.js";
+    js13 = ["pages/about-us.svelte-a7dda59f.js", "chunks/vendor-6ea63d49.js"];
+    css16 = [];
   }
 });
 
@@ -8058,18 +9010,18 @@ var init_explore_svelte = __esm({
 // .svelte-kit/output/server/nodes/13.js
 var __exports14 = {};
 __export(__exports14, {
-  css: () => css14,
+  css: () => css17,
   entry: () => entry14,
   js: () => js14,
   module: () => explore_svelte_exports
 });
-var entry14, js14, css14;
+var entry14, js14, css17;
 var init__14 = __esm({
   ".svelte-kit/output/server/nodes/13.js"() {
     init_explore_svelte();
     entry14 = "pages/explore.svelte-3e87b525.js";
     js14 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
-    css14 = [];
+    css17 = [];
   }
 });
 
@@ -8083,8 +9035,8 @@ var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_BlogPosts_5c3b104a();
-    init_Subscribe_9843ead1();
+    init_BlogPosts_bcd2e28a();
+    init_Subscribe_5faa30c6();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     LottieFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -8096,7 +9048,7 @@ var init_flights_svelte = __esm({
 
 <div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}">Amazing Flight Deals
 				</h1>
-				<p class="${"hidden md:flex prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700"}">More options, our best prices, less headaches. Secure your ticket now.
+				<p class="${"hidden md:flex prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700"}">Fly anywhere in the world stress-free
 				</p></div></div>
 
 		<div class="${"hidden md:flex sm:col-span-6"}"><div class="${"justify-self-end "}">${validate_component(LottieFlights, "LottieFlights").$$render($$result, {}, {}, {})}</div></div>
@@ -8105,11 +9057,13 @@ var init_flights_svelte = __esm({
     });
     FlightDeals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-7xl lg:w-full lg:pb-12 xl:pb-12"}"><div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8 "}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
+<div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div id="${"popular_flights"}" class="${"relative pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-7xl lg:w-full lg:pb-12 xl:pb-12"}"><div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8 "}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
 							</h1></div>
-					<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
-					</p>
+					<div class="${"max-w-5xl"}"><p class="${"mt-2 text-base text-gray-700 sm:mt-3 md:mt-3 md:text-md lg:mx-0"}">Trip Support is here to connect you to the rest of the world at a rate you can afford.
+							We offer tons of flights packages and other flight deals that are tailored to your
+							wants and needs as a traveller. All you need to do is pick a flight that works for
+							you, and we\u2019ll do the rest.
+						</p></div>
 
 					<div class="${"mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-4 sm:gap-y-10 "}"><div class="${"relative group"}"><div class="${"aspect-w-5 aspect-h-2 sm:aspect-w-3 sm:aspect-h-2 rounded-lg overflow-hidden bg-gray-100"}"><img src="${"images/home/alberta.jpg"}" alt="${"Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."}" class="${"object-center object-cover"}">
 								<div class="${"flex items-end opacity-0 p-4 group-hover:opacity-100"}" aria-hidden="${"true"}"><div class="${"w-full bg-white backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center"}">View Deal
@@ -8190,18 +9144,18 @@ ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
 // .svelte-kit/output/server/nodes/14.js
 var __exports15 = {};
 __export(__exports15, {
-  css: () => css15,
+  css: () => css18,
   entry: () => entry15,
   js: () => js15,
   module: () => flights_svelte_exports
 });
-var entry15, js15, css15;
+var entry15, js15, css18;
 var init__15 = __esm({
   ".svelte-kit/output/server/nodes/14.js"() {
     init_flights_svelte();
-    entry15 = "pages/flights.svelte-2707f7e7.js";
-    js15 = ["pages/flights.svelte-2707f7e7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
-    css15 = [];
+    entry15 = "pages/flights.svelte-59bef6a6.js";
+    js15 = ["pages/flights.svelte-59bef6a6.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-d9c0b93c.js", "chunks/Subscribe-d08f4a8d.js"];
+    css18 = [];
   }
 });
 
@@ -8215,8 +9169,8 @@ var init_hotels_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/hotels.svelte.js"() {
     init_index_c9c8dd9a();
     init_BookingWidget_39488cf8();
-    init_BlogPosts_5c3b104a();
-    init_Subscribe_9843ead1();
+    init_BlogPosts_bcd2e28a();
+    init_Subscribe_5faa30c6();
     init_HotelsIcon_bcf3d6d6();
     init_index_2043b91f();
     LottieHotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -8227,8 +9181,7 @@ var init_hotels_svelte = __esm({
     });
     HotelsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-6 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Longing for a Getaway?</span></h1>
-				<p class="${"prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700"}">You\u2019re in luck\u2014we offer top hotels wherever you\u2019re headed, from boutique and luxury to
-					beachfront accommodations.
+				<p class="${"prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700"}">We will find the hotel that best suits you
 				</p></div></div>
 
 		
@@ -8329,7 +9282,7 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
 <div class="${"mx-auto max-w-7xl p-6"}">
 	<section class="${"relative mb-6"}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Trending Hotel Destinations</span>
 					</h1></div>
-			<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Explore destinations currently popular with travellers across Canada
+			<p class="${"mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"}">Explore destinations currently popular with travelers across Canada.
 			</p></div></section>
 	<section class="${"relative"}" aria-labelledby="${"contact-heading"}"><div class="${"flex flex-col rounded-xl bg-white w-full "}"><nav class="${"overflow-x-scroll overflow-hidden flex items-center sm:justify-between border-b border-gray-200 space-x-8"}"><button type="${"button"}" class="${"text-tiny px-2 md:px-6 flex items-center py-3 capitalize " + escape("text-pblue-800 border-b-2 border-pblue-800 font-bold")}"><img src="${"icons/countries/canada.svg"}" alt="${"mexico flag"}" class="${"w-5 mr-2"}">
 					Canada
@@ -8380,18 +9333,18 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
 // .svelte-kit/output/server/nodes/15.js
 var __exports16 = {};
 __export(__exports16, {
-  css: () => css16,
+  css: () => css19,
   entry: () => entry16,
   js: () => js16,
   module: () => hotels_svelte_exports
 });
-var entry16, js16, css16;
+var entry16, js16, css19;
 var init__16 = __esm({
   ".svelte-kit/output/server/nodes/15.js"() {
     init_hotels_svelte();
-    entry16 = "pages/hotels.svelte-ddf1fd2d.js";
-    js16 = ["pages/hotels.svelte-ddf1fd2d.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-7c4c833b.js", "chunks/Subscribe-0127000c.js"];
-    css16 = [];
+    entry16 = "pages/hotels.svelte-91be2390.js";
+    js16 = ["pages/hotels.svelte-91be2390.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-d9c0b93c.js", "chunks/Subscribe-d08f4a8d.js"];
+    css19 = [];
   }
 });
 
@@ -8404,7 +9357,7 @@ var BlogHeader, BlogTop, BlogCanada, PopularPostsCanada, BlogPosts2, Blog;
 var init_blog_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog.svelte.js"() {
     init_index_c9c8dd9a();
-    init_Subscribe_9843ead1();
+    init_Subscribe_5faa30c6();
     BlogHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative pb-28 lg:pb-20 bg-gray-800"}"><div class="${"absolute inset-0"}"><img class="${"w-full h-full object-cover"}" src="${"images/blog/travel-guide.jpg"}" alt="${""}">
@@ -8672,18 +9625,18 @@ var init_blog_svelte = __esm({
 // .svelte-kit/output/server/nodes/16.js
 var __exports17 = {};
 __export(__exports17, {
-  css: () => css17,
+  css: () => css20,
   entry: () => entry17,
   js: () => js17,
   module: () => blog_svelte_exports
 });
-var entry17, js17, css17;
+var entry17, js17, css20;
 var init__17 = __esm({
   ".svelte-kit/output/server/nodes/16.js"() {
     init_blog_svelte();
-    entry17 = "pages/blog.svelte-89b8d8ca.js";
-    js17 = ["pages/blog.svelte-89b8d8ca.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-0127000c.js"];
-    css17 = [];
+    entry17 = "pages/blog.svelte-9c584898.js";
+    js17 = ["pages/blog.svelte-9c584898.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-d08f4a8d.js"];
+    css20 = [];
   }
 });
 
@@ -8777,18 +9730,18 @@ var init_faqs_svelte = __esm({
 // .svelte-kit/output/server/nodes/17.js
 var __exports18 = {};
 __export(__exports18, {
-  css: () => css18,
+  css: () => css21,
   entry: () => entry18,
   js: () => js18,
   module: () => faqs_svelte_exports
 });
-var entry18, js18, css18;
+var entry18, js18, css21;
 var init__18 = __esm({
   ".svelte-kit/output/server/nodes/17.js"() {
     init_faqs_svelte();
     entry18 = "pages/faqs.svelte-23c8e084.js";
     js18 = ["pages/faqs.svelte-23c8e084.js", "chunks/vendor-6ea63d49.js"];
-    css18 = [];
+    css21 = [];
   }
 });
 
@@ -10823,7 +11776,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/about/flight.jpg", "images/about/hotel.jpg", "images/about/office.jpg", "images/about/tripsupport-team.jpg", "images/about/vacation.jpg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-6d01eb55.js", "js": ["start-6d01eb55.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-049ee1e6.js", "js": ["start-049ee1e6.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -10865,11 +11818,20 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/terms-conditions\/?$/,
+        params: null,
+        path: "/terms-conditions",
+        shadow: null,
+        a: [0, 4],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/pay-later-terms\/?$/,
         params: null,
         path: "/pay-later-terms",
         shadow: null,
-        a: [0, 4],
+        a: [0, 5],
         b: [1]
       },
       {
@@ -10878,7 +11840,7 @@ var manifest = {
         params: null,
         path: "/baggage-policy",
         shadow: null,
-        a: [0, 5],
+        a: [0, 6],
         b: [1]
       },
       {
@@ -10886,15 +11848,6 @@ var manifest = {
         pattern: /^\/privacy-policy\/?$/,
         params: null,
         path: "/privacy-policy",
-        shadow: null,
-        a: [0, 6],
-        b: [1]
-      },
-      {
-        type: "page",
-        pattern: /^\/accessibility\/?$/,
-        params: null,
-        path: "/accessibility",
         shadow: null,
         a: [0, 7],
         b: [1]

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-6d01eb55.js",
+    "file": "start-049ee1e6.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -12,10 +12,10 @@
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/index.svelte",
       "src/routes/book-now-pay-later.svelte",
+      "src/routes/terms-conditions.svelte",
       "src/routes/pay-later-terms.svelte",
       "src/routes/baggage-policy.svelte",
       "src/routes/privacy-policy.svelte",
-      "src/routes/accessibility.svelte",
       "src/routes/flight-hotel.svelte",
       "src/routes/contact-us.svelte",
       "src/routes/blog-post.svelte",
@@ -29,7 +29,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-732deb3c.js",
+    "file": "pages/__layout.svelte-124876a9.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -37,7 +37,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-e4132931.css"
+      "assets/pages/__layout.svelte-352575b3.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -50,37 +50,52 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f8b62608.js",
+    "file": "pages/index.svelte-f9d68e2f.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-6ea63d49.js",
       "_BookingWidget-820b3b54.js",
-      "_BlogPosts-7c4c833b.js",
-      "_Subscribe-0127000c.js",
+      "_BlogPosts-d9c0b93c.js",
+      "_Subscribe-d08f4a8d.js",
       "_HotelsIcon-ddcb9645.js"
     ]
   },
   "src/routes/book-now-pay-later.svelte": {
-    "file": "pages/book-now-pay-later.svelte-19ebf3a6.js",
+    "file": "pages/book-now-pay-later.svelte-e7267c85.js",
     "src": "src/routes/book-now-pay-later.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-6ea63d49.js",
       "_BookingWidget-820b3b54.js",
-      "_Subscribe-0127000c.js",
+      "_Subscribe-d08f4a8d.js",
       "_HotelsIcon-ddcb9645.js"
     ]
   },
+  "src/routes/terms-conditions.svelte": {
+    "file": "pages/terms-conditions.svelte-3b370d2c.js",
+    "src": "src/routes/terms-conditions.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-6ea63d49.js"
+    ],
+    "css": [
+      "assets/pages/privacy-policy.svelte-7b118ffb.css"
+    ]
+  },
   "src/routes/pay-later-terms.svelte": {
-    "file": "pages/pay-later-terms.svelte-8d023e26.js",
+    "file": "pages/pay-later-terms.svelte-3a593921.js",
     "src": "src/routes/pay-later-terms.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-6ea63d49.js"
+    ],
+    "css": [
+      "assets/pages/pay-later-terms.svelte-47c20dc4.css"
     ]
   },
   "src/routes/baggage-policy.svelte": {
@@ -93,21 +108,15 @@
     ]
   },
   "src/routes/privacy-policy.svelte": {
-    "file": "pages/privacy-policy.svelte-dc9a8965.js",
+    "file": "pages/privacy-policy.svelte-33f073af.js",
     "src": "src/routes/privacy-policy.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-6ea63d49.js"
-    ]
-  },
-  "src/routes/accessibility.svelte": {
-    "file": "pages/accessibility.svelte-2fe3dc74.js",
-    "src": "src/routes/accessibility.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-6ea63d49.js"
+    ],
+    "css": [
+      "assets/pages/privacy-policy.svelte-7b118ffb.css"
     ]
   },
   "src/routes/flight-hotel.svelte": {
@@ -139,20 +148,20 @@
     ]
   },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-bb0bfcde.js",
+    "file": "pages/vacations.svelte-e2c7b95e.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-6ea63d49.js",
       "_BookingWidget-820b3b54.js",
-      "_Subscribe-0127000c.js",
-      "_BlogPosts-7c4c833b.js",
+      "_Subscribe-d08f4a8d.js",
+      "_BlogPosts-d9c0b93c.js",
       "_HotelsIcon-ddcb9645.js"
     ]
   },
   "src/routes/about-us.svelte": {
-    "file": "pages/about-us.svelte-0d691d7e.js",
+    "file": "pages/about-us.svelte-a7dda59f.js",
     "src": "src/routes/about-us.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -170,7 +179,7 @@
     ]
   },
   "src/routes/flights.svelte": {
-    "file": "pages/flights.svelte-2707f7e7.js",
+    "file": "pages/flights.svelte-59bef6a6.js",
     "src": "src/routes/flights.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -178,8 +187,8 @@
       "_vendor-6ea63d49.js",
       "_preload-helper-e4860ae8.js",
       "_BookingWidget-820b3b54.js",
-      "_BlogPosts-7c4c833b.js",
-      "_Subscribe-0127000c.js",
+      "_BlogPosts-d9c0b93c.js",
+      "_Subscribe-d08f4a8d.js",
       "_HotelsIcon-ddcb9645.js"
     ],
     "dynamicImports": [
@@ -187,7 +196,7 @@
     ]
   },
   "src/routes/hotels.svelte": {
-    "file": "pages/hotels.svelte-ddf1fd2d.js",
+    "file": "pages/hotels.svelte-91be2390.js",
     "src": "src/routes/hotels.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -195,8 +204,8 @@
       "_vendor-6ea63d49.js",
       "_preload-helper-e4860ae8.js",
       "_BookingWidget-820b3b54.js",
-      "_BlogPosts-7c4c833b.js",
-      "_Subscribe-0127000c.js",
+      "_BlogPosts-d9c0b93c.js",
+      "_Subscribe-d08f4a8d.js",
       "_HotelsIcon-ddcb9645.js"
     ],
     "dynamicImports": [
@@ -204,13 +213,13 @@
     ]
   },
   "src/routes/blog.svelte": {
-    "file": "pages/blog.svelte-89b8d8ca.js",
+    "file": "pages/blog.svelte-9c584898.js",
     "src": "src/routes/blog.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-6ea63d49.js",
-      "_Subscribe-0127000c.js"
+      "_Subscribe-d08f4a8d.js"
     ]
   },
   "src/routes/faqs.svelte": {
@@ -235,14 +244,14 @@
       "_HotelsIcon-ddcb9645.js"
     ]
   },
-  "_BlogPosts-7c4c833b.js": {
-    "file": "chunks/BlogPosts-7c4c833b.js",
+  "_BlogPosts-d9c0b93c.js": {
+    "file": "chunks/BlogPosts-d9c0b93c.js",
     "imports": [
       "_vendor-6ea63d49.js"
     ]
   },
-  "_Subscribe-0127000c.js": {
-    "file": "chunks/Subscribe-0127000c.js",
+  "_Subscribe-d08f4a8d.js": {
+    "file": "chunks/Subscribe-d08f4a8d.js",
     "imports": [
       "_vendor-6ea63d49.js"
     ]

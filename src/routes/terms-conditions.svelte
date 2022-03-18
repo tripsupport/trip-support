@@ -1,6 +1,4 @@
 <script>
-	import { slide } from 'svelte/transition';
-
 	let isActive = 1;
 	const tocs = [
 		{
@@ -748,7 +746,7 @@
 				</ol>
 			</article>
 		</div>
-		<aside class="hidden col-span-3 sm:block">
+		<aside class="hidden col-span-3 lg:block">
 			<div class="sticky top-4 space-y-4">
 				<section aria-labelledby="who-to-follow-heading">
 					<!-- This example requires Tailwind CSS v2.0+ -->
@@ -756,6 +754,7 @@
 						<!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
 						{#each tocs as toc}
 							<a
+								sveltekit:prefetch
 								href={toc.link}
 								on:click={(isActive = toc.id)}
 								class="flex items-center px-3 py-2 text-sm font-medium rounded-md
@@ -763,10 +762,9 @@
 									? 'bg-gray-100 text-gray-900 '
 									: 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}
 							"
-								transition:slide={{ duration: 1000 }}
 								aria-current={toc.link}
 							>
-								<span class="truncate"> {toc.title} </span>
+								{toc.title}
 							</a>
 						{/each}
 					</nav>

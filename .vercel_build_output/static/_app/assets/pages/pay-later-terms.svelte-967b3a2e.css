@@ -1,0 +1,1 @@
+ol.svelte-1907t1f.svelte-1907t1f{counter-reset:item}ol.svelte-1907t1f>li.svelte-1907t1f{display:block;margin-bottom:2rem}ol.svelte-1907t1f>li.svelte-1907t1f:before{content:counters(item,".") ". ";counter-increment:item;padding-right:8px}p.svelte-1907t1f.svelte-1907t1f{line-height:1.775;font-weight:400;padding:6px 0}p.svelte-1907t1f.svelte-1907t1f:first-child{margin-top:12px}

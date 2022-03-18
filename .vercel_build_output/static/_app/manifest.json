@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-dfb24159.js",
+    "file": "start-d69519e1.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -37,7 +37,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-352575b3.css"
+      "assets/pages/__layout.svelte-7a1aec71.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -50,7 +50,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f9d68e2f.js",
+    "file": "pages/index.svelte-4b12283b.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -75,7 +75,7 @@
     ]
   },
   "src/routes/terms-conditions.svelte": {
-    "file": "pages/terms-conditions.svelte-b2917e7e.js",
+    "file": "pages/terms-conditions.svelte-dce10de3.js",
     "src": "src/routes/terms-conditions.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -83,11 +83,11 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/terms-conditions.svelte-a9d60f0e.css"
+      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
     ]
   },
   "src/routes/pay-later-terms.svelte": {
-    "file": "pages/pay-later-terms.svelte-3a593921.js",
+    "file": "pages/pay-later-terms.svelte-3c7525e7.js",
     "src": "src/routes/pay-later-terms.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -95,7 +95,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-47c20dc4.css"
+      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
     ]
   },
   "src/routes/baggage-policy.svelte": {
@@ -108,7 +108,7 @@
     ]
   },
   "src/routes/privacy-policy.svelte": {
-    "file": "pages/privacy-policy.svelte-33f073af.js",
+    "file": "pages/privacy-policy.svelte-d363ad55.js",
     "src": "src/routes/privacy-policy.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -116,7 +116,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/terms-conditions.svelte-a9d60f0e.css"
+      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
     ]
   },
   "src/routes/flight-hotel.svelte": {
@@ -196,7 +196,7 @@
     ]
   },
   "src/routes/hotels.svelte": {
-    "file": "pages/hotels.svelte-91be2390.js",
+    "file": "pages/hotels.svelte-7f8d5c49.js",
     "src": "src/routes/hotels.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

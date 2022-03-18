@@ -179,10 +179,10 @@
 </div>
 
 <div class="py-10">
-	<div class="max-w-3xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-12 lg:gap-8">
+	<div class="max-w-3xl mx-auto px-4 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-12 lg:gap-8">
 		<div class="lg:col-span-9 ">
-			<article class="max-w-4xl">
-				<p>
+			<article class="max-w-4xl text-sz sm:text-base">
+				<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 					Please read these Terms of Use (this <span class="font-bold">"Agreement"</span>) carefully
 					as it governs the terms and conditions under which Users (<span class="font-bold"
 						>"you"</span
@@ -194,14 +194,14 @@
 					<span class="font-bold">"Websites"</span>).
 				</p>
 
-				<p>
+				<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 					The Websites are owned and operated by Trip Support Inc. (<span class="font-bold"
 						>"Trip Support"</span
 					>, <span class="font-bold">"us"</span>, <span class="font-bold">"we"</span>, or
 					<span class="font-bold">"our"</span>). We operate the Websites and provide them for use
 					subject to compliance with this Agreement.
 				</p>
-				<p>
+				<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 					This Agreement includes our Privacy Policy, which is incorporated herein. Please note that
 					your use of the Websites constitutes your agreement to follow and be bound by the terms of
 					this Agreement and the Privacy Policy. If you object to anything in this Agreement or the
@@ -209,38 +209,38 @@
 				</p>
 
 				<ol class="list-decimal py-10">
-					<li id="definitions" class="font-bold text-2xl">
+					<li id="definitions" class="font-bold text-lg md:text-xl">
 						Definitions
-						<p class="pt-12">
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							<span class="font-bold">"Account(s)"</span> means accounts belonging to and created by
 							Users for the purpose of making purchases and storing information relating to their purchases
 							via the Websites.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							<span class="font-bold">“Trip Support Content”</span> means any data, information, content,
 							records, files, text, images, video, audio, other multimedia, software or other materials
 							that Trip Support makes available to Users through the Websites.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							<span class="font-bold">“User(s)”</span> means all individuals or entities that use, view
 							or access the Websites.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							<span class="font-bold">“User Content”</span> means any data, information, content, records,
 							files, text, images, video, audio or other multimedia, software or other information or
 							material that Users load or transmit through the Websites including, but not limited to,
 							reviews of products.
 						</p>
 					</li>
-					<li id="ctta" class="font-bold text-2xl">
+					<li id="ctta" class="font-bold text-lg md:text-xl">
 						Changes to this Agreement
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							This Agreement, including the Privacy Policy, are subject to change and may be updated
 							by Trip Support, at its sole discretion, from time to time. We will notify you of any
 							changes to this Agreement by posting the new agreement on the Websites, through your
 							Account, and/or by any other method of notice we see fit, including by email.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Changes to this Agreement will be effective immediately upon posting the amended
 							agreement to the Websites and/or your Account. Accordingly, please review this
 							Agreement periodically for any changes. If you do not accept the amendments, you are
@@ -249,21 +249,23 @@
 							of said agreement.
 						</p>
 					</li>
-					<li id="rfuc" class="font-bold text-2xl">
+					<li id="rfuc" class="font-bold text-lg md:text-xl">
 						Rules for User Conduct
 
-						<p>As a condition of your use of the Websites, you agree that:</p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
+							As a condition of your use of the Websites, you agree that:
+						</p>
 						<ul class="list-disc sm:ml-4">
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								By using, viewing, or accessing the Websites, you represent and warrant that you
 								have reached the age of majority in your country of residence;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								By purchasing a product, you represent and warrant that you are a citizen or
 								resident of Canada or the United States;
 							</li>
 
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								Accounts may only be created, accessed, and used by a single, individual User. You
 								are responsible for providing accurate, current and complete information in
 								connection with your Account. You must not share Account credentials with others,
@@ -271,80 +273,80 @@
 								entity. You must notify us immediately upon becoming aware of any breach of security
 								or unauthorized use of your Account;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You shall be solely responsible for all activity associated with your Account
 								credentials;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will in no way copy or otherwise reproduce Trip Support Content.
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You shall not, in connection with any purchase made on or through the Websites,
 								provide the payment information of any individual without that individual’s express
 								authorization;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You shall not, in connection with any purchase made on or through the Websites,
 								provide any payment information that has been fraudulently obtained;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not use the Websites for any purpose that is unlawful under any applicable
 								laws or is otherwise prohibited by this Agreement;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not distribute viruses, harmful code, phishing scams, or any other harmful
 								content or technologies, or otherwise take any actions that do or are intended to
 								harm Trip Support, the Websites, Users, Accounts, third parties, or their interests’
 								or property;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not solicit, harvest, access or otherwise collect information regarding the
 								Websites, Users, Accounts, third parties, or their interests, property, or data not
 								intended for you;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not interfere or attempt to interfere with the proper functioning of the
 								Websites, such as by making any automated or improper use of the Websites, or take
 								any action that we deem to impose or to potentially impose an unreasonable or
 								disproportionately large load on the Website’s servers or network infrastructure;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not bypass any measures we take to restrict access to the Websites,
 								Accounts and Trip Support Content, or use any software, technology, or device to
 								scrape, spider, or crawl the Websites, Accounts and Trip Support Content, or harvest
 								or manipulate data related to same;
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not circumvent or manipulate our fee structure or payment process, or
 								otherwise evade fees owed to Trip Support; and
 							</li>
-							<li class="text-base font-normal p-1.5">
+							<li class="text-tiny font-normal p-1.5">
 								You will not probe, scan or test the vulnerability of our Websites, or breach or
 								attempt to breach security or authentication measures related to the Websites and/or
 								Accounts.
 							</li>
 						</ul>
 					</li>
-					<li id="toaaattw" class="font-bold text-2xl">
+					<li id="toaaattw" class="font-bold text-lg md:text-xl">
 						Termination of Accounts and Access to the Websites
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support shall be entitled to terminate your ability to use, access and view the
 							Websites, your Account and Trip Support Content. To the extent that Users’ conduct, as
 							judged by us in our sole discretion, does not comply with this Agreement, we may
 							immediately terminate your access to all or part of the Websites, disable your
 							Account, and/or seek other remedies.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support may, in its sole discretion, modify, change, suspend or terminate,
 							temporarily or permanently, the Websites and/or Accounts or any part of the
 							aforementioned at any time, for any reason, without any notice or liability to you or
 							any other person.
 						</p>
 					</li>
-					<li id="tsip" class="font-bold text-2xl">
+					<li id="tsip" class="font-bold text-lg md:text-xl">
 						Trip Support’s Intellectual Property
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							The Websites and all intellectual property rights in and to the Websites including,
 							without limitation, intellectual property rights in Trip Support Content, are owned by
 							us and/or our licensors. We and our licensors, as applicable, reserve all our
@@ -353,7 +355,7 @@
 							other intellectual property rights of any kind, whether registered or unregistered
 							anywhere in the world.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Subject to your compliance with this Agreement, Trip Support grants you a limited,
 							revocable, non-exclusive, non-transferable, non-sublicensable licence, to access, view
 							and use the Websites. Nothing in this Agreement grants you any rights in the Websites
@@ -366,13 +368,13 @@
 							non-sublicensable licence provided remains in effect until it is terminated by you or
 							by Trip Support. YOUR LICENSE IS AUTOMATICALLY REVOKED UPON BREACH OF THE AGREEMENT.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support’ trademarks and the related words and logos are our trademarks or trade
 							names. Nothing in this Agreement or within the Websites should be construed as
 							granting any license or right for you to use any such marks or names in any way. We
 							expressly reserve all our trademark rights.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							The Websites and Trip Support Content, including, but not limited to, any data, text,
 							images, photographs, graphics, audio, and the arrangement of the foregoing, including
 							the look and feel of the Websites and Trip Support Content, are protected by
@@ -381,7 +383,7 @@
 							to use them. Trip Support hereby expressly reserves all copyright in and to the
 							Websites and the Trip Support Content.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Users are welcome to copy, reproduce and distribute Trip Support Content, such as
 							itineraries and travel products, for their own personal and informational. You shall
 							not otherwise use, copy, adapt, modify, prepare derivative works based upon,
@@ -392,32 +394,32 @@
 							Agreement.
 						</p>
 					</li>
-					<li id="uc" class="font-bold text-2xl">
+					<li id="uc" class="font-bold text-lg md:text-xl">
 						User Content
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Users retain any and all rights in and to their User Content submitted to us, whether
 							through the Websites, your Account, or otherwise.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							From time to time, however, we may also request your permission to use your User
 							Content for various advertising and marketing purposes. We will not use your User
 							Content unless expressly permitted by you.
 						</p>
 					</li>
-					<li id="privacy" class="font-bold text-2xl">
+					<li id="privacy" class="font-bold text-lg md:text-xl">
 						Privacy
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support will only use the information you provide in accordance with our Privacy
 							Policy. For more information, see our full Privacy Policy, the terms of which are
 							incorporated herein.
 						</p>
 					</li>
-					<li id="tpl" class="font-bold text-2xl">
+					<li id="tpl" class="font-bold text-lg md:text-xl">
 						Third-Party Links
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							The Websites may contain hyperlinks or references to third party products, materials
 							or websites (collectively, <span class="font-bold">“Third-Party Links”</span>). Any
 							such embedment, hyperlink or reference is provided for your convenience only. The
@@ -429,13 +431,13 @@
 							strongly advise you to read the terms and conditions and privacy policies of any
 							Third-Party Links.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							For example, we employ third-party companies to process payment and complete purchases
 							made on the Websites. All data and information shared for the purpose of completing a
 							purchase is shared directly with the third-party and is subject to the privacy policy
 							and by the terms and conditions of that third-party.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							<b
 								>Further, please note that some Third-Party Links may be affiliated and any
 								purchases made through said Third-Party Links will result in a percentage of that
@@ -443,7 +445,7 @@
 								or through unaffiliated links, and a royalty will not be paid to Trip Support.
 							</b>
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support expressly disclaims any liability, damage or loss, directly or
 							indirectly, alleged or derived from the use, access and/or viewing of Third-Party
 							Links. Further, Users hereby agree to hold Trip Support harmless from any liability
@@ -451,10 +453,10 @@
 							within the Website.
 						</p>
 					</li>
-					<li id="tps" class="font-bold text-2xl">
+					<li id="tps" class="font-bold text-lg md:text-xl">
 						Third-Party Suppliers
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							The products offered for sale on the Websites are those of third-party suppliers,
 							including but not limited to hotels, cruise lines, and vacation resorts (collectively,
 							the “Suppliers”). Trip Support advertises and makes available for purchase these
@@ -463,10 +465,10 @@
 							Suppliers’ acts and/or omissions.
 						</p>
 					</li>
-					<li id="tr" class="font-bold text-2xl">
+					<li id="tr" class="font-bold text-lg md:text-xl">
 						Travel Requirements
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Users purchasing products on the Websites are responsible for informing themselves of
 							any travel requirements or restrictions affecting their destination, mode of transport
 							or product generally. Trip Support does not warrant a purchaser’s eligibility to
@@ -474,16 +476,16 @@
 							the Websites is not and should not be treated as confirmation of the User’s
 							eligibility and/or capacity to take advantage of the purchased product.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support will not offer refunds to Users who failed to make the necessary
 							inquiries into travel requirements and restrictions prior to purchase and are, as a
 							result, unable to take advantage of their purchased product.
 						</p>
 					</li>
-					<li id="naad" class="font-bold text-2xl">
+					<li id="naad" class="font-bold text-lg md:text-xl">
 						Network Access and Devices
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							You are responsible for obtaining the data network access necessary to use the
 							Websites and/or your Account. Your mobile network’s data rates may apply if you access
 							or use the Websites and/or Account from a wireless-enabled device. We do not guarantee
@@ -493,10 +495,10 @@
 							communications for which we are not responsible.
 						</p>
 					</li>
-					<li id="promotions" class="font-bold text-2xl">
+					<li id="promotions" class="font-bold text-lg md:text-xl">
 						Promotions
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							From time-to-time, Trip Support may provide promotions, including but not limited to
 							promotional codes redeemable for discounts on products. All promotions are governed by
 							this Agreement and any such terms and conditions that are made known at the time the
@@ -504,26 +506,26 @@
 							Websites, you confirm your agreement to and acceptance of this Agreement and the terms
 							and conditions of the promotion.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							All email addresses and phone numbers provided on the website, social media channels,
 							Trip Support’s Marketing ads and promos will be used for marketing and promotional
 							purposes.
 						</p>
 					</li>
-					<li id="parp" class="font-bold text-2xl">
+					<li id="parp" class="font-bold text-lg md:text-xl">
 						Payment and Refund Policy
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							All prices displayed on the Websites are advertised in. Prices are subject to change.
 							The Websites will be updated to reflect any such changes.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Payment can be made in full via credit card, VISA Debit or Debit Mastercard,
 							e-transfer to the address provided at the time of purchase, cash delivered to the Trip
 							Support office, or wire transfer (in which case additional fees may apply).
 							Additionally, U.S. customers may choose to pay by Zelle™.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Alternatively, select purchases may be paid for in installments according to an
 							installment plan determined at the time of purchase. To be eligible for this “Book
 							Now, Pay Later” payment structure, the departure date associated with the product
@@ -533,25 +535,27 @@
 							transfer (in which case additional fees may apply). U.S. Customers may additionally
 							pay instalments via the Automated Clearing House network, Venmo™ or Zelle™.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Users are responsible for the accuracy of their billing information. In the event that
 							we are unable to verify the billing information provided, your purchase may not be
 							processed. No compensation will be available in the event of a price increase and/or
 							missed installment payment as a result of incomplete or inaccurate billing information
 							provided by the User.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							By completing your purchase, you authorize Trip Support to process the reservation of
 							your purchased product, with the relevant third-party supplier, on your behalf.
 						</p>
-						<p>All applicable taxes are charged and collected at the time of purchase.</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
+							All applicable taxes are charged and collected at the time of purchase.
+						</p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							In the event of a price update in the period between a User’s browsing of the Websites
 							and the completion of a purchase, the price displayed on the purchase page will
 							prevail. Partial refunds as compensation for the reduction of the price of a product
 							following a purchase are not available.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Upon receipt of payment, you will receive an email with confirmation of your purchase
 							and details of your payment for your records. All purchases are subject to
 							availability at the time the purchase is completed. An e-mail confirmation confirms
@@ -559,19 +563,19 @@
 							for reviewing the information contained within the e-mail for accuracy and immediately
 							contacting us in the event of an error.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Additional fees, including but not limited to baggage fees and seat selection fees, if
 							not expressly included in the purchase price, may apply and may be paid to the
 							supplier at a later date. You are encouraged to carefully review a product’s
 							inclusions before completing your purchase.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							By completing a purchase, you agree to the terms and conditions of the tour
 							company/operator, airline, cruise line, car or hotel or other supplier providing the
 							product you are purchasing. These terms and conditions are made available during the
 							purchase process.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Further, cancellation and refund availability is governed by each product’s terms and
 							conditions, as displayed to the purchaser at the time of purchase. Any refund
 							restriction applies equally to purchasers who chose at the time of purchase to pay in
@@ -581,26 +585,26 @@
 							apply and may be owed to one or both of Trip Support and the Supplier.
 						</p>
 					</li>
-					<li id="cs" class="font-bold text-2xl">
+					<li id="cs" class="font-bold text-lg md:text-xl">
 						Customer Support
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Customer support is available by contacting Trip Support via e-mail at
 							<a href="#" class="text-rose-600 hover:text-rose-500">support@tripsupport.com</a> or calling.
 						</p>
 					</li>
-					<li id="ur" class="font-bold text-2xl">
+					<li id="ur" class="font-bold text-lg md:text-xl">
 						User Relationships
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Nothing in this Agreement shall in any way be construed as forming a joint venture,
 							partnership, agency, or employment relationship between Trip Support and you.
 						</p>
 					</li>
-					<li id="dorcaw" class="font-bold text-2xl">
+					<li id="dorcaw" class="font-bold text-lg md:text-xl">
 						Disclaimers of Representations, Conditions and Warranties
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							THE WEBSITES AND TRIP SUPPORT CONTENT ARE PROVIDED STRICTLY ON AN “AS IS” AND “AS
 							AVAILABLE” BASIS WITHOUT REPRESENTATION, WARRANTY, GUARANTEE OR CONDITION OF ANY KIND,
 							WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE. TRIP SUPPORT EXPRESSLY EXCLUDES ALL
@@ -608,7 +612,7 @@
 							TRIP SUPPORT CONTENT, WHETHER EXPRESS OR IMPLIED BY COMMON LAW OR UNDER STATUTE ARE
 							HEREBY EXCLUDED TO THE FULLEST EXTENT PERMITTED BY LAW.
 						</p>
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							WITHOUT LIMITING THE FOREGOING, TRIP SUPPORT EXPLICITLY DISCLAIMS ANY REPRESENTATIONS,
 							WARRANTIES OR GUARANTEES OF: (I) QUALITY, MERCHANTABILITY, OR FITNESS OF THE WEBSITES
 							AND TRIP SUPPORT CONTENT FOR A PARTICULAR PURPOSE; (II) NON-INFRINGEMENT OF THE
@@ -621,10 +625,10 @@
 							AVAILABLE ARE FREE FROM VIRUSES, MALWARE OR OTHER SIMILAR HARMFUL SOFTWARE CODE.
 						</p>
 					</li>
-					<li id="lol" class="font-bold text-2xl">
+					<li id="lol" class="font-bold text-lg md:text-xl">
 						Limitation of Liability
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							IN NO EVENT WILL TRIP SUPPORT AND/OR ITS OFFICERS, DIRECTORS, SHAREHOLDERS, EMPLOYEES,
 							SUBSIDIARIES, AFFILIATES, SUCCESSORS, ASSIGNEES, AGENTS, REPRESENTATIVES, LICENSORS,
 							INDEPENDENT CONTRACTORS, OR CORPORATE PARTNERS BE LIABLE FOR DAMAGES WHATSOEVER,
@@ -634,10 +638,10 @@
 							THE USE OF, ACCESS TO OR RELIANCE ON THE WEBSITES AND TRIP SUPPORT CONTENT.
 						</p>
 					</li>
-					<li id="indemnification" class="font-bold text-2xl">
+					<li id="indemnification" class="font-bold text-lg md:text-xl">
 						Indemnification
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							You agree to indemnify, defend, release and hold harmless Trip Support, its officers,
 							directors, employees, agents, affiliates, licensors and suppliers from and against all
 							losses, liabilities, expenses, damages and costs, including reasonable legal fees,
@@ -650,10 +654,10 @@
 							such claims.
 						</p>
 					</li>
-					<li id="survival" class="font-bold text-2xl">
+					<li id="survival" class="font-bold text-lg md:text-xl">
 						Survival
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							The following Sections, together with any other provision of this Agreement which
 							expressly or by its nature survives termination or expiration, or which contemplates
 							performance or observance subsequent to termination or expiration of this Agreement,
@@ -662,20 +666,20 @@
 							limitations of liability.
 						</p>
 					</li>
-					<li id="ea" class="font-bold text-2xl">
+					<li id="ea" class="font-bold text-lg md:text-xl">
 						Entire Agreement
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							This Agreement as well as Trip Support’s Privacy Policy shall constitute the entire
 							agreement of the parties in relation to the use of the Websites and Trip Support
 							Content, and this Agreement shall supersede and replace any and all prior oral or
 							written understandings or agreements between Trip Support and you.
 						</p>
 					</li>
-					<li id="severability" class="font-bold text-2xl">
+					<li id="severability" class="font-bold text-lg md:text-xl">
 						Severability
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							If any term or condition of this Agreement should be determined to be illegal, invalid
 							or otherwise unenforceable, then to the extent such term or condition is illegal,
 							invalid or unenforceable, it shall be severed and deleted from this Agreement and the
@@ -683,10 +687,10 @@
 							binding and enforceable.
 						</p>
 					</li>
-					<li id="assignment" class="font-bold text-2xl">
+					<li id="assignment" class="font-bold text-lg md:text-xl">
 						Assignment
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							You may not assign or transfer this Agreement, by operation of law or otherwise,
 							without Trip Support’ prior written consent. Any attempt by you to assign or transfer
 							this Agreement, without such consent, will be null and of no effect. Trip Support may
@@ -696,20 +700,20 @@
 							representatives, successors and permitted assigns.
 						</p>
 					</li>
-					<li id="aaw" class="font-bold text-2xl">
+					<li id="aaw" class="font-bold text-lg md:text-xl">
 						Amendments and Waivers
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							No amendment or waiver of any provision of this Agreement shall be binding on either
 							party unless consented to in writing by such party. No waiver of any provision of this
 							Agreement shall constitute a waiver of any other provision, nor shall any waiver
 							constitute a continuing waiver unless otherwise provided.
 						</p>
 					</li>
-					<li id="fm" class="font-bold text-2xl">
+					<li id="fm" class="font-bold text-lg md:text-xl">
 						Force Majeure
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							Trip Support shall not be liable for any breach of this Agreement by it to the extent
 							that such breach arises from any act of God, war, national emergency, act of
 							terrorism, riot, civil commotion, fire, explosion, flood, storm, epidemic, power
@@ -717,10 +721,10 @@
 							Support.
 						</p>
 					</li>
-					<li id="gl" class="font-bold text-2xl">
+					<li id="gl" class="font-bold text-lg md:text-xl">
 						Governing Law
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							This Agreement is governed by and interpreted and enforced in accordance with the laws
 							of the Province of Ontario and the federal laws of Canada applicable therein. By
 							agreeing to this Agreement, you hereby irrevocably consent to the exclusive
@@ -733,10 +737,10 @@
 							force and effect.
 						</p>
 					</li>
-					<li id="ci" class="font-bold text-2xl">
+					<li id="ci" class="font-bold text-lg md:text-xl">
 						Contact Information
 
-						<p>
+						<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 							If you have questions or concerns about this Agreement or our Privacy Policy, you may
 							contact us at <a href="#" class="text-rose-600 hover:text-rose-500"
 								>info@tripsupport.com</a
@@ -757,14 +761,14 @@
 								sveltekit:prefetch
 								href={toc.link}
 								on:click={(isActive = toc.id)}
-								class="flex items-center px-3 py-2 text-sm font-medium rounded-md
+								class="flex items-center px-3 py-1.5 text-sm font-medium rounded-md
 							{isActive === toc.id
 									? 'bg-gray-100 text-gray-900 '
 									: 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}
 							"
 								aria-current={toc.link}
 							>
-								{toc.title}
+								<span class="truncate">{toc.title}</span>
 							</a>
 						{/each}
 					</nav>
@@ -790,10 +794,9 @@
 	}
 
 	p {
-		font-size: 1.05rem;
-		line-height: 1.75;
+		line-height: 1.775;
 		font-weight: 400;
-		padding: 7px 0;
+		padding: 6px 0;
 	}
 
 	p:first-child {

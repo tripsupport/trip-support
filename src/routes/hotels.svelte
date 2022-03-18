@@ -40,7 +40,7 @@
 	<section class="relative" aria-labelledby="contact-heading">
 		<div class="flex flex-col rounded-xl bg-white w-full ">
 			<nav
-				class=" overflow-x-scroll overflow-hidden flex items-center sm:justify-between border-b border-gray-200 space-x-8"
+				class=" overflow-x-scroll lg:overflow-hidden flex items-center sm:justify-between border-b border-gray-200 space-x-8"
 			>
 				<button
 					on:click={() => (activeTab = 'canada')}

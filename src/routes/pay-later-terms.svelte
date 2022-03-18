@@ -36,13 +36,13 @@
 <div class="bg-white">
 	<div class="space-y-16 container xl:max-w-7xl mx-auto px-4 pt-12 lg:px-8 ">
 		<!-- Blog Post -->
-		<article class="max-w-4xl">
-			<p>
+		<article class="max-w-4xl text-sz sm:text-base">
+			<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 				Trip Support offers flexible payment plans via installment payments so you can book your
 				travel plans more comfortably; however, all purchases are final and non-refundable.
 			</p>
 
-			<p>
+			<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 				By selecting the Trip Support Book Now Pay Later service (the <span class="font-bold"
 					>“Service”</span
 				>), you expressly agree to be bound by these terms of use (these
@@ -50,40 +50,40 @@
 			</p>
 
 			<ol class="list-decimal py-10">
-				<li class="font-bold text-2xl">
+				<li class="font-bold text-lg md:text-xl">
 					Consent and Promise to Pay
-					<p class="pt-12">
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						The travel financing agreement (the <span class="font-bold">“Agreement”</span>) is
 						between the borrower, referred to as “you” and “your” throughout these Terms and Trip
 						Support Inc., referred to as “Trip Support,” “us”, “we”, or “our.”
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						Before completing any booking through our Service, you promise to repay us in connection
 						with the funds disbursed on your behalf, in accordance with these Terms and your
 						Agreement, and any other supplements to your Agreement as required by law.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						If you do not agree to these Terms, you must not use the Service. Furthermore, if you
 						require any additional details you agree to contact us prior to completing any booking
 						using the Service.
 					</p>
 				</li>
-				<li class="font-bold text-2xl">
+				<li class="font-bold text-lg md:text-xl">
 					Financing Terms
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						You agree to carefully review the following key financing terms relating to your
 						Agreement with Trip Support prior to completing any booking using our Service. You also
 						agree to retain a copy of the following financing terms and this Agreement for your own
 						future reference.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						You are entitled to pay the full outstanding balance under your Agreement with Trip
 						Support at any time without any prepayment charge or penalty.
 					</p>
-					<ol class="list-decimal ml-8 mt-4">
+					<ol class="list-decimal ml-4 sm:ml-8 mt-4">
 						<li>
 							Initial Disclosure Statement
-							<p>
+							<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 								The below Initial Disclosure Statement is incorporated by reference to this
 								Agreement with Trip Support. We are required by law to supplement this disclosure
 								statement if changes to the below statement are made (the <span class="font-bold"
@@ -242,7 +242,7 @@
 								</div>
 							</div>
 
-							<p>
+							<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 								The dates and payment options listed prior to finalizing any booking using the
 								Service are based on reasonable estimates gathered at the time of your purchase.
 								This includes all total amounts at the time of completing your travel booking. Your
@@ -252,29 +252,29 @@
 						</li>
 					</ol>
 				</li>
-				<li class="font-bold text-2xl">
+				<li class="font-bold text-lg md:text-xl">
 					Default and Deferral on Payment Plans
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						If you fail to make any payment when due as required by the Service and these Terms, you
 						will be in default of your Agreement with Trip Support. A default will automatically
 						terminate the Service and may result in the cancellation of your travel booking.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						By accepting this Agreement and purchasing travel plans using the Service, you give us
 						the right to send your outstanding account for collection and to pursue all legal means
 						possible. You also expressly agree to reimburse Trip Support for all cost including but
 						not limited to legal costs incurred associated with collecting any outstanding payment.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						Upon the purchase of any travel booking using the Service, you expressly agree that you
 						will not apply for any chargebacks or stop payments from your card issuer or banking
 						institution at any time throughout the duration of your Agreement with Trip Support and
 						indefinitely thereafter until such time that the total amount owing is paid off.
 					</p>
 				</li>
-				<li class="font-bold text-2xl">
+				<li class="font-bold text-lg md:text-xl">
 					Interest and Fees
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						Trip Support will apply interest of 60% on any overdue account payment continuing for
 						more than 7 days. Trip Support will also deactivate your account in the event of default
 						spanning over the 7-day period. To avoid termination of our Service and the possibility
@@ -283,26 +283,26 @@
 							class="font-bold">“Reactivation Fee”</span
 						>) to continue using our Service.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						If you do not wish to continue using our Service but want to avoid cancellation of your
 						travel booking in the event of default, you must pay the entire outstanding amount
 						including interest within 7 days of a missed payment.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						If you agree with these Terms and intend to be legally bound by them, please click on
 						the “I accept” button below. If you do not agree with these Terms, click on the “I
 						decline” button below. You may only proceed to complete your booking using the Service
 						if you accept these Terms.
 					</p>
 				</li>
-				<li class="font-bold text-2xl">
+				<li class="font-bold text-lg md:text-xl">
 					Voluntary and Involuntary Refund
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						In case of voluntary cancellation of a fully non-refundable product, all instalments of
 						the Book Now Pay Later service must be completed as scheduled, given the product is
 						acquired and paid in full to the supplier by Trip Support Inc. at the time of purchase.
 					</p>
-					<p>
+					<p class="pt-6 sm:pt-12 text-tiny sm:text-[17px]">
 						The first instalment and any incurred late fee (if any) of the Book Now Pay Later
 						service are fully non-refundable in either cases of voluntary or involuntary
 						cancelations. This includes ad hoc schedule changes or cancellations by suppliers.
@@ -319,21 +319,20 @@
 	ol {
 		counter-reset: item;
 	}
-	li {
+	ol > li {
 		display: block;
 		margin-bottom: 2rem;
 	}
-	li:before {
+	ol > li:before {
 		content: counters(item, '.') '. ';
 		counter-increment: item;
 		padding-right: 8px;
 	}
 
 	p {
-		font-size: 1.05rem;
-		line-height: 1.75;
+		line-height: 1.775;
 		font-weight: 400;
-		padding: 8px 0;
+		padding: 6px 0;
 	}
 
 	p:first-child {

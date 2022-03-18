@@ -1,1 +1,0 @@
-ol.svelte-5yiqp2{counter-reset:item}li.svelte-5yiqp2{display:block;margin-bottom:2rem}li.svelte-5yiqp2:before{content:counters(item,".") ". ";counter-increment:item;padding-right:8px}p.svelte-5yiqp2{font-size:1.05rem;line-height:1.75;font-weight:400;padding:8px 0}p.svelte-5yiqp2:first-child{margin-top:12px}

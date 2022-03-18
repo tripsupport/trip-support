@@ -17,7 +17,7 @@
 		<div class="hidden sm:flex col-span-6">
 			<div class="-mt-10">
 				<img
-					class="hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full rounded-xl"
+					class="hidden h-56 max-w-7xl object-cover sm:h-72 md:h-full lg:block lg:w-full lg:h-full "
 					src="images/hero/hotair-bg.jpg"
 					alt=""
 				/>

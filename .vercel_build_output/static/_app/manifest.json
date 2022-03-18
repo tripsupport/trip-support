@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d69519e1.js",
+    "file": "start-170199f7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -83,7 +83,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
+      "assets/pages/terms-conditions.svelte-bac2b551.css"
     ]
   },
   "src/routes/pay-later-terms.svelte": {
@@ -95,7 +95,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
+      "assets/pages/terms-conditions.svelte-bac2b551.css"
     ]
   },
   "src/routes/baggage-policy.svelte": {
@@ -116,7 +116,7 @@
       "_vendor-6ea63d49.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
+      "assets/pages/terms-conditions.svelte-bac2b551.css"
     ]
   },
   "src/routes/flight-hotel.svelte": {
@@ -148,7 +148,7 @@
     ]
   },
   "src/routes/vacations.svelte": {
-    "file": "pages/vacations.svelte-e2c7b95e.js",
+    "file": "pages/vacations.svelte-97a5675a.js",
     "src": "src/routes/vacations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

@@ -8,8 +8,8 @@
 		</div>
 
 		<div class="flex space-x-8">
-			<a href="/accessibility" class="text-xs font-medium text-gray-500 hover:text-gray-600">
-				Accessibility
+			<a href="/terms-conditions" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+				Terms & Conditions
 			</a>
 
 			<a href="/privacy-policy" class="text-xs font-medium text-gray-500 hover:text-gray-600">

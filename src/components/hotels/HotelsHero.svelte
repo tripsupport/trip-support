@@ -12,8 +12,7 @@
 					<span class="flex">Longing for a Getaway?</span>
 				</h1>
 				<p class="prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700">
-					You’re in luck—we offer top hotels wherever you’re headed, from boutique and luxury to
-					beachfront accommodations.
+					We will find the hotel that best suits you
 				</p>
 			</div>
 		</div>

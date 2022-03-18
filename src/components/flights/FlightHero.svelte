@@ -34,7 +34,7 @@
 					Amazing Flight Deals
 				</h1>
 				<p class="hidden md:flex prose text-sm sm:text-lg max-w-sm font-semibold text-slate-700">
-					More options, our best prices, less headaches. Secure your ticket now.
+					Fly anywhere in the world stress-free
 				</p>
 			</div>
 		</div>

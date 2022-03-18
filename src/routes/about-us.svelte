@@ -144,11 +144,7 @@
 					class="pattern-dots-xl opacity-10 absolute bottom-0 right-0 w-48 h-96 transform translate-x-10 translate-y-10"
 				/>
 				<!-- svelte-ignore a11y-img-redundant-alt -->
-				<img
-					src="logo.svg"
-					alt="Preview Feature Image"
-					class="relative rounded-lg shadow-xl mx-auto"
-				/>
+				<img src="logo.svg" alt="Preview Feature Image" class="relative  mx-auto" />
 			</div>
 		</div>
 	</div>
@@ -160,7 +156,7 @@
 		<div class="h-full w-full xl:grid xl:grid-cols-2">
 			<div class="h-full xl:relative xl:col-start-2">
 				<img
-					class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+					class="h-full w-full object-cover object-center opacity-40 xl:absolute xl:inset-0"
 					src="/images/about/tripsupport-team.jpg"
 					alt="People working on laptops"
 				/>

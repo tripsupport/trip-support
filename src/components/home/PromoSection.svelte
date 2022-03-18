@@ -4,14 +4,12 @@
 		<div class="bg-gradient-to-r from-blue-900 to-rose-500 ">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="relative pt-48 pb-16 sm:pb-24">
-					<div class="sm:mx-auto sm:px-4">
+					<div class="sm:px-4 sm:max-w-xl">
 						<h2
 							id="sale-heading"
 							class="hidden sm:block text-4xl font-extrabold sm:leading-snug tracking-tight sm:tracking-normal text-white md:text-5xl"
 						>
-							Vacation Deals
-							<br />
-							upto 50% off
+							Vacation Deals, Offers and Packages
 						</h2>
 						<h2
 							id="sale-heading"
@@ -21,7 +19,9 @@
 						</h2>
 						<div class="mt-6 text-base">
 							<a href="javascript:void(0)" class="font-semibold text-white"
-								>View our promotions<span aria-hidden="true"> &rarr;</span></a
+								>See what promotions are currently available<span aria-hidden="true">
+									&rarr;</span
+								></a
 							>
 						</div>
 					</div>

@@ -33,7 +33,7 @@
 			<p
 				class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
 			>
-				Explore destinations currently popular with travellers across Canada
+				Explore destinations currently popular with travelers across Canada.
 			</p>
 		</div>
 	</section>

@@ -8,7 +8,7 @@
 					Vacation packages
 				</h1>
 				<p class="prose text-sm sm:text-lg md:max-w-sm font-semibold text-slate-700">
-					Looking for vacations? Save on vacations that include flight.
+					All-inclusive and affordable vacations
 				</p>
 			</div>
 		</div>

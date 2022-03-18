@@ -2,7 +2,7 @@
 <div class="relative bg-white overflow-hidden">
 	<div class="max-w-7xl mx-auto">
 		<div
-			class="relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-4xl lg:w-full lg:pb-12 xl:pb-12"
+			class="relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-5xl lg:w-full lg:pb-12 xl:pb-12"
 		>
 			<svg
 				class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
@@ -14,7 +14,7 @@
 				<polygon points="50,0 100,0 50,100 0,100" />
 			</svg>
 
-			<div class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8 ">
+			<div class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-4 ">
 				<div class="text-left">
 					<div class="sm:flex sm:items-baseline sm:justify-between">
 						<h1
@@ -25,16 +25,16 @@
 						</h1>
 
 						<a
-							href="javascript:void(0)"
+							href="/flights#popular_flights"
 							class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
 							>Browse all Popular Flight Deals<span aria-hidden="true"> &rarr;</span></a
 						>
 					</div>
-					<p
-						class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
-					>
-						Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
+					<p class="mt-2 text-base text-gray-700 sm:mt-3  md:mt-3 md:text-md lg:mx-0">
+						Trip Support is here to connect you to the rest of the world at a rate you can afford.
+						We offer tons of flights packages and other flight deals that are tailored to your wants
+						and needs as a traveller. All you need to do is pick a flight that works for you, and
+						we’ll do the rest.
 					</p>
 
 					<div class="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-3 sm:gap-y-10 ">
@@ -272,7 +272,7 @@
 	</div>
 	<div class="sm:hidden px-4">
 		<a
-			href="javascript:void(0)"
+			href="/flights#popular_flights"
 			class="block text-sm font-semibold text-rose-600 hover:text-rose-400"
 			>Browse all vacation destinations<span aria-hidden="true"> &rarr;</span></a
 		>

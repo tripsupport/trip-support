@@ -36,15 +36,15 @@
 				class="relative bg-white lg:col-start-1 lg:row-start-1 lg:col-span-12 lg:rounded-xl lg:grid lg:grid-cols-10 lg:items-center  shadow-xl"
 			>
 				<div
-					class="relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
+					class="relative max-w-md mx-auto py-8 px-4 space-y-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-4xl lg:p-0 lg:col-start-4 lg:col-span-6"
 				>
 					<h2 class="text-2xl font-extrabold text-slate-900" id="join-heading">
-						Sign up today, we’ve got deals to share!
+						Sign up today. We’ve got deals to share!
 					</h2>
 
 					<p class="text-sm font-medium text-slate-900 ">
-						Members access great rates and savings. Sign up to get email updates when restrictions
-						change. And discover the best deals to get you there.
+						Become a member and gain access to all of our great rates and savings. Sign up to get
+						email updates on upcoming deals and events.
 					</p>
 					<form action="#" method="post" id="revue-form" name="revue-form" target="_blank">
 						<div class="flex items-end mb-3">
@@ -83,10 +83,11 @@
 							</div>
 						</div>
 						<div class="text-sm text-slate-900 revue-form-footer ">
-							By subscribing, you agree with Revue’s <a
+							By subscribing, you agree with Revue’s
+							<a
 								target="_blank"
 								rel="nofollow"
-								href="https://www.getrevue.co/terms"
+								href="/terms-conditions"
 								class="text-slate-900 font-bold hover:underline">Terms of Service</a
 							>
 							and

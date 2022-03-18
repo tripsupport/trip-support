@@ -4,7 +4,7 @@
 	// import Hero from '../../components/home/Hero.svelte';
 </script>
 
-<header classn="relative overflow-hidden">
+<header class="relative overflow-hidden">
 	<AlertCovid />
 	<MainNav />
 	<!-- <Hero /> -->

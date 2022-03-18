@@ -8,17 +8,20 @@
 			</h1>
 
 			<a
-				href="javascript:void(0)"
+				href="/blog"
 				class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
 				>Browse all Blog Posts<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>
-		<p
-			class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
-		>
-			Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
-			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
-		</p>
+
+		<div class="max-w-4xl">
+			<p class="mt-2 text-base text-gray-700 sm:mt-3  md:mt-3 md:text-md lg:mx-0">
+				Have trouble deciding where you want to spend your dream vacation? Don’t worry, we can help
+				you with that too! From listing the best hotel deals in Europe to the top attractions in
+				South Korea, Trip Support is home to countless articles specifically dedicated to helping
+				you discover your dream destination.
+			</p>
+		</div>
 	</div>
 
 	<div

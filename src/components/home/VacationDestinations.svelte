@@ -23,17 +23,19 @@
 			</h1>
 
 			<a
-				href="javascript:void(0)"
+				href="/vacations#popular_vacations"
 				class="hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"
 				>Browse all Vacation Deals<span aria-hidden="true"> &rarr;</span></a
 			>
 		</div>
-		<p
-			class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
-		>
-			Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
-			sunt amet fugiat veniam occaecat fugiat aliqua occaecat fugiat aliqua.
-		</p>
+		<div class="max-w-5xl">
+			<p class="mt-2 text-base text-gray-700 sm:mt-3  md:mt-3 md:text-md lg:mx-0">
+				The world is filled with many wonderful and exciting places great for spending a long
+				overdue vacation. Our goal is to make vacationing in these wonderful and exciting places
+				more affordable and accessible to every Canadian through our book now, pay later payment
+				plan.
+			</p>
+		</div>
 
 		<div class="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
 			<div

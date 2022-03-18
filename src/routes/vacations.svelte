@@ -22,7 +22,7 @@
 
 <div class="mx-auto max-w-7xl p-6">
 	<!-- Heading -->
-	<section class="relative mb-6">
+	<section id="popular_vacations" class="relative mb-6">
 		<div class="text-left">
 			<div class="sm:flex sm:items-baseline sm:justify-between">
 				<h1 class="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
@@ -30,11 +30,12 @@
 					<!-- <span class="block text-indigo-600 xl:inline">Book Now</span> -->
 				</h1>
 			</div>
-			<p
-				class="mt-2 text-md text-gray-500 sm:mt-3 sm:text-md sm:max-w-prose md:mt-3 md:text-md lg:mx-0"
-			>
-				Special offers from resorts and hotels across the Americas
-			</p>
+			<div class="max-w-5xl">
+				<p class="mt-2 text-base text-gray-700 sm:mt-3  md:mt-3 md:text-md lg:mx-0">
+					Special offers from resorts and hotels across North America, South America, the Caribbean,
+					Europe, Africa, the Middle East, and Asia.
+				</p>
+			</div>
 		</div>
 	</section>
 	<section class="relative" aria-labelledby="contact-heading">

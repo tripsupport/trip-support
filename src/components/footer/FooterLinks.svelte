@@ -1,3 +1,21 @@
+<script>
+	const vacationDeals = [
+		{ name: 'Spring Vacations', href: '/spring-vacations' },
+		{ name: 'Winter Vacations', href: '/winter-vacations' },
+		{ name: 'Summer Vacations', href: '/summer-vacations' },
+		{ name: 'Fall Vacations', href: '/fall-vacations' },
+		{ name: 'Group Travel', href: '/group-travel' }
+	];
+
+	const destinations = [
+		{ name: 'Westjet Vacations', href: '/westjet-vacations' },
+		{ name: 'Porter Vacations', href: '/porter-vacations' },
+		{ name: 'sunwing Vacations', href: '/sunwing-vacations' },
+		{ name: 'sunquest Vacations', href: '/sunquest-vacations' },
+		{ name: 'signature Vacations', href: '/signature-vacations' }
+	];
+</script>
+
 <div class="mx-auto max-w-7xl py-2 px-4 sm:px-6 sm:py-8 lg:py-20 lg:px-8 lg:pb-8">
 	<div class="mt-12 grid grid-cols-6 gap-8 xl:col-span-12 xl:mt-0">
 		<div class="col-span-3 sm:col-span-2 lg:col-span-1">
@@ -5,86 +23,34 @@
 				Vacation Deals
 			</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class=" capitalize text-slate-600 text-sm hover:text-gray-900"
-						>Spring Vacations
-					</a>
-				</li>
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Winter Vacations</a
-					>
-				</li>
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Summer Vacations</a
-					>
-				</li>
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Fall Vacations</a
-					>
-				</li>
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Group Travel</a
-					>
-				</li>
+				{#each vacationDeals as deal}
+					<li>
+						<a
+							sveltekit:prefetch
+							href={deal.href}
+							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
+							{deal.name}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</div>
 
 		<div class="col-span-3 sm:col-span-2 lg:col-span-1">
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">Destinations</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Westjet Vacations</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Porter Vacations</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Sunwing Vacations</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Sunquest Vacations</a
-					>
-				</li>
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Signature Vacations</a
-					>
-				</li>
+				{#each destinations as dest}
+					<li>
+						<a
+							sveltekit:prefetch
+							href={dest.href}
+							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
+							{dest.name}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</div>
 
@@ -212,8 +178,8 @@
 				<li>
 					<a
 						sveltekit:prefetch
-						href="baggage-policy"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">Baggage policy</a
+						href="/customer-support"
+						class="capitalize text-slate-600 text-sm hover:text-gray-900">customer support</a
 					>
 				</li>
 				<li>

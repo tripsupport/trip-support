@@ -8,15 +8,32 @@
 		</div>
 
 		<div class="flex space-x-8">
-			<a href="/terms-conditions" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+			<a
+				sveltekit:prefetch
+				href="/terms-conditions"
+				class="text-xs font-medium text-gray-500 hover:text-gray-600"
+			>
 				Terms & Conditions
 			</a>
 
-			<a href="/privacy-policy" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+			<a
+				sveltekit:prefetch
+				href="/privacy-policy"
+				class="text-xs font-medium text-gray-500 hover:text-gray-600"
+			>
 				Privacy Policy
 			</a>
+			<a
+				sveltekit:prefetch
+				href="baggage-policy"
+				class="text-xs font-medium text-gray-500 hover:text-gray-600">Baggage policy</a
+			>
 
-			<a href="/pay-later-terms" class="text-xs font-medium text-gray-500 hover:text-gray-600">
+			<a
+				sveltekit:prefetch
+				href="/pay-later-terms"
+				class="text-xs font-medium text-gray-500 hover:text-gray-600"
+			>
 				Pay Later Terms
 			</a>
 		</div>

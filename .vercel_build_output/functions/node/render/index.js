@@ -1638,10 +1638,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry19 = this._queue.shift();
-              this._queueTotalSize -= entry19.byteLength;
+              const entry30 = this._queue.shift();
+              this._queueTotalSize -= entry30.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry19.buffer, entry19.byteOffset, entry19.byteLength);
+              const view = new Uint8Array(entry30.buffer, entry30.byteOffset, entry30.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5419,7 +5419,7 @@ var init_install_fetch = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-c9c8dd9a.js
+// .svelte-kit/output/server/chunks/index-c287c2ee.js
 function noop2() {
 }
 function run(fn) {
@@ -5586,7 +5586,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css22) => css22.code).join("\n"),
+          code: Array.from(result.css).map((css33) => css33.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5604,8 +5604,8 @@ function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key2) => style_object[key2]).map((key2) => `${key2}: ${style_object[key2]};`).join(" ");
 }
 var current_component, boolean_attributes, invalid_attribute_name_character, escaped, missing_component, on_destroy;
-var init_index_c9c8dd9a = __esm({
-  ".svelte-kit/output/server/chunks/index-c9c8dd9a.js"() {
+var init_index_c287c2ee = __esm({
+  ".svelte-kit/output/server/chunks/index-c287c2ee.js"() {
     Promise.resolve();
     boolean_attributes = /* @__PURE__ */ new Set([
       "allowfullscreen",
@@ -5647,7 +5647,7 @@ var init_index_c9c8dd9a = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-2043b91f.js
+// .svelte-kit/output/server/chunks/index-84501411.js
 function writable2(value, start = noop2) {
   let stop;
   const subscribers = /* @__PURE__ */ new Set();
@@ -5690,9 +5690,9 @@ function writable2(value, start = noop2) {
   return { set, update, subscribe: subscribe2 };
 }
 var Icon, OutClick, subscriber_queue2;
-var init_index_2043b91f = __esm({
-  ".svelte-kit/output/server/chunks/index-2043b91f.js"() {
-    init_index_c9c8dd9a();
+var init_index_84501411 = __esm({
+  ".svelte-kit/output/server/chunks/index-84501411.js"() {
+    init_index_c287c2ee();
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $$restProps = compute_rest_props($$props, ["src", "size", "solid", "class"]);
       let { src = [] } = $$props;
@@ -5780,8 +5780,8 @@ __export(layout_svelte_exports, {
 var Exclamation, AlertCovid, MobMenuBtn, RightNavMenuItems, ProfileDropdown, Signup, MainNav, Header, FooterLogos, Copyright, FooterLinks, Footer, _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_index_2043b91f();
+    init_index_c287c2ee();
+    init_index_84501411();
     Exclamation = [[{ "fill-rule": "evenodd", "d": "M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z", "clip-rule": "evenodd" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" }]];
     AlertCovid = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<nav aria-label="${"Top"}" class="${"relative z-[1]"}">
@@ -5940,7 +5940,7 @@ var init_layout_svelte = __esm({
     });
     MainNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-<nav class="${"bg-white shadow relative z-[2]"}"><div class="${"max-w-7xl mx-auto py-2"}"><div class="${"flex flex-wrap justify-between items-center "}"><div class="${"flex pl-4"}">
+<nav class="${"bg-white shadow relative z-[2] mb-1"}"><div class="${"max-w-7xl mx-auto py-2"}"><div class="${"flex flex-wrap justify-between items-center "}"><div class="${"flex pl-4"}">
 				<a sveltekit:prefetch href="${"/"}" class="${"flex-shrink-0 flex place-items-start"}"><img class="${"h-9 sm:h-11 w-auto"}" src="${"logo.svg"}" alt="${"Trip Support Logo"}"></a>
 
 				
@@ -5981,36 +5981,75 @@ var init_layout_svelte = __esm({
 				<span class="${"text-xs font-medium ml-6 border-l border-gray-200 pl-6"}"></span> All Rights Reserved
 			</p></div>
 
-		<div class="${"flex space-x-8"}"><a href="${"/terms-conditions"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Terms &amp; Conditions
+		<div class="${"flex space-x-8"}"><a sveltekit:prefetch href="${"/terms-conditions"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Terms &amp; Conditions
 			</a>
 
-			<a href="${"/privacy-policy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy Policy
+			<a sveltekit:prefetch href="${"/privacy-policy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Privacy Policy
 			</a>
+			<a sveltekit:prefetch href="${"baggage-policy"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Baggage policy</a>
 
-			<a href="${"/pay-later-terms"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Pay Later Terms
+			<a sveltekit:prefetch href="${"/pay-later-terms"}" class="${"text-xs font-medium text-gray-500 hover:text-gray-600"}">Pay Later Terms
 			</a></div>
 
 		</div></div>`;
     });
     FooterLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const vacationDeals = [
+        {
+          name: "Spring Vacations",
+          href: "/spring-vacations"
+        },
+        {
+          name: "Winter Vacations",
+          href: "/winter-vacations"
+        },
+        {
+          name: "Summer Vacations",
+          href: "/summer-vacations"
+        },
+        {
+          name: "Fall Vacations",
+          href: "/fall-vacations"
+        },
+        {
+          name: "Group Travel",
+          href: "/group-travel"
+        }
+      ];
+      const destinations = [
+        {
+          name: "Westjet Vacations",
+          href: "/westjet-vacations"
+        },
+        {
+          name: "Porter Vacations",
+          href: "/porter-vacations"
+        },
+        {
+          name: "sunwing Vacations",
+          href: "/sunwing-vacations"
+        },
+        {
+          name: "sunquest Vacations",
+          href: "/sunquest-vacations"
+        },
+        {
+          name: "signature Vacations",
+          href: "/signature-vacations"
+        }
+      ];
       return `<div class="${"mx-auto max-w-7xl py-2 px-4 sm:px-6 sm:py-8 lg:py-20 lg:px-8 lg:pb-8"}"><div class="${"mt-12 grid grid-cols-6 gap-8 xl:col-span-12 xl:mt-0"}"><div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Vacation Deals
 			</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Spring Vacations
-					</a></li>
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Winter Vacations</a></li>
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Summer Vacations</a></li>
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Fall Vacations</a></li>
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Group Travel</a></li></ul></div>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(vacationDeals, (deal) => {
+        return `<li><a sveltekit:prefetch${add_attribute("href", deal.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(deal.name)}</a>
+					</li>`;
+      })}</ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Destinations</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Westjet Vacations</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Porter Vacations</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunwing Vacations</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Sunquest Vacations</a></li>
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Signature Vacations</a></li></ul></div>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(destinations, (dest) => {
+        return `<li><a sveltekit:prefetch${add_attribute("href", dest.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(dest.name)}</a>
+					</li>`;
+      })}</ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Flight Deals</h3>
 			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flights to edmonton</a></li>
@@ -6037,7 +6076,7 @@ var init_layout_svelte = __esm({
 				<li><a sveltekit:prefetch href="${"/faqs"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">faqs</a></li>
 				<li><a sveltekit:prefetch href="${"/about-us"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">about us</a></li>
 				<li><a sveltekit:prefetch href="${"/contact-us"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">contact us</a></li>
-				<li><a sveltekit:prefetch href="${"baggage-policy"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Baggage policy</a></li>
+				<li><a sveltekit:prefetch href="${"/customer-support"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">customer support</a></li>
 				<li><a href="${"/book-now-pay-later"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">book now pay later</a></li></ul></div>
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Social media</h3>
 
@@ -6087,9 +6126,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-124876a9.js";
-    js = ["pages/__layout.svelte-124876a9.js", "chunks/vendor-6ea63d49.js"];
-    css = ["assets/pages/__layout.svelte-7a1aec71.css"];
+    entry = "pages/__layout.svelte-9a7ad98e.js";
+    js = ["pages/__layout.svelte-9a7ad98e.js", "chunks/vendor-3e73c3b8.js"];
+    css = ["assets/pages/__layout.svelte-da534d00.css"];
   }
 });
 
@@ -6105,7 +6144,7 @@ function load({ error: error2, status }) {
 var Error2;
 var init_error_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/error.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
       let { error: error2 } = $$props;
@@ -6137,17 +6176,17 @@ var entry2, js2, css2;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-8f89e959.js";
-    js2 = ["error.svelte-8f89e959.js", "chunks/vendor-6ea63d49.js"];
+    entry2 = "error.svelte-a155870d.js";
+    js2 = ["error.svelte-a155870d.js", "chunks/vendor-3e73c3b8.js"];
     css2 = [];
   }
 });
 
-// .svelte-kit/output/server/chunks/HotelsIcon-bcf3d6d6.js
+// .svelte-kit/output/server/chunks/HotelsIcon-bd56cb64.js
 var FlightsIcon, VacationsIcon, HotelsIcon;
-var init_HotelsIcon_bcf3d6d6 = __esm({
-  ".svelte-kit/output/server/chunks/HotelsIcon-bcf3d6d6.js"() {
-    init_index_c9c8dd9a();
+var init_HotelsIcon_bd56cb64 = __esm({
+  ".svelte-kit/output/server/chunks/HotelsIcon-bd56cb64.js"() {
+    init_index_c287c2ee();
     FlightsIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.64 14.26l2.86.95 4.02-4.02-8-4.59 1.16-1.16c.1-.1.26-.14.41-.1l9.3 2.98c1.58-1.58 3.15-3.2 4.77-4.75.31-.33.7-.58 1.16-.73.45-.16.87-.27 1.25-.34.55-.05.98.4.93.93-.07.38-.18.8-.34 1.25-.15.46-.4.85-.73 1.16l-4.75 4.78 2.97 9.29c.05.15 0 .29-.1.41l-1.17 1.16-4.57-8.02L8.8 17.5l.95 2.84L8.6 21.5l-2.48-3.62L2.5 15.4l1.14-1.14z"}" clip-rule="${"evenodd"}"></path></svg>`;
     });
@@ -6160,13 +6199,13 @@ var init_HotelsIcon_bcf3d6d6 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BookingWidget-39488cf8.js
+// .svelte-kit/output/server/chunks/BookingWidget-63236557.js
 var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget;
-var init_BookingWidget_39488cf8 = __esm({
-  ".svelte-kit/output/server/chunks/BookingWidget-39488cf8.js"() {
-    init_index_c9c8dd9a();
-    init_HotelsIcon_bcf3d6d6();
-    init_index_2043b91f();
+var init_BookingWidget_63236557 = __esm({
+  ".svelte-kit/output/server/chunks/BookingWidget-63236557.js"() {
+    init_index_c287c2ee();
+    init_HotelsIcon_bd56cb64();
+    init_index_84501411();
     SwitchHorizontal = [[{ "d": "M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z" }], [{ "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "2", "d": "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" }]];
     Cabin = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let btnDropdownRef;
@@ -6502,11 +6541,11 @@ ${``}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/BlogPosts-bcd2e28a.js
+// .svelte-kit/output/server/chunks/BlogPosts-6623eaaa.js
 var BlogPosts;
-var init_BlogPosts_bcd2e28a = __esm({
-  ".svelte-kit/output/server/chunks/BlogPosts-bcd2e28a.js"() {
-    init_index_c9c8dd9a();
+var init_BlogPosts_6623eaaa = __esm({
+  ".svelte-kit/output/server/chunks/BlogPosts-6623eaaa.js"() {
+    init_index_c287c2ee();
     BlogPosts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"bg-gray-50"}"><div class="${"max-w-7xl mx-auto py-4 px-4 sm:py-12 sm:px-6 lg:px-8 mt-6 sm:mt-2"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Inspirational Stories from Experts</span>
@@ -6560,11 +6599,11 @@ var init_BlogPosts_bcd2e28a = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Subscribe-5faa30c6.js
+// .svelte-kit/output/server/chunks/Subscribe-14f16a45.js
 var Subscribe;
-var init_Subscribe_5faa30c6 = __esm({
-  ".svelte-kit/output/server/chunks/Subscribe-5faa30c6.js"() {
-    init_index_c9c8dd9a();
+var init_Subscribe_14f16a45 = __esm({
+  ".svelte-kit/output/server/chunks/Subscribe-14f16a45.js"() {
+    init_index_c287c2ee();
     Subscribe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative my-3 lg:my-12 bg-white"}"><div class="${"max-w-7xl mx-auto bg-white lg:bg-transparent lg:px-6"}"><div class="${"lg:grid lg:grid-cols-12"}"><div class="${"relative z-[1] lg:col-start-1 lg:row-start-1 lg:col-span-3 lg:py-0 lg:bg-transparent"}"><div class="${"absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"}" aria-hidden="${"true"}"></div>
@@ -6597,12 +6636,12 @@ __export(index_svelte_exports, {
 var Hero, PopularFlightDeals, VacationDestinations, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_BookingWidget_39488cf8();
-    init_BlogPosts_bcd2e28a();
-    init_Subscribe_5faa30c6();
-    init_HotelsIcon_bcf3d6d6();
-    init_index_2043b91f();
+    init_index_c287c2ee();
+    init_BookingWidget_63236557();
+    init_BlogPosts_6623eaaa();
+    init_Subscribe_14f16a45();
+    init_HotelsIcon_bd56cb64();
+    init_index_84501411();
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 sm:grid-cols-12 sm:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8 z-10 "}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-rose-600 bg-clip-text text-transparent text-3xl mt-4 tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-4xxl capitalize"}"><span class="${"flex"}">Book Now Pay Later</span></h1>
 
@@ -6762,9 +6801,42 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-4b12283b.js";
-    js3 = ["pages/index.svelte-4b12283b.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-d9c0b93c.js", "chunks/Subscribe-d08f4a8d.js"];
+    entry3 = "pages/index.svelte-9f2f7789.js";
+    js3 = ["pages/index.svelte-9f2f7789.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
     css3 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/signature-vacations.svelte.js
+var signature_vacations_svelte_exports = {};
+__export(signature_vacations_svelte_exports, {
+  default: () => Signature_vacations
+});
+var Signature_vacations;
+var init_signature_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/signature-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Signature_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/3.js
+var __exports4 = {};
+__export(__exports4, {
+  css: () => css4,
+  entry: () => entry4,
+  js: () => js4,
+  module: () => signature_vacations_svelte_exports
+});
+var entry4, js4, css4;
+var init__4 = __esm({
+  ".svelte-kit/output/server/nodes/3.js"() {
+    init_signature_vacations_svelte();
+    entry4 = "pages/signature-vacations.svelte-6095f932.js";
+    js4 = ["pages/signature-vacations.svelte-6095f932.js", "chunks/vendor-3e73c3b8.js"];
+    css4 = [];
   }
 });
 
@@ -6776,11 +6848,11 @@ __export(book_now_pay_later_svelte_exports, {
 var BookNowHero, BookNowFeature, WeeklyExample, HowDoesItWork, PaymentPlans, BnplFaqs, Book_now_pay_later;
 var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_BookingWidget_39488cf8();
-    init_Subscribe_5faa30c6();
-    init_HotelsIcon_bcf3d6d6();
-    init_index_2043b91f();
+    init_index_c287c2ee();
+    init_BookingWidget_63236557();
+    init_Subscribe_14f16a45();
+    init_HotelsIcon_bd56cb64();
+    init_index_84501411();
     BookNowHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"bg-white"}"><div class="${"overflow-hidden"}"><div class="${"bg-gradient-to-r from-pblue-900 to-rose-900"}"><div class="${"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"}"><div class="${"relative pt-6 sm:pt-28 pb-10 sm:pb-48"}"><div><h2 id="${"sale-heading"}" class="${"text-4xl font-extrabold tracking-tight text-white md:text-6xl"}">Book Now, Pay Later
 						</h2>
@@ -7073,21 +7145,401 @@ ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/nodes/3.js
-var __exports4 = {};
-__export(__exports4, {
-  css: () => css4,
-  entry: () => entry4,
-  js: () => js4,
+// .svelte-kit/output/server/nodes/4.js
+var __exports5 = {};
+__export(__exports5, {
+  css: () => css5,
+  entry: () => entry5,
+  js: () => js5,
   module: () => book_now_pay_later_svelte_exports
 });
-var entry4, js4, css4;
-var init__4 = __esm({
-  ".svelte-kit/output/server/nodes/3.js"() {
+var entry5, js5, css5;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/4.js"() {
     init_book_now_pay_later_svelte();
-    entry4 = "pages/book-now-pay-later.svelte-e7267c85.js";
-    js4 = ["pages/book-now-pay-later.svelte-e7267c85.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-d08f4a8d.js"];
-    css4 = [];
+    entry5 = "pages/book-now-pay-later.svelte-ee61e598.js";
+    js5 = ["pages/book-now-pay-later.svelte-ee61e598.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js"];
+    css5 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/sunquest-vacations.svelte.js
+var sunquest_vacations_svelte_exports = {};
+__export(sunquest_vacations_svelte_exports, {
+  default: () => Sunquest_vacations
+});
+var Sunquest_vacations;
+var init_sunquest_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/sunquest-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Sunquest_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/5.js
+var __exports6 = {};
+__export(__exports6, {
+  css: () => css6,
+  entry: () => entry6,
+  js: () => js6,
+  module: () => sunquest_vacations_svelte_exports
+});
+var entry6, js6, css6;
+var init__6 = __esm({
+  ".svelte-kit/output/server/nodes/5.js"() {
+    init_sunquest_vacations_svelte();
+    entry6 = "pages/sunquest-vacations.svelte-a76af3af.js";
+    js6 = ["pages/sunquest-vacations.svelte-a76af3af.js", "chunks/vendor-3e73c3b8.js"];
+    css6 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/sunwing-vacations.svelte.js
+var sunwing_vacations_svelte_exports = {};
+__export(sunwing_vacations_svelte_exports, {
+  default: () => Sunwing_vacations
+});
+var Sunwing_vacations;
+var init_sunwing_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/sunwing-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Sunwing_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/6.js
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css7,
+  entry: () => entry7,
+  js: () => js7,
+  module: () => sunwing_vacations_svelte_exports
+});
+var entry7, js7, css7;
+var init__7 = __esm({
+  ".svelte-kit/output/server/nodes/6.js"() {
+    init_sunwing_vacations_svelte();
+    entry7 = "pages/sunwing-vacations.svelte-80b3342f.js";
+    js7 = ["pages/sunwing-vacations.svelte-80b3342f.js", "chunks/vendor-3e73c3b8.js"];
+    css7 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/westjet-vacations.svelte.js
+var westjet_vacations_svelte_exports = {};
+__export(westjet_vacations_svelte_exports, {
+  default: () => Westjet_vacations
+});
+var Westjet_vacations;
+var init_westjet_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/westjet-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Westjet_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/7.js
+var __exports8 = {};
+__export(__exports8, {
+  css: () => css8,
+  entry: () => entry8,
+  js: () => js8,
+  module: () => westjet_vacations_svelte_exports
+});
+var entry8, js8, css8;
+var init__8 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
+    init_westjet_vacations_svelte();
+    entry8 = "pages/westjet-vacations.svelte-b12b3bce.js";
+    js8 = ["pages/westjet-vacations.svelte-b12b3bce.js", "chunks/vendor-3e73c3b8.js"];
+    css8 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/customer-support.svelte.js
+var customer_support_svelte_exports = {};
+__export(customer_support_svelte_exports, {
+  default: () => Customer_support
+});
+var Customer_support;
+var init_customer_support_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/customer-support.svelte.js"() {
+    init_index_c287c2ee();
+    Customer_support = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"bg-slate-900"}"><div class="${"max-w-7xl mx-auto py-12 px-4 sm:py-24 sm:px-6 lg:px-8"}"><div class="${"text-center"}"><h2 class="${"sm:text-tiny text-xs font-semibold text-gray-300 tracking-wide uppercase"}">support when you need it
+			</h2>
+			<p class="${"mt-1 text-xl font-extrabold text-white sm:text-5xl sm:trackin lg:text-6xl"}">Hello. How can we help you today?
+			</p>
+			<p class="${"max-w-xl mt-5 mx-auto sm:text-lg text-tiny text-gray-300"}">FAQs, Helpful guide videos and so much more ...
+			</p></div>
+		
+		<div class="${"max-w-xs mx-auto w-full lg:max-w-2xl mt-4"}"><label for="${"search"}" class="${"sr-only"}">Search</label>
+			<div class="${"relative text-white focus-within:text-gray-600"}"><div class="${"pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center"}">
+					<svg class="${"h-5 w-5"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path fill-rule="${"evenodd"}" d="${"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"}" clip-rule="${"evenodd"}"></path></svg></div>
+				<input id="${"search"}" class="${"block w-full text-white bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 focus:text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"}" placeholder="${"Search"}" type="${"search"}" name="${"search"}"></div></div></div></div>
+
+<div class="${"mx-auto max-w-7xl bg-white"}">
+	<section class="${"pb-6 pt-12 sm:pt-24 sm:pb-12 relative z-20 overflow-hidden "}">
+		<div class="${"container"}"><div class="${"flex flex-wrap"}"><div class="${"w-full px-4"}"><div class="${"mb-6 lg:mb-10 max-w-[520px]"}"><span class="${"font-normal text-tiny block text-rose-600"}">FAQs </span>
+						<h2 class="${"font-extrabold text-2xl sm:text-4xl text-gray-900 mb-4 "}">Frequently Asked Questions
+						</h2>
+						<p class="${"sm:text-base text-tiny text-body-color"}">See below for specific answers to frequently asked questions.
+						</p></div></div></div>
+			<div class="${"flex flex-wrap -mx-4"}"><div class="${"w-full lg:w-1/3 px-4"}">
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div>
+
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div>
+
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div></div>
+				<div class="${"w-full lg:w-1/3 px-4"}"><div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div>
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div>
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div></div>
+				<div class="${"w-full lg:w-1/3 px-4"}"><div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div>
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div>
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Why was my booking canceled?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${``}</div></div></div>
+			<div class="${"flex justify-end px-4"}"><a sveltekit:prefetch href="${"/faqs"}" class="${"text-tiny font-medium text-pblue-600 hover:text-pblue-500"}">View all FAQs</a></div></div>
+		<div class="${"absolute bottom-0 right-0 z-[-1]"}"><svg width="${"1440"}" height="${"886"}" viewBox="${"0 0 1440 886"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><path opacity="${"0.5"}" d="${"M193.307 -273.321L1480.87 1014.24L1121.85 1373.26C1121.85 1373.26 731.745 983.231 478.513 729.927C225.976 477.317 -165.714 85.6993 -165.714 85.6993L193.307 -273.321Z"}" fill="${"url(#paint0_linear)"}"></path><defs><linearGradient id="${"paint0_linear"}" x1="${"1308.65"}" y1="${"1142.58"}" x2="${"602.827"}" y2="${"-418.681"}" gradientUnits="${"userSpaceOnUse"}"><stop stop-color="${"#3056D3"}" stop-opacity="${"0.36"}"></stop><stop offset="${"1"}" stop-color="${"#F5F2FD"}" stop-opacity="${"0"}"></stop><stop offset="${"1"}" stop-color="${"#F5F2FD"}" stop-opacity="${"0.096144"}"></stop></linearGradient></defs></svg></div></section>
+	</div>
+
+
+
+<div class="${"bg-white"}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-24 "}"><div class="${"flex flex-wrap"}"><div class="${"w-full"}"><div class="${"mb-6 lg:mb-12 max-w-[520px]"}"><span class="${"font-normal text-tiny block text-rose-600"}">Need further assistance? </span>
+					<h2 class="${"font-extrabold text-2xl sm:text-4xl text-gray-900 sm:mb-4 mb-1 "}">Request Customer Support
+					</h2>
+					<p class="${"sm:text-base text-tiny text-body-color"}">Fill in the form below and we will get back to you shortly.
+					</p></div></div></div>
+		<div class="${"relative bg-white shadow-xl"}"><h2 class="${"sr-only"}">Request Customer Support</h2>
+
+			<div class="${"grid grid-cols-1 lg:grid-cols-3"}">
+				<div class="${"relative overflow-hidden py-10 px-6 bg-pblue-700 sm:px-10 xl:p-12"}"><div class="${"absolute inset-0 pointer-events-none sm:hidden"}" aria-hidden="${"true"}"><svg class="${"absolute inset-0 w-full h-full"}" width="${"343"}" height="${"388"}" viewBox="${"0 0 343 388"}" fill="${"none"}" preserveAspectRatio="${"xMidYMid slice"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"}" fill="${"url(#linear1)"}" fill-opacity="${".1"}"></path><defs><linearGradient id="${"linear1"}" x1="${"254.553"}" y1="${"107.554"}" x2="${"961.66"}" y2="${"814.66"}" gradientUnits="${"userSpaceOnUse"}"><stop stop-color="${"#fff"}"></stop><stop offset="${"1"}" stop-color="${"#fff"}" stop-opacity="${"0"}"></stop></linearGradient></defs></svg></div>
+					<div class="${"hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none sm:block lg:hidden"}" aria-hidden="${"true"}"><svg class="${"absolute inset-0 w-full h-full"}" width="${"359"}" height="${"339"}" viewBox="${"0 0 359 339"}" fill="${"none"}" preserveAspectRatio="${"xMidYMid slice"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"}" fill="${"url(#linear2)"}" fill-opacity="${".1"}"></path><defs><linearGradient id="${"linear2"}" x1="${"192.553"}" y1="${"28.553"}" x2="${"899.66"}" y2="${"735.66"}" gradientUnits="${"userSpaceOnUse"}"><stop stop-color="${"#fff"}"></stop><stop offset="${"1"}" stop-color="${"#fff"}" stop-opacity="${"0"}"></stop></linearGradient></defs></svg></div>
+					<div class="${"hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block"}" aria-hidden="${"true"}"><svg class="${"absolute inset-0 w-full h-full"}" width="${"160"}" height="${"678"}" viewBox="${"0 0 160 678"}" fill="${"none"}" preserveAspectRatio="${"xMidYMid slice"}" xmlns="${"http://www.w3.org/2000/svg"}"><path d="${"M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"}" fill="${"url(#linear3)"}" fill-opacity="${".1"}"></path><defs><linearGradient id="${"linear3"}" x1="${"192.553"}" y1="${"325.553"}" x2="${"899.66"}" y2="${"1032.66"}" gradientUnits="${"userSpaceOnUse"}"><stop stop-color="${"#fff"}"></stop><stop offset="${"1"}" stop-color="${"#fff"}" stop-opacity="${"0"}"></stop></linearGradient></defs></svg></div>
+					<h3 class="${"text-2xl font-bold text-white"}">We&#39;re here to help!</h3>
+					<p class="${"mt-6 text-base text-white max-w-3xl"}">Can&#39;t find what you&#39;re looking for? Send us a message, we will get back to you soon.
+					</p>
+					
+					<div class="${"relative mt-8"}"><div class="${"absolute inset-0 flex items-center"}" aria-hidden="${"true"}"><div class="${"w-full border-t border-gray-300"}"></div></div>
+						<div class="${"relative flex justify-center"}"><span class="${"px-3 bg-pblue-700 text-lg font-medium text-white"}">OR </span></div></div>
+					<p class="${"mt-6 text-base text-white max-w-3xl"}">You can reach out to us by calling us or sending us an email
+					</p>
+
+					<dl class="${"mt-8 space-y-6"}"><dt><span class="${"sr-only"}">Phone number</span></dt><dd class="${"flex text-base text-white items-center"}">
+							<svg class="${"flex-shrink-0 w-5 h-5 text-gray-200"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" aria-hidden="${"true"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"}"></path></svg>
+							<span class="${"ml-3"}">+1 (555) 123-4567</span>
+						</dd><dt><span class="${"sr-only"}">Email</span></dt><dd class="${"flex text-base text-gray-200 items-center"}">
+							<svg class="${"flex-shrink-0 w-5 h-5 text-gray-200"}" xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" aria-hidden="${"true"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"}"></path></svg>
+							<span class="${"ml-3"}">support@workcation.com</span></dd></dl></div>
+
+				
+				<div class="${"py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12"}"><form action="${"#"}" method="${"POST"}" class="${"mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"}"><div><label for="${"first-name"}" class="${"block text-sm font-medium text-gray-900"}">First name</label>
+							<div class="${"mt-1"}"><input type="${"text"}" name="${"first-name"}" id="${"first-name"}" autocomplete="${"given-name"}" class="${"py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-pblue-500 focus:border-pblue-500 border-gray-300 rounded-md"}"></div></div>
+						<div><label for="${"last-name"}" class="${"block text-sm font-medium text-gray-900"}">Last name</label>
+							<div class="${"mt-1"}"><input type="${"text"}" name="${"last-name"}" id="${"last-name"}" autocomplete="${"family-name"}" class="${"py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-pblue-500 focus:border-pblue-500 border-gray-300 rounded-md"}"></div></div>
+						<div><label for="${"email"}" class="${"block text-sm font-medium text-gray-900"}">Email</label>
+							<div class="${"mt-1"}"><input id="${"email"}" name="${"email"}" type="${"email"}" autocomplete="${"email"}" class="${"py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-pblue-500 focus:border-pblue-500 border-gray-300 rounded-md"}"></div></div>
+						<div><div class="${"flex justify-between"}"><label for="${"phone"}" class="${"block text-sm font-medium text-gray-900"}">Phone</label>
+								<span id="${"phone-optional"}" class="${"text-sm text-gray-500"}">Optional</span></div>
+							<div class="${"mt-1"}"><input type="${"text"}" name="${"phone"}" id="${"phone"}" autocomplete="${"tel"}" class="${"py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-pblue-500 focus:border-pblue-500 border-gray-300 rounded-md"}" aria-describedby="${"phone-optional"}"></div></div>
+						<div class="${"sm:col-span-2"}"><label for="${"subject"}" class="${"block text-sm font-medium text-gray-900"}">Subject</label>
+							<div class="${"mt-1"}"><input type="${"text"}" name="${"subject"}" id="${"subject"}" class="${"py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-pblue-500 focus:border-pblue-500 border-gray-300 rounded-md"}"></div></div>
+						<div class="${"sm:col-span-2"}"><div class="${"flex justify-between"}"><label for="${"message"}" class="${"block text-sm font-medium text-gray-900"}">Message</label>
+								<span id="${"message-max"}" class="${"text-sm text-gray-500"}">Max. 500 characters</span></div>
+							<div class="${"mt-1"}"><textarea id="${"message"}" name="${"message"}" rows="${"4"}" class="${"py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-pblue-500 focus:border-pblue-500 border border-gray-300 rounded-md"}" aria-describedby="${"message-max"}"></textarea></div></div>
+						<div class="${"sm:col-span-2 sm:flex sm:justify-end"}"><button type="${"submit"}" class="${"mt-2 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-md shadow-sm text-tiny font-medium text-white bg-pblue-700 hover:bg-pblue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pblue-500 sm:w-auto"}">Submit</button></div></form></div></div></div></div></div>
+
+
+
+<div class="${"relative bg-gray-50"}"><div class="${"absolute top-0 right-0 left-0 h-96 "}"></div>
+	<div class="${"relative space-y-12 container xl:max-w-7xl mx-auto px-4 py-16"}"><div class="${"flex flex-wrap"}"><div class="${"w-full"}"><div class="${"max-w-[520px]"}"><span class="${"font-normal text-tiny block text-rose-600"}">Media Support </span>
+					<h2 class="${"font-extrabold text-2xl sm:text-4xl text-gray-900 mb-4 "}">Video Guides
+					</h2>
+					<p class="${"sm:text-base text-tiny text-body-color"}">A range of helpful video guides to get you started with TripSupport.
+					</p></div></div></div>
+		
+
+		
+		<div class="${"rounded-lg bg-white shadow-lg "}"><div class="${"grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 p-2 sm:p-5 md:p-6 rounded-lg ring-1 ring-black ring-opacity-5 lg:gap-y-16"}"><div class="${"relative"}"><iframe class="${"w-full h-[246px] rounded-lg"}" src="${"https://www.youtube.com/embed/tGGq0oaUcwU"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+					<div class="${"flex items-center mt-4 justify-between"}"><p class="${"text-center text-gray-500 text-tiny font-semibold"}">Trip Support Book Now Pay Later Plan
+						</p>
+						<p class="${"text-center text-rose-600 text-tiny font-semibold"}">2:02</p></div></div>
+
+				<div class="${"relative"}"><iframe class="${"w-full h-[246px] rounded-lg"}" src="${"https://www.youtube.com/embed/AOzxPVXVy0g"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+					<div class="${"flex items-center mt-4 justify-between"}"><p class="${"text-center text-gray-500 text-tiny font-semibold"}">Trip Support Book Now Pay Later Plan
+						</p>
+						<p class="${"text-center text-rose-600 text-tiny font-semibold"}">1:11</p></div></div>
+
+				<div class="${"relative"}"><iframe class="${"w-full h-[246px] rounded-lg"}" src="${"https://www.youtube.com/embed/yo0Gag7HyG8"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+					<div class="${"flex items-center mt-4 justify-between"}"><p class="${"text-center text-gray-500 text-tiny font-semibold"}">Trip Support Book Now Pay Later Plan
+						</p>
+						<p class="${"text-center text-rose-600 text-tiny font-semibold"}">1:04</p></div></div>
+				<div class="${"relative"}"><iframe class="${"w-full h-[246px] rounded-lg"}" src="${"https://www.youtube.com/embed/mCVxqwa2bdE"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+					<div class="${"flex items-center mt-4 justify-between"}"><p class="${"text-center text-gray-500 text-tiny font-semibold"}">Trip Support Book Now Pay Later Plan
+						</p>
+						<p class="${"text-center text-rose-600 text-tiny font-semibold"}">2:25</p></div></div>
+
+				<div class="${"relative"}"><iframe class="${"w-full h-[246px] rounded-lg"}" src="${"https://www.youtube.com/embed/yZlLN5fq_-I"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+					<div class="${"flex items-center mt-4 justify-between"}"><p class="${"text-center text-gray-500 text-tiny font-semibold"}">Trip Support Book Now Pay Later Plan
+						</p>
+						<p class="${"text-center text-rose-600 text-tiny font-semibold"}">2:32</p></div></div>
+
+				<div class="${"relative"}"><iframe class="${"w-full h-[246px] rounded-lg"}" src="${"https://www.youtube.com/embed/c0MSR7-gpRc"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>
+					<div class="${"flex items-center mt-4 justify-between"}"><p class="${"text-center text-gray-500 text-tiny font-semibold"}">Trip Support Book Now Pay Later Plan
+						</p>
+						<p class="${"text-center text-rose-600 text-tiny font-semibold"}">2:47</p></div></div></div></div></div></div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/8.js
+var __exports9 = {};
+__export(__exports9, {
+  css: () => css9,
+  entry: () => entry9,
+  js: () => js9,
+  module: () => customer_support_svelte_exports
+});
+var entry9, js9, css9;
+var init__9 = __esm({
+  ".svelte-kit/output/server/nodes/8.js"() {
+    init_customer_support_svelte();
+    entry9 = "pages/customer-support.svelte-8275ee78.js";
+    js9 = ["pages/customer-support.svelte-8275ee78.js", "chunks/vendor-3e73c3b8.js"];
+    css9 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/porter-vacations.svelte.js
+var porter_vacations_svelte_exports = {};
+__export(porter_vacations_svelte_exports, {
+  default: () => Porter_vacations
+});
+var Porter_vacations;
+var init_porter_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/porter-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Porter_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/9.js
+var __exports10 = {};
+__export(__exports10, {
+  css: () => css10,
+  entry: () => entry10,
+  js: () => js10,
+  module: () => porter_vacations_svelte_exports
+});
+var entry10, js10, css10;
+var init__10 = __esm({
+  ".svelte-kit/output/server/nodes/9.js"() {
+    init_porter_vacations_svelte();
+    entry10 = "pages/porter-vacations.svelte-35645d8c.js";
+    js10 = ["pages/porter-vacations.svelte-35645d8c.js", "chunks/vendor-3e73c3b8.js"];
+    css10 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/spring-vacations.svelte.js
+var spring_vacations_svelte_exports = {};
+__export(spring_vacations_svelte_exports, {
+  default: () => Spring_vacations
+});
+var Spring_vacations;
+var init_spring_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/spring-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Spring_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/10.js
+var __exports11 = {};
+__export(__exports11, {
+  css: () => css11,
+  entry: () => entry11,
+  js: () => js11,
+  module: () => spring_vacations_svelte_exports
+});
+var entry11, js11, css11;
+var init__11 = __esm({
+  ".svelte-kit/output/server/nodes/10.js"() {
+    init_spring_vacations_svelte();
+    entry11 = "pages/spring-vacations.svelte-b17d4176.js";
+    js11 = ["pages/spring-vacations.svelte-b17d4176.js", "chunks/vendor-3e73c3b8.js"];
+    css11 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/summer-vacations.svelte.js
+var summer_vacations_svelte_exports = {};
+__export(summer_vacations_svelte_exports, {
+  default: () => Summer_vacations
+});
+var Summer_vacations;
+var init_summer_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/summer-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Summer_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/11.js
+var __exports12 = {};
+__export(__exports12, {
+  css: () => css12,
+  entry: () => entry12,
+  js: () => js12,
+  module: () => summer_vacations_svelte_exports
+});
+var entry12, js12, css12;
+var init__12 = __esm({
+  ".svelte-kit/output/server/nodes/11.js"() {
+    init_summer_vacations_svelte();
+    entry12 = "pages/summer-vacations.svelte-9d961fbc.js";
+    js12 = ["pages/summer-vacations.svelte-9d961fbc.js", "chunks/vendor-3e73c3b8.js"];
+    css12 = [];
   }
 });
 
@@ -7096,11 +7548,11 @@ var terms_conditions_svelte_exports = {};
 __export(terms_conditions_svelte_exports, {
   default: () => Terms_conditions
 });
-var css5, isActive, Terms_conditions;
+var css13, isActive, Terms_conditions;
 var init_terms_conditions_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/terms-conditions.svelte.js"() {
-    init_index_c9c8dd9a();
-    css5 = {
+    init_index_c287c2ee();
+    css13 = {
       code: "ol.svelte-1907t1f.svelte-1907t1f{counter-reset:item}ol.svelte-1907t1f>li.svelte-1907t1f{display:block;margin-bottom:2rem}ol.svelte-1907t1f>li.svelte-1907t1f:before{content:counters(item, '.') '. ';counter-increment:item;padding-right:8px}p.svelte-1907t1f.svelte-1907t1f{line-height:1.775;font-weight:400;padding:6px 0}p.svelte-1907t1f.svelte-1907t1f:first-child{margin-top:12px}",
       map: null
     };
@@ -7264,7 +7716,7 @@ var init_terms_conditions_svelte = __esm({
           title: "Contact Information"
         }
       ];
-      $$result.css.add(css5);
+      $$result.css.add(css13);
       return `<div class="${"bg-gradient-to-r from-slate-900 to-fuchsia-900 "}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between"}"><div class="${"max-w-3xl"}"><h1 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-white to-rose-300 bg-clip-text text-transparent"}">Trip Support</span></h1>
 			<h2 class="${"text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"}">Terms &amp; Conditions
 			</h2>
@@ -7715,21 +8167,54 @@ var init_terms_conditions_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/4.js
-var __exports5 = {};
-__export(__exports5, {
-  css: () => css6,
-  entry: () => entry5,
-  js: () => js5,
+// .svelte-kit/output/server/nodes/12.js
+var __exports13 = {};
+__export(__exports13, {
+  css: () => css14,
+  entry: () => entry13,
+  js: () => js13,
   module: () => terms_conditions_svelte_exports
 });
-var entry5, js5, css6;
-var init__5 = __esm({
-  ".svelte-kit/output/server/nodes/4.js"() {
+var entry13, js13, css14;
+var init__13 = __esm({
+  ".svelte-kit/output/server/nodes/12.js"() {
     init_terms_conditions_svelte();
-    entry5 = "pages/terms-conditions.svelte-dce10de3.js";
-    js5 = ["pages/terms-conditions.svelte-dce10de3.js", "chunks/vendor-6ea63d49.js"];
-    css6 = ["assets/pages/terms-conditions.svelte-bac2b551.css"];
+    entry13 = "pages/terms-conditions.svelte-1167ed39.js";
+    js13 = ["pages/terms-conditions.svelte-1167ed39.js", "chunks/vendor-3e73c3b8.js"];
+    css14 = ["assets/pages/pay-later-terms.svelte-967b3a2e.css"];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/winter-vacations.svelte.js
+var winter_vacations_svelte_exports = {};
+__export(winter_vacations_svelte_exports, {
+  default: () => Winter_vacations
+});
+var Winter_vacations;
+var init_winter_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/winter-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Winter_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/13.js
+var __exports14 = {};
+__export(__exports14, {
+  css: () => css15,
+  entry: () => entry14,
+  js: () => js14,
+  module: () => winter_vacations_svelte_exports
+});
+var entry14, js14, css15;
+var init__14 = __esm({
+  ".svelte-kit/output/server/nodes/13.js"() {
+    init_winter_vacations_svelte();
+    entry14 = "pages/winter-vacations.svelte-1d95d292.js";
+    js14 = ["pages/winter-vacations.svelte-1d95d292.js", "chunks/vendor-3e73c3b8.js"];
+    css15 = [];
   }
 });
 
@@ -7738,16 +8223,16 @@ var pay_later_terms_svelte_exports = {};
 __export(pay_later_terms_svelte_exports, {
   default: () => Pay_later_terms
 });
-var css7, Pay_later_terms;
+var css16, Pay_later_terms;
 var init_pay_later_terms_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/pay-later-terms.svelte.js"() {
-    init_index_c9c8dd9a();
-    css7 = {
+    init_index_c287c2ee();
+    css16 = {
       code: "ol.svelte-1907t1f.svelte-1907t1f{counter-reset:item}ol.svelte-1907t1f>li.svelte-1907t1f{display:block;margin-bottom:2rem}ol.svelte-1907t1f>li.svelte-1907t1f:before{content:counters(item, '.') '. ';counter-increment:item;padding-right:8px}p.svelte-1907t1f.svelte-1907t1f{line-height:1.775;font-weight:400;padding:6px 0}p.svelte-1907t1f.svelte-1907t1f:first-child{margin-top:12px}",
       map: null
     };
     Pay_later_terms = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css7);
+      $$result.css.add(css16);
       return `
 <div class="${"bg-gradient-to-r from-slate-900 to-purple-900 "}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between"}"><div class="${"max-w-3xl"}"><h1 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-white to-rose-300 bg-clip-text text-transparent"}">Trip Support</span></h1>
 			<h2 class="${"text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"}">Book Now, Pay Later Terms
@@ -7884,21 +8369,21 @@ var init_pay_later_terms_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/5.js
-var __exports6 = {};
-__export(__exports6, {
-  css: () => css8,
-  entry: () => entry6,
-  js: () => js6,
+// .svelte-kit/output/server/nodes/14.js
+var __exports15 = {};
+__export(__exports15, {
+  css: () => css17,
+  entry: () => entry15,
+  js: () => js15,
   module: () => pay_later_terms_svelte_exports
 });
-var entry6, js6, css8;
-var init__6 = __esm({
-  ".svelte-kit/output/server/nodes/5.js"() {
+var entry15, js15, css17;
+var init__15 = __esm({
+  ".svelte-kit/output/server/nodes/14.js"() {
     init_pay_later_terms_svelte();
-    entry6 = "pages/pay-later-terms.svelte-3c7525e7.js";
-    js6 = ["pages/pay-later-terms.svelte-3c7525e7.js", "chunks/vendor-6ea63d49.js"];
-    css8 = ["assets/pages/terms-conditions.svelte-bac2b551.css"];
+    entry15 = "pages/pay-later-terms.svelte-5bcc16f8.js";
+    js15 = ["pages/pay-later-terms.svelte-5bcc16f8.js", "chunks/vendor-3e73c3b8.js"];
+    css17 = ["assets/pages/pay-later-terms.svelte-967b3a2e.css"];
   }
 });
 
@@ -7910,28 +8395,61 @@ __export(baggage_policy_svelte_exports, {
 var Baggage_policy;
 var init_baggage_policy_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/baggage-policy.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     Baggage_policy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
   }
 });
 
-// .svelte-kit/output/server/nodes/6.js
-var __exports7 = {};
-__export(__exports7, {
-  css: () => css9,
-  entry: () => entry7,
-  js: () => js7,
+// .svelte-kit/output/server/nodes/15.js
+var __exports16 = {};
+__export(__exports16, {
+  css: () => css18,
+  entry: () => entry16,
+  js: () => js16,
   module: () => baggage_policy_svelte_exports
 });
-var entry7, js7, css9;
-var init__7 = __esm({
-  ".svelte-kit/output/server/nodes/6.js"() {
+var entry16, js16, css18;
+var init__16 = __esm({
+  ".svelte-kit/output/server/nodes/15.js"() {
     init_baggage_policy_svelte();
-    entry7 = "pages/baggage-policy.svelte-defca122.js";
-    js7 = ["pages/baggage-policy.svelte-defca122.js", "chunks/vendor-6ea63d49.js"];
-    css9 = [];
+    entry16 = "pages/baggage-policy.svelte-aff5f517.js";
+    js16 = ["pages/baggage-policy.svelte-aff5f517.js", "chunks/vendor-3e73c3b8.js"];
+    css18 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/fall-vacations.svelte.js
+var fall_vacations_svelte_exports = {};
+__export(fall_vacations_svelte_exports, {
+  default: () => Fall_vacations
+});
+var Fall_vacations;
+var init_fall_vacations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/fall-vacations.svelte.js"() {
+    init_index_c287c2ee();
+    Fall_vacations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/16.js
+var __exports17 = {};
+__export(__exports17, {
+  css: () => css19,
+  entry: () => entry17,
+  js: () => js17,
+  module: () => fall_vacations_svelte_exports
+});
+var entry17, js17, css19;
+var init__17 = __esm({
+  ".svelte-kit/output/server/nodes/16.js"() {
+    init_fall_vacations_svelte();
+    entry17 = "pages/fall-vacations.svelte-671ab229.js";
+    js17 = ["pages/fall-vacations.svelte-671ab229.js", "chunks/vendor-3e73c3b8.js"];
+    css19 = [];
   }
 });
 
@@ -7940,16 +8458,16 @@ var privacy_policy_svelte_exports = {};
 __export(privacy_policy_svelte_exports, {
   default: () => Privacy_policy
 });
-var css10, Privacy_policy;
+var css20, Privacy_policy;
 var init_privacy_policy_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/privacy-policy.svelte.js"() {
-    init_index_c9c8dd9a();
-    css10 = {
+    init_index_c287c2ee();
+    css20 = {
       code: "ol.svelte-1907t1f.svelte-1907t1f{counter-reset:item}ol.svelte-1907t1f>li.svelte-1907t1f{display:block;margin-bottom:2rem}ol.svelte-1907t1f>li.svelte-1907t1f:before{content:counters(item, '.') '. ';counter-increment:item;padding-right:8px}p.svelte-1907t1f.svelte-1907t1f{line-height:1.775;font-weight:400;padding:6px 0}p.svelte-1907t1f.svelte-1907t1f:first-child{margin-top:12px}",
       map: null
     };
     Privacy_policy = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css10);
+      $$result.css.add(css20);
       return `--&gt;
 <div class="${"bg-gradient-to-r from-slate-900 to-fuchsia-900 "}"><div class="${"max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between"}"><div class="${"max-w-3xl"}"><h1 class="${"text-sm font-semibold tracking-wide uppercase"}"><span class="${"bg-gradient-to-r from-white to-rose-300 bg-clip-text text-transparent"}">Trip Support</span></h1>
 			<h2 class="${"text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"}">Privacy Policy
@@ -8157,21 +8675,21 @@ var init_privacy_policy_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/7.js
-var __exports8 = {};
-__export(__exports8, {
-  css: () => css11,
-  entry: () => entry8,
-  js: () => js8,
+// .svelte-kit/output/server/nodes/17.js
+var __exports18 = {};
+__export(__exports18, {
+  css: () => css21,
+  entry: () => entry18,
+  js: () => js18,
   module: () => privacy_policy_svelte_exports
 });
-var entry8, js8, css11;
-var init__8 = __esm({
-  ".svelte-kit/output/server/nodes/7.js"() {
+var entry18, js18, css21;
+var init__18 = __esm({
+  ".svelte-kit/output/server/nodes/17.js"() {
     init_privacy_policy_svelte();
-    entry8 = "pages/privacy-policy.svelte-d363ad55.js";
-    js8 = ["pages/privacy-policy.svelte-d363ad55.js", "chunks/vendor-6ea63d49.js"];
-    css11 = ["assets/pages/terms-conditions.svelte-bac2b551.css"];
+    entry18 = "pages/privacy-policy.svelte-b5dec7b3.js";
+    js18 = ["pages/privacy-policy.svelte-b5dec7b3.js", "chunks/vendor-3e73c3b8.js"];
+    css21 = ["assets/pages/pay-later-terms.svelte-967b3a2e.css"];
   }
 });
 
@@ -8183,28 +8701,61 @@ __export(flight_hotel_svelte_exports, {
 var Flight_hotel;
 var init_flight_hotel_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flight-hotel.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     Flight_hotel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
   }
 });
 
-// .svelte-kit/output/server/nodes/8.js
-var __exports9 = {};
-__export(__exports9, {
-  css: () => css12,
-  entry: () => entry9,
-  js: () => js9,
+// .svelte-kit/output/server/nodes/18.js
+var __exports19 = {};
+__export(__exports19, {
+  css: () => css22,
+  entry: () => entry19,
+  js: () => js19,
   module: () => flight_hotel_svelte_exports
 });
-var entry9, js9, css12;
-var init__9 = __esm({
-  ".svelte-kit/output/server/nodes/8.js"() {
+var entry19, js19, css22;
+var init__19 = __esm({
+  ".svelte-kit/output/server/nodes/18.js"() {
     init_flight_hotel_svelte();
-    entry9 = "pages/flight-hotel.svelte-10446fc4.js";
-    js9 = ["pages/flight-hotel.svelte-10446fc4.js", "chunks/vendor-6ea63d49.js"];
-    css12 = [];
+    entry19 = "pages/flight-hotel.svelte-c38fefaf.js";
+    js19 = ["pages/flight-hotel.svelte-c38fefaf.js", "chunks/vendor-3e73c3b8.js"];
+    css22 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/group-travel.svelte.js
+var group_travel_svelte_exports = {};
+__export(group_travel_svelte_exports, {
+  default: () => Group_travel
+});
+var Group_travel;
+var init_group_travel_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/group-travel.svelte.js"() {
+    init_index_c287c2ee();
+    Group_travel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return ``;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/19.js
+var __exports20 = {};
+__export(__exports20, {
+  css: () => css23,
+  entry: () => entry20,
+  js: () => js20,
+  module: () => group_travel_svelte_exports
+});
+var entry20, js20, css23;
+var init__20 = __esm({
+  ".svelte-kit/output/server/nodes/19.js"() {
+    init_group_travel_svelte();
+    entry20 = "pages/group-travel.svelte-5deeba99.js";
+    js20 = ["pages/group-travel.svelte-5deeba99.js", "chunks/vendor-3e73c3b8.js"];
+    css23 = [];
   }
 });
 
@@ -8216,7 +8767,7 @@ __export(contact_us_svelte_exports, {
 var Contact_us;
 var init_contact_us_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/contact-us.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     Contact_us = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl p-4"}">
 	<section class="${"bg-white py-20 lg:py-[120px] overflow-hidden relative z-10"}"><div class="${"container"}"><div class="${"flex flex-wrap lg:justify-between -mx-4"}"><div class="${"w-full lg:w-1/2 xl:w-6/12 px-4"}"><div class="${"max-w-[570px] mb-12 lg:mb-0"}"><span class="${"block mb-4 text-base text-primary font-semibold"}">Contact Us </span>
@@ -8249,21 +8800,21 @@ var init_contact_us_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/9.js
-var __exports10 = {};
-__export(__exports10, {
-  css: () => css13,
-  entry: () => entry10,
-  js: () => js10,
+// .svelte-kit/output/server/nodes/20.js
+var __exports21 = {};
+__export(__exports21, {
+  css: () => css24,
+  entry: () => entry21,
+  js: () => js21,
   module: () => contact_us_svelte_exports
 });
-var entry10, js10, css13;
-var init__10 = __esm({
-  ".svelte-kit/output/server/nodes/9.js"() {
+var entry21, js21, css24;
+var init__21 = __esm({
+  ".svelte-kit/output/server/nodes/20.js"() {
     init_contact_us_svelte();
-    entry10 = "pages/contact-us.svelte-cb5a6467.js";
-    js10 = ["pages/contact-us.svelte-cb5a6467.js", "chunks/vendor-6ea63d49.js"];
-    css13 = [];
+    entry21 = "pages/contact-us.svelte-d2e61e90.js";
+    js21 = ["pages/contact-us.svelte-d2e61e90.js", "chunks/vendor-3e73c3b8.js"];
+    css24 = [];
   }
 });
 
@@ -8275,8 +8826,8 @@ __export(blog_post_svelte_exports, {
 var FlightCTA, HotelCTA, VacationCTA, Blog_post;
 var init_blog_post_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog-post.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_HotelsIcon_bcf3d6d6();
+    init_index_c287c2ee();
+    init_HotelsIcon_bd56cb64();
     FlightCTA = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"relative"}"><div class="${"hidden sm:flex absolute rounded-3xl top-0 right-0 w-20 h-20 bg-emerald-200 bg-opacity-50 -mt-3 -mr-10 transform -rotate-6"}"></div>
 	<div class="${"absolute rounded-3xl bottom-0 left-0 w-20 h-20 bg-blue-200 bg-opacity-50 -mb-3 -ml-10 transform rotate-6"}"></div>
@@ -8595,21 +9146,21 @@ var init_blog_post_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/10.js
-var __exports11 = {};
-__export(__exports11, {
-  css: () => css14,
-  entry: () => entry11,
-  js: () => js11,
+// .svelte-kit/output/server/nodes/21.js
+var __exports22 = {};
+__export(__exports22, {
+  css: () => css25,
+  entry: () => entry22,
+  js: () => js22,
   module: () => blog_post_svelte_exports
 });
-var entry11, js11, css14;
-var init__11 = __esm({
-  ".svelte-kit/output/server/nodes/10.js"() {
+var entry22, js22, css25;
+var init__22 = __esm({
+  ".svelte-kit/output/server/nodes/21.js"() {
     init_blog_post_svelte();
-    entry11 = "pages/blog-post.svelte-1575c176.js";
-    js11 = ["pages/blog-post.svelte-1575c176.js", "chunks/vendor-6ea63d49.js", "chunks/HotelsIcon-ddcb9645.js"];
-    css14 = [];
+    entry22 = "pages/blog-post.svelte-efcd7c43.js";
+    js22 = ["pages/blog-post.svelte-efcd7c43.js", "chunks/vendor-3e73c3b8.js", "chunks/HotelsIcon-bab37d2d.js"];
+    css25 = [];
   }
 });
 
@@ -8621,12 +9172,12 @@ __export(vacations_svelte_exports, {
 var VacationsHero, StarRating, Cancun, MexicoSubTabs, Vacations;
 var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_BookingWidget_39488cf8();
-    init_Subscribe_5faa30c6();
-    init_BlogPosts_bcd2e28a();
-    init_HotelsIcon_bcf3d6d6();
-    init_index_2043b91f();
+    init_index_c287c2ee();
+    init_BookingWidget_63236557();
+    init_Subscribe_14f16a45();
+    init_BlogPosts_6623eaaa();
+    init_HotelsIcon_bd56cb64();
+    init_index_84501411();
     VacationsHero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl"}"><div class="${"grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]"}"><div class="${"col-span-1 sm:col-span-6 z-[1]"}"><div class="${"lg:pt-12 pb-4 sm:pb-2 px-4 sm:px-8"}"><h1 class="${"bg-gradient-to-r from-pblue-900 to-pred-900 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold text-pblue-900 sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"}">Vacation packages
 				</h1>
@@ -8848,21 +9399,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/11.js
-var __exports12 = {};
-__export(__exports12, {
-  css: () => css15,
-  entry: () => entry12,
-  js: () => js12,
+// .svelte-kit/output/server/nodes/22.js
+var __exports23 = {};
+__export(__exports23, {
+  css: () => css26,
+  entry: () => entry23,
+  js: () => js23,
   module: () => vacations_svelte_exports
 });
-var entry12, js12, css15;
-var init__12 = __esm({
-  ".svelte-kit/output/server/nodes/11.js"() {
+var entry23, js23, css26;
+var init__23 = __esm({
+  ".svelte-kit/output/server/nodes/22.js"() {
     init_vacations_svelte();
-    entry12 = "pages/vacations.svelte-97a5675a.js";
-    js12 = ["pages/vacations.svelte-97a5675a.js", "chunks/vendor-6ea63d49.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/Subscribe-d08f4a8d.js", "chunks/BlogPosts-d9c0b93c.js"];
-    css15 = [];
+    entry23 = "pages/vacations.svelte-e9b5a733.js";
+    js23 = ["pages/vacations.svelte-e9b5a733.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js", "chunks/BlogPosts-8d357881.js"];
+    css26 = [];
   }
 });
 
@@ -8874,7 +9425,7 @@ __export(about_us_svelte_exports, {
 var AboutSvg, About_us;
 var init_about_us_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/about-us.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     AboutSvg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<svg width="${"134"}" height="${"106"}" viewBox="${"0 0 134 106"}" fill="${"none"}" xmlns="${"http://www.w3.org/2000/svg"}"><circle cx="${"1.66667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 31 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3334"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 60.3334 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 103 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"104"}" r="${"1.66667"}" transform="${"rotate(-90 132 104)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 31 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"89.3333"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 89.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 103 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"89.3338"}" r="${"1.66667"}" transform="${"rotate(-90 132 89.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"74.6673"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 74.6673)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 31 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 31 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"31.0003"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 31.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 103 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 103 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"74.6668"}" r="${"1.66667"}" transform="${"rotate(-90 132 74.6668)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"30.9998"}" r="${"1.66667"}" transform="${"rotate(-90 132 30.9998)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 31 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 31 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 103 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 103 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"60.0003"}" r="${"1.66667"}" transform="${"rotate(-90 132 60.0003)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"16.3333"}" r="${"1.66667"}" transform="${"rotate(-90 132 16.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"1.66667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 1.66667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"16.3333"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 16.3333 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 31 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"31"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 31 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"45.3333"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 45.3333)"}" fill="${"#3056D3"}"></circle><circle cx="${"45.6667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 45.6667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"60.3333"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 60.3333 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"88.6667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 88.6667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"117.667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 117.667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"74.6667"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 74.6667 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 103 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"103"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 103 1.66683)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"45.3338"}" r="${"1.66667"}" transform="${"rotate(-90 132 45.3338)"}" fill="${"#3056D3"}"></circle><circle cx="${"132"}" cy="${"1.66683"}" r="${"1.66667"}" transform="${"rotate(-90 132 1.66683)"}" fill="${"#3056D3"}"></circle></svg>`;
     });
@@ -8978,21 +9529,21 @@ var init_about_us_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/12.js
-var __exports13 = {};
-__export(__exports13, {
-  css: () => css16,
-  entry: () => entry13,
-  js: () => js13,
+// .svelte-kit/output/server/nodes/23.js
+var __exports24 = {};
+__export(__exports24, {
+  css: () => css27,
+  entry: () => entry24,
+  js: () => js24,
   module: () => about_us_svelte_exports
 });
-var entry13, js13, css16;
-var init__13 = __esm({
-  ".svelte-kit/output/server/nodes/12.js"() {
+var entry24, js24, css27;
+var init__24 = __esm({
+  ".svelte-kit/output/server/nodes/23.js"() {
     init_about_us_svelte();
-    entry13 = "pages/about-us.svelte-a7dda59f.js";
-    js13 = ["pages/about-us.svelte-a7dda59f.js", "chunks/vendor-6ea63d49.js"];
-    css16 = [];
+    entry24 = "pages/about-us.svelte-05a6032b.js";
+    js24 = ["pages/about-us.svelte-05a6032b.js", "chunks/vendor-3e73c3b8.js"];
+    css27 = [];
   }
 });
 
@@ -9004,28 +9555,28 @@ __export(explore_svelte_exports, {
 var Explore;
 var init_explore_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/explore.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     Explore = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return ``;
     });
   }
 });
 
-// .svelte-kit/output/server/nodes/13.js
-var __exports14 = {};
-__export(__exports14, {
-  css: () => css17,
-  entry: () => entry14,
-  js: () => js14,
+// .svelte-kit/output/server/nodes/24.js
+var __exports25 = {};
+__export(__exports25, {
+  css: () => css28,
+  entry: () => entry25,
+  js: () => js25,
   module: () => explore_svelte_exports
 });
-var entry14, js14, css17;
-var init__14 = __esm({
-  ".svelte-kit/output/server/nodes/13.js"() {
+var entry25, js25, css28;
+var init__25 = __esm({
+  ".svelte-kit/output/server/nodes/24.js"() {
     init_explore_svelte();
-    entry14 = "pages/explore.svelte-3e87b525.js";
-    js14 = ["pages/explore.svelte-3e87b525.js", "chunks/vendor-6ea63d49.js"];
-    css17 = [];
+    entry25 = "pages/explore.svelte-c3b0f66b.js";
+    js25 = ["pages/explore.svelte-c3b0f66b.js", "chunks/vendor-3e73c3b8.js"];
+    css28 = [];
   }
 });
 
@@ -9037,12 +9588,12 @@ __export(flights_svelte_exports, {
 var LottieFlights, FlightHero, FlightDeals, Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_BookingWidget_39488cf8();
-    init_BlogPosts_bcd2e28a();
-    init_Subscribe_5faa30c6();
-    init_HotelsIcon_bcf3d6d6();
-    init_index_2043b91f();
+    init_index_c287c2ee();
+    init_BookingWidget_63236557();
+    init_BlogPosts_6623eaaa();
+    init_Subscribe_14f16a45();
+    init_HotelsIcon_bd56cb64();
+    init_index_84501411();
     LottieFlights = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${``}`;
     });
@@ -9145,21 +9696,21 @@ ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/nodes/14.js
-var __exports15 = {};
-__export(__exports15, {
-  css: () => css18,
-  entry: () => entry15,
-  js: () => js15,
+// .svelte-kit/output/server/nodes/25.js
+var __exports26 = {};
+__export(__exports26, {
+  css: () => css29,
+  entry: () => entry26,
+  js: () => js26,
   module: () => flights_svelte_exports
 });
-var entry15, js15, css18;
-var init__15 = __esm({
-  ".svelte-kit/output/server/nodes/14.js"() {
+var entry26, js26, css29;
+var init__26 = __esm({
+  ".svelte-kit/output/server/nodes/25.js"() {
     init_flights_svelte();
-    entry15 = "pages/flights.svelte-59bef6a6.js";
-    js15 = ["pages/flights.svelte-59bef6a6.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-d9c0b93c.js", "chunks/Subscribe-d08f4a8d.js"];
-    css18 = [];
+    entry26 = "pages/flights.svelte-13b18900.js";
+    js26 = ["pages/flights.svelte-13b18900.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
+    css29 = [];
   }
 });
 
@@ -9171,12 +9722,12 @@ __export(hotels_svelte_exports, {
 var LottieHotels, HotelsHero, Toronto, CanadaSubTabs, Hotels;
 var init_hotels_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/hotels.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_BookingWidget_39488cf8();
-    init_BlogPosts_bcd2e28a();
-    init_Subscribe_5faa30c6();
-    init_HotelsIcon_bcf3d6d6();
-    init_index_2043b91f();
+    init_index_c287c2ee();
+    init_BookingWidget_63236557();
+    init_BlogPosts_6623eaaa();
+    init_Subscribe_14f16a45();
+    init_HotelsIcon_bd56cb64();
+    init_index_84501411();
     LottieHotels = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${``}
 
@@ -9334,21 +9885,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/15.js
-var __exports16 = {};
-__export(__exports16, {
-  css: () => css19,
-  entry: () => entry16,
-  js: () => js16,
+// .svelte-kit/output/server/nodes/26.js
+var __exports27 = {};
+__export(__exports27, {
+  css: () => css30,
+  entry: () => entry27,
+  js: () => js27,
   module: () => hotels_svelte_exports
 });
-var entry16, js16, css19;
-var init__16 = __esm({
-  ".svelte-kit/output/server/nodes/15.js"() {
+var entry27, js27, css30;
+var init__27 = __esm({
+  ".svelte-kit/output/server/nodes/26.js"() {
     init_hotels_svelte();
-    entry16 = "pages/hotels.svelte-7f8d5c49.js";
-    js16 = ["pages/hotels.svelte-7f8d5c49.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-820b3b54.js", "chunks/HotelsIcon-ddcb9645.js", "chunks/BlogPosts-d9c0b93c.js", "chunks/Subscribe-d08f4a8d.js"];
-    css19 = [];
+    entry27 = "pages/hotels.svelte-8c861fba.js";
+    js27 = ["pages/hotels.svelte-8c861fba.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
+    css30 = [];
   }
 });
 
@@ -9360,8 +9911,8 @@ __export(blog_svelte_exports, {
 var BlogHeader, BlogTop, BlogCanada, PopularPostsCanada, BlogPosts2, Blog;
 var init_blog_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog.svelte.js"() {
-    init_index_c9c8dd9a();
-    init_Subscribe_5faa30c6();
+    init_index_c287c2ee();
+    init_Subscribe_14f16a45();
     BlogHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
 <div class="${"relative pb-28 lg:pb-20 bg-gray-800"}"><div class="${"absolute inset-0"}"><img class="${"w-full h-full object-cover"}" src="${"images/blog/travel-guide.jpg"}" alt="${""}">
@@ -9626,21 +10177,21 @@ var init_blog_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/16.js
-var __exports17 = {};
-__export(__exports17, {
-  css: () => css20,
-  entry: () => entry17,
-  js: () => js17,
+// .svelte-kit/output/server/nodes/27.js
+var __exports28 = {};
+__export(__exports28, {
+  css: () => css31,
+  entry: () => entry28,
+  js: () => js28,
   module: () => blog_svelte_exports
 });
-var entry17, js17, css20;
-var init__17 = __esm({
-  ".svelte-kit/output/server/nodes/16.js"() {
+var entry28, js28, css31;
+var init__28 = __esm({
+  ".svelte-kit/output/server/nodes/27.js"() {
     init_blog_svelte();
-    entry17 = "pages/blog.svelte-9c584898.js";
-    js17 = ["pages/blog.svelte-9c584898.js", "chunks/vendor-6ea63d49.js", "chunks/Subscribe-d08f4a8d.js"];
-    css20 = [];
+    entry28 = "pages/blog.svelte-ec65c44f.js";
+    js28 = ["pages/blog.svelte-ec65c44f.js", "chunks/vendor-3e73c3b8.js", "chunks/Subscribe-39a11f67.js"];
+    css31 = [];
   }
 });
 
@@ -9652,7 +10203,7 @@ __export(faqs_svelte_exports, {
 var Faqs;
 var init_faqs_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/faqs.svelte.js"() {
-    init_index_c9c8dd9a();
+    init_index_c287c2ee();
     Faqs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"mx-auto max-w-7xl bg-white"}">
 	<section class="${"pt-20 pb-12 lg:pb-[90px] relative z-20 overflow-hidden "}">
@@ -9731,21 +10282,21 @@ var init_faqs_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/17.js
-var __exports18 = {};
-__export(__exports18, {
-  css: () => css21,
-  entry: () => entry18,
-  js: () => js18,
+// .svelte-kit/output/server/nodes/28.js
+var __exports29 = {};
+__export(__exports29, {
+  css: () => css32,
+  entry: () => entry29,
+  js: () => js29,
   module: () => faqs_svelte_exports
 });
-var entry18, js18, css21;
-var init__18 = __esm({
-  ".svelte-kit/output/server/nodes/17.js"() {
+var entry29, js29, css32;
+var init__29 = __esm({
+  ".svelte-kit/output/server/nodes/28.js"() {
     init_faqs_svelte();
-    entry18 = "pages/faqs.svelte-23c8e084.js";
-    js18 = ["pages/faqs.svelte-23c8e084.js", "chunks/vendor-6ea63d49.js"];
-    css21 = [];
+    entry29 = "pages/faqs.svelte-bedee0dd.js";
+    js29 = ["pages/faqs.svelte-bedee0dd.js", "chunks/vendor-3e73c3b8.js"];
+    css32 = [];
   }
 });
 
@@ -9830,7 +10381,7 @@ async function setResponse(res, response) {
 }
 
 // .svelte-kit/output/server/app.js
-init_index_c9c8dd9a();
+init_index_c287c2ee();
 var __accessCheck2 = (obj, member, msg) => {
   if (!member.has(obj))
     throw TypeError("Cannot " + msg);
@@ -10071,12 +10622,12 @@ function devalue(value) {
   }
   walk(value);
   var names = /* @__PURE__ */ new Map();
-  Array.from(counts).filter(function(entry19) {
-    return entry19[1] > 1;
+  Array.from(counts).filter(function(entry30) {
+    return entry30[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry19, i2) {
-    names.set(entry19[0], getName(i2));
+  }).forEach(function(entry30, i2) {
+    names.set(entry30[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -11780,7 +12331,7 @@ var manifest = {
   assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/about/flight.jpg", "images/about/hotel.jpg", "images/about/office.jpg", "images/about/tripsupport-team.jpg", "images/about/vacation.jpg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-170199f7.js", "js": ["start-170199f7.js", "chunks/vendor-6ea63d49.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-d7572a60.js", "js": ["start-d7572a60.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -11799,7 +12350,18 @@ var manifest = {
       () => Promise.resolve().then(() => (init__15(), __exports15)),
       () => Promise.resolve().then(() => (init__16(), __exports16)),
       () => Promise.resolve().then(() => (init__17(), __exports17)),
-      () => Promise.resolve().then(() => (init__18(), __exports18))
+      () => Promise.resolve().then(() => (init__18(), __exports18)),
+      () => Promise.resolve().then(() => (init__19(), __exports19)),
+      () => Promise.resolve().then(() => (init__20(), __exports20)),
+      () => Promise.resolve().then(() => (init__21(), __exports21)),
+      () => Promise.resolve().then(() => (init__22(), __exports22)),
+      () => Promise.resolve().then(() => (init__23(), __exports23)),
+      () => Promise.resolve().then(() => (init__24(), __exports24)),
+      () => Promise.resolve().then(() => (init__25(), __exports25)),
+      () => Promise.resolve().then(() => (init__26(), __exports26)),
+      () => Promise.resolve().then(() => (init__27(), __exports27)),
+      () => Promise.resolve().then(() => (init__28(), __exports28)),
+      () => Promise.resolve().then(() => (init__29(), __exports29))
     ],
     routes: [
       {
@@ -11813,11 +12375,83 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/signature-vacations\/?$/,
+        params: null,
+        path: "/signature-vacations",
+        shadow: null,
+        a: [0, 3],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/book-now-pay-later\/?$/,
         params: null,
         path: "/book-now-pay-later",
         shadow: null,
-        a: [0, 3],
+        a: [0, 4],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/sunquest-vacations\/?$/,
+        params: null,
+        path: "/sunquest-vacations",
+        shadow: null,
+        a: [0, 5],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/sunwing-vacations\/?$/,
+        params: null,
+        path: "/sunwing-vacations",
+        shadow: null,
+        a: [0, 6],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/westjet-vacations\/?$/,
+        params: null,
+        path: "/westjet-vacations",
+        shadow: null,
+        a: [0, 7],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/customer-support\/?$/,
+        params: null,
+        path: "/customer-support",
+        shadow: null,
+        a: [0, 8],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/porter-vacations\/?$/,
+        params: null,
+        path: "/porter-vacations",
+        shadow: null,
+        a: [0, 9],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/spring-vacations\/?$/,
+        params: null,
+        path: "/spring-vacations",
+        shadow: null,
+        a: [0, 10],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/summer-vacations\/?$/,
+        params: null,
+        path: "/summer-vacations",
+        shadow: null,
+        a: [0, 11],
         b: [1]
       },
       {
@@ -11826,7 +12460,16 @@ var manifest = {
         params: null,
         path: "/terms-conditions",
         shadow: null,
-        a: [0, 4],
+        a: [0, 12],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/winter-vacations\/?$/,
+        params: null,
+        path: "/winter-vacations",
+        shadow: null,
+        a: [0, 13],
         b: [1]
       },
       {
@@ -11835,7 +12478,7 @@ var manifest = {
         params: null,
         path: "/pay-later-terms",
         shadow: null,
-        a: [0, 5],
+        a: [0, 14],
         b: [1]
       },
       {
@@ -11844,7 +12487,16 @@ var manifest = {
         params: null,
         path: "/baggage-policy",
         shadow: null,
-        a: [0, 6],
+        a: [0, 15],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/fall-vacations\/?$/,
+        params: null,
+        path: "/fall-vacations",
+        shadow: null,
+        a: [0, 16],
         b: [1]
       },
       {
@@ -11853,7 +12505,7 @@ var manifest = {
         params: null,
         path: "/privacy-policy",
         shadow: null,
-        a: [0, 7],
+        a: [0, 17],
         b: [1]
       },
       {
@@ -11862,7 +12514,16 @@ var manifest = {
         params: null,
         path: "/flight-hotel",
         shadow: null,
-        a: [0, 8],
+        a: [0, 18],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/group-travel\/?$/,
+        params: null,
+        path: "/group-travel",
+        shadow: null,
+        a: [0, 19],
         b: [1]
       },
       {
@@ -11871,7 +12532,7 @@ var manifest = {
         params: null,
         path: "/contact-us",
         shadow: null,
-        a: [0, 9],
+        a: [0, 20],
         b: [1]
       },
       {
@@ -11880,7 +12541,7 @@ var manifest = {
         params: null,
         path: "/blog-post",
         shadow: null,
-        a: [0, 10],
+        a: [0, 21],
         b: [1]
       },
       {
@@ -11889,7 +12550,7 @@ var manifest = {
         params: null,
         path: "/vacations",
         shadow: null,
-        a: [0, 11],
+        a: [0, 22],
         b: [1]
       },
       {
@@ -11898,7 +12559,7 @@ var manifest = {
         params: null,
         path: "/about-us",
         shadow: null,
-        a: [0, 12],
+        a: [0, 23],
         b: [1]
       },
       {
@@ -11907,7 +12568,7 @@ var manifest = {
         params: null,
         path: "/explore",
         shadow: null,
-        a: [0, 13],
+        a: [0, 24],
         b: [1]
       },
       {
@@ -11916,7 +12577,7 @@ var manifest = {
         params: null,
         path: "/flights",
         shadow: null,
-        a: [0, 14],
+        a: [0, 25],
         b: [1]
       },
       {
@@ -11925,7 +12586,7 @@ var manifest = {
         params: null,
         path: "/hotels",
         shadow: null,
-        a: [0, 15],
+        a: [0, 26],
         b: [1]
       },
       {
@@ -11934,7 +12595,7 @@ var manifest = {
         params: null,
         path: "/blog",
         shadow: null,
-        a: [0, 16],
+        a: [0, 27],
         b: [1]
       },
       {
@@ -11943,7 +12604,7 @@ var manifest = {
         params: null,
         path: "/faqs",
         shadow: null,
-        a: [0, 17],
+        a: [0, 28],
         b: [1]
       }
     ]

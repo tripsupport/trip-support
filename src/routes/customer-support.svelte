@@ -1,42 +1,54 @@
 <script>
+	import OutClick from 'svelte-outclick';
 	import { slide } from 'svelte/transition';
 
 	let q1 = false;
 	const toggleq1 = () => {
 		q1 = !q1;
 	};
+	function hideq1() {
+		q1 = false;
+	}
+
 	let q2 = false;
 	const toggleq2 = () => {
 		q2 = !q2;
 	};
-	let q3 = false;
+	function hideq2() {
+		q2 = false;
+	}
+
+	$: q3 = false;
 	const toggleq3 = () => {
 		q3 = !q3;
 	};
+	function hideq3() {
+		q3 = false;
+	}
+
 	let q4 = false;
 	const toggleq4 = () => {
 		q4 = !q4;
 	};
+	function hideq4() {
+		q4 = false;
+	}
+
 	let q5 = false;
 	const toggleq5 = () => {
 		q5 = !q5;
 	};
+	function hideq5() {
+		q5 = false;
+	}
+
 	let q6 = false;
 	const toggleq6 = () => {
 		q6 = !q6;
 	};
-	let q7 = false;
-	const toggleq7 = () => {
-		q7 = !q7;
-	};
-	let q8 = false;
-	const toggleq8 = () => {
-		q8 = !q8;
-	};
-	let q9 = false;
-	const toggleq9 = () => {
-		q9 = !q9;
-	};
+	function hideq6() {
+		q6 = false;
+	}
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -75,7 +87,7 @@
 				</div>
 				<input
 					id="search"
-					class="block w-full text-white bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 focus:text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"
+					class="block w-full text-white bg-white bg-opacity-20 py-3 pl-10 pr-3 border border-transparent rounded-md leading-5 focus:text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"
 					placeholder="Search"
 					type="search"
 					name="search"
@@ -121,13 +133,13 @@
 				</div>
 			</div>
 			<div class="flex flex-wrap -mx-4">
-				<div class="w-full lg:w-1/3 px-4">
+				<div class="w-full lg:w-1/2 px-4">
 					<!-- Question 1 -->
 					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
 						<button on:click={toggleq1} class="faq-btn flex w-full justify-between items-center">
 							<div class="w-full">
 								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
+									How can I get a copy of my itinerary or booking details?
 								</h4>
 							</div>
 							<div
@@ -162,14 +174,23 @@
 								{/if}
 							</div>
 						</button>
-						{#if q1}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
+						<OutClick on:outclick={hideq1}>
+							{#if q1}
+								<div class="faq-content" transition:slide={{ duration: 500 }}>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										You can find your Trip Support reference or Airline confirmation number at the
+										top of your <a class="font-bold text-rose-600 hover:text-rose-500" href="#"
+											>"My Booking Page"</a
+										> or in your confirmation email.
+									</p>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										Your Trip Support confirmation number consists of Four alphabet and 9-digits
+										(TSFP 123-456-789) and your airline confirmation number is a 6-digit
+										alphanumeric code (ex: LW5QAI).
+									</p>
+								</div>
+							{/if}
+						</OutClick>
 					</div>
 
 					<!-- Question 2 -->
@@ -177,7 +198,7 @@
 						<button on:click={toggleq2} class="faq-btn flex w-full justify-between items-center">
 							<div class="w-full">
 								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
+									How can I get a copy of my itinerary or booking details?
 								</h4>
 							</div>
 							<div
@@ -212,14 +233,17 @@
 								{/if}
 							</div>
 						</button>
-						{#if q2}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
+						<OutClick on:outclick={hideq2}>
+							{#if q2}
+								<div class="faq-content" transition:slide={{ duration: 500 }}>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										Your itinerary and booking details are available to you at all times through
+										your ‘My Booking Page in your account’ and through your email confirmation. You
+										can also print and share your itinerary by email through your ‘My Booking Page’.
+									</p>
+								</div>
+							{/if}
+						</OutClick>
 					</div>
 
 					<!-- Question 3 -->
@@ -262,22 +286,26 @@
 								{/if}
 							</div>
 						</button>
-						{#if q3}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
+						<OutClick on:outclick={hideq3}>
+							{#if q3}
+								<div class="faq-content" transition:slide={{ duration: 500 }}>
+									<p class="text-tiny text-body-color leading-relaxed py-3">
+										Unfortunately, there can be several reasons for a cancellation. You will find a
+										detailed message regarding the status of your itinerary at your <b
+											>‘My Booking Page’</b
+										> . A cancellation email was also sent to you verifying the status of your booking.
+									</p>
+								</div>
+							{/if}
+						</OutClick>
 					</div>
 				</div>
-				<div class="w-full lg:w-1/3 px-4">
+				<div class="w-full lg:w-1/2 px-4">
 					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
 						<button on:click={toggleq4} class="faq-btn flex w-full justify-between items-center">
 							<div class="w-full">
 								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
+									What is Trip Support’s cancellation policy?
 								</h4>
 							</div>
 							<div
@@ -312,20 +340,31 @@
 								{/if}
 							</div>
 						</button>
-						{#if q4}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
+						<OutClick on:outclick={hideq4}>
+							{#if q4}
+								<div class="faq-content" transition:slide={{ duration: 500 }}>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										Most discounted airline tickets are non-refundable. Although non-refundable
+										tickets are the most economical, they are also the most restrictive and do not
+										allow refunds. These restrictions make it possible for Trip Support to continue
+										to offer better fare prices in addition to our existing deeply discounted
+										airfares.
+									</p>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										If your booking is eligible for a cancellation, it may be subject to an airline
+										cancellation fee of up to $250 per passenger, as well as any fees or differences
+										in price charged by suppliers. For more information please contact us at
+										1-855-606-0606
+									</p>
+								</div>
+							{/if}
+						</OutClick>
 					</div>
 					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
 						<button on:click={toggleq5} class="faq-btn flex w-full justify-between items-center">
 							<div class="w-full">
 								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
+									How do I know my booking is confirmed?
 								</h4>
 							</div>
 							<div
@@ -360,20 +399,24 @@
 								{/if}
 							</div>
 						</button>
-						{#if q5}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
+						<OutClick on:outclick={hideq5}>
+							{#if q5}
+								<div class="faq-content" transition:slide={{ duration: 500 }}>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										Once we finalize your reservation, you will receive a confirmation email with
+										your itinerary, airline confirmation number and all other details about your
+										trip. You can also view the status of your reservation through your “My Booking
+										Page“ available to you at all times.
+									</p>
+								</div>
+							{/if}
+						</OutClick>
 					</div>
 					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
 						<button on:click={toggleq6} class="faq-btn flex w-full justify-between items-center">
 							<div class="w-full">
 								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
+									Can I print my e-ticket?
 								</h4>
 							</div>
 							<div
@@ -408,160 +451,16 @@
 								{/if}
 							</div>
 						</button>
-						{#if q6}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
-					</div>
-				</div>
-				<div class="w-full lg:w-1/3 px-4">
-					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
-						<button on:click={toggleq7} class="faq-btn flex w-full justify-between items-center">
-							<div class="w-full">
-								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
-								</h4>
-							</div>
-							<div
-								class="w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"
-							>
-								{#if q7}
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-6 w-6"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								{:else}
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-6 w-6"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								{/if}
-							</div>
-						</button>
-						{#if q7}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
-					</div>
-					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
-						<button on:click={toggleq8} class="faq-btn flex w-full justify-between items-center">
-							<div class="w-full">
-								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
-								</h4>
-							</div>
-							<div
-								class="w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"
-							>
-								{#if q8}
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-6 w-6"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								{:else}
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-6 w-6"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								{/if}
-							</div>
-						</button>
-						{#if q8}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
-					</div>
-					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
-						<button on:click={toggleq9} class="faq-btn flex w-full justify-between items-center">
-							<div class="w-full">
-								<h4 class="text-base text-left font-semibold text-black">
-									Why was my booking canceled?
-								</h4>
-							</div>
-							<div
-								class="w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"
-							>
-								{#if q9}
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-6 w-6"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								{:else}
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="h-6 w-6"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-								{/if}
-							</div>
-						</button>
-						{#if q9}
-							<div class="faq-content" transition:slide={{ duration: 500 }}>
-								<p class="text-tiny text-body-color leading-relaxed py-3">
-									Yes, your airline contact information can be found below your, alternatively you
-									can also search for your airline here.
-								</p>
-							</div>
-						{/if}
+						<OutClick on:outclick={hideq6}>
+							{#if q6}
+								<div class="faq-content" transition:slide={{ duration: 500 }}>
+									<p class="text-base text-body-color leading-relaxed py-3">
+										You can print a copy of your e-ticket through your “My booking Page” or through
+										your ticket confirmation email.
+									</p>
+								</div>
+							{/if}
+						</OutClick>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d7572a60.js",
+    "file": "start-037a5a63.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -40,7 +40,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-9a7ad98e.js",
+    "file": "pages/__layout.svelte-c78e6721.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -48,7 +48,7 @@
       "_vendor-3e73c3b8.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-da534d00.css"
+      "assets/pages/__layout.svelte-59490755.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -166,7 +166,7 @@
       "_vendor-3e73c3b8.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
+      "assets/pages/privacy-policy.svelte-f003e47a.css"
     ]
   },
   "src/routes/winter-vacations.svelte": {
@@ -187,7 +187,7 @@
       "_vendor-3e73c3b8.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
+      "assets/pages/privacy-policy.svelte-f003e47a.css"
     ]
   },
   "src/routes/baggage-policy.svelte": {
@@ -217,7 +217,7 @@
       "_vendor-3e73c3b8.js"
     ],
     "css": [
-      "assets/pages/pay-later-terms.svelte-967b3a2e.css"
+      "assets/pages/privacy-policy.svelte-f003e47a.css"
     ]
   },
   "src/routes/flight-hotel.svelte": {
@@ -239,7 +239,7 @@
     ]
   },
   "src/routes/contact-us.svelte": {
-    "file": "pages/contact-us.svelte-d2e61e90.js",
+    "file": "pages/contact-us.svelte-01496c49.js",
     "src": "src/routes/contact-us.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

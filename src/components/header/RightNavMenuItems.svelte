@@ -37,7 +37,7 @@
 
 <!-- Language selection -->
 <div class="flex-shrink-0 ">
-	<a href="javascript:void(0)" class="text-slate-900 hover:text-rose-600 flex items-center">
+	<a href="/contact-us" class="text-slate-900 hover:text-rose-600 flex items-center">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			class="h-4 w-auto mr-0"

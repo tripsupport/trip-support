@@ -1638,10 +1638,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry30 = this._queue.shift();
-              this._queueTotalSize -= entry30.byteLength;
+              const entry34 = this._queue.shift();
+              this._queueTotalSize -= entry34.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry30.buffer, entry30.byteOffset, entry30.byteLength);
+              const view = new Uint8Array(entry34.buffer, entry34.byteOffset, entry34.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5586,7 +5586,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css33) => css33.code).join("\n"),
+          code: Array.from(result.css).map((css37) => css37.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -6006,78 +6006,115 @@ var init_layout_svelte = __esm({
       const vacationDeals = [
         {
           name: "Spring Vacations",
-          href: "/spring-vacations"
+          href: "/vacation-deals"
         },
         {
           name: "Winter Vacations",
-          href: "/winter-vacations"
+          href: "/vacation-deals"
         },
         {
           name: "Summer Vacations",
-          href: "/summer-vacations"
+          href: "/vacation-deals"
         },
         {
           name: "Fall Vacations",
-          href: "/fall-vacations"
+          href: "/vacation-deals"
         },
         {
           name: "Group Travel",
-          href: "/group-travel"
+          href: "/vacation-deals"
         }
       ];
       const destinations = [
         {
           name: "Westjet Vacations",
-          href: "/westjet-vacations"
+          href: "/destinations"
         },
         {
           name: "Porter Vacations",
-          href: "/porter-vacations"
+          href: "/destinations"
         },
         {
           name: "sunwing Vacations",
-          href: "/sunwing-vacations"
+          href: "/destinations"
         },
         {
           name: "sunquest Vacations",
-          href: "/sunquest-vacations"
+          href: "/destinations"
         },
         {
           name: "signature Vacations",
-          href: "/signature-vacations"
+          href: "/destinations"
+        }
+      ];
+      const flightDeals = [
+        {
+          name: "Cheap Flight To Edmonton",
+          href: "/flight-deals"
+        },
+        {
+          name: "Cheap Flight To Calgary",
+          href: "/flight-deals"
+        },
+        {
+          name: "Cheap Flight To San Francisco",
+          href: "/flight-deals"
+        },
+        {
+          name: "Cheap Flight To Toronto",
+          href: "/flight-deals"
+        },
+        {
+          name: "Cheap Flight To Vancouver",
+          href: "/flight-deals"
+        }
+      ];
+      const travelDeals = [
+        {
+          name: "All Inclusive Resorts",
+          href: "/travel-deals"
+        },
+        {
+          name: "Singles Vacations",
+          href: "/travel-deals"
+        },
+        {
+          name: "3 to 5 Day Vacation Deals",
+          href: "/travel-deals"
+        },
+        {
+          name: "2 Week Vacation Deals",
+          href: "/travel-deals"
+        },
+        {
+          name: "Best Family Resorts",
+          href: "/travel-deals"
         }
       ];
       return `<div class="${"mx-auto max-w-7xl py-2 px-4 sm:px-6 sm:py-8 lg:py-20 lg:px-8 lg:pb-8"}"><div class="${"mt-12 grid grid-cols-6 gap-8 xl:col-span-12 xl:mt-0"}"><div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Vacation Deals
 			</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(vacationDeals, (deal) => {
-        return `<li><a sveltekit:prefetch${add_attribute("href", deal.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(deal.name)}</a>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(vacationDeals, (link) => {
+        return `<li><a sveltekit:prefetch${add_attribute("href", link.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(link.name)}</a>
 					</li>`;
       })}</ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Destinations</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(destinations, (dest) => {
-        return `<li><a sveltekit:prefetch${add_attribute("href", dest.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(dest.name)}</a>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(destinations, (link) => {
+        return `<li><a sveltekit:prefetch${add_attribute("href", link.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(link.name)}</a>
 					</li>`;
       })}</ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">Flight Deals</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flights to edmonton</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">Flight To San Francisco</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to toronto</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">flight to vancouver</a></li></ul></div>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(flightDeals, (link) => {
+        return `<li><a sveltekit:prefetch${add_attribute("href", link.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(link.name)}</a>
+					</li>`;
+      })}</ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">travel deals</h3>
-			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">all inclusive resorts</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">singles vacations</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">3 - 5 day vacations</a></li>
-
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">2 weeks vacation</a></li>
-				<li><a sveltekit:prefetch href="${"javascript:void(0)"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">best family resorts</a></li></ul></div>
+			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}">${each(travelDeals, (link) => {
+        return `<li><a sveltekit:prefetch${add_attribute("href", link.href, 0)} class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">${escape(link.name)}</a>
+					</li>`;
+      })}</ul></div>
 
 		<div class="${"col-span-3 sm:col-span-2 lg:col-span-1"}"><h3 class="${"font-semibold uppercase text-slate-800 text-sm tracking-normal "}">quick links</h3>
 			<ul${add_attribute("role", "list", 0)} class="${"mt-4 space-y-2"}"><li><a sveltekit:prefetch href="${"/blog"}" class="${"capitalize text-slate-600 text-sm hover:text-gray-900"}">blog</a></li>
@@ -6135,9 +6172,9 @@ var entry, js, css;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-d6fde7ea.js";
-    js = ["pages/__layout.svelte-d6fde7ea.js", "chunks/vendor-3e73c3b8.js"];
-    css = ["assets/pages/__layout.svelte-43e75e7d.css"];
+    entry = "pages/__layout.svelte-d6060821.js";
+    js = ["pages/__layout.svelte-d6060821.js", "chunks/vendor-3e73c3b8.js"];
+    css = ["assets/pages/__layout.svelte-6ac39c78.css"];
   }
 });
 
@@ -6208,10 +6245,10 @@ var init_HotelsIcon_f7770270 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/BookingWidget-1bfec48e.js
+// .svelte-kit/output/server/chunks/BookingWidget-9bbd6ea9.js
 var SwitchHorizontal, Cabin, TravellersMob, Travellers, RoundtripSearchBtn, SearchOptions, Plane, PlaneSearch, SearchFlights, RoundTrip, SearchFlightsMob, leaving, RoundTripMobForm, FlightsTab, BookingWidget;
-var init_BookingWidget_1bfec48e = __esm({
-  ".svelte-kit/output/server/chunks/BookingWidget-1bfec48e.js"() {
+var init_BookingWidget_9bbd6ea9 = __esm({
+  ".svelte-kit/output/server/chunks/BookingWidget-9bbd6ea9.js"() {
     init_index_77482e32();
     init_HotelsIcon_f7770270();
     init_OutClick_6647c5ef();
@@ -6299,14 +6336,12 @@ ${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
 		<span class="${"flex"}">Search Roundtrip Flights</span></a></div>`;
     });
     SearchOptions = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<div class="${"col-span-12 md:col-span-2"}"><fieldset><div class="${"flex items-center space-x-4 sm:space-x-8 lg:space-x-10 justify-between sm:justify-start"}"><div class="${"inline-flex items-center"}"><input id="${"email"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
-
-				<label for="${"email"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Flexible Search
-				</label></div>
-
-			<div class="${"inline-flex items-center"}"><input id="${"sms"}" name="${"notification-method"}" type="${"radio"}" class="${"focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"}">
-				<label for="${"sms"}" class="${"ml-3 block text-sm font-medium text-gray-700"}">Non-stop flights only
-				</label></div></div></fieldset></div>`;
+      return `<fieldset><div class="${"flex items-center space-x-4 sm:space-x-8 lg:space-x-10 justify-between sm:justify-start"}"><div class="${"inline-flex items-center"}"><div class="${"form-check"}"><input class="${"appearance-none h-4 w-4 border border-gray-300 rounded-full bg-white checked:bg-pblue-600 checked:border-pblue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"}" type="${"checkbox"}" value="${""}">
+				<label class="${"form-check-label inline-block text-gray-700 font-medium text-sm"}" for="${"flexCheckDefault"}">Flexible search
+				</label></div></div>
+		<div class="${"inline-flex"}"><div class="${"form-check ml-3"}"><input class="${"appearance-none h-4 w-4 border border-gray-300 rounded-full bg-white checked:bg-pblue-600 checked:border-pblue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"}" type="${"checkbox"}" value="${""}">
+				<label class="${"form-check-label inline-block text-gray-700 font-medium text-sm"}" for="${"flexCheckDefault"}">Non-stop flights only
+				</label></div></div></div></fieldset>`;
     });
     Plane = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"mr-2 h-5 w-5 text-pblue-500"}" viewBox="${"0 0 24 24"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M3.64 14.26l2.86.95 4.02-4.02-8-4.59 1.16-1.16c.1-.1.26-.14.41-.1l9.3 2.98c1.58-1.58 3.15-3.2 4.77-4.75.31-.33.7-.58 1.16-.73.45-.16.87-.27 1.25-.34.55-.05.98.4.93.93-.07.38-.18.8-.34 1.25-.15.46-.4.85-.73 1.16l-4.75 4.78 2.97 9.29c.05.15 0 .29-.1.41l-1.17 1.16-4.57-8.02L8.8 17.5l.95 2.84L8.6 21.5l-2.48-3.62L2.5 15.4l1.14-1.14z"}" clip-rule="${"evenodd"}"></path></svg>`;
@@ -6647,7 +6682,7 @@ var Hero, PopularFlightDeals, VacationDestinations, PromoSection, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_77482e32();
-    init_BookingWidget_1bfec48e();
+    init_BookingWidget_9bbd6ea9();
     init_BlogPosts_1de0bacf();
     init_Subscribe_bb3f7014();
     init_HotelsIcon_f7770270();
@@ -6665,7 +6700,7 @@ var init_index_svelte = __esm({
       return `
 <div class="${"relative bg-white overflow-hidden"}"><div class="${"max-w-7xl mx-auto"}"><div class="${"relative z-[3] pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-5xl lg:w-full lg:pb-12 xl:pb-12"}"><svg class="${"hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"}" fill="${"currentColor"}" viewBox="${"0 0 100 100"}" preserveAspectRatio="${"none"}" aria-hidden="${"true"}"><polygon points="${"50,0 100,0 50,100 0,100"}"></polygon></svg>
 
-			<div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-4 "}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
+			<div class="${"mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8"}"><div class="${"text-left"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"}"><span class="${"block xl:inline"}">Popular Flight Deals</span>
 							</h1>
 
 						<a href="${"/flights#popular_flights"}" class="${"hidden text-sm font-semibold text-rose-600 hover:text-pblue-900 sm:block"}">Browse all Popular Flight Deals<span aria-hidden="${"true"}">\u2192</span></a></div>
@@ -6812,8 +6847,8 @@ var entry3, js3, css3;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
-    entry3 = "pages/index.svelte-9f2f7789.js";
-    js3 = ["pages/index.svelte-9f2f7789.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
+    entry3 = "pages/index.svelte-840c81a1.js";
+    js3 = ["pages/index.svelte-840c81a1.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
     css3 = [];
   }
 });
@@ -6860,7 +6895,7 @@ var BookNowHero, BookNowFeature, WeeklyExample, HowDoesItWork, PaymentPlans, Bnp
 var init_book_now_pay_later_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/book-now-pay-later.svelte.js"() {
     init_index_77482e32();
-    init_BookingWidget_1bfec48e();
+    init_BookingWidget_9bbd6ea9();
     init_Subscribe_bb3f7014();
     init_HotelsIcon_f7770270();
     init_OutClick_6647c5ef();
@@ -7029,11 +7064,9 @@ var init_book_now_pay_later_svelte = __esm({
     });
     PaymentPlans = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `
-
-
 <div class="${"bg-white overflow-hidden"}">
 
-	<div class="${"flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 gap-x-12"}"><div class="${"lg:w-1/3 lg:mr-16 lg:flex lg:justify-center lg:items-center"}"><div class="${"lg:w-96 relative"}"><div class="${"absolute rounded-full top-0 right-0 w-32 h-32 bg-yellow-200 bg-opacity-50 -mt-12 -mr-12"}"></div>
+	<div class="${"flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 gap-x-12"}"><div class="${"lg:w-1/3 lg:mr-16 lg:flex lg:justify-center lg:items-center"}"><div class="${"lg:w-96 relative"}"><div class="${"absolute rounded-full top-0 right-0 w-32 h-32 bg-yellow-200 bg-opacity-50 -mt-12 -mr-12"}"></div>
 
 				<div class="${"absolute rounded-xl bottom-0 left-0 w-32 h-32 bg-blue-200 bg-opacity-50 -mb-10 -ml-10 transform rotate-3"}"></div>
 				<div class="${"aspect-w-2 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden sm:aspect-w-1 sm:aspect-h-2"}"><img src="${"images/hero/hero-2.jpg"}" alt="${"Maple organizer base with slots, supporting white polycarbonate trays of various sizes."}" class="${"object-center object-cover"}"></div></div></div>
@@ -7169,8 +7202,8 @@ var entry5, js5, css5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_book_now_pay_later_svelte();
-    entry5 = "pages/book-now-pay-later.svelte-ee61e598.js";
-    js5 = ["pages/book-now-pay-later.svelte-ee61e598.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js"];
+    entry5 = "pages/book-now-pay-later.svelte-1442c7ea.js";
+    js5 = ["pages/book-now-pay-later.svelte-1442c7ea.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js"];
     css5 = [];
   }
 });
@@ -8440,84 +8473,48 @@ var init_baggage_policy_svelte = __esm({
 		<div class="${"pb-12"}"><ul role="${"list"}" class="${"grid grid-cols-1 gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 "}"><li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 				<li class="${"col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"}"><div class="${"w-full flex items-center justify-between p-6 space-x-6"}"><img class="${"w-16 h-16 rounded-full flex-shrink-0"}" src="${"/icons/baggage/air-canada-icon.svg"}" alt="${""}">
 						<div class="${"flex-1 truncate"}"><div class="${"flex items-center space-x-3"}"><h3 class="${"text-gray-900 text-lg font-bold truncate"}">Air Canada</h3></div>
 							<p class="${"mt-1 text-gray-500 text-sm truncate"}">Anywhere to Anywhere</p></div></div>
-					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}">
-									<svg class="${"w-5 h-5 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"}"></path><path d="${"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"}"></path></svg>
-									<span class="${"ml-3"}">Baggage Policy</span></a></div>
-							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}">
-									<svg class="${"w-4 h-4 "}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"}"></path></svg>
-									<span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
+					<div><div class="${"-mt-px flex divide-x divide-gray-200 "}"><div class="${"w-0 flex-1 flex"}"><a href="${"mailto:janecooper@example.com"}" class="${"relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-rose-600 font-medium border border-transparent rounded-bl-lg hover:text-rose-500"}"><span class="${"ml-3"}">Baggage Policy</span></a></div>
+							<div class="${"-ml-px w-0 flex-1 flex"}"><a href="${"tel:+1-888-247-2262"}" class="${"relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sz text-pblue-600 font-medium border border-transparent rounded-br-lg hover:text-pblue-500"}"><span class="${"ml-3"}">1 (888) 247-2262</span></a></div></div></div></li>
 
 				</ul></div>
 		${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}</div></div>`;
@@ -8537,8 +8534,8 @@ var entry16, js16, css18;
 var init__16 = __esm({
   ".svelte-kit/output/server/nodes/15.js"() {
     init_baggage_policy_svelte();
-    entry16 = "pages/baggage-policy.svelte-6570b005.js";
-    js16 = ["pages/baggage-policy.svelte-6570b005.js", "chunks/vendor-3e73c3b8.js", "chunks/Subscribe-39a11f67.js"];
+    entry16 = "pages/baggage-policy.svelte-83a1017d.js";
+    js16 = ["pages/baggage-policy.svelte-83a1017d.js", "chunks/vendor-3e73c3b8.js", "chunks/Subscribe-39a11f67.js"];
     css18 = [];
   }
 });
@@ -8815,6 +8812,596 @@ var init__18 = __esm({
   }
 });
 
+// .svelte-kit/output/server/chunks/MoreDestinations-dc042907.js
+var MoreDestinations;
+var init_MoreDestinations_dc042907 = __esm({
+  ".svelte-kit/output/server/chunks/MoreDestinations-dc042907.js"() {
+    init_index_77482e32();
+    MoreDestinations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"bg-gray-800"}"><div class="${"container xl:max-w-7xl mx-auto px-4 py-16"}"><section class="${"relative py-4"}"><div class="${"text-left max-w-4xl"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-white sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">More Destinations to Explore</span></h1></div>
+				<p class="${"text-md text-white sm:text-md md:text-md lg:mx-0 my-4"}">Trip Support is the right way to reach your travel dreams.
+				</p></div></section>
+
+		<div class="${"grid grid-cols-1 md:grid-cols-5 gap-4 text-white"}"><a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a>
+			<a href="${"#"}" class="${"h-10 flex px-4 py-2 items-center bg-gray-300 bg-opacity-25 rounded-lg hover:bg-rose-600"}"><div class="${"text-tiny"}">All Inclusive Hotels in Negril</div></a></div></div></div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/chunks/SpecialOfferCards-94a6f239.js
+var Stars, SpecialOfferCards;
+var init_SpecialOfferCards_94a6f239 = __esm({
+  ".svelte-kit/output/server/chunks/SpecialOfferCards-94a6f239.js"() {
+    init_index_77482e32();
+    Stars = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"flex justify-start"}"><svg class="${"h-5 w-5 flex-shrink-0 text-yellow-300"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg>
+
+	<svg class="${"h-5 w-5 flex-shrink-0 text-yellow-300"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg>
+
+	<svg class="${"h-5 w-5 flex-shrink-0 text-yellow-300"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg>
+
+	<svg class="${"h-5 w-5 flex-shrink-0 text-yellow-300"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg>
+
+	<svg class="${"h-5 w-5 flex-shrink-0 text-yellow-300"}" xmlns="${"http://www.w3.org/2000/svg"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}" aria-hidden="${"true"}"><path d="${"M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"}"></path></svg></div>`;
+    });
+    SpecialOfferCards = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"mt-2 mb-4 lg:mt-6 lg:mb-16 px-4 max-w-lg mx-auto grid gap-x-6 lg:grid-cols-4 lg:max-w-none"}">
+	<div class="${"rounded-lg shadow-lg overflow-hidden mt-6"}"><div class="${"flex-shrink-0"}">
+			
+			<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/acapulco.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
+		<div class="${"flex px-6 pb-4 flex-col"}"><div class="${"flex-col"}"><div>${validate_component(Stars, "Stars").$$render($$result, {}, {}, {})}</div>
+				<div class="${"mt-3"}"><div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
+						<span class="${"h-4 my-auto w-px bg-gray-200"}" aria-hidden="${"true"}"></span>
+						<span>Junior Suite</span></div></div></div>
+
+			<div class="${"flex flex-col"}"><div><a href="${"#"}" class="${"block mt-4 capitalize prose"}"><p class="${"text-xl font-bold text-slate-900 m-0 truncate leading-tight"}">Grand Sunset Princess All Suites &amp; Spa
+						</p>
+						<p class="${"text-tiny font-medium m-0"}">Cancun, Mexico</p></a></div></div>
+			<div class="${"flex-col justify-between mt-2 items-center"}"><div class="${"text-right"}"><p class="${"text-xl text-slate-900 font-bold mb-0"}"><span class="${"font-normal text-tiny"}">CA </span>$1846.70
+					</p>
+					<p class="${"text-xx font-light -mt-1"}">per guest</p></div>
+				<div class="${"text-left pt-2"}"><p class="${"capitalize text-xz font-semibold text-slate-900"}">April 6, 2022 (7 days)</p>
+					<p class="${"capitalize text-xs font-light text-slate-900"}">price includes taxes and fees</p></div>
+				<div class="${"text-left py-3"}"><p class="${"capitalize text-xz font-semibold text-rose-600"}">Toronto to Cayo Coco, Cuba</p></div></div></div></div>
+	
+	<div class="${"rounded-lg shadow-lg overflow-hidden mt-6"}"><div class="${"flex-shrink-0"}">
+			
+			<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/acapulco.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
+		<div class="${"flex px-6 pb-4 flex-col"}"><div class="${"flex-col"}"><div>${validate_component(Stars, "Stars").$$render($$result, {}, {}, {})}</div>
+				<div class="${"mt-3"}"><div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
+						<span class="${"h-4 my-auto w-px bg-gray-200"}" aria-hidden="${"true"}"></span>
+						<span>Junior Suite</span></div></div></div>
+
+			<div class="${"flex flex-col"}"><div><a href="${"#"}" class="${"block mt-4 capitalize prose"}"><p class="${"text-xl font-bold text-slate-900 m-0 truncate leading-tight"}">Grand Sunset Princess All Suites &amp; Spa
+						</p>
+						<p class="${"text-tiny font-medium m-0"}">Cancun, Mexico</p></a></div></div>
+			<div class="${"flex-col justify-between mt-2 items-center"}"><div class="${"text-right"}"><p class="${"text-xl text-slate-900 font-bold mb-0"}"><span class="${"font-normal text-tiny"}">CA </span>$1846.70
+					</p>
+					<p class="${"text-xx font-light -mt-1"}">per guest</p></div>
+				<div class="${"text-left pt-2"}"><p class="${"capitalize text-xz font-semibold text-slate-900"}">April 6, 2022 (7 days)</p>
+					<p class="${"capitalize text-xs font-light text-slate-900"}">price includes taxes and fees</p></div>
+				<div class="${"text-left py-3"}"><p class="${"capitalize text-xz font-semibold text-rose-600"}">Toronto to Cayo Coco, Cuba</p></div></div></div></div>
+	
+	<div class="${"rounded-lg shadow-lg overflow-hidden mt-6"}"><div class="${"flex-shrink-0"}">
+			
+			<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/acapulco.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
+		<div class="${"flex px-6 pb-4 flex-col"}"><div class="${"flex-col"}"><div>${validate_component(Stars, "Stars").$$render($$result, {}, {}, {})}</div>
+				<div class="${"mt-3"}"><div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
+						<span class="${"h-4 my-auto w-px bg-gray-200"}" aria-hidden="${"true"}"></span>
+						<span>Junior Suite</span></div></div></div>
+
+			<div class="${"flex flex-col"}"><div><a href="${"#"}" class="${"block mt-4 capitalize prose"}"><p class="${"text-xl font-bold text-slate-900 m-0 truncate leading-tight"}">Grand Sunset Princess All Suites &amp; Spa
+						</p>
+						<p class="${"text-tiny font-medium m-0"}">Cancun, Mexico</p></a></div></div>
+			<div class="${"flex-col justify-between mt-2 items-center"}"><div class="${"text-right"}"><p class="${"text-xl text-slate-900 font-bold mb-0"}"><span class="${"font-normal text-tiny"}">CA </span>$1846.70
+					</p>
+					<p class="${"text-xx font-light -mt-1"}">per guest</p></div>
+				<div class="${"text-left pt-2"}"><p class="${"capitalize text-xz font-semibold text-slate-900"}">April 6, 2022 (7 days)</p>
+					<p class="${"capitalize text-xs font-light text-slate-900"}">price includes taxes and fees</p></div>
+				<div class="${"text-left py-3"}"><p class="${"capitalize text-xz font-semibold text-rose-600"}">Toronto to Cayo Coco, Cuba</p></div></div></div></div>
+	
+	<div class="${"rounded-lg shadow-lg overflow-hidden mt-6"}"><div class="${"flex-shrink-0"}">
+			
+			<div class="${"overflow-hidden relative h-32 rounded-t-lg sm:h-64 xl:h-80 2xl:h-48"}"><img src="${"images/vacations/acapulco.jpg"}" class="${"block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"}" alt="${"..."}"></div></div>
+		<div class="${"flex px-6 pb-4 flex-col"}"><div class="${"flex-col"}"><div>${validate_component(Stars, "Stars").$$render($$result, {}, {}, {})}</div>
+				<div class="${"mt-3"}"><div class="${"flex space-x-2 text-xs text-slate-800"}"><span class="${"font-semibold"}">All Inclusive </span>
+						<span class="${"h-4 my-auto w-px bg-gray-200"}" aria-hidden="${"true"}"></span>
+						<span>Junior Suite</span></div></div></div>
+
+			<div class="${"flex flex-col"}"><div><a href="${"#"}" class="${"block mt-4 capitalize prose"}"><p class="${"text-xl font-bold text-slate-900 m-0 truncate leading-tight"}">Grand Sunset Princess All Suites &amp; Spa
+						</p>
+						<p class="${"text-tiny font-medium m-0"}">Cancun, Mexico</p></a></div></div>
+			<div class="${"flex-col justify-between mt-2 items-center"}"><div class="${"text-right"}"><p class="${"text-xl text-slate-900 font-bold mb-0"}"><span class="${"font-normal text-tiny"}">CA </span>$1846.70
+					</p>
+					<p class="${"text-xx font-light -mt-1"}">per guest</p></div>
+				<div class="${"text-left pt-2"}"><p class="${"capitalize text-xz font-semibold text-slate-900"}">April 6, 2022 (7 days)</p>
+					<p class="${"capitalize text-xs font-light text-slate-900"}">price includes taxes and fees</p></div>
+				<div class="${"text-left py-3"}"><p class="${"capitalize text-xz font-semibold text-rose-600"}">Toronto to Cayo Coco, Cuba</p></div></div></div></div></div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/vacation-deals.svelte.js
+var vacation_deals_svelte_exports = {};
+__export(vacation_deals_svelte_exports, {
+  default: () => Vacation_deals
+});
+var VacDealsAcc, Vacation_deals;
+var init_vacation_deals_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/vacation-deals.svelte.js"() {
+    init_index_77482e32();
+    init_BookingWidget_9bbd6ea9();
+    init_MoreDestinations_dc042907();
+    init_SpecialOfferCards_94a6f239();
+    init_Subscribe_bb3f7014();
+    init_HotelsIcon_f7770270();
+    init_OutClick_6647c5ef();
+    init_index_02f50c33();
+    VacDealsAcc = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"accordion my-12"}" id="${"accordionExample5"}"><div class="${"accordion-item bg-white border border-gray-200"}"><h2 class="${"accordion-header mb-0"}" id="${"acc1"}"><button class="${"accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"}" type="${"button"}" data-bs-toggle="${"collapse"}" data-bs-target="${"#collapseOne5"}" aria-expanded="${"true"}" aria-controls="${"collapseOne5"}"><h1 class="${"tracking-tight font-extrabold text-gray-900 text-xl"}"><span class="${"block xl:inline"}">Cancun, Mexico</span>
+					</h1></button></h2>
+		<div id="${"collapseOne5"}" class="${"accordion-collapse collapse show"}" aria-labelledby="${"acc1"}"><div class="${"accordion-body py-4 px-5 prose max-w-4xl"}"><p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">Make it from us, everyone has to visit Cancun, Mexico, at least once in their life.
+					Located on the world-famous Mayan Riviera beach, <b>Club Med Cancun</b> is a luxury, environmentally
+					friendly resort. It\u2019s a great stay for families and travelers of all types. The hotel offers
+					childcare services and a children\u2019s playground for parents\u2019 convenience.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">All rooms are air conditioned, offer free wifi, a flat screen tv, and a safe to store your
+					belongings. Rooms with private balconies and private beaches can be requested.
+					Interconnected rooms are also available for bigger groups booking. A fitness center and
+					business center are accessible to guests.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The resort has an extensive list of outdoor activities for guests to enjoy including
+					tennis, beach volleyball, and golf. Water sports are a must in Cancun. Guest favourites
+					include water skiing, windsurfing, catamaraning, snorkeling, and more. The onsite infinity
+					pool is the perfect place to take an Instagram-worthy photo.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">All-inclusive bookings include breakfast, lunch, and dinner. Snacks and alcoholic drinks
+					are also available. The newly renovated resort features three different restaurants and a
+					fine dining Mexican experience. Book this vacation for a Mexican vacation full of culture,
+					good food, and relaxing beach days.
+				</p></div></div></div>
+	<div class="${"accordion-item bg-white border border-gray-200"}"><h2 class="${"accordion-header mb-0"}" id="${"acc2"}"><button class="${"accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"}" type="${"button"}" data-bs-toggle="${"collapse"}" data-bs-target="${"#lasVegas"}" aria-expanded="${"false"}" aria-controls="${"lasVegas"}"><h1 class="${"tracking-tight font-extrabold text-gray-900 text-xl"}"><span class="${"block xl:inline"}">Las Vegas, Nevada </span>
+					</h1></button></h2>
+		<div id="${"lasVegas"}" class="${"accordion-collapse collapse"}" aria-labelledby="${"acc2"}"><div class="${"accordion-body py-4 px-5 prose max-w-4xl"}"><p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">Las Vegas is another must visit, for obvious (fun) reasons. There\u2019s a misconception the
+					destination can\u2019t be fun for the whole family. It\u2019s quite the opposite. The Stratosphere
+					Casino Hotel and Tower, The Linq Hotel and Experience, and the Ballys Las Vegas Hotel and
+					Casino are all hotels for great value and luxury standards.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Stratosphere Casino Hotel and Tower is one of the most stunning hotels in the area,
+					mainly because of the looming tower above. You\u2019ll immediately recognize it on the Las
+					Vegas Strip. This 24-story building also has 24/7 seven check in and out to make your stay
+					as seamless as possible. All rooms are air-conditioned, and a variety of rooms are
+					available for booking. There\u2019s an outdoor pool, hot tub, and plenty of sports for guests
+					to play. A breakfast buffet and set dinner menu for lunch and dinner are served. The hotel
+					features seven different restaurants.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Linq Hotel and Experience is an Asian-themed hotel located on the Las Vegas Strip.
+					This resort sets itself apart with friendly staff there to help book popular outings in
+					the city. All rooms include air conditioning, a safe for valuables, a refrigerator, and
+					more convenient amenities. An outdoor pool, hot tub, and outdoor sports are available for
+					guests on days they aren\u2019t out exploring. Wellness services are also offered. The hotel
+					features nine restaurants and a breakfast buffet.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Ballys Las Vegas Hotel and Casino is a highly recommended hotel on the Las Vegas
+					Strip. It features all the bright lights and over-the-top decor you\u2019d expect from the
+					city. The 24/7 check in and out, free wifi, and wheelchair-accessible make your stay
+					seamless for any guests. Outdoor sports, leisure activities, a large pool, and a hot tub
+					are all available on the property. Breakfast, lunch, and dinner are available either a la
+					carte or a set menu.
+				</p></div></div></div>
+	<div class="${"accordion-item bg-white border border-gray-200"}"><h2 class="${"accordion-header mb-0"}" id="${"acc3"}"><button class="${"accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"}" type="${"button"}" data-bs-toggle="${"collapse"}" data-bs-target="${"#honoluluHawaii"}" aria-expanded="${"false"}" aria-controls="${"honoluluHawaii"}"><h1 class="${"tracking-tight font-extrabold text-gray-900 text-xl"}"><span class="${"block xl:inline"}">Honolulu, Hawaii </span>
+					</h1></button></h2>
+		<div id="${"honoluluHawaii"}" class="${"accordion-collapse collapse"}" aria-labelledby="${"acc3"}"><div class="${"accordion-body py-4 px-5 prose max-w-4xl"}"><p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">Honolulu is just one of the beautiful islands to visit in Hawaii. In the springtime, the
+					exotic flowers and greenery are in full bloom. Enjoy the ocean and beautiful nature at
+					once. The Luana Waikiki Hotel and Suites and Aston Waikiki Beach Hotel are both highly
+					rated stays on the island.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Luana Waikiki Hotel is just a 10-minute walk from Waikiki Beach and the International
+					Market, two of the island\u2019s biggest attractions. Each room is air-conditioned, and an
+					oceanfront room can be requested. A fully equipped kitchen including a refrigerator and
+					tea and coffee station is also provided in each room. Plenty of delicious local
+					restaurants are located in the area and a cafe is on the hotel property.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Aston Waikiki Beach Hotel is in walking distance to the Honolulu Zoo, Waikiki
+					Aquarium, and Kapiolani Park. The hotel offers free shuttle service from the airport and
+					24/7 check in and out. Ocean views are available at request. An outdoor pool and poolside
+					snack bar are great for guests looking to relax without leaving the hotel. You can feel
+					the ocean breeze from anywhere on the island. Breakfast, lunch, and dinner are served at
+					one of the three hotel\u2019s restaurants.
+				</p></div></div></div>
+	<div class="${"accordion-item bg-white border border-gray-200"}"><h2 class="${"accordion-header mb-0"}" id="${"acc4"}"><button class="${"accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"}" type="${"button"}" data-bs-toggle="${"collapse"}" data-bs-target="${"#OrlandoFlorida"}" aria-expanded="${"false"}" aria-controls="${"OrlandoFlorida"}"><h1 class="${"tracking-tight font-extrabold text-gray-900 text-xl"}"><span class="${"block xl:inline"}">Orlando, Florida </span>
+					</h1></button></h2>
+		<div id="${"OrlandoFlorida"}" class="${"accordion-collapse collapse"}" aria-labelledby="${"acc4"}"><div class="${"accordion-body py-4 px-5 prose max-w-4xl"}"><p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">Honolulu is just one of the beautiful islands to visit in Hawaii. In the springtime, the
+					exotic flowers and greenery are in full bloom. Enjoy the ocean and beautiful nature at
+					once. The Luana Waikiki Hotel and Suites and Aston Waikiki Beach Hotel are both highly
+					rated stays on the island.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Luana Waikiki Hotel is just a 10-minute walk from Waikiki Beach and the International
+					Market, two of the island\u2019s biggest attractions. Each room is air-conditioned, and an
+					oceanfront room can be requested. A fully equipped kitchen including a refrigerator and
+					tea and coffee station is also provided in each room. Plenty of delicious local
+					restaurants are located in the area and a cafe is on the hotel property.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Aston Waikiki Beach Hotel is in walking distance to the Honolulu Zoo, Waikiki
+					Aquarium, and Kapiolani Park. The hotel offers free shuttle service from the airport and
+					24/7 check in and out. Ocean views are available at request. An outdoor pool and poolside
+					snack bar are great for guests looking to relax without leaving the hotel. You can feel
+					the ocean breeze from anywhere on the island. Breakfast, lunch, and dinner are served at
+					one of the three hotel\u2019s restaurants.
+				</p></div></div></div>
+	<div class="${"accordion-item bg-white border border-gray-200"}"><h2 class="${"accordion-header mb-0"}" id="${"acc4"}"><button class="${"accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"}" type="${"button"}" data-bs-toggle="${"collapse"}" data-bs-target="${"#turksCaicos"}" aria-expanded="${"false"}" aria-controls="${"turksCaicos"}"><h1 class="${"tracking-tight font-extrabold text-gray-900 text-xl"}"><span class="${"block xl:inline"}">Turks and Caicos, Caribbean </span>
+					</h1></button></h2>
+		<div id="${"turksCaicos"}" class="${"accordion-collapse collapse"}" aria-labelledby="${"acc4"}"><div class="${"accordion-body py-4 px-5 prose max-w-4xl"}"><p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">The Turks and Caicos is a beautiful, breathtaking destination for your springtime
+					vacation. Club Med Turkoise is an all-inclusive resort located on the island of
+					Providenciales. The hotel is adult-oriented and provides a tropical escape for singles and
+					couples. It features Caribbean-inspired decor and plenty of unique water activities
+					including diving, boating, and more. Free breakfast is provided, and delectable
+					restaurants are nearby.
+				</p></div></div></div></div>`;
+    });
+    Vacation_deals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"relative bg-gray-900 -mt-1"}"><div class="${"sm:hidden relative h-32 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div>
+	<div class="${"md:hidden relative mx-auto max-w-md px-4 pt-6 pb-10 "}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-2xl font-bold"}">Spring Vacation Packages</p></div></div>
+
+	<div class="${"hidden md:block relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:pb-44 lg:pt-24"}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-3xl font-extrabold sm:text-4xl"}">Spring Vacation Packages</p>
+			<p class="${"mt-3 text-base text-gray-300"}">We&#39;re focused on making your dream vacation. Find the right vacation and book with
+				confidence.
+			</p></div></div>
+	<div class="${"hidden sm:block relative h-56 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div></div>
+
+${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
+
+<div class="${"relative bg-white"}"><div class="${"relative max-w-7xl mx-auto mt-4 mb-12 lg:mb-16 lg:mt-8"}">
+		<section class="${"relative"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">Special offers from resorts and hotels across the Americas</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0"}">Plan your vacation at one of our beautiful resorts across the United States, Canada,
+					Caribbean and Latin America
+				</p></div></section>
+		${validate_component(SpecialOfferCards, "SpecialOfferCards").$$render($$result, {}, {}, {})}
+		<section class="${"relative px-4"}"><div class="${"text-left prose max-w-4xl sm:px-0 px-4 mt-12"}"><p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0"}">Spring is the perfect time to visit some of the most popular destinations around the
+					world. Nice weather, less crowded tourist areas, and more affordable vacations await you
+					in the months of March, April, and May. The temperatures are rising from the cold winters
+					and the flowers are blooming in joy. Take a spring vacation to avoid the heavy travel
+					times during the summer. We\u2019ve done the research and listed some fun and budget-friendly
+					vacation packages below.
+				</p></div></section>
+		<section>${validate_component(VacDealsAcc, "VacDealsAcc").$$render($$result, {}, {}, {})}</section>
+		
+		<section class="${"relative px-4"}"><div class="${"text-left prose max-w-4xl sm:px-0 px-4 mt-12"}"><h1 class="${"text-lg tracking-tight font-extrabold text-gray-900 sm:text-xl md:text-2xl"}"><span class="${"block xl:inline"}">Book Now Pay Later</span>
+					</h1>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0 mt-0"}">Book your Spring vacation without the stress on your wallet. Trip Support\u2019s Book Now Pay
+					Later helps you save money and plan ahead. Plan for the whole family to have a wonderful
+					time. If you have children in school, spring break is a great time to take time off. Trip
+					Support never checks a customer\u2019s credit score. With a small installment upfront, you can
+					begin making monthly payments to pay off your vacation before you even board the plane.
+				</p>
+				<p class="${"text-md text-gray-600 sm:text-md md:text-md lg:mx-0 mt-0"}">April showers bring May vacations! Enjoy!
+				</p></div></section></div></div>
+
+${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}
+${validate_component(MoreDestinations, "MoreDestinations").$$render($$result, {}, {}, {})}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/18.js
+var __exports19 = {};
+__export(__exports19, {
+  css: () => css22,
+  entry: () => entry19,
+  js: () => js19,
+  module: () => vacation_deals_svelte_exports
+});
+var entry19, js19, css22;
+var init__19 = __esm({
+  ".svelte-kit/output/server/nodes/18.js"() {
+    init_vacation_deals_svelte();
+    entry19 = "pages/vacation-deals.svelte-68818aa9.js";
+    js19 = ["pages/vacation-deals.svelte-68818aa9.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/MoreDestinations-ad8d826c.js", "chunks/SpecialOfferCards-3f780cda.js", "chunks/Subscribe-39a11f67.js"];
+    css22 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/destinations.svelte.js
+var destinations_svelte_exports = {};
+__export(destinations_svelte_exports, {
+  default: () => Destinations
+});
+var Destinations;
+var init_destinations_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/destinations.svelte.js"() {
+    init_index_77482e32();
+    init_BookingWidget_9bbd6ea9();
+    init_SpecialOfferCards_94a6f239();
+    init_Subscribe_bb3f7014();
+    init_HotelsIcon_f7770270();
+    init_OutClick_6647c5ef();
+    init_index_02f50c33();
+    Destinations = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"relative bg-gray-900 -mt-1"}"><div class="${"sm:hidden relative h-32 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div>
+	<div class="${"md:hidden relative mx-auto max-w-md px-4 pt-6 pb-10 "}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-2xl font-bold"}">Westjet Vacations</p></div></div>
+
+	<div class="${"hidden md:block relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:pb-44 lg:pt-24"}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-3xl font-extrabold sm:text-4xl"}">Wetjet Vacations</p>
+			<p class="${"mt-3 text-base text-gray-300"}">We&#39;re focused on making your dream vacation. Find the right vacation and book with
+				confidence.
+			</p></div></div>
+	<div class="${"hidden sm:block relative h-56 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div></div>
+
+${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
+
+<div class="${"relative bg-white"}"><div class="${"relative max-w-7xl mx-auto mt-4 mb-12 lg:mb-16 lg:mt-8"}">
+		<section class="${"relative"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">Special offers from resorts and hotels across the Americas</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0"}">Plan your vacation at one of our beautiful resorts across the United States, Canada,
+					Caribbean and Latin America
+				</p></div></section>
+		${validate_component(SpecialOfferCards, "SpecialOfferCards").$$render($$result, {}, {}, {})}</div></div>
+${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/19.js
+var __exports20 = {};
+__export(__exports20, {
+  css: () => css23,
+  entry: () => entry20,
+  js: () => js20,
+  module: () => destinations_svelte_exports
+});
+var entry20, js20, css23;
+var init__20 = __esm({
+  ".svelte-kit/output/server/nodes/19.js"() {
+    init_destinations_svelte();
+    entry20 = "pages/destinations.svelte-ae7be409.js";
+    js20 = ["pages/destinations.svelte-ae7be409.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/SpecialOfferCards-3f780cda.js", "chunks/Subscribe-39a11f67.js"];
+    css23 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/flight-deals.svelte.js
+var flight_deals_svelte_exports = {};
+__export(flight_deals_svelte_exports, {
+  default: () => Flight_deals
+});
+var FlightDealsFaq, Flight_deals;
+var init_flight_deals_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/flight-deals.svelte.js"() {
+    init_index_77482e32();
+    init_BookingWidget_9bbd6ea9();
+    init_Subscribe_bb3f7014();
+    init_MoreDestinations_dc042907();
+    init_OutClick_6647c5ef();
+    init_HotelsIcon_f7770270();
+    init_index_02f50c33();
+    FlightDealsFaq = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let q3;
+      q3 = false;
+      return `<div class="${"mx-auto max-w-7xl bg-white"}">
+	<section class="${"relative z-20 overflow-hidden "}">
+		<div class="${"container"}"><div class="${"flex flex-wrap"}"><div class="${"w-full px-4"}"><div class="${"mb-6 lg:mb-10 max-w-[520px]"}"><span class="${"font-normal text-tiny block text-rose-600"}">FAQs </span>
+						<h2 class="${"font-extrabold text-2xl sm:text-4xl text-gray-900 mb-4 "}">Frequently Asked Questions
+						</h2></div></div></div>
+			<div class="${"flex flex-wrap -mx-4"}"><div class="${"w-full lg:w-1/2 px-4"}">
+
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"text-left"}"><h4 class="${"text-base text-left font-semibold text-black"}">Which airlines have a flexible cancellation policy for flights from Edmonton?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${``}`;
+        }
+      })}</div>
+
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">What airport do you fly from for flights from Edmonton?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${``}`;
+        }
+      })}</div>
+
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">What are the cheapest airlines flying from Edmonton to anywhere?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${q3 ? `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"}" clip-rule="${"evenodd"}"></path></svg>` : `<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${q3 ? `<div class="${"faq-content"}"><p class="${"text-tiny text-gray-700 leading-relaxed py-3"}">Some of the airports you fly from for flights from Edmonton International
+										Airport in Alberta include Hamilton, Abbotsford, Vancouver, Calgary, Toronto,
+										Kelowna, Prince George, Montreal, Watson Lake and Yellow Knife.
+									</p></div>` : ``}`;
+        }
+      })}</div>
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">What is the shortest direct flight from Edmonton?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${``}`;
+        }
+      })}</div></div>
+				<div class="${"w-full lg:w-1/2 px-4"}">
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Where are the cheapest places to fly to from Edmonton?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${``}`;
+        }
+      })}</div>
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Which airlines fly from Edmonton?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${``}`;
+        }
+      })}</div>
+					
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">Can I book my flight from Edmonton and pay later?
+								</h4></div>
+							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
+						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
+        default: () => {
+          return `${``}`;
+        }
+      })}</div></div></div></div></section>
+	</div>`;
+    });
+    Flight_deals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"relative bg-gray-900 -mt-1"}"><div class="${"sm:hidden relative h-32 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div>
+	<div class="${"md:hidden relative mx-auto max-w-md px-4 pt-6 pb-10 "}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-2xl font-bold"}">Cheap Flights to Edmonton</p></div></div>
+
+	<div class="${"hidden md:block relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:pb-44 lg:pt-24"}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-3xl font-extrabold sm:text-4xl"}">Cheap Flights to Edmonton</p>
+			<p class="${"mt-3 text-base text-gray-300"}">We&#39;re focused on making your dream vacation. Find the right vacation and book with
+				confidence.
+			</p></div></div>
+	<div class="${"hidden sm:block relative h-56 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div></div>
+
+${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
+
+<div class="${"relative bg-white"}"><div class="${"relative max-w-7xl mx-auto mt-4 mb-12 lg:mb-16 "}">
+		<section class="${"overflow-hidden text-gray-700"}"><div class="${"container px-4 py-2 mx-auto "}"><div class="${"sm:flex sm:items-baseline sm:justify-between mt-4 mb-12"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">JW Marriott Edmonton ICE District</span>
+						</h1></div>
+				<div class="${"flex flex-wrap -m-1 md:-m-2"}"><div class="${"flex flex-wrap w-1/2"}"><div class="${"w-full p-1 md:p-2"}"><img alt="${"gallery"}" class="${"block object-cover object-center w-full h-full rounded-lg"}" src="${"/images/flight-deals/jw-mariott.jpg"}"></div></div>
+
+					<div class="${"flex flex-wrap w-1/2"}"><div class="${"w-full p-1 md:p-2"}"><iframe src="${"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.675890311836!2d-113.49788598359835!3d53.54570108002136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0233956f98715%3A0x8e4a13536ee9f84a!2sJW%20Marriott%20Edmonton%20ICE%20District!5e0!3m2!1sen!2sca!4v1648494251541!5m2!1sen!2sca"}" class="${"rounded-lg w-full h-80"}" style="${"border:0;"}" allowfullscreen="${""}" loading="${"lazy"}" referrerpolicy="${"no-referrer-when-downgrade"}"></iframe></div>
+						<div class="${"w-1/2 p-1 md:p-2"}"><div class="${"h-28 bg-white rounded-lg border"}"><div class="${"flex px-4 py-2 items-center space-x-4"}"><p class="${"text-tiny font-semibold"}">Weather:</p>
+									<p class="${"text-tiny font-semibold"}">0\xB0</p></div>
+								<div class="${"flex items-center justify-center"}"><div class="${"inline-flex items-center space-x-6 text-lg font-semibold"}">
+										<svg version="${"1.1"}" id="${"Layer_1"}" xmlns="${"http://www.w3.org/2000/svg"}" xmlns:xlink="${"http://www.w3.org/1999/xlink"}" x="${"0px"}" y="${"0px"}" viewBox="${"0 0 512.002 512.002"}" style="${"enable-background:new 0 0 512.002 512.002;"}" xml:space="${"preserve"}" class="${"hi-solid hi-cube inline-block w-12 h-12"}"><path style="${"fill:#9FDEF7;"}" d="${"M158.264,187.777h36.964c13.807-25.333,37.407-44.54,65.73-52.526\n	c-5.698-13.835-19.305-23.575-35.191-23.575c-3.97,0-7.797,0.612-11.393,1.738c0.019-0.578,0.044-1.155,0.044-1.738\n	c0-28.259-22.913-51.171-51.174-51.171c-24.373,0-44.749,17.038-49.903,39.85c-3.061-1.02-6.328-1.579-9.729-1.579\n	c-10.469,0-19.71,5.242-25.253,13.241c-3.092-0.797-6.34-1.23-9.682-1.23c-21.26,0-38.492,17.234-38.492,38.494\n	c0,21.256,17.233,38.494,38.492,38.494h61.542"}"></path><path style="${"fill:#BEEAFC;"}" d="${"M369.578,165.557c-19.779-21.155-47.935-34.379-79.179-34.379\n	c-51.609,0-94.762,36.087-105.678,84.396c-6.477-2.16-13.396-3.349-20.6-3.349c-22.172,0-41.739,11.102-53.475,28.044\n	c-6.551-1.692-13.42-2.601-20.501-2.601c-45.02,0-81.515,36.495-81.515,81.515c0,45.018,36.495,81.517,81.515,81.517h89.875\n	c0.19-27.709,22.699-50.111,50.446-50.111c5.262,0,10.338,0.807,15.107,2.302c-0.024-0.764-0.058-1.528-0.058-2.302\n	c0-37.48,30.383-67.863,67.861-67.863c32.316,0,59.341,22.598,66.176,52.848c4.055-1.354,8.387-2.097,12.897-2.097\n	c13.884,0,26.138,6.951,33.486,17.563c4.102-1.061,8.404-1.631,12.838-1.631c18.583,0,34.841,9.932,43.769,24.773\n	c12.943-14.295,20.83-33.254,20.83-54.055c0-44.503-36.074-80.574-80.574-80.574c-8.403,0-16.505,1.288-24.12,3.675\n	c0.039-1.221,0.092-2.444,0.092-3.675c0-18.197-4.485-35.347-12.411-50.405"}"></path><path style="${"fill:#E4F2F9;"}" d="${"M381.527,451.496H230.468c-27.863,0-50.451-22.588-50.451-50.45c0-27.87,22.589-50.456,50.451-50.456\n	c5.262,0,10.338,0.807,15.107,2.302c-0.024-0.764-0.058-1.528-0.058-2.302c0-37.48,30.383-67.863,67.861-67.863\n	c32.316,0,59.341,22.598,66.176,52.848c4.055-1.354,8.387-2.097,12.897-2.097c13.884,0,26.138,6.951,33.486,17.563\n	c4.102-1.061,8.404-1.631,12.838-1.631c28.192,0,51.046,22.853,51.046,51.043s-22.854,51.044-51.046,51.044h-29.212"}"></path><path style="${"fill:#D7EDF9;"}" d="${"M284.275,336.599c0-18.212,3.865-35.519,10.809-51.157c-28.589,7.989-49.567,34.21-49.567,65.348\n	c0,0.773,0.033,1.538,0.058,2.302c-4.769-1.495-9.845-2.302-15.107-2.302c-27.863,0-50.451,22.586-50.451,50.456\n	c0,27.863,22.589,50.45,50.451,50.45h128.207C314.812,431.934,284.275,387.833,284.275,336.599z"}"></path><path style="${"fill:#AEE4FF;"}" d="${"M95.06,240.178c-1.626-0.098-3.263-0.152-4.913-0.152c-45.02,0-81.515,36.495-81.515,81.515\n	c0,45.018,36.495,81.517,81.515,81.517h89.875c0.06-8.695,2.318-16.866,6.246-23.987C141.83,344.873,109.088,296.238,95.06,240.178z\n	"}"></path><path style="${"fill:#83D4ED;"}" d="${"M87.495,178.611c0-26.44,4.066-51.927,11.593-75.881c-8.119,1.499-15.119,6.191-19.647,12.727\n	c-3.092-0.797-6.34-1.23-9.682-1.23c-21.26,0-38.492,17.234-38.492,38.494c0,21.256,17.232,38.494,38.492,38.494h18.047\n	C87.603,187.038,87.495,182.837,87.495,178.611z"}"></path><path style="${"fill:#231F20;"}" d="${"M512.002,320.127c0-49.185-40.017-89.202-89.202-89.202c-5.264,0-10.49,0.458-15.627,1.368\n	c-1.027-16.465-5.531-32.634-13.177-47.163c-2.219-4.217-7.436-5.838-11.654-3.617c-4.217,2.22-5.836,7.438-3.617,11.654\n	c7.47,14.191,11.417,30.232,11.417,46.388c0,0.88-0.031,1.757-0.061,2.629l-0.026,0.77c-0.09,2.793,1.181,5.456,3.405,7.146\n	c2.226,1.689,5.128,2.199,7.799,1.362c6.945-2.176,14.192-3.28,21.54-3.28c39.671,0,71.946,32.275,71.946,71.946\n	c0,14.321-4.239,28.168-12.088,39.92c-0.303-0.327-0.622-0.636-0.933-0.957c-0.339-0.352-0.674-0.704-1.02-1.047\n	c-0.235-0.231-0.476-0.454-0.714-0.681c-0.541-0.518-1.089-1.028-1.649-1.526c-0.091-0.081-0.183-0.159-0.275-0.238\n	c-10.506-9.213-24.253-14.817-39.291-14.817c-3.14,0-6.271,0.247-9.361,0.734c-9.311-10.528-22.746-16.667-36.963-16.667\n	c-2.309,0-4.606,0.161-6.881,0.481c-4.678-13.326-13.048-25.267-24.12-34.229c-13.544-10.964-30.616-17.003-48.071-17.003\n	c-39.395,0-71.93,29.937-76.049,68.258c-2.269-0.262-4.56-0.395-6.861-0.395c-0.969,0-1.931,0.027-2.887,0.073\n	c-0.367,0.017-0.729,0.052-1.094,0.076c-0.58,0.039-1.161,0.077-1.736,0.133c-0.464,0.045-0.923,0.105-1.384,0.161\n	c-0.462,0.056-0.923,0.11-1.382,0.176c-0.527,0.077-1.05,0.166-1.574,0.256c-0.372,0.065-0.745,0.128-1.115,0.2\n	c-0.586,0.112-1.168,0.237-1.747,0.367c-0.284,0.064-0.567,0.128-0.849,0.196c-0.651,0.156-1.297,0.323-1.94,0.5\n	c-0.179,0.05-0.357,0.101-0.535,0.152c-0.732,0.21-1.459,0.43-2.18,0.668c-0.04,0.013-0.08,0.027-0.12,0.041\n	c-20.77,6.885-36.473,24.993-39.857,47.113H90.146c-40.19,0-72.887-32.698-72.887-72.889c0-40.19,32.697-72.887,72.887-72.887\n	c6.194,0,12.365,0.783,18.343,2.327c3.498,0.899,7.193-0.469,9.251-3.441c10.552-15.234,27.891-24.329,46.382-24.329\n	c6.076,0,12.088,0.977,17.869,2.906c2.312,0.773,4.844,0.53,6.967-0.669c2.124-1.196,3.641-3.237,4.179-5.614\n	c1.972-8.725,5.029-16.944,9.002-24.539c0.243-0.326,0.467-0.668,0.664-1.031c12.808-23.498,34.857-41.121,60.496-48.349\n	c0.305-0.086,0.603-0.19,0.894-0.307c8.369-2.244,17.155-3.443,26.204-3.443c27.918,0,53.799,11.238,72.876,31.644\n	c3.254,3.48,8.713,3.665,12.196,0.41c3.482-3.255,3.664-8.715,0.41-12.196c-22.052-23.586-53.209-37.114-85.482-37.114\n	c-8.404,0-16.749,0.919-24.886,2.695c-8.401-13.683-23.304-22.196-39.745-22.196c-1.111,0-2.22,0.039-3.323,0.116\n	c-4.144-28.959-29.112-51.288-59.199-51.288c-25.271,0-47.186,15.441-55.881,38.449c-1.244-0.118-2.495-0.178-3.751-0.178\n	c-10.942,0-21.302,4.561-28.685,12.427c-2.072-0.276-4.16-0.415-6.25-0.415c-25.983,0-47.12,21.139-47.12,47.122\n	s21.138,47.122,47.12,47.122h61.542c4.765,0,8.628-3.863,8.628-8.628c0-4.765-3.863-8.628-8.628-8.628H68.681\n	c-16.467,0-29.863-13.398-29.863-29.866c0-16.469,13.398-29.866,29.863-29.866c2.536,0,5.067,0.321,7.527,0.957\n	c3.499,0.901,7.189-0.472,9.246-3.442c4.133-5.965,10.922-9.527,18.16-9.527c2.385,0,4.74,0.382,7,1.136\n	c2.312,0.773,4.845,0.527,6.966-0.669c2.125-1.197,3.642-3.238,4.179-5.615c4.405-19.502,21.464-33.123,41.486-33.123\n	c23.46,0,42.546,19.085,42.546,42.543c0,0.366-0.015,0.728-0.027,1.09l-0.013,0.366c-0.092,2.793,1.177,5.46,3.402,7.151\n	c2.225,1.691,5.132,2.2,7.8,1.366c2.847-0.892,5.813-1.344,8.814-1.344c8.74,0,16.794,3.816,22.279,10.187\n	c-0.3,0.118-0.593,0.25-0.892,0.37c-0.547,0.218-1.087,0.451-1.631,0.676c-0.849,0.355-1.699,0.709-2.539,1.083\n	c-1.004,0.444-1.996,0.914-2.988,1.386c-0.342,0.164-0.686,0.322-1.027,0.49c-7.837,3.831-15.268,8.525-22.101,14.056\n	c-9.251,7.489-17.259,16.344-23.798,26.153c-0.283,0.422-0.554,0.851-0.83,1.278c-0.527,0.813-1.049,1.63-1.556,2.457\n	c-0.147,0.238-0.304,0.469-0.449,0.709h-31.974c-4.765,0-8.628,3.863-8.628,8.628s3.863,8.628,8.628,8.628h23.407\n	c-1.129,2.834-2.155,5.711-3.058,8.63c-4.764-0.958-9.612-1.44-14.492-1.44c-22.176,0-43.078,10.009-57.012,27.041\n	c-5.582-1.061-11.264-1.598-16.963-1.598C40.438,229.039,0,269.478,0,319.183c0,49.706,40.438,90.146,90.144,90.146h81.833\n	c4.041,28.667,28.722,50.797,58.488,50.797h151.06c4.765,0,8.628-3.863,8.628-8.628c0-4.765-3.863-8.628-8.628-8.628H230.468\n	c-23.062,0-41.823-18.762-41.823-41.822c0-0.201,0.012-0.398,0.015-0.598c0.009-0.601,0.024-1.199,0.057-1.795\n	c0.004-0.074,0.012-0.148,0.017-0.222c0.04-0.642,0.09-1.28,0.159-1.913c0-0.004,0.001-0.008,0.001-0.012\n	c2.279-20.916,20.106-37.29,41.573-37.29c4.275,0,8.489,0.642,12.526,1.907c2.668,0.837,5.573,0.328,7.798-1.362\n	c2.225-1.69,3.494-4.352,3.406-7.145l-0.018-0.521c-0.017-0.499-0.036-1.001-0.036-1.506c0-32.662,26.572-59.235,59.233-59.235\n	c27.429,0,51.721,19.396,57.76,46.122c0.538,2.378,2.056,4.418,4.18,5.615c2.127,1.197,4.657,1.44,6.968,0.668\n	c3.286-1.098,6.706-1.653,10.165-1.653c10.523,0,20.389,5.177,26.393,13.846c2.058,2.975,5.752,4.348,9.256,3.442\n	c3.474-0.9,7.065-1.356,10.675-1.356c0.841,0,1.675,0.032,2.507,0.08c0.311,0.018,0.619,0.046,0.929,0.071\n	c0.496,0.039,0.99,0.087,1.483,0.143c0.404,0.047,0.809,0.096,1.21,0.154c0.328,0.047,0.654,0.105,0.98,0.159\n	c10.927,1.852,20.448,7.886,26.839,16.406c0.026,0.035,0.052,0.069,0.078,0.104c5.269,7.068,8.392,15.824,8.392,25.298\n	c0,23.388-19.029,42.415-42.418,42.415h-29.21c-4.765,0-8.628,3.863-8.628,8.628s3.863,8.628,8.628,8.628h29.211\n	c32.905,0,59.674-26.768,59.674-59.672c0-8.986-2.009-17.509-5.582-25.161C505.234,359.604,512.002,340.249,512.002,320.127z"}"></path></svg>
+
+										<span>Overcast Clouds</span></div></div></div></div>
+						<div class="${"w-1/2 p-1 md:p-2"}"><div class="${"h-28 flex bg-white rounded-lg border items-center justify-center space-x-4 "}"><div class="${"flex text-base font-semibold space-x-4 items-center"}">
+									<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"hi-solid hi-cube inline-block w-10 h-10"}" version="${"1.1"}" viewBox="${"0 0 512 512"}"><g id="${"surface1"}"><path d="${"M 437.019531 74.980469 C 388.667969 26.628906 324.378906 0 256 0 C 187.621094 0 123.332031 26.628906 74.980469 74.980469 C 26.628906 123.332031 0 187.621094 0 256 C 0 324.378906 26.628906 388.667969 74.980469 437.019531 C 123.332031 485.371094 187.621094 512 256 512 C 324.378906 512 388.667969 485.371094 437.019531 437.019531 C 485.371094 388.667969 512 324.378906 512 256 C 512 187.621094 485.371094 123.332031 437.019531 74.980469 Z M 256 458 C 144.617188 458 54 367.382812 54 256 C 54 144.617188 144.617188 54 256 54 C 367.382812 54 458 144.617188 458 256 C 458 367.382812 367.382812 458 256 458 Z M 256 458 "}" style="${"stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"}"></path><path d="${"M 256 84 C 161.160156 84 84 161.160156 84 256 C 84 350.839844 161.160156 428 256 428 C 350.839844 428 428 350.839844 428 256 C 428 161.160156 350.839844 84 256 84 Z M 320.53125 317.371094 C 316.886719 324.226562 311.976562 329.777344 305.796875 334.007812 C 299.613281 338.242188 292.503906 341.335938 284.460938 343.277344 C 280.058594 344.34375 275.539062 345.105469 270.90625 345.589844 L 270.90625 380.550781 L 240.90625 380.550781 L 240.90625 344.929688 C 233.574219 343.921875 226.289062 342.328125 219.058594 340.101562 C 205.847656 336.039062 193.992188 330.285156 183.496094 322.832031 L 198.992188 292.605469 C 200.515625 294.128906 203.265625 296.121094 207.246094 298.574219 C 211.222656 301.03125 215.921875 303.488281 221.34375 305.941406 C 226.761719 308.398438 232.773438 310.472656 239.378906 312.164062 C 245.980469 313.859375 252.75 314.703125 259.695312 314.703125 C 279 314.703125 288.652344 308.523438 288.652344 296.160156 C 288.652344 292.265625 287.546875 288.964844 285.351562 286.253906 C 283.148438 283.546875 280.015625 281.175781 275.953125 279.144531 C 271.890625 277.109375 266.976562 275.25 261.222656 273.554688 C 255.460938 271.863281 249.027344 270 241.917969 267.96875 C 233.28125 265.597656 225.789062 263.015625 219.4375 260.21875 C 213.089844 257.425781 207.792969 254.125 203.5625 250.3125 C 199.328125 246.503906 196.152344 242.101562 194.039062 237.105469 C 191.921875 232.113281 190.863281 226.144531 190.863281 219.199219 C 190.863281 210.054688 192.554688 201.925781 195.945312 194.816406 C 199.328125 187.703125 204.027344 181.777344 210.039062 177.035156 C 216.050781 172.296875 223.035156 168.695312 230.996094 166.238281 C 234.203125 165.253906 237.507812 164.472656 240.90625 163.882812 L 240.90625 131.191406 L 270.90625 131.191406 L 270.90625 163.453125 C 278.21875 164.398438 285.152344 166.085938 291.699219 168.523438 C 302.367188 172.507812 311.679688 177.203125 319.640625 182.621094 L 304.148438 211.070312 C 302.960938 209.886719 300.800781 208.277344 297.667969 206.242188 C 294.535156 204.210938 290.722656 202.222656 286.238281 200.273438 C 281.75 198.328125 276.882812 196.679688 271.636719 195.320312 C 266.382812 193.96875 261.050781 193.289062 255.632812 193.289062 C 245.980469 193.289062 238.78125 195.066406 234.042969 198.625 C 229.300781 202.179688 226.929688 207.175781 226.929688 213.609375 C 226.929688 217.335938 227.820312 220.429688 229.597656 222.882812 C 231.375 225.339844 233.953125 227.496094 237.34375 229.359375 C 240.730469 231.222656 245.003906 232.914062 250.171875 234.4375 C 255.335938 235.960938 261.304688 237.574219 268.078125 239.265625 C 276.882812 241.636719 284.882812 244.175781 292.082031 246.882812 C 299.277344 249.59375 305.371094 252.980469 310.367188 257.042969 C 315.359375 261.109375 319.214844 265.976562 321.925781 271.648438 C 324.632812 277.324219 325.988281 284.308594 325.988281 292.601562 C 325.992188 302.257812 324.167969 310.511719 320.53125 317.371094 Z M 320.53125 317.371094 "}" style="${"stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"}"></path></g></svg>
+
+									<span>Currency</span></div>
+								<p class="${"font-bold text-lg"}">CAD</p></div></div></div></div></div></section>
+		<section class="${"relative my-12 lg:my-16"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">About Edmonton</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">Edmonton is North America\u2019s most northernmost city. Despite being the administrative
+					capital of the Alberta Province, it is second to Calgary in size. But that doesn\u2019t mean it
+					is a small city by any means. For the longest time, it has been the hub of northern and
+					central Alberta\u2019s oil and gas industry. Its oil sand reserves are only second to those of
+					Saudi Arabia, which explains why most of the region\u2019s economic activity involves
+					petroleum, tourism, and agriculture. There is also a blossoming technology sector that
+					cashes in on Canada\u2019s premier reduction and research credentials. All of that aside, it is
+					the friendly nature of the people of Edmonton that makes it a must-visit place.
+				</p></div></section>
+		<section class="${"relative mb-6"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">History </span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">Edmonton is a town built by immigrants. The earliest groups of people came from as far as
+					eastern Europe, with the most notable being the Chinese railway builders. The historical
+					factors that attracted people to Edmonton in the past\u2014employment and business
+					opportunities, are the same reasons people move here today. From a small town, it has
+					grown to a multicultural society of over a million people.
+				</p>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">Before the arrival of the Europeans in the 19th century, archaeological evidence suggests
+					that Edmonton was a settlement for different aboriginal tribes. After the European
+					settlement, the main catchment activity was fur trading with two companies, the Hudson\u2019s
+					Bay Company and the North West Company, carrying the bulk of the trade. Shortly after the
+					Canadian government bought it out, infrastructure like railways made it an agricultural
+					distribution hub, but it\u2019s what happened in the 20th century that defines the city today.
+					Having initially served as a military staging ground during the wars, it was the discovery
+					of petroleum in Leduc that would change the city\u2019s fortunes.
+				</p></div></section>
+		<section class="${"overflow-hidden text-gray-700 my-12"}"><div class="${"container px-5 py-2 mx-auto "}"><div class="${"flex flex-wrap -m-1 md:-m-2"}"><div class="${"flex-wrap w-1/2"}"><div class="${"w-full h-[220px] p-1 md:p-2"}"><img alt="${"gallery"}" class="${"block object-cover object-center w-full h-full rounded-lg"}" src="${"/images/flight-deals/jw-2.jpg"}"></div>
+						<div class="${"w-full p-1 md:p-2 h-[400px]"}"><img alt="${"gallery"}" class="${"block object-cover object-center w-full h-full rounded-lg"}" src="${"/images/flight-deals/jw-1.jpg"}"></div></div>
+					<div class="${"flex-wrap w-1/2"}"><div class="${"w-full p-1 md:p-2 h-[400px]"}"><img alt="${"gallery"}" class="${"block object-cover object-center w-full h-full rounded-lg"}" src="${"/images/flight-deals/jw-4.jpg"}"></div>
+						<div class="${"w-full h-[220px] p-1 md:p-2"}"><img alt="${"gallery"}" class="${"block object-cover object-center w-full h-full rounded-lg"}" src="${"/images/flight-deals/jw-3.jpg"}"></div></div></div></div></section>
+		<section class="${"relative my-12 lg:my-16"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">General Weather</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">Edmonton enjoys a humid continental climate. The seasonal temperatures tend to be extreme,
+					but it\u2019s unlike what you will experience in the neighboring cities of Winnipeg or Regina.
+					In summers expect the highs to sometimes exceed 86 \xB0F (30 \xB0C), and in winters, the mercury
+					can sometimes drop beyond -4 \xB0F (-20 \xB0C). These seasonal extremes notwithstanding, you
+					will have plenty of sun in Edmonton, with sun hours reaching approximately seventeen and a
+					quarter-hour in the summer solstice. Winters here last from November to March, while
+					summers stretch from the last weeks of June to late august. The other seasons are
+					relatively short and variable.
+				</p></div></section>
+		<section class="${"relative my-12 lg:my-16"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">Best Time to Visit</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">Despite the high summer sun, the humidity is not unbearable. This is the best time to
+					visit as you can take advantage of the long bright days to explore every nook of the city.
+					It is also peak tourism season, and you are likely to meet great people to share your
+					experiences.
+				</p></div></section>
+		<section class="${"relative my-12 lg:my-16"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">Things to Do </span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">In Edmonton, the first place people visit is the massive West Edmonton Mall for recreation
+					shopping and business. But if the mall is not your thing, you will love the experience of
+					Edmonton scenery from the many parks in the city. The most popular one is the Fort
+					Edmonton park, but you could go to Elk Island National Park for kayaking, hiking, skating,
+					cycling, and to see substantial American Bison. As a city of festivals, Sir Winston
+					Churchill Square is where you catch most of them.
+				</p>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">If your visit coincides with K-days, Sourdough Raft Races, the Edmonton International
+					Fringe Festival, and many others feel free to join in, you won\u2019t be disappointed. For the
+					arts and culture lovers, The Art Gallery of Alberta is a great start, but you could find
+					more like the TELUS World of Science or Alberta Aviation Museum. You can also find
+					theatres in the Old Strathcona district or other performing arts around the city. Lastly,
+					(definitely not least) your taste buds will thank you if you grab local delicacies from
+					the many food trucks, pop-up joints, and fine dining establishments all over the city.
+				</p></div></section>
+		<section class="${"relative my-12 lg:my-16"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">Airport Information</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0 prose max-w-4xl"}">Edmonton International Airport (EIA) is the major transport hub in Edmonton. Despite there
+					being several places to land smaller planes and even bush planes, the International port
+					connects you to major cities across the world. Several major and budget airlines operate
+					from it, and you can find flights to pretty much most of Canada from here.
+				</p></div></section></div></div>
+
+${validate_component(FlightDealsFaq, "FlightDealsFaq").$$render($$result, {}, {}, {})}
+
+${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}
+
+${validate_component(MoreDestinations, "MoreDestinations").$$render($$result, {}, {}, {})}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/20.js
+var __exports21 = {};
+__export(__exports21, {
+  css: () => css24,
+  entry: () => entry21,
+  js: () => js21,
+  module: () => flight_deals_svelte_exports
+});
+var entry21, js21, css24;
+var init__21 = __esm({
+  ".svelte-kit/output/server/nodes/20.js"() {
+    init_flight_deals_svelte();
+    entry21 = "pages/flight-deals.svelte-1d71e1d3.js";
+    js21 = ["pages/flight-deals.svelte-1d71e1d3.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js", "chunks/MoreDestinations-ad8d826c.js"];
+    css24 = [];
+  }
+});
+
 // .svelte-kit/output/server/entries/pages/flight-hotel.svelte.js
 var flight_hotel_svelte_exports = {};
 __export(flight_hotel_svelte_exports, {
@@ -8830,21 +9417,21 @@ var init_flight_hotel_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/18.js
-var __exports19 = {};
-__export(__exports19, {
-  css: () => css22,
-  entry: () => entry19,
-  js: () => js19,
+// .svelte-kit/output/server/nodes/21.js
+var __exports22 = {};
+__export(__exports22, {
+  css: () => css25,
+  entry: () => entry22,
+  js: () => js22,
   module: () => flight_hotel_svelte_exports
 });
-var entry19, js19, css22;
-var init__19 = __esm({
-  ".svelte-kit/output/server/nodes/18.js"() {
+var entry22, js22, css25;
+var init__22 = __esm({
+  ".svelte-kit/output/server/nodes/21.js"() {
     init_flight_hotel_svelte();
-    entry19 = "pages/flight-hotel.svelte-c38fefaf.js";
-    js19 = ["pages/flight-hotel.svelte-c38fefaf.js", "chunks/vendor-3e73c3b8.js"];
-    css22 = [];
+    entry22 = "pages/flight-hotel.svelte-c38fefaf.js";
+    js22 = ["pages/flight-hotel.svelte-c38fefaf.js", "chunks/vendor-3e73c3b8.js"];
+    css25 = [];
   }
 });
 
@@ -8863,21 +9450,82 @@ var init_group_travel_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/19.js
-var __exports20 = {};
-__export(__exports20, {
-  css: () => css23,
-  entry: () => entry20,
-  js: () => js20,
+// .svelte-kit/output/server/nodes/22.js
+var __exports23 = {};
+__export(__exports23, {
+  css: () => css26,
+  entry: () => entry23,
+  js: () => js23,
   module: () => group_travel_svelte_exports
 });
-var entry20, js20, css23;
-var init__20 = __esm({
-  ".svelte-kit/output/server/nodes/19.js"() {
+var entry23, js23, css26;
+var init__23 = __esm({
+  ".svelte-kit/output/server/nodes/22.js"() {
     init_group_travel_svelte();
-    entry20 = "pages/group-travel.svelte-5deeba99.js";
-    js20 = ["pages/group-travel.svelte-5deeba99.js", "chunks/vendor-3e73c3b8.js"];
-    css23 = [];
+    entry23 = "pages/group-travel.svelte-5deeba99.js";
+    js23 = ["pages/group-travel.svelte-5deeba99.js", "chunks/vendor-3e73c3b8.js"];
+    css26 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/travel-deals.svelte.js
+var travel_deals_svelte_exports = {};
+__export(travel_deals_svelte_exports, {
+  default: () => Travel_deals
+});
+var Travel_deals;
+var init_travel_deals_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/travel-deals.svelte.js"() {
+    init_index_77482e32();
+    init_BookingWidget_9bbd6ea9();
+    init_SpecialOfferCards_94a6f239();
+    init_Subscribe_bb3f7014();
+    init_HotelsIcon_f7770270();
+    init_OutClick_6647c5ef();
+    init_index_02f50c33();
+    Travel_deals = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `
+<div class="${"relative bg-gray-900 -mt-1"}"><div class="${"sm:hidden relative h-32 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div>
+	<div class="${"md:hidden relative mx-auto max-w-md px-4 pt-6 pb-10 "}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-2xl font-bold"}">Spring Vacation Packages</p></div></div>
+
+	<div class="${"hidden md:block relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:pb-44 lg:pt-24"}"><div class="${"md:mr-auto md:w-1/2 md:pr-10"}"><p class="${"mt-2 text-white text-3xl font-extrabold sm:text-4xl"}">All Inclusive Adult only Resorts
+			</p>
+			<p class="${"mt-3 text-base text-gray-300"}">We&#39;re focused on making your dream vacation. Find the right vacation and book with
+				confidence.
+			</p></div></div>
+	<div class="${"hidden sm:block relative h-56 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:top-0 md:h-full md:w-2/5"}"><img class="${"w-full h-full object-cover"}" src="${"/images/vacation-deals/spring-break.jpg"}" alt="${"vacation deals"}">
+		<div aria-hidden="${"true"}" class="${"absolute inset-0 bg-gradient-to-r from-blue-100 to-blue-200 mix-blend-multiply"}"></div></div></div>
+
+${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, {})}
+
+<div class="${"relative bg-white"}"><div class="${"relative max-w-7xl mx-auto mt-4 mb-12 lg:mb-16 lg:mt-8"}">
+		<section class="${"relative"}"><div class="${"text-left px-4"}"><div class="${"sm:flex sm:items-baseline sm:justify-between"}"><h1 class="${"text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl"}"><span class="${"block xl:inline"}">Special offers from resorts and hotels across the Americas</span>
+						</h1></div>
+				<p class="${"mt-2 text-md text-gray-600 sm:mt-3 sm:text-md md:mt-3 md:text-md lg:mx-0"}">Plan your vacation at one of our beautiful resorts across the United States, Canada,
+					Caribbean and Latin America
+				</p></div></section>
+		${validate_component(SpecialOfferCards, "SpecialOfferCards").$$render($$result, {}, {}, {})}</div></div>
+${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/23.js
+var __exports24 = {};
+__export(__exports24, {
+  css: () => css27,
+  entry: () => entry24,
+  js: () => js24,
+  module: () => travel_deals_svelte_exports
+});
+var entry24, js24, css27;
+var init__24 = __esm({
+  ".svelte-kit/output/server/nodes/23.js"() {
+    init_travel_deals_svelte();
+    entry24 = "pages/travel-deals.svelte-83905f1e.js";
+    js24 = ["pages/travel-deals.svelte-83905f1e.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/SpecialOfferCards-3f780cda.js", "chunks/Subscribe-39a11f67.js"];
+    css27 = [];
   }
 });
 
@@ -8960,21 +9608,21 @@ var init_contact_us_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/20.js
-var __exports21 = {};
-__export(__exports21, {
-  css: () => css24,
-  entry: () => entry21,
-  js: () => js21,
+// .svelte-kit/output/server/nodes/24.js
+var __exports25 = {};
+__export(__exports25, {
+  css: () => css28,
+  entry: () => entry25,
+  js: () => js25,
   module: () => contact_us_svelte_exports
 });
-var entry21, js21, css24;
-var init__21 = __esm({
-  ".svelte-kit/output/server/nodes/20.js"() {
+var entry25, js25, css28;
+var init__25 = __esm({
+  ".svelte-kit/output/server/nodes/24.js"() {
     init_contact_us_svelte();
-    entry21 = "pages/contact-us.svelte-01496c49.js";
-    js21 = ["pages/contact-us.svelte-01496c49.js", "chunks/vendor-3e73c3b8.js"];
-    css24 = [];
+    entry25 = "pages/contact-us.svelte-01496c49.js";
+    js25 = ["pages/contact-us.svelte-01496c49.js", "chunks/vendor-3e73c3b8.js"];
+    css28 = [];
   }
 });
 
@@ -9306,21 +9954,21 @@ var init_blog_post_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/21.js
-var __exports22 = {};
-__export(__exports22, {
-  css: () => css25,
-  entry: () => entry22,
-  js: () => js22,
+// .svelte-kit/output/server/nodes/25.js
+var __exports26 = {};
+__export(__exports26, {
+  css: () => css29,
+  entry: () => entry26,
+  js: () => js26,
   module: () => blog_post_svelte_exports
 });
-var entry22, js22, css25;
-var init__22 = __esm({
-  ".svelte-kit/output/server/nodes/21.js"() {
+var entry26, js26, css29;
+var init__26 = __esm({
+  ".svelte-kit/output/server/nodes/25.js"() {
     init_blog_post_svelte();
-    entry22 = "pages/blog-post.svelte-efcd7c43.js";
-    js22 = ["pages/blog-post.svelte-efcd7c43.js", "chunks/vendor-3e73c3b8.js", "chunks/HotelsIcon-bab37d2d.js"];
-    css25 = [];
+    entry26 = "pages/blog-post.svelte-efcd7c43.js";
+    js26 = ["pages/blog-post.svelte-efcd7c43.js", "chunks/vendor-3e73c3b8.js", "chunks/HotelsIcon-bab37d2d.js"];
+    css29 = [];
   }
 });
 
@@ -9333,7 +9981,7 @@ var VacationsHero, StarRating, Cancun, MexicoSubTabs, Vacations;
 var init_vacations_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vacations.svelte.js"() {
     init_index_77482e32();
-    init_BookingWidget_1bfec48e();
+    init_BookingWidget_9bbd6ea9();
     init_Subscribe_bb3f7014();
     init_BlogPosts_1de0bacf();
     init_HotelsIcon_f7770270();
@@ -9560,21 +10208,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/22.js
-var __exports23 = {};
-__export(__exports23, {
-  css: () => css26,
-  entry: () => entry23,
-  js: () => js23,
+// .svelte-kit/output/server/nodes/26.js
+var __exports27 = {};
+__export(__exports27, {
+  css: () => css30,
+  entry: () => entry27,
+  js: () => js27,
   module: () => vacations_svelte_exports
 });
-var entry23, js23, css26;
-var init__23 = __esm({
-  ".svelte-kit/output/server/nodes/22.js"() {
+var entry27, js27, css30;
+var init__27 = __esm({
+  ".svelte-kit/output/server/nodes/26.js"() {
     init_vacations_svelte();
-    entry23 = "pages/vacations.svelte-e9b5a733.js";
-    js23 = ["pages/vacations.svelte-e9b5a733.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js", "chunks/BlogPosts-8d357881.js"];
-    css26 = [];
+    entry27 = "pages/vacations.svelte-225e85f3.js";
+    js27 = ["pages/vacations.svelte-225e85f3.js", "chunks/vendor-3e73c3b8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/Subscribe-39a11f67.js", "chunks/BlogPosts-8d357881.js"];
+    css30 = [];
   }
 });
 
@@ -9690,21 +10338,21 @@ var init_about_us_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/23.js
-var __exports24 = {};
-__export(__exports24, {
-  css: () => css27,
-  entry: () => entry24,
-  js: () => js24,
+// .svelte-kit/output/server/nodes/27.js
+var __exports28 = {};
+__export(__exports28, {
+  css: () => css31,
+  entry: () => entry28,
+  js: () => js28,
   module: () => about_us_svelte_exports
 });
-var entry24, js24, css27;
-var init__24 = __esm({
-  ".svelte-kit/output/server/nodes/23.js"() {
+var entry28, js28, css31;
+var init__28 = __esm({
+  ".svelte-kit/output/server/nodes/27.js"() {
     init_about_us_svelte();
-    entry24 = "pages/about-us.svelte-05a6032b.js";
-    js24 = ["pages/about-us.svelte-05a6032b.js", "chunks/vendor-3e73c3b8.js"];
-    css27 = [];
+    entry28 = "pages/about-us.svelte-05a6032b.js";
+    js28 = ["pages/about-us.svelte-05a6032b.js", "chunks/vendor-3e73c3b8.js"];
+    css31 = [];
   }
 });
 
@@ -9723,21 +10371,21 @@ var init_explore_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/24.js
-var __exports25 = {};
-__export(__exports25, {
-  css: () => css28,
-  entry: () => entry25,
-  js: () => js25,
+// .svelte-kit/output/server/nodes/28.js
+var __exports29 = {};
+__export(__exports29, {
+  css: () => css32,
+  entry: () => entry29,
+  js: () => js29,
   module: () => explore_svelte_exports
 });
-var entry25, js25, css28;
-var init__25 = __esm({
-  ".svelte-kit/output/server/nodes/24.js"() {
+var entry29, js29, css32;
+var init__29 = __esm({
+  ".svelte-kit/output/server/nodes/28.js"() {
     init_explore_svelte();
-    entry25 = "pages/explore.svelte-c3b0f66b.js";
-    js25 = ["pages/explore.svelte-c3b0f66b.js", "chunks/vendor-3e73c3b8.js"];
-    css28 = [];
+    entry29 = "pages/explore.svelte-c3b0f66b.js";
+    js29 = ["pages/explore.svelte-c3b0f66b.js", "chunks/vendor-3e73c3b8.js"];
+    css32 = [];
   }
 });
 
@@ -9750,7 +10398,7 @@ var LottieFlights, FlightHero, FlightDeals, Flights;
 var init_flights_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/flights.svelte.js"() {
     init_index_77482e32();
-    init_BookingWidget_1bfec48e();
+    init_BookingWidget_9bbd6ea9();
     init_BlogPosts_1de0bacf();
     init_Subscribe_bb3f7014();
     init_HotelsIcon_f7770270();
@@ -9858,21 +10506,21 @@ ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/nodes/25.js
-var __exports26 = {};
-__export(__exports26, {
-  css: () => css29,
-  entry: () => entry26,
-  js: () => js26,
+// .svelte-kit/output/server/nodes/29.js
+var __exports30 = {};
+__export(__exports30, {
+  css: () => css33,
+  entry: () => entry30,
+  js: () => js30,
   module: () => flights_svelte_exports
 });
-var entry26, js26, css29;
-var init__26 = __esm({
-  ".svelte-kit/output/server/nodes/25.js"() {
+var entry30, js30, css33;
+var init__30 = __esm({
+  ".svelte-kit/output/server/nodes/29.js"() {
     init_flights_svelte();
-    entry26 = "pages/flights.svelte-13b18900.js";
-    js26 = ["pages/flights.svelte-13b18900.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
-    css29 = [];
+    entry30 = "pages/flights.svelte-0de183f5.js";
+    js30 = ["pages/flights.svelte-0de183f5.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
+    css33 = [];
   }
 });
 
@@ -9885,7 +10533,7 @@ var LottieHotels, HotelsHero, Toronto, CanadaSubTabs, Hotels;
 var init_hotels_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/hotels.svelte.js"() {
     init_index_77482e32();
-    init_BookingWidget_1bfec48e();
+    init_BookingWidget_9bbd6ea9();
     init_BlogPosts_1de0bacf();
     init_Subscribe_bb3f7014();
     init_HotelsIcon_f7770270();
@@ -10048,21 +10696,21 @@ ${validate_component(BookingWidget, "BookingWidget").$$render($$result, {}, {}, 
   }
 });
 
-// .svelte-kit/output/server/nodes/26.js
-var __exports27 = {};
-__export(__exports27, {
-  css: () => css30,
-  entry: () => entry27,
-  js: () => js27,
+// .svelte-kit/output/server/nodes/30.js
+var __exports31 = {};
+__export(__exports31, {
+  css: () => css34,
+  entry: () => entry31,
+  js: () => js31,
   module: () => hotels_svelte_exports
 });
-var entry27, js27, css30;
-var init__27 = __esm({
-  ".svelte-kit/output/server/nodes/26.js"() {
+var entry31, js31, css34;
+var init__31 = __esm({
+  ".svelte-kit/output/server/nodes/30.js"() {
     init_hotels_svelte();
-    entry27 = "pages/hotels.svelte-8c861fba.js";
-    js27 = ["pages/hotels.svelte-8c861fba.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-02b847de.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
-    css30 = [];
+    entry31 = "pages/hotels.svelte-08d3ab88.js";
+    js31 = ["pages/hotels.svelte-08d3ab88.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js", "chunks/BookingWidget-a2aa15f8.js", "chunks/HotelsIcon-bab37d2d.js", "chunks/BlogPosts-8d357881.js", "chunks/Subscribe-39a11f67.js"];
+    css34 = [];
   }
 });
 
@@ -10340,21 +10988,21 @@ var init_blog_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/27.js
-var __exports28 = {};
-__export(__exports28, {
-  css: () => css31,
-  entry: () => entry28,
-  js: () => js28,
+// .svelte-kit/output/server/nodes/31.js
+var __exports32 = {};
+__export(__exports32, {
+  css: () => css35,
+  entry: () => entry32,
+  js: () => js32,
   module: () => blog_svelte_exports
 });
-var entry28, js28, css31;
-var init__28 = __esm({
-  ".svelte-kit/output/server/nodes/27.js"() {
+var entry32, js32, css35;
+var init__32 = __esm({
+  ".svelte-kit/output/server/nodes/31.js"() {
     init_blog_svelte();
-    entry28 = "pages/blog.svelte-ec65c44f.js";
-    js28 = ["pages/blog.svelte-ec65c44f.js", "chunks/vendor-3e73c3b8.js", "chunks/Subscribe-39a11f67.js"];
-    css31 = [];
+    entry32 = "pages/blog.svelte-ec65c44f.js";
+    js32 = ["pages/blog.svelte-ec65c44f.js", "chunks/vendor-3e73c3b8.js", "chunks/Subscribe-39a11f67.js"];
+    css35 = [];
   }
 });
 
@@ -10380,7 +11028,7 @@ var init_faqs_svelte = __esm({
 						</p></div></div></div>
 			<div class="${"flex flex-wrap -mx-4"}"><div class="${"w-full lg:w-1/2 px-4"}">
 
-					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"w-full"}"><h4 class="${"text-base text-left font-semibold text-black"}">How can I get a copy of my itinerary or booking details?
+					<div class="${"w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8"}"><button class="${"faq-btn flex w-full justify-between items-center"}"><div class="${"text-left"}"><h4 class="${"text-base text-left font-semibold text-black"}">How can I get a copy of my itinerary or booking details?
 								</h4></div>
 							<div class="${"w-full max-w-[40px] h-10 flex items-center justify-end pt-1 rounded-lg bg-opacity-5"}">${`<svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"h-6 w-6"}" viewBox="${"0 0 20 20"}" fill="${"currentColor"}"><path fill-rule="${"evenodd"}" d="${"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"}" clip-rule="${"evenodd"}"></path></svg>`}</div></button>
 						${validate_component(OutClick, "OutClick").$$render($$result, {}, {}, {
@@ -10551,21 +11199,21 @@ var init_faqs_svelte = __esm({
   }
 });
 
-// .svelte-kit/output/server/nodes/28.js
-var __exports29 = {};
-__export(__exports29, {
-  css: () => css32,
-  entry: () => entry29,
-  js: () => js29,
+// .svelte-kit/output/server/nodes/32.js
+var __exports33 = {};
+__export(__exports33, {
+  css: () => css36,
+  entry: () => entry33,
+  js: () => js33,
   module: () => faqs_svelte_exports
 });
-var entry29, js29, css32;
-var init__29 = __esm({
-  ".svelte-kit/output/server/nodes/28.js"() {
+var entry33, js33, css36;
+var init__33 = __esm({
+  ".svelte-kit/output/server/nodes/32.js"() {
     init_faqs_svelte();
-    entry29 = "pages/faqs.svelte-60e9b290.js";
-    js29 = ["pages/faqs.svelte-60e9b290.js", "chunks/vendor-3e73c3b8.js"];
-    css32 = [];
+    entry33 = "pages/faqs.svelte-e67f795b.js";
+    js33 = ["pages/faqs.svelte-e67f795b.js", "chunks/vendor-3e73c3b8.js"];
+    css36 = [];
   }
 });
 
@@ -10891,12 +11539,12 @@ function devalue(value) {
   }
   walk(value);
   var names = /* @__PURE__ */ new Map();
-  Array.from(counts).filter(function(entry30) {
-    return entry30[1] > 1;
+  Array.from(counts).filter(function(entry34) {
+    return entry34[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry30, i2) {
-    names.set(entry30[0], getName(i2));
+  }).forEach(function(entry34, i2) {
+    names.set(entry34[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -12542,7 +13190,7 @@ function set_paths(paths) {
 var user_hooks = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null
 }, Symbol.toStringTag, { value: "Module" }));
-var template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en" class="h-full">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		\n		<!-- disable auto zooming in input groups -->\n		<meta name="viewport"\n					content="width=device-width, initial-scale=1, maximum-scale=1">\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + '</div>\n		<script src="https://unpkg.com/flowbite@1.3.4/dist/datepicker.js"><\/script>\n		<script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"><\/script>\n	</body>\n</html>\n';
+var template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en" class="h-full">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n\n		<!-- Tailwind elements css -->\n		<link rel="stylesheet"\n					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />\n		<link rel="stylesheet"\n					href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />\n		<link rel="stylesheet"\n					href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />\n		\n		<!-- disable auto zooming in input groups -->\n		<meta name="viewport"\n					content="width=device-width, initial-scale=1, maximum-scale=1">\n		' + head + "\n	</head>\n	<body>\n		<div>" + body + '</div>\n		<script src="https://unpkg.com/flowbite@1.3.4/dist/datepicker.js"><\/script>\n		<script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"><\/script>\n		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"><\/script>\n	</body>\n</html>\n';
 var read = null;
 set_paths({ "base": "", "assets": "" });
 var get_hooks = (hooks) => ({
@@ -12597,10 +13245,10 @@ var App = class {
 // .svelte-kit/vercel-tmp/manifest.js
 var manifest = {
   appDir: "_app",
-  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/baggage/air-canada-icon.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/about/flight.jpg", "images/about/hotel.jpg", "images/about/office.jpg", "images/about/tripsupport-team.jpg", "images/about/vacation.jpg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/contact/help.svg", "images/contact/location7191.jpg", "images/contact/office4667.jpg", "images/contact/transaction.svg", "images/contact/ts-icon.png", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
+  assets: new Set(["favicon.png", "footer/footer-1.png", "footer/footer-2.png", "footer/footer-3.png", "footer/footer-4.png", "footer/footer-5.png", "footer/footer-6.png", "footer/footer-7.png", "footer/footer-8.png", "footer/footer-9.png", "icons/airport/airliner-1.svg", "icons/airport/airliner.svg", "icons/airport/airport-truck.svg", "icons/airport/automated-teller-machine.svg", "icons/airport/bus-service.svg", "icons/airport/cab.svg", "icons/airport/cup-of-hot-coffee.svg", "icons/airport/customs-control.svg", "icons/airport/departures-sign.svg", "icons/airport/digital-camera.svg", "icons/airport/direction-signs.svg", "icons/airport/escalators-down.svg", "icons/airport/escalators-up.svg", "icons/airport/flight-ticket.svg", "icons/airport/gate-sign.svg", "icons/airport/glass-of-wine.svg", "icons/airport/globe.svg", "icons/airport/helicopter.svg", "icons/airport/id-card.svg", "icons/airport/information-sign.svg", "icons/airport/international-departures.svg", "icons/airport/international-location.svg", "icons/airport/international-passport.svg", "icons/airport/lift-up.svg", "icons/airport/location-pointer.svg", "icons/airport/luggage-cart.svg", "icons/airport/luggage-checking.svg", "icons/airport/luggage-trolley.svg", "icons/airport/mailbox.svg", "icons/airport/male-and-female-toilet.svg", "icons/airport/medical-signal.svg", "icons/airport/money-exchange.svg", "icons/airport/mother-and-son.svg", "icons/airport/no-mobile-phones-allowed.svg", "icons/airport/no-photography.svg", "icons/airport/no-smoking.svg", "icons/airport/parking-sign.svg", "icons/airport/phone-booth.svg", "icons/airport/plane-landing.svg", "icons/airport/planes-circling.svg", "icons/airport/restaurant.svg", "icons/airport/satellite-dish.svg", "icons/airport/security-camera.svg", "icons/airport/security-check.svg", "icons/airport/smoking-area.svg", "icons/airport/suitcase-1.svg", "icons/airport/suitcase.svg", "icons/airport/takeoff-the-plane.svg", "icons/airport/wall-clock.svg", "icons/airport/wifi-signal.svg", "icons/baggage/air-canada-icon.svg", "icons/countries/canada.svg", "icons/countries/china.svg", "icons/countries/cuba.svg", "icons/countries/dominican-republic.svg", "icons/countries/france.svg", "icons/countries/germany.svg", "icons/countries/hawaii.svg", "icons/countries/italy.svg", "icons/countries/jamaica.svg", "icons/countries/mexico.svg", "icons/countries/spain.svg", "icons/countries/sun.svg", "icons/countries/turkey.svg", "icons/countries/usa.svg", "icons/email.svg", "icons/facebook.svg", "icons/instagram.svg", "icons/phone.svg", "icons/pinterest.svg", "icons/two-arrows.svg", "icons/youtube.svg", "images/about/flight.jpg", "images/about/hotel.jpg", "images/about/office.jpg", "images/about/tripsupport-team.jpg", "images/about/vacation.jpg", "images/blog/blog-bg.jpg", "images/blog/blog-canada-1.jpg", "images/blog/blog-canada-2.jpg", "images/blog/blog-canada-3.jpg", "images/blog/blog-canada-4.jpg", "images/blog/philippines.jpg", "images/blog/places-canada.jpg", "images/blog/shefali.jpg", "images/blog/spring-break.jpg", "images/blog/travel-guide.jpg", "images/blog-post/barrie.jpg", "images/blog-post/blog-post-1.jpg", "images/blog-post/brampton.jpg", "images/blog-post/hamilton.jpg", "images/blog-post/kawartha-lakes.jpg", "images/blog-post/london.jpg", "images/blog-post/mississauga.jpg", "images/blog-post/niagara-falls.jpg", "images/blog-post/whitby.jpg", "images/booknow-paylater/cuba-varadero.jpg", "images/booknow-paylater/dominican-republic.jpg", "images/booknow-paylater/mexico-cancun.jpg", "images/contact/help.svg", "images/contact/location7191.jpg", "images/contact/office4667.jpg", "images/contact/transaction.svg", "images/contact/ts-icon.png", "images/flight-deals/jw-1.jpg", "images/flight-deals/jw-2.jpg", "images/flight-deals/jw-3.jpg", "images/flight-deals/jw-4.jpg", "images/flight-deals/jw-mariott.jpg", "images/header-bg-image.jpg", "images/hero/flights-hero-bg.jpg", "images/hero/flights-hero2.jpg", "images/hero/hero-1.jpg", "images/hero/hero-2.jpg", "images/hero/hero-3.jpg", "images/hero/hero-4.jpg", "images/hero/hero-5.jpg", "images/hero/hero-6.jpg", "images/hero/hero-bg.jpg", "images/hero/hotair-bg.jpg", "images/home/alberta.jpg", "images/home/beach-party.jpg", "images/home/california.jpg", "images/home/deals-1.jpg", "images/home/deals-2.jpg", "images/home/deals-3.jpg", "images/home/deals-4.jpg", "images/home/deals-5.jpg", "images/home/deals-6.jpg", "images/home/deals-7.jpg", "images/home/deals-8.jpg", "images/home/destination-dubai.jpg", "images/home/destination-europe.jpg", "images/home/destination-sun.jpg", "images/home/flights-section.jpg", "images/home/home-hero.jpg", "images/home/mexico.jpg", "images/home/montreal.jpg", "images/home/newyork.jpg", "images/home/singapore.jpg", "images/home/spring-break.jpg", "images/home/spring-break2.jpg", "images/home/subscribe.jpg", "images/home/vancouver.jpg", "images/hotels/blue-mountain.jpg", "images/hotels/hotel-1.jpg", "images/hotels/hotel-10.jpg", "images/hotels/hotel-11.jpg", "images/hotels/hotel-12.jpg", "images/hotels/hotel-13.jpg", "images/hotels/hotel-14.jpg", "images/hotels/hotel-15.jpg", "images/hotels/hotel-17.jpg", "images/hotels/hotel-2.jpg", "images/hotels/hotel-3.jpg", "images/hotels/hotel-4.jpg", "images/hotels/hotel-5.jpg", "images/hotels/hotel-6.jpg", "images/hotels/hotel-7.jpg", "images/hotels/hotel-8.jpg", "images/hotels/hotel-9.jpg", "images/hotels/muskoka.jpg", "images/hotels/niagara-falls.jpg", "images/hotels/toronto-1.jpg", "images/hotels/toronto-2.jpg", "images/hotels/toronto-downtown.jpg", "images/vacation-deals/spring-break.jpg", "images/vacations/acapulco.jpg", "images/vacations/cancun.jpg", "images/vacations/loscabos.jpg", "images/vacations/mexico/vac1.jpg", "images/vacations/mexico/vac10.jpg", "images/vacations/mexico/vac11.jpg", "images/vacations/mexico/vac12.jpg", "images/vacations/mexico/vac13.jpg", "images/vacations/mexico/vac14.jpg", "images/vacations/mexico/vac15.jpg", "images/vacations/mexico/vac16.jpg", "images/vacations/mexico/vac17.jpg", "images/vacations/mexico/vac18.jpg", "images/vacations/mexico/vac19.jpg", "images/vacations/mexico/vac2.jpg", "images/vacations/mexico/vac20.jpg", "images/vacations/mexico/vac21.jpg", "images/vacations/mexico/vac22.jpg", "images/vacations/mexico/vac3.jpg", "images/vacations/mexico/vac4.jpg", "images/vacations/mexico/vac5.jpg", "images/vacations/mexico/vac6.jpg", "images/vacations/mexico/vac7.jpg", "images/vacations/mexico/vac8.jpg", "images/vacations/mexico/vac9.jpg", "images/vacations/morocco.jpg", "images/vacations/puertovallarta.jpg", "images/vacations/rivieramaya.jpg", "images/vacations/vacation-bg.jpg", "logo.svg", "logos/fairmont.svg", "logos/hilton.svg", "logos/radisson.svg", "logos/ritz-carlton.svg", "logos/shangri-la.svg", "logos/westin.svg", "lottie/54972-world-map-tallinn.json", "lottie/97942-desinsafe-buildings.json"]),
   _: {
     mime: { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" },
-    entry: { "file": "start-d437d89c.js", "js": ["start-d437d89c.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
+    entry: { "file": "start-8626e5c3.js", "js": ["start-8626e5c3.js", "chunks/vendor-3e73c3b8.js", "chunks/preload-helper-e4860ae8.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -12630,7 +13278,11 @@ var manifest = {
       () => Promise.resolve().then(() => (init__26(), __exports26)),
       () => Promise.resolve().then(() => (init__27(), __exports27)),
       () => Promise.resolve().then(() => (init__28(), __exports28)),
-      () => Promise.resolve().then(() => (init__29(), __exports29))
+      () => Promise.resolve().then(() => (init__29(), __exports29)),
+      () => Promise.resolve().then(() => (init__30(), __exports30)),
+      () => Promise.resolve().then(() => (init__31(), __exports31)),
+      () => Promise.resolve().then(() => (init__32(), __exports32)),
+      () => Promise.resolve().then(() => (init__33(), __exports33))
     ],
     routes: [
       {
@@ -12779,11 +13431,38 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/vacation-deals\/?$/,
+        params: null,
+        path: "/vacation-deals",
+        shadow: null,
+        a: [0, 18],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/destinations\/?$/,
+        params: null,
+        path: "/destinations",
+        shadow: null,
+        a: [0, 19],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/flight-deals\/?$/,
+        params: null,
+        path: "/flight-deals",
+        shadow: null,
+        a: [0, 20],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/flight-hotel\/?$/,
         params: null,
         path: "/flight-hotel",
         shadow: null,
-        a: [0, 18],
+        a: [0, 21],
         b: [1]
       },
       {
@@ -12792,7 +13471,16 @@ var manifest = {
         params: null,
         path: "/group-travel",
         shadow: null,
-        a: [0, 19],
+        a: [0, 22],
+        b: [1]
+      },
+      {
+        type: "page",
+        pattern: /^\/travel-deals\/?$/,
+        params: null,
+        path: "/travel-deals",
+        shadow: null,
+        a: [0, 23],
         b: [1]
       },
       {
@@ -12801,7 +13489,7 @@ var manifest = {
         params: null,
         path: "/contact-us",
         shadow: null,
-        a: [0, 20],
+        a: [0, 24],
         b: [1]
       },
       {
@@ -12810,7 +13498,7 @@ var manifest = {
         params: null,
         path: "/blog-post",
         shadow: null,
-        a: [0, 21],
+        a: [0, 25],
         b: [1]
       },
       {
@@ -12819,7 +13507,7 @@ var manifest = {
         params: null,
         path: "/vacations",
         shadow: null,
-        a: [0, 22],
+        a: [0, 26],
         b: [1]
       },
       {
@@ -12828,7 +13516,7 @@ var manifest = {
         params: null,
         path: "/about-us",
         shadow: null,
-        a: [0, 23],
+        a: [0, 27],
         b: [1]
       },
       {
@@ -12837,7 +13525,7 @@ var manifest = {
         params: null,
         path: "/explore",
         shadow: null,
-        a: [0, 24],
+        a: [0, 28],
         b: [1]
       },
       {
@@ -12846,7 +13534,7 @@ var manifest = {
         params: null,
         path: "/flights",
         shadow: null,
-        a: [0, 25],
+        a: [0, 29],
         b: [1]
       },
       {
@@ -12855,7 +13543,7 @@ var manifest = {
         params: null,
         path: "/hotels",
         shadow: null,
-        a: [0, 26],
+        a: [0, 30],
         b: [1]
       },
       {
@@ -12864,7 +13552,7 @@ var manifest = {
         params: null,
         path: "/blog",
         shadow: null,
-        a: [0, 27],
+        a: [0, 31],
         b: [1]
       },
       {
@@ -12873,7 +13561,7 @@ var manifest = {
         params: null,
         path: "/faqs",
         shadow: null,
-        a: [0, 28],
+        a: [0, 32],
         b: [1]
       }
     ]

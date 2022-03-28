@@ -1,5 +1,4 @@
--->
-<div class="bg-gradient-to-r from-slate-900 to-fuchsia-900 ">
+<div class="bg-gradient-to-r from-slate-900 to-fuchsia-900">
 	<div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8 lg:flex lg:justify-between">
 		<div class="max-w-3xl">
 			<h1 class="text-sm font-semibold tracking-wide uppercase">

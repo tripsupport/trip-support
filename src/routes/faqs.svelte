@@ -189,7 +189,7 @@
 
 					<div class="w-full bg-white border border-gray-100 rounded-lg p-4 lg:px-6 xl:px-8 mb-8">
 						<button on:click={toggleq1} class="faq-btn flex w-full justify-between items-center">
-							<div class="w-full">
+							<div class="text-left">
 								<h4 class="text-base text-left font-semibold text-black">
 									How can I get a copy of my itinerary or booking details?
 								</h4>

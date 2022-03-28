@@ -193,15 +193,20 @@
 	<div class="col-span-6 md:col-span-4">
 		<div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 xs:space-x-12">
 			<div class="inline-flex items-center">
-				<input
-					id="email"
-					name="notification-method"
-					type="radio"
-					class="focus:ring-pblue-500 h-4 w-4 text-pblue-600 border-gray-300"
-				/>
-				<label for="email" class="ml-3 block text-sm font-medium text-gray-700">
-					All inclusive
-				</label>
+				<div class="form-check">
+					<input
+						class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-pblue-600 checked:border-pblue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+						type="checkbox"
+						value=""
+						id="flexCheckDefault"
+					/>
+					<label
+						class="form-check-label inline-block text-gray-700 font-medium text-sm"
+						for="flexCheckDefault"
+					>
+						All inclusive
+					</label>
+				</div>
 			</div>
 		</div>
 	</div>

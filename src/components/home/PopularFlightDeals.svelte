@@ -14,7 +14,7 @@
 				<polygon points="50,0 100,0 50,100 0,100" />
 			</svg>
 
-			<div class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-4 ">
+			<div class="mt-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:px-8">
 				<div class="text-left">
 					<div class="sm:flex sm:items-baseline sm:justify-between">
 						<h1

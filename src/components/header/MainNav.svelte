@@ -13,7 +13,7 @@
 </script>
 
 <!-- Main navigation -->
-<nav class="bg-white shadow relative z-[2] mb-1">
+<nav class="bg-white shadow relative mb-1">
 	<div class="max-w-7xl mx-auto py-2">
 		<div class="flex flex-wrap justify-between items-center ">
 			<div class="flex pl-4">

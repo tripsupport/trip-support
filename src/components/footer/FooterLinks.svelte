@@ -1,18 +1,34 @@
 <script>
 	const vacationDeals = [
-		{ name: 'Spring Vacations', href: '/spring-vacations' },
-		{ name: 'Winter Vacations', href: '/winter-vacations' },
-		{ name: 'Summer Vacations', href: '/summer-vacations' },
-		{ name: 'Fall Vacations', href: '/fall-vacations' },
-		{ name: 'Group Travel', href: '/group-travel' }
+		{ name: 'Spring Vacations', href: '/vacation-deals' },
+		{ name: 'Winter Vacations', href: '/vacation-deals' },
+		{ name: 'Summer Vacations', href: '/vacation-deals' },
+		{ name: 'Fall Vacations', href: '/vacation-deals' },
+		{ name: 'Group Travel', href: '/vacation-deals' }
 	];
 
 	const destinations = [
-		{ name: 'Westjet Vacations', href: '/westjet-vacations' },
-		{ name: 'Porter Vacations', href: '/porter-vacations' },
-		{ name: 'sunwing Vacations', href: '/sunwing-vacations' },
-		{ name: 'sunquest Vacations', href: '/sunquest-vacations' },
-		{ name: 'signature Vacations', href: '/signature-vacations' }
+		{ name: 'Westjet Vacations', href: '/destinations' },
+		{ name: 'Porter Vacations', href: '/destinations' },
+		{ name: 'sunwing Vacations', href: '/destinations' },
+		{ name: 'sunquest Vacations', href: '/destinations' },
+		{ name: 'signature Vacations', href: '/destinations' }
+	];
+
+	const flightDeals = [
+		{ name: 'Cheap Flight To Edmonton', href: '/flight-deals' },
+		{ name: 'Cheap Flight To Calgary', href: '/flight-deals' },
+		{ name: 'Cheap Flight To San Francisco', href: '/flight-deals' },
+		{ name: 'Cheap Flight To Toronto', href: '/flight-deals' },
+		{ name: 'Cheap Flight To Vancouver', href: '/flight-deals' }
+	];
+
+	const travelDeals = [
+		{ name: 'All Inclusive Resorts', href: '/travel-deals' },
+		{ name: 'Singles Vacations', href: '/travel-deals' },
+		{ name: '3 to 5 Day Vacation Deals', href: '/travel-deals' },
+		{ name: '2 Week Vacation Deals', href: '/travel-deals' },
+		{ name: 'Best Family Resorts', href: '/travel-deals' }
 	];
 </script>
 
@@ -23,14 +39,14 @@
 				Vacation Deals
 			</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
-				{#each vacationDeals as deal}
+				{#each vacationDeals as link}
 					<li>
 						<a
 							sveltekit:prefetch
-							href={deal.href}
+							href={link.href}
 							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
 						>
-							{deal.name}
+							{link.name}
 						</a>
 					</li>
 				{/each}
@@ -40,14 +56,14 @@
 		<div class="col-span-3 sm:col-span-2 lg:col-span-1">
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">Destinations</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
-				{#each destinations as dest}
+				{#each destinations as link}
 					<li>
 						<a
 							sveltekit:prefetch
-							href={dest.href}
+							href={link.href}
 							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
 						>
-							{dest.name}
+							{link.name}
 						</a>
 					</li>
 				{/each}
@@ -57,89 +73,34 @@
 		<div class="col-span-3 sm:col-span-2 lg:col-span-1">
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">Flight Deals</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900"
-					>
-						flights to edmonton</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900"
-					>
-						Flight To San Francisco</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900"
-					>
-						flight to toronto</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900"
-					>
-						flight to vancouver</a
-					>
-				</li>
+				{#each flightDeals as link}
+					<li>
+						<a
+							sveltekit:prefetch
+							href={link.href}
+							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
+							{link.name}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</div>
 
 		<div class="col-span-3 sm:col-span-2 lg:col-span-1">
 			<h3 class="font-semibold uppercase text-slate-800 text-sm tracking-normal ">travel deals</h3>
 			<ul role={'list'} class="mt-4 space-y-2">
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">all inclusive resorts</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">singles vacations</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">3 - 5 day vacations</a
-					>
-				</li>
-
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">2 weeks vacation</a
-					>
-				</li>
-				<li>
-					<a
-						sveltekit:prefetch
-						href="javascript:void(0)"
-						class="capitalize text-slate-600 text-sm hover:text-gray-900">best family resorts</a
-					>
-				</li>
+				{#each travelDeals as link}
+					<li>
+						<a
+							sveltekit:prefetch
+							href={link.href}
+							class=" capitalize text-slate-600 text-sm hover:text-gray-900"
+						>
+							{link.name}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</div>
 
